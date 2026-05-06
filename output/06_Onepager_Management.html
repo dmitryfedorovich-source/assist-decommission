@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reference Letters Migration — EPAM Docs</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f5f7;
+    color: #1a1a2e;
+    min-height: 100vh;
+    padding: 32px;
+  }
+
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a1a2e 60%, #2d3561 100%);
+    color: #fff;
+    padding: 36px 48px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-left h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  .header-left h1 span { color: #f97316; }
+  .header-left p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #a0aec0;
+    letter-spacing: 0.5px;
+  }
+  .header-right {
+    text-align: right;
+  }
+  .badge-golive {
+    background: #f97316;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+  }
+  .header-right .date-label {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #a0aec0;
+  }
+
+  /* MAIN GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+  }
+
+  .section {
+    padding: 28px 32px;
+    border-right: 1px solid #edf2f7;
+    border-bottom: 1px solid #edf2f7;
+  }
+  .section:last-child { border-right: none; }
+  .section.full-width {
+    grid-column: 1 / -1;
+    border-right: none;
+  }
+  .section.two-thirds {
+    grid-column: span 2;
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #f97316;
+    margin-bottom: 14px;
+  }
+  .section h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a2e;
+  }
+  .section p {
+    font-size: 13px;
+    color: #4a5568;
+    line-height: 1.65;
+  }
+
+  /* CONTEXT BANNER */
+  .context-banner {
+    background: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 16px 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .context-banner .icon { font-size: 24px; flex-shrink: 0; }
+  .context-banner p { font-size: 13.5px; color: #1e40af; line-height: 1.5; }
+  .context-banner strong { color: #1e3a8a; }
+
+  /* LETTER TYPES */
+  .letter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .letter-card {
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .letter-card.auto {
+    background: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+  }
+  .letter-card.hrbp {
+    background: #faf5ff;
+    color: #6b21a8;
+    border: 1px solid #e9d5ff;
+  }
+  .letter-card .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .letter-card.auto .dot { background: #22c55e; }
+  .letter-card.hrbp .dot { background: #a855f7; }
+
+  .legend {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 12px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #718096;
+    font-weight: 600;
+  }
+  .legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+
+  /* FLOW */
+  .flow {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 4px;
+    flex-wrap: nowrap;
+  }
+  .flow-step {
+    background: #f7fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 12px;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+  }
+  .flow-step .step-actor {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #a0aec0;
+    margin-bottom: 4px;
+  }
+  .flow-step .step-label {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #2d3748;
+    line-height: 1.3;
+  }
+  .flow-arrow {
+    color: #cbd5e0;
+    font-size: 18px;
+    padding: 0 4px;
+    flex-shrink: 0;
+  }
+  .flow-branch {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+  }
+  .branch-pill {
+    flex: 1;
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .branch-pill.green { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+  .branch-pill.purple { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+
+  /* PHASES */
+  .phases {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .phase-card {
+    flex: 1;
+    border-radius: 10px;
+    padding: 16px;
+    border: 2px solid transparent;
+  }
+  .phase-card.current {
+    background: #fff7ed;
+    border-color: #f97316;
+  }
+  .phase-card.next {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+  }
+  .phase-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .phase-card.current .phase-tag { color: #f97316; }
+  .phase-card.next .phase-tag { color: #a0aec0; }
+  .phase-card h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1a1a2e;
+  }
+  .phase-card p {
+    font-size: 11.5px;
+    color: #718096;
+    line-height: 1.5;
+  }
+  .phase-card.current p { color: #92400e; }
+
+  /* TIMELINE */
+  .timeline {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    position: relative;
+    margin-top: 4px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    background: #e2e8f0;
+    z-index: 0;
+  }
+  .tl-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .tl-dot {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    margin: 0 auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .tl-dot.done { background: #22c55e; color: #fff; }
+  .tl-dot.active { background: #f97316; color: #fff; box-shadow: 0 0 0 4px #fed7aa; }
+  .tl-dot.upcoming { background: #e2e8f0; color: #a0aec0; }
+  .tl-date {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #4a5568;
+    margin-bottom: 2px;
+  }
+  .tl-label {
+    font-size: 10px;
+    color: #a0aec0;
+    line-height: 1.3;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f7fafc;
+    border-top: 1px solid #edf2f7;
+    padding: 14px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer p { font-size: 11.5px; color: #a0aec0; }
+  .footer strong { color: #4a5568; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Reference Letters Migration<br><span>Assist → EPAM Docs</span></h1>
+      <p>INDIA HR DOCUMENT WORKFLOWS · PHASE 1</p>
+    </div>
+    <div class="header-right">
+      <div class="badge-golive">GO-LIVE: JULY 1, 2026</div>
+      <div class="date-label">May 2026</div>
+    </div>
+  </div>
+
+  <!-- CONTEXT BANNER -->
+  <div class="context-banner">
+    <div class="icon">ℹ️</div>
+    <p><strong>Assist (assist.epam.com) is being decommissioned.</strong> India employees currently use Assist to request official HR letters. We are migrating this workflow to <strong>EPAM Docs (docs.epam.com)</strong> — EPAM's existing document platform — with no change to the process or letter content.</p>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="grid">
+
+    <!-- LETTER TYPES -->
+    <div class="section">
+      <div class="section-label">What We're Moving</div>
+      <h2>6 India Reference Letters</h2>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div>Auto-verified</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>HRBP approval</div>
+      </div>
+      <div class="letter-grid">
+        <div class="letter-card auto"><div class="dot"></div>Form 60</div>
+        <div class="letter-card hrbp"><div class="dot"></div>Visa Processing</div>
+        <div class="letter-card auto"><div class="dot"></div>Address Proof</div>
+        <div class="letter-card hrbp"><div class="dot"></div>Letter of Recommendation</div>
+        <div class="letter-card auto"><div class="dot"></div>Service Letter</div>
+        <div class="letter-card hrbp"><div class="dot"></div>Relocation Letter</div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="section two-thirds">
+      <div class="section-label">How It Works in Docs</div>
+      <h2>Request Flow</h2>
+      <div class="flow">
+        <div class="flow-step">
+          <div class="step-actor">Employee</div>
+          <div class="step-label">Opens Docs & selects letter type</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="step-actor">Employee</div>
+          <div class="step-label">Fills form (data pre-populated from HR systems)</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="step-actor">Docs Platform</div>
+          <div class="step-label">Routes by letter type</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="step-actor">Employee</div>
+          <div class="step-label">Downloads generated letter</div>
+        </div>
+      </div>
+      <div class="flow-branch">
+        <div class="branch-pill green">✓ Auto-verified letters — completed instantly</div>
+        <div class="branch-pill purple">✦ HRBP letters — reviewed &amp; approved by HRBP before download</div>
+      </div>
+    </div>
+
+    <!-- MIGRATION PHASES -->
+    <div class="section two-thirds">
+      <div class="section-label">Migration Roadmap</div>
+      <h2>Phased Approach</h2>
+      <div class="phases">
+        <div class="phase-card current">
+          <div class="phase-tag">Phase 1 · Now</div>
+          <h3>Reference Letters</h3>
+          <p>6 India letter types · Go-live July 1, 2026</p>
+        </div>
+        <div class="phase-card next">
+          <div class="phase-tag">Phase 2 · Next</div>
+          <h3>Compensation Letters</h3>
+          <p>Timeline TBD</p>
+        </div>
+        <div class="phase-card next">
+          <div class="phase-tag">Phase 3 · Planned</div>
+          <h3>Separation Letters</h3>
+          <p>Incl. LOR for ex-employees · Timeline TBD</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="section">
+      <div class="section-label">Key Risks</div>
+      <h2>Watch Items</h2>
+      <p style="font-size:12.5px; color:#4a5568; line-height:1.8;">
+        <span style="color:#f97316; font-weight:700;">▸</span> Letter templates finalized by India HR<br>
+        <span style="color:#f97316; font-weight:700;">▸</span> HR system integrations confirmed<br>
+        <span style="color:#f97316; font-weight:700;">▸</span> HRBP onboarding to Docs before go-live<br>
+        <span style="color:#f97316; font-weight:700;">▸</span> India employee communication sent
+      </p>
+    </div>
+
+    <!-- TIMELINE FULL WIDTH -->
+    <div class="section full-width" style="border-bottom:none;">
+      <div class="section-label">Timeline</div>
+      <h2 style="margin-bottom:20px;">Phase 1 Milestones</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot done">✓</div>
+          <div class="tl-date">May 2026</div>
+          <div class="tl-label">BRD &amp; Process<br>Flow Complete</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot active">→</div>
+          <div class="tl-date">May–Jun 2026</div>
+          <div class="tl-label">Docs Platform<br>Configuration</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot upcoming">3</div>
+          <div class="tl-date">June 2026</div>
+          <div class="tl-label">Letter Templates<br>Finalized</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot upcoming">4</div>
+          <div class="tl-date">June 2026</div>
+          <div class="tl-label">UAT &amp; HRBP<br>Training</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot upcoming" style="background:#f97316; color:#fff; box-shadow: 0 0 0 4px #fed7aa;">🚀</div>
+          <div class="tl-date" style="color:#f97316; font-weight:800;">July 1, 2026</div>
+          <div class="tl-label" style="color:#f97316; font-weight:600;">Go-Live &amp;<br>Assist Retired</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>EPAM India · HR Document Workflow Migration · Phase 1: Reference Letters</p>
+    <p><strong>Owner:</strong> EPAM Docs Platform &amp; India HR Team &nbsp;|&nbsp; <strong>Deadline:</strong> July 1, 2026</p>
+  </div>
+
+</div>
+</body>
+</html>
