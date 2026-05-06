@@ -1,0 +1,457 @@
+Offline meeting - All about Assist.epam-20250527_122656-Meeting Recording
+May 27, 2025, 6:56AM
+1h 30m 30s
+
+Sasanka Yedlapati started transcription
+
+Sasanka Yedlapati   0:11
+OK.
+Now you can see the screen.
+Need to.
+Yeah, I think speak coming out. Yes. Yeah, I'm OK.
+So this is our access portal. I'll give you the first problem statement. Why did we start this assist? We started this in the year 2019.
+Where in 2015, when I've joined the Pam system site, the headcount was around 660.
+And post my journey within two months, Alliance Global has been acquired by EPA.
+So what we have done is all the migrations that's happening from alliances comes to the E Pam systems, right, starting from vacation portal or oops. Everything. When I was taking care, I was coordinating with the global team and things happening for this then.
+I gave my requirement what is required at India location. Unfortunately they were not able to fit the requirement in any of the tool. Then during that time we have a shashikant who is at HR and he had to connect with Larry Neil during the visit one of the visit with Larry he said that we will build it.
+He said go ahead if it's not fulfilling your requirement, you can just go ahead and do it.
+During that time, now I'll use a bug. What we have said.
+So the problem statement is generating the letters.
+Generating.
+Employee letters. These all are we call it as a reference letters.
+So these difference letters can be address, proof letter, bank verification letter, SIM card, and for any loans or anything they need a reference letters, different types of letters require. So what they are doing is, you know employee comes to me and they ask for the letter. We need to type this and then form this information and sign it and give it to the employee.
+This is a manual effort and that time we are based out of only one location. That's Hyderabad. OK, if I am in Hyderabad, people comes to me. We are working in office then it's fine. Where we'll be able to do it then one more location added. OK.
+Again the same problem. They say people coming up there and doing it. What should we do it?
+Has increased thousand and the count has been increased per day 10 to 15 letters.
+And it's not easy to do it. 10 to 15 types overall, no, No 10 to 15 request. It can be any daily per day, yeah, per day. And it keeps increasing like this. Yeah. So then.
+So I called and let you know we will build the letters through macros. First I'll build some macros for the letters.
+No. What are the types of letters not on the reference letters? Right now the reference letters generating employ letters. One is reference letters. It can be related bank. It can be related LPG that is a gas related or SIM card.
+Loans and so on. So signed in addition. Yeah. Oh, sorry. They have different information inside or they have the same information. The purpose needs to be mentioned on the letter. Mm hmm. So then the the next one we will see is in India. It's mandatory that we need to give the.
+Relieving letter.
+And experience letter.
+So basically purpose experience. So these are the types of favourite of people exiting the company with you on the last working day relieving letter and then after the fill and final settlement we give the experience letter. Mm hmm. These are the letters in addition to this there is another type of letter letter of.
+That letter for visa.
+These cells.
+This is personal trip.
+This weekend. So now these are the did I miss anything yet? Lateral recommendation. No lateral recommendation. If somebody is going for PHP or something else, something else like that, then there is a little recommendation. What about employment proof? Yes.
+This is the first time you can use it for any purpose. We'll also show you that how it so for this. Then we thought these many types of letters and it's very difficult to do it then what we thought is we will have the employee self-service because with my past experience when I was working on work day or SAP, I was doing that.
+So I gave the concept to the leadership. They said that, OK, we will do it. So the problem starts there. We don't have a manpower. We don't have a budget. How do we handle this?
+Then I suggested we could use the bench.
+We'll use a bench, people. We will rotate the people who are coming out of the bench and then we do it, but there will be one solution architecture who will be able to do it and that's the concept that we brought it. And Neil uproot for, you know, the cost that's related to the server and all this.
+However, we recognise this set of people once mayor, during the annual exercise we take on the list and we recognise through someone time bonus or something like that. That's the approach we take and we started with this and where you can see now in the assist all this letters are self generated. You know when we say self generated the question comes where do I get the data and all these things.
+You know, while we are doing manually, we don't see most of the information is not available on our oops our portals. Then we need to go back to the personal files we used to manually maintain that hard copies and go there and check and do it. So we told that an employee the data that's available on dates on people, right.
+This will be the source for it and this information will synchronise into assist.
+Yes, if it is coming up, if you have a data, it will come. If you don't have a data then employee needs to update.
+Profile.
+And then it will come to assist.
+And now assist, he will just go to the portal and he will choose.
+Use the type of letter mm hmm.
+And then can you select one you can sit here and show?
+It showed the information that's coming up right. You can see that. What are the information that's available and during the COVID we came to know the other challenge that you guys are working from home. It needs to be mentioned for the bank first or anywhere because most of the companies are working then we have introduced there and toggle there switch kind of thing.
+I'm oh, yeah. Mouse. Yeah, it's OK, fine.
+It's my Mac is something.
+So it's.
+A title? No, it's a title, it's UID, it's pentress and start date.
+Yes, So what did this particular letter? Yes, this coming from people? Yeah. Mm hmm. Right. And this is just proof category as true doesn't play. Mm hmm. It has this. Then he will choose purpose. Mm hmm. Now the purpose can be a bank formal case or customer. OK, just click on the and he will mention. Mm hmm. Mm hmm. Can you mention something? Test.
+So do you have anything specifically for sending letters? Yes, yes.
+Your mom's still helping.
+This is key.
+So excellent. So self declaration we are taking from the information and then say continue the letter is generated and if I come to my documents.
+If you double click, it will come right click.
+Yeah, you can see that test. Where is your? Where can I see your download? That is the download.
+The letter comes in this way.
+I want the signature is just following correct Yep image.
+I'll also show you on this how we are doing this.
+So any of these letters that they can sees to sell? No. No, only just.
+Uh, yeah. From company. The company related letters were there. I'll also show you what is related. Now we will talk only related to the difference in this set, OK. And nevertheless we have just a picture of the signature. Yeah. Yes. But this that is good enough. That's.
+It's comes like from the letter, right? So this solves my time mm hmm on daily we can see some. Now it is being like hundreds of letters gets generated whenever they need it. So no dependency on our people function at all. These don't require any approval. It's already there in the system and you are getting it and do it simple.
+No, this isn't that. This is one related to self-service letters. Now the other one second. Now the experience and the review later. Can you also show the one reliving later?
+These are the modules that we have kept.
+So basically this functionality what we have done is so based on the last working day of the employee in the system.
+And the people you can find the right based on the end date. Mm hmm.
+The letter will be automatically generated.
+And but this is a relieving letter will be generated on the last working day, then the other one is experience letter.
+These two letters will generate automatically, but it will not revert to the candidate.
+We thought of doing this coding how the way we did this once. The relieving letter is generated, it should automatically go to the candidate.
+To be employed there is a possibility to.
+Bulk sending? Yep. So it's automatic now. This is automatic. Yeah. So body and state by end date it will automatically goes there at the end of the day that all we can be trigger around 11:00 PM post that the letter will be generated. OK. For some reasons the management task that let's also validate that let the let us generate it in your system. One of my team member will go there and click there select the people who have exited today.
+Select them and release the letter. That's the process we are doing currently. So now to do this we need his personal e-mail ID.
+We need to have this personal invent. What we are doing is this personal e-mail ID. We are asking them to update under the profile user profile. They can also do it on the people. You can see your contact number, my personal e-mail ID and everything is here. So just they will update it here so that the reliving letter can do any time we can just, you know rework on the code. We did not even ask my employee to go and submitted it automatically can trigger.
+Now leaving letter is like this. Now the experience letter we will come to know when the full and final settlement is done. Once the full and final settlement is done, the team will come in this week. We have generated 12345. These F and FS are done so the person will come select this five people and say release then it will go to the employee experience.
+So we are not generating any letters manually automatically. This letters will go to the. But here for now there is a manual push mm hmm in generating the logs. Yeah, actually the code is built back in where based on the IT automatically generates. But we some reason management ask. Let's keep a manual push. That's the reason he said once we do it, this is related to the.
+Ex separation modules. Now we are talking about the letters only right. But now if we see in the organisation.
+I just you complete picture of separation model.
+My employee wants to exit the company. The first step. What he do is resignation.
+Read them any portal. We don't have provision to resign either is A to the manager and manager goes and updates the request on the people, but we want to know that information because sometimes manager misses to inform that and the delivery of the practise may not have been in the last working day. They are leaving. So now the employee comes to the assist portal here.
+And you can see the exit category. This exit category will be. Can you click that exit card will all exit using. Yes, yes. These all are tagged to our people. Yeah, same thing is there. What are the categories that we have we made a click off here and then we can choose these things and we just give the comments and then it goes to the manager.
+Please don't do it that my mouse will.
+Then once it goes to the manager, it gives a picture that this guy has resigned. Please have a retention discussion and hrbp will be notified and the KB page link and all that will be given in. That may no they'll start the conversation and if they're trying to retain it's retain then he will come to this assist portal and say revoke the resignation. The employee will come and revoke himself as a resignation.
+Which we'll come to know that this guy has revoked.
+Now what we thought is.
+Can we have this integration? This is once the resignation request is raised in assess, can we get this integrated to people directly? So the idea. So let me just correctly. So the idea is that you need a point for employee where they want to just hand raise hand that I want to resign.
+And my reasoning is like this.
+Yep. So and then resource manage is decided, what if he wants to routine or just clean?
+And is there a timeline like how, oh, OK, we have some timelines notice period, right? The day he resign, we have a 60 days, 90 days the challenge what we are seeing today here is RM is not updating on people.
+Not updating on people so he's updating on the last working day. That's a problem. Audit perspective. We don't know whether he's the notice or not, but in practise do not have any visibility on planning on this aspects. This concern's coming up though we have a functionality on the people to go and update by the RF. It's not working out there. I can say that you you know here we have 60%.
+We can know that you know these people have resigned, but on the people will not be able to know.
+All right. So you as a means get all notifications about this resignation models.
+No, we don't get remains the people partners get it. People will get from our team will be able to know even though we are an exit management team, we'll have the complete information here like it is on the portal. Yeah, but we'll be notifying it to the people partner to the RM, OK and this information as well, just consulted from people, correct. Correct.
+OK, people in the sense that which exit is, you are saying resignation date?
+Here we don't say take anything from people here other than the employee name and the profile information. Yeah, I mean just information, yes, so.
+Speak and this is the the the most liked functionality from assist in our core of management team because everyone wants this button I want to resign and we always joking but it will be the the most use usable.
+New portal please and we will be the first users of this functionality, but it's sure sorry OK about the functionality for in place so I can't answer you right now. And frankly speaking as we just research investigate platform previously. So this is the most complicated part because currently we don't have any kind of.
+Functionality of execution functionality or any kind of substitute for focus functionality systems, but we will think about it for sure. Yeah. So during this lending tool platforms, so I think that it's not very complicated perhaps because this is OK, it can be just something like for example, just some small specific custom process.
+In people, for example, only for India, because this is like duplicating.
+Of exit request. So this is the same, but if we must provide, uh, another permissions, another set of permissions, OK looks likely or it can be something like 4 which is sent by a docs for example. So we need to discuss with the team. So for now today's call intention is what are the functionalities that we have assessed and understand where we can fit into the epamc tools. Yeah, yeah.
+Global tools and then we can see if everything fits 100%, then we will sunset the assist. Yeah, sure. If not, then we will continue. Yeah, sure. So that's why Ajit.
+From my point with you for sure, we want just to connect, integrate exit request.
+And.
+Resignation resignation from employee resignation statement from employ just because not to have such issues like you had few months ago about it. So yeah. OK. So we will think about it. So technical teams and solution architect needs to think about this solution I think so final solution and for sure it will be 100% so so the most important thing that you don't have any kind of.
+Paperwork. Under this you just have this form which employee just we are not going to cutting anything which is coming from P. Yeah, but people ask the exit formalities.
+Sure that we have given what are the exit formulas that they need to do it. OK. Yeah, I see that we are not replicating here in the assist because it should not be a duplicate where employee should not confuse actually that's what we thought. And then.
+No paperwork, no paperwork. The only thing they have the paperwork related to the payroll aspect, which they'll be doing on the 3rd party to not in the dependents. I wanna clarifying. I didn't quite understand what's the motivation of the employee who, like say that he's going to resign. Good question.
+That's an offer. It's it's not the motivation. I will say this is OK. You're thinking on the employee perspective right now. I will say it on the employer perspective, if an associate resigns.
+The first thing I need to have a info.
+So that I can go back and retain him.
+Right. Yeah, absolutely. Anyways, resignation. Here. Assume that this portal is not there. What he will do, he will just go and tell to the RM.
+Yes, we can't depend as a HR from the people function or from the business leaders. They can't depend on the RM. OK, if RM missed out to inform the management or the HR that this guy has resigned and we need to retake it, 90% of the cases are like that when they are going to RM, it will not flow to the management and this leads to the revenue leakage, yes.
+And suddenly he'll come and say this guy has resigned and he needs to live within two days. We will be able to fill this position in two days. Answer is not.
+That's the main intention of doing it today. The management is asking us to upgrade the assist portal. The notification not only the RM and HR VP. Yeah, we should keep the delivery manager. Yeah, VM and the practise manager should be aware that the standard test design.
+So that these people will act fast because it's impacting their billing and the revenues and all that, that's the main intention. So the employee hopes that they will come back and see employee resigns if negotiation goes well and stay back if negotiation don't goes, he will quit the organisation either yes or no. Somewhere the management needs to act on that, right. If we are not doing it and we see you know 2 days.
+You know, before his last working day, they will go to the management and say we need a replacement for this guy.
+You are losing the order, OK. And you see that employees do use this function and how? How early they tell you because the reason what we have mentioned is if somewhere in the EPAM systems it's recorded that today you have resigned from today, your notice period will not calculate, right, that's where they are worried. OK, I see, I see. But when they're told to the manager and manager says that no, no, I've not accepted. It. Doesn't matter whether you accept or not, but.
+Design my notice period will be 60 days or 90 days. Yeah, it doesn't matter. Yeah, yeah. That's all the chat comes. Yeah, I think that another.
+Source of this issue is that sometime ago I'm not sure now it I haven't checked any kind of reports, but sometimes you haven't got normal coverage by people partners. So because in some locations where we have more people partners so in play can come not only to the REM but as well to people partner and to all the sections by few people yeah if I if they are coming to know what is happening is employee going to the PPE partner.
+OK, you have brought to our notice first immediately go and update it on the assist. OK. It is capturing here. Now what will happen? The instruction is RM. It's your responsibility. Yes. Within 24 to 48 hours you need to update it on people.
+If we see our people dashboard, it says that number of resignations, number of retained cases and all that insights is coming up. If you don't recover you know update it here and you know I've updated OK, Neha resigned. I'll go and update within 24 hours and then I went and retained that. It shows that a credit to the people management of the business that OK we have retained Neha it will show that.
+If you go and update, if I go and update it on our last working day as a 1st of August, saying that Neha has resigned on the same day she's going, that means I've failed not to retain her and it's not recording anywhere. OK, that's why we are making a process that they need to update the resignation. Yeah. So one more clarification just to understand. So this is like voluntary termination, but when we're talking about involuntary.
+Change part one involuntary.
+OK. The mindset in India, if we are going involuntary exits, there are two types of involuntary exits. Again one is unauthorised absence or absenting, OK.
+It's on absence and all that the other one we call it as we are asking them to leave. Yeah, that I call it like Teri.
+OK.
+In this case, we don't require anything on the sys portal. OK directly the RM or the people partner go on to the people and update the index and close the deal. There is a process we send the notice to their home and we give three to four days working time to respond. They don't do it and then we will do it. Now the termination case. If I can get an employee, we don't want to run down.
+Our performance issue we are terminating, but EPAM is always good to employees. What we say boss, you go to the assist, update your resignation, OK and exit. OK, I see. And we will say that instead of 6019 days we will relive you earlier. Yeah. Yeah, yeah. With money. So let's say yeah, something like that. So everywhere we are safe.
+Yeah, I see. OK, got it. Or if you're taking this, then I should write.
+So, uh, sorry. No, no, it's it's OK. So as well, just to clarify, just using the possibility. So I know that the next request request you have two exit dates.
+Something like end of work and end date.
+We have two dates, one is resignation date and Resched resignation date is nothing but the one it's captured on the four. Yes, I see.
+That's there only for India, not as a location for now, but we have searched some very similar requests from some location in Europe. I think so. But yeah, so and this resignation date. So should it be fixed somewhere or it's just like for dangerous just to calculate on the spirit? No, no, no, no. OK. The resignation, the definition of the resignation date is very simple.
+Employee informs resignation date.
+End date now the resignation date either captured on assist mm HMM or informed to people, partner or informed to the RN OK. Now if somebody comes and tell to the RM verbally it will not come into the consideration from where it needs to be recorded. That's why they are we are asking them to write a request on assist. It should be known to everybody now. Once it is there he will go.
+And update it on the people. Then he will update resignation date once the resignation date updated system is automatically calculating the end date I see based on the 60 days online, 90 days again considering the available.
+It out of populates. That's how it's happening. However, the manager has a flexibility to downgrade.
+The this end it and because I don't have any dependency, why should I increase the cost of the epee? Then I'll terminate him immediately. That's all we do it. Thank you.
+English cheese.
+I'm thinking for testing.
+All the information so so you can see these are the exact reasons exit comments. Can you show the manager actions also the revocation mode, yeah.
+So right now you'll find everything, a few older ones also, because you know there's it's just there. But.
+I do.
+Like any groups, work with assist directly I mean.
+I don't download some reports out of it, only our team and the people partner team.
+And the permissions are provided by role or.
+Best can you go to the country hansh. OK, we are. I mean, yeah, we are the admins from our team.
+So you assign some eks in pre withdraw. OK so that's easy.
+And permissions just considering roles. So somebody said this somebody sits, no, they see full information about each input. There is nothing information here, only actions.
+OK. But then who see the information about exits? Yeah. Exits manager. Yeah, almost for that role is not required. Anyways, if they have any mapped, it will show up. I see that.
+For example, now HR VP, why we have given that role Hrvp is nothing but the people partner role. They'll be able to view the all the exit details. That's where they'll be able to know that I see. And the payroll we have separate module for that. They'll be able to view the payroll which we will let you know later on there. So admin is from our team. Yes, we will listen and we'll be working on and if you see the can you also show the.
+You're asking, right? How do we map this and all that?
+What will happen is Srinivas Reddy will log into the system and he will upload his signature here and then after he uploads the signature here. Can you go to the signature mapping?
+This is a place where an admin can come and select the letter category employees. Can you select that letter categories we have the different types of letters, frequent sweters compensation letter and subpretation letter. And for all the employees it will be signatory Srima's ready and just add it over all the letters will be tagged with that and for Sheena's ready what we will do for Srinivas Reddy is letter. We can't keep Srinivas ready.
+We usually keep the head HR signature there and but right have it done. Right now we don't have the HR for India for now. We kept it like open.
+OK, so this is a simple approach which we are using for signature mapping and the role mapping. But this is only one exclusion correct? So only.
+So only showing is excluded from general PS. So now for example all the reference letters we usually keep.
+And for all compensation letters, we'll keep streaming, OK and upload his signature means he uploads a picture. Yep. Yes.
+Brows down the top, you have the brows we have given that he has not had that, OK.
+So the resignation letters are part of the reference separation. Separate you you can see the initial. It's a different status is 1 module compensation with US separation module nominee details and salary. OK so which we also have in which I can spend these are the modules that we have we have us yeah and system configuration is where we are correct so I can yeah when you go to the system configure information yeah significant mapping in the room mapping.
+Talk and then if you can come to separation modelling and you can see all the letters of an employee experience reading letters and resignation based and all that can be viewed here by the admin. This is under the admin tab. Sorry Ys experience letter different from reference letter reference letter is something and we're getting there actually separation as part of the separation model it's a separation process where we are supposed to do the letter was there exit.
+OK, OK.
+Information contains reference letters.
+Suppression.
+E experience letter, the experience and all that.
+We say that you have resigned on resign and your last working day will be this.
+He talks about that. We can show one letter otherwise. Yeah. When the experience letter talks about this start date end date with this tied in and all that and we say that OK you have done well with Deepa and thanks for your support, blah blah blah like that.
+Oh OK so.
+Here is you are legally obliged to give that letter to the employee. We are supposed to do it in India. OK. This letter will be used in the next organisation. OK. This is the letter I sent to the person only. Yes. Yes. This is as soon. I mean on the day of exit. Yes, it sent. OK. And then we have the experience letter. So do this send to corporate e-mail or to personal person?
+Which one you send this experience? That's the first thing personally, because one they'll be exited from the company, right? So both personal. Yes, because of the data will be deactivated, right. So yeah. Yeah. So we had they hand over the address. So there's no way that. Yeah, please.
+So you can see a date of joining last working days rule and all the best for your future.
+And press. Sorry, personal mail you take from the file, correct. Yes, yes.
+Do you have relocations in India, like people coming from location? Yeah, Gmail. Yeah. We also give further. We have, I'm asking basically we have been struggling in docs to catch the correct start date. So if you for relocated, we could employees who were showing the start date provocation in oops. Then we have, right.
+There we have two dates. Start date in your location.
+And global study, correct. But in people it's showing only the start date which is in his previous location. So currently we have as the innovation apps. Are they in current location we added so it's not a problem. Yeah that that will be considered for payroll. Yeah. OK. So we'll use the same thing.
+So now in people we have 344 star rates. So Starlight in a time position * date and star in current location.
+33 so we add this current.
+We have pre acquisition season for this position for.
+This is about this operation margin.
+Data and current location started with mapping. So if you prove the app, maybe you don't have because she yeah. But if I I can show you my profile. So I have different star dates. So yeah, was located.
+We have. You can search here. Yeah, yeah.
+So we go to it, we go as far as we have issues with relocation relocation. But the challenge here is if you take this start date in current location, there is another problem here.
+Now we are in India, right Ind. In India you have.
+Seven locations. OK. Somebody moving from hoid. I I can be. So I just tell you that we calculate the study considering change of assigned country. Yeah. Country. If you then the needs to be changed start date in the current country country. Correct. So good point. So maybe we will think about it. So because we have the same issue with internal the next decade right.
+USA, for example, and that that's very because of this. There is a issue happen for us people moving from Hyderabad. Yeah. To Bangalore. Yeah. Yeah, yeah. Even for them exit password created. Yes.
+Apparently, do you use domestic or domestic for domestic locations relocation request or you just do it via a location change just location change?
+OK, because it's created a problem for everybody. You know, exit request is called the exit tasks by the way. So I don't know whether it has been resolved. I need to check with the team but has has been synced that currently after integration of exit request from OOPSA to people we can't have separate setup of tasks for separately global location and domestic. So yeah if you will be ready for that. So we can do this. Actually we don't want any exit request or any exit.
+Created for the domestic real estate and the next step for relocation request, which we plan to do, this is just.
+A fully automated change of attributes. So currently when relocation request just arrived to Windows desk they do this changes manually yeah each change. So our goal is to make this automatically OK and especially it will be comfortable and useful for domestic relocation only a Santa.
+City has changed.
+So yeah, this is our we also I think that we need to talk about it just as well.
+We'll be more comfortable for you to submit relocation request domestic or just more than support requests.
+OK. We have discussed this too.
+Now I want to the third one called.
+Valerie advance. Oh yeah.
+Oh my gosh, so this is the request for server response, correct? Yeah. We have a policy and just read the policy.
+So we have a policy called emergency room grant or salary advance, somebody will say.
+Financial support, anything and associate can get up to one month of his cross, one month gross gross salary. I see what once in advance. Yeah. So when this will be recovered in three months.
+From 123 three months, you know more than three months. It can be also happen on exception basis, OK. And this is the general process exceptions I may sometimes extended based on the tenure and the seniority or the criticality of the role. I may extend up to three to four months also.
+And recover it the Max that I've done is 3 months is one, you know minimum and the Max I've done is in 12 months.
+What do you need? Recovery. So we are paying amount to the associate in advance and whatever we have paid, we will be recovering in his salary. Oh.
+That's called recover.
+OK, so it'll be deducted, right? Or advanced. OK. Yes. It's like low on. Yeah, correct. Low low. I mean interest rates interest rule, right? Yes. OK, right.
+So just one clarification. So when we are talking about just full salary, just advance exactly financial advance. So we're talking about one, three months, if we're talking about let's say loan, it can be free, no, it's the same, same, same, there is no we're calling it's advance for A to a for your understanding you're saying I see. But when you just approve this request let's say you were looking at me showing you how we are doing it. There is a section where the number of months and hours, OK.
+Mm hmm. OK, can you go and?
+Go to an employee's thing and just mm hmm. Today we had no come to assistant just to be.
+Come how to raise a request? How to? So I was on that page earlier. Actually earlier. Yeah. If you see on the home page then when they click on this I'll be advanced request. They can choose the advanced Skype. Go to the advanced category there. And that is only one is there. So now if you see here the information that comes here and you can see the reasons marriage search sibling gates.
+Medical emergency and custom if something is required and then just select one.
+One month process per policy. When you click on this if something extra then you know they mention it here and then they enter the amount and they will use evidence to see if for example that matters. They need to give a reading card and of course medical related. They have to write the documents and request. Once they're submit the request it comes to us, although we are in admin, we'll add that request there. What we will do is we will approve by seeing that document validation.
+One of my team member will validate that document and then what will she do is she'll come here. She will see the document. But I don't think we have any request.
+She has tolerated and closed it and then we will go and operate that if one year. Yes on the assistance, once we approve here then it will go to the finance team. Finance team also looks the request who has approved and what is the amount there you can see here if you see here the document amount and you have the recovery period month yeah here we updated whether it's a three months six months 12 months I'll update it and then I'll upload it then it will go to.
+And then they'll consider that amount as a payment and they'll do the release of payment with there 1-2 days. OK. So if you are calculating how long the recovery period will be for them, it depends upon the comments and the requests they are doing it. I will take the value from the compensation portal because it's not integrated with the comp portal. Yeah. So what we do is anyways, we have access to the comp portal CD per month value.
+And come and update tier and submit it. OK, so finance team will take that and paid?
+It's the financial just just isn't the financial team also doing the improvement essay? Yes, once. Once we have, that's why we have the role as payroll. Once I approve it, it will go to the associate saying that your request has been approved from the tier and it has moved to the finance team. And once the finance team is uprooted then it will say that you know your amount has been uproot and it will be dispersed soon. So that notification also goes to the candidate. So. So the chain is paperwork, corrections Team, financial team and resource managers.
+The only reason?
+This is excluded is OK, so only your example.
+Yes.
+Let them do this. Yeah, they will be happy. So just to clarify one more time, so I I think I understand what what part of missed. So you mean that the the amount which employee can request this is from 1:00 to 3:00 salaries and the recovery period it can be any amount, it can be resource, any amount or just OK any amount outside of?
+As per policy, it is one month OK. So for example I was.
+Recipe.
+I will. Yeah. Send you request. I want $10,000 and the second life chooses the adhere this recovery period, this three to four month salary for example, your raw salary is $2000 and you are asking for 10,000. Yeah. Usually I gave you the stats, Max. I've used it up to three to four months of salary where we have uploaded. So got it. So I missed that this the second one is about recovering period. Got it. So this is like I would say go on.
+Steep and the OK, so this is not like because for example in Europe advance is look like OK please give me my salary before I just earn it.
+But I will never recover you just count it as my future earns. No same thing. OK, regard from your future earnings only. No, this is also earning the same. No, but I think she means that if payroll is supposed to happen on 30th, he's asking for 25th, right? So I'm taking my salary, my salary. There is no recovery as such, right? I'm not getting paid again on 13th. No. Because on 30th you don't want to pay. We also do that one or two cases like that. Somebody needs the salary on 15th. Yeah.
+And they say that, you know, don't pay me on 30th.
+I think in the 30th AH, we will do it. That that's not a problem. We are flexible. So is it possible to request a partial recovery? For example, my salary is 2000 per month and I ask 10,000 and I just send the please just deduct 1000 per month from your salary per month is 2000.
+You have requested for 10,010 thousand. Yeah. Yes. Now 10,000 I if I divided by three, it will be around 3300. Some change.
+Right. Yeah. I can't recall from your monthly salary. So what I said here is based on the amount, this is related to the amount this is related to the recovery. This is recovery when the months has increased. Yeah, recovery period also will increase. OK. So I mentioned, can I request some kind of?
+I can't you'll send request, but it depends upon us whether we should do it. Poster. Yeah, I see. We have like a boss here.
+Then I have a question. What happens if the employee leaves before the recovery? Oh my God, that's the criteria we checked before applying it. The reason is now, for example, we have on leaves.
+That leaves will be there if the leave balance is more than 30 days. I don't have the risk to do it. I can go and do it if it's a new joiner, we'll say we will do only one month.
+We'll not it. For example, one of my team member, she's been in the system for 15 years. OK, now what I do is OK, she needs the four months of salary.
+We give her and we record in 12 months.
+And because of the loyalty that we do it and in case if she exists also she has two months of salary.
+Which is there already in the system.
+So and also if they exit also, they're all statutory obligations, is linked here with us unless we approve it or we go and update his last working day, it will not be able to withdraw anytime that's going to impact. So the risk is very low.
+Which help you to make decision.
+Or you just check.
+Reports you have. I mean, just just exactly for this process. Do you have something like?
+Related to the leaves and all these things.
+Yeah. OK. First thing is when the amount is less than 111 month or less than one month, my team validates the document and I approve blankly. If it is a more number, the amount is more than one month, then we do the validations. Otherwise no. And you want small bank inside.
+I understand small business, small financial organisation.
+Banks, commercial models. So this is like small financial organisation which provided us.
+No race, no race. Just clear some.
+And this is not helping them for all the reasons, right? If you see the purpose is on well-being, yeah, medical emergency. OK. And the life event.
+Other than this, we are not. If somebody say came to us and said that I want to purchase stocks, give me 10 likes. We said no, somebody came to us and said that I want to buy a car, go and use a car lease policy instead of this. How many cases do you have per month?
+Per week 10 to 15.
+So 1/2 of our employees something like slave or a year, yes.
+That's where we are. We paying the people, right? Yeah. But these are the best practises we have in India. That's what. And also there is a tax implication to this. There is a tax.
+That comes here. We we are not giving it free of costing right. We are not charging the interest though. You are taking this benefit. There will be a slightly purpose in tax.
+That will be around some 0.3250.320.5 percentage, OK.
+Good, good, good. So now you're telling me if I don't have a system, how do I do it? Good question. I think it's possible as well because it's not very complicated. We need just to land at some. Correct. Yeah, right place. So just want clarification when you talk that finance team get this information. So assist send notification. Yes. Yeah. Yes. They get the notification. They'll be able to see all this. OK.
+And they need, they just invite us to assist, just to check all the details. You know what? What's happening on the ground reality. People do not follow the base.
+Our team.
+Just kept 1 tag daily 4:00 just log into the site and see number of requests validated and approved and same way our finance team just log in daily, Go check and do it too many mails. Oh my God for support people people you'll get it level up, you'll get it. Exit request. You'll get it. Attribute changes will get mails and then by the way, when I when I log into my system I'll show you when it is connected.
+94% of my inbox is already closed full.
+And I'm keep asking my IT team. They said that either you exit and rejoin, you'll get a new.
+They keep jerking with me. Alexa speaking. That's the topic which we usually discuss very, very loud with vacation team because I just think that the the non actionable notifications are not required and this is use useless and they told me that OK they will see notification and go to the system OK.
+Then why we need the insufficient for reach request then some digest for example or something like that. So yeah this this is, you know being very hot in other locations for each portal and each process we have separate set of people right? But in India mostly it is RT.
+Yeah. So if you, if you see my inbox, I'll get the notification related to the time vacation portal. Yeah, people portal level up. What else?
+What docs, docs, yeah, screening is screening. If they do it, then what else we have assist?
+Join no right and related to the onboarding.
+Telescope audits compensation compensation.
+And then the one of the compensation there obviously see all this notification. You are very popular.
+Please. OK. But I mean, you can turn some of these off on notifications, but they are like, oh, what if I miss something?
+Right. So it might be people currently know because we just review all the permissions, but.
+Was like with exit newcomer blah blah blah requests, so I had something like 8000 notification. I just mark always redo it.
+Once per water.
+Rule. Yeah, I have the rules. So this this in this folder is all school, you know? So you need to clear it or your outlook will say amount it.
+OK, you can see on top.
+Uh, huh. Oh, OK, good. And you can see number of rules. Yeah. OK. Yes.
+You're very talk.
+OK, let me know any global rule, I'll just quickly move it.
+Enough in 10 years in EPAM, India that we could send you anywhere.
+There's no chance forever, but you see my regular inbox. It will be very low. Yeah, without clearing this inbox on the daily one. I'll not go for the bet. OK, let me come back. Yeah. Today is 61.
+One as well, by the way, but this so we have not much time. So. So this was one, the next one we.
+So Divan it is related to.
+Nominee details. Oh yeah.
+Because they can answer.
+Maternity. I think somewhere deepen is not looking at this one.
+Maternity. Yeah, which is this is very question. We have this in our assist. I'll tell you what is this actually which one you're we'll go with the nominee. It will not take much time. OK. Very fast. Yeah. You. This is the portal. And we also same on the profile you can see the nominee details and these are the details that we give you to our if any we have a demise in the time system.
+We need to have this percentage of benefit that should go to the family members. These are all are related to the insurance statutory obligation. Yeah. And it's possible to make it difficult. Yes, it's reason. But we are not doing it. We can do it, we will do it. But I I I didn't hear that. What's the OK, fine.
+Recently also.
+The GPA is personal, accidental. If somebody pass away, you need the accident. Then they will get this and real time service CTC or 50 laps will be given to you Sir. When future service gradity from date of his death to the 65 years of attending the gratuity amount will be paid to like paid to the nominee. OK for the financial support.
+And group term life insurance. Same thing. Any reason that employee passed away?
+50 per 50 laps or three times office. It doesn't mean they pay to the employee family.
+And where do you pull that information? How many person it is? Or is it?
+Every employee has this information and I can pull out the details in the through that. So is it answered manually? No, this is by the candidate. The employer, for example, she's updating here. She has given hundred hundred hundred. If she wants to change, for example this, she will make it 80 and she'll make it 20 and add somebody else.
+So only one so that they will not come to us saying fighting, because if now we have one normally it will be 1.
+Legal information that they associate as mm hmm provided this information. Based on this, we will be providing you the transfer.
+But like if I happen to fill that out or good question if you have not filled the form.
+We have on the docs.
+The docs there is a nominee thing. Yeah, default it will take was a good thing. But that's you know. So 10 years back, whatever I filled and if I've not updated our team follow-ups regularly whoever is not updated we sent you know once in a six months or a yearly asking to update it now as of now 90% of the information is available. OK and do you like you have to contact that person.
+User Bot send one mail, one message card asking them to go and complete the information. Yeah, it's not from so as an admin I have this where I'll be able to search information and she can also download the Excel file or call the employees and we can see.
+What's about the nominee details.
+And now maternity.
+Just just one clarification, sure about.
+To go to do you do you need.
+Do you need any kind of agreement of in place to use personal details of third party? So I mean should we have some kind of confirmation or specification for employee that just provides in these details you agree that company can use it to contact.
+This is this, that state in our policy, so the information provided for will be easier, it's there, it's there.
+Even during the insurance in every year, while you while we renew it today also we take that declaration.
+Another maternity.
+I'll just make it 3 parts.
+One employee female employee plan for maternity.
+Where she should go and inform that information. Firstly, it should go to the RM if RM missed out no action, we can do it and they don't update it on the leave portal, no impact, so it will be a loss to the company she's going. I leave an extension and all that so employee comes to the portal and submit the request. Can you go to that screen? You are here? Yeah.
+Yeah, here's your first pregnancy. Yes, it's first. It's second. If it is the update again, and then we'll leave stash changes selected.
+And it automatically calcates the leave ended when now you're due date. When is she expected that date change will mention?
+And we have even a link to the metallic policy and insurance and submit the request. It directly goes to the RM and the support ticket, right, first for RM, for August RM RM approves it. I know this and this submits support request and for vacation business desk, yes, not a story one. Sorry, not proof it directly goes to the support.
+To update the employment status to parents LV, you can trust them.
+We should do it the approval of because here what will happen, you know, if RM misses to go ahead, the employee responsibility will go, she will go and sit with R and fight and go and get it up. So then you will get 100% result there. Once she gets that uproot then it will go to the support for the you know status change and also the vacation portal. It will be shown as paid and then paid maternity.
+Now here the problem starts.
+We are not worried about the first six months, OK, because it's paid maternity. Mm hmm. And your comport will automatically defaultly or whatever it will remove the salary and we will pay process the payroll.
+The challenge comes here. The notification goes to the support team after the end date has been notified. They are not updating or revoked. Revoking back the paid maternity due to normal stage that's creating a financial loss to the company.
+What you mean? So you mean just change of status of profile from exit to info or hold 2 hold to active hold two active 2 hold that will do it. Yeah. Basically they will do it which is not an impact. So nobody change. So that's coming back to work. No big question. There is a two way after six months.
+One, they can be back to work. You made it.
+The other two is they can take an extended maternity leave for another three months.
+This is a problem when we say three months extendedly. Our support team feels that it's extended leave, OK, just they go and update the extended leave if they like, apply the extended leave. The leaves will not be deducted, they are getting 100% payout.
+OK, so they do this. Three months is extended lumens. They need to apply the paid leaves, the E LS.
+CLS or sticklings whatever it is there. Ideally, we'll ask to apply the Els only if the regular vacation Els is nothing but the regular vacation. They need to apply once they exhaust with the regular vacation then they need to apply the lopd without pay.
+This needs to be updated so that there will be no financial impact on EPAM if you go and update the extended leave on the portal somewhere, it's not deducting the leave balance and you are paying the full amount.
+I see. I see. So I think I think that we need to work on the leaves order and leaves cross checking each other. So it's possible to make the for example, one way can be used before the other leaves is full. For example, while you have some kind of annual leak, you can't use leak without. But we can't do it. OK, so we just need to check.
+You got it. OK, now what assist is doing on the ML, right. It's pending request from employee.
+Pavement I need to use the RM of Rd, then it goes to the support.
+And update the status in people.
+On vacation?
+This is what is happening.
+Now after this the system also does another one.
+Now here it also notifies, sorry from here. Employee will be employee details will be notified to the insurance company.
+Employee will come back to this portal under update the newborn details.
+And where we did it, this will go to the insurance company and they will be added to the insurance benefit automatically.
+That's how it was post.
+I can't sit and my team can't sit and do it manually.
+And yearly we have 200 plus ml cases.
+So I just miss sorry, but this information about you born. Is it about to assist that? Yes, so.
+So when I raise the request right, OK. And let's see, I have something I enter a due date.
+Tentative due date and then the employee wants the due date is crossed. They get a reminder saying, you know. Did you have the baby? Would you like to update even if they log into they will be seeing that. You know your date due date has crossed. Have you or would you like to update the due date. So if they're given birth then there itself they can enter they don't need to like names and all else so we don't need we just need the gender and the date of birth. OK got it so.
+And the information, let's say manually send to insurance. No, no, no system generic. So if you see this is from ESS to the insurance.
+Nicely. So over the day it collects information. I can come today to now maybe someone else comes up an hour later, update every day one job runs and the mail that result in a degree. So why you talk about that? You were team come to when you were. So you mean if there is no we we we don't have any functionality for this. OK so I think it's not a problem. So for sure we can add this functionality to people profile we have it so we need just do a little update for your.
+For your needs, for example, I don't know maybe add to because we don't have current agendas, I remember, but it's possible to physically.
+Keep this there gender is there and people one of the attribute is gender. No I mean or the kid kids gender. I think just. Yeah for the child.
+This is.
+Our kids gender, I think is there. It's there. I think it's available. Yeah, OK. It's possible. So yeah, there is no kind of other critical information. So we can right. The only thing is with sending 2 vendor and we can use for example.
+Connection with dogs.
+As docs, even the entire SS this salary. Sorry, this maternity process can be simplified by using two tools vocation 33 tools like vacation and people. Two tools employee can come on to the vacation portal yes, and rides the request. Sure we can do it. It's and I've given this request long back. They said that it's a global approach. We'll not be able to do it. We can't change it then. OK, fine. We will build on.
+We can do it. We can. So by the way, so I'm just trying to make the call with the to make a meeting with Shreeni as well, because for example, he's very happy that we can do out approval for regular vacation. So we will discuss if he will agree with the that again he'll come back to me.
+Should we do it or not? Should we do it? Yeah, because I was taking care of that. Right? So regular vacation, auto approvals, even. I've given that notification. If somebody passed that date when their plan lives, we said we'll do the auto auto approval there. So for sure, I will. I will. But only the baddated leaves even. It's coming to me. If somebody is applying the backdated leaves, they're saying that you know it can't be done. That's the agreement we have with the vacation team. It's already implemented. Actually. Yeah. It's.
+If you if I was not going and approving my team member leave, she applied a leave of third June and it's not happening. It's auto verified and approved.
+It's there because otherwise it's coming and sitting with me. So I said please, I don't want you please auto operate and we discussed with management so it's aligned OK.
+OK.
+Then this is related to the metadata. Can I go ahead to the last one? Yeah, because it seems very important we are. We are worried about it. So yes, you can also join then.
+But I think I would see as well just, you know, waiting for us.
+So compensation now this is.
+Typical for us.
+That is not true.
+These are these things are not critical. These are selfish things that which we are built because our people function should not suffer and save the bandwidth here. But this compensation, if we are not giving it employees, will start leaving the company simple.
+Any change the problem statement?
+Any salary change?
+They need better simple.
+The neat thing you give do the salary change. It can be SMT, SMT. It can be reactive directions, it can be annual.
+Annual campaign.
+It can be proactive, it can be promotion.
+We need a letter. Yes, they don't trust us. If you give a letter, then they trust that. OK. You're giving letter and agree.
+This is nothing but an agreement of what we have said. So basically your complaint. The second what three actually reacting reactive attention properly.
+Employee has resigned, who resigned OK attention and this is proactive, proactive just we know by rumours that he wants. And last one of promotions. But we also have A1 to A2OK.
+Assessments. Yeah. Let me see.
+On annual campaign this is annual campaign, winter winter campaign or whatever you think the January campaign sort of. Can you just go and show that what we'll do. So in this we have captured the compensation details.
+So we have, like he said, for all the different changes we have, even if it's just an annual bonus that is being released, we have different templates. But right now mainly, you know, even the earlier GTS flex to fix conversion, also we have a separate letter. So whatever it is as per the requirement we select that template which prompts me to download.
+This excel with names.
+I I will have to enter the names basically so the employee ID. What is the salary structure that we have in India? The current salary structure?
+The revised salary structure. Oh, you know what is the type of letter that is going? Because we unified everything right now. That's how we made it. So it's just a salary hike that is happening. Is it a salary hike with promotion as per that, the letter will change. When is this salary being effective?
+Do they have any, you know, on target bonus or a retention bonus, something that is also tagged with it, and with winter campaign also they might have some sort of an MTI bhbk? Yes. And when is the next promo eligibility date? All of this information for everybody, we fill it out. You know, even winter campaign for and you coming July we'll be sending out for 10,000 people.
+Exactly correct. OK.
+So one and then we'll upload, then I'll upload the filled Excel, I will upload it, I'll browse and I'll upload.
+Once that is done, it gets.
+Loaded and I will be able to see that here this is you can take one example. Yes click on the name, click on the name directly Globe.
+So this is a promotion and a hike. So the promotion they have, this is the new salary that they're going to get. Then you know the current and the previous. This is where why we're collecting the details. Yeah. And it says the next promotion eligibility would be in the next winter campaign whenever that happens. And just standard, you know, notice and all the terms we just show, they can just work. We'll also show the all the benefits once we get to them.
+Well, then we'll be just calm down. Calm down slowly.
+I didn't charge you.
+We didn't want it and come on. And we also mentioned the notice that because if somebody's moving from the one level to another level and there is a change in the notice period, so then it's a proof we have informed. So you need to serve the notice. That's all. This is an illegal increment now. And with this employee can also come to the portal and he will accept that I'm accepting this letter as well.
+No. When he goes. So I once we release the letter, they get a mail saying that your letter has been released. They come here, then they here. I can see my letter.
+I'll accept it.
+I have a couple that I'm not accepting, but yeah.
+So this is like mark from we play the he or she's story. So I'm she's accepting it. They need to push that button as accepting if I don't want to accept it then we will know that they have some concerns and that can be you know export that check one by one yeah we haven't excel there we can download there and our people partner will work there obviously yeah and if they're unhappy with the compensation right.
+It's the most important part where to take that all that information will download from the compensation portal. We'll upload it here. The expectation is we have discussed this with the compensation team 2-3 years back. They said that now it's not feasible. We have asked for the API where we can read the information from the compensation team, compensation portal data and Fitch in here.
+OK.
+So whatever then we have other way. No, we have seen the bulk. We also have the generate the individual letter also.
+Gender or, you know, there also you can you want to do the bonus letter just just type the employee search.
+You are my name you can take.
+And payable month previous year, what is for which period you are paying and the bonus and you give the password, it's all will be password protected. We have the tax identification number which is only with us. So that will be you know you know incorporated here so that when they open the file it will come with the password protector. So it's a secure thing and as in admin team we need not go and every time enter the password because we have that already in built so we'll be able to view the files directly but other employee when he logins.
+CD uh PDF directly because he needs to enter the password.
+And this is SS.
+OK, I see. So something else on the system.
+We have many things I think we could.
+Yeah. I think most talk with us covered, OK.
+No. What is your feedback on the system?
+Oh, so it's very, very good for one location.
+And.
+If we don't have any kind of influence in other systems, for example like with exit or something like that, so it will be perfect. But as far as we need to have the same information in that way in other corporate systems. So that's a little bit issue you know so but but most of the biggest part of the functionality is possible to land in our systems or.
+Create something based on the corporate system just as well to reduce the operational efforts of your team. Yeah, just not to open assist people, but open people and do everything sad people. So I I think that we can do for sure.
+You need all of that with branch people.
+Not even Ben's. I think they're voluntarily. Basically even they're 90% of them are working in the projects and they're also supporting us.
+Did not more than three to four people. How long you just?
+Create and repeat. Let's see first MVP I was able to create two months, two months with six people, but now we are struggling.
+Strategic question, yeah. For example, the reference letter sparks, I really think it can land in docks.
+But there are definitely some parts that we will need to do some development.
+From police like I, I understand that we have to discuss that. But from this outlook, do you think we can roll out part of assist functionality in docs and keep assist for the rest of the functionality and do it like?
+Percent aligned to that, we can do that. We can do that. Yeah. I've always keep saying this to all the global leaders, right? Whoever connect with us, I always say one thing while you are developing a product involve the location specific and take the requirement so that you will not see assist, one assist two assist three right then it will be easy there. What we are seeing today at least some change is happening in 2025 which is good.
+They build a tool. I'm not saying exclusively on one particular portal, right. They build a tool. OK, you please use this. First of all, why should I use it when it's not helping me? Great getting their location. That's where this collaboration started from 24 mid of 24 and now we are seeing some changes. I've always been like that. You know, we should not use a separate tool. Let location.
+It should be a global tool, but we are also expecting that said OK, somebody involves and we can do that. So I think that for sure we are trying to find some project manager if our question.
+You didn't write all the sections for sure, so it will be easier for everyone and I think that we will ask them to investigate and divide or, you know, imply racing apart and operations based part and it will be easier for us to manage the, the OK. So you can involve us if you required, we'll be happy to support.
+What can you hear? You asked. I'm so good with that. I mean, that's just just to be sure that everything goes smoothly. So for sure we need some coordination. Yeah, for sure. We want just the professional preparation. Yes. Yes. Class are like two professional project manager. All the and not to miss something important. So and that it will help us just to understand full ecosystem how it will work together and.
+Perfect. Yeah. So I think that we can do it. Consider, let's do it. Yeah, let's do it. So considering that we promised to audit team that we will work on that. Yeah. Yeah, because all, you know, never joke about it. So yeah.
+We are good in managing audits, by the way. I know the last 10 years we are able to do internal is more complicated than any other. So is it? We have never seen any criticality concerns coming at India location while we manage our audits.
+But this year, the exit now actually it's missed from my side related to the NDA one, not the internal audit that's related to the ASO audit. They've identified that the NDA signature one and the exit tasks they've identified these two though they kept it underminer. But I feel that they should have not come back. So by the way so all these tasks currently, so onboarding task and onboarding task and PR reply discussion are celebrating.
+You can for sure customise the exit request that it's not a problem. Somebody already reached out to me from my exit side, so my parents and relocation request is a compensation of NPR tests and editing tasks.
+So we can just run them together, we join it together. Yeah. Yeah. So, yeah, if you feel that you need kind of review risk, it's up. No problem. Just create request and we will do it immediately for sure. Perfect. OK. So then sorry for so long, but it was very productive. No, no, it was good. We are able to close it before 2:00. Yeah. Great.
+This will be at the last one you talked about functional, which you will get. Yeah. Today we don't have anything right. No. Today not. But I want to ask sometime or some attention from yours. I should just talk about over times about time reporting some kind of time. Yeah, we can we want to discuss on the time portal as well. I don't see that we have blocked for time for that we can yes we don't have so that's why people and we have some time tomorrow for example.
+I'm I'm going to see entire team is available this week in office only to connect with you whenever we have some time. Perfect. So what do you think about?
+3:30 tomorrow three.
+3:00 PM tomorrow. Yeah, we can connect for hour, right?
+We can cover the time we can cover the vacation. Yeah, but we can do it then. Hour and a half.
+Oh, yeah. OK, yeah, we can do it. 3:00 to 4:30.
+Yep. And we have tomorrow's screening. Yes, yes, yes. Then I will sit down and look at the report.
+Please help. I was making them to sit. They're not here. I'm telling you. I was making them to complete it on nights and weekends also because I get pressure from Monica. This is not happened. This is why we are not like. But they don't know the challenges here, right? Only two people. Too many of requests. They need to do it manually.
+That's the challenge. I keep saying that you give the bulk upload and excel. They'll upload it so that that will be easy for them. But they're saying now again to the support giving the clarification, I want the responsible to keep it on them, let them fail for once. Next time they'll learn and do it. No. So that their dependency will be less. Otherwise, going and doing individually, that portal itself will take time. It's loading, loading, loading, loading and it's a pain for them.
+OK. So yeah, and we have anything on Friday, sorry, on Thursday.
+Thursday, We need some kind of here prioritisation on Thursday evening or on Friday.
+Placeholder. That's one.
+For weekly, that's on Thursday.
+Given Chinmay will be he's on travel actually is back to Hyderabad tonight and he'll be available tomorrow day after I'll introduce him. Also, I think you've already connected both of you and he'll be here. You can say hi to him tomorrow.
+On the same call and Thursday, if you want to connect for some time, we can connect. Mostly we have summarization session with talent acquisition as well. So and but maybe we can just keep something like from 4:00 PM. What do you think can we have one summarization call what we are going to align from our side and I think we should yeah.
+We must, I mean, that was not planned. Actually we can do it. Yeah, we can. We can do it so we can.
+Maybe we can do it Thursday. Here we have a event going on. Evening, by the way. Yeah, 4:00 PM. No, no. We have events. I'll tell you we are. Yeah, probably. You should be part of that event. One is 2:00 PM to 3:00 PM. It's a wgo session from Srinivas Reddy and for 4:00 PM onwards.
+As part of the well-being and all that we have melodious me. It's a musical night musical evening. There is a bands we have. If you want to know about the clubs, the cot culture of togetherness, concept, probably I'll let you know on the well-being aspects, what we are doing here and how we are it will be interesting things which you can know as part of the well-being. Every month we provide the seasonal foods to our employees.
+And on Thursday, it's going to be mangos which we are going to do it.
+So mostly people will be busy from 2:00 to after two. Everybody will be busy on Thursday for sure.
+What time you are coming to office in the morning, Timmy, would you come? And if if you are available, I'm going to be available in office from 9:15, 9/30, 9:30 every day. Why did we skip tomorrow?
+Because we have tomorrow, tomorrow we have like the first part of the day is check. Then I want to talk with Shishanka on our topics outside of docs and paper. OK.
+And in the evening I have meeting with Srini, OK.
+So on Thursday, I'm not sure what if we start.
+We cannot summarise before the meeting, so yeah, OK may. Can we maybe then Thursday morning 10:00?
+Thursday morning, 10:00. Yeah, 11:50 even I can block.
+We can connect. We'll. Yeah. We'll one hour bring up. But if we know, let's start. If not, we will continue on Friday. Friday will be when you're right. We'll have Friday. We have something Friday. Friday. It's Friday. Friday. Friday. I don't.
+Because completely it will be blah or oh, no Friday. We have again at 11:00. We'll jayshree's quarter. Yeah, 11 to 12 have to already have the summarization because that's what. OK, I think Thursday morning is the best choice.
+OK. But we could.
+I think we could start.
+10103011 it's up to you.
+Oh, we can start at 10. No problem. OK, so let's start. Let's turn in 10. So let's book from 10 till to 11. Yeah, and half an hour. Will we have be before next? And if we will be very hard discussions so we can spend our fine, then we'll do that 3 minutes till two. So that's finished.
+Will you urgent. Should I book the time? Yeah. Yeah.
+Dan, thank you so much. Thank you.
+It's all there.
+
+Sasanka Yedlapati stopped transcription
