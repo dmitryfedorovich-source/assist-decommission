@@ -87,3 +87,24 @@ Documents are organized by phase. Within each phase folder, files are numbered 0
 - **India colleagues presentation:** Tone is user-friendly and practical — "what changes and how to use it." No rationale for the migration needed.
 - **Management presentation:** High-level — business value, scope, timeline, risks
 - **Internal team presentation:** Detailed — process flows, field specs, integration points, action items
+
+## Working in this Repo
+
+**Source of truth:** `output/shared/Feedback_Decisions_Log.md` is authoritative. All confirmed decisions (D-01…D-11) and open questions (OQ-01…OQ-08) live there. Before writing or updating any output document, check the Decisions Log for relevant confirmed facts.
+
+**After editing any file in `output/`:** run `/validate-docs` (the `.claude/skills/validate-docs/` skill). It checks factual accuracy, terminology, consistency, and completeness across the full doc set, and produces a structured error/warning report.
+
+**Input screenshots:** A pre-tool hook intercepts reads of images in `input/screenshots/`. If a memory file already exists for that image (e.g., `img_form60.md`), the hook blocks the read and tells you to use the memory file instead. Do not re-read an image if its memory file exists. If no memory file exists yet, read the image and immediately save extracted knowledge to `memory/img_<safe_name>.md`.
+
+**Confluence MCP:** The project's source pages are in the EPMEOADOCS space on kb.epam.com. Use the `mcp__confluence__*` tools to look up or verify information. Key page IDs are in `memory/reference_confluence.md` (loaded automatically).
+
+## Phase 2 — Compensation Letters (Key Domain Facts)
+
+Phase 2 is in progress. Full flow details are in `memory/img_compensation_flow_2q2026.md` (auto-loaded). Summary of critical differences vs. Phase 1:
+
+- **Who initiates:** Compensation Team specialist creates a mass request via XLS upload (not employee self-service)
+- **Employee action:** Accept consent → fill Accept Letter form → download
+- **Auto-close:** 10 days (completed), 3 days (inactive) — not 2 days like Phase 1
+- **eSignature tracking:** Yes (per document and batch)
+- **Form variants:** Up to 16–17 letter types
+- **Open design decision:** Option A (form-based accept, letter available next day) vs. Option B (no consent form, letter available immediately) — not yet confirmed with stakeholders

@@ -28,7 +28,7 @@ Update status after every review session. Link to updated document versions wher
 | D-05 | Relocation Letter: initiated by RM / India Team specialist, not employee | Stakeholder input | — | 01, 02, 05 |
 | D-06 | Auto-close: 2 days after all forms reach final status | India stakeholder (confirmed) | — | 01, 02 |
 | D-07 | Rejection flow: no resubmit on same request — employee opens new request | India stakeholder (confirmed) | — | 01, 02 |
-| D-08 | Terminology: "India Team specialists" not "HRBP" in India/management-facing docs | Internal (Daria/Hanna alignment) | — | 03, 04, 05, 06 |
+| D-08 | Terminology: "India Team specialists" not "HRBP" in India/management-facing docs | Internal (Daria/Hanna alignment) | — | 04, 05, 06 |
 | D-09 | Visa Processing Letter: Comments field, max 300 chars, single line (not "Country") | India stakeholder (confirmed) | — | 01, 02 |
 | D-10 | Cancel request: nice to have, NOT in Phase 1 MVP | Discovery page | 2026-04-16 | 02 |
 | D-11 | Historical data migration: out of scope | Discovery page | 2026-04-16 | 02 |

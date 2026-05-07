@@ -75,13 +75,16 @@ information       │                            │
                   │   ├─ NO → Auto-verification │
                   │   │       → Request         │
                   │   │         Completed       │
+                  │   │       → auto-close      │
+                  │   │         after 2 days    │
                   │   └─ YES ──────────────────→│ All data correct?
         ↓         │                            │   ├─ YES → Verify manually
 Download Letter   │                            │   │         → Request
 (auto-verified)   │                            │   │           Completed
         ↓         │                            │   └─ NO → Reject Form
-                  │ Close request?              │       Rejection reason
-                  │   ├─ YES ←─────────────────│       sent to employee
+                  │                             │       Rejection reason
+                  │ Close request?              │       sent to employee
+                  │   ├─ YES ←─────────────────│
                   │   │  HRBP closes manually   │
                   │   └─ NO → auto-close        │
                   │           after 2 days      │
@@ -124,8 +127,8 @@ Download Letter   │                            │   │         → Request
 - Downloads the generated letter from the "Documents to download" section
 
 **Step 5 — Request closure**
-- HRBP closes the request manually, OR
-- System auto-closes the request after **2 days** once all forms are in a final status (Verified / Generated)
+- **Auto-verified letters (Form 60, Address Proof, Service Letter):** System auto-closes the request after **2 days** once all forms reach a final status (Verified / Generated)
+- **Manually verified letters (Visa Processing, LOR):** HRBP closes the request manually, OR system auto-closes after **2 days** if no manual closure occurs
 
 > **New request rule:** An employee cannot submit a new request for the same letter type until the previous request is closed. Minimum interval is 2 days.
 

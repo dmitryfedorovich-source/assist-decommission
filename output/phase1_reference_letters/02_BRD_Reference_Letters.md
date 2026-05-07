@@ -186,7 +186,7 @@ This document defines the business requirements for migrating the Reference Lett
 
 **FR-20:** The employee's "My Requests" tab shall display all requests with their current status (Active / Completed / Closed / Rejected).
 
-**FR-21-a:** The system shall prevent an employee from submitting a new request for the same letter type if a previous request is still open. The minimum interval between requests is **2 days** after the previous request closes.
+**FR-21:** The system shall prevent an employee from submitting a new request for the same letter type if a previous request is still open. The minimum interval between requests is **2 days** after the previous request closes.
 
 ---
 
