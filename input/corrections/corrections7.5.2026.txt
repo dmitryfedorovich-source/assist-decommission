@@ -1,0 +1,9 @@
+поправить на текущем слайде:(цифры на картинке corrections7.5.2026.jpg)
+1. approval => verification
+2. вібиваеться из общего request флоу - тут инициатор в докс India Team. + Aня просила не использовать HRBP, я по этому пишу  India Team spetialists
+3. по факту скачать могут и до верификации
+4. не очень понятно о чем тут 
+
++ по релокейшн летеру, может можно добавить еще один флоу: India team spetialist open DOCS & sellect request type =>Fills the form & and send generated letter to employee => employee download the letter
+
++ Compensation letter. How it works: India team specialist open DOCS & select mass request => upload xls file with employee data & choose other settings & send mass request => employee reviews & accepts the letter, download letter
