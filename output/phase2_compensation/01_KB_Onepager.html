@@ -1,0 +1,279 @@
+<!-- Paste the content below into a Confluence HTML macro -->
+
+<style>
+.rl-wrap { font-family: -apple-system, 'Segoe UI', Arial, sans-serif; color: #1a1a2e; max-width: 960px; margin: 0 auto; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0; }
+
+/* HEADER */
+.rl-header { background: linear-gradient(135deg, #1a1a2e 60%, #2d3561 100%); color: #fff; padding: 28px 36px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.rl-header h1 { font-size: 22px; font-weight: 700; line-height: 1.25; margin: 0; }
+.rl-header h1 span { color: #3b82f6; }
+.rl-header-sub { font-size: 12px; color: #94a3b8; letter-spacing: 0.6px; margin-top: 4px; }
+.rl-badge { background: #3b82f6; color: #fff; font-size: 12px; font-weight: 700; padding: 7px 18px; border-radius: 20px; white-space: nowrap; }
+.rl-badge-date { font-size: 11px; color: #94a3b8; text-align: right; margin-top: 4px; }
+
+/* CONTEXT */
+.rl-context { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 14px 20px; display: flex; gap: 12px; align-items: flex-start; }
+.rl-context-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.rl-context p { font-size: 13px; color: #1e40af; line-height: 1.6; margin: 0; }
+.rl-context strong { color: #1e3a8a; }
+
+/* BODY GRID */
+.rl-body { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.rl-cell { padding: 22px 26px; border-right: 1px solid #edf2f7; border-bottom: 1px solid #edf2f7; }
+.rl-cell.rl-no-border-r { border-right: none; }
+.rl-cell.rl-full { grid-column: 1 / -1; border-right: none; border-bottom: none; }
+.rl-cell.rl-two { grid-column: span 2; }
+.rl-cell.rl-no-border-b { border-bottom: none; }
+
+.rl-label { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #3b82f6; margin-bottom: 10px; }
+.rl-cell h2 { font-size: 14px; font-weight: 700; color: #1a1a2e; margin: 0 0 12px; }
+
+/* LETTERS */
+.rl-lgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.rl-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+.rl-lcard { border-radius: 7px; padding: 8px 12px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 7px; }
+.rl-lcard.rl-batch { background: #fff7ed; color: #9a3412; border: 1px solid #fed7aa; }
+.rl-lcard.rl-tbd { background: #f8fafc; color: #64748b; border: 1px solid #e2e8f0; font-style: italic; }
+.rl-lcard .rl-dot.rl-o { background: #f97316; }
+.rl-lcard .rl-dot.rl-sl { background: #94a3b8; }
+
+/* FLOW */
+.rl-flow { display: flex; align-items: stretch; gap: 0; margin-top: 2px; }
+.rl-fstep { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 7px; padding: 10px 10px; text-align: center; flex: 1; min-width: 0; }
+.rl-fstep .rl-factor { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: #a0aec0; margin-bottom: 4px; }
+.rl-fstep .rl-flabel { font-size: 11px; font-weight: 600; color: #2d3748; line-height: 1.3; }
+.rl-farrow { color: #cbd5e0; font-size: 16px; padding: 0 4px; display: flex; align-items: center; flex-shrink: 0; }
+
+/* PHASES */
+.rl-phases { display: flex; gap: 10px; margin-top: 2px; }
+.rl-phase { flex: 1; border-radius: 8px; padding: 14px; border: 2px solid transparent; }
+.rl-phase.rl-done { background: #f0fdf4; border-color: #22c55e; }
+.rl-phase.rl-cur  { background: #eff6ff; border-color: #3b82f6; }
+.rl-phase.rl-nxt  { background: #f8fafc; border-color: #e2e8f0; }
+.rl-ptag { font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
+.rl-phase.rl-done .rl-ptag { color: #22c55e; }
+.rl-phase.rl-cur  .rl-ptag { color: #3b82f6; }
+.rl-phase.rl-nxt  .rl-ptag { color: #a0aec0; }
+.rl-phase h3 { font-size: 13px; font-weight: 700; color: #1a1a2e; margin: 0 0 3px; }
+.rl-phase p { font-size: 11px; line-height: 1.5; margin: 0; }
+.rl-phase.rl-done p { color: #166534; }
+.rl-phase.rl-cur  p { color: #1e40af; }
+.rl-phase.rl-nxt  p { color: #718096; }
+
+/* TABLE */
+.rl-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.rl-table th { background: #f8fafc; color: #4a5568; font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 8px 12px; text-align: left; border-bottom: 2px solid #e2e8f0; }
+.rl-table td { padding: 10px 12px; border-bottom: 1px solid #edf2f7; color: #4a5568; vertical-align: top; line-height: 1.5; }
+.rl-table tr:last-child td { border-bottom: none; }
+.rl-table td:first-child { font-weight: 600; color: #2d3748; white-space: nowrap; }
+
+/* RISKS */
+.rl-risks p { font-size: 12.5px; color: #4a5568; line-height: 1.9; margin: 0; }
+.rl-risks .rl-arrow { color: #3b82f6; font-weight: 700; }
+
+/* TIMELINE */
+.rl-timeline { display: flex; align-items: flex-start; position: relative; margin-top: 4px; }
+.rl-timeline::before { content: ''; position: absolute; top: 13px; left: 14px; right: 14px; height: 2px; background: #e2e8f0; z-index: 0; }
+.rl-tlitem { flex: 1; text-align: center; position: relative; z-index: 1; }
+.rl-tldot { width: 26px; height: 26px; border-radius: 50%; margin: 0 auto 7px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; }
+.rl-tldot.rl-done   { background: #22c55e; color: #fff; }
+.rl-tldot.rl-active { background: #3b82f6; color: #fff; box-shadow: 0 0 0 4px #bfdbfe; }
+.rl-tldot.rl-up     { background: #e2e8f0; color: #a0aec0; }
+.rl-tldot.rl-golive { background: #3b82f6; color: #fff; box-shadow: 0 0 0 4px #bfdbfe; font-size: 13px; }
+.rl-tldate { font-size: 10.5px; font-weight: 700; color: #4a5568; margin-bottom: 2px; }
+.rl-tllabel { font-size: 10px; color: #a0aec0; line-height: 1.3; }
+.rl-tldate.rl-blue  { color: #3b82f6; font-weight: 800; }
+.rl-tllabel.rl-blue { color: #3b82f6; font-weight: 600; }
+
+/* FOOTER */
+.rl-footer { background: #f8fafc; border-top: 1px solid #edf2f7; padding: 12px 36px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.rl-footer p { font-size: 11px; color: #a0aec0; margin: 0; }
+.rl-footer strong { color: #4a5568; }
+</style>
+
+<div class="rl-wrap">
+
+  <!-- HEADER -->
+  <div class="rl-header">
+    <div>
+      <h1>Compensation Letters Migration<br><span>Assist → EPAM Docs</span></h1>
+      <div class="rl-header-sub">INDIA HR DOCUMENT WORKFLOWS · PHASE 2</div>
+    </div>
+    <div style="text-align:right;">
+      <div class="rl-badge">PHASE 2 · COMING NEXT</div>
+      <div class="rl-badge-date">Planning begins after June 30, 2026 Phase 1 go-live</div>
+    </div>
+  </div>
+
+  <!-- CONTEXT -->
+  <div class="rl-context">
+    <div class="rl-context-icon">ℹ️</div>
+    <p><strong>Phase 2 follows the Reference Letters migration (Phase 1, go-live June 30, 2026).</strong> Compensation Letters will move to <strong>EPAM Docs (docs.epam.com)</strong> in a different model from Phase 1: instead of employees submitting individual requests, the India HR team generates letters <strong>in bulk</strong> for all eligible employees during annual review or event-driven compensation cycles.</p>
+  </div>
+
+  <!-- GRID -->
+  <div class="rl-body">
+
+    <!-- Letter types -->
+    <div class="rl-cell">
+      <div class="rl-label">What We're Moving</div>
+      <h2>Compensation Letter Types</h2>
+      <div style="font-size:10px;color:#718096;margin-bottom:8px;">All letters batch-generated by India HR team · Full scope to be confirmed in Phase 2 planning</div>
+      <div class="rl-lgrid">
+        <div class="rl-lcard rl-batch"><div class="rl-dot rl-o"></div>Salary Revision Letter</div>
+        <div class="rl-lcard rl-batch"><div class="rl-dot rl-o"></div>Promotion Letter</div>
+        <div class="rl-lcard rl-batch"><div class="rl-dot rl-o"></div>Increment Letter</div>
+        <div class="rl-lcard rl-batch"><div class="rl-dot rl-o"></div>Variable Pay Letter</div>
+        <div class="rl-lcard rl-tbd" style="grid-column:span 2;"><div class="rl-dot rl-sl"></div>Additional types · TBD in Phase 2 scoping</div>
+      </div>
+    </div>
+
+    <!-- Flow -->
+    <div class="rl-cell rl-two rl-no-border-r">
+      <div class="rl-label">How It Works in Docs</div>
+      <h2>Batch Request Flow</h2>
+      <div class="rl-flow">
+        <div class="rl-fstep">
+          <div class="rl-factor">India HR Team</div>
+          <div class="rl-flabel">Creates mass request &amp; uploads XLS with employee data</div>
+        </div>
+        <div class="rl-farrow">→</div>
+        <div class="rl-fstep">
+          <div class="rl-factor">Docs Platform</div>
+          <div class="rl-flabel">Generates letters &amp; notifies each employee</div>
+        </div>
+        <div class="rl-farrow">→</div>
+        <div class="rl-fstep">
+          <div class="rl-factor">Employee</div>
+          <div class="rl-flabel">Opens request &amp; acknowledges letter</div>
+        </div>
+        <div class="rl-farrow">→</div>
+        <div class="rl-fstep">
+          <div class="rl-factor">Employee</div>
+          <div class="rl-flabel">Downloads letter <span style="font-size:9px;color:#a0aec0;display:block;margin-top:2px;">HR tracks acknowledgement status</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phases roadmap -->
+    <div class="rl-cell rl-two">
+      <div class="rl-label">Migration Roadmap</div>
+      <h2>Phased Approach</h2>
+      <div class="rl-phases">
+        <div class="rl-phase rl-done">
+          <div class="rl-ptag">Phase 1 · Go-live Jun 30, 2026</div>
+          <h3>Reference Letters</h3>
+          <p>6 India letter types · Self-service by employees</p>
+        </div>
+        <div class="rl-phase rl-cur">
+          <div class="rl-ptag">Phase 2 · This Phase</div>
+          <h3>Compensation Letters</h3>
+          <p>Batch-generated by India HR team · Timeline TBD</p>
+        </div>
+        <div class="rl-phase rl-nxt">
+          <div class="rl-ptag">Phase 3 · Planned</div>
+          <h3>Separation Letters</h3>
+          <p>Incl. LOR for ex-employees · Timeline TBD</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key actions -->
+    <div class="rl-cell rl-no-border-r">
+      <div class="rl-label">Key Actions Needed</div>
+      <h2>Before Go-Live</h2>
+      <div class="rl-risks">
+        <p>
+          <span class="rl-arrow">▸</span> Confirm full letter scope for Phase 2<br>
+          <span class="rl-arrow">▸</span> Define XLS data file format &amp; validation rules<br>
+          <span class="rl-arrow">▸</span> India HR finalizes compensation letter templates<br>
+          <span class="rl-arrow">▸</span> India HR team trained on batch workflow in Docs<br>
+          <span class="rl-arrow">▸</span> Communication sent to India employees
+        </p>
+      </div>
+    </div>
+
+    <!-- Phase 1 vs Phase 2 comparison -->
+    <div class="rl-cell rl-full" style="background:#f8fafc;">
+      <div class="rl-label">Key Difference</div>
+      <h2 style="margin-bottom:14px;">Batch vs. Self-Service — How Phase 2 Differs from Phase 1</h2>
+      <table class="rl-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Phase 1 — Reference Letters</th>
+            <th>Phase 2 — Compensation Letters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Who initiates</td>
+            <td>Individual employee (self-service)</td>
+            <td>India HR team (batch operation)</td>
+          </tr>
+          <tr>
+            <td>Volume</td>
+            <td>One letter per request</td>
+            <td>All eligible employees processed in one batch</td>
+          </tr>
+          <tr>
+            <td>Trigger</td>
+            <td>On-demand (employee need)</td>
+            <td>Annual review cycle or event-driven compensation change</td>
+          </tr>
+          <tr>
+            <td>Employee action</td>
+            <td>Fills in form fields, then downloads</td>
+            <td>Receives notification, then downloads generated letter</td>
+          </tr>
+          <tr>
+            <td>Data input method</td>
+            <td>Employee fills form; HR data pre-populated from systems</td>
+            <td>India HR uploads XLS with all employee data &amp; letter settings</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Timeline -->
+    <div class="rl-cell rl-full">
+      <div class="rl-label">Timeline</div>
+      <h2 style="margin-bottom:18px;">Phase 2 Milestones</h2>
+      <div class="rl-timeline">
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-done">✓</div>
+          <div class="rl-tldate">Jun 30, 2026</div>
+          <div class="rl-tllabel">Phase 1 Go-Live<br>(Reference Letters)</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-active">→</div>
+          <div class="rl-tldate">TBD</div>
+          <div class="rl-tllabel">Phase 2 Scoping<br>&amp; BRD</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-up">3</div>
+          <div class="rl-tldate">TBD</div>
+          <div class="rl-tllabel">Platform Config<br>&amp; Templates</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-up">4</div>
+          <div class="rl-tldate">TBD</div>
+          <div class="rl-tllabel">UAT &amp; India HR<br>Team Training</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-golive">🚀</div>
+          <div class="rl-tldate rl-blue">TBD</div>
+          <div class="rl-tllabel rl-blue">Go-Live &amp;<br>Assist Retired</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="rl-footer">
+    <p>EPAM India · HR Document Workflow Migration · Phase 2: Compensation Letters</p>
+    <p><strong>Owner:</strong> EPAM Docs Platform &amp; India HR Team &nbsp;|&nbsp; <strong>Deadline:</strong> TBD — after Phase 1 go-live (June 30, 2026)</p>
+  </div>
+
+</div>

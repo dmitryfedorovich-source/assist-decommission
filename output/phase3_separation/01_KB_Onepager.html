@@ -1,0 +1,295 @@
+<!-- Paste the content below into a Confluence HTML macro -->
+
+<style>
+.rl-wrap { font-family: -apple-system, 'Segoe UI', Arial, sans-serif; color: #1a1a2e; max-width: 960px; margin: 0 auto; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0; }
+
+/* HEADER */
+.rl-header { background: linear-gradient(135deg, #1a1a2e 60%, #2d3561 100%); color: #fff; padding: 28px 36px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.rl-header h1 { font-size: 22px; font-weight: 700; line-height: 1.25; margin: 0; }
+.rl-header h1 span { color: #a855f7; }
+.rl-header-sub { font-size: 12px; color: #94a3b8; letter-spacing: 0.6px; margin-top: 4px; }
+.rl-badge { background: #7c3aed; color: #fff; font-size: 12px; font-weight: 700; padding: 7px 18px; border-radius: 20px; white-space: nowrap; }
+.rl-badge-date { font-size: 11px; color: #94a3b8; text-align: right; margin-top: 4px; }
+
+/* CONTEXT */
+.rl-context { background: #faf5ff; border-left: 4px solid #7c3aed; padding: 14px 20px; display: flex; gap: 12px; align-items: flex-start; }
+.rl-context-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.rl-context p { font-size: 13px; color: #4c1d95; line-height: 1.6; margin: 0; }
+.rl-context strong { color: #3b0764; }
+
+/* BODY GRID */
+.rl-body { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.rl-cell { padding: 22px 26px; border-right: 1px solid #edf2f7; border-bottom: 1px solid #edf2f7; }
+.rl-cell.rl-no-border-r { border-right: none; }
+.rl-cell.rl-full { grid-column: 1 / -1; border-right: none; border-bottom: none; }
+.rl-cell.rl-two { grid-column: span 2; }
+.rl-cell.rl-no-border-b { border-bottom: none; }
+
+.rl-label { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #7c3aed; margin-bottom: 10px; }
+.rl-cell h2 { font-size: 14px; font-weight: 700; color: #1a1a2e; margin: 0 0 12px; }
+
+/* LETTERS */
+.rl-legend { display: flex; gap: 16px; margin-bottom: 10px; }
+.rl-leg { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #718096; font-weight: 600; }
+.rl-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+.rl-lgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.rl-lcard { border-radius: 7px; padding: 8px 12px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 7px; }
+.rl-lcard.rl-auto { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+.rl-lcard.rl-rev  { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+.rl-lcard.rl-tbd  { background: #f8fafc; color: #64748b; border: 1px solid #e2e8f0; font-style: italic; }
+.rl-lcard .rl-dot.rl-g  { background: #22c55e; }
+.rl-lcard .rl-dot.rl-p  { background: #a855f7; }
+.rl-lcard .rl-dot.rl-sl { background: #94a3b8; }
+
+/* FLOW */
+.rl-flow { display: flex; align-items: stretch; gap: 0; margin-top: 2px; }
+.rl-fstep { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 7px; padding: 10px 10px; text-align: center; flex: 1; min-width: 0; }
+.rl-fstep .rl-factor { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: #a0aec0; margin-bottom: 4px; }
+.rl-fstep .rl-flabel { font-size: 11px; font-weight: 600; color: #2d3748; line-height: 1.3; }
+.rl-farrow { color: #cbd5e0; font-size: 16px; padding: 0 4px; display: flex; align-items: center; flex-shrink: 0; }
+.rl-fbranch { display: flex; gap: 8px; margin-top: 8px; }
+.rl-fpill { flex: 1; border-radius: 6px; padding: 7px 10px; font-size: 11px; font-weight: 600; text-align: center; }
+.rl-fpill.rl-fg { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+.rl-fpill.rl-fp { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+
+/* PHASES */
+.rl-phases { display: flex; gap: 10px; margin-top: 2px; }
+.rl-phase { flex: 1; border-radius: 8px; padding: 14px; border: 2px solid transparent; }
+.rl-phase.rl-done { background: #f0fdf4; border-color: #22c55e; }
+.rl-phase.rl-mid  { background: #eff6ff; border-color: #3b82f6; }
+.rl-phase.rl-cur  { background: #faf5ff; border-color: #7c3aed; }
+.rl-ptag { font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
+.rl-phase.rl-done .rl-ptag { color: #22c55e; }
+.rl-phase.rl-mid  .rl-ptag { color: #3b82f6; }
+.rl-phase.rl-cur  .rl-ptag { color: #7c3aed; }
+.rl-phase h3 { font-size: 13px; font-weight: 700; color: #1a1a2e; margin: 0 0 3px; }
+.rl-phase p { font-size: 11px; line-height: 1.5; margin: 0; }
+.rl-phase.rl-done p { color: #166534; }
+.rl-phase.rl-mid  p { color: #1e40af; }
+.rl-phase.rl-cur  p { color: #4c1d95; }
+
+/* CALLOUT */
+.rl-callout { background: #faf5ff; border: 1.5px solid #e9d5ff; border-radius: 8px; padding: 14px 18px; margin-top: 2px; }
+.rl-callout-title { font-size: 11px; font-weight: 700; color: #6b21a8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.rl-callout p { font-size: 12.5px; color: #4a5568; line-height: 1.7; margin: 0; }
+
+/* RISKS */
+.rl-risks p { font-size: 12.5px; color: #4a5568; line-height: 1.9; margin: 0; }
+.rl-risks .rl-arrow { color: #7c3aed; font-weight: 700; }
+
+/* TABLE */
+.rl-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.rl-table th { background: #f8fafc; color: #4a5568; font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 8px 12px; text-align: left; border-bottom: 2px solid #e2e8f0; }
+.rl-table td { padding: 10px 12px; border-bottom: 1px solid #edf2f7; color: #4a5568; vertical-align: top; line-height: 1.5; }
+.rl-table tr:last-child td { border-bottom: none; }
+.rl-table td:first-child { font-weight: 600; color: #2d3748; white-space: nowrap; }
+
+/* TIMELINE */
+.rl-timeline { display: flex; align-items: flex-start; position: relative; margin-top: 4px; }
+.rl-timeline::before { content: ''; position: absolute; top: 13px; left: 14px; right: 14px; height: 2px; background: #e2e8f0; z-index: 0; }
+.rl-tlitem { flex: 1; text-align: center; position: relative; z-index: 1; }
+.rl-tldot { width: 26px; height: 26px; border-radius: 50%; margin: 0 auto 7px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; }
+.rl-tldot.rl-done   { background: #22c55e; color: #fff; }
+.rl-tldot.rl-mid    { background: #3b82f6; color: #fff; }
+.rl-tldot.rl-active { background: #7c3aed; color: #fff; box-shadow: 0 0 0 4px #ede9fe; }
+.rl-tldot.rl-up     { background: #e2e8f0; color: #a0aec0; }
+.rl-tldot.rl-golive { background: #7c3aed; color: #fff; box-shadow: 0 0 0 4px #ede9fe; font-size: 13px; }
+.rl-tldate { font-size: 10.5px; font-weight: 700; color: #4a5568; margin-bottom: 2px; }
+.rl-tllabel { font-size: 10px; color: #a0aec0; line-height: 1.3; }
+.rl-tldate.rl-purple  { color: #7c3aed; font-weight: 800; }
+.rl-tllabel.rl-purple { color: #7c3aed; font-weight: 600; }
+
+/* FOOTER */
+.rl-footer { background: #f8fafc; border-top: 1px solid #edf2f7; padding: 12px 36px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.rl-footer p { font-size: 11px; color: #a0aec0; margin: 0; }
+.rl-footer strong { color: #4a5568; }
+</style>
+
+<div class="rl-wrap">
+
+  <!-- HEADER -->
+  <div class="rl-header">
+    <div>
+      <h1>Separation Letters Migration<br><span>Assist → EPAM Docs</span></h1>
+      <div class="rl-header-sub">INDIA HR DOCUMENT WORKFLOWS · PHASE 3</div>
+    </div>
+    <div style="text-align:right;">
+      <div class="rl-badge">PHASE 3 · PLANNED</div>
+      <div class="rl-badge-date">Planning begins after Phase 2 go-live · Timeline TBD</div>
+    </div>
+  </div>
+
+  <!-- CONTEXT -->
+  <div class="rl-context">
+    <div class="rl-context-icon">ℹ️</div>
+    <p><strong>Phase 3 covers Separation Letters</strong> — documents issued when an employee leaves EPAM. This phase completes the migration by closing the gap left in Phase 1: <strong>Letter of Recommendation for ex-employees</strong> is explicitly included in Phase 3 scope. Full letter scope and timelines will be defined during Phase 3 planning.</p>
+  </div>
+
+  <!-- GRID -->
+  <div class="rl-body">
+
+    <!-- Letter types -->
+    <div class="rl-cell">
+      <div class="rl-label">What We're Moving</div>
+      <h2>Separation Letter Types</h2>
+      <div style="font-size:10px;color:#718096;margin-bottom:8px;">* LOR for ex-employees: confirmed Phase 3 scope · Full scope to be defined in Phase 3 planning</div>
+      <div class="rl-legend">
+        <div class="rl-leg"><div class="rl-dot" style="background:#22c55e;"></div>Auto-generated</div>
+        <div class="rl-leg"><div class="rl-dot" style="background:#a855f7;"></div>Review required</div>
+      </div>
+      <div class="rl-lgrid">
+        <div class="rl-lcard rl-auto"><div class="rl-dot rl-g"></div>Experience Letter</div>
+        <div class="rl-lcard rl-auto"><div class="rl-dot rl-g"></div>Relieving Letter</div>
+        <div class="rl-lcard rl-rev" style="grid-column:span 2;"><div class="rl-dot rl-p"></div>Letter of Recommendation (ex-employees) *</div>
+        <div class="rl-lcard rl-tbd" style="grid-column:span 2;"><div class="rl-dot rl-sl"></div>Additional types · TBD in Phase 3 scoping</div>
+      </div>
+    </div>
+
+    <!-- Flow -->
+    <div class="rl-cell rl-two rl-no-border-r">
+      <div class="rl-label">How It Works in Docs</div>
+      <h2>Separation Request Flow</h2>
+      <div class="rl-flow">
+        <div class="rl-fstep">
+          <div class="rl-factor">HRMS</div>
+          <div class="rl-flabel">Triggers request on last working day <span style="font-size:9px;color:#a0aec0;display:block;margin-top:2px;">Experience Letter: 10–15 days post-exit</span></div>
+        </div>
+        <div class="rl-farrow">→</div>
+        <div class="rl-fstep">
+          <div class="rl-factor">Docs Platform</div>
+          <div class="rl-flabel">Generates letter &amp; awaits HR release</div>
+        </div>
+        <div class="rl-farrow">→</div>
+        <div class="rl-fstep">
+          <div class="rl-factor">India HR Team</div>
+          <div class="rl-flabel">Reviews &amp; manually releases each letter</div>
+        </div>
+        <div class="rl-farrow">→</div>
+        <div class="rl-fstep">
+          <div class="rl-factor">Ex-Employee</div>
+          <div class="rl-flabel">Receives letter via personal email <span style="font-size:9px;color:#a0aec0;display:block;margin-top:2px;">no portal access after exit</span></div>
+        </div>
+      </div>
+      <div class="rl-fbranch">
+        <div class="rl-fpill rl-fg">✓ Relieving &amp; Experience — HRMS-triggered, HR-released</div>
+        <div class="rl-fpill rl-fp">✦ LOR (ex-employees) — India Team initiates on request</div>
+      </div>
+    </div>
+
+    <!-- Phases roadmap -->
+    <div class="rl-cell rl-two">
+      <div class="rl-label">Migration Roadmap</div>
+      <h2>Phased Approach</h2>
+      <div class="rl-phases">
+        <div class="rl-phase rl-done">
+          <div class="rl-ptag">Phase 1 · Go-live Jun 30, 2026</div>
+          <h3>Reference Letters</h3>
+          <p>6 India letter types · Self-service</p>
+        </div>
+        <div class="rl-phase rl-mid">
+          <div class="rl-ptag">Phase 2 · Coming Next</div>
+          <h3>Compensation Letters</h3>
+          <p>Batch-generated by India HR team · Timeline TBD</p>
+        </div>
+        <div class="rl-phase rl-cur">
+          <div class="rl-ptag">Phase 3 · This Phase</div>
+          <h3>Separation Letters</h3>
+          <p>Incl. LOR for ex-employees · Timeline TBD</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key actions -->
+    <div class="rl-cell rl-no-border-r">
+      <div class="rl-label">Key Actions Needed</div>
+      <h2>Before Go-Live</h2>
+      <div class="rl-risks">
+        <p>
+          <span class="rl-arrow">▸</span> Define full letter scope for Phase 3<br>
+          <span class="rl-arrow">▸</span> Resolve ex-employee portal access model<br>
+          <span class="rl-arrow">▸</span> India HR finalizes separation letter templates<br>
+          <span class="rl-arrow">▸</span> Legal / compliance review of letter content<br>
+          <span class="rl-arrow">▸</span> Communication plan for departing employees
+        </p>
+      </div>
+    </div>
+
+    <!-- LOR scoping note -->
+    <div class="rl-cell rl-full" style="background:#f8fafc;">
+      <div class="rl-label">Phase 3 Scope Note</div>
+      <h2 style="margin-bottom:14px;">LOR for Ex-Employees — Why Phase 3</h2>
+      <table class="rl-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Phase 1 (Reference Letters)</th>
+            <th>Phase 3 (Separation Letters)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LOR for active employees</td>
+            <td>In scope · Employee self-service</td>
+            <td>No change — handled in Phase 1</td>
+          </tr>
+          <tr>
+            <td>LOR for ex-employees</td>
+            <td>Out of scope · Deferred to Phase 3</td>
+            <td>In scope · India Team initiates on ex-employee request</td>
+          </tr>
+          <tr>
+            <td>Why deferred</td>
+            <td>Ex-employee data access and portal access require separate design decisions not part of Phase 1</td>
+            <td>Phase 3 scoping will address ex-employee access model as part of the full separation workflow</td>
+          </tr>
+          <tr>
+            <td>Interim handling</td>
+            <td>Ex-employees requesting LOR should contact India Team specialists directly</td>
+            <td>Self-service LOR request for ex-employees via Docs — subject to Phase 3 design</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Timeline -->
+    <div class="rl-cell rl-full">
+      <div class="rl-label">Timeline</div>
+      <h2 style="margin-bottom:18px;">Phase 3 Milestones</h2>
+      <div class="rl-timeline">
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-done">✓</div>
+          <div class="rl-tldate">Jun 30, 2026</div>
+          <div class="rl-tllabel">Phase 1 Go-Live<br>(Reference Letters)</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-mid">2</div>
+          <div class="rl-tldate">TBD</div>
+          <div class="rl-tllabel">Phase 2 Go-Live<br>(Compensation)</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-active">→</div>
+          <div class="rl-tldate">TBD</div>
+          <div class="rl-tllabel">Phase 3 Scoping<br>&amp; BRD</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-up">4</div>
+          <div class="rl-tldate">TBD</div>
+          <div class="rl-tllabel">Platform Config<br>&amp; Templates</div>
+        </div>
+        <div class="rl-tlitem">
+          <div class="rl-tldot rl-golive">🚀</div>
+          <div class="rl-tldate rl-purple">TBD</div>
+          <div class="rl-tllabel rl-purple">Go-Live &amp;<br>Assist Retired</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="rl-footer">
+    <p>EPAM India · HR Document Workflow Migration · Phase 3: Separation Letters</p>
+    <p><strong>Owner:</strong> EPAM Docs Platform &amp; India HR Team &nbsp;|&nbsp; <strong>Deadline:</strong> TBD — after Phase 2 go-live</p>
+  </div>
+
+</div>
