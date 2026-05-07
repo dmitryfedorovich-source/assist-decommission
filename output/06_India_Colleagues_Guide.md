@@ -113,7 +113,7 @@ If your address is missing or outdated, the system will prompt you to update it 
 | **June 30, 2026** | EPAM Docs is live for reference letter requests |
 | **June 30, 2026** | Assist is no longer available for reference letters |
 
-If you have an **in-progress request in Assist** before July 1, please follow up with the India Team specialist to complete it before the cutover date.
+If you have an **in-progress request in Assist** before **June 30, 2026**, please follow up with the India Team specialist to complete it before the cutover date.
 
 ---
 

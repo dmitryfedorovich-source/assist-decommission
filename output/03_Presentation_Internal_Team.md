@@ -204,10 +204,21 @@ RM/HRBP                 DOCS Platform
 
 ---
 
-## Slide 11 — Next Steps
+## Slide 11 — Decisions Needed from Management
+
+> Items requiring management sign-off before go-live.
+
+1. **Confirm June 30, 2026** as the go-live and Assist decommission date for Reference Letters
+2. **Assign India HR team** ownership for letter template finalization
+3. **Approve communication plan** to India employees ahead of go-live
+4. **Confirm next phase timeline** (Compensation Letters) to maintain migration momentum
+
+---
+
+## Slide 12 — Next Steps
 
 1. **Docs Platform Team:** Confirm integration availability (HR system, People system)
 2. **India HR Team:** Finalize 6 letter templates for Docs
 3. **HR Operations:** Confirm HRBP user list and role assignment in Docs
-4. **PM:** Align Assist decommission date with July 1 go-live
+4. **PM:** Align Assist decommission date with **June 30, 2026** go-live
 5. **BA/PM:** Schedule UAT with HRBP and India pilot users

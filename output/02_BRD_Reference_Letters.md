@@ -48,6 +48,7 @@ This document defines the business requirements for migrating the Reference Lett
 - Compensation Letters (Phase 2)
 - Separation Letters (Phase 3)
 - Migration of historical request data from Assist
+- Cancel request by requester (nice to have — not in Phase 1 MVP)
 - Any Assist workflows outside of Reference Letters
 
 ---
@@ -130,9 +131,9 @@ This document defines the business requirements for migrating the Reference Lett
 
 ---
 
-### 5.4 Self-Declaration
+### 5.4 Verification Routing
 
-### 5.5 Verification Routing
+> **FR-07:** Not applicable — Self-Declaration popup is not required in EPAM Docs. No functional requirement applies.
 
 **FR-08:** Upon form submission, the system shall route the request according to letter type:
 
@@ -153,7 +154,7 @@ This document defines the business requirements for migrating the Reference Lett
 
 ---
 
-### 5.6 HRBP Verification Workflow
+### 5.5 HRBP Verification Workflow
 
 **FR-11:** The HRBP shall be able to review all submitted request details within EPAM Docs.
 
@@ -167,7 +168,7 @@ This document defines the business requirements for migrating the Reference Lett
 
 ---
 
-### 5.7 Letter Generation and Download
+### 5.6 Letter Generation and Download
 
 **FR-15:** Upon request completion (auto or manual), the system shall generate the letter document and make it available in the "Documents to download" section of the request.
 
@@ -175,7 +176,7 @@ This document defines the business requirements for migrating the Reference Lett
 
 ---
 
-### 5.8 Request Lifecycle and Closure
+### 5.7 Request Lifecycle and Closure
 
 **FR-17:** Completed requests shall remain open for employee download until explicitly closed.
 
@@ -189,7 +190,7 @@ This document defines the business requirements for migrating the Reference Lett
 
 ---
 
-### 5.9 Notifications
+### 5.8 Notifications
 
 **FR-22:** The system shall send notifications as follows:
 
