@@ -36,7 +36,8 @@ This document defines the business requirements for migrating the Reference Lett
   - Letter of Recommendation (LOR) — active employees only
   - Relocation Letter
 - Auto-verification workflow for Form 60, Address Proof Letter, Service Letter
-- HRBP manual verification workflow for Visa Processing Letter, LOR, Relocation Letter
+- HRBP manual verification workflow for Visa Processing Letter, LOR *(approval requirement under clarification — may be removed or redesigned prior to go-live)*
+- Date-triggered auto-verification for Relocation Letter (system auto-approves on relocation date; past-date requests approved immediately)
 - Employee request form with HR data pre-population
 - Letter generation and download
 - Request lifecycle management (completion, closure, auto-close)
@@ -121,7 +122,7 @@ This document defines the business requirements for migrating the Reference Lett
 
 **Relocation Letter** *(initiated by RM/HRBP, not the employee):*
 - New Work Location (dropdown — list of available EPAM India office cities)
-- Start/Effective Date (date picker)
+- Start/Effective Date (date picker — past dates are allowed; system auto-approves immediately for past/present dates)
 
 **LOR — Letter of Recommendation:**
 - Purpose (dropdown)
@@ -135,16 +136,18 @@ This document defines the business requirements for migrating the Reference Lett
 
 **FR-08:** Upon form submission, the system shall route the request according to letter type:
 
-| Letter Type | Routing |
-|---|---|
-| Form 60 | Auto-verification |
-| Address Proof Letter | Auto-verification |
-| Service Letter | Auto-verification |
-| Visa Processing Letter | HRBP manual verification |
-| LOR | HRBP manual verification |
-| Relocation Letter | HRBP manual verification |
+| Letter Type | Routing | Notes |
+|---|---|---|
+| Form 60 | Auto-verification | Immediate |
+| Address Proof Letter | Auto-verification | Immediate |
+| Service Letter | Auto-verification | Immediate |
+| Visa Processing Letter | HRBP manual verification | Approval requirement under clarification — may be removed |
+| LOR | HRBP manual verification | Approval requirement under clarification — may be removed |
+| Relocation Letter | Date-triggered auto-verification | System auto-approves on effective date; past dates approved immediately |
 
 **FR-09:** Auto-verified requests shall transition to **Completed** status immediately upon successful submission.
+
+**FR-09a:** Relocation Letter requests shall be held in a **Pending** state and auto-transition to **Completed** on the specified effective date. If the effective date is equal to or earlier than the submission date, the request shall auto-complete immediately.
 
 **FR-10:** Manually verified requests shall transition to **Pending Approval** status and appear in the HRBP's review queue.
 
@@ -261,8 +264,8 @@ This document defines the business requirements for migrating the Reference Lett
 | BRD sign-off | June 2026 |
 | Docs platform configuration complete | June 2026 |
 | UAT with India HRBP and pilot employees | June 2026 |
-| Go-live: Reference Letters in Docs | **July 1, 2026** |
-| Assist Reference Letters decommissioned | July 1, 2026 |
+| Go-live: Reference Letters in Docs | **June 30, 2026** |
+| Assist Reference Letters decommissioned | June 30, 2026 |
 
 ---
 

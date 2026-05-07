@@ -42,14 +42,14 @@ EPAM Docs already exists and supports document request workflows. We are **confi
 | What stays the same | What changes |
 |---|---|
 | Employee experience: request a letter, download it | Platform: Assist → Docs |
-| HRBP review and approval process | URL and entry point |
+| India Team specialist review process | URL and entry point |
 | Letter content and format | — |
 
 ---
 
 ## Slide 4 — Migration Scope
 
-**Phase 1 — Reference Letters (current):** July 1, 2026  
+**Phase 1 — Reference Letters (current):** June 30, 2026  
 → 6 letter types for India active employees
 
 **Phase 2 — Compensation Letters:** TBD  
@@ -61,16 +61,16 @@ EPAM Docs already exists and supports document request workflows. We are **confi
 ## Slide 5 — Timeline
 
 ```
-May 2026          June 2026              July 1, 2026
+May 2026          June 2026              June 30, 2026
     │                 │                       │
     ├─ BRD & design   ├─ Configuration        ├─ GO-LIVE
     ├─ Stakeholder    ├─ Templates finalized  ├─ Docs live for
     │  alignment      ├─ UAT                  │  India employees
-    │                 ├─ HRBP training        ├─ Assist retired
+    │                 ├─ India Team training  ├─ Assist retired
     │                 │                       │  (Reference Letters)
 ```
 
-**Target go-live: July 1, 2026**
+**Target go-live: June 30, 2026**
 
 ---
 
@@ -79,7 +79,7 @@ May 2026          June 2026              July 1, 2026
 | Risk | Mitigation |
 |---|---|
 | India letter templates not ready in time | Starting template review in parallel with platform work |
-| HRBP adoption of new platform | Training and onboarding scheduled before go-live |
+| India Team specialist adoption of new platform | Training and onboarding scheduled before go-live |
 | HR system data integration delays | Early technical validation with Docs platform team |
 | Employee confusion during transition | India-specific communication and guidance prepared |
 
@@ -87,7 +87,7 @@ May 2026          June 2026              July 1, 2026
 
 ## Slide 7 — Decisions Needed from Management
 
-1. **Confirm July 1, 2026** as the go-live and Assist decommission date for Reference Letters
+1. **Confirm June 30, 2026** as the go-live and Assist decommission date for Reference Letters
 2. **Assign India HR team** ownership for letter template finalization
 3. **Approve communication plan** to India employees ahead of go-live
 4. **Confirm next phase timeline** (Compensation Letters) to maintain migration momentum
@@ -100,6 +100,6 @@ May 2026          June 2026              July 1, 2026
 |---|---|
 | What | 6 India HR reference letter types migrated from Assist to Docs |
 | Why | Assist decommission; Docs is the target platform |
-| When | Go-live July 1, 2026 |
+| When | Go-live June 30, 2026 |
 | Risk | Low — moving to existing platform, not building new |
 | Employee impact | Minimal — same process, new platform |

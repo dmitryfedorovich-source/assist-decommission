@@ -8,7 +8,7 @@ This is a BA/product documentation project for migrating India HR document workf
 
 **Phase 1 (current):** Reference Letters  
 **Future phases:** Compensation Letters, Separation Letters, and others  
-**Deadline:** July 1, 2026
+**Deadline:** June 30, 2026
 
 ## Repository Structure
 

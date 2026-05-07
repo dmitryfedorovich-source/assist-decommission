@@ -37,11 +37,19 @@ Completed automatically by the system — no HRBP action required.
 ### Manually Verified Letters
 Routed to HRBP for review and approval before completion.
 
+> **Note:** Approval requirement for Visa Processing Letter and LOR is currently **under clarification**. The approval step may be removed or redesigned prior to go-live.
+
 | Letter Type | Description | Notes |
 |---|---|---|
-| Visa Processing Letter | Letter supporting visa applications | — |
-| LOR — Letter of Recommendation | Recommendation letter for active employees | Ex-employees: handled in Separation Letters phase |
-| Relocation Letter | Letter confirming approved relocation | Initiated by RM/HRBP, not the employee |
+| Visa Processing Letter | Letter supporting visa applications | RM/HRBP approval — under clarification |
+| LOR — Letter of Recommendation | Recommendation letter for active employees | RM/HRBP approval — under clarification; ex-employees: out of scope Phase 1 |
+
+### Date-Triggered Auto-Verification
+Requested by RM/HRBP on behalf of the employee. The system holds the request and auto-approves it on the specified relocation date.
+
+| Letter Type | Description | Notes |
+|---|---|---|
+| Relocation Letter | Letter confirming approved relocation | Initiated by RM/HRBP; past-date requests allowed (auto-approved immediately); system auto-approves on relocation date |
 
 ---
 
@@ -97,11 +105,19 @@ Download Letter   │                            │   │         → Request
 - Request status changes to **Completed**
 - Letter is immediately available for download in the "Documents to download" section
 
-**Step 3b — Manual verification path (Visa Processing, LOR, Relocation)**
+**Step 3b — Manual verification path (Visa Processing Letter, LOR)**
 - Request is routed to HRBP queue
 - HRBP reviews the submitted information
   - If correct: HRBP approves → Request status changes to **Completed** → letter available for download
   - If incorrect: HRBP rejects → employee receives rejection reason by notification → employee must submit a **new request**
+- **Note:** Whether RM/HRBP approval is retained for these two letter types is currently under clarification.
+
+**Step 3c — Date-triggered auto-verification path (Relocation Letter)**
+- RM/HRBP submits the request with the employee's relocation details and effective date
+- System holds the request until the relocation date
+  - If the effective date is today or in the past: system auto-approves immediately
+  - If the effective date is in the future: system auto-approves on that date
+- Request status changes to **Completed** → letter available for download
 
 **Step 4 — Employee downloads the letter**
 - Employee opens the completed request
@@ -170,6 +186,8 @@ Download Letter   │                            │   │         → Request
 
 ### 5.5 Relocation Letter
 
+> Initiated by RM/HRBP. System auto-approves on the specified effective date. Past-date requests are auto-approved immediately upon submission.
+
 | Field | Source | Input Type |
 |---|---|---|
 | Employee | Pre-populated (HR system) | Read-only |
@@ -177,7 +195,7 @@ Download Letter   │                            │   │         → Request
 | Designation | Pre-populated (HR system) | Read-only |
 | Current Work Location | Pre-populated (HR system) | Read-only |
 | New Work Location | RM/HRBP | Dropdown (city list) |
-| Start/Effective Date | RM/HRBP | Date picker |
+| Start/Effective Date | RM/HRBP | Date picker (past dates allowed) |
 | Purpose | Pre-filled "Relocation" | Read-only |
 
 ### 5.6 LOR — Letter of Recommendation

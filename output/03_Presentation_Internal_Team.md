@@ -14,20 +14,20 @@
 - **Assist (assist.epam.com)** is being decommissioned
 - India HR document workflows currently live in Assist — these need to move to **EPAM Docs (docs.epam.com)**
 - Phase 1 covers **Reference Letters** — 6 letter types used by India employees
-- Target go-live: **July 1, 2026**
+- Target go-live: **June 30, 2026**
 
 ---
 
 ## Slide 2 — Scope: 6 Letter Types
 
-| Track | Letter Type |
-|---|---|
-| **Auto-verified** | Form 60 |
-| **Auto-verified** | Address Proof Letter |
-| **Auto-verified** | Service Letter |
-| **HRBP approval required** | Visa Processing Letter |
-| **HRBP approval required** | Letter of Recommendation (LOR) |
-| **HRBP approval required** | Relocation Letter |
+| Track | Letter Type | Notes |
+|---|---|---|
+| **Auto-verified (instant)** | Form 60 | |
+| **Auto-verified (instant)** | Address Proof Letter | |
+| **Auto-verified (instant)** | Service Letter | |
+| **HRBP approval** | Visa Processing Letter | Approval requirement under clarification — may be removed |
+| **HRBP approval** | Letter of Recommendation (LOR) | Approval requirement under clarification — may be removed |
+| **Date-triggered auto-verification** | Relocation Letter | Initiated by RM/HRBP; system auto-approves on effective date; past dates approved immediately |
 
 > LOR for ex-employees is out of scope — addressed in Phase 3 (Separation Letters)
 
@@ -70,7 +70,29 @@ Employee                DOCS Platform              HRBP
    │                         │                      │    (new request needed)
 ```
 
-**Used for:** Visa Processing Letter, LOR, Relocation Letter
+**Used for:** Visa Processing Letter, LOR  
+> ⚠️ Whether RM/HRBP approval is retained for these two letters is **under clarification**. The approval step may be removed or redesigned before go-live.
+
+---
+
+## Slide 4b — Process Flow: Relocation Letter (Date-Triggered)
+
+```
+RM/HRBP                 DOCS Platform
+   │                         │
+   ├─ Select Relocation ─────→│
+   │                         ├─ Create request
+   ├─ Fill form (employee     │
+   │  data + effective date) →│
+   │                         ├─ Effective date = today or past?
+   │                         │   ├─ YES → Auto-approve immediately
+   │                         │   └─ NO  → Hold until effective date
+   │                         │              → Auto-approve on date
+   │                         ├─ Generate letter
+   ├─ Letter available  ←─────┤
+```
+
+> Past-date relocation requests are allowed and auto-approved immediately upon submission.
 
 ---
 
@@ -111,6 +133,10 @@ Employee                DOCS Platform              HRBP
 - When "Custom" is selected from Purpose dropdown: show free-text field
 - Max 100 characters
 
+**Relocation Letter date-triggered approval**
+- System holds request until effective date → auto-approves
+- Past dates: immediate auto-approval on submission
+
 **Auto-close**
 - Once all forms reach final status (Verified / Generated) → auto-close after **2 days** if not manually closed
 
@@ -143,7 +169,8 @@ Employee                DOCS Platform              HRBP
 - [ ] Connect HR system data source for pre-population
 - [ ] Connect People system for address pre-population
 - [ ] Set up auto-verification workflow (Form 60, Address Proof, Service Letter)
-- [ ] Set up HRBP approval workflow (Visa, LOR, Relocation)
+- [ ] Set up HRBP approval workflow (Visa, LOR — subject to clarification on approval requirement)
+- [ ] Set up date-triggered auto-approval for Relocation Letter
 - [ ] Configure rejection notification with reason field
 - [ ] Configure completion notification to employee
 - [ ] Configure 2-day auto-close rule (triggers when all forms reach final status)
@@ -161,8 +188,8 @@ Employee                DOCS Platform              HRBP
 | Platform configuration complete | June 2026 |
 | India letter templates finalized | June 2026 |
 | UAT — HRBP and pilot employees | June 2026 |
-| Go-live | **July 1, 2026** |
-| Assist Reference Letters retired | July 1, 2026 |
+| Go-live | **June 30, 2026** |
+| Assist Reference Letters retired | June 30, 2026 |
 
 ---
 
