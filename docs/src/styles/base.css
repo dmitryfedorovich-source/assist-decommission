@@ -1,0 +1,123 @@
+/*
+ * ═══════════════════════════════════════════════════════════
+ *  BASE STYLES  —  Reset, body, global layout, shared utils
+ *  Depends on: tokens.css
+ * ═══════════════════════════════════════════════════════════
+ */
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Body ── */
+body {
+  font-family: var(--font-sans);
+  background: var(--surface-page);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* ── Page container ── */
+.page {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad-h) var(--space-64);
+}
+
+/* ── Section wrapper ── */
+.section {
+  padding-top: var(--space-52);
+}
+
+.section-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-8);
+}
+
+.section h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.section-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-28);
+  max-width: 680px;
+}
+
+/* ── Horizontal divider ── */
+.divider {
+  height: 1px;
+  background: var(--border-default);
+  margin: 0 calc(-1 * var(--page-pad-h));
+}
+
+/* ── Info box ── */
+.info-box {
+  background: var(--tint-blue);
+  border-left: 4px solid var(--color-blue);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-14) var(--space-16);
+  margin-top: var(--space-20);
+}
+
+.info-box p {
+  font-size: 13px;
+  color: #1e40af;
+  line-height: 1.65;
+}
+
+.info-box strong {
+  color: #1e3a8a;
+}
+
+/* ── Inline code ── */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--surface-muted);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.badge-mgmt     { background: var(--tint-accent);  color: #c2410c;  border: 1px solid #fed7aa; }
+.badge-internal { background: var(--tint-blue);    color: #1d4ed8;  border: 1px solid #bfdbfe; }
+.badge-india    { background: var(--tint-green);   color: #166534;  border: 1px solid #bbf7d0; }
+.badge-employee { background: var(--tint-purple);  color: #6b21a8;  border: 1px solid #e9d5ff; }
+.badge-cross    { background: var(--tint-muted);   color: #475569;  border: 1px solid var(--border-default); }
+
+/* ── Phase pill ── */
+.phase-pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 12px;
+  margin-bottom: var(--space-4);
+}
+
+.ph1 { background: var(--tint-accent);  color: var(--color-accent); }
+.ph2 { background: var(--tint-blue);   color: var(--color-blue);  }
+.ph3 { background: var(--tint-purple); color: var(--color-violet); }
+.phx { background: var(--tint-muted);  color: var(--color-slate); }

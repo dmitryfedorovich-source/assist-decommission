@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "validation-rule.schema.json",
+  "title": "ValidationRule",
+  "description": "A single validation check run by the /validate-docs or /validate-schema skill.",
+  "type": "object",
+  "required": ["id", "check_number", "name", "description", "applies_to", "skill"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique rule identifier.",
+      "pattern": "^VR-[0-9]{2}(-[0-9]+)?$",
+      "examples": ["VR-01", "VR-08-01", "VR-09"]
+    },
+    "check_number": {
+      "type": "integer",
+      "description": "Parent check number in validate-docs.",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "name": {
+      "type": "string",
+      "description": "Short name for this rule."
+    },
+    "description": {
+      "type": "string",
+      "description": "What this rule checks for."
+    },
+    "skill": {
+      "type": "string",
+      "description": "Which skill runs this check.",
+      "enum": ["validate-docs", "validate-schema", "both"]
+    },
+    "severity": {
+      "type": "string",
+      "description": "Default severity when this rule fails.",
+      "enum": ["error", "warning", "info"],
+      "default": "error"
+    },
+    "applies_to": {
+      "type": "array",
+      "description": "Document short codes this rule applies to. Use ['all'] for all documents.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "forbidden_values": {
+      "type": "array",
+      "description": "For forbidden-phrase checks: values that must not appear.",
+      "items": {
+        "type": "object",
+        "required": ["phrase", "alternative"],
+        "additionalProperties": false,
+        "properties": {
+          "phrase": { "type": "string" },
+          "reason": { "type": "string" },
+          "alternative": { "type": "string" },
+          "decision_ref": { "type": ["string", "null"] }
+        }
+      },
+      "default": []
+    },
+    "required_elements": {
+      "type": "array",
+      "description": "For structural-completeness checks: elements that must be present.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "decision_ref": {
+      "type": ["string", "null"],
+      "description": "Decision that defines the correct value for this rule.",
+      "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+    },
+    "source_check": {
+      "type": "string",
+      "description": "Which validate-docs Check section this rule belongs to.",
+      "examples": ["Check 1 — Factual Accuracy", "Check 2 — Forbidden Phrases", "Check 8 — Traceability"]
+    }
+  }
+}

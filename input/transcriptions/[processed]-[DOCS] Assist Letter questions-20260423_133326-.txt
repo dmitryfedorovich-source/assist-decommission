@@ -1,0 +1,456 @@
+[DOCS] Assist Letter questions-20260423_133326-
+Meeting Recording
+23 April 2026, 09:33am
+27m 11s
+Lela Akobidze started transcription
+Satya Danam 0:03
+Only.
+One time only, total, total bonus.
+LalithaPavani Madiraju 0:14
+left side.
+Gikkal in the RB value.
+Satya Danam 0:19
+A Lela.
+LalithaPavani Madiraju 0:20
+Deferred bonus.
+Satya Danam 0:22
+Deferable also, same.
+Not at all.
+LalithaPavani Madiraju 0:27
+For basically for RB and deferred bonus, there is no.
+Total amount anywhere mentioned.
+But for one-time bonus, it is there.
+Olga Chaban 0:42
+But if I see, okay, let me share the screen. But in the example, we have this some in 
+the letter. So we can
+LalithaPavani Madiraju 0:54
+Yes.
+We can try and generate one later and see, Olga, if you would want, if it 
+automatically gets calculated or not.
+Olga Chaban 1:05
+Yeah, will be perfect.
+LalithaPavani Madiraju 1:08
+Satya, OK, dummy letter generates better or below 2 values AC.
+Satya Danam 1:19
+Okay.
+Tapp.
+Ghosh.
+Olga Chaban 2:23
+Mm.
+Satya Danam 2:43
+Park.
+LalithaPavani Madiraju 2:46
+See.
+Satya Danam 2:46
+Okay.
+LalithaPavani Madiraju 2:49
+Yeah, Olga, he has generated the letter. So if you could see, he has given different 
+amounts in for August 26 and December 26 separately. He hasn't given the value of 
+4,00,000 anywhere, but it did calculate a sum of 4,00,000 and.
+Has given the letter.
+Satya Danam 3:08
+I can I just go to the Madam Madiraju, it could have direct to 4,00,000, we call on 
+mention retention bonus, Nancy total total.
+LalithaPavani Madiraju 3:10
+A credential.
+Okay, my deferred bonus key.
+Satya Danam 3:16
+Total amount, one-time.
+LalithaPavani Madiraju 3:20
+Deferred bonus.
+Satya Danam 3:21
+Direct to some of these.
+LalithaPavani Madiraju 3:26
+When are they?
+Satya Danam 3:26
+Yeah, only retention bonus of connexion is Kondu there.
+LalithaPavani Madiraju 3:31
+OK, different bonus check, sorry.
+I am on deferred bonus.
+Peru nadi chase.
+Satya Danam 3:41
+Ohh, there is a standard, maybe, for example.
+Olga Chaban 4:00
+So the sum of retention bonuses mentioned earlier, we have annual Compensation 
+table. Yeah, but I didn't catch where we have the sum for the different bonus.
+LalithaPavani Madiraju 4:10
+Yes.
+Huh, that's what we are just checking if it did automatically collect the same auto.
+He's trying to generate another letter with deferred bonuses also.
+Satya Danam 4:31
+Yes, total amount.
+Automatically.
+LalithaPavani Madiraju 4:35
+It, it is calculating automatically, Olga.
+For deferred bonus also, there is no entire amount mentioned. For though retention 
+bonus is part of CTC, we are somewhere mentioning it as 4,00,000, but still it is not 
+picking up. The system is not picking up from there. For retention and deferred 
+bonus, it is calculating automatically the amount.
+Olga Chaban 4:57
+Okay, got it.
+LalithaPavani Madiraju 4:59
+Only for one time bonus, it is mentioned, the total amount is mentioned. That is 
+taking the total amount and then bifurcating it into different.
+Satya Danam 5:10
+You.
+Olga Chaban 5:11
+Mhm.
+Okay, let me provide this notice to the table.
+Satya Danam 5:56
+Yeah.
+Olga Chaban 5:58
+Okay, thank you, thank you.
+I think for now we have enough information. Just waiting from your side to cheque 
+the block of text that could be mentioned in the...
+Compensation letter. I provide the information to the chat as soon as I quote this 
+example to some folder on SharePoint. I think it will be just next for this meeting. 
+And also,
+Oh, I mean this one.
+Actually, I can do it right now.
+And the second block of information that we need to receive from your side, it's a 
+feedback regarding amount of words.
+LalithaPavani Madiraju 6:44
+No, no.
+Ku.
+Yeah.
+Okay, yeah.
+Olga Chaban 6:57
+that we discussed at the beginning of this meeting. So give me a second.
+LalithaPavani Madiraju 7:00
+Yeah, sure.
+Olga Chaban 7:07
+Hey, I just upload this file here.
+So it should be available in the folder here is.
+Okay, so would you mind to go to the relevant letters that
+we have an assist platform. And could you please provide us with information how 
+works this letter for employee? What information should be received to assist the 
+system, maybe from people, I mean,
+LalithaPavani Madiraju 7:45
+Ohh.
+Olga Chaban 7:48
+from maybe from other systems or from employee side and how the assist 
+understand that the assist system should generate this letter for employee here.
+LalithaPavani Madiraju 8:07
+Okay, so while exiting, we have while some person is leaving the company and so we 
+generate basically two different kinds of letters. One is service letter and one is 
+experience letter. Okay, service letter is basically provided.
+on the last working day of the employment. So today, if I am leaving, today by end of 
+the day, there will be a service letter that is generated for associate, which says that 
+the person has worked from so-and-so date, from his date of joining till today with.
+EPAM and you know his conduct was good with the company kind of. So because we 
+need a time of 10 to 15 days to clear his full and final settlement. So basically only 
+once the full and final settlement is cleared.
+from the company and his final payment is made, we release the experience letter for 
+them. So, but you know, why we release two different letters is because service letter, 
+they might need to show it to the new employer mentioning that he has been a part 
+of this company for a background verification cheque or anything as such.
+on the date of the joining or you know prior to the date of the joining, they might 
+have to show their service letter. For that reason, we generate two different separate 
+letters, one at the time of the end date and other one once the full and final 
+settlement is done after 15 days.
+Once we have the payment settlement confirmation from the finance team 
+mentioning that so and so person's full and financial settlement is done, then we 
+release the experience letter for the person. Experience letter is again the same 
+content mentioning that employee has worked from so and so date.
+and his entire details would be there in the letter for the same.
+Olga Chaban 10:18
+Thank you. Could you please provide us this flow in more details? First of all, I want 
+to understand if the employee should provide some information before resignation 
+letter and experience letter will be generated.
+LalithaPavani Madiraju 10:26
+Ex.
+Olga Chaban 10:36
+because I saw this information on the web page, that information about personal e-
+mail and phone number should be provided by employee. So I want to understand 
+how you collect this information. You notify employee or not, or maybe...
+employee knows that he or she need to go to assist portal and provide this 
+information. The second question is, you generate this letter manually, so the assist 
+system need some manual action before this letter will be generated.
+or not. For example, you need to go to assist and click on some button to generate 
+this letter, etc. And one more question I have connected with the process of sharing 
+this letter. I mean, do you need to
+to do some manual action to send this document to employee and how the 
+employee, the Ex employee receives this letter in attachment of notification maybe 
+from assist portal or Ex employee just receive a link.
+And with this link could go to assist portal and download this letter. So if you could 
+provide us with more detailed flow description, it will be perfect.
+LalithaPavani Madiraju 12:15
+Okay, so to answer it firstly, first thing is that we do collect employees' personal email ID and contact numbers at the time of joining itself. So for every employee, their 
+contact number and the personal ID
+e-mail ID is already captured in the system or in the docs if you save with the new 
+joiners list. Okay, so why do we generally we do ask them again to provide this 
+contact number and
+Olga Chaban 12:43
+Mhm.
+LalithaPavani Madiraju 12:51
+personal e-mail ID because on the date of their exit, their official e-mail ID gets 
+lapsed. It doesn't work. So after that, we might, because we send the experience 
+letter after 15 days of them leaving the company, we would require to send that.
+Olga Chaban 13:07
+Mhm.
+LalithaPavani Madiraju 13:10
+e-mail onto their personal e-mail address itself. We cannot send it to their official e-
+mail address. So that is the reason we do ask associates to update their contact 
+numbers and personal e-mail IDs.
+Olga Chaban 13:28
+You ask to do it in assist portal or maybe on people portal.
+LalithaPavani Madiraju 13:32
+No, we generally don't do it on Assist Portal. Satya, one of these assist portal or 
+update Chinmoy contact number in personal e-mail ID.
+OK.
+Satya Danam 13:48
+At this.
+Ex is good number.
+LalithaPavani Madiraju 13:52
+Excel excel exit one. So Olga, we do send out an e-mail with an Excel form. So in that 
+form we ask associates to send their personal e-mail address and contact number 
+just to reconfirm with the new join us data if we have the same information or not.
+Satya Danam 13:56
+TMM.
+LalithaPavani Madiraju 14:16
+A few people in between do not use their personal e-mail IDs, which was mentioned 
+two or three years back, right? So for that reasons, we take information on that email address and contact number through e-mail itself, not over the assist portal.
+Olga Chaban 14:21
+Yes.
+Okay, and then you use this data to send experience letter.
+LalithaPavani Madiraju 14:40
+Yes, yes. If somebody doesn't fill in the Excel document or anything, we go back to 
+the docs portal for the new joiners data and cheque for the e-mail addresses or 
+contact number that we already have registered and we send it across to them.
+Olga Chaban 14:48
+Mhm.
+And if we talk about resignation letters, a resignation letter should be sent on a POM 
+e-mail address or also on a POM. And if and experience letter should be sent to 
+personal e-mail as you mentioned. Okay.
+LalithaPavani Madiraju 15:03
+NE.
+Yes.
+Yes.
+Olga Chaban 15:21
+How you send this document? It should be in attachment to the e-mail or employee 
+could have access to download directly from assist portal the document, first and 
+second one.
+LalithaPavani Madiraju 15:34
+No, no, it's an attached document only. It goes through e-mail, so it is an attached 
+document. After they resign, after they exit, they do not have accesses to the assist 
+portal anymore.
+Olga Chaban 15:51
+So both letters should be sent to Ex employee as attachment. Okay.
+LalithaPavani Madiraju 15:55
+Sent as an attachment, yes, yes, correct.
+Olga Chaban 16:00
+Okay, and it's automatic action. I just want to confirm that the assist portal have 
+special option for that. Or maybe you create an e-mail in your Outlook and then 
+generate a letter.
+download this letter from assist system and manually attach to the Outlook letter email or it works in another way.
+LalithaPavani Madiraju 16:29
+Satya can show it to us. Satya can show it how he generates the service letter. 
+Basically, Satya accepts service letter.
+Satya Danam 16:55
+This is, uh, relaying later.
+LalithaPavani Madiraju 16:57
+So basically, this is the resignation letter that we sent. So basically he has the 
+employee IDs. So based on that, for a particular day, if we say like there are 10, 20 
+associates, so he has a list of exits for that particular day.
+And with that, once the UID, employee ID is been captured over there, searched, then 
+his details would pop up there in the assist portal. Then he would send the contact 
+number and personal e-mail ID over there.
+Olga Chaban 17:18
+Mhm.
+Satya Danam 17:18
+I.
+LalithaPavani Madiraju 17:38
+Click on the send button, so.
+That's how he releases the. There is a manual intervention for the latest. It is not an 
+automatic act to be done.
+Olga Chaban 17:42
+Mhm.
+OK, and OK, and it means after Satya click on button sends, the system automatically 
+sent the e-mail. Could you please provide the example of e-mail with attachment? I 
+just...
+LalithaPavani Madiraju 18:03
+NE.
+Satya Danam 18:04
+Action required.
+LalithaPavani Madiraju 18:06
+Yes.
+Olga Chaban 18:12
+Ohh, yeah, yeah, Lela.
+Lela Akobidze 18:16
+Yeah, while Satya is searching for the example e-mail. So colleagues, do we 
+understand correctly that there is no automation from within this process? Like not at 
+the beginning, not at the processing, just you have some list of resignations.
+probably exported from the system or from HRMS, for example, there is any trigger 
+or some action which is automatically refers like for you as an information to start 
+this process. So what is the start point?
+LalithaPavani Madiraju 18:50
+Yes.
+Lela Akobidze 18:57
+Is there any automation here from the HRMS system, for example?
+LalithaPavani Madiraju 19:04
+So basically it picks up the name and employee. Once we give the employee ID, it 
+gives the employee details like name and designation of the associate is being 
+picked up from the people portal. And there is a letter format already in.
+Lela Akobidze 19:22
+The.
+LalithaPavani Madiraju 19:23
+you know, it is included in the system. So it does fill in the letter format and 
+generates the letter.
+Only so much of automation is available for now, for separation of letters, separation 
+of letters.
+Lela Akobidze 19:38
+Okay, and how do you get that list of employees to be resigned?
+LalithaPavani Madiraju 19:46
+From the people portal, basically the resignations are marked in the people portal.
+And that's all we did.
+Lela Akobidze 19:51
+And you receive like e-mail from system that someone is going to exit, right? Uhhuh.
+LalithaPavani Madiraju 19:55
+Yes, yes, we get the exit requests, yes, and we get we get to pull the Excel file also 
+from the people portal. That's how we pick up the exit dates, yeah.
+Lela Akobidze 19:58
+Okay.
+Mhm.
+LalithaPavani Madiraju 20:08
+Request exit requests, yeah.
+Lela Akobidze 20:08
+KDB.
+LalithaPavani Madiraju 20:12
+We download this.
+on daily basis and we cheque for the exits on that particular day and then we send 
+out the letters for them.
+Olga Chaban 20:26
+OKOK, Satya, do you have example?
+Lela Akobidze 20:26
+But.
+LalithaPavani Madiraju 20:32
+Example for Olga.
+Olga Chaban 20:32
+Add example.
+Example of for emails that was sent with the resignation with the resignation letter.
+Satya Danam 20:40
+E.
+LalithaPavani Madiraju 20:41
+Yeah, Satya, service letter that OK examples which may.
+e-mail, e-mail, Satya.
+Satya Danam 20:52
+Lela.
+Olga Chaban 20:53
+Yeah, just a mail. We want to see the example how it looks like for an employee what 
+he or she received.
+LalithaPavani Madiraju 20:54
+And.
+Olga Chaban 21:22
+So the letter automatically sent from this e-mail address here.
+Satya Danam 21:49
+Suzhou.
+Olga Chaban 21:54
+Mhm.
+Okay, could you please share with us the example of the letter without attachment?
+attachment, if it's optional. We don't need it because you already provide us with 
+example of our resignation letter previously.
+Just a text of of a e-mail.
+LalithaPavani Madiraju 22:33
+So, the attachment this is conviction.
+Satya Danam 22:36
+Ohh, you made it just an hour.
+LalithaPavani Madiraju 22:39
+Yeah, mail order attachment to it.
+Olga Chaban 22:49
+And the same approach with the experience letter, is it correct?
+Satya Danam 22:56
+Same.
+LalithaPavani Madiraju 22:57
+Same, same process, Olga.
+Olga Chaban 22:57
+The same.
+Satya Danam 22:59
+Same process, yeah.
+Olga Chaban 23:01
+You just know that right now you need to send experience letter. You go to the assist 
+portal, provide information that you will need for generation of resignation letter, or 
+not resignation experience letter.
+Satya Danam 23:02
+Yeah.
+Lela Akobidze 23:13
+I.
+Olga Chaban 23:22
+and send it with assist. OK, so we could you please provide us with an example of email without or without experience letter, just an e-mail, how it looks like as well. So 
+both example will be good.
+LalithaPavani Madiraju 23:22
+Ohh.
+Oh.
+Olga Chaban 23:42
+To sing.
+LalithaPavani Madiraju 23:44
+Satya experience later, Diggadatta Mail.
+Olga Chaban 23:53
+We have only three minutes till the end of this call. I think it will be perfect to have 
+one more meeting to finalise our talk about these two letters.
+But maybe let me arrange this meeting a little bit later because we need some time 
+just to review the information that we already received from your site.
+Yes, Lela, you want to add something?
+Lela Akobidze 24:34
+No, just I want to confirm that we can help hold that meeting, for example, 
+approximately in two weeks.
+Not totally.
+Olga Chaban 24:48
+Yeah, I think yes, because maybe we need some additional input from people portal 
+as well.
+Okay, Satya, thank you very much for the example of relevant letter. Could you 
+please also provide, yeah, I see. Yeah, experience letter group also good to see how it 
+looks like.
+LalithaPavani Madiraju 25:15
+St.
+Lela Akobidze 25:18
+Yeah, I think I think the final question from my side at least, a colleague, so how do 
+you like monitor the time when you need to send this or that, for example, for 
+experience letter it is upon 15 days?
+after the exit. So what instruments do you have, mechanics do you have to track 
+when you need to send this resource letter? You have, I see the Excel file where you 
+daily basis cheque the dates, right?
+LalithaPavani Madiraju 25:51
+So we generally receive a file from the finance team mentioning the settlement 
+clearance list. So it gets automatically filled over here in this Excel. So once it has 
+been filled or Satya does fill it into this sheet, for whosoever the payment is done,
+Lela Akobidze 25:58
+Mm-hmm.
+LalithaPavani Madiraju 26:10
+the status is paid. Satya manually picks up that list and sends out the letters on that 
+particular day.
+Lela Akobidze 26:19
+Got it. So this Excel file is like the shared one, right? Just for the colleagues, you just 
+see the changes made from the finance team.
+LalithaPavani Madiraju 26:21
+Yeah, it's a manual task.
+Olga Chaban 26:21
+So.
+LalithaPavani Madiraju 26:29
+Yeah, it is only, it is not shared with the finance team, but then they share a separate 
+file with us and we update this sheet according to us.
+Lela Akobidze 26:36
+Uh-huh.
+Okay, thank you.
+Olga Chaban 26:44
+Okay, thank you. We're out of time, colleagues. Thank you very much. We will 
+continue our talk through the chat because we have some open questions. One more 
+time. Thank you very much for this information. We will be in touch.
+LalithaPavani Madiraju 26:48
+Yeah.
+Sure.
+Yeah.
+Olga Chaban 27:04
+Have a good day.
+LalithaPavani Madiraju 27:04
+Sure. Thanks, Olga. Thank you, colleagues.
+Lela Akobidze 27:05
+Thank you.
+Satya Danam 27:06
+Thank you. Thank you. Bye.
+Lela Akobidze 27:07
+You get that.
+LalithaPavani Madiraju 27:08
+Bye.
+Olga Chaban 27:08
+Bye.
+Lela Akobidze stopped transcription

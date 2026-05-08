@@ -1,0 +1,35 @@
+# ═══════════════════════════════════════════════════════════════
+#  VALIDATION  —  Edit to update check list displayed on page
+#  Add new checks here; the component template reads this list.
+# ═══════════════════════════════════════════════════════════════
+
+skill:
+  command: "/validate-docs"
+  description: "Run after any change to output/ — validates all output documents in one pass"
+  icon: "⚡"
+
+checks:
+  - "Check 1 — Factual accuracy vs. locked decisions (\"Reflected in\" verification)"
+  - "Check 2 — Forbidden phrases (RM approval, July 1, HRBP in wrong docs, etc.)"
+  - "Check 3 — OQ cross-reference integrity (cited OQs exist; resolved OQs not open)"
+  - "Check 4 — Terminology consistency (letter names, platform name, role names)"
+  - "Check 5 — Structural completeness per document type"
+  - "Check 6 — Audience fit (management / SME / employee language rules)"
+  - "Check 7 — Internal coherence (no contradictions, no orphaned placeholders)"
+  - "Check 8 — Traceability completeness (RTM rows, Source Index, OQ Impact Map)"
+  - "Check 9 — Confidence quality (uncertainty markers in management docs, SME question coverage)"
+  - "Check 10 — Stale detection (superseded decisions, stale memory files, orphaned pending markers)"
+
+result_cards:
+  - icon: "❌"
+    title: "Errors"
+    accent: accent
+    body: "Must fix before next stakeholder meeting. Reported with file, location, issue, correct content, and source Decision ID."
+  - icon: "⚠️"
+    title: "Warnings"
+    accent: blue
+    body: "Review recommended. Reported with file, location, concern, and specific suggested action."
+  - icon: "✅"
+    title: "Pass"
+    accent: green
+    body: "Confirms documentation is consistent with the Feedback Log and ready for the next stakeholder stage."

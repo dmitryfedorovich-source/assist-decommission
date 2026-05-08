@@ -1,0 +1,45 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: workflow
+  Static content — no data slots
+  ═══════════════════════════════════════════════════════════
+-->
+
+<div class="section-tag">02 — How It Works</div>
+<h2>AI-Assisted Documentation Workflow</h2>
+<p class="section-desc">Raw inputs are processed through a structured knowledge pipeline. Extracted facts are stored in a tiered memory system. Claude Code uses that memory to generate, update, and validate all output documents.</p>
+
+<div class="flow-wrap">
+  <div class="flow-row">
+    <div class="flow-step">
+      <div class="fs-tag">Raw Materials</div>
+      <div class="fs-label">Screenshots · Transcripts · Confluence · Corrections</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step hl">
+      <div class="fs-tag">Knowledge Extraction</div>
+      <div class="fs-label">Claude Code reads &amp; extracts decisions, facts, field specs</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="fs-tag">Memory System</div>
+      <div class="fs-label">Tiered markdown files persist knowledge across sessions</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step hl">
+      <div class="fs-tag">Document Generation</div>
+      <div class="fs-label">Claude writes / updates output docs per audience rules</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="fs-tag">Validation</div>
+      <div class="fs-label">validate-docs skill checks all 18 docs for consistency</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="fs-tag">Delivery</div>
+      <div class="fs-label">Stakeholder review · sign-off · dev handoff</div>
+    </div>
+  </div>
+  <p class="flow-note"><strong>Key principle:</strong> The <code>Feedback &amp; Decisions Log</code> is the single source of truth. Every output document is derived from locked decisions in the log. When a decision changes, the validator catches which docs need updating. The AI never invents facts — it extracts, stores, and applies them.</p>
+</div>

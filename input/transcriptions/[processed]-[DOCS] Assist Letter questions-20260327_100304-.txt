@@ -1,0 +1,504 @@
+[DOCS] Assist Letter questions-20260327_100304-
+Meeting Recording
+27 March 2026, 08:03am
+28m 11s
+Olga Chaban started transcription
+Olga Chaban 0:03
+Let me share the screen.
+Can you see my screen? Okay. Okay, great. So in this part, in the left part, we have an 
+Excel table where we collect the information from the documents and here are the 
+folders where you upload it as examples of documents that we have on
+Satish Malla 0:07
+Yep, yeah, yeah.
+Olga Chaban 0:29
+Assist platform. Let's start from the salary. No, there's a Compensation letter. Here is 
+we have only one example of compensation letter, and also you previously shared 
+with us an Excel file.
+Is it also used for creation this Compensation letter? Let's check, let's check, let's 
+check. There is a field from this compensation from the Excel file, but in a little bit 
+different order.
+plus some fields that I...
+I see in this letter, as an example, as I understood, we need to collect from other 
+system. So let's go one by one and cheque if this field are stable in the document.
+or need to be changed depend on at what time this Compensation letter is created 
+and for whom. So the first, it's a date.
+Please advise, if I understand correctly, that it's date of creation, this compensation 
+letter. Is it correct? This one? Okay. Name, first, last name that we have, for example, 
+on the people platform, it could be legal first and last name.
+Satish Malla 1:55
+Maite.
+Olga Chaban 2:09
+Is it? Okay. Employee ID, it's your ID. Is it right? Okay. Employee ID. Next one, 
+designation we have a little bit later, a little bit later here in this document, but.
+Satish Malla 2:09
+Right.
+Maite.
+Yeah.
+Olga Chaban 2:30
+I have a question regarding this information.
+As I understood, it's you.
+Is this information from Compensation portal or not?
+This one.
+Satish Malla 2:51
+That is not from Compensation Portal. We will upload the information in the Excel.
+Olga Chaban 2:56
+But where are you, you, you, you just received this information from other 
+department?
+Satish Malla 2:57
+But.
+So, it's like an we'll receive an approval emails from respective HRBPs, and, for 
+example, if a comp provision was happened, then we will get that we get to know 
+those information.
+Olga Chaban 3:18
+So for you, okay, if it will be, how would it say, collect, not automated. I mean, you 
+can use this information from some internal sources and put it to the Excel file and 
+use for creation as this Compensation matter.
+Satish Malla 3:37
+Maite.
+Olga Chaban 3:38
+Okay, great. And as I understood, you need to provide information in this letter, in 
+figures, in digits, and in words. Yeah, it's
+Satish Malla 3:50
+Correct, but in this digits which is coming up rupees 18 lakhs, that should be 
+automated based on the number we give.
+Olga Chaban 3:58
+Mhm, Okay.
+Satish Malla 3:58
+We will not give the update on the wording part. We only give input on the value to 
+be key in.
+Olga Chaban 4:03
+So.
+So, you just provide the digits and the system automatically create the same inward. 
+OK, and this date also, as understood, you take from from the some internal file.
+Satish Malla 4:15
+Correct.
+Right, right.
+Olga Chaban 4:26
+Oh.
+Okay. Let's move on to the next. Let's check. I don't see here on the first page any 
+other information that need to be, how would say, change dynamically. All other text.
+As I see.
+Satish Malla 4:48
+That is, that is fixed for everyone.
+Olga Chaban 4:51
+Will be the same for everyone. OK, great. Thank you. OK, so the second page here, 
+we also have first last name. Also, we have here the designation, and as understood, 
+this designation could be taken from the Outlook.
+Oh, Outlook, sorry, from the People portal. And please correct me if I'm wrong.
+Uh, it's a job title, yeah? Is it correct?
+Satish Malla 5:25
+Which one?
+Olga Chaban 5:27
+designation, you see software test engineer.
+Satish Malla 5:29
+Oh.
+Yes, this is a title, title, and the grid.
+Olga Chaban 5:35
+Okay, let's move on to the tables that we have here. If we compare the tables that we 
+have here as an example in the document with the Excel file and the parameters,
+that I copy from the Excel file. Here is some empty lines. Could you please advise 
+how this table works? I mean, for some people, for example, can be present in this
+table current statutory bonus for some no or maybe it works in another way.
+Satish Malla 6:25
+That is like we give the input.
+And that from the Excel sheet that we give.
+Olga Chaban 6:37
+So you just use the information from some internal sources, and this information 
+could be present or not in some columns.
+Yeah, and depend on if this information present in Excel file, the system show it in 
+the table in document.
+Satish Malla 6:55
+Correct.
+Correct, correct.
+Olga Chaban 7:02
+So all this fields that present in Excel file could be, I would say, could be present in 
+the table at the document as well.
+Is it right? Okay.
+Satish Malla 7:18
+Yep, that's this.
+Olga Chaban 7:20
+Okay, okay, I got it. Let me, as I see right now, this table, the figures in the tables that 
+it gets in the stable could be changeable. Also here we have also changeable.
+changeable information here is under the table. And then when we have a part with 
+the benefits and well-beings,
+Satish Malla 7:51
+This is a fixed template. This is a fixed template. You can use same thing. Only the 
+value shown up your selected that has to be updated. Rest all is like a fixed template.
+Olga Chaban 8:03
+Okay, so only if some rules will be changed for all employee here. Yeah, so you will 
+need this. Yeah, this will be changed for everyone. Okay, so it's
+Satish Malla 8:12
+It's the same for everyone.
+The.
+Olga Chaban 8:21
+The same for words and recognitions, yeah, is that correct?
+Satish Malla 8:25
+Right, right.
+Olga Chaban 8:27
+Okay, and here we have just a visualisation of signature from a palm site. Is it right 
+here?
+Satish Malla 8:35
+Okay.
+ES.
+Olga Chaban 8:40
+I have two questions additional regarding this document because we go through all 
+of this document. First of all, I saw that in some resources highlight that this 
+document should be signed in or accepted from employee side.
+So could you please advise how it looks like? It's some signature from employee side, 
+he or she need to sign in this document when receive it or how it looks like this 
+acceptance action.
+Satish Malla 9:09
+No.
+Just let me share my screen.
+Olga Chaban 9:26
+Yeah.
+Satish Malla 9:29
+Can I?
+Olga Chaban 9:31
+Sure, sure.
+Satish Malla 9:33
+Thank you.
+So once the, with Excel sheet, with all the required information, once we trigger the 
+letter, employee would come into assistancy under my documents, Compensation 
+Letters, and the letter would be shown here. The letter name is like total award 
+statement. When is that generated? The month and year.
+Olga Chaban 10:19
+Mhm.
+Satish Malla 10:20
+Justin, we click on a click a button here, it will be shown as accepted, that's it.
+Olga Chaban 10:21
+And for you.
+So it's just an information, yeah. And for you, what does it mean? You need to review 
+the, I would say the compensation letters where the employee didn't accept it. You 
+need this information for some reason.
+Satish Malla 10:29
+Correct.
+No, it's like an acknowledgement where employee gives that he received his letter. 
+That's it.
+Olga Chaban 10:55
+So, you just collect this action and the tool, yeah, and...
+Satish Malla 10:59
+It is even we gave that provision so that employee would look and accept that. There 
+will not be any option to reject or discuss or something like that. It's just an 
+acknowledgement that he received letter. That's it.
+Olga Chaban 11:12
+So this one more thing, is this information visible only for your team or for example 
+for a source manager of this employee as well?
+Satish Malla 11:22
+Employee as well.
+Olga Chaban 11:25
+employee and resource manager, yeah, or not, just the employee and your team.
+Satish Malla 11:28
+No, no, no, only just employee. Compensation details will not be visible to RM as 
+well. Only employee and as an admin, we should be able to see what is the status of 
+the letter.
+Olga Chaban 11:41
+Mhm, Okay.
+Okay, okay, thank you. The second question that they have regarding this letter, the 
+Excel file that was shared with us include also this points, salary and type of salary.
+and other points in blue color. Actually, I didn't get what it means.
+Satish Malla 12:11
+OK, let me let me explain you detail on this Excel sheet. So here if you can see there 
+is an salary on 35 row salary hike PO. This is one kind of letter. Salary hike promotion 
+P1 is another kind of letter. Salary hike.
+P2 is another kind of letter. Salary, P3 is another, and on target bonus, including 
+salary, P4, there is a different structures, different letters. Once we select while you 
+are uploading the letter, if we select from 35 to 40, we have to select one or the 
+other. If not, the Excel sheet will not be uploaded.
+So it will throw an error like no information has been given. So from 35 to 40, which 
+kind of letter we have to choose while issuing the letter? That is information will be 
+chosen by 35 to 40 and we will also share you the templates of all these things so 
+that you would also...
+Olga Chaban 12:58
+I.
+Satish Malla 13:09
+able to understand what is it promotion, what is it on target bonus, what is it salary. 
+So in India we have for all the employees above A5 and above are having on target 
+bonus about for a different kind of percentage based on the band. A1, A5 to B2 will 
+have.
+only 10% and B3 will have 15%, B4 will have 25% and B5 will have 30%. In that way, 
+based on the percentages, the on-target bonus would be changed. And for A1 to A4 
+and B1, there will not be no on-target bonus in the salary structure that will be given.
+So for them, for A1 to A4, while we are releasing later, we have to select salary hike 
+PO, which is like a default structure. There will not be, whatever the salary which we 
+give, it is a fixed salary. There will not be any variable pay in that CTC. So in on target 
+bonus, which is a variable pay, so based on the percentage, that would be different 
+and that would change.
+And when you say like from 41 to 67, all these are the bonuses additionally what we 
+give to the employee. For example, we are generated a letter this month with a 
+promo of 2025. The OTP value for the last year might be coming into the picture 
+while we're releasing the letter.
+So the OTB value and OTB date and OTB year talks about the previous year, anything 
+that we are giving now. For example, promo 2026 was closed very recently. Yesterday 
+we released the latest for all India people where OTB one target bonus for the last 
+year might be coming into the picture here. People who are eligible.
+We will keep that amount. For example, Satish is eligible for some 25,000 for the last 
+year, which will come here under 41. OTP date is for which date that is going to be 
+paid. Either it is going to be paid with March salary or it is going to be April. That 
+apply date would be the OTP date. And OTP year like this OTP reflects to which year.
+Is it 2025 year or 2026 year? That information we will keep. RB1, RB2, RB3, RB4, these 
+are the retention bonuses. Few cases where we tell like retention bonus of 5,00,000 
+would be paid in two to three retrenches. Literally like first part would be 20% and 
+second part would be 30%.
+and rest is 70%. Those will be conditions will be given while doing some 
+retrospective retentions or proactive corrections we are making to an employee. 
+These are the bonuses which we split. In the same way, once we keep the amount 
+into two to three values, like...
+RB150,000, RB3 is 70,000, and the letter also you'll be able to see a tabular column. 
+First payment when is going to be happen, second payment when is going to 
+happen. So 44 and 49, 44 and 48 are one table. RB1 amount and RB1 date, when is 
+that is going to be paid. In the same way, 45 and 49 would be one table.
+It should be shown like a tabular columns. So I'll also share one sample with RB, one 
+sample with, and the same reflects to this DB as well, DB1, DB2, DB3. It's for example, 
+people might hire for some salary and every year they're instructed, they're advised 
+to pay some fixed amount of some.
+Olga Chaban 16:23
+Mhm.
+Satish Malla 16:29
+Fifty 1000 or 1,00,000 every year that will be paid, so then it will comes to the 
+deferred deferred bonus, which is like how many times it should be paid for three 
+years or two years? How many years? As of now, we said we saw only three years, so 
+we we have kept like three years a date and amount to be reflective and...
+Effect to this, if you are releasing a new letter now for an employee stating that your 
+deferred bonus is going to be effective from so and so date, that is like from March 
+1st, 2026, then that will be paid.
+Olga Chaban 17:04
+Mmh.
+Satish Malla 17:04
+And then that will be issued in next year, next year. So based on that, the defect DB 
+effective date will come into the picture here.
+So there is any like spot bonuses like one time payment can happen. The same thing 
+will come to 61 to 7, 61 to 68.
+Olga Chaban 17:20
+Mhm.
+Okay, so.
+Satish Malla 17:25
+So, are we?
+Olga Chaban 17:27
+Please continue.
+Satish Malla 17:27
+Yeah.
+The RP recovery terms and RB recovery terms is all is like if you keep yes, it will be 
+mentioned as like from the day payment of RB, a one year recovery clause. Anytime 
+people who exist from the company within the one year, this will be recovered. That 
+clauses will be mentioned by default when we say yes for RB recovery terms, yes, or 
+DB recovery ones.
+our one-time recovery ones, our LTA is like people would be issued with some stock 
+options where we will keep the just amount here. Once the amount is reflected here, 
+you can scroll up onto the first page here, you would be seeing the information here, 
+here on the PDF document.
+Olga Chaban 18:09
+All this information, for all this information, you notify the employee, is it right?
+Satish Malla 18:16
+Right.
+Olga Chaban 18:17
+And as a blank page, the blank letters that you use for that, this one, or it's some 
+another blank.
+Satish Malla 18:24
+The same letter, same letter will be used. Just go up once.
+Here there is a blank, right? So whatever we select, for example, this is not selected 
+anything, it's just a salary change letter. For example, if there is any on target bonus 
+or anything RB, then those information will come and sit here with the clauses and 
+effective dates. We'll do one thing, we will share you one one sample.
+Olga Chaban 18:29
+Oh.
+Mhm.
+Okay, you.
+Satish Malla 18:50
+with one one category from 35 to 40. And we'll also share you one kind of letter 
+which is having an RB values and which is are having deferred bonuses and which are 
+having one time bonus. So all these samples of letters without employee ID, name 
+and all we would be sharing with you. Maybe today we are in closure of Payroll, 
+maybe by...
+Olga Chaban 18:54
+Mhm.
+Okay.
+Satish Malla 19:15
+Tuesday or Wednesday we should be sharing you the sample letters of each category 
+so that you would be understanding how what happens when we click on yes for a 
+prospective thing.
+Olga Chaban 19:18
+Mhm.
+Satish Malla 19:27
+and from 35 to 70.
+Olga Chaban 19:28
+Okay, good.
+Okay, okay. Thank you very much. It will be really great because right now for me, I 
+not really good understand how it works in this platform, but I think the example will 
+be help to have more clearance for that.
+for this letter. Thank you very much. Okay, let's move on because we don't, we have 
+short of time. Also, I saw the compensation letters, ongoing compensation letters. 
+Could you please advise if the compensation letter
+Satish Malla 19:52
+Yeah.
+Yep.
+Olga Chaban 20:12
+that could be sent not as a part of annual campaign, have some differences with this 
+letter that you share as an example.
+Oh, you don't have such kind of letters.
+Satish Malla 20:32
+I didn't get your point. Can you just repeat again, please?
+Olga Chaban 20:32
+Yeah.
+The question is, if we talk about compensation letters, you have only one blank that 
+used in any cases, for example, in annual campaign, or for example, if you need to 
+notify the employees that this employee have one-time bonus.
+Satish Malla 20:40
+HU.
+Correct.
+Olga Chaban 20:55
+Or maybe you have different planks.
+Satish Malla 20:55
+Ohh.
+Different letters you're telling about is based on the options we select here, yes or 
+no? The obviously template the content will come and sit here, so that is the reason 
+I'm I'll be I'll I said like I'll be sharing you the templates, I mean e-mail letter 
+templates for each category, so that you will be understanding what.
+Olga Chaban 21:07
+So...
+Satish Malla 21:17
+We select yes, what days that is going to be reflected in the first page.
+Olga Chaban 21:22
+Thanks, thanks. I see Diana, please welcome to ask. You raise your hand.
+Diana Nikoghosyan 21:29
+Yes, as far as I can understand, the Compensation letter is like a lot of, let's say, fields 
+are the similar as we have in job offer. And when the job offers were shared with us, 
+there were all the conditions. For example, if this one is selected or this condition 
+happens,
+Satish Malla 21:39
+Be.
+Diana Nikoghosyan 21:51
+And in that case, just showing some additional text and the information with the 
+markers. So can we have like that format for these ones? Because as far as I can 
+understand, there are a lot of variable fields, then depends on whether we use them 
+or not. So we should add some text.
+Satish Malla 22:13
+Ohh, better if we can add some text, but yeah, these are the default fields which we 
+use for uploading the template to generate the Letters.
+Diana Nikoghosyan 22:22
+Yeah, I do understand, but just to know what type of text it should be and what is the 
+condition for the offer letters, if not mistaken, Ashwini was sharing with us with all 
+the conditions. So, for example, if the person is like has some bonus.
+or has some benefits in that case, just adds this text with this information. So we add 
+to the full.
+Satish Malla 22:47
+That is what here, that is what from 35 to 70, which I was telling about. So once I...
+Diana Nikoghosyan 22:53
+Mm-hmm.
+Satish Malla 22:57
+From 35 to 70 of all the things which is there, once it is, once we mentioned yes or 
+no, based on that, the content will also be reflecting onto the page, first page. That is 
+why I was telling you, I'll be sharing you the templates as well.
+Diana Nikoghosyan 23:10
+No.
+Okay, so where we have all yes and we will just have the whole text, right?
+Satish Malla 23:18
+Yes, yes, yes.
+Diana Nikoghosyan 23:20
+Okay, like.
+Olga Chaban 23:23
+Yeah, one more thing that connect with the Letters. Do we need, do you need some 
+approvals from, I think no, but let's just cheque it from a resource manager or 
+something. Okay.
+Satish Malla 23:38
+No, no, no, not needed, not needed.
+Olga Chaban 23:41
+Okay, thanks. Let's move on.
+Let's move on to the forms that names, address, proof letters. It's our...
+Okay, reference letters, entries proof letters. Okay, do you need to collect approvals 
+from additional approvals before this letter will be created for employee if they 
+request it?
+I think no, because I don't see such kind of approval, but just to check. Okay. Okay. 
+And if we go through the information that present here as an example, here we have 
+a quite standard
+Satish Malla 24:25
+No, not in that, not in that, not in that.
+Not needed.
+Olga Chaban 24:43
+fields with information about employee, date of creation of this letter, then first, last 
+legal name, your ID, then the start date, is it correct? It's a start date.
+Satish Malla 25:01
+Correct.
+Correct.
+Olga Chaban 25:03
+Okay, in India location. And then here we have designation, job title.
+Satish Malla 25:07
+Title.
+Correct.
+Olga Chaban 25:12
+And please advise about this address. Is this address provide employee or we need 
+to use this address from some sources in Nepal?
+Satish Malla 25:26
+Satish, is that getting filled by employee or from people directly it is getting synced?
+Olga Chaban 25:35
+Is it a home address?
+Satya Danam 25:37
+Addressed people portal.
+Olga Chaban 25:40
+From People Portal.
+Satish Malla 25:41
+Triple Potter.
+Satya Danam 25:41
+from prepotal, personal info, personal info, primary.
+Satish Malla 25:44
+T.
+Satya Danam 25:46
+Address details.
+Olga Chaban 25:50
+Is it address of office where employee work?
+Satya Danam 25:55
+Employee personal address.
+Satish Malla 25:55
+Employee address, employee address.
+Olga Chaban 25:59
+Oh, could you please repeat, please?
+I didn't get what you see.
+Satish Malla 26:04
+This, this, this address, yes, yes, this address is going to be captured in personal 
+details, personal address, Madiraju.
+Lela Akobidze 26:04
+It's about home address, right?
+Olga Chaban 26:18
+Oh, okay. And is this and this is.
+Satish Malla 26:19
+In People Portal.
+Satya Danam 26:21
+On Payroll portal, personal info tab.
+Olga Chaban 26:22
+And listen to.
+Mhm.
+Okay, okay, so we will cheque where this information is present, but if you could 
+provide us in the chat the field name that we have on the people portal where this 
+address is present will be perfect. And other information in this letter is understood is 
+a standard.
+We don't have any changes, depend on who requests this letter. Is it correct?
+Satish Malla 26:59
+Correct.
+Olga Chaban 26:59
+I mean this part. Okay, okay, good.
+Good. Let's move on.
+We have to type a letter of recommendation. And actually, we're out of time. Do you 
+have available time next week to continue?
+Satish Malla 27:21
+Yes, you can schedule for next week.
+Olga Chaban 27:25
+Okay, okay. Thank you very much. Actually, the information that you provided is very 
+helpful for us.
+Satish Malla 27:35
+No problem. I just kept this screenshot of address where we pick the address in 
+people portal. You can also look at that.
+Olga Chaban 27:35
+Uh, colleagues.
+Yeah, yeah. Thank you very much. So let's wrap up for today and I reschedule one 
+more meeting next week. Thank you very much one more time and have a good day. 
+Bye.
+Satish Malla 27:52
+Yep, yep, thank you. Thanks.
+Thank you.
+Diana Nikoghosyan 27:56
+Thank you. Bye.
+Lela Akobidze 27:57
+Thanks, Colin.
+Satish Malla 27:58
+Right.
+Lela Akobidze stopped transcription

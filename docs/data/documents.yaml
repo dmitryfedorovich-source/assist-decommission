@@ -1,0 +1,311 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#  CANONICAL DOCUMENTS CATALOG
+#  Schema:    docs/schema/document.schema.json
+#  Source of truth for: RTM Document column, outputs table, audience rules
+# ═══════════════════════════════════════════════════════════════════════════════
+
+_meta:
+  schema_version: "1.0"
+  schema_ref: "../schema/document.schema.json"
+  last_updated: "2026-05-08"
+  maintainer: "BA team"
+
+documents:
+
+  # ── Phase 1 — Reference Letters ──────────────────────────────────────────
+
+  - id: "01"
+    number: "01"
+    name: "Process Flow — Reference Letters"
+    short_code: PF
+    phase: 1
+    audience_code: internal
+    audience_label: "Internal / Platform team"
+    purpose: "Target-state process in EPAM Docs — field specs, routing tracks, lifecycle"
+    format: Markdown
+    file_path: "output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-06, D-07, D-09, D-12, D-13, D-15, D-16, D-17]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 7"]
+
+  - id: "02"
+    number: "02"
+    name: "BRD — Reference Letters"
+    short_code: BRD
+    phase: 1
+    audience_code: internal
+    audience_label: "Docs Platform team"
+    purpose: "Business requirements for EPAM Docs platform development"
+    format: Markdown
+    file_path: "output/phase1_reference_letters/02_BRD_Reference_Letters.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-02, D-06, D-07, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-17]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 7"]
+
+  - id: "03"
+    number: "03"
+    name: "Internal Presentation"
+    short_code: PRES
+    phase: 1
+    audience_code: internal
+    audience_label: "Docs Platform team"
+    purpose: "Detailed briefing deck — process flows, field specs, integration points, action items"
+    format: Markdown
+    file_path: "output/phase1_reference_letters/03_Presentation_Internal_Team.md"
+    status: draft
+    confidence_min: medium
+    decisions_reflect: []
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 7"]
+
+  - id: "04"
+    number: "04"
+    name: "KB Onepager (Phase 1)"
+    short_code: KB1
+    phase: 1
+    audience_code: mgmt
+    audience_label: "EPAM Management"
+    purpose: "Business case, scope summary, timeline — management communication"
+    format: HTML
+    file_path: "output/phase1_reference_letters/04_KB_Onepager.html"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-08, D-16]
+    forbidden_terms: ["HRBP", "TBD", "to confirm", "pending", "assumed", "under investigation"]
+    validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 6", "Check 7"]
+
+  - id: "05"
+    number: "05"
+    name: "India SME Validation"
+    short_code: SME
+    phase: 1
+    audience_code: india_sme
+    audience_label: "India SMEs"
+    purpose: "Structured review document for India team stakeholder sign-off"
+    format: Markdown
+    file_path: "output/phase1_reference_letters/05_India_SME_Validation.md"
+    status: draft
+    confidence_min: medium
+    decisions_reflect: [D-01, D-02, D-08, D-16, D-17]
+    forbidden_terms: ["HRBP"]
+    validator_checks: ["Check 1", "Check 2", "Check 3", "Check 4", "Check 5", "Check 6", "Check 7"]
+
+  - id: "06"
+    number: "06"
+    name: "India Colleagues Guide"
+    short_code: CG
+    phase: 1
+    audience_code: india_employee
+    audience_label: "India Employees"
+    purpose: "Plain-language guide: what changes and how to use EPAM Docs"
+    format: Markdown
+    file_path: "output/phase1_reference_letters/06_India_Colleagues_Guide.md"
+    status: draft
+    confidence_min: sme_confirmed
+    decisions_reflect: [D-01, D-08]
+    forbidden_terms: ["HRBP", "DOCS", "migration rationale", "Assist decommission rationale"]
+    validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 6", "Check 7"]
+
+  # ── Phase 2 — Compensation Letters ───────────────────────────────────────
+
+  - id: "KB2"
+    number: "01"
+    name: "KB Onepager (Phase 2)"
+    short_code: KB2
+    phase: 2
+    audience_code: mgmt
+    audience_label: "EPAM Management"
+    purpose: "Phase 2 scope preview — compensation letters overview"
+    format: HTML
+    file_path: "output/phase2_compensation/01_KB_Onepager.html"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-P2-01, D-P2-02, D-P2-03, D-P2-04, D-P2-05, D-P2-06, D-P2-07]
+    forbidden_terms: ["HRBP", "TBD", "to confirm", "pending", "assumed", "under investigation"]
+    validator_checks: ["Check 1", "Check 4", "Check 5", "Check 6", "Check 7"]
+
+  # ── Phase 3 — Separation Letters ─────────────────────────────────────────
+
+  - id: "KB3"
+    number: "01"
+    name: "KB Onepager (Phase 3)"
+    short_code: KB3
+    phase: 3
+    audience_code: mgmt
+    audience_label: "EPAM Management"
+    purpose: "Phase 3 scope preview — separation letters overview"
+    format: HTML
+    file_path: "output/phase3_separation/01_KB_Onepager.html"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-P3-01, D-P3-02]
+    forbidden_terms: ["HRBP", "TBD", "to confirm", "pending", "assumed", "under investigation"]
+    validator_checks: ["Check 1", "Check 4", "Check 5", "Check 6", "Check 7"]
+
+  # ── Migration — Readiness & Operational ─────────────────────────────────
+
+  - id: "MIG-01"
+    number: "MIG-01"
+    name: "Decommission Plan"
+    short_code: DCP
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / India Team lead"
+    purpose: "June 30 cutover procedure — milestone checklist, Assist retirement steps, escalation contacts"
+    format: Markdown
+    file_path: "output/migration/Decommission_Plan.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-11, D-16]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 7"]
+
+  - id: "MIG-02"
+    number: "MIG-02"
+    name: "Rollback & Recovery Plan"
+    short_code: RRP
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / India Team lead"
+    purpose: "Contingency plan if DOCS is not ready by June 30 — trigger conditions, decision authority, Assist re-enablement"
+    format: Markdown
+    file_path: "output/migration/Rollback_Recovery_Plan.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 7"]
+
+  - id: "MIG-03"
+    number: "MIG-03"
+    name: "Go-Live Runbook"
+    short_code: RBK
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / DOCS Platform team / India Team lead"
+    purpose: "Step-by-step day-of-cutover procedure — pre-go-live checklists, execution steps, smoke tests, escalation"
+    format: Markdown
+    file_path: "output/migration/Go_Live_Runbook.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-06, D-15, D-16]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 2", "Check 7"]
+
+  - id: "MIG-04"
+    number: "MIG-04"
+    name: "Test & Validation Plan"
+    short_code: TVP
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / India Team specialists / DOCS Platform team"
+    purpose: "Test scope, UAT test cases (TC-01–TC-09), defect classification, sign-off table for Stage 4"
+    format: Markdown
+    file_path: "output/migration/Test_Validation_Plan.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-06, D-07, D-09, D-12, D-13, D-15, D-16, D-17]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 2", "Check 7"]
+
+  - id: "MIG-05"
+    number: "MIG-05"
+    name: "Acceptance Criteria"
+    short_code: ACC
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / internal reviewers / India Team leads"
+    purpose: "Definition of Done — per-doc validation gates, stage sign-off criteria, Go/No-Go checklist for T-1"
+    format: Markdown
+    file_path: "output/migration/Acceptance_Criteria.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-06, D-07, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-17]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 7"]
+
+  - id: "MIG-06"
+    number: "MIG-06"
+    name: "Communication Plan"
+    short_code: COM
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / India Team lead / Communications"
+    purpose: "Stakeholder comms schedule T-30 through T+7 — message templates, channels, responsibility matrix"
+    format: Markdown
+    file_path: "output/migration/Communication_Plan.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-08]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 4", "Check 7"]
+
+  - id: "MIG-07"
+    number: "MIG-07"
+    name: "Monitoring Plan"
+    short_code: MON
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / India Team lead / DOCS Platform team"
+    purpose: "Post-go-live observability — metrics, alert thresholds, review cadence T+1 through T+30"
+    format: Markdown
+    file_path: "output/migration/Monitoring_Plan.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-01, D-06]
+    forbidden_terms: []
+    validator_checks: ["Check 1", "Check 7"]
+
+  - id: "MIG-08"
+    number: "MIG-08"
+    name: "Reconciliation Report Template"
+    short_code: RRT
+    phase: migration
+    audience_code: internal
+    audience_label: "BA team / India Team lead"
+    purpose: "Fill-in template for post-go-live reporting — volume summary, errors, OQ status, metrics vs thresholds"
+    format: Markdown
+    file_path: "output/migration/Reconciliation_Report_Template.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: [D-06]
+    forbidden_terms: []
+    validator_checks: ["Check 7"]
+
+  # ── Shared ────────────────────────────────────────────────────────────────
+
+  - id: "FDL"
+    number: "01"
+    name: "Feedback & Decisions Log"
+    short_code: FDL
+    phase: "shared"
+    audience_code: ba_team
+    audience_label: "BA team"
+    purpose: "Cross-phase decisions, open questions, feedback log — authoritative source of truth"
+    format: Markdown
+    file_path: "output/shared/Feedback_Decisions_Log.md"
+    status: draft
+    confidence_min: low
+    decisions_reflect: []
+    forbidden_terms: []
+    validator_checks: ["Check 5", "Check 7"]
+
+  - id: "RTM"
+    number: "02"
+    name: "Requirements Traceability Matrix"
+    short_code: RTM
+    phase: "shared"
+    audience_code: ba_team
+    audience_label: "BA team"
+    purpose: "Decision×Document matrix, OQ Impact Map, Source Index"
+    format: Markdown
+    file_path: "output/shared/RTM.md"
+    status: draft
+    confidence_min: high
+    decisions_reflect: []
+    forbidden_terms: []
+    validator_checks: ["Check 8"]

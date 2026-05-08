@@ -1,0 +1,640 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#  CANONICAL DECISIONS DATA
+#  Schema:       docs/schema/decision.schema.json
+#  Source of truth for: RTM, impact_index, Feedback_Decisions_Log, /validate-docs
+#
+#  DO NOT edit decisions.yaml directly to change a decision.
+#  Correct workflow: update Feedback_Decisions_Log.md → update this file → run /validate-docs
+# ═══════════════════════════════════════════════════════════════════════════════
+
+_meta:
+  schema_version: "1.0"
+  schema_ref: "../schema/decision.schema.json"
+  last_updated: "2026-05-08"
+  maintainer: "BA team"
+  source_of_truth: true
+
+# ── Phase 1 — Reference Letters ────────────────────────────────────────────────
+
+decisions:
+
+  - id: D-01
+    phase: 1
+    summary: "Go-live and Assist decommission date: June 30, 2026"
+    made_by: "Discovery page (official)"
+    date: "2026-04-16"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: high
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "Assist decommission discovery page (EPMEOADOCS)"
+    source_date: "2026-04-16"
+    documents_reflect: ["01", "02", "03", "04", "05", "06", "KB2", "KB3"]
+    documents_check: []
+    workflows: []
+    phases_affected: [1, 2, 3, 4]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Go-live and Assist decommission date: June 30, 2026.
+
+  - id: D-02
+    phase: 1
+    summary: "LOR for ex-employees: out of scope Phase 1 — addressed in Separation Letters"
+    made_by: "Internal"
+    date: null
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: high
+    evidence_type: internal_alignment
+    source_ref: "Internal BA team decision"
+    source_date: null
+    documents_reflect: ["01", "02", "05"]
+    documents_check: ["03", "KB1"]
+    workflows: []
+    phases_affected: [1, 3]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      LOR for ex-employees: out of scope Phase 1 — addressed in Separation Letters (Phase 3).
+
+  - id: D-03
+    phase: 1
+    summary: "Relocation Letter: no manual review — system auto-approves on effective date (SUPERSEDED)"
+    made_by: "Discovery page"
+    date: "2026-04-16"
+    status: superseded
+    superseded_by: "D-16"
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "Assist decommission discovery page"
+    source_date: "2026-04-16"
+    documents_reflect: []
+    documents_check: []
+    workflows: []
+    phases_affected: [4]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Relocation Letter: no manual review — system auto-approves on effective date.
+      NOTE: Superseded by D-16 for Phase 1. Relevant for Phase 4+ planning only.
+
+  - id: D-04
+    phase: 1
+    summary: "Relocation Letter: past-date requests auto-approved immediately (SUPERSEDED)"
+    made_by: "Discovery page"
+    date: "2026-04-16"
+    status: superseded
+    superseded_by: "D-16"
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "Assist decommission discovery page"
+    source_date: "2026-04-16"
+    documents_reflect: []
+    documents_check: []
+    workflows: []
+    phases_affected: [4]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Relocation Letter: past-date requests are allowed, auto-approved immediately.
+      NOTE: Superseded by D-16 for Phase 1. Relevant for Phase 4+ planning only.
+
+  - id: D-05
+    phase: 1
+    summary: "Relocation Letter: initiated by RM / India Team specialist, not employee (SUPERSEDED)"
+    made_by: "Stakeholder input"
+    date: null
+    status: superseded
+    superseded_by: "D-16"
+    supersedes: []
+    change_risk: low
+    confidence: medium
+    evidence_type: stakeholder_call
+    source_ref: "Stakeholder input (unattributed)"
+    source_date: null
+    documents_reflect: []
+    documents_check: []
+    workflows: []
+    phases_affected: [4]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Relocation Letter: initiated by RM / India Team specialist, not employee.
+      NOTE: Superseded by D-16 for Phase 1. Relevant for Phase 4+ planning only.
+
+  - id: D-06
+    phase: 1
+    summary: "Auto-close: 2 days after all forms reach final status"
+    made_by: "India stakeholder (confirmed)"
+    date: null
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: high
+    evidence_type: stakeholder_call
+    source_ref: "India stakeholder call (Satish Malla)"
+    source_date: null
+    documents_reflect: ["01", "02"]
+    documents_check: ["03", "KB1"]
+    workflows: ["Lifecycle"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Auto-close: 2 days after all forms reach final status.
+
+  - id: D-07
+    phase: 1
+    summary: "Rejection flow: no resubmit on same request — employee opens new request"
+    made_by: "India stakeholder (confirmed)"
+    date: null
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: high
+    evidence_type: stakeholder_call
+    source_ref: "India stakeholder call"
+    source_date: null
+    documents_reflect: ["01", "02"]
+    documents_check: ["03", "06"]
+    workflows: ["Trk-B", "Lifecycle"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Rejection flow: no resubmit on same request — employee opens a new request.
+
+  - id: D-08
+    phase: 1
+    summary: "Terminology: 'India Team specialists' not 'HRBP' in India/management-facing docs"
+    made_by: "Internal (Daria/Hanna alignment)"
+    date: null
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: internal_alignment
+    source_ref: "Internal alignment — Daria / Hanna"
+    source_date: null
+    documents_reflect: ["04", "05", "06", "KB2", "KB3"]
+    documents_check: []
+    workflows: []
+    phases_affected: [1, 2, 3]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Terminology: use "India Team specialists" (not "HRBP") in India-facing and
+      management-facing documents (04, 05, 06). Docs 01, 02, 03 (internal) may use "HRBP".
+
+  - id: D-09
+    phase: 1
+    summary: "Visa Processing Letter: Comments field, max 300 chars, single line (not 'Country')"
+    made_by: "India stakeholder (confirmed)"
+    date: null
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: high
+    confidence: high
+    evidence_type: stakeholder_call
+    source_ref: "India stakeholder call"
+    source_date: null
+    documents_reflect: ["01", "02"]
+    documents_check: ["03", "05"]
+    workflows: ["Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: ["OQ-11"]
+    oqs_resolved: []
+    body: >
+      Visa Processing Letter: field is named "Comments" (not "Country"), max 300 chars,
+      single line. Requires new text field component development in DOCS platform (OQ-11).
+
+  - id: D-10
+    phase: 1
+    summary: "Cancel request: nice-to-have, NOT in Phase 1 MVP"
+    made_by: "Discovery page"
+    date: "2026-04-16"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "Assist decommission discovery page"
+    source_date: "2026-04-16"
+    documents_reflect: ["02"]
+    documents_check: ["01"]
+    workflows: []
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Cancel request functionality: nice-to-have, NOT in Phase 1 MVP scope.
+
+  - id: D-11
+    phase: 1
+    summary: "Historical data migration: out of scope"
+    made_by: "Discovery page"
+    date: "2026-04-16"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "Assist decommission discovery page"
+    source_date: "2026-04-16"
+    documents_reflect: ["02"]
+    documents_check: ["KB1"]
+    workflows: []
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Historical data migration: out of scope for all phases.
+
+  - id: D-12
+    phase: 1
+    summary: "Visa Processing Letter: RM approval removed — DV/EDV verifies and manually sends"
+    made_by: "Darya Taranda (Reference Letters KB page)"
+    date: "2026-05-06"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: high
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "Reference Letters KB page (EPMEOADOCS), Darya Taranda"
+    source_date: "2026-05-06"
+    documents_reflect: ["01", "02"]
+    documents_check: ["03", "05"]
+    workflows: ["Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: ["OQ-01"]
+    body: >
+      Visa Processing Letter: RM approval removed from DOCS flow. DOCS target flow:
+      DV/EDV (India Team specialist) verifies document → manually sends to employee
+      via "Send Document". Comments field required (max 300 chars, one line).
+
+  - id: D-13
+    phase: 1
+    summary: "LOR (active employees): RM approval removed — DV/EDV verifies and manually sends"
+    made_by: "Darya Taranda (Reference Letters KB page)"
+    date: "2026-05-06"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: high
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "Reference Letters KB page (EPMEOADOCS), Darya Taranda"
+    source_date: "2026-05-06"
+    documents_reflect: ["01", "02"]
+    documents_check: ["03", "05"]
+    workflows: ["Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: ["OQ-02"]
+    body: >
+      LOR (active employees): RM approval removed from DOCS flow. Same DV/EDV
+      verification → manual "Send Document" flow. Alternative accepted scenario:
+      employee receives invitation, can download before/after verification.
+      Notes/Responsibilities field: max ~1000 chars, multi-line.
+
+  - id: D-14
+    phase: 1
+    summary: "Relocation Letter in DOCS: India Team specialist (HR) initiates only — RM cannot (SUPERSEDED)"
+    made_by: "DOCS internal team (Olga Chaban)"
+    date: "2026-05-06"
+    status: superseded
+    superseded_by: "D-16"
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: stakeholder_call
+    source_ref: "DOCS internal team meeting, Olga Chaban (05/06/2026)"
+    source_date: "2026-05-06"
+    documents_reflect: []
+    documents_check: []
+    workflows: []
+    phases_affected: [4]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Relocation Letter in DOCS: initiated by India Team specialist (HR) only. RM cannot
+      directly create Relocation Letter requests in DOCS. If RM needs a letter for a
+      subordinate, they go via ServiceNow → India Team specialist creates in DOCS.
+      NOTE: Superseded by D-16 for Phase 1. Relevant for Phase 4+ planning only.
+
+  - id: D-15
+    phase: 1
+    summary: "All Phase 1 letters: DOCS auto-verification flow; RM verification completely removed"
+    made_by: "Darya Taranda (05/05/2026), confirmed in DOCS internal review"
+    date: "2026-05-05"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: high
+    confidence: high
+    evidence_type: stakeholder_call
+    source_ref: "Darya Taranda decision 05/05/2026; DOCS internal review confirmation"
+    source_date: "2026-05-05"
+    documents_reflect: ["01", "02"]
+    documents_check: ["03", "05"]
+    workflows: ["Trk-A", "Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    notes: >
+      Decision made when scope was 6 letters; scope updated to 5 letters by D-16
+      (Relocation Letter removed from Phase 1).
+    body: >
+      All Phase 1 letters use the same DOCS auto-verification flow. RM verification
+      completely removed from all letters (not just Visa/LOR). For Form 60, Address Proof,
+      Service Letter: always auto-verified. For Visa Processing, LOR: DV/EDV verifies
+      then manually sends document.
+
+  - id: D-16
+    phase: 1
+    summary: "Relocation Letter removed from Phase 1 scope — moved to Phase 4+ investigation"
+    made_by: "Dzmitry Fedarovich / Hanna Vasilenka / Darya Taranda (meeting 07/05/2026)"
+    date: "2026-05-07"
+    status: locked
+    superseded_by: null
+    supersedes: ["D-03", "D-04", "D-05", "D-14"]
+    change_risk: high
+    confidence: sme_confirmed
+    evidence_type: transcript
+    source_ref: "Meeting transcript 07/05/2026 — Dzmitry, Hanna, Darya"
+    source_date: "2026-05-07"
+    documents_reflect: ["01", "02", "04", "05"]
+    documents_check: ["03"]
+    workflows: ["Trk-A", "Trk-B", "Form-UI"]
+    phases_affected: [1, 4]
+    oqs_created: ["OQ-13"]
+    oqs_resolved: ["OQ-10"]
+    body: >
+      Relocation Letter removed from Phase 1 scope. Moved to Phase 4+ for separate
+      investigation. Reasons: (1) purpose of letter unclear; (2) in DOCS, RM cannot
+      initiate a request for an employee; (3) trigger mechanism unclear — may warrant
+      auto-trigger from People system. Phase 1 now covers 5 letter types.
+
+  - id: D-17
+    phase: 1
+    summary: "Self-Declaration popup: NOT implemented — static disclaimer text at top of form instead"
+    made_by: "Dzmitry Fedarovich / Darya Taranda / Hanna Vasilenka (meeting 07/05/2026)"
+    date: "2026-05-07"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: sme_confirmed
+    evidence_type: transcript
+    source_ref: "Meeting transcript 07/05/2026"
+    source_date: "2026-05-07"
+    documents_reflect: ["01", "02", "05"]
+    documents_check: ["03"]
+    workflows: ["Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Self-Declaration popup/checkbox (present in Assist before "Continue" activates)
+      will NOT be implemented in DOCS for any Phase 1 form. Instead, add a static
+      disclaimer/notice text at the top of the relevant forms. No functional gate —
+      informational text only.
+
+# ── Phase 2 — Compensation Letters ─────────────────────────────────────────────
+
+  - id: D-P2-01
+    phase: 2
+    summary: "Scope: 4 compensation letter types (Salary Revision, Promotion, Increment, Variable Pay)"
+    made_by: "Satish Malla (India HR)"
+    date: "2026-05-04"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: high
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "Satish Malla call 2026-05-04"
+    source_date: "2026-05-04"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Scope confirmed: 4 compensation letter types actively in use — Salary Revision,
+      Promotion, Increment, Variable Pay. Flex-to-fixed letter types removed after
+      GDO merge effective April 1, 2026.
+
+  - id: D-P2-02
+    phase: 2
+    summary: "Employee acceptance: one-click Accept button with date-timestamp"
+    made_by: "Satish Malla (India HR)"
+    date: "2026-05-04"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "Satish Malla call 2026-05-04"
+    source_date: "2026-05-04"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: ["OQ-12"]
+    oqs_resolved: []
+    body: >
+      Employee acceptance required: one-click Accept button with date-timestamp recorded.
+      No reject option — employee either accepts or leaves unaccepted. Salary is processed
+      regardless of acceptance status. This is company policy, not a legal requirement.
+
+  - id: D-P2-03
+    phase: 2
+    summary: "Compensation letters: PAN-password protection required for audit compliance"
+    made_by: "Satish Malla (India HR)"
+    date: "2026-05-04"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "Satish Malla call 2026-05-04"
+    source_date: "2026-05-04"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: ["OQ-P2-02"]
+    oqs_resolved: []
+    body: >
+      Compensation letters must be password-protected using the employee's PAN number
+      (for audit compliance). If Docs platform cannot implement PAN-password natively,
+      minimum acceptable alternative is a disclaimer/caution note shown before the
+      employee can open the letter.
+
+  - id: D-P2-04
+    phase: 2
+    summary: "Indian currency format (INR) required for all monetary amounts in compensation letters"
+    made_by: "Satish Malla (India HR)"
+    date: "2026-05-04"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "Satish Malla call 2026-05-04"
+    source_date: "2026-05-04"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Indian currency format (INR) required for all monetary amounts in compensation letters.
+
+  - id: D-P2-05
+    phase: 2
+    summary: "Compensation letter request auto-closes ~1 week after letter reaches Generated status"
+    made_by: "Satish Malla (India HR)"
+    date: "2026-05-04"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "Satish Malla call 2026-05-04"
+    source_date: "2026-05-04"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Docs request auto-closes after letter reaches "Generated" status. Auto-close
+      timing of approximately 1 week is acceptable. India team only needs to track
+      "Generated" status per employee.
+
+  - id: D-P2-06
+    phase: 2
+    summary: "Single base template with conditional text blocks; 4 compensation letter variants"
+    made_by: "KB Open Questions page + Satish Malla"
+    date: "2026-05-07"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: high
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "KB Open Questions page (EPMEOADOCS) + Satish Malla confirmation"
+    source_date: "2026-05-07"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: []
+    oqs_resolved: ["OQ-P2-01", "OQ-P2-03"]
+    body: >
+      All compensation letter types use a single base template with conditional text
+      blocks. 4 type variants: (1) Salary Hike only; (2) Promotion + Salary Hike;
+      (3) Promotion + Salary Hike + OTB; (4) Promotion + OTB + Retention/Deferred/
+      One-Time Bonus + LTI. Text blocks controlled by Yes/No flags in XLS upload file.
+
+  - id: D-P2-07
+    phase: 2
+    summary: "Compensation disclaimer: inline text paragraph within letter — no popup, no checkbox"
+    made_by: "Darya Taranda / Hanna Vasilenka / Dzmitry Fedarovich (meeting 07/05/2026)"
+    date: "2026-05-07"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: sme_confirmed
+    evidence_type: transcript
+    source_ref: "Meeting transcript 07/05/2026"
+    source_date: "2026-05-07"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Compensation letter disclaimer/confidentiality notice: add as a text paragraph
+      within the compensation letter itself. No separate popup, no separate form.
+      Inline paragraph approach agreed by internal team.
+
+# ── Phase 3 — Separation Letters ───────────────────────────────────────────────
+
+  - id: D-P3-01
+    phase: 3
+    summary: "Ex-employee data on People platform available min 2 years post-exit"
+    made_by: "People team (Dzmitry Fedarovich)"
+    date: "2026-05-04"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: stakeholder_call
+    source_ref: "People team (Dzmitry Fedarovich) — 2026-05-04"
+    source_date: "2026-05-04"
+    documents_reflect: ["KB3"]
+    documents_check: []
+    workflows: ["P3-HRMS"]
+    phases_affected: [3]
+    oqs_created: []
+    oqs_resolved: ["OQ-P3-01"]
+    body: >
+      Ex-employee data on People platform is available for a minimum of 2 years after
+      the last working day, or until the ex-employee requests PII obfuscation. Data is
+      removed manually on request only. Sufficient for Experience Letter generation
+      (typically 10–15 days post-exit).
+
+  - id: D-P3-02
+    phase: 3
+    summary: "People platform auto-collects personal email from employees before last working day"
+    made_by: "Darya Taranda (confirmed 04/05/2026)"
+    date: "2026-05-04"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: stakeholder_call
+    source_ref: "Darya Taranda confirmation 2026-05-04"
+    source_date: "2026-05-04"
+    documents_reflect: ["KB3"]
+    documents_check: []
+    workflows: ["P3-HRMS"]
+    phases_affected: [3]
+    oqs_created: []
+    oqs_resolved: ["OQ-P3-01"]
+    body: >
+      People platform already has an automated notification feature that asks employees
+      to confirm/update their personal contact details (personal email, phone) before
+      their last working day. This covers the personal email collection requirement
+      for sending the Experience Letter to personal email post-exit.

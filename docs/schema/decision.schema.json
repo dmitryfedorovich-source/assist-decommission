@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "decision.schema.json",
+  "title": "Decision",
+  "description": "A locked or superseded design decision recorded in the Feedback & Decisions Log.",
+  "type": "object",
+  "required": ["id", "phase", "summary", "made_by", "status", "documents_reflect", "body"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier — D-01, D-P2-01, D-P3-01, etc.",
+      "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$",
+      "examples": ["D-01", "D-P2-06", "D-P3-01"]
+    },
+    "phase": {
+      "type": ["integer", "string"],
+      "description": "Phase number this decision primarily belongs to (1, 2, 3, 4, or 'cross').",
+      "enum": [1, 2, 3, 4, "cross"]
+    },
+    "summary": {
+      "type": "string",
+      "description": "One-line human-readable summary for the RTM Source Index.",
+      "minLength": 10,
+      "maxLength": 200
+    },
+    "made_by": {
+      "type": "string",
+      "description": "Person, team, or source that made the decision."
+    },
+    "date": {
+      "type": ["string", "null"],
+      "description": "ISO date the decision was made (YYYY-MM-DD), or null if unknown.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$|^$"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the decision.",
+      "enum": ["locked", "superseded", "draft"]
+    },
+    "superseded_by": {
+      "type": ["string", "null"],
+      "description": "ID of the decision that supersedes this one, or null.",
+      "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+    },
+    "supersedes": {
+      "type": "array",
+      "description": "IDs of decisions this decision supersedes.",
+      "items": {
+        "type": "string",
+        "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+      },
+      "default": []
+    },
+    "change_risk": {
+      "type": "string",
+      "description": "Risk level if this decision is revised.",
+      "enum": ["high", "medium", "low"]
+    },
+    "confidence": {
+      "type": "string",
+      "description": "Confidence level of this decision's source.",
+      "enum": ["sme_confirmed", "high", "medium", "low", "assumed"]
+    },
+    "evidence_type": {
+      "type": "string",
+      "description": "Type of evidence that supports this decision.",
+      "enum": [
+        "sme_call",
+        "stakeholder_call",
+        "transcript",
+        "confluence_page",
+        "screenshot",
+        "correction",
+        "inferred",
+        "internal_alignment"
+      ]
+    },
+    "source_ref": {
+      "type": "string",
+      "description": "Human-readable source reference (meeting name, page title, etc.)."
+    },
+    "source_date": {
+      "type": ["string", "null"],
+      "description": "ISO date the source was produced.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$|^$"
+    },
+    "documents_reflect": {
+      "type": "array",
+      "description": "Document codes where this decision MUST be reflected (✓ in RTM). Use short codes: 01, 02, 03, 04, 05, 06, KB2, KB3, FDL.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "documents_check": {
+      "type": "array",
+      "description": "Document codes that should be reviewed for indirect impact (↻ in RTM).",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "workflows": {
+      "type": "array",
+      "description": "Workflow track IDs affected by this decision.",
+      "items": {
+        "type": "string",
+        "enum": ["Trk-A", "Trk-B", "Lifecycle", "Form-UI", "P2-Batch", "P3-HRMS"]
+      },
+      "default": []
+    },
+    "phases_affected": {
+      "type": "array",
+      "description": "Phase numbers affected by this decision.",
+      "items": { "type": "integer", "enum": [1, 2, 3, 4] },
+      "default": []
+    },
+    "oqs_created": {
+      "type": "array",
+      "description": "Open Question IDs created as a result of this decision.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "oqs_resolved": {
+      "type": "array",
+      "description": "Open Question IDs resolved by this decision.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "body": {
+      "type": "string",
+      "description": "Full decision text as it appears in the Feedback & Decisions Log.",
+      "minLength": 10
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional clarifying notes, caveats, or cross-references not in the main body."
+    }
+  }
+}

@@ -1,0 +1,368 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#  CANONICAL OPEN QUESTIONS DATA
+#  Schema:       docs/schema/open-question.schema.json
+#  Source of truth for: RTM OQ Impact Map, /validate-docs Check 3
+#
+#  Status values: Open | Resolved | Deferred | Closed
+# ═══════════════════════════════════════════════════════════════════════════════
+
+_meta:
+  schema_version: "1.0"
+  schema_ref: "../schema/open-question.schema.json"
+  last_updated: "2026-05-08"
+  maintainer: "BA team"
+
+# ── Phase 1 — Reference Letters ────────────────────────────────────────────────
+
+open_questions:
+
+  - id: OQ-01
+    phase: 1
+    question: >
+      Visa Processing Letter: is India Team specialist approval still required,
+      or auto-verified?
+    owner: "Darya Taranda / India Team"
+    raised: "2026-04-16"
+    target_resolution: "Stage 1/2 review"
+    status: Resolved
+    resolution_decision: "D-12"
+    resolution_note: "RM approval removed — DV/EDV verifies and manually sends document."
+    raised_by_decision: null
+    documents_affected: ["01", "02"]
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-02
+    phase: 1
+    question: >
+      LOR: is India Team specialist approval still required, or auto-verified?
+    owner: "Darya Taranda / India Team"
+    raised: "2026-04-16"
+    target_resolution: "Stage 1/2 review"
+    status: Resolved
+    resolution_decision: "D-13"
+    resolution_note: "RM approval removed — same DV/EDV verification → manual Send Document flow."
+    raised_by_decision: null
+    documents_affected: ["01", "02"]
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-03
+    phase: 1
+    question: >
+      LOR: can RM initiate a request on behalf of an employee?
+    owner: "India Team"
+    raised: "2026-04-16"
+    target_resolution: "Stage 2 review"
+    status: Resolved
+    resolution_decision: null
+    resolution_note: >
+      No; employee self-service in DOCS; ex-employee LOR via India Team specialist
+      (Separation module, Phase 3).
+    raised_by_decision: null
+    documents_affected: ["01", "02"]
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-04
+    phase: 1
+    question: >
+      Relocation Letter: city list for "New Work Location" dropdown.
+    owner: "India HR"
+    raised: null
+    target_resolution: "Phase 4+ scoping"
+    status: Deferred
+    resolution_decision: "D-16"
+    resolution_note: "Relocation Letter moved to Phase 4+."
+    raised_by_decision: null
+    documents_affected: []
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-05
+    phase: 1
+    question: >
+      Service Letter: Purpose dropdown values — what are the available options?
+    owner: "India HR"
+    raised: null
+    target_resolution: "Stage 2 review"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: "Stage 2"
+    notes: null
+
+  - id: OQ-06
+    phase: 1
+    question: >
+      Visa Processing Letter: Purpose dropdown values — what are the available options?
+    owner: "India HR"
+    raised: null
+    target_resolution: "Stage 2 review"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: "Stage 2"
+    notes: null
+
+  - id: OQ-07
+    phase: 1
+    question: >
+      LOR: Purpose dropdown values — what are the available options?
+    owner: "India HR"
+    raised: null
+    target_resolution: "Stage 2 review"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: "Stage 2"
+    notes: null
+
+  - id: OQ-08
+    phase: 1
+    question: >
+      Bank/SIM/LPG sub-types: handled via Purpose dropdown on same base template?
+    owner: "India Team (Sasanka)"
+    raised: null
+    target_resolution: "Stage 2 review"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: "Stage 2"
+    notes: null
+
+  - id: OQ-09
+    phase: 1
+    question: >
+      Nomination Form (Form F, Form 2): is this in scope for DOCS migration?
+      04/05/26 meeting discussed enabling employee nominee updates via DOCS self-service
+      + bulk data migration from Assist. Scope and phase to be confirmed.
+    owner: "Darya Taranda / Hanna Vasilenka"
+    raised: "2026-05-04"
+    target_resolution: "Phase scoping"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: []
+    blocking_stage: null
+    notes: "See also kb_nominee_details.md for detailed context."
+
+  - id: OQ-10
+    phase: 1
+    question: >
+      Relocation Letter DOCS flow — investigation questions (Phase 1 scoping).
+    owner: "Darya Taranda / India Team"
+    raised: "2026-05-07"
+    target_resolution: "—"
+    status: Closed
+    resolution_decision: "D-16"
+    resolution_note: "Closed — deferred with D-16. Relocation Letter moved to Phase 4+."
+    raised_by_decision: null
+    documents_affected: []
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-11
+    phase: 1
+    question: >
+      DOCS development required for text input fields: (1) Comments field for Visa
+      Processing Letter (max 300 chars, alphanumeric) — current text marker only
+      supports numbers; (2) LOR Notes / Responsibilities plain text field (multi-line,
+      no rich text). Both require new field component development. Size/timeline TBD
+      pending assessment by DOCS dev lead (Michael).
+    owner: "Olga Chaban / DOCS Platform Team"
+    raised: "2026-05-05"
+    target_resolution: "Dev planning"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: "D-09"
+    documents_affected: ["01", "02", "03"]
+    blocking_stage: "Stage 5"
+    notes: "Blocking dev epic creation. Michael (DOCS dev lead) to assess."
+
+  - id: OQ-12
+    phase: 2
+    question: >
+      Compensation letter acknowledgment tracking: Satish originally asked for radio
+      button Accept + date-timestamp. Internal team (07/05/2026) agreed preferred
+      approach is activity log extension — track both "view" and "download" events.
+      Pending: (a) DOCS dev cost estimate for activity log extension; (b) Satish
+      alignment — confirm activity log satisfies audit trail need.
+    owner: "Dzmitry Fedarovich / DOCS Platform Team (Michael) / Satish Malla"
+    raised: "2026-05-07"
+    target_resolution: "Phase 2 dev planning"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: "D-P2-02"
+    documents_affected: ["KB2"]
+    blocking_stage: null
+    notes: "Direction updated: activity log preferred over custom Accept button (2 sprints)."
+
+  - id: OQ-13
+    phase: 4
+    question: >
+      Relocation Letter — investigate before scoping: (1) What is the purpose of the
+      letter and when is it needed? (2) Who initiates — RM, employee, or India Team
+      specialist? (3) Is auto-trigger from People system feasible on relocation
+      effective date? (4) Is eligibility selective or for all relocations? (5) Can
+      the RM role limitation in DOCS be solved?
+    owner: "Hanna Vasilenka / India Team"
+    raised: "2026-05-07"
+    target_resolution: "Phase 4 scoping"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: "D-16"
+    documents_affected: []
+    blocking_stage: null
+    notes: "All 5 questions must be answered before Phase 4 scope can be written."
+
+  - id: OQ-14
+    phase: 1
+    question: >
+      Address Proof Letter: should employees be able to manually edit their address
+      in the DOCS form (pulled from People Portal), or should the field be locked
+      (force update in People Portal first)?
+    owner: "India Team (Satish / Sasanka)"
+    raised: "2026-05-07"
+    target_resolution: "Stage 2 India SME review"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: "Stage 2"
+    notes: null
+
+# ── Phase 2 — Compensation Letters ─────────────────────────────────────────────
+
+  - id: OQ-P2-01
+    phase: 2
+    question: >
+      Compensation letter text blocks — are the 4 text block variants provided the
+      complete set, or are there additional block types?
+    owner: "Lalitha Pavani Madiraju / Satish Malla"
+    raised: "2026-04-29"
+    target_resolution: "Phase 2 planning"
+    status: Resolved
+    resolution_decision: "D-P2-06"
+    resolution_note: "KB confirms all possible blocks are covered in India team examples."
+    raised_by_decision: null
+    documents_affected: ["KB2"]
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-P2-02
+    phase: 2
+    question: >
+      Can Docs platform implement PAN-number PDF password protection on compensation
+      letters? If not, is a disclaimer/caution note sufficient for audit compliance?
+    owner: "Docs Platform Team"
+    raised: "2026-05-04"
+    target_resolution: "Phase 2 scoping"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: "D-P2-03"
+    documents_affected: ["KB2"]
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-P2-03
+    phase: 2
+    question: >
+      Do all 4 compensation letter types use one base template with different text
+      blocks inserted, or are they fully separate templates?
+    owner: "Olga Chaban / Lalitha Pavani Madiraju"
+    raised: "2026-04-29"
+    target_resolution: "Phase 2 planning"
+    status: Resolved
+    resolution_decision: "D-P2-06"
+    resolution_note: "Single template with conditional text blocks confirmed."
+    raised_by_decision: null
+    documents_affected: ["KB2"]
+    blocking_stage: null
+    notes: null
+
+# ── Phase 3 — Separation Letters ───────────────────────────────────────────────
+
+  - id: OQ-P3-01
+    phase: 3
+    question: >
+      Ex-employee data retention: how long after exit date is employee profile data
+      accessible in People system? Required to determine feasibility window for
+      ex-employee document generation.
+    owner: "Darya Taranda / People team"
+    raised: "2026-04-30"
+    target_resolution: "Phase 3 planning"
+    status: Resolved
+    resolution_decision: "D-P3-01"
+    resolution_note: "Min 2 years after exit date."
+    raised_by_decision: null
+    documents_affected: ["KB3"]
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-P3-02
+    phase: 3
+    question: >
+      Separation letter auto-trigger: can People system publish an event to Docs on
+      employee's last working day to auto-create Experience Letter and Relieving
+      Letter requests?
+    owner: "Dzmitry Fedarovich / Docs Platform Team"
+    raised: "2026-04-30"
+    target_resolution: "Phase 3 planning"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: ["KB3"]
+    blocking_stage: null
+    notes: null
+
+  - id: OQ-P3-03
+    phase: 3
+    question: >
+      Nominee Details (Nomination Form) scope: should DOCS include a self-service
+      process for employees to update nominee details, plus bulk migration of Assist
+      nominee data to DOCS? Scope, phase assignment, and statutory form update process
+      (Form F, Form 2) to be decided.
+    owner: "Darya Taranda / Hanna Vasilenka"
+    raised: "2026-05-04"
+    target_resolution: "Phase scoping"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: []
+    blocking_stage: null
+    notes: "See also kb_nominee_details.md for detailed context."
+
+  - id: OQ-P3-04
+    phase: 3
+    question: >
+      Ex-employee DOCS access via personal email: is the "applicant" flow technically
+      feasible for ex-employees to log in to DOCS with personal email and download
+      separation letters? Required if DOCS cannot send email attachments directly to
+      external email.
+    owner: "Olga Chaban / DOCS Platform Team"
+    raised: "2026-04-30"
+    target_resolution: "Phase 3 planning"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: null
+    documents_affected: ["KB3"]
+    blocking_stage: null
+    notes: null

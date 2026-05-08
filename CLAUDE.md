@@ -4,34 +4,67 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a BA/product documentation project for migrating India HR document workflows from **assist.epam.com** (being decommissioned) to **docs.epam.com** (the existing EPAM document platform).
+BA/product documentation project migrating India HR document workflows from **assist.epam.com** (being decommissioned June 30, 2026) to **docs.epam.com**.
 
-**Phase 1 (current):** Reference Letters  
-**Future phases:** Compensation Letters, Separation Letters, and others  
-**Deadline:** June 30, 2026
+**Phases:** Phase 1 (Reference Letters, current) · Phase 2 (Compensation Letters) · Phase 3 (Separation Letters) · Phase 4+ (TBD)
 
 ## Repository Structure
 
 ```
 input/
-  screenshots/          # Assist platform screenshots (JPG/PNG)
-  confluence_exports/   # Confluence page HTML exports
-  meeting_notes/        # Meeting notes, open questions (DOCX, TXT)
-  corrections/          # Stakeholder correction images and notes
+  screenshots/          # Assist platform screenshots (JPG/PNG) — hook intercepts re-reads
+  confluence_exports/   # Static HTML exports (archived — use live MCP instead)
+  transcriptions/       # Meeting transcripts; processed ones prefixed [processed]-
+  meeting_notes/        # Background notes
+  corrections/          # Stakeholder correction images
 
 output/
-  phase1_reference_letters/   # All Phase 1 deliverables
-  phase2_compensation/        # Phase 2 deliverables (in progress)
-  phase3_separation/          # Phase 3 deliverables (planned)
-  shared/                     # Cross-phase documents (Feedback & Decisions Log)
+  phase1_reference_letters/   # Phase 1 deliverables (01–06)
+  phase2_compensation/        # Phase 2 deliverables
+  phase3_separation/          # Phase 3 deliverables
+  shared/                     # Feedback_Decisions_Log.md + RTM.md (source of truth)
+  migration/                  # Migration readiness & operational docs (decommission, runbook, rollback, test plan)
 
-memory/         # Claude persistent memory (do not edit manually)
-CLAUDE.md       # This file
+docs/
+  data/               # CANONICAL structured data (decisions, OQs, phases, documents, workflows)
+  schema/             # JSON Schema files — one per entity type (decision, open-question, etc.)
+  architecture/       # Generation pipeline architecture and design docs
+  src/
+    data/             # VIEW-LAYER YAML — derived from docs/data/, used by /build-overview
+    components/       # HTML component templates (hero, nav, roadmap, etc.)
+    styles/           # CSS source: tokens.css, base.css, components.css, responsive.css
+    page-template.html  # Master assembler template
+
+memory/                 # Claude persistent memory (tiered — see below)
+CLAUDE.md               # This file
+Project_Overview.html   # Generated — do not edit directly, use /build-overview
 ```
 
-## Deliverables
+## Session Start Protocol
 
-Documents are organized by phase. Within each phase folder, files are numbered 01–NN.
+Every session, read these in order before doing any work:
+
+1. `memory/context/project_state.md` — current phase status, open questions, next actions
+2. `memory/context/domain_rules.md` — terminology rules, writing tone, invariant process rules
+3. From project_state: identify active phase → read `memory/phase[N]/state.md`
+4. For specific letter type work → read the relevant `memory/img_*.md` from MEMORY.md Source Knowledge section
+
+Do NOT load all memory files. Do NOT load Archive-tier files. If a memory file has `status: needs-review`, verify against Feedback_Decisions_Log.md before using.
+
+## Memory System — Tier Reference
+
+Memory lives at `~/.claude/projects/.../memory/` and is indexed by `MEMORY.md`.
+
+| Tier | Files | Load when |
+|---|---|---|
+| Session Bootstrap | `context/project_state.md`, `context/domain_rules.md`, `reference_confluence.md` | Every session |
+| Phase Knowledge | `phase1/state.md`, `phase2/state.md`, `phase3/state.md` | When working on that phase |
+| Source Knowledge | `img_*.md`, `kb_*.md` | Only for specific letter type or technical area |
+| Archive | files marked `status: archived` | Only if explicitly needed for historical reference |
+
+Domain facts live exclusively in memory — not in this file. If you need domain facts, read the appropriate phase state file.
+
+## Deliverables
 
 ### Phase 1 — Reference Letters (`output/phase1_reference_letters/`)
 
@@ -60,51 +93,40 @@ Documents are organized by phase. Within each phase folder, files are numbered 0
 
 | File | Audience | Purpose |
 |---|---|---|
-| `Feedback_Decisions_Log.md` | BA team | Cross-phase decisions, open questions, feedback |
-
-## Key Domain Knowledge
-
-**Three routing tracks (Phase 1):**
-- **Auto-verified (instant):** Form 60, Address Proof Letter, Service Letter
-- **Review required (under clarification):** Visa Processing Letter, LOR (active employees only) — approval step may be removed before go-live
-- **Date-triggered auto-verification:** Relocation Letter — initiated by RM / India Team specialist; system auto-approves on effective date; past-date requests approved immediately
-
-**Process actors:** Employee · RM / India Team specialist · DOCS platform (automated)  
-**Rejection flow:** India Team specialist rejects → employee opens a brand-new request (no resubmit on same request)  
-**Auto-close:** Requests auto-close after **2 days** once all forms reach final status (Verified / Generated)  
-**LOR for ex-employees:** Out of scope for Phase 1 — handled in Separation Letters phase (Phase 3)
-
-**Data pre-population:** Employee name, designation, UID, work/birth location, and start date are pulled from backend HR systems. Fields like Father Name, PAN, Address, Mobile, and Purpose are manually entered by the employee.
-
-**Visa Processing Letter:** uses a "Comments" field (max 300 chars, single line) — not a "Country" field.  
-**Self-Declaration popup:** Not required in EPAM Docs (skip).  
-**"Are you Working From Home" field:** Not required in EPAM Docs (skip).
-
-## Writing Guidelines
-
-- **Process Flow:** Document target state only (no as-is Assist flow needed)
-- **BRD:** Follow standard BA format — context, objectives, scope, stakeholders, functional requirements per letter type, integrations, non-functional requirements, assumptions, risks
-- **India colleagues presentation:** Tone is user-friendly and practical — "what changes and how to use it." No rationale for the migration needed.
-- **Management presentation:** High-level — business value, scope, timeline, risks
-- **Internal team presentation:** Detailed — process flows, field specs, integration points, action items
+| `Feedback_Decisions_Log.md` | BA team | Cross-phase decisions, open questions, feedback log — **authoritative source of truth** |
+| `RTM.md` | BA team | Requirements Traceability Matrix — Decision×Document, Decision×Workflow, OQ impact map, source index |
 
 ## Working in this Repo
 
-**Source of truth:** `output/shared/Feedback_Decisions_Log.md` is authoritative. All confirmed decisions (D-01…D-11) and open questions (OQ-01…OQ-08) live there. Before writing or updating any output document, check the Decisions Log for relevant confirmed facts.
+**Before writing any output document:** check `output/shared/Feedback_Decisions_Log.md` for confirmed decisions. Read the relevant phase state memory file for current facts.
 
-**After editing any file in `output/`:** run `/validate-docs` (the `.claude/skills/validate-docs/` skill). It checks factual accuracy, terminology, consistency, and completeness across the full doc set, and produces a structured error/warning report.
+**After editing any file in `output/`:** run `/validate-docs`. It validates factual accuracy, terminology, consistency, and completeness across the full doc set.
 
-**Input screenshots:** A pre-tool hook intercepts reads of images in `input/screenshots/`. If a memory file already exists for that image (e.g., `img_form60.md`), the hook blocks the read and tells you to use the memory file instead. Do not re-read an image if its memory file exists. If no memory file exists yet, read the image and immediately save extracted knowledge to `memory/img_<safe_name>.md`.
+**After editing any file in `docs/src/`:** run `/build-overview` to regenerate `Project_Overview.html`. Do NOT manually edit `Project_Overview.html` — it is a generated file and changes will be overwritten. Edit the appropriate source file in `docs/src/data/` or `docs/src/components/` instead.
 
-**Confluence MCP:** The project's source pages are in the EPMEOADOCS space on kb.epam.com. Use the `mcp__confluence__*` tools to look up or verify information. Key page IDs are in `memory/reference_confluence.md` (loaded automatically).
+**Input screenshots hook:** A PreToolUse hook intercepts every read of `input/screenshots/` images. If `memory/img_<safe_name>.md` already exists → hook blocks the read and redirects you there. If no memory file exists yet → read the image, then immediately save extracted knowledge to `memory/img_<safe_name>.md`. Apply the confidence schema from `memory/traceability/confidence_schema.md` when writing new memory files (frontmatter confidence fields + inline annotations for low/assumed facts).
 
-## Phase 2 — Compensation Letters (Key Domain Facts)
+**Confluence MCP:** Source pages are in EPMEOADOCS space on kb.epam.com. Use `mcp__confluence__*` tools to look up or verify information. Page IDs are in `memory/reference_confluence.md`.
 
-Phase 2 is in progress. Full flow details are in `memory/img_compensation_flow_2q2026.md` (auto-loaded). Summary of critical differences vs. Phase 1:
+**Processing a new transcript:** Read → extract decisions/facts → update Feedback_Decisions_Log.md → update relevant phase state memory file → rename transcript file with `[processed]-` prefix → update `context/project_state.md` open items → add F-XX entry to Feedback_Decisions_Log → run `/validate-docs` if output files affected.
 
-- **Who initiates:** Compensation Team specialist creates a mass request via XLS upload (not employee self-service)
-- **Employee action:** Accept consent → fill Accept Letter form → download
-- **Auto-close:** 10 days (completed), 3 days (inactive) — not 2 days like Phase 1
-- **eSignature tracking:** Yes (per document and batch)
-- **Form variants:** Up to 16–17 letter types
-- **Open design decision:** Option A (form-based accept, letter available next day) vs. Option B (no consent form, letter available immediately) — not yet confirmed with stakeholders
+**Adding a new decision or OQ:** Follow the templates in `memory/traceability/templates.md`. Every D-XX must be added to three places: Feedback_Decisions_Log.md, RTM.md, and `docs/data/decisions.yaml`. Run `/validate-schema` after updating `docs/data/decisions.yaml` to confirm sync with FDL. Every OQ-XX must be added to Feedback_Decisions_Log.md AND `docs/data/open-questions.yaml`. Use the end-of-session checklist in templates.md before closing the session.
+
+**After editing any file in `docs/data/`:** run `/validate-schema` to check schema conformance and cross-file referential integrity. Run `/validate-docs` afterward if output documents are affected.
+
+**Structured data architecture:** `docs/data/` is the canonical source of truth for decisions, OQs, phases, documents, and workflows. `docs/src/data/` is the view layer used by `/build-overview`. When canonical data changes, sync the view layer manually and re-run `/build-overview`. See `docs/architecture/generation-pipeline.md` for the full architecture.
+
+**Migration readiness docs** live in `output/migration/`. These cover the June 30, 2026 cutover: Decommission Plan, Rollback & Recovery Plan, Go-Live Runbook, Test Validation Plan, Acceptance Criteria, Communication Plan, Monitoring Plan, and Reconciliation Report Template. Run `/validate-docs` after updating any file that references FDL decision IDs. Rollback Plan and Decommission Plan must be reviewed and signed off before Stage 4 (UAT) begins.
+
+**Memory compression trigger:** When >8 Layer 3 files exist for a single phase, or when a phase reaches Stage 3 sign-off, consolidate into that phase's `state.md`, mark source files `status: archived`, and remove them from the active sections of MEMORY.md.
+
+## Writing Guidelines
+
+Full tone rules per document type are in `memory/context/domain_rules.md`. Summary:
+
+- **04 KB Onepager:** management language — no field-level detail, no jargon
+- **05 India SME Validation:** structured for review — explicit questions, confirmation checkboxes
+- **06 India Colleagues Guide:** user-friendly, practical — no migration rationale, no internal process detail
+- **01 Process Flow:** target state only — no as-is Assist flow descriptions
+- **02 BRD:** standard BA format — context, objectives, scope, stakeholders, FRs, integrations, NFRs, assumptions, risks
+- **03 Internal Presentation:** detailed — process flows, field specs, integration points, action items

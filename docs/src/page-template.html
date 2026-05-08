@@ -1,0 +1,121 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  MASTER PAGE TEMPLATE
+  Assembled by: /build-overview skill
+  Output:       Project_Overview.html (project root)
+
+  To regenerate the output page:
+    1. Edit any data file in docs/src/data/
+    2. Run /build-overview
+    3. The skill reads this template + all data files
+       and writes the assembled HTML to Project_Overview.html
+
+  To add a new section:
+    1. Create docs/src/components/<section-name>.html
+    2. Create docs/src/data/<section-name>.yaml (if new data)
+    3. Add <!-- INCLUDE: components/<section-name>.html -->
+       at the right position below
+    4. Run /build-overview
+
+  Confluence note:
+    The assembled Project_Overview.html is standalone — no
+    external CSS or JS dependencies. Paste its contents into
+    a Confluence HTML macro and it will render correctly.
+  ═══════════════════════════════════════════════════════════
+-->
+
+<!-- Standalone HTML — open in browser or paste into Confluence HTML macro -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><!-- SLOT: page.title --></title>
+<style>
+<!-- INCLUDE: styles/tokens.css -->
+<!-- INCLUDE: styles/base.css -->
+<!-- INCLUDE: styles/components.css -->
+<!-- INCLUDE: styles/responsive.css -->
+</style>
+</head>
+<body>
+
+<!-- INCLUDE: components/hero.html -->
+<!-- INCLUDE: components/nav.html -->
+
+<div class="page">
+
+  <!-- ══ 1. CONTEXT ══════════════════════════════ -->
+  <div class="section" id="context">
+    <!-- INCLUDE: components/context.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 2. WORKFLOW ═════════════════════════════ -->
+  <div class="section" id="workflow">
+    <!-- INCLUDE: components/workflow.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 3. INPUTS ═══════════════════════════════ -->
+  <div class="section" id="inputs">
+    <!-- INCLUDE: components/inputs.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 4. KNOWLEDGE SYSTEM ═════════════════════ -->
+  <div class="section" id="knowledge">
+    <!-- INCLUDE: components/knowledge.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 5. OUTPUTS ══════════════════════════════ -->
+  <div class="section" id="outputs">
+    <!-- INCLUDE: components/outputs-table.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 6. CAPABILITIES ═════════════════════════ -->
+  <div class="section" id="capabilities">
+    <!-- INCLUDE: components/capabilities.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 7. VALIDATION ═══════════════════════════ -->
+  <div class="section" id="validation">
+    <!-- INCLUDE: components/validation.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 8. ROADMAP ══════════════════════════════ -->
+  <div class="section" id="roadmap">
+    <!-- INCLUDE: components/roadmap.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 9. AT A GLANCE ══════════════════════════ -->
+  <div class="section" id="stats">
+    <!-- INCLUDE: components/stats.html -->
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 10. PO/BA PLAYBOOK ═══════════════════════ -->
+  <div class="section" id="howto">
+    <!-- INCLUDE: components/howto.html -->
+  </div>
+
+</div><!-- /page -->
+
+<!-- INCLUDE: components/footer.html -->
+
+</body>
+</html>

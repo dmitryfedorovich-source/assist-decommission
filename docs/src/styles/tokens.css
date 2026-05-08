@@ -1,0 +1,87 @@
+/*
+ * ═══════════════════════════════════════════════════════════
+ *  DESIGN TOKENS  —  Single source of truth for all values
+ *  Edit here; all components inherit automatically.
+ *  DO NOT hardcode values in component CSS files.
+ * ═══════════════════════════════════════════════════════════
+ */
+
+:root {
+
+  /* ── Color palette ── */
+  --color-dark:     #1a1a2e;   /* primary dark / hero bg */
+  --color-dark-mid: #2d3561;   /* hero gradient end      */
+  --color-accent:   #f97316;   /* orange accent           */
+  --color-blue:     #3b82f6;   /* blue highlight          */
+  --color-green:    #22c55e;   /* green / done            */
+  --color-purple:   #a855f7;   /* purple                  */
+  --color-violet:   #7c3aed;   /* deeper violet           */
+  --color-teal:     #14b8a6;   /* teal                    */
+  --color-slate:    #64748b;   /* neutral slate           */
+
+  /* ── Semantic surface colors ── */
+  --surface-page:   #f0f2f5;
+  --surface-card:   #ffffff;
+  --surface-muted:  #f8fafc;
+
+  /* ── Border & divider ── */
+  --border-default: #e2e8f0;
+  --border-muted:   #edf2f7;
+
+  /* ── Text ── */
+  --text-primary:   #1a1a2e;
+  --text-secondary: #4a5568;
+  --text-muted:     #718096;
+  --text-faint:     #94a3b8;
+  --text-white:     #ffffff;
+
+  /* ── Accent tints (bg-only surfaces) ── */
+  --tint-accent:    #fff7ed;
+  --tint-blue:      #eff6ff;
+  --tint-green:     #f0fdf4;
+  --tint-purple:    #faf5ff;
+  --tint-teal:      #f0fdfa;
+  --tint-yellow:    #fefce8;
+  --tint-muted:     #f8fafc;
+
+  /* ── Typography ── */
+  --font-sans:  -apple-system, 'Segoe UI', Arial, sans-serif;
+  --font-mono:  'Cascadia Code', 'Fira Mono', 'Consolas', monospace;
+
+  /* ── Spacing scale ── */
+  --space-2:    2px;
+  --space-4:    4px;
+  --space-6:    6px;
+  --space-8:    8px;
+  --space-10:  10px;
+  --space-12:  12px;
+  --space-14:  14px;
+  --space-16:  16px;
+  --space-20:  20px;
+  --space-24:  24px;
+  --space-28:  28px;
+  --space-32:  32px;
+  --space-36:  36px;
+  --space-44:  44px;
+  --space-48:  48px;
+  --space-52:  52px;
+  --space-64:  64px;
+
+  /* ── Page layout ── */
+  --page-max:    1100px;
+  --page-pad-h:  48px;
+  --page-pad-h-sm: 20px;
+
+  /* ── Border radius ── */
+  --radius-sm:   8px;
+  --radius-md:  10px;
+  --radius-lg:  12px;
+  --radius-pill: 20px;
+  --radius-full: 50%;
+
+  /* ── Card accent borders ── */
+  --accent-border-width: 3px;
+
+  /* ── Z-index ── */
+  --z-nav: 100;
+}

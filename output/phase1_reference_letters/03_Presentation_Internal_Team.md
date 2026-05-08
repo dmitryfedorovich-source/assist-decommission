@@ -13,21 +13,20 @@
 
 - **Assist (assist.epam.com)** is being decommissioned
 - India HR document workflows currently live in Assist — these need to move to **EPAM Docs (docs.epam.com)**
-- Phase 1 covers **Reference Letters** — 6 letter types used by India employees
+- Phase 1 covers **Reference Letters** — 5 letter types used by India employees
 - Target go-live: **June 30, 2026**
 
 ---
 
-## Slide 2 — Scope: 6 Letter Types
+## Slide 2 — Scope: 5 Letter Types
 
 | Track | Letter Type | Notes |
 |---|---|---|
 | **Auto-verified (instant)** | Form 60 | |
 | **Auto-verified (instant)** | Address Proof Letter | |
 | **Auto-verified (instant)** | Service Letter | |
-| **HRBP approval** | Visa Processing Letter | Approval requirement under clarification — may be removed |
-| **HRBP approval** | Letter of Recommendation (LOR) | Approval requirement under clarification — may be removed |
-| **Date-triggered auto-verification** | Relocation Letter | Initiated by RM/HRBP; system auto-approves on effective date; past dates approved immediately |
+| **India Team specialist review** | Visa Processing Letter | DV/EDV verifies → "Send Document" → employee downloads; document hidden until sent (D-12) |
+| **India Team specialist review** | Letter of Recommendation (LOR) | Same flow as Visa Processing (D-13); active employees only; ex-employee LOR out of scope Phase 1 |
 
 > LOR for ex-employees is out of scope — addressed in Phase 3 (Separation Letters)
 
@@ -46,53 +45,37 @@ Employee                DOCS Platform
    │                         ├─ Generate letter
    │                         ├─ Status → Completed
    ├─ Download letter ←───────┤
-   │                         ├─ (HRBP or auto-close after 2 days)
+   │                         ├─ (India Team specialist or auto-close after 2 days)
 ```
 
 **Used for:** Form 60, Address Proof Letter, Service Letter
 
 ---
 
-## Slide 4 — Process Flow: HRBP-Verified Letters
+## Slide 4 — Process Flow: India Team Specialist (DV/EDV) Verification
 
 ```
-Employee                DOCS Platform              HRBP
+Employee                DOCS Platform              India Team specialist (DV/EDV)
    │                         │                      │
    ├─ Select letter type ────→│                      │
    │                         ├─ Create request       │
    ├─ Fill in form ──────────→│                      │
-   │                         ├─ Route to HRBP ──────→│
-   │                         │                      ├─ Review
-   │                         │              Approve ─┤
+   │                         ├─ Route to specialist ─→│
+   │                         │                      ├─ Review request
+   │                         │                      │
+   │                         │    Verify + "Send Document" action
    │                         │←─────────────────────┤
-   │                         ├─ Generate letter      │  Reject (+ reason)
+   │                         ├─ Notify employee      │  Reject (+ reason)
    ├─ Download letter ←───────┤                      ├──→ Notify employee
-   │                         │                      │    (new request needed)
+   │  (hidden until sent)    │                      │    (new request needed)
 ```
 
 **Used for:** Visa Processing Letter, LOR  
-> ⚠️ Whether RM/HRBP approval is retained for these two letters is **under clarification**. The approval step may be removed or redesigned before go-live.
+> Document is **not visible** to the employee until the India Team specialist explicitly triggers the "Send Document" action (D-12, D-13).
 
 ---
 
-## Slide 4b — Process Flow: Relocation Letter (Date-Triggered)
-
-```
-RM/HRBP                 DOCS Platform
-   │                         │
-   ├─ Select Relocation ─────→│
-   │                         ├─ Create request
-   ├─ Fill form (employee     │
-   │  data + effective date) →│
-   │                         ├─ Effective date = today or past?
-   │                         │   ├─ YES → Auto-approve immediately
-   │                         │   └─ NO  → Hold until effective date
-   │                         │              → Auto-approve on date
-   │                         ├─ Generate letter
-   ├─ Letter available  ←─────┤
-```
-
-> Past-date relocation requests are allowed and auto-approved immediately upon submission.
+> **Relocation Letter — Deferred:** Removed from Phase 1 scope (D-16). Purpose, trigger mechanism, and eligibility require investigation before this can be designed. Will be addressed in a separate later phase.
 
 ---
 
@@ -102,12 +85,11 @@ RM/HRBP                 DOCS Platform
 
 | Field | Letters |
 |---|---|
-| Name, Designation | All 6 |
-| UID | Form 60, Address Proof, Service, Visa, LOR |
+| Name, Designation | All 5 |
+| UID | All 5 |
 | Work Location | Service, Visa Processing, LOR |
 | Birth Location | Form 60 |
-| Current Work Location | Relocation |
-| Start Date | Form 60, Address Proof, Service, Visa, LOR |
+| Start Date | All 5 |
 | Address | Address Proof Letter (from People system) |
 
 ### Manually entered by employee
@@ -115,11 +97,10 @@ RM/HRBP                 DOCS Platform
 | Letter | Employee Fields |
 |---|---|
 | Form 60 | Father Name, PAN, Address, Mobile |
-| Address Proof | Purpose (dropdown + custom text, max 100 chars) |
+| Address Proof | Purpose (dropdown); Custom purpose text (max 100 chars, always visible — fill in when "Custom" selected) |
 | Service Letter | Purpose (dropdown) |
 | Visa Processing | Purpose (dropdown), Comments (max 300 chars, single line) |
-| Relocation | New Work Location (dropdown), Effective Date *(entered by RM/HRBP)* |
-| LOR | Purpose (dropdown), Notes & Responsibilities (rich text) |
+| LOR | Purpose (dropdown), Notes & Responsibilities (plain text, multi-line — no formatting) |
 
 ---
 
@@ -129,13 +110,13 @@ RM/HRBP                 DOCS Platform
 - When People system returns no address: show error banner
 - Message: employee must update their profile in People system before requesting
 
-**Custom purpose — Address Proof Letter**
-- When "Custom" is selected from Purpose dropdown: show free-text field
-- Max 100 characters
+**Self-Declaration popup not implemented**
+- Assist shows a confirmation popup with a checkbox before employees press "Continue"
+- DOCS does not support this — a static disclaimer text appears at the top of the form instead (D-17)
 
-**Relocation Letter date-triggered approval**
-- System holds request until effective date → auto-approves
-- Past dates: immediate auto-approval on submission
+**Custom purpose text — Address Proof Letter**
+- Free-text field is always visible in the form (DOCS cannot conditionally show/hide fields)
+- Max 100 characters — employee fills in when "Custom" is selected from Purpose dropdown
 
 **Auto-close**
 - Once all forms reach final status (Verified / Generated) → auto-close after **2 days** if not manually closed
@@ -164,18 +145,18 @@ RM/HRBP                 DOCS Platform
 
 ## Slide 8 — Configuration Checklist
 
-- [ ] Create 6 India request types (IN prefix) in Docs
+- [ ] Create 5 India request types (IN prefix) in Docs
 - [ ] Configure form fields per letter type (read-only vs. editable)
 - [ ] Connect HR system data source for pre-population
 - [ ] Connect People system for address pre-population
 - [ ] Set up auto-verification workflow (Form 60, Address Proof, Service Letter)
-- [ ] Set up HRBP approval workflow (Visa, LOR — subject to clarification on approval requirement)
-- [ ] Set up date-triggered auto-approval for Relocation Letter
+- [ ] Set up India Team specialist (DV/EDV) verification workflow for Visa Processing Letter and LOR (including "Send Document" action; document hidden until specialist sends it)
+- [ ] Add static disclaimer text at top of each request form (replaces Assist self-declaration popup, D-17)
 - [ ] Configure rejection notification with reason field
-- [ ] Configure completion notification to employee
+- [ ] Configure completion/document-sent notification to employee
 - [ ] Configure 2-day auto-close rule (triggers when all forms reach final status)
 - [ ] Configure 2-day cooldown preventing duplicate requests
-- [ ] Load India letter templates into Docs template engine
+- [ ] Load India letter templates into Docs template engine (5 templates)
 - [ ] Test letter generation output against EPAM India letter format standards
 
 ---
@@ -187,7 +168,7 @@ RM/HRBP                 DOCS Platform
 | BRD sign-off | June 2026 |
 | Platform configuration complete | June 2026 |
 | India letter templates finalized | June 2026 |
-| UAT — HRBP and pilot employees | June 2026 |
+| UAT — India Team specialists and pilot employees | June 2026 |
 | Go-live | **June 30, 2026** |
 | Assist Reference Letters retired | June 30, 2026 |
 
@@ -199,7 +180,7 @@ RM/HRBP                 DOCS Platform
 |---|---|---|
 | HR system API availability | Docs Platform | To confirm |
 | India letter templates ready | India HR Team | To confirm |
-| HRBP accounts/roles in Docs | HR Operations | To confirm |
+| India Team specialist (DV/EDV) accounts/roles in Docs | HR Operations | To confirm |
 | Assist decommission date aligned | Platform/PM | To confirm |
 
 ---
@@ -218,7 +199,7 @@ RM/HRBP                 DOCS Platform
 ## Slide 12 — Next Steps
 
 1. **Docs Platform Team:** Confirm integration availability (HR system, People system)
-2. **India HR Team:** Finalize 6 letter templates for Docs
-3. **HR Operations:** Confirm HRBP user list and role assignment in Docs
+2. **India HR Team:** Finalize 5 letter templates for Docs
+3. **HR Operations:** Confirm India Team specialist (DV/EDV) user list and role assignment in Docs
 4. **PM:** Align Assist decommission date with **June 30, 2026** go-live
-5. **BA/PM:** Schedule UAT with HRBP and India pilot users
+5. **BA/PM:** Schedule UAT with India Team specialists and pilot employees

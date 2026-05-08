@@ -1,0 +1,1395 @@
+<!-- Standalone HTML — open in browser or paste into Confluence HTML macro -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Assisted BA Documentation — Project Overview</title>
+<style>
+:root {
+  --color-dark:     #1a1a2e;
+  --color-dark-mid: #2d3561;
+  --color-accent:   #f97316;
+  --color-blue:     #3b82f6;
+  --color-green:    #22c55e;
+  --color-purple:   #a855f7;
+  --color-violet:   #7c3aed;
+  --color-teal:     #14b8a6;
+  --color-slate:    #64748b;
+  --surface-page:   #f0f2f5;
+  --surface-card:   #ffffff;
+  --surface-muted:  #f8fafc;
+  --border-default: #e2e8f0;
+  --border-muted:   #edf2f7;
+  --text-primary:   #1a1a2e;
+  --text-secondary: #4a5568;
+  --text-muted:     #718096;
+  --text-faint:     #94a3b8;
+  --text-white:     #ffffff;
+  --tint-accent:    #fff7ed;
+  --tint-blue:      #eff6ff;
+  --tint-green:     #f0fdf4;
+  --tint-purple:    #faf5ff;
+  --tint-teal:      #f0fdfa;
+  --tint-yellow:    #fefce8;
+  --tint-muted:     #f8fafc;
+  --font-sans:  -apple-system, 'Segoe UI', Arial, sans-serif;
+  --font-mono:  'Cascadia Code', 'Fira Mono', 'Consolas', monospace;
+  --space-2:    2px;
+  --space-4:    4px;
+  --space-6:    6px;
+  --space-8:    8px;
+  --space-10:  10px;
+  --space-12:  12px;
+  --space-14:  14px;
+  --space-16:  16px;
+  --space-20:  20px;
+  --space-24:  24px;
+  --space-28:  28px;
+  --space-32:  32px;
+  --space-36:  36px;
+  --space-44:  44px;
+  --space-48:  48px;
+  --space-52:  52px;
+  --space-64:  64px;
+  --page-max:    1100px;
+  --page-pad-h:  48px;
+  --page-pad-h-sm: 20px;
+  --radius-sm:   8px;
+  --radius-md:  10px;
+  --radius-lg:  12px;
+  --radius-pill: 20px;
+  --radius-full: 50%;
+  --accent-border-width: 3px;
+  --z-nav: 100;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--surface-page);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.page {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad-h) var(--space-64);
+}
+
+.section {
+  padding-top: var(--space-52);
+}
+
+.section-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-8);
+}
+
+.section h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.section-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-28);
+  max-width: 680px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border-default);
+  margin: 0 calc(-1 * var(--page-pad-h));
+}
+
+.info-box {
+  background: var(--tint-blue);
+  border-left: 4px solid var(--color-blue);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-14) var(--space-16);
+  margin-top: var(--space-20);
+}
+
+.info-box p {
+  font-size: 13px;
+  color: #1e40af;
+  line-height: 1.65;
+}
+
+.info-box strong {
+  color: #1e3a8a;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--surface-muted);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.badge-mgmt     { background: var(--tint-accent);  color: #c2410c;  border: 1px solid #fed7aa; }
+.badge-internal { background: var(--tint-blue);    color: #1d4ed8;  border: 1px solid #bfdbfe; }
+.badge-india    { background: var(--tint-green);   color: #166534;  border: 1px solid #bbf7d0; }
+.badge-employee { background: var(--tint-purple);  color: #6b21a8;  border: 1px solid #e9d5ff; }
+.badge-cross    { background: var(--tint-muted);   color: #475569;  border: 1px solid var(--border-default); }
+
+.phase-pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 12px;
+  margin-bottom: var(--space-4);
+}
+
+.ph1 { background: var(--tint-accent);  color: var(--color-accent); }
+.ph2 { background: var(--tint-blue);   color: var(--color-blue);  }
+.ph3 { background: var(--tint-purple); color: var(--color-violet); }
+.phx { background: var(--tint-muted);  color: var(--color-slate); }
+
+.hero {
+  background: linear-gradient(135deg, var(--color-dark) 50%, var(--color-dark-mid) 100%);
+  color: var(--text-white);
+  padding: var(--space-52) var(--page-pad-h) var(--space-44);
+}
+
+.hero-inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-28);
+}
+
+.hero-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-12);
+}
+
+.hero h1 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: var(--space-10);
+}
+
+.hero h1 em {
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+.hero-sub {
+  font-size: 15px;
+  color: var(--text-faint);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.hero-stats   { display: flex; gap: var(--space-24); flex-wrap: wrap; }
+
+.stat {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md);
+  padding: var(--space-16) 22px;
+  text-align: center;
+  min-width: 110px;
+}
+
+.stat-num {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-accent);
+  display: block;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: var(--space-2);
+}
+
+.nav-bar {
+  background: var(--surface-card);
+  border-bottom: 1px solid var(--border-default);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+}
+
+.nav-inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-10) var(--page-pad-h);
+  flex-wrap: wrap;
+}
+
+.nav-pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 5px var(--space-14);
+  border-radius: var(--radius-pill);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.nav-pill:hover {
+  background: var(--tint-accent);
+  color: var(--color-accent);
+}
+
+.card-grid   { display: grid; gap: var(--space-16); }
+.card-grid-2 { grid-template-columns: 1fr 1fr; }
+.card-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+.card-grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.card {
+  background: var(--surface-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  padding: 22px var(--space-24);
+}
+
+.card-icon   { font-size: 24px; margin-bottom: var(--space-12); }
+.card h3     { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-6); }
+.card p      { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.card ul     { font-size: 13px; color: var(--text-secondary); padding-left: var(--space-16); margin-top: var(--space-6); }
+.card ul li  { margin-bottom: var(--space-4); }
+
+.card-accent  { border-left: var(--accent-border-width) solid var(--color-accent); }
+.card-blue    { border-left: var(--accent-border-width) solid var(--color-blue);   }
+.card-green   { border-left: var(--accent-border-width) solid var(--color-green);  }
+.card-purple  { border-left: var(--accent-border-width) solid var(--color-purple); }
+.card-teal    { border-left: var(--accent-border-width) solid var(--color-teal);   }
+.card-slate   { border-left: var(--accent-border-width) solid var(--color-slate);  }
+
+.flow-wrap {
+  background: var(--surface-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  padding: var(--space-28) var(--space-24);
+}
+
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.flow-step {
+  background: var(--surface-muted);
+  border: 1.5px solid var(--border-default);
+  border-radius: 9px;
+  padding: var(--space-14) var(--space-12);
+  text-align: center;
+  flex: 1;
+  min-width: 110px;
+}
+
+.flow-step .fs-tag {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #a0aec0;
+  margin-bottom: 5px;
+}
+
+.flow-step .fs-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2d3748;
+  line-height: 1.35;
+}
+
+.flow-step.hl              { background: var(--tint-accent); border-color: var(--color-accent); }
+.flow-step.hl .fs-label    { color: #c2410c; }
+
+.flow-arrow {
+  color: #cbd5e0;
+  font-size: 18px;
+  padding: 0 var(--space-6);
+  flex-shrink: 0;
+}
+
+.flow-note {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-top: var(--space-14);
+  line-height: 1.6;
+  border-top: 1px solid var(--border-muted);
+  padding-top: var(--space-12);
+}
+
+.tier-row { display: flex; gap: var(--space-12); flex-wrap: wrap; }
+
+.tier {
+  flex: 1;
+  min-width: 180px;
+  border-radius: var(--radius-md);
+  padding: var(--space-16) 18px;
+  border: 2px solid transparent;
+}
+
+.tier-bootstrap { background: var(--tint-accent);  border-color: var(--color-accent); }
+.tier-phase     { background: var(--tint-blue);    border-color: var(--color-blue);  }
+.tier-source    { background: var(--tint-green);   border-color: var(--color-green); }
+.tier-archive   { background: var(--tint-muted);   border-color: var(--border-default); }
+
+.tier-tag {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.tier-bootstrap .tier-tag { color: var(--color-accent); }
+.tier-phase     .tier-tag { color: var(--color-blue);   }
+.tier-source    .tier-tag { color: var(--color-green);  }
+.tier-archive   .tier-tag { color: #a0aec0; }
+
+.tier h3     { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-6); }
+.tier ul     { font-size: 12px; color: var(--text-secondary); padding-left: var(--space-14); }
+.tier ul li  { margin-bottom: 3px; }
+
+.tier-archive h3, .tier-archive ul { color: var(--text-faint); }
+
+.out-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+}
+
+.out-table th {
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: var(--space-10) var(--space-16);
+  text-align: left;
+  border-bottom: 2px solid var(--border-default);
+}
+
+.out-table td {
+  padding: var(--space-12) var(--space-16);
+  border-bottom: 1px solid var(--border-muted);
+  font-size: 13px;
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.out-table tr:last-child td { border-bottom: none; }
+.out-table td:first-child    { font-weight: 700; color: var(--text-primary); white-space: nowrap; }
+
+.cap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-14); }
+
+.cap {
+  display: flex;
+  gap: var(--space-14);
+  align-items: flex-start;
+  background: var(--surface-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+  padding: var(--space-16) 18px;
+}
+
+.cap-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.cap-icon-o { background: var(--tint-accent);  }
+.cap-icon-b { background: var(--tint-blue);    }
+.cap-icon-g { background: var(--tint-green);   }
+.cap-icon-p { background: var(--tint-purple);  }
+.cap-icon-t { background: var(--tint-teal);    }
+.cap-icon-y { background: var(--tint-yellow);  }
+
+.cap h4 { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-4); }
+.cap p  { font-size: 12.5px; color: var(--text-secondary); line-height: 1.55; }
+
+.roadmap { display: flex; gap: var(--space-12); flex-wrap: wrap; }
+
+.rph {
+  flex: 1;
+  min-width: 180px;
+  border-radius: var(--radius-md);
+  padding: 18px var(--space-20);
+  border: 2px solid transparent;
+}
+
+.rph.done   { background: var(--tint-green);   border-color: var(--color-green);  }
+.rph.active { background: var(--tint-accent);  border-color: var(--color-accent); }
+.rph.next   { background: var(--tint-blue);    border-color: var(--color-blue);   }
+.rph.plan   { background: var(--tint-purple);  border-color: var(--color-violet); }
+.rph.inv    { background: var(--tint-muted);   border-color: var(--border-default); }
+
+.rph-tag {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.rph.done   .rph-tag { color: var(--color-green);  }
+.rph.active .rph-tag { color: var(--color-accent); }
+.rph.next   .rph-tag { color: var(--color-blue);   }
+.rph.plan   .rph-tag { color: var(--color-violet); }
+.rph.inv    .rph-tag { color: var(--text-faint);   }
+
+.rph h3 { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-4); }
+.rph p  { font-size: 12px; line-height: 1.55; }
+.rph ul { font-size: 11.5px; padding-left: var(--space-14); margin-top: var(--space-6); }
+
+.rph.done   p, .rph.done   ul { color: #166534; }
+.rph.active p, .rph.active ul { color: #92400e; }
+.rph.next   p, .rph.next   ul { color: #1e40af; }
+.rph.plan   p, .rph.plan   ul { color: #4c1d95; }
+.rph.inv    p, .rph.inv    ul { color: var(--text-faint); }
+
+.skill-box {
+  background: var(--surface-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  overflow: hidden;
+}
+
+.skill-header {
+  background: var(--color-dark);
+  color: var(--text-white);
+  padding: var(--space-14) var(--space-20);
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);
+}
+
+.skill-header .sh-name {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+}
+
+.skill-header .sh-desc { font-size: 12px; color: var(--text-faint); }
+
+.skill-checks {
+  padding: var(--space-16) var(--space-20);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6) var(--space-24);
+}
+
+.skill-check {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  display: flex;
+  gap: var(--space-8);
+  align-items: flex-start;
+}
+
+.skill-check::before {
+  content: '✓';
+  color: var(--color-green);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.footer {
+  background: var(--color-dark);
+  color: var(--text-faint);
+  padding: var(--space-24) var(--page-pad-h);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-top: 60px;
+}
+
+.footer strong { color: #e2e8f0; }
+
+@media (max-width: 800px) {
+  .card-grid-2,
+  .card-grid-3,
+  .card-grid-4,
+  .cap-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-checks {
+    grid-template-columns: 1fr;
+  }
+  .page {
+    padding: 0 var(--page-pad-h-sm) var(--space-48);
+  }
+  .divider {
+    margin: 0 calc(-1 * var(--page-pad-h-sm));
+  }
+  .hero {
+    padding: var(--space-36) var(--page-pad-h-sm) var(--space-32);
+  }
+  .nav-inner {
+    padding: var(--space-8) var(--page-pad-h-sm);
+  }
+  .footer {
+    padding: var(--space-20);
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ HERO ══════════════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">EPAM India · HR Document Workflows</div>
+      <h1>
+        AI-Assisted BA Documentation<br>
+        <em>Assist → EPAM Docs Migration</em>
+      </h1>
+      <p class="hero-sub">A governed agentic workflow system for AI-assisted documentation with deterministic validation and full decision traceability. It combines structured memory, rule-based validators, and synchronized data models to ensure consistency, auditability, and scalable evolution across outputs.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAV ═══════════════════════════════════════════════ -->
+<div class="nav-bar">
+  <div class="nav-inner">
+    <a class="nav-pill" href="#context">Context</a>
+    <a class="nav-pill" href="#workflow">Workflow</a>
+    <a class="nav-pill" href="#inputs">Inputs</a>
+    <a class="nav-pill" href="#knowledge">Knowledge System</a>
+    <a class="nav-pill" href="#outputs">Outputs</a>
+    <a class="nav-pill" href="#capabilities">Capabilities</a>
+    <a class="nav-pill" href="#validation">Validation</a>
+    <a class="nav-pill" href="#roadmap">Roadmap</a>
+    <a class="nav-pill" href="#stats">At a Glance</a>
+    <a class="nav-pill" href="#howto">PO/BA Playbook</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- ══ 1. CONTEXT ══════════════════════════════════════ -->
+  <div class="section" id="context">
+    <div class="section-tag">01 — Context</div>
+    <h2>Why This Project Exists</h2>
+    <p class="section-desc">assist.epam.com is being decommissioned. India employees currently use Assist to request official HR letters. Every workflow must move to docs.epam.com by June 30, 2026.</p>
+
+    <div class="card-grid card-grid-3">
+      <div class="card card-accent">
+        <div class="card-icon">📋</div>
+        <h3>The Problem</h3>
+        <p>India HR document workflows live exclusively in Assist — a platform being retired. Employees need uninterrupted access to reference letters, compensation letters, and separation documents.</p>
+      </div>
+      <div class="card card-blue">
+        <div class="card-icon">🎯</div>
+        <h3>The Goal</h3>
+        <p>Migrate all India HR letter workflows to EPAM Docs with no degradation in employee experience. Replicate existing processes, remove legacy dependencies, and go live by June 30, 2026.</p>
+      </div>
+      <div class="card card-green">
+        <div class="card-icon">🤖</div>
+        <h3>The Approach</h3>
+        <p>An AI-assisted BA documentation workflow — Claude Code processes inputs, maintains a persistent knowledge base, generates multi-audience docs, and validates consistency automatically.</p>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:20px;">
+      <p><strong>Deadline:</strong> June 30, 2026 — Assist Reference Letters retired. All India employees must be onboarded to EPAM Docs before that date. Phase 1 (Reference Letters) is the critical path item.</p>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 2. WORKFLOW ═════════════════════════════════════ -->
+  <div class="section" id="workflow">
+    <div class="section-tag">02 — How It Works</div>
+    <h2>AI-Assisted Documentation Workflow</h2>
+    <p class="section-desc">Raw inputs are processed through a structured knowledge pipeline. Extracted facts are stored in a tiered memory system. Claude Code uses that memory to generate, update, and validate all output documents.</p>
+
+    <div class="flow-wrap">
+      <div class="flow-row">
+        <div class="flow-step">
+          <div class="fs-tag">Raw Materials</div>
+          <div class="fs-label">Screenshots · Transcripts · Confluence · Corrections</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step hl">
+          <div class="fs-tag">Knowledge Extraction</div>
+          <div class="fs-label">Claude Code reads &amp; extracts decisions, facts, field specs</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="fs-tag">Memory System</div>
+          <div class="fs-label">Tiered markdown files persist knowledge across sessions</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step hl">
+          <div class="fs-tag">Document Generation</div>
+          <div class="fs-label">Claude writes / updates output docs per audience rules</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="fs-tag">Validation</div>
+          <div class="fs-label">validate-docs skill checks all 18 docs for consistency</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="fs-tag">Delivery</div>
+          <div class="fs-label">Stakeholder review · sign-off · dev handoff</div>
+        </div>
+      </div>
+      <p class="flow-note"><strong>Key principle:</strong> The <code>Feedback &amp; Decisions Log</code> is the single source of truth. Every output document is derived from locked decisions in the log. When a decision changes, the validator catches which docs need updating. The AI never invents facts — it extracts, stores, and applies them.</p>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 3. INPUTS ═══════════════════════════════════════ -->
+  <div class="section" id="inputs">
+    <div class="section-tag">03 — Inputs</div>
+    <h2>What Feeds the System</h2>
+    <p class="section-desc">Six input types are supported. Each is processed differently and results in structured knowledge stored in the memory system.</p>
+
+    <div class="card-grid card-grid-2">
+      <div class="card card-accent">
+        <div class="card-icon">📸</div>
+        <h3>Screenshots — Assist Platform</h3>
+        <p>JPEG/PNG screenshots of Assist forms, flows, and UI. A pre-read hook intercepts every image access: if a memory file already exists for that screenshot, the hook redirects to the cached file instead of re-reading the image — saving processing time.</p>
+        <ul>
+          <li>Form field names and types</li>
+          <li>Dropdown option values</li>
+          <li>Workflow step sequences</li>
+          <li>UX behaviors (popups, warnings)</li>
+        </ul>
+      </div>
+      <div class="card card-blue">
+        <div class="card-icon">🌐</div>
+        <h3>Live Confluence Pages — MCP</h3>
+        <p>Direct integration with kb.epam.com via the Confluence MCP server. Pages are read in real time — no stale exports. The EPMEOADOCS space contains 7 tracked pages covering all letter types, process flows, open questions, and communication history.</p>
+        <ul>
+          <li>Confirmed process decisions per letter type</li>
+          <li>Open questions log (India Team confirmations)</li>
+          <li>Communication history (7 meetings)</li>
+          <li>Dev trackers for each phase</li>
+        </ul>
+      </div>
+      <div class="card card-green">
+        <div class="card-icon">🎙️</div>
+        <h3>Meeting Transcripts</h3>
+        <p>Auto-transcribed meeting recordings dropped into <code>input/transcriptions/</code>. Each transcript is processed: decisions and facts are extracted, the Feedback Log is updated, relevant phase state files are updated, and the file is renamed with a <code>[processed]-</code> prefix.</p>
+        <ul>
+          <li>Stakeholder confirmations and rejections</li>
+          <li>Design decisions with owner and date</li>
+          <li>Open questions raised</li>
+          <li>Action items and next steps</li>
+        </ul>
+      </div>
+      <div class="card card-purple">
+        <div class="card-icon">✏️</div>
+        <h3>Stakeholder Corrections</h3>
+        <p>Handwritten correction images from document review sessions. Claude reads the image, identifies what was marked as wrong, applies the correction to the relevant output documents, and logs a Feedback entry (F-XX) in the Decisions Log.</p>
+        <ul>
+          <li>Date corrections (e.g. July 1 → June 30)</li>
+          <li>Process step corrections</li>
+          <li>Terminology fixes</li>
+          <li>Approval flow updates</li>
+        </ul>
+      </div>
+      <div class="card card-teal">
+        <div class="card-icon">📝</div>
+        <h3>Meeting Notes</h3>
+        <p>Pre-meeting briefs and background notes from the BA team stored in <code>input/meeting_notes/</code>. Provide context for upcoming stakeholder sessions and help frame questions for India SME meetings.</p>
+      </div>
+      <div class="card" style="border-left:3px solid #a0aec0;">
+        <div class="card-icon">📁</div>
+        <h3>Confluence HTML Exports (Legacy)</h3>
+        <p>Static HTML exports from early project phases, now archived. The live MCP integration replaced these as the primary source for Confluence content — exports are retained for historical reference only.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 4. KNOWLEDGE SYSTEM ═════════════════════════════ -->
+  <div class="section" id="knowledge">
+    <div class="section-tag">04 — Knowledge System</div>
+    <h2>How Knowledge is Stored and Used</h2>
+    <p class="section-desc">Knowledge is stored in a tiered markdown memory system at <code>memory/</code>. Tiers are loaded selectively — only what the current task needs. This keeps each session lean while preserving full project context across sessions.</p>
+
+    <div class="tier-row">
+      <div class="tier tier-bootstrap">
+        <div class="tier-tag">Tier 1 — Session Bootstrap</div>
+        <h3>Load Every Session</h3>
+        <ul>
+          <li><code>context/project_state.md</code> — active phases, open items, next actions</li>
+          <li><code>context/domain_rules.md</code> — terminology, tone, invariant rules</li>
+          <li><code>reference_confluence.md</code> — Confluence page IDs, Miro, SharePoint</li>
+        </ul>
+      </div>
+      <div class="tier tier-phase">
+        <div class="tier-tag">Tier 2 — Phase Knowledge</div>
+        <h3>Load for Phase Work</h3>
+        <ul>
+          <li><code>phase1/state.md</code> — 5 letter types, routing, field specs, D-01..D-17</li>
+          <li><code>phase2/state.md</code> — batch XLS flow, 4 types, acceptance design</li>
+          <li><code>phase3/state.md</code> — ex-employee access, auto-trigger, delivery model</li>
+        </ul>
+      </div>
+      <div class="tier tier-source">
+        <div class="tier-tag">Tier 3 — Source Knowledge</div>
+        <h3>Load When Needed</h3>
+        <ul>
+          <li><code>img_*.md</code> — extracted field specs per screenshot</li>
+          <li><code>kb_*.md</code> — platform technical limits, deep context notes</li>
+          <li>Loaded only for the specific letter type or topic being worked on</li>
+        </ul>
+      </div>
+      <div class="tier tier-archive">
+        <div class="tier-tag">Tier 4 — Archive</div>
+        <h3>Do Not Load</h3>
+        <ul>
+          <li>Superseded knowledge files</li>
+          <li>Hook artifact stubs</li>
+          <li>Original files absorbed into phase state files</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;">
+      <div class="card card-accent">
+        <h3>Feedback &amp; Decisions Log — Single Source of Truth</h3>
+        <p style="margin-top:8px;">All confirmed design decisions (D-XX), open questions (OQ-XX), and stakeholder feedback (F-XX) are recorded in <code>output/shared/Feedback_Decisions_Log.md</code>. Every output document must be consistent with the locked decisions. The validation skill reads this file first on every run and derives all facts dynamically — nothing is hardcoded in the validator.</p>
+        <div style="display:flex;gap:24px;margin-top:14px;flex-wrap:wrap;">
+          <div><span style="font-size:22px;font-weight:800;color:#f97316;">26+</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Decisions Across Phases</span></div>
+          <div><span style="font-size:22px;font-weight:800;color:#3b82f6;">21</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Open Questions</span></div>
+          <div><span style="font-size:22px;font-weight:800;color:#22c55e;">9</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Feedback Items</span></div>
+          <div><span style="font-size:22px;font-weight:800;color:#a855f7;">4</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Phases Tracked</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 5. OUTPUTS ══════════════════════════════════════ -->
+  <div class="section" id="outputs">
+    <div class="section-tag">05 — Outputs</div>
+    <h2>Documents Generated</h2>
+    <p class="section-desc">Each phase produces a defined set of documents, each targeting a specific audience with a specific purpose. Documents are never generic — audience rules are enforced by domain_rules.md and checked by the validator.</p>
+
+    <table class="out-table">
+      <thead>
+        <tr>
+          <th>Phase</th>
+          <th>File</th>
+          <th>Audience</th>
+          <th>Purpose</th>
+          <th>Format</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">01 — Process Flow</a></td>
+          <td><span class="badge badge-internal">Internal / BA</span></td>
+          <td>Target-state process flow in EPAM Docs — swim lanes, field tables, routing tracks, notifications</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/02_BRD_Reference_Letters.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">02 — BRD</a></td>
+          <td><span class="badge badge-internal">DOCS Platform Team</span></td>
+          <td>Full business requirements — FRs, integrations, NFRs, assumptions, risks, sign-off table</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/03_Presentation_Internal_Team.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">03 — Internal Presentation</a></td>
+          <td><span class="badge badge-internal">DOCS Platform Team</span></td>
+          <td>Detailed briefing — flow diagrams, field specs, config checklist, action items, open questions</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/04_KB_Onepager.html" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">04 — KB Onepager</a></td>
+          <td><span class="badge badge-mgmt">Management</span></td>
+          <td>Business case, scope, roadmap, timeline — no technical detail; suitable for Confluence KB</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/05_India_SME_Validation.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">05 — India SME Validation</a></td>
+          <td><span class="badge badge-india">India Stakeholders</span></td>
+          <td>Structured review document with confirmation questions, answer blanks, sign-off table</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/06_India_Colleagues_Guide.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">06 — India Colleagues Guide</a></td>
+          <td><span class="badge badge-employee">India Employees</span></td>
+          <td>Plain-language employee guide — what changes, step-by-step instructions, processing times</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph2">Phase 2</span></td>
+          <td><a href="output/phase2_compensation/01_KB_Onepager.html" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">01 — KB Onepager</a></td>
+          <td><span class="badge badge-mgmt">Management</span></td>
+          <td>Phase 2 scope preview — batch model, 4 compensation letter types, key differences from Phase 1</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph3">Phase 3</span></td>
+          <td><a href="output/phase3_separation/01_KB_Onepager.html" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">01 — KB Onepager</a></td>
+          <td><span class="badge badge-mgmt">Management</span></td>
+          <td>Phase 3 scope preview — separation letters, LOR for ex-employees, HRMS-triggered flow</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Decommission_Plan.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-01 — Decommission Plan</a></td>
+          <td><span class="badge badge-internal">BA Team / India Team lead</span></td>
+          <td>June 30 cutover procedure — milestone checklist, Assist retirement steps, escalation contacts</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Rollback_Recovery_Plan.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-02 — Rollback &amp; Recovery Plan</a></td>
+          <td><span class="badge badge-internal">BA Team / India Team lead</span></td>
+          <td>Contingency plan if DOCS not ready at go-live — trigger conditions, Assist re-enablement, retry criteria</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Go_Live_Runbook.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-03 — Go-Live Runbook</a></td>
+          <td><span class="badge badge-internal">BA Team / DOCS Platform Team / India Team lead</span></td>
+          <td>Step-by-step day-of-cutover procedure — pre-go-live checklists, execution steps, smoke tests, escalation</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Test_Validation_Plan.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-04 — Test &amp; Validation Plan</a></td>
+          <td><span class="badge badge-internal">BA Team / India Team specialists / DOCS Platform Team</span></td>
+          <td>Test scope, UAT test cases TC-01–TC-09, defect classification, sign-off table for Stage 4 UAT</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Acceptance_Criteria.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-05 — Acceptance Criteria</a></td>
+          <td><span class="badge badge-internal">BA Team / India Team leads</span></td>
+          <td>Definition of Done — per-doc validation gates, stage sign-off criteria, Go/No-Go checklist for T-1</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Communication_Plan.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-06 — Communication Plan</a></td>
+          <td><span class="badge badge-internal">BA Team / India Team lead / Communications</span></td>
+          <td>Stakeholder comms schedule T-30 through T+7 — message templates, channels, responsibility matrix</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Monitoring_Plan.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-07 — Monitoring Plan</a></td>
+          <td><span class="badge badge-internal">BA Team / India Team lead / DOCS Platform Team</span></td>
+          <td>Post-go-live observability — metrics, alert thresholds, daily/weekly review cadence T+1 through T+30</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Migration</span></td>
+          <td><a href="output/migration/Reconciliation_Report_Template.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">MIG-08 — Reconciliation Report Template</a></td>
+          <td><span class="badge badge-internal">BA Team / India Team lead</span></td>
+          <td>Fill-in template for post-go-live reporting — volume summary, errors, OQ status, metrics vs thresholds</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Shared</span></td>
+          <td><a href="output/shared/Feedback_Decisions_Log.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">Feedback &amp; Decisions Log</a></td>
+          <td><span class="badge badge-cross">BA Team</span></td>
+          <td>Cross-phase source of truth — all decisions (D-XX), open questions (OQ-XX), feedback (F-XX)</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill phx">Shared</span></td>
+          <td><a href="output/shared/RTM.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">RTM</a></td>
+          <td><span class="badge badge-cross">BA Team</span></td>
+          <td>Requirements Traceability Matrix — Decision×Document, OQ impact map, change impact guide</td>
+          <td>Markdown</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <p><strong>Audience enforcement:</strong> Management docs (04) contain no field-level detail or jargon. Employee docs (06) contain no migration rationale or internal process detail. India SME docs (05) contain explicit questions and sign-off checkboxes. These rules live in domain_rules.md and are validated automatically on every run.</p>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 6. CAPABILITIES ═════════════════════════════════ -->
+  <div class="section" id="capabilities">
+    <div class="section-tag">06 — Capabilities</div>
+    <h2>What the System Can Do</h2>
+    <p class="section-desc">The workflow combines Claude Code's AI capabilities with a structured project framework, enabling a range of BA documentation tasks that would otherwise require significant manual effort.</p>
+
+    <div class="cap-grid">
+      <div class="cap">
+        <div class="cap-icon cap-icon-o">📸</div>
+        <div>
+          <h4>Image &amp; Screenshot Analysis</h4>
+          <p>Reads Assist platform screenshots and extracts field names, types, dropdown options, flow sequences, and UX behaviors. Results are cached in memory files and re-used in future sessions without re-reading the image.</p>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap-icon cap-icon-b">🌐</div>
+        <div>
+          <h4>Live Confluence Integration</h4>
+          <p>Reads and searches Confluence pages in real time via MCP. Can fetch any page by ID, search within a space, and retrieve child pages. No stale exports — always reads current content from kb.epam.com.</p>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap-icon cap-icon-g">🎙️</div>
+        <div>
+          <h4>Meeting Transcript Processing</h4>
+          <p>Extracts decisions, open questions, and action items from raw meeting transcripts. Updates the Feedback Log, phase state files, and project state automatically. Marks processed files with a prefix to prevent reprocessing.</p>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap-icon cap-icon-p">✏️</div>
+        <div>
+          <h4>Stakeholder Correction Application</h4>
+          <p>Reads handwritten correction images, identifies what changed, applies corrections to all affected output documents simultaneously, and logs the change as a Feedback entry with source and date.</p>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap-icon cap-icon-t">📝</div>
+        <div>
+          <h4>Multi-Audience Document Generation</h4>
+          <p>Generates different documents from the same underlying facts, with tone and content adapted per audience — management language for onepagers, structured questions for SME validation, plain instructions for employee guides.</p>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap-icon cap-icon-y">🔍</div>
+        <div>
+          <h4>Cross-Document Consistency Validation</h4>
+          <p>Runs the validate-docs skill across all 18 output documents simultaneously, checking factual accuracy, terminology, audience fit, structural completeness, OQ cross-references, and forbidden phrases. Errors and warnings are reported with file, location, and fix.</p>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap-icon cap-icon-o">💾</div>
+        <div>
+          <h4>Persistent Cross-Session Memory</h4>
+          <p>Stores project knowledge in structured markdown files that survive across sessions. Starting a new session loads only what's needed (tiered approach). The system "remembers" all prior decisions, open questions, and confirmed facts without re-reading source material.</p>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap-icon cap-icon-b">📊</div>
+        <div>
+          <h4>Decision &amp; OQ Tracking</h4>
+          <p>Maintains a living Feedback &amp; Decisions Log with full traceability — every decision has an owner, date, source, and list of documents it is reflected in. Open questions have owners and target resolution stages. Nothing slips through.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 7. VALIDATION ═══════════════════════════════════ -->
+  <div class="section" id="validation">
+    <div class="section-tag">07 — Automated Validation</div>
+    <h2>The validate-docs Skill</h2>
+    <p class="section-desc">Running <code>/validate-docs</code> triggers a full consistency check across all output documents. The skill reads the Feedback &amp; Decisions Log first, derives all facts dynamically, then runs all checks. No hardcoded values — the validator always reflects the latest locked decisions.</p>
+
+    <div class="skill-box">
+      <div class="skill-header">
+        <span>⚡</span>
+        <div>
+          <div class="sh-name">/validate-docs</div>
+          <div class="sh-desc">Run after any change to output/ — validates all output documents in one pass</div>
+        </div>
+      </div>
+      <div class="skill-checks">
+        <div class="skill-check">Check 1 — Factual accuracy vs. locked decisions ("Reflected in" verification)</div>
+        <div class="skill-check">Check 2 — Forbidden phrases (RM approval, July 1, HRBP in wrong docs, etc.)</div>
+        <div class="skill-check">Check 3 — OQ cross-reference integrity (cited OQs exist; resolved OQs not open)</div>
+        <div class="skill-check">Check 4 — Terminology consistency (letter names, platform name, role names)</div>
+        <div class="skill-check">Check 5 — Structural completeness per document type</div>
+        <div class="skill-check">Check 6 — Audience fit (management / SME / employee language rules)</div>
+        <div class="skill-check">Check 7 — Internal coherence (no contradictions, no orphaned placeholders)</div>
+        <div class="skill-check">Check 8 — Traceability completeness (RTM rows, Source Index, OQ Impact Map)</div>
+        <div class="skill-check">Check 9 — Confidence quality (uncertainty markers in management docs, SME question coverage)</div>
+        <div class="skill-check">Check 10 — Stale detection (superseded decisions, stale memory files, orphaned pending markers)</div>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-3" style="margin-top:16px;">
+      <div class="card card-accent">
+        <h3>❌ Errors</h3>
+        <p>Must fix before next stakeholder meeting. Reported with file, location, issue, correct content, and source Decision ID.</p>
+      </div>
+      <div class="card card-blue">
+        <h3>⚠️ Warnings</h3>
+        <p>Review recommended. Reported with file, location, concern, and specific suggested action.</p>
+      </div>
+      <div class="card card-green">
+        <h3>✅ Pass</h3>
+        <p>Confirms documentation is consistent with the Feedback Log and ready for the next stakeholder stage.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 8. ROADMAP ══════════════════════════════════════ -->
+  <div class="section" id="roadmap">
+    <div class="section-tag">08 — Phase Roadmap</div>
+    <h2>Migration Phases</h2>
+    <p class="section-desc">Migration is structured in phases by letter type complexity. Each phase follows the same documentation workflow: inputs → knowledge → outputs → validation → stakeholder sign-off → dev handoff.</p>
+
+    <div class="roadmap">
+      <div class="rph active">
+        <div class="rph-tag">Phase 1 · Active</div>
+        <h3>Reference Letters</h3>
+        <ul>
+          <li>5 letter types: Form 60, Address Proof, Service Letter, Visa Processing, LOR</li>
+          <li>2 routing tracks: auto-verified and DV/EDV manual verification</li>
+          <li>Go-live: June 30, 2026</li>
+          <li>Stage 1 (internal sign-off) pending</li>
+          <li>India SME meeting: ~May 13–14</li>
+        </ul>
+      </div>
+      <div class="rph next">
+        <div class="rph-tag">Phase 2 · Scoping</div>
+        <h3>Compensation Letters</h3>
+        <ul>
+          <li>4 letter types: Salary Revision, Promotion, Increment, Variable Pay</li>
+          <li>Batch model: India HR uploads XLS, generates for all employees</li>
+          <li>Employee acceptance (date-stamped) + PAN-protected PDF</li>
+          <li>Timeline TBD post-Phase 1 go-live</li>
+        </ul>
+      </div>
+      <div class="rph plan">
+        <div class="rph-tag">Phase 3 · Planned</div>
+        <h3>Separation Letters</h3>
+        <ul>
+          <li>Experience Letter, Relieving Letter, LOR (ex-employees)</li>
+          <li>HRMS-triggered on last working day</li>
+          <li>Delivery to personal email post-exit</li>
+          <li>Timeline TBD post-Phase 2</li>
+        </ul>
+      </div>
+      <div class="rph inv">
+        <div class="rph-tag">Phase 4 · Investigation</div>
+        <h3>Relocation Letter</h3>
+        <ul>
+          <li>Removed from Phase 1 (D-16)</li>
+          <li>Purpose, trigger, and eligibility unclear</li>
+          <li>RM initiation model incompatible with DOCS</li>
+          <li>Scope TBD pending investigation (OQ-13, owner: Hanna)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-3" style="margin-top:28px;">
+      <div class="card card-accent">
+        <h3>Sign-off Stages (Phase 1)</h3>
+        <ul style="margin-top:8px;">
+          <li>⬜ Stage 1 — Internal (Daria, Hanna)</li>
+          <li>⬜ Stage 2 — India SME (Satish, Satya, Sasanka)</li>
+          <li>⬜ Stage 3 — Post-feedback iteration</li>
+          <li>⬜ Stage 4 — Final India sign-off + UAT</li>
+          <li>⬜ Stage 5 — Epics/tickets to dev</li>
+        </ul>
+      </div>
+      <div class="card card-blue">
+        <h3>Open Questions Blocking Phase 1</h3>
+        <ul style="margin-top:8px;">
+          <li>OQ-05/06/07 — Purpose dropdown values (India Team)</li>
+          <li>OQ-08 — Bank/SIM/LPG sub-types approach</li>
+          <li>OQ-11 — DOCS dev: Comments + LOR Notes fields</li>
+          <li>OQ-14 — Address edit: lock or allow?</li>
+        </ul>
+      </div>
+      <div class="card card-green">
+        <h3>Key External Resources</h3>
+        <ul style="margin-top:8px;">
+          <li>Confluence: EPMEOADOCS space (kb.epam.com)</li>
+          <li>Miro: India DOCS flow diagrams board</li>
+          <li>SharePoint: BA team materials</li>
+          <li>EPAM Docs: docs.epam.com (target platform)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 9. AT A GLANCE ══════════════════════════════════ -->
+  <div class="section" id="stats">
+    <div class="section-tag">09 — At a Glance</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+
+      <div class="card" style="flex:1;min-width:160px;text-align:center;padding:28px 16px;">
+        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">4</span>
+        <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;display:block;">Phases</span>
+      </div>
+
+      <div class="card" style="flex:1;min-width:160px;text-align:center;padding:28px 16px;">
+        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">18</span>
+        <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;display:block;">Output Docs</span>
+      </div>
+
+      <div class="card" style="flex:1;min-width:160px;text-align:center;padding:28px 16px;">
+        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">6</span>
+        <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;display:block;">Audiences</span>
+      </div>
+
+      <div class="card" style="flex:1;min-width:160px;text-align:center;padding:28px 16px;">
+        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">26+</span>
+        <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;display:block;">Decisions Tracked</span>
+      </div>
+
+      <div class="card" style="flex:1;min-width:160px;text-align:center;padding:28px 16px;">
+        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">10</span>
+        <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;display:block;">Validator Checks</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top:48px;"></div>
+
+  <!-- ══ 10. PO/BA PLAYBOOK ══════════════════════════════ -->
+  <div class="section" id="howto">
+    <div class="section-tag">10 — PO/BA Playbook</div>
+    <h2>How to Use This System</h2>
+    <p class="section-desc">A practical guide for the BA or PO running this project — when to feed information, how to create and update each output document, and when to validate.</p>
+
+    <div class="card-grid card-grid-3">
+      <div class="card card-accent">
+        <div class="card-icon">📥</div>
+        <h3>1 · Feed Inputs</h3>
+        <p>When new information arrives — meeting transcripts, stakeholder corrections, Confluence pages, verbal decisions — drop it into the system. Claude extracts decisions and open questions, updates the Feedback Log, and flags what output docs need to change.</p>
+      </div>
+      <div class="card card-blue">
+        <div class="card-icon">✍️</div>
+        <h3>2 · Generate &amp; Update Artifacts</h3>
+        <p>With confirmed facts in memory, ask Claude to create or update the relevant output document. Load the phase state file and domain_rules first. The Feedback Log is the single source of truth — Claude never invents facts. Run <code>/validate-docs</code> after every change.</p>
+      </div>
+      <div class="card card-green">
+        <div class="card-icon">✅</div>
+        <h3>3 · Verify &amp; Sign Off</h3>
+        <p>Run <code>/validate-docs</code> before every stakeholder stage. Fix all errors before sharing documents. Review warnings and accept or resolve each one. The validator reads the Feedback Log dynamically — no setup required.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size:15px;font-weight:800;color:#1a1a2e;margin:36px 0 14px;">When and How to Feed Information</h3>
+
+    <table class="out-table">
+      <thead>
+        <tr>
+          <th>Trigger</th>
+          <th>What to do</th>
+          <th>How Claude handles it</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Meeting or call completed</td>
+          <td>Drop transcript file in <code>input/transcriptions/</code></td>
+          <td>Extracts D-XX / OQ-XX / F-XX; updates FDL and phase state; renames file with <code>[processed]-</code> prefix to prevent re-processing</td>
+        </tr>
+        <tr>
+          <td>Stakeholder sends document corrections</td>
+          <td>Save correction image in <code>input/corrections/</code><br>Ask Claude: <em>"Apply corrections from [filename]"</em></td>
+          <td>Reads image; identifies what changed; applies corrections to all affected output docs; logs F-XX entry in FDL</td>
+        </tr>
+        <tr>
+          <td>Confluence / KB page updated</td>
+          <td>Share the page URL or Confluence page ID</td>
+          <td>Reads live via MCP — no export needed; updates relevant memory files with new facts</td>
+        </tr>
+        <tr>
+          <td>Verbal or email decision confirmed</td>
+          <td>Add D-XX entry to FDL following <code>memory/traceability/templates.md</code></td>
+          <td>You must also add to RTM and <code>docs/data/decisions.yaml</code>; run <code>/validate-schema</code> to confirm sync; run <code>/validate-docs</code> to find which output docs need updating</td>
+        </tr>
+        <tr>
+          <td>New open question raised</td>
+          <td>Add OQ-XX entry to FDL; also add to <code>docs/data/open-questions.yaml</code></td>
+          <td>Validator (Check 3) tracks all OQ references in output docs and flags stale markers when OQs are resolved</td>
+        </tr>
+        <tr>
+          <td>Starting a new Claude session</td>
+          <td>No action needed — bootstrap loads automatically</td>
+          <td>Reads <code>context/project_state.md</code> → <code>context/domain_rules.md</code> → <code>reference_confluence.md</code> at session start; then loads phase state when you begin phase-specific work</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:15px;font-weight:800;color:#1a1a2e;margin:36px 0 14px;">When to Create or Update Each Artifact</h3>
+
+    <table class="out-table">
+      <thead>
+        <tr>
+          <th>Document</th>
+          <th>Create / update when</th>
+          <th>Memory to load first</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>01 — Process Flow</strong></td>
+          <td>After routing decisions are locked (D-12, D-13, D-15 confirmed for Phase 1)</td>
+          <td><code>phase[N]/state.md</code> + relevant <code>img_*.md</code> field specs</td>
+        </tr>
+        <tr>
+          <td><strong>02 — BRD</strong></td>
+          <td>After Process Flow is reviewed internally; update when new FRs are confirmed</td>
+          <td><code>phase[N]/state.md</code> — Process Flow content is the prerequisite</td>
+        </tr>
+        <tr>
+          <td><strong>03 — Internal Presentation</strong></td>
+          <td>Before the Docs platform team briefing; update after each BRD revision</td>
+          <td><code>phase[N]/state.md</code> — keeps in sync with 01 and 02</td>
+        </tr>
+        <tr>
+          <td><strong>04 / KB2 / KB3 — KB Onepagers</strong></td>
+          <td>When phase scope is confirmed (letter types and routing locked); update on date or scope changes</td>
+          <td><code>phase[N]/state.md</code> + <code>domain_rules.md</code> (management tone)</td>
+        </tr>
+        <tr>
+          <td><strong>05 — India SME Validation</strong></td>
+          <td>Before India stakeholder meeting (Stage 2); update after each India team feedback round</td>
+          <td><code>phase[N]/state.md</code> + all Open OQs with "Stage 2" target resolution</td>
+        </tr>
+        <tr>
+          <td><strong>06 — India Colleagues Guide</strong></td>
+          <td>After Stage 2 sign-off — <em>only confirmed facts</em>; update before go-live communications</td>
+          <td><code>phase[N]/state.md</code> + <code>domain_rules.md</code> (employee tone, no uncertainty markers)</td>
+        </tr>
+        <tr>
+          <td><strong>FDL (Feedback &amp; Decisions Log)</strong></td>
+          <td>After every meeting, correction, or confirmed decision — always the first file updated</td>
+          <td>No load needed — FDL is the source; validator reads it fresh on every run</td>
+        </tr>
+        <tr>
+          <td><strong>RTM</strong></td>
+          <td>After every new D-XX or OQ-XX; keep in sync with FDL at all times</td>
+          <td>Use entry templates in <code>memory/traceability/templates.md</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:15px;font-weight:800;color:#1a1a2e;margin:36px 0 14px;">Common Step-by-Step Workflows</h3>
+
+    <div class="card-grid card-grid-2">
+      <div class="card card-accent">
+        <h3>🎙️ Process a Meeting Transcript</h3>
+        <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+          <li>Drop transcript file in <code>input/transcriptions/</code></li>
+          <li>Tell Claude: <em>"Process the new transcript"</em></li>
+          <li>Claude extracts D-XX / OQ-XX / F-XX → updates FDL → updates phase state → renames file with <code>[processed]-</code> prefix</li>
+          <li>Run <code>/validate-docs</code> — check what output docs need updating</li>
+          <li>Apply required fixes; re-run <code>/validate-docs</code> until clean</li>
+        </ol>
+      </div>
+      <div class="card card-blue">
+        <h3>✏️ Apply Stakeholder Corrections</h3>
+        <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+          <li>Save correction image in <code>input/corrections/</code></li>
+          <li>Tell Claude: <em>"Apply corrections from [filename]"</em></li>
+          <li>Claude reads image → identifies changes → updates all affected output docs → logs F-XX in FDL</li>
+          <li>Run <code>/validate-docs</code> to confirm corrections propagated cleanly across all docs</li>
+        </ol>
+      </div>
+      <div class="card card-green">
+        <h3>🔒 Add a Confirmed Decision</h3>
+        <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+          <li>Add D-XX entry to <code>output/shared/Feedback_Decisions_Log.md</code> (follow <code>templates.md</code>)</li>
+          <li>Add matching row to <code>output/shared/RTM.md</code></li>
+          <li>Add entry to <code>docs/data/decisions.yaml</code></li>
+          <li>Run <code>/validate-schema</code> to confirm sync across all three files</li>
+          <li>Run <code>/validate-docs</code> → update all flagged docs → re-run until clean</li>
+        </ol>
+      </div>
+      <div class="card card-purple">
+        <h3>📋 Prepare for an India SME Meeting</h3>
+        <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+          <li>Run <code>/validate-docs</code> — resolve all errors first</li>
+          <li>Review Open OQs in FDL with "Stage 2 review" as target resolution</li>
+          <li>Confirm each open OQ has a corresponding question in <code>05_India_SME_Validation.md</code></li>
+          <li>Check sign-off table in 05 has India stakeholder names</li>
+          <li>Share 05 with Satish / Satya / Sasanka for review; record responses as new D-XX or OQ updates</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:28px;">
+      <p><strong>Validation rule:</strong> Run <code>/validate-docs</code> after every change to any file in <code>output/</code>. This is the single quality gate for the entire documentation set. All <strong>❌ errors must be fixed</strong> before sharing any document with a stakeholder. <strong>⚠️ warnings must be reviewed</strong> and either resolved or explicitly accepted with a note in the FDL. Run <code>/build-overview</code> after any change to <code>docs/src/</code> — never edit <code>Project_Overview.html</code> directly.</p>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<!-- ══ FOOTER ═════════════════════════════════════════════ -->
+<div class="footer">
+  <p>EPAM India · HR Document Workflow Migration · <strong>Assist → EPAM Docs</strong></p>
+  <p>AI-Assisted BA Documentation · Claude Code · <strong>Last updated: May 2026</strong></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,733 @@
+[DOCS] Assist Letter questions-20260407_123056-
+Meeting Recording
+7 April 2026, 09:31am
+38m 25s
+Olga Chaban started transcription
+Olga Chaban 0:03
+Can you see it?
+Lela Akobidze 0:06
+Yes.
+Satish Malla 0:06
+Yeah, we were able to see that.
+Olga Chaban 0:08
+Mm-hmm. Great. Uh. So let's continue discussion of uh uh uh.
+Letters that we have as an example.
+On our previous meeting, we discussed compensation letter. By the way, thank you 
+very much for additional examples that you shared with us. We'll go back to this 
+example a little bit later and we.
+Finalize all letters that we have currently here in the folders and also information of 
+these letters in Excel file.
+Address proof letter were also discussed previously and maybe let me stop here for a 
+while. Now what I want to check with you one more time.
+Here is the example of address employee address that we have in examples that you 
+shared with us and also you share it the.
+Information where we can take this address from people platform and what we 
+notice that the format of this address a little bit different that we have in our letters.
+Satish Malla 1:34
+Correct.
+Olga Chaban 1:43
+Let me go here and open it. OK, address proof letter. What I want to confirm with 
+you, please advise if we can use the same format.
+4 letters in docs as we have in our people platform. Or maybe you can provide us 
+with the details. For example, if the format of address as it right now present in the 
+letters, it's.
+Some kind of required or you have some strict rules was that could you please 
+comment it?
+As the question is, can we reuse the same format as we have in people platform here 
+as you see on the example or require it to use the format that we have in example 
+that you shared with us in the letter?
+Satish Malla 2:55
+Second, I'm just looking good.
+Olga Chaban 2:55
+Satish.
+Um, I can try to, uh, make it a little bit bigger.
+Theories.
+Um.
+Satish Malla 3:19
+So let me give you the content how it has to pick up. So once you click on click on 
+edit, I mean you're not having. Let me share the screen.
+Olga Chaban 3:30
+So yeah, yeah, sure.
+Satish Malla 3:31
+Shall I?
+I can know is this can be visible or not.
+Olga Chaban 3:44
+Carpet's not visible.
+Yeah, it's visible.
+Satish Malla 3:57
+So once we click on update address earlier, this is the information how it will reflect 
+here on the view part. So India and coming here right? So I'll give you the order how 
+to pick the pick these details. Will that suffice?
+Olga Chaban 4:05
+Mhm.
+Mhm.
+Satish Malla 4:20
+That is suffice, right? I'll just give the order to pick this in details.
+Olga Chaban 4:20
+OK.
+Um, OK.
+Satish Malla 4:30
+From down top it should go.
+Olga Chaban 4:33
+Uh, sure. Uh, we um uh.
+Satish Malla 4:36
+Starting with building is 1, apartment room number is 2, neighborhood three, St. 4, 
+zip code, district, country and city, city and country.
+Olga Chaban 4:50
+So it's required to use uh uh the orders that uh you uh uh just present, yeah.
+Satish Malla 4:52
+Yeah.
+Correct.
+Olga Chaban 4:58
+OK. And as I understood, it's connect with any address that you have that are present 
+in the letters in India. Doesn't matter it's personal address or office address as a 
+format should be the same.
+Satish Malla 5:10
+Correct.
+Yes.
+Olga Chaban 5:17
+OK. OK. Thank you for this explanation. OK, let me share the screen one more time 
+and let's move on.
+OK, so let's go to the next type of letters, letter of recommendation. We start to 
+discuss it previously, but not finalize what should be present in this letter. Let me 
+quickly remind you.
+You that you provided us with two examples of letter of recommendation. One of 
+them are very simple. Here we have just.
+Information about the employee, some details of his profile and also job title and the 
+toll as part of this.
+Letter is standard and applicable for each letter starting from paragraph. This is to 
+notify and etcetera from this one.
+Uh, but we have.
+Satish Malla 6:35
+One second here, here the purpose when you write like employee roles and 
+responsibility, employee would be giving their roles and responsibility in detail. 
+Maybe it can be 2 pages or one page. Whatever the information they give that has to 
+be reflect under roles and responsibility in the paragraph.
+Olga Chaban 6:37
+Yeah, yeah.
+Mm-hmm. So um, the here present just a role.
+Satish Malla 6:57
+Yeah, as it is mentioned only associate People Operations specialist. It is showing it's 
+showing as only associate People Operations specialist. In general there will be a 
+content like 5-6 lines or 10 lines would be there like detailed brief roles and 
+responsibility given. This will be shown there.
+Olga Chaban 7:15
+I I understood you talk about this part here because in second example we have 
+much more information.
+Satish Malla 7:20
+Yeah, yeah, yeah, yeah, yes, correct, correct. So this information will be provided by 
+employee while generating the letter. So once that is being reviewed, that will be 
+coming here directly on the letter.
+Olga Chaban 7:26
+Uh, OK.
+OK, so is the available field for providing this information available for each 
+employee who request a recommendation?
+Satish Malla 7:43
+Correct.
+Yes.
+Recommendation.
+Olga Chaban 7:49
+Yeah, and it's just a blank line. I mean, the employee could provide this information 
+in any format or you have some.
+Satish Malla 7:59
+Yeah.
+No, no, it can format. It's open.
+Olga Chaban 8:03
+Open. OK. Is it required that this field should be open or maybe we can use the 
+format that you have in example and create?
+Satish Malla 8:11
+Yes.
+Olga Chaban 8:20
+Direct form to provide information about project, client, direction, role report and 
+technology stack and etcetera.
+Satish Malla 8:30
+No, we cannot give that better. You can give two fields, technology stack and 
+responsibility because we cannot give the client name and all. Sometimes it is not 
+advisable to show the client details and all though it is an in house internal usage but 
+still.
+Olga Chaban 8:36
+Mhm.
+Satish Malla 8:47
+So we keep that as open where people wanted they will request the letter and get it 
+done.
+Olga Chaban 8:56
+Mhm.
+Satish Malla 8:57
+Let's keep it as open, Olga. Don't mention it any comments there are a format 
+required. Let it be an open. Whatever the info they get, they fill there. It'll it should 
+affect on the letter.
+Olga Chaban 8:58
+Yeah.
+OK, I think we will have a chance to discuss it more in more details when we start to 
+implement Societer inbox platform.
+Satish Malla 9:18
+Oh.
+Olga Chaban 9:24
+Because index platform will also have some limitation and need to go through all 
+points that we have here one by one to discuss how we could present it in such kind 
+of letters for now, for now for us will be.
+Satish Malla 9:40
+Yes.
+Olga Chaban 9:44
+Enough to receive your feedback that it should be open field and some information 
+could be standardized, but some information should be stay on employee side. I 
+mean if they want to provide this information to the letters they should have 
+opportunity to.
+Do it OK and what I want to confirm with you the beginning of this letter, I mean this 
+part will be the standard for each employee.
+Satish Malla 10:16
+Yeah, it is tampered.
+Olga Chaban 10:19
+And the end of this letter starting from oh, actually I don't see here the phrase about 
+COVID. Is it standard phrase or not?
+Satish Malla 10:29
+No.
+COVID can be remote and it is no more COVID. We can remove that information on 
+the previous one as well.
+Olga Chaban 10:39
+So if I understood you correctly from this paragraph for any questions, the text 
+should be standardized. OK, OK. Thank you for this clarification.
+Satish Malla 10:46
+Yeah, yes.
+Correct.
+Olga Chaban 10:55
+One more question regarding this letters. The letter of recommendation could be 
+requested only from employee side or maybe ex employee also could request this 
+letter in some way with assist platform.
+Satish Malla 11:18
+Sorry Olga, you're looking anything on me.
+Olga Chaban 11:29
+only from employee side, I mean a palm employee. Or in some cases, this letter could 
+be requested for ex-employee, for employee who currently is not working in a palm, 
+but in some way, they need this letter of recommendation.
+Satish Malla 11:50
+No, Ex employee will not have any access on the DOCS portal, so it is only for the 
+active employees.
+Olga Chaban 11:55
+Activa, please. OK. OK. Thank you.
+Satish Malla 11:58
+Any for Ex employees, for any Ex employees, we can update and share the letter on 
+behalf of employee. As an admin, we should be able to generate for even for Ex 
+employees and for the current employees, but active employees only will be visible 
+as they are, they cannot access DOCS portal anymore once they.
+More out of the company.
+Olga Chaban 12:19
+So, you have cases when someone can directly directly ask you for this.
+Satish Malla 12:21
+Yeah, yeah, we will get the access.
+They'll directly raise a request in ServiceNow for requesting this letter.
+Olga Chaban 12:31
+And.
+Satish Malla 12:32
+So where our team will generate this letter and share with them. So we should be 
+having that access as an admin to generate the letters for Ex employee as well.
+Olga Chaban 12:43
+Mhm.
+Okay, it's I think a little bit tricky because we need to check with people team, people 
+platform, I mean team, if for the information for Ex employee available on People 
+platform.
+Satish Malla 12:58
+Ohh.
+Olga Chaban 13:09
+on People platform and we can reuse this information from People platform because 
+we plan to directly reuse information from People platform to automatically create 
+such kind of letter. I mean all this field.
+Most of this field will be reuse from people platform. OK, let it be on our side, yeah.
+Lela Akobidze 13:33
+Olga, I have raised, sorry, let me step in here with just a clarification question. So, 
+such and such, for the current moment, I mean, for the assist platform, can you 
+please inform if you are available and able to
+No, what is the source for the data which is like filled in their letter for Ex employees? 
+What is the source of information to be taken for that letter for the employees that 
+are not?
+Or, currently working, be emp.
+Satish Malla 14:14
+It is from paper only, Lela.
+Lela Akobidze 14:19
+So, in assist, there is a possibility to pull some data from People platform, even 
+employee has left the company, right?
+Satish Malla 14:24
+From my text, yes.
+Yes, yes, start date and date can be get from Payroll portal.
+Olga Chaban 14:36
+I think we need to check it with the People team.
+Lela Akobidze 14:36
+Yeah, but here we have...
+Yeah, just I was wondering if there are any other options rather than people platform.
+Satish Malla 14:46
+Let me, can I share the screen for how that we plugged for exit employees?
+Lela Akobidze 14:49
+Uh-huh.
+Olga Chaban 14:51
+Sure, sure.
+Lela Akobidze 14:53
+Yeah, it too would be helpful.
+Satish Malla 14:54
+Satya, can you share share the screen and show how we do Ex employees? So, here is 
+a screen where we would be.
+Create one letter for Ex employee. So here we have an option to request for Ex 
+employee.
+Lela Akobidze 15:03
+Wang.
+Satish Malla 15:15
+Thanks, Krystsina.
+Lela Akobidze 15:20
+You.
+Mm.
+Satish Malla 15:35
+So obviously it will get the information. So once we enter the details.
+purpose is like what is for customer higher education or any custom they can give 
+any reason either it's for visa or anything based on the request that we get on email 
+we will update the reason either it is for higher education or for the visa.
+Lela Akobidze 15:57
+Okay, and if it comes to the roles and the responsibilities, which is also the required 
+field,
+Satish Malla 16:04
+They will share us an email for that, then that content we will copy here under roles 
+and responsibilities.
+Olga Chaban 16:14
+And as soon as the letter of recommendation is created, you can share this letter of 
+recommendation to the personal email of Ex employee. Is it correct? Could you 
+show?
+Satish Malla 16:28
+Yes, yes.
+Correct.
+Olga Chaban 16:32
+Uh-huh, okay.
+But it's not the latter in attached, is that?
+Satish Malla 16:44
+Now, I'll show you how that goes.
+Type roles and responsibility, you will get that LOR.
+Olga Chaban 17:04
+Mhm.
+Satish Malla 17:05
+So this is how it works with template attached and the email content.
+Olga Chaban 17:12
+Mhm.
+Satish Malla 17:14
+That it.
+Olga Chaban 17:14
+Do I have? Yeah, yeah, I saw.
+Satish Malla 17:20
+HU.
+Olga Chaban 17:23
+Um...
+Satish Malla 17:23
+Copy this one in mail and share in that group, Satya.
+Olga Chaban 17:30
+Mhm.
+Satish Malla 17:30
+Copy this email and share that in our group.
+Hello.
+Copy directly the email, not the image.
+Email, email, direct copy email and upload that email and share group.
+Come out.
+Copy this email and place in a group.
+Olga Chaban 17:56
+Mhm.
+Okay, thank you. Do you have any flow? I mean, when you receive the request from 
+Ex employee to provide him with a letter of recommendation, do you need any 
+approvals from
+Lela Akobidze 18:18
+Blue.
+Olga Chaban 18:19
+At from that, or, or...
+Satish Malla 18:22
+Adam.
+I will approve the roles and responsibilities what they share.
+Olga Chaban 18:23
+Avenue.
+So, RM should review this letter of recommendation and approve.
+Satish Malla 18:32
+Yes, we can, we can, we can see, we, you can see here, R.M. validation is needed or 
+not validate with R.M.A. once we check in, automatically email goes to R.M. and get it 
+verified.
+Olga Chaban 18:45
+Okay, I got it.
+Lela Akobidze 18:57
+Okay, thank you, colleagues.
+Satish Malla 18:59
+Yep.
+Olga Chaban 18:59
+Is this flow available only for Ex employee or for current employee it works in the 
+same way?
+Lela Akobidze 18:59
+Olga, we can.
+Yeah.
+Satish Malla 19:08
+Correct employee will also work in the same way.
+Show for correct current employees at them.
+Olga Chaban 19:12
+Mhm.
+So for current employee, you should also receive approval from RM site that all 
+information mentioned in the letter is correct.
+Lela Akobidze 19:23
+And.
+Satish Malla 19:24
+Doctor Nutsa.
+Recommendation letter.
+Olga Chaban 19:30
+Mhm.
+Satish Malla 19:31
+Sending.
+Lela Akobidze 19:32
+No, for current in place, there is no need for the approval.
+Satish Malla 19:36
+RM.
+So, current templates automatically go for R.M.
+Once we submit the request.
+Olga Chaban 19:46
+Oh, it's automatically sent, yeah?
+Satish Malla 19:48
+Yeah.
+Olga Chaban 19:51
+Well, we have the same approach. I mean, we have a lot of different letters here. A 
+letter of recommendation required to have approved from RM. Maybe other types of 
+letters also have the same functionality.
+Satish Malla 19:57
+Ohh.
+No, only for recommendation letter will have letter of recommendation will have this 
+approval chain and for visa letter we have that flow. For rest all as an admins we can 
+generate or employee can generate for themselves.
+Olga Chaban 20:22
+So for visa are the same approach as for letter of recommendation.
+Satish Malla 20:26
+The processing letter and for letter of recommend letter of recommendation will 
+have these two letters to be approved with respect to RM and post that it will be sent 
+an email automatically to employee. Other letters as an admin we can generate and 
+send automatically else employee can generate his letter by his own and they can.
+Olga Chaban 20:36
+Mmh.
+Satish Malla 20:46
+Get the document downloaded.
+Olga Chaban 20:50
+Directly from Assist, is that right?
+Satish Malla 20:52
+Yes.
+Correct.
+Olga Chaban 20:54
+Ohh, OK. Could you please show us how looks like a proof from RAM site in the 
+assist?
+Satish Malla 21:02
+It is auto approved. You can see action action by it will be mentioned as auto 
+approved.
+Olga Chaban 21:10
+So if you see the status, it means that I am approved the text for letter of 
+recommendation on visa.
+Mhm.
+Yeah, I see.
+Satish Malla 21:42
+Today's date will come with the same thing and what are the address that is there 
+that will come here.
+Olga Chaban 21:48
+Got it.
+OK, thank you. Thank you for this information.
+It's available for us, because for us it's important to understand how it works on a SIS 
+platform site. Okay, Lela, do you have any more questions here?
+Satish Malla 22:07
+Yeah.
+Lela Akobidze 22:11
+No, Olga, we can proceed.
+Olga Chaban 22:13
+Okay, great. Let me share the screen one time.
+Okay, so let's move on. I think we can discuss right now the relocation letter. A 
+relocation letter, let me find it here in the example.
+Satish Malla 22:25
+Yeah.
+Olga Chaban 22:36
+Relocation letter also looks like quite simple, but let me check if we correctly 
+understand what should be present here. If I understood correctly, the relocation 
+letter connected with the relocation inside India. And this is just a relocation from 
+one, for example, city to another where we have office. Is it
+Org, or maybe...
+Satish Malla 23:00
+Yeah.
+Olga Chaban 23:04
+Yeah, yeah.
+Satish Malla 23:04
+Yes, yes, yes.
+Olga Chaban 23:06
+In the example, I see here mentioned the full address of current office and the 
+destination office, just the city. Is it correct presentation? I mean, maybe it's just an 
+example.
+Uh, and in the...
+Satish Malla 23:27
+Yes.
+It's just an example where we could not show exactly, but usually for genuine cases, it 
+will show the work location, to work location is to which location has been 
+transferred. Either from Hyderabad to Pune, then Pune office address will come in 
+detail here.
+Olga Chaban 23:45
+It means that format should be the same as... And both this address, could you 
+please advise us where this information present in people?
+Satish Malla 23:47
+Yes, yes.
+Book location in People portal.
+Olga Chaban 24:01
+Both location and people port. Okay. If we talk about current office address, I saw 
+this field, but previous address, I'm not sure that if you could provide us with an 
+example, we have this information present in on people portal will be perfect. Just to 
+be sure that we
+Uh-huh, Satya, I see.
+Satish Malla 24:24
+But they sent a message.
+Olga Chaban 24:30
+Uh-huh.
+work site location and assigned location, but work site location is it current place or 
+it's a previous place.
+Or maybe it's just the history of a work site location. So, for example, we need to...
+Satish Malla 24:49
+Play best, best.
+Two.
+Olga Chaban 24:55
+I could you please repeat, because I didn't catch what you see.
+The question is, we can see this current address and new address that should be 
+present in this letter.
+Satish Malla 25:12
+So based on, yeah, based on the request that we get, maybe it's transferring from 
+Hyderabad to new location, automatically the two location new address will be 
+picked. As Satya messaged here, the screenshot, it should be picked from work 
+location and current location from which location he is getting transferred that we 
+only update.
+from our end based on our records as people portal records or information that is 
+available in our records, we will keep that information. Either it is in Hyderabad or in 
+another location in India, we will see from which location is getting transferred and 
+we will keep that location address.
+Olga Chaban 25:51
+Mhm.
+But is this information this information transfer through them this letter automatically 
+or you provide it manually?
+Satish Malla 25:54
+This you can.
+This is manually.
+Olga Chaban 26:05
+Manually, OK, OK, and the date of relocation also, maybe it's automatic.
+Satish Malla 26:14
+Will be a request.
+Olga Chaban 26:16
+In the request, thank you.
+Satish Malla 26:17
+It will be, it will be a request only.
+Based on the request, we will keep that standard. So in relocation request, any of that 
+would be mentioned clearly from which date it is active with the new location.
+Olga Chaban 26:23
+Mm.
+Where employee or maybe employees around can request this relocation.
+Satish Malla 26:37
+Employee employee will raise that request.
+Olga Chaban 26:41
+employee erased. Okay, it's support portal, service now IBM or it's on people portal.
+Satish Malla 26:47
+People button.
+Olga Chaban 26:49
+People portal. OK, so before the new work site location will be available in employee 
+profile, you should review this request and confirm. OK, as this letter created 
+automatically when the request is created, or it also should be a request from 
+employee.
+Satish Malla 26:58
+Yes.
+Correct.
+Correct.
+Olga Chaban 27:13
+It received this letter.
+Satish Malla 27:16
+Chaban.
+Olga Chaban 27:18
+Who, who initiator of this letter? I mean, employee, or maybe it's some required 
+letter when employee request single.
+Satish Malla 27:18
+HU.
+Employee initiated process.
+Olga Chaban 27:32
+Employee initiative process on the people platform. But if we talk about a letter of 
+relocation letter, is this relocation letter require a document when employee requests 
+a new address on the people platform?
+Satish Malla 27:36
+Correct.
+Olga Chaban 27:50
+portal or it's a optional flow. For example, if employee need relocation letter, he or 
+she requested change in current location, current office location, and also go to the 
+assist portal and request this letter of relocation.
+The question is, who is the initiator for this letter?
+Employee year, or maybe it's a required document.
+Satish Malla 28:31
+Sorry, I'm talking on mute. Actually, they both can raise either employee and are 
+both can raise the request for this letter.
+Olga Chaban 28:38
+Okay, so the letter is optional document. Okay, okay. Thank you. And here is, we also 
+have the same approach with the address in both cases. Yeah, for office.
+Satish Malla 28:41
+Yeah.
+Yep, yep.
+Olga Chaban 28:57
+And other, let's quickly go through other field. Date, it's the date of letter creation. 
+Name, it's a legal name of employee from People Portal, UID, it's a number of 
+employee in our systems.
+job title, start date, and relocation date, all this data from People Portal. But as you 
+mentioned, location date, you provide manually, Aliya, is that correct?
+Satish Malla 29:38
+Relocation date and current address would be provided from our end.
+Olga Chaban 29:46
+Current address or new address?
+Satish Malla 29:49
+Current address, new address in here, you can see the work location is updated, no 
+one on people portal that they can pick it up.
+Olga Chaban 29:56
+So it's auto.
+Mm.
+On People, okay.
+All of this data will be from people and here is relocation data and current address. I 
+chart team.
+Mhm.
+Okay, actually let me check, I think.
+We have not much time. We have, we want to discuss the legal letter and experience 
+letter, but maybe leave it to the next meeting. Right now I want back to 
+Compensation letter. We have one general question.
+Please, could you please provide us with the details how often you send this 
+compensation letters to employee? I mean, it's monthly, OK. Monthly, but.
+Satish Malla 31:08
+Monthly.
+But as it should be, it should not be a monthly as it is very strict. Based on the 
+request that we get, we can we can prepare this letter and share it with the 
+employee. It can be daily also.
+Olga Chaban 31:27
+Okay, mostly, but based.
+Move.
+Satish Malla 31:34
+Based on the email request that we get, when there is a change in compensation, we 
+will create this letter and issue it to the employee.
+Olga Chaban 31:34
+Yeah.
+Mmh.
+Okay, so if you receive the notifications that employee received some compensation, 
+yeah, in general, you should prepare the letter and share it with employees through 
+the assist platform. Do you have annual compensation campaign?
+Satish Malla 31:50
+Yeah.
+Olga Chaban 32:01
+Do you take part in? OK, and...
+Satish Malla 32:01
+Yes.
+Winter campaign and then campaign, yeah.
+Olga Chaban 32:06
+So it means that this letter sent monthly based on the request, I mean, based on the 
+information that you receive from Compensation Portal and annual campaign as we 
+have in all locations in Nepal. If we talk about annual campaign, when this annual 
+campaign will be start for India?
+Satish Malla 32:24
+Correct.
+Usually, in the month of December, we will kick start the process. November or 
+December, we will kick start the process. Basically, in the month of February and 
+March, we would be doing this annual campaign. April, we generally release the 
+letters. They say March, we release the letters.
+Olga Chaban 32:51
+So it means that in this year, the annual campaign already finalized here.
+Satish Malla 32:54
+Very late.
+Yes, yes, released. Letters got released from assist on March 26th.
+Olga Chaban 33:06
+Okay. So it means that currently you use only option of monthly sending the 
+compensation letter according to the information that you received from 
+Compensation Portal to some employee.
+Satish Malla 33:22
+Yes.
+Olga Chaban 33:27
+Okay, okay, thank you. Thank you for this information. Okay, so we also have several 
+information regarding the letters that you shared with us additional. Do you have 
+time to stay on the meet and contribute quickly, or maybe we need to reschedule 
+this call?
+and discuss it next time.
+What do you think?
+Satish Malla 33:51
+We can schedule for next time, maybe.
+Thursday, I have some free time. Thursday, we can schedule and connect on this 
+again.
+Olga Chaban 34:02
+Okay, give me a second. Let me check the schedule.
+Oh.
+Satish Malla 34:10
+How many letters still left out for you to clarify?
+Olga Chaban 34:17
+Could you please repeat?
+Satish Malla 34:19
+How many more you require a clarification? How much time you might need it? 
+Another 30 minutes.
+Olga Chaban 34:25
+I will. I think one hour will be enough. We need to discuss Compensation Letters that 
+you share it with us additionally with.
+Satish Malla 34:37
+Okay, for Compensation Letters, yeah, we required a good amount of time where we 
+both can get on to the things and explain clearly. Let's do one thing. Let's make 9th 
+April evening, 5 to 5, so 5 to 6.
+Or India, what I mean?
+Olga Chaban 34:58
+Mmh.
+Let me work my check.
+Mm.
+The.
+Okay, could you please advise one more time the time slot that you mentioned?
+Satish Malla 35:20
+9th April evening.
+5 PM to 6 PM.
+Olga Chaban 35:27
+Okay, for me it will be 3pm. Okay, let me check.
+Mhm.
+Uh, I see, uh, I sent, uh, that week of this meeting. Could you please check is it correct 
+time slot for you?
+Satish Malla 36:04
+Yeah, got it.
+Olga Chaban 36:06
+Okay, okay, great. What we plan to do, we plan to review one more time, not one 
+more time, but to review additional examples of Compensation Letters that you 
+shared previously. And also, we want to ask you to provide us with information
+how works relieving letter and experience letter with assist platform currently. I mean, 
+the flow, how this letter is created, who approves these letters and how these letters 
+share it with the Ex employee.
+If we need to share, it's just less with XMP, maybe here is involved some other, for 
+example, resource manager, et cetera.
+Satish Malla 36:58
+Yep.
+Olga Chaban 37:00
+Okay, thank you very much for joining this meeting one more time. If you will have 
+any additional questions or suggestions, please use the chat.
+Satish Malla 37:05
+You.
+Olga Chaban 37:14
+and see you next time. Yeah.
+Satish Malla 37:16
+So just want to just want to inform you, Olga, maybe for next call, for Thursday's call, 
+we just shared this Excel and the letters type of templates we are already making use 
+of like 4 template different letters we already shared with examples of the values as 
+well. If you can see it, the Excel word, how we prepared is like for one letter, one Excel 
+we prepared and so that you will be able to understand.
+Olga Chaban 37:34
+Yeah.
+Satish Malla 37:40
+the letter name and type of bonuses that can be part of that letter. So you can just 
+go through those four letters once and you can also make your questions ready so 
+that we can discuss in brief what can be included and what should not be included 
+for Compensation Letters and we have we can have.
+Olga Chaban 37:45
+Yeah.
+Satish Malla 37:59
+In detailed discussion on this letter types.
+Olga Chaban 38:03
+Yeah, yeah, this approach works for me, I think, for us and Diana Lela.
+Satish Malla 38:09
+Yep, yep.
+Olga Chaban 38:12
+will be the same. Okay, thank you very much. See you next time. Thank you one more 
+time. Have a good day.
+Satish Malla 38:16
+Thank you.
+Lela Akobidze 38:19
+Thank you, colleagues.
+Diana Nikoghosyan 38:21
+Thank you.
+Satish Malla 38:21
+Bye-bye.
+Satya Danam 38:22
+All right, thank you. Bye.
+Olga Chaban 38:22
+Bye, bye.
+Olga Chaban stopped transcription

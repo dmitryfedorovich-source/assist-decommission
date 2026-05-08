@@ -1,0 +1,67 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: inputs
+  Static content — no data slots
+  ═══════════════════════════════════════════════════════════
+-->
+
+<div class="section-tag">03 — Inputs</div>
+<h2>What Feeds the System</h2>
+<p class="section-desc">Six input types are supported. Each is processed differently and results in structured knowledge stored in the memory system.</p>
+
+<div class="card-grid card-grid-2">
+  <div class="card card-accent">
+    <div class="card-icon">📸</div>
+    <h3>Screenshots — Assist Platform</h3>
+    <p>JPEG/PNG screenshots of Assist forms, flows, and UI. A pre-read hook intercepts every image access: if a memory file already exists for that screenshot, the hook redirects to the cached file instead of re-reading the image — saving processing time.</p>
+    <ul>
+      <li>Form field names and types</li>
+      <li>Dropdown option values</li>
+      <li>Workflow step sequences</li>
+      <li>UX behaviors (popups, warnings)</li>
+    </ul>
+  </div>
+  <div class="card card-blue">
+    <div class="card-icon">🌐</div>
+    <h3>Live Confluence Pages — MCP</h3>
+    <p>Direct integration with kb.epam.com via the Confluence MCP server. Pages are read in real time — no stale exports. The EPMEOADOCS space contains 7 tracked pages covering all letter types, process flows, open questions, and communication history.</p>
+    <ul>
+      <li>Confirmed process decisions per letter type</li>
+      <li>Open questions log (India Team confirmations)</li>
+      <li>Communication history (7 meetings)</li>
+      <li>Dev trackers for each phase</li>
+    </ul>
+  </div>
+  <div class="card card-green">
+    <div class="card-icon">🎙️</div>
+    <h3>Meeting Transcripts</h3>
+    <p>Auto-transcribed meeting recordings dropped into <code>input/transcriptions/</code>. Each transcript is processed: decisions and facts are extracted, the Feedback Log is updated, relevant phase state files are updated, and the file is renamed with a <code>[processed]-</code> prefix.</p>
+    <ul>
+      <li>Stakeholder confirmations and rejections</li>
+      <li>Design decisions with owner and date</li>
+      <li>Open questions raised</li>
+      <li>Action items and next steps</li>
+    </ul>
+  </div>
+  <div class="card card-purple">
+    <div class="card-icon">✏️</div>
+    <h3>Stakeholder Corrections</h3>
+    <p>Handwritten correction images from document review sessions. Claude reads the image, identifies what was marked as wrong, applies the correction to the relevant output documents, and logs a Feedback entry (F-XX) in the Decisions Log.</p>
+    <ul>
+      <li>Date corrections (e.g. July 1 → June 30)</li>
+      <li>Process step corrections</li>
+      <li>Terminology fixes</li>
+      <li>Approval flow updates</li>
+    </ul>
+  </div>
+  <div class="card card-teal">
+    <div class="card-icon">📝</div>
+    <h3>Meeting Notes</h3>
+    <p>Pre-meeting briefs and background notes from the BA team stored in <code>input/meeting_notes/</code>. Provide context for upcoming stakeholder sessions and help frame questions for India SME meetings.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #a0aec0;">
+    <div class="card-icon">📁</div>
+    <h3>Confluence HTML Exports (Legacy)</h3>
+    <p>Static HTML exports from early project phases, now archived. The live MCP integration replaced these as the primary source for Confluence content — exports are retained for historical reference only.</p>
+  </div>
+</div>

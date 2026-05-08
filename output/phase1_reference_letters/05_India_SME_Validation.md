@@ -23,7 +23,7 @@ A **sign-off table** at the end collects final approvals.
 
 We are building the **Reference Letters** workflow in EPAM Docs to replace the current Assist process. Before development begins, we need your confirmation that:
 
-1. The 6 letter types and their behavior are correctly understood
+1. The 5 letter types and their behavior are correctly understood
 2. The form fields match what employees need to provide
 3. The routing (auto vs. India Team specialist review) is correct for each letter
 4. Open design questions are resolved
@@ -34,22 +34,21 @@ We are building the **Reference Letters** workflow in EPAM Docs to replace the c
 
 ## Slide 2 — Letter Scope
 
-We are migrating the following 6 reference letter types:
+We are migrating the following 5 reference letter types in Phase 1:
 
 | # | Letter | Requester | Processing |
 |---|---|---|---|
 | 1 | Form 60 | Employee | Auto-verified (instant) |
 | 2 | Address Proof Letter | Employee | Auto-verified (instant) |
 | 3 | Service Letter | Employee | Auto-verified (instant) |
-| 4 | Visa Processing Letter | Employee | Review required |
-| 5 | Letter of Recommendation (LOR) | Employee (active employees only) | Review required |
-| 6 | Relocation Letter | RM / India Team Specialist | Auto-processed on relocation date |
+| 4 | Visa Processing Letter | Employee | Reviewed by India Team specialist |
+| 5 | Letter of Recommendation (LOR) | Employee (active employees only) | Reviewed by India Team specialist |
 
-> **Out of scope — Phase 1:** LOR for ex-employees (handled in Separation Letters phase)
+> **Out of scope — Phase 1:** LOR for ex-employees (handled in Separation Letters phase); Relocation Letter (separate investigation needed — see note in Slide 5)
 
 ---
 
-**Question 2.1 — Do these 6 letters cover the full scope of Reference Letters you need in Phase 1?**
+**Question 2.1 — Do these 5 letters cover the full scope of Reference Letters you need in Phase 1?**
 
 > Your answer: ___________
 
@@ -94,12 +93,12 @@ The following letters are generated automatically — no India Team specialist a
 | Name | System (HR) | Read-only |
 | Designation | System (HR) | Read-only |
 | UID | System (HR) | Read-only |
-| Address | System (People platform) | Read-only; pulled from People |
+| Address | System (People platform) | Pre-filled from People; employee can edit if needed |
 | Start Date | System (HR) | Read-only |
 | Purpose | Employee | Dropdown |
+| Custom Purpose text | Employee | Text input, max 100 characters — always visible; fill in when "Custom" is selected |
 
-**Purpose dropdown options:** Personal Loan / Home Loan / Bank Connection / New Broadband Connection / Custom  
-**Custom purpose:** Free text, max 100 characters — shown only when "Custom" is selected
+**Purpose dropdown options:** Personal Loan / Home Loan / Bank Connection / New Broadband Connection / Custom
 
 **Special behavior:** If the employee's address is not found in the People platform, the system shows an error: *"Please update your address in the People system before submitting."*
 
@@ -109,6 +108,9 @@ The following letters are generated automatically — no India Team specialist a
 > Your answer: ___________
 
 **Question 3.3 — Is the address always reliably available in the People platform for India employees? Are there common cases where it is missing?**
+> Your answer: ___________
+
+**⚠️ Question 3.4 (OQ-14) — Address Proof Letter: The pre-filled address can be edited by the employee directly in the form. Is this acceptable, or should the field be locked so employees must update their address in the People system first?**
 > Your answer: ___________
 
 ---
@@ -126,7 +128,7 @@ The following letters are generated automatically — no India Team specialist a
 
 ---
 
-**Question 3.4 — Service Letter: What values should be available in the Purpose dropdown?**
+**Question 3.5 — Service Letter: What values should be available in the Purpose dropdown?**
 > Your answer: ___________
 
 ---
@@ -147,16 +149,12 @@ The following letters are routed to India Team specialists for review before the
 | Purpose | Employee | Dropdown (e.g. Personal Travel, Business Travel) |
 | Comments | Employee | Max 300 characters, single line — no paragraphs |
 
-**Behavior:** Employee submits → India Team specialist reviews → approves (letter generated) or rejects (employee notified, must open new request).
+**Behavior:** Employee submits → India Team specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee receives notification and downloads letter. Document is not visible to employee before the specialist sends it. If incorrect: specialist rejects → employee notified with reason → employee opens a new request.
 
 ---
 
-**⚠️ Open Question 4.1 — Visa Processing Letter: Is India Team specialist approval still required, or should this be auto-verified?**
-
-> Background: In Assist, this required approval. We have received feedback that the approval step may be removed for the DOCS migration.  
-> Your answer: ___________
-
-**Question 4.2 — Visa Processing Letter: Are the Purpose dropdown options correct? Please list the required values.**
+**Question 4.1 — Visa Processing Letter: Are the Purpose dropdown options correct? Please list the required values.**
+> *(We expect: Business Travel, Personal Travel — please confirm or correct.)*
 > Your answer: ___________
 
 ---
@@ -171,62 +169,40 @@ The following letters are routed to India Team specialists for review before the
 | Work Location | System (HR) | Read-only |
 | Start Date | System (HR) | Read-only |
 | Purpose | Employee | Dropdown |
-| Notes & Responsibilities | Employee | Rich text editor (formatting supported) |
+| Notes & Responsibilities | Employee | Plain text, multi-line (no formatting) |
 
-**Behavior:** Active employee submits → India Team specialist reviews → approves or rejects.  
+**Behavior:** Active employee submits → India Team specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee downloads. Document is not visible before the specialist sends it. If incorrect: specialist rejects → employee opens a new request.  
 **LOR for ex-employees:** Out of scope for Phase 1 — handled in Separation Letters.
 
 ---
 
-**⚠️ Open Question 4.3 — LOR: Is India Team specialist approval still required, or should this be auto-verified?**
-> Your answer: ___________
-
-**⚠️ Open Question 4.4 — LOR: Can RM initiate an LOR request on behalf of an employee?**
-> Your answer: ___________
-
-**Question 4.5 — LOR: What values should be in the Purpose dropdown?**
+**Question 4.2 — LOR: What values should be in the Purpose dropdown?**
 > Your answer: ___________
 
 ---
 
-## Slide 5 — Relocation Letter (Date-Triggered)
+## Slide 5 — Relocation Letter — Not in Phase 1
 
-The Relocation Letter is **not** initiated by the employee. It is created by the **RM or India Team specialist**.
+> **The Relocation Letter has been moved out of Phase 1 scope.** We need more information before we can design this process for DOCS. We will address it in a separate later phase.
+>
+> Before scoping, we need to understand: what is the purpose of this letter, what triggers it, which employees receive it, and whether it can be auto-triggered from the People system. We will reach out separately with questions.
 
-| Field | Filled By | Notes |
-|---|---|---|
-| Employee (lookup) | RM/India Team | Select the employee being relocated |
-| Name | System (HR) | Read-only |
-| Designation | System (HR) | Read-only |
-| Current Work Location | System (HR) | Read-only |
-| New Work Location | RM/India Team | Dropdown — EPAM India office cities |
-| Start/Effective Date | RM/India Team | Date picker |
-| Purpose | System | Pre-filled "Relocation" |
-
-**Behavior:**
-- RM/India Team submits the request with the effective relocation date
-- If effective date = today or in the past → letter generated **immediately**
-- If effective date is in the future → system **holds** the request and auto-generates the letter on that date
-
----
-
-**Question 5.1 — Relocation Letter: Is it correct that RM/India Team specialist initiates this, not the employee?**
-> Your answer: ___________
-
-**Question 5.2 — Relocation Letter: Is date-triggered auto-generation correct (no India Team specialist review needed)?**
-> Your answer: ___________
-
-**Question 5.3 — Relocation Letter: Can the effective date be in the past (backdated requests)? How common is this?**
-> Your answer: ___________
-
-**Question 5.4 — Relocation Letter: Please provide the list of EPAM India office city values for the "New Work Location" dropdown.**
-> Your answer: ___________
+No validation questions for Relocation Letter at this stage.
 
 ---
 
 ## Slide 6 — Common Behaviors (All Letters)
 
 Please confirm these behaviors apply consistently.
+
+### Form Submission — No Confirmation Popup
+
+In Assist, a popup with a checkbox appeared before employees could press "Continue" to submit a request. **DOCS does not support this popup.** Instead, a brief disclaimer text will appear at the top of the form — employees read it and proceed directly to filling in the form without clicking a checkbox.
+
+**Question 6.0 — Is replacing the Assist confirmation popup with a static text notice acceptable?**
+> Your answer: ___________
+
+---
 
 ### Request Rejection
 - India Team specialist can reject a request with a reason
@@ -274,13 +250,12 @@ The system pre-fills employee data automatically — employees cannot edit these
 
 | Field | Source System | Letters |
 |---|---|---|
-| Name | HR system | All |
-| Designation | HR system | All |
-| UID | HR system | All except Relocation |
-| Work Location | HR system | Service, Visa, LOR |
+| Name | HR system | All 5 letters |
+| Designation | HR system | All 5 letters |
+| UID | HR system | All 5 letters |
+| Work Location | HR system | Service Letter, Visa Processing, LOR |
 | Birth Location | HR system | Form 60 |
-| Current Work Location | HR system | Relocation |
-| Start Date | HR system | All except Relocation |
+| Start Date | HR system | All 5 letters |
 | Address | People platform | Address Proof only |
 
 **Question 7.1 — Are there any fields currently missing that should be pre-populated from HRMS/People systems?**
@@ -297,10 +272,11 @@ Please confirm the following items are correctly excluded from Phase 1.
 
 | Item | Our Understanding | Your Confirmation |
 |---|---|---|
+| Relocation Letter | Out of scope — Phase 1. Requires further investigation before scoping. | _____ |
 | LOR for ex-employees | Out of scope — Phase 3 | _____ |
 | Cancel request by requester | Nice to have — NOT in Phase 1 | _____ |
-| Historical request data migration from Assist | Out of scope — to be validated separately | _____ |
-| RM initiating requests on behalf of employees (other than Relocation) | Under clarification — possibly ServiceNow | _____ |
+| Historical request data migration from Assist | Out of scope | _____ |
+| RM initiating requests on behalf of employees | RM does not have direct access to create DOCS requests for other employees. RM routes via ServiceNow → India Team specialist. | _____ |
 
 ---
 
@@ -321,11 +297,13 @@ By signing below, you confirm that the proposed solution for Reference Letters i
 
 | # | Question | Owner | Status |
 |---|---|---|---|
-| OQ-01 | Visa Processing Letter: India Team specialist approval — keep or remove? | Darya Taranda / India Team | Open |
-| OQ-02 | LOR: India Team specialist approval — keep or remove? | Darya Taranda / India Team | Open |
-| OQ-03 | LOR: Can RM initiate on behalf of employee? | India Team | Open |
-| OQ-04 | Relocation Letter: City list for New Work Location dropdown | India HR | Open |
-| OQ-05 | Service Letter: Purpose dropdown values | India HR | Open |
-| OQ-06 | Visa Processing Letter: Purpose dropdown values | India HR | Open |
-| OQ-07 | LOR: Purpose dropdown values | India HR | Open |
-| OQ-08 | Bank/SIM/LPG sub-types: handled via Purpose dropdown on base template? | India Team | Open |
+| OQ-01 | Visa Processing Letter: India Team specialist approval — keep or remove? | Darya Taranda / India Team | Resolved — D-12: RM approval removed; DV/EDV (India Team specialist) verifies and manually sends document |
+| OQ-02 | LOR: India Team specialist approval — keep or remove? | Darya Taranda / India Team | Resolved — D-13: RM approval removed; DV/EDV (India Team specialist) verifies and manually sends document |
+| OQ-03 | LOR: Can RM initiate on behalf of employee? | India Team | Resolved — No; employee self-service for active employees; ex-employee LOR via India Team specialist in Separation module |
+| OQ-04 | Relocation Letter: City list for New Work Location dropdown | India HR | **Deferred** — Relocation Letter moved to Phase 4+ (D-16) |
+| OQ-05 | Service Letter: Purpose dropdown values | India HR | Open — Question 3.5 |
+| OQ-06 | Visa Processing Letter: Purpose dropdown values | India HR | Open — Question 4.1 |
+| OQ-07 | LOR: Purpose dropdown values | India HR | Open — Question 4.2 |
+| OQ-08 | Bank/SIM/LPG sub-types: handled via Purpose dropdown on base template? | India Team | Open — Question 2.2 |
+| OQ-13 | Relocation Letter: purpose, trigger, eligibility, auto-trigger feasibility — questions to follow separately | India Team / Hanna Vasilenka | Open — separate discussion |
+| OQ-14 | Address Proof Letter: employee manual address edit — lock or allow? | India Team | Open — Question 3.4 |

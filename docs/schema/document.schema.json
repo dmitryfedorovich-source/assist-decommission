@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "document.schema.json",
+  "title": "OutputDocument",
+  "description": "A deliverable output document produced by the BA team.",
+  "type": "object",
+  "required": ["id", "number", "name", "phase", "audience_code", "purpose", "format", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique document identifier.",
+      "pattern": "^(ph[1-4]_)?[0-9]{2}(_[a-z_]+)?$",
+      "examples": ["01", "ph1_04", "shared_fdl"]
+    },
+    "number": {
+      "type": "string",
+      "description": "Document number within its phase (01–06 for phase 1, etc.).",
+      "pattern": "^[0-9]{2}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full document name.",
+      "examples": ["Process Flow — Reference Letters", "KB Onepager (Phase 1)"]
+    },
+    "short_code": {
+      "type": "string",
+      "description": "Short RTM reference code (PF, BRD, PRES, KB1, SME, CG, KB2, KB3, FDL, RTM).",
+      "enum": ["PF", "BRD", "PRES", "KB1", "SME", "CG", "KB2", "KB3", "FDL", "RTM"]
+    },
+    "phase": {
+      "type": ["integer", "string"],
+      "description": "Phase this document belongs to.",
+      "enum": [1, 2, 3, "shared"]
+    },
+    "audience_code": {
+      "type": "string",
+      "description": "Primary audience code for badge rendering.",
+      "enum": ["internal", "mgmt", "india_sme", "india_employee", "ba_team", "cross"]
+    },
+    "audience_label": {
+      "type": "string",
+      "description": "Human-readable audience label for display.",
+      "examples": ["Internal / Platform team", "EPAM Management", "India SMEs", "India Employees"]
+    },
+    "purpose": {
+      "type": "string",
+      "description": "One-line statement of the document's purpose."
+    },
+    "format": {
+      "type": "string",
+      "description": "Output file format.",
+      "enum": ["Markdown", "HTML", "XLSX", "PDF"]
+    },
+    "file_path": {
+      "type": "string",
+      "description": "Relative path to the file from project root.",
+      "examples": ["output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md"]
+    },
+    "status": {
+      "type": "string",
+      "description": "Document status.",
+      "enum": ["draft", "review", "published", "superseded"]
+    },
+    "confidence_min": {
+      "type": "string",
+      "description": "Minimum confidence level required for facts in this document.",
+      "enum": ["sme_confirmed", "high", "medium", "low"],
+      "default": "high"
+    },
+    "decisions_reflect": {
+      "type": "array",
+      "description": "Decision IDs that MUST be reflected in this document (RTM ✓ mapping).",
+      "items": {
+        "type": "string",
+        "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+      },
+      "default": []
+    },
+    "forbidden_terms": {
+      "type": "array",
+      "description": "Terms that must not appear in this document (audience-fit rule).",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "validator_checks": {
+      "type": "array",
+      "description": "Specific validation check IDs applicable to this document.",
+      "items": { "type": "string" },
+      "default": []
+    }
+  }
+}

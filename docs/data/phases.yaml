@@ -1,0 +1,170 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#  CANONICAL PHASES DATA
+#  Schema:    docs/schema/phase.schema.json
+#  NOTE:      docs/src/data/phases.yaml is the VIEW-LAYER version for HTML rendering.
+#             This file is the authoritative source of truth for phase facts.
+#             /build-overview reads docs/src/data/phases.yaml (view layer).
+# ═══════════════════════════════════════════════════════════════════════════════
+
+_meta:
+  schema_version: "1.0"
+  schema_ref: "../schema/phase.schema.json"
+  last_updated: "2026-05-08"
+  maintainer: "BA team"
+
+phases:
+
+  - id: phase1
+    number: 1
+    title: "Reference Letters"
+    subtitle: null
+    status: active
+    go_live_date: "2026-06-30"
+    source_platform: "assist.epam.com"
+    target_platform: "docs.epam.com"
+    letter_types:
+      - name: "Form 60"
+        routing: auto_verified
+        in_scope: true
+        notes: "Tax-form type letter; always auto-verified."
+      - name: "Address Proof Letter"
+        routing: auto_verified
+        in_scope: true
+        notes: >
+          Address pre-populated from People Portal. OQ-14 open: lock vs allow edit.
+          Address-not-found warning pattern present.
+      - name: "Service Letter"
+        routing: auto_verified
+        in_scope: true
+        notes: "Purpose dropdown options TBD (OQ-05)."
+      - name: "Visa Processing Letter"
+        routing: manual_dv_edv
+        in_scope: true
+        notes: >
+          DV/EDV specialist verifies and manually sends. Comments field required
+          (max 300 chars, one line). OQ-11 open: DOCS dev required for text field.
+      - name: "Letter of Recommendation (LOR)"
+        routing: manual_dv_edv
+        in_scope: true
+        notes: >
+          DV/EDV specialist verifies and manually sends. Notes/Responsibilities
+          multi-line field (max ~1000 chars). OQ-11 open: DOCS dev required.
+          Ex-employee LOR: out of scope (Phase 3).
+      - name: "Relocation Letter"
+        routing: tbd
+        in_scope: false
+        notes: "Removed from Phase 1 by D-16. Moved to Phase 4+ investigation."
+    key_decisions:
+      [D-01, D-02, D-06, D-07, D-08, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-17]
+    blocking_oqs: [OQ-05, OQ-06, OQ-07, OQ-08, OQ-11, OQ-14]
+    sign_off_stages:
+      - number: 1
+        name: "Internal alignment — process flow, BRD, approach"
+        participants: "Daria, Hanna"
+        date: null
+        status: pending
+      - number: 2
+        name: "India SME validation — process design, field specs, open questions"
+        participants: "Satish Malla, Satya Danam, Sasanka Yedlapati"
+        date: null
+        status: pending
+      - number: 3
+        name: "Post-feedback iteration — BRD and flow updated"
+        participants: "Internal"
+        date: null
+        status: pending
+      - number: 4
+        name: "Final India stakeholder sign-off + UAT"
+        participants: "India stakeholders"
+        date: null
+        status: pending
+      - number: 5
+        name: "Epics/tickets handed to dev and business process teams"
+        participants: "Dev team, BA"
+        date: null
+        status: pending
+    deliverables:
+      - "output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md"
+      - "output/phase1_reference_letters/02_BRD_Reference_Letters.md"
+      - "output/phase1_reference_letters/03_Presentation_Internal_Team.md"
+      - "output/phase1_reference_letters/04_KB_Onepager.html"
+      - "output/phase1_reference_letters/05_India_SME_Validation.md"
+      - "output/phase1_reference_letters/06_India_Colleagues_Guide.md"
+
+  - id: phase2
+    number: 2
+    title: "Compensation Letters"
+    subtitle: null
+    status: next
+    go_live_date: null
+    source_platform: "assist.epam.com"
+    target_platform: "docs.epam.com"
+    letter_types:
+      - name: "Salary Revision Letter"
+        routing: batch_upload
+        in_scope: true
+        notes: "Variant 1: Salary Hike only."
+      - name: "Promotion Letter"
+        routing: batch_upload
+        in_scope: true
+        notes: "Variant 2: Promotion + Salary Hike. Variant 3: Promotion + Salary Hike + OTB."
+      - name: "Increment Letter"
+        routing: batch_upload
+        in_scope: true
+        notes: "Variant 4: Promotion + OTB + Retention/Deferred/One-Time Bonus + LTI."
+      - name: "Variable Pay Letter"
+        routing: batch_upload
+        in_scope: true
+        notes: "All variants use single base template with conditional text blocks."
+    key_decisions: [D-P2-01, D-P2-02, D-P2-03, D-P2-04, D-P2-05, D-P2-06, D-P2-07]
+    blocking_oqs: [OQ-P2-02, OQ-12]
+    sign_off_stages: []
+    deliverables:
+      - "output/phase2_compensation/01_KB_Onepager.html"
+
+  - id: phase3
+    number: 3
+    title: "Separation Letters"
+    subtitle: null
+    status: plan
+    go_live_date: null
+    source_platform: "assist.epam.com"
+    target_platform: "docs.epam.com"
+    letter_types:
+      - name: "Experience Letter"
+        routing: hrms_triggered
+        in_scope: true
+        notes: "Auto-triggered on last working day. Delivered to personal email post-exit."
+      - name: "Relieving Letter"
+        routing: hrms_triggered
+        in_scope: true
+        notes: "Same auto-trigger as Experience Letter."
+      - name: "LOR (ex-employees)"
+        routing: specialist_initiated
+        in_scope: true
+        notes: "India Team specialist initiates on request from ex-employee."
+    key_decisions: [D-P3-01, D-P3-02]
+    blocking_oqs: [OQ-P3-02, OQ-P3-04]
+    sign_off_stages: []
+    deliverables:
+      - "output/phase3_separation/01_KB_Onepager.html"
+
+  - id: phase4
+    number: 4
+    title: "Relocation Letter"
+    subtitle: "Investigation — scope not yet defined"
+    status: inv
+    go_live_date: null
+    source_platform: "assist.epam.com"
+    target_platform: "docs.epam.com"
+    letter_types:
+      - name: "Relocation Letter"
+        routing: tbd
+        in_scope: false
+        notes: >
+          Removed from Phase 1 (D-16). All 5 OQ-13 questions must be answered
+          before scope can be written.
+    key_decisions: [D-16]
+    blocking_oqs: [OQ-13]
+    sign_off_stages: []
+    deliverables: []

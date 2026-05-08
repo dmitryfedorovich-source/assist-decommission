@@ -1,0 +1,45 @@
+/*
+ * ═══════════════════════════════════════════════════════════
+ *  RESPONSIVE  —  All media queries in one place
+ *  Depends on: tokens.css, base.css, components.css
+ * ═══════════════════════════════════════════════════════════
+ */
+
+@media (max-width: 800px) {
+
+  /* Grid collapses */
+  .card-grid-2,
+  .card-grid-3,
+  .card-grid-4,
+  .cap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-checks {
+    grid-template-columns: 1fr;
+  }
+
+  /* Page padding */
+  .page {
+    padding: 0 var(--page-pad-h-sm) var(--space-48);
+  }
+
+  .divider {
+    margin: 0 calc(-1 * var(--page-pad-h-sm));
+  }
+
+  /* Hero */
+  .hero {
+    padding: var(--space-36) var(--page-pad-h-sm) var(--space-32);
+  }
+
+  /* Nav */
+  .nav-inner {
+    padding: var(--space-8) var(--page-pad-h-sm);
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--space-20);
+  }
+}

@@ -1,0 +1,921 @@
+[DOCS] Assist Letter questions-20260414_110916-
+Meeting Recording
+14 April 2026, 08:09am
+53m 23s
+Olga Chaban started transcription
+LalithaPavani Madiraju 0:09
+Sharing my screen.
+So basically this is the ASSIST portal that we use at our India location. So what we 
+generally do is we use this portal for releasing the composition letters to the 
+associates. Firstly, let me show how I can view the letter for you. So I have to, there is 
+this admin page.
+where I have to go to my, you know, competition letters and where I can see for all 
+employee letters also. So if I, for example, if I take my own name.
+Ohh.
+Yeah.
+Olga Chaban 1:01
+Meanwhile, let me provide you with additional information. Actually, previously, we 
+already discussed with Satish and Satya Compensation Letters, and they provide us 
+with some examples of this compensation letter. You can find it at the current chart.
+LalithaPavani Madiraju 1:09
+Mm.
+Olga Chaban 1:20
+It was during our previous meetings. And also Satish and Satya highlight that the 
+compensation letters can be sent on annual base and on monthly base. So it will be 
+perfect if you can highlight what the differences between these two type of 
+compensation letters.
+LalithaPavani Madiraju 1:34
+Okay.
+Yes.
+Okay, so, okay.
+For us, generally, okay, leaving this aside, keeping the ASSIST portal aside, let me first 
+give you that clarity, how the compensation requests come to us and how we 
+process the letters. Okay, so generally for a compensation change for any associate,
+How it happens is after particular one year or any particular period of time, we go 
+through this annual promo and one stretches annual promo wherein every associate 
+would be receiving letters. Apart from the annual promo, there are...
+three to four categories wherein we release the letters to the associates. One is 
+retention letters, proactive or reactive retention letters for employees. So proactive or 
+reactive retention is something when an employee is in a verge to resign or
+If, you know, by one-on-one talks, if the manager sees that he is a potential resignee 
+case kind of a thing, but they would want to retain that associate, then there would 
+be a retention, either proactive or a reactive retention would happen.
+and there will be a compensation revision. Okay. Proactive retention is something, 
+say if I am an employee and I am planning to resign, but you know, I'm showing 
+some kind of a disinterest or I'm not happy with my compensation or
+not happy with the role that I am working currently, that can be seen by my 
+manager. And my manager would, you know, suggest some salary hike for me or 
+give me some sort of a bonus, either a retention bonus or a deferred bonus or 
+anything.
+with my salary and you know, we propose that kind of a salary change to an 
+employee to retain him back. Okay, that is 1 retention kind of a proposal, salary 
+proposal we receive.
+Second thing is proactive retention. I'm so sorry, I explained to you about proactive. 
+Now it is reactive retention. Say if I have already resigned and I have an offer from 
+some other company with current my salary division is at 24 lakhs and
+I have an offer for 28 lakhs or something like that. And if I am a very good performer 
+and I am, you know, outstanding at all levels, my manager would want to retain me 
+and there would be a proposal of 29 lakhs or 30 lakhs of salary revision anytime in 
+mid of the year.
+Okay, I resign now, even today or tomorrow, there could be a salary proposal request 
+that is coming across. Okay, so this is 1 reactive and proactive kind of a letters that 
+we process any time during the year.
+Second thing is assessments, level change. Through assessment portal, any employee 
+can give an assessment for going up to the next level. So at that moment, currently I 
+am at A4 level, I would want to move ahead.
+I can go ahead and start taking my assessment today. And within three months of 
+time, I'll finish off my assessment. Okay, after three months, I complete my 
+assessment. There should be a, because I got promoted to the next level, I am 
+eligible to get promoted to the next level. My salary.
+can be revised as per the assessment norms to the next level. So as I'm moving to the 
+next level, as per the salary ranges, my CTC would get changed along with the 
+designation change. So at that moment also, we will be processing one more letter. 
+And this assessment also can be done.
+Anytime in the year.
+Also, one person, if he or she has approached for an assessment, until next six 
+months of time, he cannot approach for another assessment. So within one year, he 
+cannot have two promotions. So post that anytime if he is approaching for an 
+assessment, again, there would be and he is clearing the assessment.
+there would be a letter issued with the salary change. If delivery and everybody in the 
+hierarchy is approving for the request, then also we will have to release the letters. 
+And third thing is pre-prod cases wherein people at
+junior level who join at A1 level, try to move to A2 level. Okay, within one year it can 
+happen or anytime during their tenure, after one year also, they can give the 
+assessment, pre-assessment cases. So these things, they move to A1 to A2.
+the next level. So for them also, whenever they approach for assessment and clear it, 
+they will be directly promoted to A2 level and we will have to issue a letter to them. 
+So these are the certain scenarios where we issue letters apart from annual promo.
+Am I clear till now?
+Olga Chaban 7:24
+Yeah, but if I talk, you talk about some promotions that employee can have during 
+the year, but how would how would connect with annual campaign?
+LalithaPavani Madiraju 7:36
+Yes.
+Olga Chaban 7:43
+I mean, I think it's maybe monthly, some monthly letters or not. Could you please 
+clarify here? I want to understand how it works.
+LalithaPavani Madiraju 7:55
+So that is completely different from promo. So what I'm trying to say is through 
+ASSIST portal, we not only release annual promo letters, but also we release the 
+letters, you know, during the year, during the year, whatever the request we get for.
+Olga Chaban 8:10
+Mhm.
+LalithaPavani Madiraju 8:15
+any compensation changes, those letters also be generated through ASSIST portal 
+only. So these are the different types of letters when we have to release throughout 
+the year, not as a single time thing. Okay, it's not a one time thing that only at the 
+promo level we release the letters and rest of the year we do not release any kind of 
+letters.
+Olga Chaban 8:30
+Mhm.
+LalithaPavani Madiraju 8:38
+But during the other time of the year also, we have a minimum of 30-40 requests 
+every month to process the letters.
+Olga Chaban 8:50
+Okay, got it. One more question. Maybe it will be clear during the demo session, but 
+anyway, let me ask this question right now. You have one standard blank letter, 
+yeah? And this letter works for any cases.
+LalithaPavani Madiraju 8:58
+Mm.
+Olga Chaban 9:09
+Yes, that you described just right now.
+LalithaPavani Madiraju 9:13
+Sorry, I did not get that. What letter it is?
+Olga Chaban 9:16
+Okay, if we talk about sending some letters to employee, you describe how the 
+reason why this letter can be sent to employee for annual campaign or based on.
+LalithaPavani Madiraju 9:21
+Okay.
+Okay.
+Olga Chaban 9:36
+monthly schedule. My question is about form of this letter. Based on examples that 
+Satish, she and Satya shared through the chat, we see that more or less this letter 
+have the same blank, the same phrase,
+LalithaPavani Madiraju 9:39
+Thanks.
+Yes, yes.
+Olga Chaban 10:04
+Correct.
+LalithaPavani Madiraju 10:06
+Yes, it's correct. So as I've mentioned, whenever there is a compensation change, so 
+in promo,
+Basically, a level above associates have, we have annual bonuses like variable pay 
+component that starts from A5 and B2 level associates. Okay, the below associates 
+will not have the variable pay component.
+So for them, the letter would be different. So for those associates who are above A5 
+and B2 level, A5, B2, B3, B4, B5, these people will have a variable pay component in 
+their structure. So for them, we have to include a different
+kind of a paragraph where it shows these people have a variable pay amount for 
+them. The lesser category people like A4, A3 and all, they only have the 
+compensation without the variable pay.
+So when it comes to promo time, whoever has this variable pay component, those 
+will be the people who will be eligible to get an annual bonus. So these people.
+different clause again called annual bonus. And out of these level people only, if they 
+have an LTI component again, so we have to include that amount in LTI as well and 
+generate a letter for them.
+So basically let me show you an Excel sheet where you can understand. So this is my 
+thing, 618300 is my UID. I have to enter my current basic HRA, these all amounts for 
+a structure.
+So for say I have a current structure of 14 lakhs, current CTC, and for revised CTC, I 
+have it around 18 lakhs. Okay.
+And if I have some retention bonus here, I have to include one LATAM as retention 
+bonus. Okay, so every letter has a password, which will be, you know, different for 
+each different person. If they have to open the letter, they have to include their 
+password.
+So here are the different types of letters, letter model. Like is it a promotion? 
+Promotion with any kind of a bonus or anything as such. These bifurcation is being 
+mentioned in a Word document with us that I can share it with you guys. So if mine 
+is just a salary hike.
+I will mention yes over here. Okay, Y stands for yes. So there is no salary with on 
+target bonus. I don't have any on target bonus for now. So if there is any value for 
+OTB, they have to mention here. Say let's take for an example, I have an on target 
+bonus.
+Okay.
+I have to enter an OTV value of say 1 lakh. The date that I have to mention, 1st March 
+25.
+OTB year that is being paid. This is say 2024 one that is getting paid in 1st March. If I 
+have some RB, I had 1 lakh of RB. I'm mentioning 1 lakh of RB. RB1 payment date, I 
+have to mention for July 2025.
+If it is getting paid in July 2025. Okay. If other RBs are there, if multiple RBs are there, 
+retention bonuses, payout date, say I have two RBs, one more RB to be paid in any 
+other date. So RB date, I'll keep it as 1st July.
+26, one amount, 1 lakh of amount is getting paid in July 25 and 1 lakh of amount is 
+again getting paid in July or say let's take rather than taking July, let's take March.
+1st March 2026 it is getting paid after 8 to 9 months. So that we will mention, RB 
+effective date we will mention.
+Okay, if any deferred bonus components are there, that can be mentioned. One-time 
+bonuses are there, one-time bonuses can be mentioned. Recovery terms, there is a 
+recovery clause also for every bonus. If there is something recovery, we have to 
+mention it as yes. And if there is any eligibility or...
+if he or she is eligible for a promo 2026. If not eligible, it will go for 2027 eligibility. If 
+they are eligibility for 2026, we have to mention the clause as 2026. Okay. When we
+enter all these amounts and upload it into the system over here.
+Olga Chaban 15:19
+Yeah, can I ask the question?
+LalithaPavani Madiraju 15:21
+Yeah, yeah, go ahead.
+Olga Chaban 15:22
+Yeah, if we come back to the Excel file, could you please clarify what means 
+password?
+LalithaPavani Madiraju 15:30
+Sorry.
+Olga Chaban 15:31
+If you open the Excel file one more time, here is one of the first column, password. 
+What means password?
+LalithaPavani Madiraju 15:34
+Yeah, yeah, sure.
+Password, yes. Okay, this is the password to open the file. Now, see, I can open 
+anybody's because I have admin access. I can open anybody's letter. And for my 
+letter also, there would be no password. Okay, but for an employee, if they have to 
+open,
+Olga Chaban 15:51
+Mhm.
+LalithaPavani Madiraju 15:58
+a letter, they have to give the password.
+The password is the PAN card number basically. It is a unique card that is being 
+issued at India location. So I have my letter. I have to click here as download. Okay.
+Olga Chaban 16:14
+Mhm.
+LalithaPavani Madiraju 16:15
+this letter, I am opening the file. It gets automatically opened, but not for all. It 
+cannot open for everybody. When I try to open download and open the file, it asks 
+me for a password. Okay, password it asks.
+Olga Chaban 16:18
+Yeah.
+Mhm.
+So you mean that any employee can have access to the admin page on ASSIST 
+platform? No?
+LalithaPavani Madiraju 16:33
+HU.
+No, no, no, no, not everybody. Myself, Satish, and Satya from my team has the admin 
+access for now, because we upload the letters and we process it to employees. Not 
+everybody has the access. They only have their individual employee accesses for 
+them.
+Olga Chaban 16:53
+Uh-huh.
+LalithaPavani Madiraju 16:56
+and they can only see their own letters, not other letters.
+Olga Chaban 17:01
+So it means that it's some kind of separate page with documents that are available 
+for employee only, for the employee.
+LalithaPavani Madiraju 17:05
+Yes.
+Yes, correct. Yes, correct. And the password which we were talking is to open this 
+document.
+Olga Chaban 17:12
+Mhm, and.
+And the access for employee to this page through the link. Yeah, in the letter.
+LalithaPavani Madiraju 17:25
+Yes, yes, correct.
+Olga Chaban 17:27
+Okay, okay, got it.
+LalithaPavani Madiraju 17:30
+So once we enter, the letter is shown like this, because I don't have any other 
+retention bonuses or anything as such, it gives me a plain document. Okay, so there 
+are letter formats, three to four letter formats, one with bonuses, one with LTI, one 
+with annual bonuses.
+Olga Chaban 17:42
+Mhm.
+LalithaPavani Madiraju 17:50
+Kind of. So every letter is unique and different. So for one particular person who has 
+no bonuses and all, kind of, this is one kind of a letter which will have a previous CTC, 
+the current CTC basically, and the promo CTC, the revision that happened through 
+promo.
+Olga Chaban 18:04
+Mhm.
+LalithaPavani Madiraju 18:10
+that CTC breakdown it would have. And it also shows that I am eligible for the next 
+annual promo revision, 2024.
+Olga Chaban 18:20
+Mhm.
+LalithaPavani Madiraju 18:20
+Okay, so this letter basically belongs to 2023 promo. So that shows 2024 promo. For 
+the recent people, it shows 2027 promo, they are eligible. I can show the recent letter 
+also.
+Olga Chaban 18:28
+Mhm.
+Mhm.
+Is it means that the information that present in this letter, it's not a fact? I mean, it's 
+some kind of information what the salary the employee can have if she are here or 
+part of the assessment, for example.
+LalithaPavani Madiraju 18:48
+HU.
+HU.
+Okay, so if somebody is clearing the assessment, they will still receive a similar kind 
+of a letter only. And so for that, basically, there are certain norms. Okay, for annual 
+promo, the eligibility is only till September joiners, from January to September.
+September, whoever joins, they will be eligible for an annual promo in that particular 
+year. So say people joined from 1st January 2025 to September 31st September 2025 
+range are eligible for an annual promo.
+Olga Chaban 19:18
+Mhm.
+LalithaPavani Madiraju 19:35
+Okay.
+So in the similar way, somebody is clearing an assessment in the month of October. 
+Okay.
+Olga Chaban 19:37
+Mhm.
+LalithaPavani Madiraju 19:44
+They will not be eligible for a revision for annual promo in 2026.
+Okay, so...
+Olga Chaban 19:53
+Okay, yeah, got it. But just based on the letters that you show, it means that this 2024 
+year is present in the letter should be taken from the Excel file.
+LalithaPavani Madiraju 20:00
+HU.
+Olga Chaban 20:10
+and put to the text. Yeah, just, it's just information for employee when he or she will 
+be eligible for promotion. Okay, got it.
+LalithaPavani Madiraju 20:13
+Yeah.
+Yes.
+Promo. Yeah, correct, correct. For the assessment cases, it depends. If somebody is 
+not eligible for promo, it would not take the current year, but the next year it would 
+show. So say this would show like annual promo eligibility 2025, it would show if the
+letter is being issued sometime in October.
+Olga Chaban 20:39
+Mhm.
+LalithaPavani Madiraju 20:41
+October, November or December. So for them, if they are not eligible for promo, it 
+would say 2027 directly rather than showing it as 2026.
+Olga Chaban 20:52
+Mhm.
+LalithaPavani Madiraju 20:53
+Okay.
+Olga Chaban 20:55
+Yeah.
+LalithaPavani Madiraju 20:56
+So that input we receive from HR business partners, whether they are eligible for 
+promo or not in that current year. Based upon that, we will give that input in this 
+Excel sheet if they are eligible for promo or not in the last column here, promo 
+eligibility date. This I'll give it either 2026
+Olga Chaban 21:12
+Mhm.
+LalithaPavani Madiraju 21:16
+Or 2027, if not eligible, 2027, if eligible, I'll give it as 2026.
+something like that. Then this clause, this particular clause gets changed accordingly.
+Olga Chaban 21:25
+Mhm, got it.
+LalithaPavani Madiraju 21:31
+This clause gets changed according to the date.
+Olga Chaban 21:36
+Mhm.
+LalithaPavani Madiraju 21:37
+HU.
+So.
+Olga Chaban 21:40
+Could you please clarify if we talk about annual campaign, previously Satish provided 
+us with information that this campaign happened every January. Is it correct during 
+the January the annual campaign was sent in
+LalithaPavani Madiraju 21:41
+It.
+Yeah.
+Yeah.
+Olga Chaban 21:59
+Compensation Letters is happened.
+Is it correct?
+LalithaPavani Madiraju 22:06
+Ohh.
+I have joined in 2023 and since then it happened in effective as April 2020, April 1st 
+only. The cycle what we cover is from January to January. Okay. So basically the...
+Olga Chaban 22:23
+But if we talk about schedule of sending these letters, it's April or January.
+LalithaPavani Madiraju 22:29
+It is April.
+Olga Chaban 22:31
+April.
+LalithaPavani Madiraju 22:33
+But for now, from last couple of years, it is July.
+Olga Chaban 22:33
+Okay.
+So the annual campaign plan to plan to be in January, in July, June or June in July. 
+OK.
+LalithaPavani Madiraju 22:48
+July.
+Okay, it is July. Currently from 2025 and 2026 years, it happened effective July, 1st 
+July.
+Olga Chaban 22:59
+And if we talk about monthly sending, monthly campaign, let's say, let's use the same 
+terms that we have, I know. Is it one time per month you send this letter or it happen, 
+it could can be happen any.
+LalithaPavani Madiraju 23:04
+Hmm.
+Olga Chaban 23:19
+Anytime during some months.
+LalithaPavani Madiraju 23:22
+Yeah, it could happen anytime during the month. But there is a cutoff date for us for 
+Payroll inputs. Okay. So basically, from the 1st of month or our payroll dates work 
+from 1st to 15th.
+Okay, and we close all the inputs by 20th, and letters are processed for any 
+assessment cases. The letters are processed by 25th or 26th of that particular month. 
+Okay, so for assessment cases or...
+pre-assessment cases, only we follow these timelines. Rest of the retention cases we 
+receive through emails. Those emails we consolidate and we send it like every 
+Tuesday, Wednesday, and Fridays we send out the letter. We choose any three days 
+of...
+Olga Chaban 24:04
+Mhm.
+LalithaPavani Madiraju 24:19
+in a week for letters and we send out the letters for them.
+Olga Chaban 24:23
+Got it, got it. Thank you.
+LalithaPavani Madiraju 24:23
+So, it's a throughout month activity only for the ASSIST.
+cases, we only follow the timelines for them.
+Olga Chaban 24:36
+This.
+I got it. And if I talk about annual campaign, could you please come back to Excel 
+file?
+LalithaPavani Madiraju 24:46
+Yes.
+Olga Chaban 24:48
+Yeah, do I have differences in providing some information through Excel file? If we 
+talk about annual campaign or monthly campaign, I just want to understand if any 
+columns
+can be filled in with some information for annual campaign. Or maybe we can split 
+this file based on information that providing Compensation letter. For example, the 
+column is that name in different color, green or blue color.
+LalithaPavani Madiraju 25:06
+Mhm.
+Mm.
+Olga Chaban 25:25
+For example, used only for monthly campaign Compensation Letters sending.
+LalithaPavani Madiraju 25:33
+No, this is the only file. This is used for annual promo and for the monthly also. As I 
+have mentioned, if you can see the highlighted green columns, show the letter 
+format difference. Okay, so PO stands for a normal letter which has without any
+Olga Chaban 25:39
+Mhm.
+Mhm.
+LalithaPavani Madiraju 25:53
+promotion like title change details or anything. It would not have anything over here. 
+I'll show you one more letter.
+Olga Chaban 26:02
+Mhm.
+LalithaPavani Madiraju 26:02
+Where you can see the difference.
+Section 20, twenty-six ; it's not a letter to verify.
+Chinmoy.
+Okay, so this is a promotion letter. Okay, so if you can see this letter was issued on 
+March 22, 2024, wherein it shows I had a designation change and promoted to lead 
+people's programme specialist. Okay, with a salary change. Okay, so
+Olga Chaban 26:44
+Mhm.
+LalithaPavani Madiraju 26:55
+Earlier in the Excel format, I have selected this format, salary hike, because I had only 
+the salary hike without any promotion. Now I have to select this letter format, like 
+salary hike and promotion. This I have to select and effect.
+Olga Chaban 27:08
+Mhm.
+LalithaPavani Madiraju 27:15
+I have to give it as first July 2025 effective. So then the letter format, what we take, 
+the system will take this kind of a letter format rather than taking the normal letter 
+format. Okay, then automatically when there is a designation change updated in the.
+Olga Chaban 27:30
+Mhm.
+LalithaPavani Madiraju 27:34
+people portal, it gets automatically picked over here and it updates the designation 
+here.
+Olga Chaban 27:41
+Mhm.
+LalithaPavani Madiraju 27:42
+We are not including any designation over here. Actually, we are only saying that this 
+is a promotion kind of a thing. Here, if you see any column, it doesn't state the 
+current designation. So it automatically picks that designation from the system. 
+People portal updated.
+No.
+designation and it projects over here. So the system works in that way, but we have 
+to select the letter format difference. So whenever there is a promotion case, it has to 
+be checked in for this rather than this.
+Olga Chaban 28:07
+Mhm.
+Could you please clarify here? As I understood, you provide all necessary information 
+manually in Excel file. Is it correct? Or maybe you just upload some information from 
+different sources, people portal, Compensation portal.
+LalithaPavani Madiraju 28:30
+Hello.
+Olga Chaban 28:40
+maybe something else and just a copy information from this perceived or uploaded, 
+downloaded, sorry, file and put it here. How you, where you can take this information 
+and how you provide in this Excel file.
+LalithaPavani Madiraju 28:57
+HU.
+Okay, basically every other information is a manual input itself that we pick it up from 
+these current basic HRA and everything. We calculate in our local Excel files and this 
+we use it as a upload file. So from that system, we calculate basic HRA, statutory 
+bonuses and everything for an associate.
+and we upload it over here. Only coming to the designation part that this system, 
+this ASSIST portal, is inbuilt in such a way that it picks all the designations from the 
+people portal, actually. So there is a refresh that happens.
+Olga Chaban 29:45
+Mhm.
+LalithaPavani Madiraju 29:47
+from the people portal to ASSIST. So there is a coding, back end coding has been 
+done in such a way that it picks all the designations updated in the assist in the 
+people portal to other ASSIST portal. So for this only for particular designation alone, 
+if we put under this promotion category.
+as yes, it will directly trigger it to the wherever the designations are being stored. It 
+trigger it and it picks it into the letter. Okay, apart from that, everything here is a 
+manual input only.
+We do the calculations in the other files, which we maintain manually. And we bring 
+the amounts over here for those particular people and give the passwords for those 
+files. And we need to cheque in whichever is the app letter for that particular person.
+Olga Chaban 30:24
+Mhm.
+LalithaPavani Madiraju 30:43
+and give the OTB values and their effective dates also manually. And then mention if 
+they are eligible for promo, LTI, or anything over here. And then we upload this file 
+into the system so that the letters are being generated for us.
+Olga Chaban 31:02
+Okay, let's cheque it one more time. If we talk about some changing in job title, you 
+just need to put in Excel file, yes, we have, yeah, and the system ASSIST.
+LalithaPavani Madiraju 31:06
+Yeah.
+Okay.
+ES.
+Olga Chaban 31:21
+system, I mean, the system automatically take from people portals a new title of this 
+employee and put it to the letter. Is that correct? If I talk, okay, if I talk about some
+LalithaPavani Madiraju 31:31
+Correct, yes. Yes, correct.
+Olga Chaban 31:40
+salary change, additional bonuses, you have a separate file and based on information 
+on this file you also put here some of those bonuses and as salary changes and also 
+you need to put
+LalithaPavani Madiraju 31:44
+Yeah.
+Olga Chaban 32:00
+Yes, in a specific column based on current information that connect with the current 
+employee view. Yes or no. Yeah, also.
+LalithaPavani Madiraju 32:09
+Reddy, yes.
+Olga Chaban 32:11
+OK, and the compensation, the compensation tickets sums you received from 
+Compensation portal. Is it correct?
+LalithaPavani Madiraju 32:21
+Hey, my name.
+Olga Chaban 32:29
+Oh, parole team, maybe parole team. Yeah, you mentioned to provide you with this 
+information.
+LalithaPavani Madiraju 32:29
+Phone.
+Olga Chaban 32:38
+I just want to understand the sources of data that you use to creation this file and 
+with this connect my questions.
+LalithaPavani Madiraju 32:42
+Okay.
+Okay.
+Let me show you an e-mail how we receive the input for one particular case. Let me 
+take you through.
+So if you see for this particular case, here it is mentioned as reactive retention, right? 
+And this is the employee.
+Olga Chaban 33:10
+Mhm.
+Mhm.
+LalithaPavani Madiraju 33:13
+So his employee ID is there available over here. And his current CTC, his job level is 
+being mentioned over here for us. And his revised CTC has been given. I hope the 
+screen is visible to you guys.
+Olga Chaban 33:16
+Mhm.
+Yes, yes.
+LalithaPavani Madiraju 33:28
+Okay, so this is how the input we receive. And if you see the effective date is 1st April 
+2026. Now I have to release this guy's letter because this has come on when? 13th 
+4th. Yesterday we have received this person's e-mail. And once we have approval 
+from Srini, Srinivas Reddy, who is the head of India location.
+Once we receive an approval from him, we have to release the letter for him, this 
+particular person. So now what I'll do is I'll take this inputs and we have an Excel file 
+with us. Let me show you that.
+Olga Chaban 34:04
+Mhm.
+LalithaPavani Madiraju 34:09
+So.
+Sorry to miss.
+It was.
+I.
+We have decided to change the shirt.
+Give me a minute, I guess there is some network issue.
+Olga Chaban 35:04
+If I understand correctly, you just have some separate files for each, how would say, 
+each event. For example, in this case, it salary changes and as each Excel file, some 
+kind of
+Um...
+some kind of list of with lines where you need to put information from Payroll team 
+or maybe other team.
+LalithaPavani Madiraju 35:40
+See, basically in the upload file, we cannot keep any formulas for calculating the 
+salary or basic calculations and all. We cannot put any formulas in the upload file for 
+ASSIST portal. And hence, we generally maintain a regular repository file for month 
+on month.
+Olga Chaban 35:44
+Mhm.
+Mhm.
+LalithaPavani Madiraju 36:00
+inputs that we received. If you see, we were talking about this guy, Pranit Ram Reddy, 
+Pranath Ram Reddy. So this particular person, there was a salary change from 18 
+lakhs to 24 lakhs. And this particular person has an retention bonus with effective 
+date of April 1st.
+Okay, so this information is available. What I need is basically when I enter these 
+amounts,
+Olga Chaban 36:19
+Mhm.
+LalithaPavani Madiraju 36:28
+It gives an automatic calculation of these things. Here if you see the basic salary, 
+HRA, bonuses, other relevances, gross, PF and gratuity components. It gives a 
+calculated amount. So I'll just pick up these amounts from here.
+Olga Chaban 36:35
+Mhm.
+LalithaPavani Madiraju 36:47
+I'll do a copy and I just have to paste it in these columns. If it is a current salary or a 
+revised salary.
+Okay.
+Olga Chaban 36:58
+Mhm.
+LalithaPavani Madiraju 36:59
+I'll do a paste special over here with the values.
+That's how I get the values in here, and...
+Then once we enter all these amounts, then I choose what letter type I have to send 
+and how much is the retention bonus amount, what is the retention bonus effective 
+date. And according to that, because he is mentioned as promo eligible not, so I'll 
+give it.
+2027 is not eligible for the current year promo eligibility. I'll give it as 2027. Now I'll 
+take this file and then upload it into the ASSIST system.
+Olga Chaban 37:31
+Mhm.
+LalithaPavani Madiraju 37:42
+That's how the letter gets generated like this with the value. See here, this is the 
+current basic HRA, special elements, gross and everything. This is the revised one. For 
+that particular person also, it gets generated like this.
+Olga Chaban 37:47
+Mhm.
+Okay.
+And can I ask about the date of this promotion? You mentioned that this current 
+person have promotion from 1st to 5th April, but do you have this date in, could you 
+please highlight where this date
+LalithaPavani Madiraju 38:19
+Okay.
+Olga Chaban 38:20
+mentioned in the letter, because I saw this information mentioned in Excel file, but...
+LalithaPavani Madiraju 38:24
+Okay, yeah, this one, right? Let me see if this letter has been published or not. If we 
+have, we can see it for this particular person itself.
+Olga Chaban 38:29
+Mhm.
+And could you please also clarify, if I understand correctly, it's connected with 
+monthly letter. But if we talk about annual letters, I think you have a lot of people, a 
+lot of different letters during the annual campaign.
+LalithaPavani Madiraju 38:52
+Oh.
+Olga Chaban 38:57
+And how you dealing with this long list?
+LalithaPavani Madiraju 39:03
+Okay, I'll tell you. Yeah, let me show you this letter, how it is taking the effective date 
+and where it is taking the effective date. Because I am admin CI, it doesn't ask me for 
+any password or anything as such. So with this particular person, this has given us 1st 
+July effective 2026, which is wrong.
+Olga Chaban 39:07
+Sure, sure.
+Uh-huh.
+LalithaPavani Madiraju 39:23
+So particularly, okay, this case I understood what has happened is this guy has got a 
+promo letter. This is the promo letter which has been processed. There should be 
+another letter which has to be processed for him with this date effective 1st April. If 
+you see that his salary was 20 lakhs only, but his revision has come for 24 lakhs.
+Olga Chaban 39:23
+Yeah.
+Mhm.
+Mhm.
+LalithaPavani Madiraju 39:45
+Now what we do is we have to generate another letter for him, wherein here, 
+particularly in place of 20 lakhs, it will show 24 lakhs and the effective date will show 
+here. First April 2026, it will show here.
+Olga Chaban 39:45
+Yeah.
+Got it. Yeah, got it.
+LalithaPavani Madiraju 40:02
+OK, and the promo eligibility date will show here. Promo 2027. OK.
+Olga Chaban 40:08
+Mhm.
+LalithaPavani Madiraju 40:11
+In this particular letter, we did not give the basic HRA and other components 
+because there is a wage code implementation that is happening. With that, there will 
+be a change in the basic HRA calculations and all. For that reasons, right now we did 
+not give them any structure, complete structure.
+Olga Chaban 40:12
+Org.
+LalithaPavani Madiraju 40:32
+But once it has been implemented, we will give them the another letter will be issued 
+with all the components as shown in my letter, like this basic HRA special notes. 
+Because this was the previous letter that has gone like that. Currently the letters are 
+going like this.
+Olga Chaban 40:42
+Mhm.
+Mhm.
+So it doesn't matter, it's annual campaign or monthly campaign, all sums are present 
+in this table that name annual Compensation. Is that correct?
+LalithaPavani Madiraju 40:53
+Yeah.
+Yes.
+Mm.
+Yep.
+Olga Chaban 41:07
+So the form is the same of this table. The difference is just in numbers of lines in the 
+table because if the employee have additional bonuses, this is bonuses also will be 
+present in the table.
+LalithaPavani Madiraju 41:10
+Yes, yes.
+Yes, only that, you know, letter format, what we choose will differ here. Okay. And the 
+other question that you have asked, how do we manage for, you know, bulk letters 
+and everything, right? So in these letters, there is a bifurcation. So let me clearly write 
+it over here.
+Olga Chaban 41:39
+Mhm.
+LalithaPavani Madiraju 41:46
+Only salary change.
+Only salary change means there will be only a change in the CTC. Okay, 12 lakhs to 
+13 lakhs kind of. Okay. One other letter which will include is annual bonuses.
+Olga Chaban 41:56
+Mhm.
+LalithaPavani Madiraju 42:06
+So people will have annual bonus that is a variable payoff last year.
+Olga Chaban 42:06
+Mhm.
+LalithaPavani Madiraju 42:14
+which get paid in the month of March. Okay. That is 1 component. And for higher 
+levels of associates, LTI would be there. So based on that, inputs that we receive from 
+the promo cycle. So when we close this entire annual campaign,
+Olga Chaban 42:24
+Mhm.
+LalithaPavani Madiraju 42:32
+we have a complete Excel record, okay, which we, you know, move it into our own 
+kind of a format. If you want, I can show that one.
+Olga Chaban 42:45
+Mhm.
+LalithaPavani Madiraju 42:46
+Ohh.
+Right now it does not open with me. Just give me a minute.
+So we receive this winter campaign sheets and everything like this, the compensation 
+sheets from the Compensation Portal. Whoever has got this annual promo, I mean 
+promo, they are eligible and they have been received the salary hikes.
+Okay, for them.
+Generally, we prepare a sheet either using Power BI or, you know, normal excels and 
+all. We come to our final sheet and here what we do is we put remarks for them.
+Olga Chaban 43:41
+Mhm.
+LalithaPavani Madiraju 43:51
+if they are eligible for maternity cases or anything as such. And in this, if you see, 
+there is this bonus amounts. Not for everybody, there would be bonus. Okay, so only 
+particular set of people, there will be bonus. Now see,
+If I select bonus amount to be paid in March 2026 as zero, it will give me a list of 
+people, entire list of people who does not have a bonus at all. So for them, we will 
+release only the salary change letter. Okay, so for those particular people,
+We will select here, we will come here.
+Olga Chaban 44:36
+So is it means that for annual campaign, you prepare 3 files? One files only with 
+salary change, second files with salary and annual bonus, and third, yeah, and third 
+file for with all three.
+LalithaPavani Madiraju 44:36
+So, because that is loading.
+Mhm.
+No.
+Annual bonus.
+Good.
+Olga Chaban 44:54
+all three options that you have here. Uh-huh.
+LalithaPavani Madiraju 44:55
+All 3 options, correct. Yes. So from this file, we will get to know FC. Here, this is a 
+revised one. Okay. This is the current CTC details and this is the new CTC. For few 
+people, there would be retention bonuses. So if we click here, there are particular 
+amounts.
+Olga Chaban 45:04
+Mhm.
+LalithaPavani Madiraju 45:14
+Now I have to jot down my file in such a way that I first pull out the list of people 
+who does not have anything, no retention bonus, no annual bonus, no LTI, nothing. 
+Okay, so then for those particular peoples, I'll create one set and release the letters.
+Olga Chaban 45:27
+Mhm.
+LalithaPavani Madiraju 45:33
+So there are 10,000 people like that. I'll create one file with those 10,000 people and 
+create this upload file and then upload it to the system and release the 10,000 letters 
+for them. Now I'll come back and cheque for the bonuses. So when I'm checking for 
+the bonuses,
+I have, like, say these many people I have.
+Then I have to select create another file for these retention bonuses and then create 
+our upload file for ASSIST portal. So for them, I'll select the letter option as P1, which 
+is suitable with bonuses. Then I'll release those letters. So that's how we divide the 
+letters into categories.
+Olga Chaban 46:08
+Mhm.
+LalithaPavani Madiraju 46:20
+this categories, the letter format categories, and then we send out the letters.
+Olga Chaban 46:27
+Got it.
+LalithaPavani Madiraju 46:28
+So if you see this letter categories, then you will understand how the bifurcation has 
+happened. Right now, I don't have this document handy with me. Maybe in our next 
+call, I can show you that thing for you.
+Olga Chaban 46:44
+Yeah, we have only 5 minutes till the end of this call. Maybe you could advise the 
+available time slot during the next days for a new meeting where we can continue.
+LalithaPavani Madiraju 46:47
+Yeah.
+Yeah.
+Yes, I guess it's been a huge data.
+Olga Chaban 47:08
+Uh, next Tuesday, next week, or...
+LalithaPavani Madiraju 47:12
+Yeah, sure.
+Olga Chaban 47:14
+Uh, maybe, maybe, yeah, let me cheque with the cheque and uh, the schedule, um.
+LalithaPavani Madiraju 47:21
+Yeah, we have our Payroll time in this week, so maybe if you would want to set up 
+the call, maybe in the first hours is pretty much feasible. If not, you know, maybe 
+after 21st, we can connect peacefully so that we are not.
+Also in Rush.
+Olga Chaban 47:44
+OK, let me check.
+LalithaPavani Madiraju 47:47
+If it is too much delayed, any date is fine before 21st, but in first hours if possible.
+Olga Chaban 47:54
+Sure, I just want to cheque 20. OK.
+If it will be.
+LalithaPavani Madiraju 48:03
+Ex.
+Olga Chaban 48:06
+The 21st April.
+at the same time as we have for today meetings. Is it suitable for you?
+LalithaPavani Madiraju 48:18
+Sorry, which date it was, Olga?
+Olga Chaban 48:21
+Next Tuesday.
+LalithaPavani Madiraju 48:23
+Next Tuesday, it is fine. Completely fine. Yeah. Tuesday, can we do it on Wednesday 
+otherwise? I'm sorry.
+Olga Chaban 48:27
+Okay.
+Could you please repeat? I'm already sent a meeting. Could you please repeat?
+LalithaPavani Madiraju 48:35
+Okay, okay, let me, yeah, we'll ensure that we are joining the call. Yes, for sure. Okay.
+Olga Chaban 48:41
+I can change the time slot, just cheque your calendar and advise available time slot 
+for you.
+LalithaPavani Madiraju 48:47
+Okay.
+That is fine. 21st is okay. Let me just cheque one second. Because we generally close 
+our Payroll on 21st itself. So I thought 22nd would have been more feasible. Yes, 130 
+to 230 is the lunch time for us. Can we make it from 3 to 4?
+Olga Chaban 49:10
+But I have a different type, but let me check. Okay.
+LalithaPavani Madiraju 49:22
+Or 12 to 1 is also fine for us.
+Olga Chaban 49:27
+Please cheque if it will be this time slot.
+LalithaPavani Madiraju 49:38
+Yeah, four to five, yes.
+Olga Chaban 49:44
+Okay, okay, great. Thank you very much for this call. Actually, right now, I think for 
+me and for my colleagues as well, much clearer how the compensation letters work 
+and the interlocation. So
+LalithaPavani Madiraju 50:03
+ES.
+Olga Chaban 50:05
+Could you please also advise, we have several questions that connect not only with a 
+Compensation letter, but also with letters that sent to employee in last working day.
+I mean, for Ex employee. Maybe you also can provide us with additional information 
+and answers or questions during the next meeting connecting with these letters. Or 
+we need to request some help from other
+People from your team.
+LalithaPavani Madiraju 50:46
+Sure, Olga, I'll do one thing. I'll work along with my team. I have a list of letters that 
+we release on regular basis to the employees. So that list of letters, I can get it 
+prepared for you and maybe that we can discuss in the next call.
+Olga Chaban 51:02
+Okay, great. Actually, we already received some examples of these letters and just 
+want to go through it and cheque if we understand correctly in what the event, when 
+this letter is sent to.
+LalithaPavani Madiraju 51:07
+Okay. Okay.
+Olga Chaban 51:21
+to employee here and the information that present in this letter as the input that you 
+have to upload to assist or maybe as a simple to upload to assist in another way, not 
+manual.
+manually from your team, but let's cheque it during the next meeting one more time. 
+Thank you very much. It's really very helpful information.
+LalithaPavani Madiraju 51:48
+Sure, Olga.
+Yeah, one small request, Olga. I guess Satish has added me very recently into this 
+call, so I don't see any previous chat history from this call. So if you have the list of 
+letters that were already shared by Satish and all,
+Olga Chaban 51:54
+Mhm.
+LalithaPavani Madiraju 52:11
+you can share it in this group chat for me so that I can just cross cheque if any other 
+letter format is missed out or anything as such and I can include it there for the next 
+call session.
+Olga Chaban 52:24
+Sure, could you please check, give me a second, I just want to copy the link. Could 
+you please cheque if you have access to the folder? I sent the link to this folder to 
+the chat.
+LalithaPavani Madiraju 52:30
+Okay.
+Okay, sure.
+Yeah.
+Nope.
+Okay.
+Olga Chaban 52:42
+Because all examples that Rash Shared with our team is here.
+LalithaPavani Madiraju 52:52
+Well, I don't have the access for this.
+Olga Chaban 52:55
+Uh-huh, okay, let me quickly.
+LalithaPavani Madiraju 52:56
+I have raised the request access.
+Olga Chaban 52:59
+Okay, let me quickly share it.
+And.
+Sure, sure, sure.
+Yes, sure. Thank you very much.
+Yeah, have a good day. Bye.
+Lela Akobidze stopped transcription

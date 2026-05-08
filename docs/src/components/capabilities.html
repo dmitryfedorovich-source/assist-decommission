@@ -1,0 +1,69 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: capabilities
+  Static content — no data slots
+  ═══════════════════════════════════════════════════════════
+-->
+
+<div class="section-tag">06 — Capabilities</div>
+<h2>What the System Can Do</h2>
+<p class="section-desc">The workflow combines Claude Code's AI capabilities with a structured project framework, enabling a range of BA documentation tasks that would otherwise require significant manual effort.</p>
+
+<div class="cap-grid">
+  <div class="cap">
+    <div class="cap-icon cap-icon-o">📸</div>
+    <div>
+      <h4>Image &amp; Screenshot Analysis</h4>
+      <p>Reads Assist platform screenshots and extracts field names, types, dropdown options, flow sequences, and UX behaviors. Results are cached in memory files and re-used in future sessions without re-reading the image.</p>
+    </div>
+  </div>
+  <div class="cap">
+    <div class="cap-icon cap-icon-b">🌐</div>
+    <div>
+      <h4>Live Confluence Integration</h4>
+      <p>Reads and searches Confluence pages in real time via MCP. Can fetch any page by ID, search within a space, and retrieve child pages. No stale exports — always reads current content from kb.epam.com.</p>
+    </div>
+  </div>
+  <div class="cap">
+    <div class="cap-icon cap-icon-g">🎙️</div>
+    <div>
+      <h4>Meeting Transcript Processing</h4>
+      <p>Extracts decisions, open questions, and action items from raw meeting transcripts. Updates the Feedback Log, phase state files, and project state automatically. Marks processed files with a prefix to prevent reprocessing.</p>
+    </div>
+  </div>
+  <div class="cap">
+    <div class="cap-icon cap-icon-p">✏️</div>
+    <div>
+      <h4>Stakeholder Correction Application</h4>
+      <p>Reads handwritten correction images, identifies what changed, applies corrections to all affected output documents simultaneously, and logs the change as a Feedback entry with source and date.</p>
+    </div>
+  </div>
+  <div class="cap">
+    <div class="cap-icon cap-icon-t">📝</div>
+    <div>
+      <h4>Multi-Audience Document Generation</h4>
+      <p>Generates different documents from the same underlying facts, with tone and content adapted per audience — management language for onepagers, structured questions for SME validation, plain instructions for employee guides.</p>
+    </div>
+  </div>
+  <div class="cap">
+    <div class="cap-icon cap-icon-y">🔍</div>
+    <div>
+      <h4>Cross-Document Consistency Validation</h4>
+      <p>Runs the validate-docs skill across all 18 output documents simultaneously, checking factual accuracy, terminology, audience fit, structural completeness, OQ cross-references, and forbidden phrases. Errors and warnings are reported with file, location, and fix.</p>
+    </div>
+  </div>
+  <div class="cap">
+    <div class="cap-icon cap-icon-o">💾</div>
+    <div>
+      <h4>Persistent Cross-Session Memory</h4>
+      <p>Stores project knowledge in structured markdown files that survive across sessions. Starting a new session loads only what's needed (tiered approach). The system "remembers" all prior decisions, open questions, and confirmed facts without re-reading source material.</p>
+    </div>
+  </div>
+  <div class="cap">
+    <div class="cap-icon cap-icon-b">📊</div>
+    <div>
+      <h4>Decision &amp; OQ Tracking</h4>
+      <p>Maintains a living Feedback &amp; Decisions Log with full traceability — every decision has an owner, date, source, and list of documents it is reflected in. Open questions have owners and target resolution stages. Nothing slips through.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+# ═══════════════════════════════════════════════════════════════
+#  PROJECT META  —  Edit this file to update stats, title, nav
+#  This is the only file to change when top-level facts change.
+# ═══════════════════════════════════════════════════════════════
+
+page:
+  title: "AI-Assisted BA Documentation — Project Overview"
+  last_updated: "May 2026"
+
+hero:
+  tag: "EPAM India · HR Document Workflows"
+  title: "AI-Assisted BA Documentation"
+  title_em: "Assist → EPAM Docs Migration"
+  subtitle: >
+    A governed agentic workflow system for AI-assisted documentation with
+    deterministic validation and full decision traceability.
+    It combines structured memory, rule-based validators, and synchronized
+    data models to ensure consistency, auditability, and scalable evolution
+    across outputs.
+
+stats:
+  - value: "4"
+    label: "Phases"
+  - value: "18"
+    label: "Output Docs"
+  - value: "6"
+    label: "Audiences"
+  - value: "26+"
+    label: "Decisions Tracked"
+  - value: "10"
+    label: "Validator Checks"
+
+nav:
+  - label: "Context"
+    href: "#context"
+  - label: "Workflow"
+    href: "#workflow"
+  - label: "Inputs"
+    href: "#inputs"
+  - label: "Knowledge System"
+    href: "#knowledge"
+  - label: "Outputs"
+    href: "#outputs"
+  - label: "Capabilities"
+    href: "#capabilities"
+  - label: "Validation"
+    href: "#validation"
+  - label: "Roadmap"
+    href: "#roadmap"
+  - label: "At a Glance"
+    href: "#stats"
+  - label: "PO/BA Playbook"
+    href: "#howto"
+
+footer:
+  left: "EPAM India · HR Document Workflow Migration · Assist → EPAM Docs"
+  right_prefix: "AI-Assisted BA Documentation · Claude Code"
+  # right_prefix is joined with last_updated from page section above
+
+deadline:
+  date: "June 30, 2026"
+  note: >
+    Assist Reference Letters retired. All India employees must be onboarded
+    to EPAM Docs before that date. Phase 1 (Reference Letters) is the
+    critical path item.
+
+knowledge_stats:
+  - value: "26+"
+    color: "var(--color-accent)"
+    label: "Decisions Across Phases"
+  - value: "21"
+    color: "var(--color-blue)"
+    label: "Open Questions"
+  - value: "9"
+    color: "var(--color-green)"
+    label: "Feedback Items"
+  - value: "4"
+    color: "var(--color-purple)"
+    label: "Phases Tracked"

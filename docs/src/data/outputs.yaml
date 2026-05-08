@@ -1,0 +1,176 @@
+# ═══════════════════════════════════════════════════════════════
+#  OUTPUTS CATALOG  —  Edit to add/update output documents
+#  badge values: mgmt | internal | india | employee | cross
+#  phase values: ph1 | ph2 | ph3 | phx
+#  format values: Markdown | HTML
+#  link: relative path from project root (used for clickable file links)
+# ═══════════════════════════════════════════════════════════════
+
+documents:
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "01 — Process Flow"
+    link: "output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md"
+    audience: internal
+    audience_label: "Internal / BA"
+    purpose: "Target-state process flow in EPAM Docs — swim lanes, field tables, routing tracks, notifications"
+    format: Markdown
+
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "02 — BRD"
+    link: "output/phase1_reference_letters/02_BRD_Reference_Letters.md"
+    audience: internal
+    audience_label: "DOCS Platform Team"
+    purpose: "Full business requirements — FRs, integrations, NFRs, assumptions, risks, sign-off table"
+    format: Markdown
+
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "03 — Internal Presentation"
+    link: "output/phase1_reference_letters/03_Presentation_Internal_Team.md"
+    audience: internal
+    audience_label: "DOCS Platform Team"
+    purpose: "Detailed briefing — flow diagrams, field specs, config checklist, action items, open questions"
+    format: Markdown
+
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "04 — KB Onepager"
+    link: "output/phase1_reference_letters/04_KB_Onepager.html"
+    audience: mgmt
+    audience_label: "Management"
+    purpose: "Business case, scope, roadmap, timeline — no technical detail; suitable for Confluence KB"
+    format: HTML
+
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "05 — India SME Validation"
+    link: "output/phase1_reference_letters/05_India_SME_Validation.md"
+    audience: india
+    audience_label: "India Stakeholders"
+    purpose: "Structured review document with confirmation questions, answer blanks, sign-off table"
+    format: Markdown
+
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "06 — India Colleagues Guide"
+    link: "output/phase1_reference_letters/06_India_Colleagues_Guide.md"
+    audience: employee
+    audience_label: "India Employees"
+    purpose: "Plain-language employee guide — what changes, step-by-step instructions, processing times"
+    format: Markdown
+
+  - phase: ph2
+    phase_label: "Phase 2"
+    file: "01 — KB Onepager"
+    link: "output/phase2_compensation/01_KB_Onepager.html"
+    audience: mgmt
+    audience_label: "Management"
+    purpose: "Phase 2 scope preview — batch model, 4 compensation letter types, key differences from Phase 1"
+    format: HTML
+
+  - phase: ph3
+    phase_label: "Phase 3"
+    file: "01 — KB Onepager"
+    link: "output/phase3_separation/01_KB_Onepager.html"
+    audience: mgmt
+    audience_label: "Management"
+    purpose: "Phase 3 scope preview — separation letters, LOR for ex-employees, HRMS-triggered flow"
+    format: HTML
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-01 — Decommission Plan"
+    link: "output/migration/Decommission_Plan.md"
+    audience: internal
+    audience_label: "BA Team / India Team lead"
+    purpose: "June 30 cutover procedure — milestone checklist, Assist retirement steps, escalation contacts"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-02 — Rollback & Recovery Plan"
+    link: "output/migration/Rollback_Recovery_Plan.md"
+    audience: internal
+    audience_label: "BA Team / India Team lead"
+    purpose: "Contingency plan if DOCS not ready at go-live — trigger conditions, Assist re-enablement, retry criteria"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-03 — Go-Live Runbook"
+    link: "output/migration/Go_Live_Runbook.md"
+    audience: internal
+    audience_label: "BA Team / DOCS Platform Team / India Team lead"
+    purpose: "Step-by-step day-of-cutover procedure — pre-go-live checklists, execution steps, smoke tests, escalation"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-04 — Test & Validation Plan"
+    link: "output/migration/Test_Validation_Plan.md"
+    audience: internal
+    audience_label: "BA Team / India Team specialists / DOCS Platform Team"
+    purpose: "Test scope, UAT test cases TC-01–TC-09, defect classification, sign-off table for Stage 4 UAT"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-05 — Acceptance Criteria"
+    link: "output/migration/Acceptance_Criteria.md"
+    audience: internal
+    audience_label: "BA Team / India Team leads"
+    purpose: "Definition of Done — per-doc validation gates, stage sign-off criteria, Go/No-Go checklist for T-1"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-06 — Communication Plan"
+    link: "output/migration/Communication_Plan.md"
+    audience: internal
+    audience_label: "BA Team / India Team lead / Communications"
+    purpose: "Stakeholder comms schedule T-30 through T+7 — message templates, channels, responsibility matrix"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-07 — Monitoring Plan"
+    link: "output/migration/Monitoring_Plan.md"
+    audience: internal
+    audience_label: "BA Team / India Team lead / DOCS Platform Team"
+    purpose: "Post-go-live observability — metrics, alert thresholds, daily/weekly review cadence T+1 through T+30"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Migration"
+    file: "MIG-08 — Reconciliation Report Template"
+    link: "output/migration/Reconciliation_Report_Template.md"
+    audience: internal
+    audience_label: "BA Team / India Team lead"
+    purpose: "Fill-in template for post-go-live reporting — volume summary, errors, OQ status, metrics vs thresholds"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Shared"
+    file: "Feedback & Decisions Log"
+    link: "output/shared/Feedback_Decisions_Log.md"
+    audience: cross
+    audience_label: "BA Team"
+    purpose: "Cross-phase source of truth — all decisions (D-XX), open questions (OQ-XX), feedback (F-XX)"
+    format: Markdown
+
+  - phase: phx
+    phase_label: "Shared"
+    file: "RTM"
+    link: "output/shared/RTM.md"
+    audience: cross
+    audience_label: "BA Team"
+    purpose: "Requirements Traceability Matrix — Decision×Document, OQ impact map, change impact guide"
+    format: Markdown
+
+audience_note: >
+  Management docs (04) contain no field-level detail or jargon.
+  Employee docs (06) contain no migration rationale or internal process detail.
+  India SME docs (05) contain explicit questions and sign-off checkboxes.
+  These rules live in domain_rules.md and are validated automatically on every run.

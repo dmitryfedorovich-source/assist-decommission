@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "workflow.schema.json",
+  "title": "Workflow",
+  "description": "A processing workflow track for one or more letter types.",
+  "type": "object",
+  "required": ["id", "name", "phase", "trigger", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique workflow track identifier.",
+      "examples": ["Trk-A", "Trk-B", "Lifecycle", "Form-UI", "P2-Batch", "P3-HRMS"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable workflow name."
+    },
+    "phase": {
+      "type": ["integer", "string"],
+      "enum": [1, 2, 3, 4, "cross"]
+    },
+    "trigger": {
+      "type": "string",
+      "description": "What initiates this workflow.",
+      "examples": ["Employee self-service request", "India HR XLS batch upload", "People system HRMS event"]
+    },
+    "letter_types": {
+      "type": "array",
+      "description": "Letter type names processed by this workflow.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "actors": {
+      "type": "array",
+      "description": "Human roles involved in this workflow.",
+      "items": {
+        "type": "object",
+        "required": ["role", "action"],
+        "additionalProperties": false,
+        "properties": {
+          "role": { "type": "string" },
+          "action": { "type": "string" },
+          "optional": { "type": "boolean", "default": false }
+        }
+      },
+      "default": []
+    },
+    "steps": {
+      "type": "array",
+      "description": "Ordered list of workflow steps.",
+      "items": {
+        "type": "object",
+        "required": ["step", "actor", "action"],
+        "additionalProperties": false,
+        "properties": {
+          "step": {
+            "type": "integer",
+            "description": "Step number."
+          },
+          "actor": {
+            "type": "string",
+            "description": "Role performing this step."
+          },
+          "action": {
+            "type": "string",
+            "description": "What the actor does."
+          },
+          "system": {
+            "type": ["string", "null"],
+            "description": "System involved (DOCS, People, ServiceNow, etc.)."
+          },
+          "outcome": {
+            "type": ["string", "null"],
+            "description": "Result of this step."
+          },
+          "decision_ref": {
+            "type": ["string", "null"],
+            "description": "Decision ID that governs this step.",
+            "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "special_behaviors": {
+      "type": "array",
+      "description": "Edge cases, special conditions, or exceptions in this workflow.",
+      "items": {
+        "type": "object",
+        "required": ["condition", "handling"],
+        "additionalProperties": false,
+        "properties": {
+          "condition": { "type": "string" },
+          "handling": { "type": "string" },
+          "decision_ref": { "type": ["string", "null"] }
+        }
+      },
+      "default": []
+    },
+    "source_decisions": {
+      "type": "array",
+      "description": "Decision IDs that define the rules for this workflow.",
+      "items": {
+        "type": "string",
+        "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+      },
+      "default": []
+    }
+  }
+}

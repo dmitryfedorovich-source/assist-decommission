@@ -26,7 +26,6 @@ You can request the following letters directly in EPAM Docs:
 | **Service Letter** | Employment verification |
 | **Visa Processing Letter** | Visa applications |
 | **Letter of Recommendation** | Professional or academic references |
-| **Relocation Letter** | Confirmation of approved office relocation *(initiated by your RM or India Team specialist)* |
 
 ---
 
@@ -58,7 +57,6 @@ You can request the following letters directly in EPAM Docs:
 | Address Proof Letter | Purpose (from dropdown, or your own text) |
 | Service Letter | Purpose |
 | Visa Processing Letter | Purpose, comments (max 300 characters) |
-| Relocation Letter | Initiated by your RM or India Team specialist — no action required from you |
 | Letter of Recommendation | Purpose, description of your role and responsibilities |
 
 Everything else — your name, designation, UID, work location — is filled in automatically.
@@ -74,7 +72,6 @@ Everything else — your name, designation, UID, work location — is filled in 
 | Service Letter | Instant |
 | Visa Processing Letter | Requires review — you'll be notified when ready |
 | Letter of Recommendation | Requires review — you'll be notified when ready |
-| Relocation Letter | Initiated by your RM or India Team specialist — processed automatically on your relocation date |
 
 You will receive a notification when your letter is ready for download.
 

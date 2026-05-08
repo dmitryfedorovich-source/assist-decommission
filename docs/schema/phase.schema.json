@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "phase.schema.json",
+  "title": "Phase",
+  "description": "A project phase (e.g., Phase 1 — Reference Letters).",
+  "type": "object",
+  "required": ["id", "number", "title", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Machine-readable phase identifier.",
+      "pattern": "^phase[1-9]$",
+      "examples": ["phase1", "phase2", "phase3", "phase4"]
+    },
+    "number": {
+      "type": "integer",
+      "description": "Phase number.",
+      "minimum": 1,
+      "maximum": 9
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable phase title.",
+      "examples": ["Reference Letters", "Compensation Letters", "Separation Letters"]
+    },
+    "subtitle": {
+      "type": ["string", "null"],
+      "description": "Optional subtitle or investigation note."
+    },
+    "status": {
+      "type": "string",
+      "description": "Current phase status.",
+      "enum": ["active", "next", "plan", "inv", "done", "tbd"]
+    },
+    "go_live_date": {
+      "type": ["string", "null"],
+      "description": "Target go-live date in ISO format, or null if TBD.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "source_platform": {
+      "type": "string",
+      "description": "Platform being migrated FROM.",
+      "default": "assist.epam.com"
+    },
+    "target_platform": {
+      "type": "string",
+      "description": "Platform being migrated TO.",
+      "default": "docs.epam.com"
+    },
+    "letter_types": {
+      "type": "array",
+      "description": "List of letter/document types included in this phase.",
+      "items": {
+        "type": "object",
+        "required": ["name", "routing"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Official letter type name."
+          },
+          "routing": {
+            "type": "string",
+            "description": "How the letter is processed.",
+            "enum": ["auto_verified", "manual_dv_edv", "specialist_initiated", "hrms_triggered", "batch_upload", "tbd"]
+          },
+          "in_scope": {
+            "type": "boolean",
+            "description": "Whether this type is in scope for this phase.",
+            "default": true
+          },
+          "notes": {
+            "type": ["string", "null"],
+            "description": "Additional routing or scope notes."
+          }
+        }
+      },
+      "default": []
+    },
+    "key_decisions": {
+      "type": "array",
+      "description": "Decision IDs that define the core scope of this phase.",
+      "items": {
+        "type": "string",
+        "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+      },
+      "default": []
+    },
+    "blocking_oqs": {
+      "type": "array",
+      "description": "Open Question IDs currently blocking this phase.",
+      "items": {
+        "type": "string",
+        "pattern": "^OQ(-[A-Z0-9]+)?-[0-9]+$"
+      },
+      "default": []
+    },
+    "sign_off_stages": {
+      "type": "array",
+      "description": "Sign-off stages for this phase.",
+      "items": {
+        "type": "object",
+        "required": ["number", "name", "participants", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "number": { "type": "integer" },
+          "name": { "type": "string" },
+          "participants": { "type": "string" },
+          "date": { "type": ["string", "null"] },
+          "status": {
+            "type": "string",
+            "enum": ["pending", "in_progress", "done"]
+          }
+        }
+      },
+      "default": []
+    },
+    "deliverables": {
+      "type": "array",
+      "description": "Document IDs produced for this phase.",
+      "items": { "type": "string" },
+      "default": []
+    }
+  }
+}

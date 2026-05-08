@@ -1,0 +1,72 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: roadmap
+  DATA SOURCE: docs/src/data/phases.yaml
+  SLOTS:
+    phases[]          → .rph cards (loop)
+      phase.status    → .rph CSS class (active | next | plan | inv | done)
+      phase.label     → .rph-tag text (includes status label)
+      phase.title     → h3 text
+      phase.items[]   → <li> items (inner loop)
+    signoff_stages    → first bottom card
+    blocking_oqs      → second bottom card
+    resources         → third bottom card
+  ═══════════════════════════════════════════════════════════
+-->
+
+<!-- ── Section header ── -->
+<div class="section-tag">08 — Phase Roadmap</div>
+<h2>Migration Phases</h2>
+<p class="section-desc">Migration is structured in phases by letter type complexity. Each phase follows the same documentation workflow: inputs → knowledge → outputs → validation → stakeholder sign-off → dev handoff.</p>
+
+<!-- ── Phase cards ── -->
+<div class="roadmap">
+
+  <!-- LOOP: phases → phase -->
+  <div class="rph <!-- SLOT: phase.status -->">
+    <div class="rph-tag"><!-- SLOT: phase.label --></div>
+    <h3><!-- SLOT: phase.title --></h3>
+    <ul>
+      <!-- INNER-LOOP: phase.items → item -->
+      <li><!-- SLOT: item --></li>
+      <!-- /INNER-LOOP -->
+    </ul>
+  </div>
+  <!-- /LOOP -->
+
+</div>
+
+<!-- ── Bottom 3-column cards ── -->
+<div class="card-grid card-grid-3" style="margin-top:28px;">
+
+  <!-- COMPONENT-BLOCK: signoff_stages (from phases.yaml) -->
+  <div class="card card-<!-- SLOT: signoff_stages.accent -->">
+    <h3><!-- SLOT: signoff_stages.title --></h3>
+    <ul style="margin-top:8px;">
+      <!-- LOOP: signoff_stages.items → item -->
+      <li><!-- SLOT: item --></li>
+      <!-- /LOOP -->
+    </ul>
+  </div>
+
+  <!-- COMPONENT-BLOCK: blocking_oqs (from phases.yaml) -->
+  <div class="card card-<!-- SLOT: blocking_oqs.accent -->">
+    <h3><!-- SLOT: blocking_oqs.title --></h3>
+    <ul style="margin-top:8px;">
+      <!-- LOOP: blocking_oqs.items → item -->
+      <li><!-- SLOT: item --></li>
+      <!-- /LOOP -->
+    </ul>
+  </div>
+
+  <!-- COMPONENT-BLOCK: resources (from phases.yaml) -->
+  <div class="card card-<!-- SLOT: resources.accent -->">
+    <h3><!-- SLOT: resources.title --></h3>
+    <ul style="margin-top:8px;">
+      <!-- LOOP: resources.items → item -->
+      <li><!-- SLOT: item --></li>
+      <!-- /LOOP -->
+    </ul>
+  </div>
+
+</div>

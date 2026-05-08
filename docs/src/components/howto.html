@@ -1,0 +1,184 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: howto
+  Static content — no data slots
+  ═══════════════════════════════════════════════════════════
+-->
+
+<div class="section-tag">10 — PO/BA Playbook</div>
+<h2>How to Use This System</h2>
+<p class="section-desc">A practical guide for the BA or PO running this project — when to feed information, how to create and update each output document, and when to validate.</p>
+
+<!-- ── Three-phase overview ── -->
+<div class="card-grid card-grid-3">
+  <div class="card card-accent">
+    <div class="card-icon">📥</div>
+    <h3>1 · Feed Inputs</h3>
+    <p>When new information arrives — meeting transcripts, stakeholder corrections, Confluence pages, verbal decisions — drop it into the system. Claude extracts decisions and open questions, updates the Feedback Log, and flags what output docs need to change.</p>
+  </div>
+  <div class="card card-blue">
+    <div class="card-icon">✍️</div>
+    <h3>2 · Generate &amp; Update Artifacts</h3>
+    <p>With confirmed facts in memory, ask Claude to create or update the relevant output document. Load the phase state file and domain_rules first. The Feedback Log is the single source of truth — Claude never invents facts. Run <code>/validate-docs</code> after every change.</p>
+  </div>
+  <div class="card card-green">
+    <div class="card-icon">✅</div>
+    <h3>3 · Verify &amp; Sign Off</h3>
+    <p>Run <code>/validate-docs</code> before every stakeholder stage. Fix all errors before sharing documents. Review warnings and accept or resolve each one. The validator reads the Feedback Log dynamically — no setup required.</p>
+  </div>
+</div>
+
+<!-- ── Input triggers ── -->
+<h3 style="font-size:15px;font-weight:800;color:#1a1a2e;margin:36px 0 14px;">When and How to Feed Information</h3>
+
+<table class="out-table">
+  <thead>
+    <tr>
+      <th>Trigger</th>
+      <th>What to do</th>
+      <th>How Claude handles it</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Meeting or call completed</td>
+      <td>Drop transcript file in <code>input/transcriptions/</code></td>
+      <td>Extracts D-XX / OQ-XX / F-XX; updates FDL and phase state; renames file with <code>[processed]-</code> prefix to prevent re-processing</td>
+    </tr>
+    <tr>
+      <td>Stakeholder sends document corrections</td>
+      <td>Save correction image in <code>input/corrections/</code><br>Ask Claude: <em>"Apply corrections from [filename]"</em></td>
+      <td>Reads image; identifies what changed; applies corrections to all affected output docs; logs F-XX entry in FDL</td>
+    </tr>
+    <tr>
+      <td>Confluence / KB page updated</td>
+      <td>Share the page URL or Confluence page ID</td>
+      <td>Reads live via MCP — no export needed; updates relevant memory files with new facts</td>
+    </tr>
+    <tr>
+      <td>Verbal or email decision confirmed</td>
+      <td>Add D-XX entry to FDL following <code>memory/traceability/templates.md</code></td>
+      <td>You must also add to RTM and <code>docs/data/decisions.yaml</code>; run <code>/validate-schema</code> to confirm sync; run <code>/validate-docs</code> to find which output docs need updating</td>
+    </tr>
+    <tr>
+      <td>New open question raised</td>
+      <td>Add OQ-XX entry to FDL; also add to <code>docs/data/open-questions.yaml</code></td>
+      <td>Validator (Check 3) tracks all OQ references in output docs and flags stale markers when OQs are resolved</td>
+    </tr>
+    <tr>
+      <td>Starting a new Claude session</td>
+      <td>No action needed — bootstrap loads automatically</td>
+      <td>Reads <code>context/project_state.md</code> → <code>context/domain_rules.md</code> → <code>reference_confluence.md</code> at session start; then loads phase state when you begin phase-specific work</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ── Artifact creation guide ── -->
+<h3 style="font-size:15px;font-weight:800;color:#1a1a2e;margin:36px 0 14px;">When to Create or Update Each Artifact</h3>
+
+<table class="out-table">
+  <thead>
+    <tr>
+      <th>Document</th>
+      <th>Create / update when</th>
+      <th>Memory to load first</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>01 — Process Flow</strong></td>
+      <td>After routing decisions are locked (D-12, D-13, D-15 confirmed for Phase 1)</td>
+      <td><code>phase[N]/state.md</code> + relevant <code>img_*.md</code> field specs</td>
+    </tr>
+    <tr>
+      <td><strong>02 — BRD</strong></td>
+      <td>After Process Flow is reviewed internally; update when new FRs are confirmed</td>
+      <td><code>phase[N]/state.md</code> — Process Flow content is the prerequisite</td>
+    </tr>
+    <tr>
+      <td><strong>03 — Internal Presentation</strong></td>
+      <td>Before the Docs platform team briefing; update after each BRD revision</td>
+      <td><code>phase[N]/state.md</code> — keeps in sync with 01 and 02</td>
+    </tr>
+    <tr>
+      <td><strong>04 / KB2 / KB3 — KB Onepagers</strong></td>
+      <td>When phase scope is confirmed (letter types and routing locked); update on date or scope changes</td>
+      <td><code>phase[N]/state.md</code> + <code>domain_rules.md</code> (management tone)</td>
+    </tr>
+    <tr>
+      <td><strong>05 — India SME Validation</strong></td>
+      <td>Before India stakeholder meeting (Stage 2); update after each India team feedback round</td>
+      <td><code>phase[N]/state.md</code> + all Open OQs with "Stage 2" target resolution</td>
+    </tr>
+    <tr>
+      <td><strong>06 — India Colleagues Guide</strong></td>
+      <td>After Stage 2 sign-off — <em>only confirmed facts</em>; update before go-live communications</td>
+      <td><code>phase[N]/state.md</code> + <code>domain_rules.md</code> (employee tone, no uncertainty markers)</td>
+    </tr>
+    <tr>
+      <td><strong>FDL (Feedback &amp; Decisions Log)</strong></td>
+      <td>After every meeting, correction, or confirmed decision — always the first file updated</td>
+      <td>No load needed — FDL is the source; validator reads it fresh on every run</td>
+    </tr>
+    <tr>
+      <td><strong>RTM</strong></td>
+      <td>After every new D-XX or OQ-XX; keep in sync with FDL at all times</td>
+      <td>Use entry templates in <code>memory/traceability/templates.md</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ── Common workflows ── -->
+<h3 style="font-size:15px;font-weight:800;color:#1a1a2e;margin:36px 0 14px;">Common Step-by-Step Workflows</h3>
+
+<div class="card-grid card-grid-2">
+
+  <div class="card card-accent">
+    <h3>🎙️ Process a Meeting Transcript</h3>
+    <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+      <li>Drop transcript file in <code>input/transcriptions/</code></li>
+      <li>Tell Claude: <em>"Process the new transcript"</em></li>
+      <li>Claude extracts D-XX / OQ-XX / F-XX → updates FDL → updates phase state → renames file with <code>[processed]-</code> prefix</li>
+      <li>Run <code>/validate-docs</code> — check what output docs need updating</li>
+      <li>Apply required fixes; re-run <code>/validate-docs</code> until clean</li>
+    </ol>
+  </div>
+
+  <div class="card card-blue">
+    <h3>✏️ Apply Stakeholder Corrections</h3>
+    <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+      <li>Save correction image in <code>input/corrections/</code></li>
+      <li>Tell Claude: <em>"Apply corrections from [filename]"</em></li>
+      <li>Claude reads image → identifies changes → updates all affected output docs → logs F-XX in FDL</li>
+      <li>Run <code>/validate-docs</code> to confirm corrections propagated cleanly across all docs</li>
+    </ol>
+  </div>
+
+  <div class="card card-green">
+    <h3>🔒 Add a Confirmed Decision</h3>
+    <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+      <li>Add D-XX entry to <code>output/shared/Feedback_Decisions_Log.md</code> (follow <code>templates.md</code>)</li>
+      <li>Add matching row to <code>output/shared/RTM.md</code></li>
+      <li>Add entry to <code>docs/data/decisions.yaml</code></li>
+      <li>Run <code>/validate-schema</code> to confirm sync across all three files</li>
+      <li>Run <code>/validate-docs</code> → update all flagged docs → re-run until clean</li>
+    </ol>
+  </div>
+
+  <div class="card card-purple">
+    <h3>📋 Prepare for an India SME Meeting</h3>
+    <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
+      <li>Run <code>/validate-docs</code> — resolve all errors first</li>
+      <li>Review Open OQs in FDL with "Stage 2 review" as target resolution</li>
+      <li>Confirm each open OQ has a corresponding question in <code>05_India_SME_Validation.md</code></li>
+      <li>Check sign-off table in 05 has India stakeholder names</li>
+      <li>Share 05 with Satish / Satya / Sasanka for review; record responses as new D-XX or OQ updates</li>
+    </ol>
+  </div>
+
+</div>
+
+<!-- ── Validation cadence ── -->
+<div class="info-box" style="margin-top:28px;">
+  <p><strong>Validation rule:</strong> Run <code>/validate-docs</code> after every change to any file in <code>output/</code>. This is the single quality gate for the entire documentation set. All <strong>❌ errors must be fixed</strong> before sharing any document with a stakeholder. <strong>⚠️ warnings must be reviewed</strong> and either resolved or explicitly accepted with a note in the FDL. Run <code>/build-overview</code> after any change to <code>docs/src/</code> — never edit <code>Project_Overview.html</code> directly.</p>
+</div>

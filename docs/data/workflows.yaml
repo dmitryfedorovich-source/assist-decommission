@@ -1,0 +1,328 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#  CANONICAL WORKFLOWS DATA
+#  Schema:    docs/schema/workflow.schema.json
+#  Source of truth for: RTM Workflow matrix, Process Flow document (01)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+_meta:
+  schema_version: "1.0"
+  schema_ref: "../schema/workflow.schema.json"
+  last_updated: "2026-05-08"
+  maintainer: "BA team"
+
+workflows:
+
+  # ── Phase 1 — Reference Letters ──────────────────────────────────────────
+
+  - id: Trk-A
+    name: "Track A — Auto-Verified"
+    phase: 1
+    trigger: "Employee self-service request in EPAM Docs"
+    letter_types:
+      - "Form 60"
+      - "Address Proof Letter"
+      - "Service Letter"
+    actors:
+      - role: "Employee"
+        action: "Submits request; downloads generated letter"
+      - role: "DOCS Platform"
+        action: "Auto-verifies and generates letter"
+    steps:
+      - step: 1
+        actor: "Employee"
+        action: "Opens EPAM Docs, selects letter type, fills form"
+        system: "DOCS"
+        outcome: "Request created in 'Pending' status"
+        decision_ref: "D-15"
+      - step: 2
+        actor: "DOCS Platform"
+        action: "Auto-verifies employee data from People Portal pre-population"
+        system: "DOCS + People Portal"
+        outcome: "Data validated; letter generation triggered"
+        decision_ref: "D-15"
+      - step: 3
+        actor: "DOCS Platform"
+        action: "Generates letter from template; status changes to 'Generated'"
+        system: "DOCS"
+        outcome: "Letter available for download"
+        decision_ref: null
+      - step: 4
+        actor: "Employee"
+        action: "Downloads generated letter"
+        system: "DOCS"
+        outcome: "Request completed"
+        decision_ref: null
+      - step: 5
+        actor: "DOCS Platform"
+        action: "Auto-closes request 2 days after final status reached"
+        system: "DOCS"
+        outcome: "Request archived"
+        decision_ref: "D-06"
+    special_behaviors:
+      - condition: "Request rejected (e.g., data mismatch)"
+        handling: "Employee opens a new request — no resubmit on same request"
+        decision_ref: "D-07"
+      - condition: "Address not found in People Portal (Address Proof Letter)"
+        handling: "Warning message shown; employee must update People Portal first"
+        decision_ref: null
+      - condition: "Form has Self-Declaration requirement (Assist legacy)"
+        handling: "Static disclaimer text shown at top of form — no functional gate"
+        decision_ref: "D-17"
+    source_decisions: ["D-06", "D-07", "D-15", "D-17"]
+
+  - id: Trk-B
+    name: "Track B — Manual DV/EDV Verification"
+    phase: 1
+    trigger: "Employee self-service request in EPAM Docs"
+    letter_types:
+      - "Visa Processing Letter"
+      - "Letter of Recommendation (LOR)"
+    actors:
+      - role: "Employee"
+        action: "Submits request; downloads letter after specialist sends it"
+      - role: "India Team DV/EDV specialist"
+        action: "Verifies document and manually sends to employee"
+    steps:
+      - step: 1
+        actor: "Employee"
+        action: "Opens EPAM Docs, selects letter type, fills form (including Comments field for Visa Processing)"
+        system: "DOCS"
+        outcome: "Request created; awaiting specialist review"
+        decision_ref: "D-15"
+      - step: 2
+        actor: "India Team DV/EDV specialist"
+        action: "Reviews request, verifies information"
+        system: "DOCS"
+        outcome: "Verification complete"
+        decision_ref: "D-12"
+      - step: 3
+        actor: "India Team DV/EDV specialist"
+        action: "Sends letter to employee via 'Send Document' action in DOCS"
+        system: "DOCS"
+        outcome: "Employee notified; letter available for download"
+        decision_ref: "D-12"
+      - step: 4
+        actor: "Employee"
+        action: "Downloads letter from EPAM Docs"
+        system: "DOCS"
+        outcome: "Request completed"
+        decision_ref: null
+      - step: 5
+        actor: "DOCS Platform"
+        action: "Auto-closes request 2 days after final status reached"
+        system: "DOCS"
+        outcome: "Request archived"
+        decision_ref: "D-06"
+    special_behaviors:
+      - condition: "Request rejected by DV/EDV specialist"
+        handling: "Employee opens a new request — no resubmit on same request"
+        decision_ref: "D-07"
+      - condition: "LOR — alternative accepted scenario"
+        handling: "Employee may receive invitation and download letter before or after verification"
+        decision_ref: "D-13"
+    source_decisions: ["D-06", "D-07", "D-09", "D-12", "D-13", "D-15"]
+
+  - id: Lifecycle
+    name: "Request Lifecycle"
+    phase: 1
+    trigger: "Any request status change"
+    letter_types:
+      - "Form 60"
+      - "Address Proof Letter"
+      - "Service Letter"
+      - "Visa Processing Letter"
+      - "Letter of Recommendation (LOR)"
+    actors:
+      - role: "DOCS Platform"
+        action: "Manages status transitions and auto-close"
+    steps:
+      - step: 1
+        actor: "DOCS Platform"
+        action: "Request created — status: Pending"
+        system: "DOCS"
+        outcome: null
+        decision_ref: null
+      - step: 2
+        actor: "DOCS Platform"
+        action: "Processing/verification — status: In Progress"
+        system: "DOCS"
+        outcome: null
+        decision_ref: null
+      - step: 3
+        actor: "DOCS Platform"
+        action: "Letter ready — status: Generated"
+        system: "DOCS"
+        outcome: "Letter available for download"
+        decision_ref: null
+      - step: 4
+        actor: "DOCS Platform"
+        action: "Auto-close 2 days after all forms reach final status"
+        system: "DOCS"
+        outcome: "Request archived"
+        decision_ref: "D-06"
+    special_behaviors:
+      - condition: "Rejection at any verification step"
+        handling: "Status set to Rejected; employee creates new request"
+        decision_ref: "D-07"
+    source_decisions: ["D-06", "D-07"]
+
+  - id: Form-UI
+    name: "Form UI — Field Specifications"
+    phase: 1
+    trigger: "Employee opens a letter request form"
+    letter_types:
+      - "Form 60"
+      - "Address Proof Letter"
+      - "Service Letter"
+      - "Visa Processing Letter"
+      - "Letter of Recommendation (LOR)"
+    actors:
+      - role: "Employee"
+        action: "Fills in form fields"
+      - role: "DOCS Platform"
+        action: "Pre-populates data from People Portal; enforces field constraints"
+    steps:
+      - step: 1
+        actor: "DOCS Platform"
+        action: "Pre-populates employee data from People Portal (name, ID, address, etc.)"
+        system: "DOCS + People Portal"
+        outcome: "Form shows pre-filled employee data"
+        decision_ref: null
+      - step: 2
+        actor: "Employee"
+        action: "Fills employee-entered fields (Purpose dropdown, Comments, Notes, etc.)"
+        system: "DOCS"
+        outcome: "Form complete"
+        decision_ref: "D-09"
+      - step: 3
+        actor: "DOCS Platform"
+        action: "Shows static disclaimer text at top of applicable forms"
+        system: "DOCS"
+        outcome: "Informational notice displayed — no functional gate"
+        decision_ref: "D-17"
+    special_behaviors:
+      - condition: "Visa Processing Letter Comments field"
+        handling: "Text field, max 300 chars, single line. Requires DOCS dev (OQ-11)."
+        decision_ref: "D-09"
+      - condition: "LOR Notes/Responsibilities field"
+        handling: "Multi-line text, max ~1000 chars. Requires DOCS dev (OQ-11)."
+        decision_ref: "D-13"
+      - condition: "Address Proof — address edit"
+        handling: "OQ-14 open: whether employee can edit address or field is locked."
+        decision_ref: null
+    source_decisions: ["D-09", "D-13", "D-15", "D-17"]
+
+  # ── Phase 2 — Compensation Letters ───────────────────────────────────────
+
+  - id: P2-Batch
+    name: "Batch Upload — Compensation Letters"
+    phase: 2
+    trigger: "India HR team uploads XLS file to EPAM Docs"
+    letter_types:
+      - "Salary Revision Letter"
+      - "Promotion Letter"
+      - "Increment Letter"
+      - "Variable Pay Letter"
+    actors:
+      - role: "India HR team"
+        action: "Prepares and uploads XLS file; monitors generation status"
+      - role: "Employee"
+        action: "Receives notification; opens and accepts compensation letter"
+      - role: "DOCS Platform"
+        action: "Processes XLS; generates password-protected letters; sends notifications"
+    steps:
+      - step: 1
+        actor: "India HR team"
+        action: "Prepares XLS with employee data and Yes/No flags for text blocks"
+        system: "Local / SharePoint"
+        outcome: "XLS ready for upload"
+        decision_ref: "D-P2-06"
+      - step: 2
+        actor: "India HR team"
+        action: "Uploads XLS to EPAM Docs batch processing module"
+        system: "DOCS"
+        outcome: "Batch job created"
+        decision_ref: null
+      - step: 3
+        actor: "DOCS Platform"
+        action: "Generates letters for all employees using single base template + conditional blocks; applies PAN-password protection"
+        system: "DOCS"
+        outcome: "Letters generated with PAN-password; status: Generated"
+        decision_ref: "D-P2-03"
+      - step: 4
+        actor: "DOCS Platform"
+        action: "Sends notification to each employee"
+        system: "DOCS + Email"
+        outcome: "Employees notified"
+        decision_ref: null
+      - step: 5
+        actor: "Employee"
+        action: "Opens letter (PAN password), reviews, clicks Accept"
+        system: "DOCS"
+        outcome: "Acceptance date-timestamped; activity log updated"
+        decision_ref: "D-P2-02"
+      - step: 6
+        actor: "DOCS Platform"
+        action: "Auto-closes request ~1 week after Generated status"
+        system: "DOCS"
+        outcome: "Request archived"
+        decision_ref: "D-P2-05"
+    special_behaviors:
+      - condition: "Employee does not accept letter"
+        handling: "Request remains open until auto-close; salary processed regardless"
+        decision_ref: "D-P2-02"
+      - condition: "PAN protection not feasible in DOCS"
+        handling: "Minimum fallback: disclaimer/caution note before employee can open letter"
+        decision_ref: "D-P2-03"
+    source_decisions: ["D-P2-01", "D-P2-02", "D-P2-03", "D-P2-04", "D-P2-05", "D-P2-06", "D-P2-07"]
+
+  # ── Phase 3 — Separation Letters ─────────────────────────────────────────
+
+  - id: P3-HRMS
+    name: "HRMS-Triggered — Separation Letters"
+    phase: 3
+    trigger: "Employee's last working day event from People system"
+    letter_types:
+      - "Experience Letter"
+      - "Relieving Letter"
+      - "LOR (ex-employees)"
+    actors:
+      - role: "People system (HRMS)"
+        action: "Publishes last-working-day event to DOCS (OQ-P3-02 open)"
+      - role: "DOCS Platform"
+        action: "Auto-creates letter requests; sends to personal email"
+      - role: "Ex-employee"
+        action: "Receives letters at personal email; may log in via personal email link (OQ-P3-04 open)"
+    steps:
+      - step: 1
+        actor: "People system (HRMS)"
+        action: "Employee confirms personal email before last working day (automated prompt)"
+        system: "People Platform"
+        outcome: "Personal email confirmed and stored"
+        decision_ref: "D-P3-02"
+      - step: 2
+        actor: "People system (HRMS)"
+        action: "Publishes last-working-day event to DOCS on exit date"
+        system: "People Platform → DOCS"
+        outcome: "Letter requests auto-created in DOCS"
+        decision_ref: null
+      - step: 3
+        actor: "DOCS Platform"
+        action: "Generates Experience Letter and Relieving Letter from template using People data"
+        system: "DOCS"
+        outcome: "Letters generated; ex-employee notified at personal email"
+        decision_ref: "D-P3-01"
+      - step: 4
+        actor: "Ex-employee"
+        action: "Accesses and downloads letters (via personal email link or DOCS login)"
+        system: "DOCS"
+        outcome: "Letters delivered"
+        decision_ref: null
+    special_behaviors:
+      - condition: "Auto-trigger not feasible (OQ-P3-02 open)"
+        handling: "India Team specialist manually creates request on employee's last working day"
+        decision_ref: null
+      - condition: "Ex-employee DOCS access via personal email (OQ-P3-04 open)"
+        handling: "TBD — applicant flow may be used; technical feasibility under investigation"
+        decision_ref: null
+    source_decisions: ["D-P3-01", "D-P3-02"]

@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "open-question.schema.json",
+  "title": "OpenQuestion",
+  "description": "An open question tracked in the Feedback & Decisions Log.",
+  "type": "object",
+  "required": ["id", "phase", "question", "owner", "target_resolution", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier — OQ-01, OQ-P2-01, OQ-P3-01, etc.",
+      "pattern": "^OQ(-[A-Z0-9]+)?-[0-9]+$",
+      "examples": ["OQ-05", "OQ-P2-02", "OQ-P3-04"]
+    },
+    "phase": {
+      "type": ["integer", "string"],
+      "description": "Phase this OQ primarily belongs to.",
+      "enum": [1, 2, 3, 4, "cross"]
+    },
+    "question": {
+      "type": "string",
+      "description": "Full question text as recorded in the Feedback & Decisions Log.",
+      "minLength": 10
+    },
+    "owner": {
+      "type": "string",
+      "description": "Person or team responsible for resolving this OQ."
+    },
+    "raised": {
+      "type": ["string", "null"],
+      "description": "ISO date the OQ was raised (YYYY-MM-DD), or null if unknown.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$|^$"
+    },
+    "target_resolution": {
+      "type": "string",
+      "description": "Stage, meeting, or milestone by which this OQ should be resolved."
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the OQ.",
+      "enum": ["Open", "Resolved", "Deferred", "Closed"]
+    },
+    "resolution_decision": {
+      "type": ["string", "null"],
+      "description": "Decision ID that resolved this OQ, or null if still open.",
+      "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+    },
+    "resolution_note": {
+      "type": ["string", "null"],
+      "description": "Human-readable note on how the OQ was resolved or deferred."
+    },
+    "raised_by_decision": {
+      "type": ["string", "null"],
+      "description": "Decision ID that created this OQ (if applicable).",
+      "pattern": "^D(-[A-Z0-9]+)?-[0-9]+$"
+    },
+    "documents_affected": {
+      "type": "array",
+      "description": "Document codes that need updating when this OQ resolves.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "blocking_stage": {
+      "type": ["string", "null"],
+      "description": "Sign-off stage this OQ blocks, or null if non-blocking."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Additional context or cross-references."
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: outputs-table
+  DATA SOURCE: docs/src/data/outputs.yaml
+  SLOTS:
+    documents[]       → <tr> rows (loop)
+      doc.phase       → CSS class for .phase-pill (ph1 | ph2 | ph3 | phx)
+      doc.phase_label → visible text inside phase-pill
+      doc.file        → file name cell text (linked via doc.link)
+      doc.link        → relative file path for href (e.g. output/migration/Decommission_Plan.md)
+      doc.audience    → CSS class for .badge (mgmt | internal | india | employee | cross)
+      doc.audience_label → badge visible text
+      doc.purpose     → purpose cell text
+      doc.format      → format cell text (Markdown | HTML)
+    audience_note     → .info-box text (from outputs.yaml)
+  ═══════════════════════════════════════════════════════════
+-->
+
+<!-- ── Section header ── -->
+<div class="section-tag">05 — Outputs</div>
+<h2>Documents Generated</h2>
+<p class="section-desc">Each phase produces a defined set of documents, each targeting a specific audience with a specific purpose. Documents are never generic — audience rules are enforced by domain_rules.md and checked by the validator.</p>
+
+<!-- ── Table ── -->
+<table class="out-table">
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>File</th>
+      <th>Audience</th>
+      <th>Purpose</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- LOOP: documents → doc -->
+    <tr>
+      <td><span class="phase-pill <!-- SLOT: doc.phase -->"><!-- SLOT: doc.phase_label --></span></td>
+      <td><a href="<!-- SLOT: doc.link -->" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;"><!-- SLOT: doc.file --></a></td>
+      <td><span class="badge badge-<!-- SLOT: doc.audience -->"><!-- SLOT: doc.audience_label --></span></td>
+      <td><!-- SLOT: doc.purpose --></td>
+      <td><!-- SLOT: doc.format --></td>
+    </tr>
+    <!-- /LOOP -->
+
+  </tbody>
+</table>
+
+<!-- ── Audience note ── -->
+<div class="info-box">
+  <p><strong>Audience enforcement:</strong> <!-- SLOT: audience_note --></p>
+</div>

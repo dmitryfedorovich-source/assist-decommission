@@ -1,0 +1,52 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: validation
+  DATA SOURCE: docs/src/data/validation.yaml
+  SLOTS:
+    skill.icon        → icon before skill name
+    skill.command     → .sh-name text (monospace)
+    skill.description → .sh-desc text
+    checks[]          → .skill-check items (loop)
+      check           → check description text
+    result_cards[]    → 3-column result cards (loop)
+      card.icon       → emoji before card title
+      card.title      → card h3
+      card.accent     → CSS card class (accent | blue | green)
+      card.body       → card body text
+  ═══════════════════════════════════════════════════════════
+-->
+
+<!-- ── Section header ── -->
+<div class="section-tag">07 — Automated Validation</div>
+<h2>The validate-docs Skill</h2>
+<p class="section-desc">Running <code><!-- SLOT: skill.command --></code> triggers a full consistency check across all output documents. The skill reads the Feedback &amp; Decisions Log first, derives all facts dynamically, then runs all checks. No hardcoded values — the validator always reflects the latest locked decisions.</p>
+
+<!-- ── Skill box ── -->
+<div class="skill-box">
+  <div class="skill-header">
+    <span><!-- SLOT: skill.icon --></span>
+    <div>
+      <div class="sh-name"><!-- SLOT: skill.command --></div>
+      <div class="sh-desc"><!-- SLOT: skill.description --></div>
+    </div>
+  </div>
+  <div class="skill-checks">
+
+    <!-- LOOP: checks → check -->
+    <div class="skill-check"><!-- SLOT: check --></div>
+    <!-- /LOOP -->
+
+  </div>
+</div>
+
+<!-- ── Result cards ── -->
+<div class="card-grid card-grid-3" style="margin-top:16px;">
+
+  <!-- LOOP: result_cards → card -->
+  <div class="card card-<!-- SLOT: card.accent -->">
+    <h3><!-- SLOT: card.icon --> <!-- SLOT: card.title --></h3>
+    <p><!-- SLOT: card.body --></p>
+  </div>
+  <!-- /LOOP -->
+
+</div>

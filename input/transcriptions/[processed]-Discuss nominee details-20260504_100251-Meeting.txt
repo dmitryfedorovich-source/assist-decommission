@@ -1,0 +1,1265 @@
+Discuss nominee details-20260504_100251-Meeting
+Recording
+May 4, 2026, 7:01AM
+56m 46s
+Hanna Vasilenka started transcription
+Anastasia Sotnikova 0:03
+details storage here. So thank you, Satish, for answering the questions in the email.
+However, after receiving this additional information, I would like to make a few
+clarifications here. So let me first share
+my vision of the situation, how did I, so that you could be able to correct me if I
+misunderstood something. Okay.
+Satish Malla 0:23
+S.
+Perfect.
+Anastasia Sotnikova 0:33
+Okay, so according to your replies, I understood that every person have to should
+have a strategic form, for example, like form F or form 2 or some other form.
+Satish Malla 0:35
+S.
+Anastasia Sotnikova 0:52
+In addition to the information that the employees, that the people live inside the
+assist system regarding their nominees, do I get it correctly?
+Satish Malla 1:06
+NET.
+Anastasia Sotnikova 1:08
+Yes. Yeah. And without having this statutory form, the information that is entered in
+the site by the employee has no legal effect. Is it correct?
+Satish Malla 1:26
+Can you come again without entering the details?
+Anastasia Sotnikova 1:27
+So.
+Yes, we are talking about the nominee details and the information that is now being
+inserted by the person directly in the assist platform does not have any legal effect.
+So it cannot be considered as the legal information about the nominees.
+Satish Malla 1:33
+Perry.
+Anastasia Sotnikova 1:50
+if the person does not provide to you as the company representatives either form F
+or form 2 or any other statutory form that contains this information, right? So you
+cannot rely simply on the information in the assist platform.
+Satish Malla 2:00
+Right.
+Correct.
+Correct.
+Anastasia Sotnikova 2:10
+Yeah, and what I also understood is that only 50% of the people working now in
+India provided the information about the anonymous in the assist platform.
+Satish Malla 2:25
+Correct.
+Anastasia Sotnikova 2:26
+So, and where do you get the information about the rest 50% of people, about their
+nominees?
+Satish Malla 2:35
+NPF form we will get.
+And in joinings we will get an onboarding process also we get the nominee details.
+But more or less we will rely on the information that is applied in assist like what is a
+percentage of information they can opt for. One is in graduity form we will get,
+second is in PF form we will get, third is assist portal.
+We will validate all three are same or not, whichever is maximum capacity
+information is correct because gratuity form F and form 2, we will rely on the
+onboarding process. Whenever there is information available on that, we will
+immediately confirm them this is the percentage what employees opted for. This
+information we will look when there is an death case happened.
+Anastasia Sotnikova 3:12
+Mhm.
+Mhm.
+Satish Malla 3:21
+Uh, when you were serving the company.
+This is for gratuity and PF contribution percentage. The amount to whom we have to
+credit back that amount.
+Anastasia Sotnikova 3:26
+Mhm, so.
+So, you every time the person fills out the assist platform, you double check whether
+this information is the same information that they provided in the gratitude forms.
+Satish Malla 3:47
+Right.
+Anastasia Sotnikova 3:48
+How do you get those forms? Do people upload them to Docs Portal or...
+Satish Malla 3:54
+It's in docs that are available.
+Anastasia Sotnikova 3:56
+in Docs, they're available. And why do you need to make, it looks like currently you
+are having duplicated this information in Docs and in Assist Portal. What's the use of
+having this information in two places right now?
+Satish Malla 4:12
+We just want to see the percentage allocation of funds because in gratitude form,
+they might have submitted at the time of joining, but after that the person might
+married and they want to change the nominee and they want to allocate the
+percentage to mother and wife. Then we will look at the assist portal, what is the
+current state where he has been taken up.
+Anastasia Sotnikova 4:18
+Mhm.
+And.
+Satish Malla 4:34
+Few change scenarios which comes into the picture when the person was unmarried
+at the time of joining, at that moment he might kept the nominee as a parent like
+mother or his father someone, but maybe some change activity was happened and
+there was no work, no more, and they wanted to change the nominee details, then
+they'll update and assist portal.
+Darya Taranda 4:35
+So.
+Anastasia Sotnikova 4:37
+Mhm.
+Uh-huh.
+Yeah?
+Kris.
+Satish Malla 4:55
+They cannot do any updates in gratuity form or PF form once that is submitted by
+the employee. That's where this request has been made and built another portal.
+Anastasia Sotnikova 5:04
+Mhm.
+But if the updates happen to the personal state or to the wish of the person, don't
+they have to update not only the assist portal but also the statutory form?
+Satish Malla 5:19
+Statutory reform, once that is submitted, they cannot do any any change on that.
+Anastasia Sotnikova 5:19
+Because.
+Satish Malla 5:24
+We will rely on the information that is there.
+Anastasia Sotnikova 5:24
+But, but, but if you have different information in the assist portal and in the statutory
+form, which one is correct? Which one is legal one?
+Darya Taranda 5:24
+What do you?
+Satish Malla 5:35
+latest date of action which was information then we will see when the statutory form
+submitted that is maybe in the two years back or one year back and when the
+nominee details were updated in this portal that we will look at.
+Anastasia Sotnikova 5:51
+Darya, you have a question?
+Darya Taranda 5:52
+Yeah, so maybe...
+So if I understood correctly, so this issue with different information, different sources,
+you have only because employee can't update the statutory forms in onboarding
+model, correct?
+Satish Malla 6:02
+Correct.
+Platform, correct. If that is there, we can ask them to update the nominee details,
+then we can kill that completely on assist portal.
+Darya Taranda 6:07
+Okay.
+Anastasia Sotnikova 6:09
+Mhm.
+Darya Taranda 6:15
+So potentially, if we can provide you the process which will allow employees update
+these forms, so then this information, for example, can be directly taken from docs,
+for example, and just
+Satish Malla 6:31
+Yes.
+Darya Taranda 6:34
+And then in this case, do you need this information will be reflected in any kind of
+portals? So, I mean, if you have document, so then for what purpose you need
+information in any kind of system, doesn't matter, assist or people, or doesn't matter.
+Satish Malla 6:55
+We don't require any information. We just wanted to see what is the percentage of
+allocation that an employee is declared. So that information we cannot get once he
+was no, the summation instant was happened. So we will refer all the information
+and we will finalize the action.
+Darya Taranda 7:00
+Okay.
+Anastasia Sotnikova 7:01
+Mhm.
+Mmh.
+Darya Taranda 7:07
+Okay.
+Anastasia Sotnikova 7:11
+Mhm.
+Darya Taranda 7:11
+OK, so as I see the issue here, just to have this information and assist now, is this
+impossibility to update directly in onboarding model?
+Satish Malla 7:22
+Right.
+Darya Taranda 7:23
+Okay, I see. Thanks.
+Anastasia Sotnikova 7:24
+Okay.
+Well.
+I don't have any more questions, Darya, Hanna.
+For me, it looks like, for me, it looks like we should, we should update the process, we
+should update the possibility of updating this information in the in the onboarding
+portal or in docs portal, and there is, like, from my point of view, there is no necessity
+to make additional development in.
+Darya Taranda 7:35
+Mm.
+Hanna Vasilenka 7:36
+E.
+Darya Taranda 7:48
+So.
+Anastasia Sotnikova 7:55
+Any other system to double store this information and to make an additional load on
+your team, Satish, for, like, for double checking, yeah, for double checking whether
+this information is the same or not, so...
+Darya Taranda 8:07
+Strike.
+Anastasia Sotnikova 8:14
+We should make, we should fix the root cause, I think. Darya, Hanna, what do you
+think here?
+Hanna Vasilenka 8:20
+Yeah, sure, we need to check possibility of docs.
+Darya Taranda 8:23
+So let's check with, yes, yeah, let's check with Satish. So Satish, what do you think if,
+for example, I'm just like ideas, okay? If this process of updating this form will be
+implemented as, for example, self-service.
+Satish Malla 8:34
+Yeah.
+Darya Taranda 8:42
+request. When employee will provide this information to your team and your team
+will have us always in access in employees files.
+So with for sure date of update and so on, so like versions tracking. So if it will be
+okay or not.
+Satish Malla 9:06
+But in in docs perform, you're telling right in docs platform.
+Darya Taranda 9:09
+Yeah, yeah, in dogs, yes, in dogs.
+Hanna Vasilenka 9:10
+Yes, yes, yes.
+Satish Malla 9:11
+So doc platform, you are raising some request where employee would give the
+nominee details what you are telling, right?
+Darya Taranda 9:17
+Yeah.
+Hanna Vasilenka 9:18
+Yeah.
+Satish Malla 9:18
+Yeah, that should be fine, but we should also have one bulk upload from assist
+portal, whatever the current information which is there, that can be uploaded from
+backend to docs team and we can give the form there from where employee can
+update the nominee details from the from the onwards.
+Darya Taranda 9:36
+So do you mean that it shouldn't be self-service process but initiated by a team, HR
+team process?
+Satish Malla 9:43
+That can be happened, but what if the information is already there in the assist
+portal? At least we can push that information back to the new application that we are
+building in Docs. So missing anyhow, we will send an information that this is a
+process change and we will request everyone to declare the information and recheck
+the information that is available in Docs portal.
+Darya Taranda 9:49
+Okay.
+I see.
+I see, I see.
+I see. Okay, this is let's say migration, data migration or processes for it. Okay, yes,
+this is a good point. Thank you for highlighting. Yeah, we can think about it for sure.
+So I don't think it can be a huge problem for a technical team. But okay, so yeah, I
+see the picture in full. So I think that we can think about proposals and replacement
+of this.
+Satish Malla 10:05
+That we can do.
+Yes, it's here.
+Hanna Vasilenka 10:08
+Yes, yeah, yeah.
+Satish Malla 10:09
+Correct.
+Anastasia Sotnikova 10:09
+Mhm.
+Darya Taranda 10:27
+Of this section.
+Satish Malla 10:29
+Yes.
+Darya Taranda 10:30
+Great.
+Anastasia Sotnikova 10:30
+Mhm.
+Darya Taranda 10:32
+Ku.
+Hanna Vasilenka 10:33
+Maybe we've got some some time additional ones, so maybe we can discuss
+separation model if we are ready, or we've got some questions with Darya to Satish,
+and we can.
+Darya Taranda 10:46
+So I think that you can discuss resignation.
+Hanna Vasilenka 10:47
+Bad.
+Anastasia Sotnikova 10:50
+Yeah, sure, sure. Yeah, we can also cover the resignation part. So here we have your
+confirmation, Satish, that the resignation letter that has been submitted by the
+person
+Hanna Vasilenka 10:50
+OKOK.
+Anastasia Sotnikova 11:10
+that contains date of resignation, exit category, which means the exit reason and the
+comment that when the exit request is formed based on this resignation form, we
+should take only the date of resignation into this exit request.
+Satish Malla 11:28
+Right.
+Anastasia Sotnikova 11:29
+Without covering, without moving the exit category and comment, because only the
+resource manager or the people partner who is then submitting the exit request
+should be able to provide them this information. Yeah, yeah, correct.
+Satish Malla 11:46
+Comment correct.
+Anastasia Sotnikova 11:49
+Thank you. And the three fields, the LWDs per policy, notice period, days remaining,
+and revocation status. You mentioned here that you need this information to make
+analysis. What?
+These fields are not present in the exit request as of today. And before we add those
+fields, I would like to clarify how do you use these fields for analysis, because this will
+impact how you analyze this information, because this will impact.
+the reports that this information should be added or not to, et cetera, et cetera. So
+can you please give a little more deep details? Yes.
+Satish Malla 12:37
+So what comes? Yes, I can do that. So with these three options, last working day and
+the notice period days remaining and revocation status will help us in a way like last
+working day, as per the policy, what is the last working day? For example, if a person
+was designed today, as per his notice period clause, how many days? It is 60 days or
+70 days or it is 90 days. By default, there should be one last working day as per the
+exit policy.
+policy and what is the date we are sending we have approved him either it is after 90
+days or before 90 days or less than to that and how early we are sending him or how
+duration has been extended is notice period what we wanted to track and this notice
+period days reminding is like for example.
+as per his notice period is 90 days, but we have our employee wanted to send him or
+we are asking him or employee wanted to leave early. Maybe in 30 days or 20 or 30
+days he was leaving, then remaining 60 days should be compensated or it is to be
+waived off. Those exemption we have to get this notice period remaining this
+column.
+So based on this remaining days only, we will calculate the severance pay if in Q
+cases where RTB cases or the terminations happen. Based on the remaining notice
+period days only, we will calculate the severance pay and we will also calculate notice
+period days which is to be paid. And the revocation status talks about like what is the
+request now that.
+The status is not available. We are just seeing based on the emails which we get, like
+exit request cancelled due to status was revoked. So that's where we can able to
+track on the emails, but it would be good to have the status called if a request is
+there, how many revocations has happened in this month? We wanted to track that
+information.
+Anastasia Sotnikova 14:03
+If.
+So, as far as I can hear, only revocation status is used for the reporting purposes.
+Both dates are used for calculations of the termination of 1 particular employee.
+Satish Malla 14:31
+Correct.
+Mandatory.
+Definitely.
+Correct.
+Anastasia Sotnikova 14:43
+Okay, so no reporting, no reports are needed for those two days. And how do you
+calculate, and who does calculate all those payments that
+Should be done to the person who does this and when.
+Satish Malla 15:04
+At the time of exit last working day, there is a comment which is there already in not
+use task, HR not use there is a task where we will validate and we will give the days
+how many days and HR BPs will give us the comments there. Based on that
+comments, we will update that information.
+Anastasia Sotnikova 15:12
+Uh-huh.
+Is it something that you use in a vacation portal, like compensation, seller
+compensation, or not?
+Satish Malla 15:30
+No, that is like only on the leave and cashment days that to be processed back.
+That's where Satya test and other is like, I'll tell you the task name just a minute.
+On which task exactly that information we track?
+Anastasia Sotnikova 15:49
+This is like the Compensation task in the exit request, not.
+Satish Malla 15:55
+No, that is an.
+Anastasia Sotnikova 15:55
+No.
+Satish Malla 15:57
+So.
+This, we will update in HRMS.
+Under the task of HR nodes, we we update where at.
+Shall I share the screen?
+Anastasia Sotnikova 16:45
+Yep.
+Sure.
+Satish Malla 16:52
+So, I just taken an exit person who is exiting today, so...
+Anastasia Sotnikova 16:55
+Yep.
+Satish Malla 16:57
+This is a place where you update the information.
+Anastasia Sotnikova 17:01
+Very soon.
+I see.
+Satish Malla 17:07
+Under HR notice, we will update either how many notice days to be paid and any
+comments to get it. And we have an internal Excel from HRBPs, like project managers
+and HRBPs what we have.
+So in that they will mention the comments what action to be made on this profile. I'll
+show that Excel.
+Anastasia Sotnikova 17:30
+That would be useful.
+No, dears.
+Uh huh. So this information is not stored in Compensation portal or in the Vacation
+portal.
+Satish Malla 17:42
+No, no.
+So, these inputs after talking to a candidate, respect to HRBP will decide and project
+people will decide salary will be paid last week and then how many days to be paid
+extra 60 days of notice paid to be processed back in it's NPRTP case which is like PIP
+cases. So, therefore, this information.
+Anastasia Sotnikova 17:50
+Mm.
+Okay.
+Mmh.
+Satish Malla 18:05
+These are the inputs we will keep there in that test slot.
+Anastasia Sotnikova 18:09
+So do I get it correctly that when then when an HR sees the amount of notice days or
+notice periods days remaining, they map this information, this amount of days to
+Satish Malla 18:09
+I'll show you.
+Anastasia Sotnikova 18:28
+some row in your Excel and understand what they need to do.
+Satish Malla 18:33
+Correct.
+Anastasia Sotnikova 18:34
+Okay. Okay.
+Satish Malla 18:37
+Here, here we have notice period clearance, so it will here they'll update all the
+information.
+Anastasia Sotnikova 18:38
+Mm-hmm.
+Mhm.
+May I ask you to show you this example of your Excel file? Because I have some
+thought that this probably might be useful for our system to know these details.
+Satish Malla 19:02
+This information, what is payables and what is recovery, we will give the information
+because some employees would be paid with compensation details. So that would
+be, there is a request from all the project managers that they're not able to access
+the comp portal and all. We will give the information if at all there is a bonus amount
+notice, what is we say.
+Any bonus that we paid, so we will show these amounts here. If at all they want to
+give in a wave off, if they want to recover, then they'll give this comment if they to be
+recovered.
+Anastasia Sotnikova 19:34
+Mhm.
+Satish Malla 19:36
+So this is just a running Excel between teams, it's internal.
+Anastasia Sotnikova 19:37
+I wonder, I wonder why this cannot be stored in some internal system in
+Compensation, for example, so that you could go and check there. They don't have...
+Darya Taranda 19:49
+Because Compensation don't have any kind of information about notice periods and
+so on and so forth.
+Satish Malla 19:51
+Compensation will not have.
+Anastasia Sotnikova 19:55
+Mhm, mhm.
+Darya Taranda 19:56
+There are.
+Satish Malla 19:56
+Any system was given, then we are happy to use that.
+Anastasia Sotnikova 20:01
+I see, I see.
+I got it, I got it.
+Darya Taranda 20:13
+It's all the amount which must be added by somebody.
+Anastasia Sotnikova 20:14
+Mhm, mhm.
+Mhm, mhm, mhm.
+Darya Taranda 20:21
+Okay.
+Anastasia Sotnikova 20:22
+Okay, and I think that one more question from my side regarding the exit date per
+policy and notice periods, days remaining, how the values in these fields are defined.
+So are there some specific rules that help you to automatically pre-fill those?
+those fields or when the HR or resource manager submits the exit request, they know
+what values to choose there.
+Satish Malla 20:51
+Where in this request, in the request, in the sense, the exact request you're talking
+about?
+Anastasia Sotnikova 20:57
+Yes, but exit requesting people platform.
+Satish Malla 21:00
+Obviously, whenever there is a request raised by either people portal, people my
+advisory or an RM, so once the request has been raised, we would be saying like
+what is the date of resignation from there for based on his grade or title, I mean, for
+his an up to.
+A4, it is 60 days. A5, whenever it is 90 days is the notice period. Based on his grade or
+title, automatically the notice period will be calculated. It should be either day he was
+kept his papers plus 59 days is the calculated formula which we take into
+consideration.
+Anastasia Sotnikova 21:22
+Mhm.
+Okay, Darya.
+Satish Malla 21:43
+Darya.
+Darya Taranda 21:43
+I have very, very strange question, but still, so, as I imagined previously, so the assist
+portal was OK, no, just separation model in assist mode in assist is first of all for
+employees.
+who wants to raise hand and wants to terminate from the company. So, but now
+what you show, it means that in assist portal, you just add all types of exits, or you
+just calculate it in Excel separately and it doesn't matter.
+Satish Malla 22:08
+Correct.
+Darya Taranda 22:21
+What is the source of...
+Initiative lips.
+Satish Malla 22:25
+This Excel is just in for between the teams. There is nothing with the portals that we
+do in under Excel.
+Darya Taranda 22:30
+Chinmoy, OK, so you generate in Excel all information from different sources,
+correct?
+Satish Malla 22:35
+Right. Correct.
+Darya Taranda 22:37
+Okay, thanks.
+Satish Malla 22:39
+So now, can you give me clarity in when we are pushing this separation model to
+people? So now employee will be able to raise a separation request or still it with a
+HR business partner or with respect to RM will reject the request.
+Darya Taranda 22:54
+So considering general migration of separation model, so we need to understand all
+details before we will present you just like our final proposal, just because there are a
+few options and depending on all this information,
+Satish Malla 23:06
+Ohh.
+Darya Taranda 23:13
+which must be added to exit request. So we need to think. So, Anya, is your question
+about this point, or we can just ask Nasta to show drafts?
+Hanna Vasilenka 23:25
+My question is about like notification period. Is it possible that employee discuss
+reducing of notification period? For example, based on level, it will be 90 days, but
+company will be okay to let him go.
+Satish Malla 23:42
+So that...
+I mean.
+Hanna Vasilenka 23:44
+in, I don't know, in 30 days. Do you need to have possibility to adjust it?
+Anastasia Sotnikova 23:58
+You mean the notice period, Anna?
+Hanna Vasilenka 23:59
+Yes, yes, yes. Is it or it's strictly 60 or 90 days or it's possible to negotiate it with RAM?
+I don't know, with project manager.
+Anastasia Sotnikova 24:00
+Mmh.
+Darya Taranda 24:09
+Yeah, for example, employee come to company and say, I want to be terminated in a
+week. So in this case, should we pay severance payment as well? Or as far as this is if
+wish of employee, we can just, we will not have any kind of
+Uh, payments from our set from company side.
+Satish Malla 24:32
+Let me clearly explain you this process that we follow on this separation model,
+Darya and Hanna, so that maybe we will for you that will help us while creating the
+draft agreement for implementation or development process. So what exactly we do
+is like if an employee, our expectation is like now it is with HRBPs and RMs.
+Hanna Vasilenka 24:34
+Mhm.
+Darya Taranda 24:42
+Yeah.
+Satish Malla 24:52
+Now we want an employee also to raise a request on People Portal. If an employee
+comes to People Portal and want to raise a separation request, so once he triggered
+a request, only two default fields will be taken. So if he request is raised today, the
+date of resignation will come as with the date today. And based on his title, a default
+notice period days will be shown there. Either it is 90 days or 60 days.
+It will be be default by soon and tentative last working day there will be a column in
+which no RL's notice period as per the policy, it will come to default 90 days or 60
+days with the title of what is holding at that moment of time where he was raising
+the resignation request. So once he mentioned the comment why he want to, it is a
+mandatory comment that.
+Darya Taranda 25:16
+Mhm.
+Satish Malla 25:37
+everyone needed. So you need to mention the comment why he want to put on his
+papers and submit the request. Once he submits the request, the request should go
+to the respective unit manager head and reporting manager should get this
+information. For example, total Rewards points, Chinmoy is head, so Chinmoy should
+be getting the information.
+Darya Taranda 25:53
+Mhm.
+Satish Malla 25:59
+And if I am reporting someone else in the team, then my reporting manager will have
+an action. And overall view, Vasantha should have information like how many people
+are in service in notice period under people under Vasantha. So that Vasantha will
+have information, how many team members are leaving from people operations or
+people manager, she should be able to see.
+And Chinmoy will look at the request. He will open the request and he will after
+discussing with me, he will keep some date, either approved, mutually agreed, one
+date would be common as fixed. So he will come and change the last working day
+approved. There should be one date which is called last working day approved date.
+So Chinmoy will come to that request and he'll update the date of request, like when
+he wanted to exit and it is agreed with the company or not. And then he'll put that
+date and submit the request. In that case, what happens is the request is approved
+and his last working day is decided to exit. All the benefits and all will be calculated
+from now onwards, like.
+notice period pay and all till last working day approved date to notice period day as
+per the policy. The different days will be as notice period days paid to be. Either they
+want to pay or it has a waved off. So those are all information we have to capture.
+Darya Taranda 27:21
+Thank you.
+Satish Malla 27:21
+And once this has been submitted, the whole information should come. There is a
+report somewhere. Once we download the report, like how we are downloading all
+information from people, where we are able to see what is the information like fulltime and maternity cases. So in the same way, we should be getting notice period in
+Saru people or what.
+Either it can be anything. We have to see what is the projected end date. So once
+request has been raised.
+Darya Taranda 27:48
+Mhm.
+Okay.
+Satish Malla 27:51
+That's expectation only for the last working day approved by RM is to be considered
+for report generation.
+Darya Taranda 27:56
+Adam, OK.
+Hanna Vasilenka 27:57
+Mhm.
+Darya Taranda 28:04
+So, Nasta, could you please move to the to the ideas without draft creation?
+Anastasia Sotnikova 28:15
+Suzhou.
+Darya Taranda 28:18
+Yes, this one. So Satish, our first idea was as far as it's very complicated from process
+point of view to allow employees submit by themselves such as requests and just for
+example in draft or any other.
+So our idea here is to create, to move this step to support portal. So for example, it
+will be visible in general list of people services for India and employee can submit
+their request that, okay, I want to terminate and so on and so forth.
+So what this, if I understood you correctly, so from general process, so the most
+important thing here is that people partner and resource manager must be informed,
+notified about this request from employee side.
+And resource manager must approve it, so support portal give us this possibility, and
+for sure there we can add some kind of fields required just by from the point of view
+of employee and later just approved, for example.
+leave last working day or end date from resource manager side. So as well, this is like
+concept, yep, without just clear details, but still. So we can use this request in support
+portal as trigger for.
+Exit request draft, for example.
+with all the information which has been added to this support request. So, and we
+can help a resource manager to create this exit request, but we need to think, I think
+one more time, about all these details which you described.
+Right now.
+Satish Malla 30:25
+But in the people already we have the request in flow, right? Only thing piece which
+is missing in people is like employees not having access to raise a request. Once we
+attach that request where employee can under actions, employee will also able to
+raise a request. Obviously the process everything is same as now, now any of.
+Darya Taranda 30:32
+Yeah.
+Yeah.
+Satish Malla 30:45
+Process again, RM goes to people and is approving on people only. Why can't we
+implement one step like employee can raise a request on people and that will go for
+RM? Yes, and RM will request either it has to be rejected or approved. Instead of
+creating a separate service request and all, I prefer employee can raise from people.
+Darya Taranda 30:53
+By themselves.
+Okay.
+Directly.
+Satish Malla 31:08
+We can stop, hold of all this process.
+Darya Taranda 31:08
+Yeah, so I'm just, so, OK, so, OK, I see. So, yes, we just as well thought about this idea
+just to provide employees directly submit, but I'm a little bit worried about the, let's
+say, quality of such requests, so, because...
+It could be.
+Satish Malla 31:29
+Let it be once he, once an employee raised the request, they will not be impact any
+of the systems, right? So, once employee ADM performed the action, either he reject
+or accept, then only that would impact the how the continuous flow is happening.
+That will much only thing is like the one that is there in assist.
+Darya Taranda 31:38
+Mhm.
+Mhm.
+Yeah.
+Satish Malla 31:48
+is getting moved to people, only just employee raise a request there in people, that's
+it, action and all will remain still same once RM approves the request. Or HRMS BP, or
+people administer the L2 or L1, once we approve the request, only the impact will
+create, like how the continuous process, any of which is there.
+Darya Taranda 31:58
+I see. Okay.
+Satish Malla 32:09
+can be performed in the same way. Only piece we have to attach there is like
+employee themselves can raise a request.
+Darya Taranda 32:09
+Mhm.
+Okay, I think that we will analyze full picture one more time and we will evaluate
+what kind of implementation will be less, let's say, risky and...
+Anastasia Sotnikova 32:21
+Mm.
+Satish Malla 32:23
+Yeah.
+Darya Taranda 32:34
+easier for system just because we as well need to consider different types of audits
+and so on and so forth and security. So because access to employee to exit request
+may be some things, so Anastasiia, what do you think? So I think it can be a little bit
+questionable from.
+From audit and security side.
+Anastasia Sotnikova 32:56
+Mm.
+Let's discuss with the data privacy office and get back with the thoughts. So I'm not
+able to, unfortunately right now, to tell anything about this. Yes, we need some more
+time to think over.
+Darya Taranda 32:59
+Yeah, let's discuss and.
+Yeah.
+Yeah.
+Anastasia Sotnikova 33:17
+I have one small question regarding the status or when the employee raises the
+request, but the resource manager rejects it. So the person is marked as retained.
+What do, for example, we have this information, no matter where,
+restore this in service portal or in people portal. We have the rejected request for
+separation. What do you do with this information? What reasoning usually resource
+manager provides when they reject these?
+this request, what you do with those reasoning that is provided and how you
+manage the further situation.
+Because I want to understand if, for example, we will store this information in people
+portal, like the rejected request, I want to understand what information must be
+stored in there and who uses this information later on.
+Satish Malla 34:07
+No.
+Not really, we don't quite in this, we consider it like any that employee.
+Anastasia Sotnikova 34:27
+All of this.
+I'm sorry, Satish, you're disappearing. Can you please repeat?
+Darya Taranda 34:36
+Yeah.
+Connection very bad, yeah.
+Anastasia Sotnikova 34:40
+Yeah, 'cause the connection is is poor, yeah.
+I'm.
+Satish Malla 34:45
+There is then a power cut, so I have to join again with the other network. I hope I'm
+audible, right?
+Anastasia Sotnikova 34:53
+Looks like, can you please repeat from the very beginning what you were saying?
+Sorry.
+Hanna Vasilenka 34:54
+Yep.
+Satish Malla 35:01
+Sorry, I was telling like, once the employee submits the request, the piece which we
+are not able to perform in people is like the submission of employee request. Now
+only that, the rest all remains the same. Like after that, RM will review the request,
+ADM will say either yes or no.
+If it is yes, then the request says like exit request, request is cancelled.
+Anastasia Sotnikova 35:24
+Yeah.
+Yeah, and if it is no.
+Satish Malla 35:28
+If it is yes, the same process is continued.
+Anastasia Sotnikova 35:33
+But if it is no, I'm interested in the part, if Erem rejects the submission, what happens
+then? Does Erem need to provide some information why he rejects the resignation?
+Satish Malla 35:47
+Then just a comment, he'll mention a comment. He'll just take a comment like, why
+are they rejecting the request? Either it has been rejection was happened or
+employees okay to perform his duties and all that. That's a minimal comment where
+RM gives and submit the request. Even.
+Anastasia Sotnikova 35:59
+Ohh.
+Satish Malla 36:07
+Now, still they are doing that in assist.
+Anastasia Sotnikova 36:09
+Mhm.
+And do you use these comments somehow in new reports or do you do you do
+something with this information or not?
+Satish Malla 36:18
+No.
+We only see how many requests has been retained. For example, revoke, how many
+exit requests are cancelled. So by default, all the exit requests which are cancelled will
+come to a revoke. What is the revoke percentage for this month? We would be
+calculated in Power BI.
+Anastasia Sotnikova 36:27
+Okay.
+I.
+Okay. Okay.
+No, any connection with the like talks in telescope or in people? No, no, no
+connection. OK.
+Satish Malla 36:52
+No.
+No.
+Unless until RM approves, there is no impact on any of the portals. It will not reflect
+on any portal.
+Anastasia Sotnikova 37:00
+Mhm.
+Mhm, mhm.
+So, okay.
+Okay, I got it. No more questions from my side as of today.
+Darya, Anya.
+Satish Malla 37:20
+Ku.
+Darya Taranda 37:20
+Great. So it become more clear. Thank you so much, Satish, for the details. So I think
+that NYSTA will help us to summarize all the information which we get today. And we
+will not, so quite soon we will share with you, Satish, the proposals about
+implementation of nominee details. So as well, we will discuss it with Doc's team.
+Satish Malla 37:22
+Yes, please.
+Anastasia Sotnikova 37:25
+Thank you.
+Mm-hmm.
+Darya Taranda 37:45
+So what we can implement there and Nasta will help us to summarize more or less
+separation model. So I think that we got all the required details for us. Yes, Nasta.
+Satish Malla 38:00
+Perfect.
+Anastasia Sotnikova 38:01
+Yeah, thank you. Thank you so much. So you are having a little bit more time to
+cover your questions.
+Darya Taranda 38:02
+Right, right.
+Hanna Vasilenka 38:08
+Yeah, Dasha, maybe we can ask our questions to Satish since we've got like 20
+minutes.
+Darya Taranda 38:10
+Yep.
+It's true.
+Yes, sure. So, Anastasiia, thank you so much. So, you can disconnect. Yeah, thank you.
+Anastasia Sotnikova 38:17
+Okay.
+Thank you. Thank you, colleagues. Thank you, Satish, and have a good rest of the
+day.
+Satish Malla 38:22
+Thank you. Thank you.
+Hanna Vasilenka 38:23
+Thank you, thank you. Yeah, thank you. Yeah, Satish, we've got like some question
+from the docs team. I summarize and send them on Thursday and maybe we can
+discuss it now on the call, like open question. Yeah, yeah, yeah, yeah, it will be very
+useful call, yeah, because we will clarify all questions, yeah.
+Satish Malla 38:25
+Thank you, Anastasiia.
+It's worse.
+Darya Taranda 38:40
+It's a complex, complex call.
+Very useful time.
+Satish Malla 38:48
+When Hanna comes into the call, it will always be productive. She will not lift for 10
+minutes.
+Hanna Vasilenka 38:48
+Yeah.
+Darya Taranda 38:51
+Yeah.
+Yeah.
+Hanna Vasilenka 38:53
+Yeah, I'm using every second here. So, Darya, maybe I will show what we've got the
+mirror from the docs team here, and maybe it will be it here.
+Darya Taranda 38:54
+A nice, good helper.
+Yes, sure. Let's discuss. So, because Satish, we just spent a few hours during last week
+with Doc's team. And unfortunately, it's not clear picture which they provide. So me
+and Daniel, we decided to ask you directly.
+Satish Malla 39:13
+Okay.
+Darya Taranda 39:22
+What does it mean? So because for us, it looks like a little bit illogical or just not
+correct. So maybe they understood incorrectly or maybe we can just decide to find
+some any other option. So, Anya, yeah.
+Hanna Vasilenka 39:41
+Yeah, the first question regarding the compensation letter, do we need to have some
+acknowledgement that the employee reviewed the letter of compensation? Is it?
+Darya Taranda 39:41
+The first notes.
+Satish Malla 39:52
+Just an option where a radio button is also fine, accepted or not accepted. Once he
+accepted, we should capture the date time. For example, today I accept, then it
+should be May 4th, that in one is the date time we take. That's it. We will not take
+any of the information like.
+Darya Taranda 40:06
+Mm-hmm.
+Alexa.
+Mm-hmm.
+Satish Malla 40:27
+Only radio button where accept will be there. Once he really click on that accept
+button and it disables and it should give us the date stamp.
+When did he accept it?
+Hanna Vasilenka 40:35
+The.
+Darya Taranda 40:35
+So what will be, so what will be with this compensation letter if employee do not
+make any actions? So employee do not accept nothing.
+Satish Malla 40:46
+No action. One, one, I think. Once letter is rolled out, that compensation will be
+processed. So he might move to his RM and he might raise his concern. If they have
+any budget, they'll come back and revise the salary. But there is no action that where
+an employee will be penalized, like no compensation will be processed unless you
+accept. There is nothing else.
+Darya Taranda 40:53
+Okay.
+Auction.
+Satish Malla 41:07
+Which?
+Darya Taranda 41:08
+So.
+Hanna Vasilenka 41:08
+E.
+We've got very simple variant just to give to download this letter. Yeah, must upload
+as normal one and employee opens that page and see like document to download,
+Compensation letter, push the button, download it, that's all. Even this is a very
+simple variant.
+Darya Taranda 41:25
+And, and we need, sorry, sorry, and so if I understood correctly, so we need to have
+time stamp when in play, download this email, correct, Satish?
+Satish Malla 41:39
+Oh, find download rather than download it can be like accepted.
+Darya Taranda 41:45
+Mhm.
+Okay.
+Hanna Vasilenka 41:46
+Because, yeah, we've got like...
+Satish Malla 41:48
+Download is like, say, tomorrow if I download multiple times, it will not give the log
+report, right? It will just give the latest date.
+Darya Taranda 41:52
+Okay, yeah, it will be. I agree. I agree, agree. Good point.
+Hanna Vasilenka 41:54
+Yeah.
+Satish Malla 41:56
+I need, I need the letter date whenever that is been, truly he accepted that.
+Darya Taranda 42:02
+Okay.
+Hanna Vasilenka 42:02
+Like first time, first time action, yes, first time action. OK, we see, yeah, because more
+complicated cases, if we at the end of this document will be OK, or some button like
+submit some actions which we can take the time or some, I don't know.
+Satish Malla 42:05
+Yep.
+Yeah, correct.
+Hanna Vasilenka 42:22
+A check box like acknowledged, for example.
+Satish Malla 42:25
+When this the docs when we are pushing letters all everything to here, let's
+categorized into two different type. Compensation letters is under one category and
+all self-service letters like address proofs, visual letters and all into one category.
+Hanna Vasilenka 42:43
+Compensation and separation.
+Satish Malla 42:47
+I'll show you when has it what it comes like.
+Hanna Vasilenka 42:48
+Yes, yeah, could you please show?
+Darya Taranda 42:55
+So then, I know we need the second option, correct, with...
+Satish Malla 42:57
+Let me share my screen.
+Hanna Vasilenka 43:01
+Yes, maybe middle between 1st and 2nd.
+Darya Taranda 43:05
+Yeah.
+Okay. Okay. This is about Compensation letters. Okay.
+Hanna Vasilenka 43:11
+Yeah, one second, Satish, will show us.
+Satish Malla 43:12
+So, I'm just sharing.
+I just shared my screen. Hope it is visible, right? So under my documents, I can see
+what all the reference letters is like, all HRMS letters, like self-service letters, all
+request proof of service letters, whatever we take.
+Darya Taranda 43:16
+OK, yes, please.
+Mhm.
+Yeah, this is more or less clear, yeah.
+Hanna Vasilenka 43:31
+Mhm.
+Satish Malla 43:33
+So, here, once we click on Compensation letters, it will get what all generated letters
+we have.
+Hanna Vasilenka 43:41
+And Satish one.
+Satish Malla 43:41
+See, this is I view of the letter, I this is when I accepted the letter.
+I can download from here.
+Hanna Vasilenka 43:46
+Except.
+Darya Taranda 43:46
+And.
+Hanna Vasilenka 43:49
+You need some time stamp when it was first time, like, yeah, accepted, downloaded,
+or something like that. You don't need particular, you do not.
+Satish Malla 43:53
+Accepted.
+Only on accepted.
+Hanna Vasilenka 44:01
+make any actions based on the information that acknowledgement just to see that
+this action was, that's all, without any further action.
+Darya Taranda 44:10
+Ohh.
+I have as well, strange, but I'm thinking about options. So this is this accept date, let's
+say. Is this...
+Legal requirement or this is by company policy?
+Satish Malla 44:31
+It's just a company policy where employee we are giving an option for employee to
+accept or it cannot be accepted also.
+Darya Taranda 44:32
+Do do.
+Okay, I see.
+Satish Malla 44:41
+But no action is performed on employee level. Like we will not stop his salary if he's
+not accepted nothing as such. But we just want to see, but he'll not even get an
+option to reject as well. Either he can accept or he can let's remind as not accepted.
+Darya Taranda 44:44
+Okay.
+Mhm.
+Mmh.
+Yeah, I see. So then this email, this letter is acknowledged to employee about just
+approved amount of his promotion. And employee by him or herself, if he or she
+does not agree,
+Hanna Vasilenka 44:56
+Mhm.
+Darya Taranda 45:14
+The only option is to connect with Resource Manager and discuss this promotion,
+correct?
+Satish Malla 45:22
+Correct, correct.
+Darya Taranda 45:23
+Okay, I see.
+Hanna Vasilenka 45:26
+Next question about like the security level. Is it will be enough or is that as normally
+in docs in play just go with like CCO inside of the docs and download his the
+Compensation letters at all without any additional password or something like that.
+Satish Malla 45:45
+We have to password has to be protected with PS PAN number, encapsulate.
+Hanna Vasilenka 45:53
+Is it?
+Satish Malla 45:53
+Can I just download the compensation letter? So, once he open a down
+compensation letter, it has to prompt for a password, and that will be his PA and
+PAN number.
+Darya Taranda 46:06
+Can this step be skipped?
+Considering.
+Satish Malla 46:12
+We cannot it because its Compensation letters itself should be some encrypted
+version.
+Darya Taranda 46:20
+Mm-hmm.
+Satish Malla 46:20
+Tomorrow if some audit shows like what is the security that you are following on this
+combination letters, then we can show them that we are already a password
+protected or encrypted mode.
+Darya Taranda 46:33
+Do you have the same, do you have the same password system for other
+compensation related documents? I mean, for example, pay slips and so on and so
+forth.
+Satish Malla 46:33
+Some information after you.
+That's different on the all sec portal. That's again single sign on and it will go there
+and they'll look at it easy information and they'll download and view that. This is
+related only to this letters.
+Darya Taranda 47:05
+Mhm.
+And this requirement to security. Is this from audit side or this is as well just because
+it was implemented in assist? Just because, so why I'm trying to understand how we
+can replace, just because in docs for now we don't have such such.
+capability. So because docs security rules are based on general company
+authorization rules, so SSO, access and so on and so forth. So it's like the general
+rules which control
+access of employees to any kind of systems and documents. So it means that...
+Satish Malla 47:53
+At least by default we can show one instance like caution where they accept and they
+should not be shared with anyone. I can give you the content of that caution note
+and once we accept that we can show the screen of this.
+Ku.
+Darya Taranda 48:14
+It's a very bad connection.
+Satish Malla 48:19
+Hello!
+Hanna Vasilenka 48:20
+Yeah, could, yeah, could you please, yeah, repeat?
+Darya Taranda 48:20
+Hey, you're back. Could you please repeat?
+Satish Malla 48:26
+So, whatever the thing is.
+Rolling.
+Darya Taranda 48:30
+Nope, it become worse.
+Satish Malla 48:36
+Let me change it. I got the power. One second.
+Hanna Vasilenka 48:40
+Mhm.
+Darya Taranda 48:45
+Poop poo.
+Satish Malla 48:48
+Hello.
+Hanna Vasilenka 48:49
+Yeah, yeah.
+Darya Taranda 48:49
+Yep.
+Satish Malla 48:50
+I'm audible, right?
+Darya Taranda 48:52
+Yeah.
+Hanna Vasilenka 48:52
+Yeah.
+Satish Malla 48:54
+So what I was asking is like, once we employee views his compensation letter, can we
+get a caution note like, this information should not be shared with anyone and kind
+of a security caution note. Once he accept that, we can open the document.
+Darya Taranda 48:59
+Mhm.
+Ohh.
+Mhm, mhm.
+Satish Malla 49:14
+At least, at least we are not able to provide this span feature or password protection
+feature. Let's put this caution note and take an acceptance from the employee.
+Darya Taranda 49:19
+Mhm.
+So, I think that noted disclaimer, yeah.
+Hanna Vasilenka 49:24
+Like, disclaimer, yeah, it's possible, maybe.
+Satish Malla 49:27
+Disclaimer, kind of a disclaimer.
+Hanna Vasilenka 49:28
+Yeah, yeah, we will we can check with legal teams the wording for this disclaimer
+what is from the legal point it's possible to request and.
+Darya Taranda 49:28
+Yeah, it's possible.
+Satish Malla 49:38
+Yeah.
+Darya Taranda 49:41
+As well, I think that we can discuss, for example, watermarks on the...
+On the template, so something like that, and maybe we can add as well disclaimer in
+the email in the letter itself and in docs as well, so we can think how many
+disclaimers and notices we should add, so I don't think it's.
+Hanna Vasilenka 49:51
+Mhm.
+Time.
+Darya Taranda 50:07
+It's problem right now.
+Hanna Vasilenka 50:10
+Okay, so the next question which we need, Docs Team told that they found in assist
+16 documents type for compensation letter in admin panels they see, yes. And they
+say that just
+four examples was shared with them. Do you understand correct that just four
+needed to be transformed from assist to docs?
+Well, it's like some maximum combination.
+Satish Malla 50:43
+That has been moved actually. So everything, anything we will be shared into that
+letters. In this 4 categories which we have, all the letters have been moved into that
+four type of combination letters. And I have another that we have few more for flex
+to fixed.
+Hanna Vasilenka 50:58
+Ah, so this, for example, is combination.
+Satish Malla 51:04
+But any of that is again moved to fixed now. I think that recommendation is not
+needed anymore.
+Darya Taranda 51:11
+Good boy, Okay.
+Hanna Vasilenka 51:13
+I can talk to you.
+Satish Malla 51:13
+There are a couple of letters, same set of letters we used to use for flex employees as
+well, as that is getting merged to GDO, already merged effective from 1st April. So
+no further requirement of such kind of letters for us.
+Darya Taranda 51:22
+Yeah.
+Yeah, that's true.
+Hanna Vasilenka 51:26
+Okay.
+Okay, and do we need to understand that this final Compensation letter is a
+combination of different parts, for example, about, I don't know, salary, like
+promotion, and another category and another, so it's like blocks, yeah.
+Darya Taranda 51:42
+Bonuses.
+Satish Malla 51:44
+Ohh.
+Hanna Vasilenka 51:48
+Based on what it will be changed, several blocks will be appeared in email, yes?
+Satish Malla 51:53
+Yes.
+Correct.
+Hanna Vasilenka 51:57
+Okay.
+Satish Malla 51:58
+Either it will be including my bonus or excluding bonus and including LTI or exclude
+both the options or any one can be included or any all both can be excluded. These
+are the set of letters will be extracted from that Excel sheet which was provided to
+Olga.
+Hanna Vasilenka 52:04
+Mhm.
+Okay.
+If acceptance.
+One second, I will check. Yeah, the open question based on email.
+So after the question, after the accepting the like downloading information, what the
+behavior should we for this like docs request? It should be after close, for example,
+during some period of time or someone manually would like to close it.
+Satish Malla 52:54
+Sure, which request is that?
+Hanna Vasilenka 52:57
+If it will be self-service for compensation, not self-service, compensation letter, it will
+be like mass upload initiated for some person, yes. Our employee receives this,
+download them compensation letter and what is this request to do after that? It
+should be after closed, for example, in one month.
+or in one week, or the originator, or the person who opens this request, would like to
+manually somehow to complete this docs request.
+Satish Malla 53:33
+I didn't get that. Can you just repeat it again, please?
+Hanna Vasilenka 53:37
+Yes, one second to go, maybe, yeah, share it.
+Satish Malla 53:38
+Got it.
+Hanna Vasilenka 53:44
+Uh, we've got like mass creation of docs request, yes, like this one.
+Satish Malla 53:49
+Oh, oh, oh.
+Correct, correct.
+Hanna Vasilenka 53:52
+It will be in status like some in progress, open or something like that. And what we
+need to do with this auto close, like to change the status from in progress, for
+example, to auto close in months, in one week, or the originator who raises this
+request need manually.
+Satish Malla 54:09
+We just wanted the status. I got your point. We wanted status as like in processes like
+letter is not reflected to employee. Once the letter is reflected to employee doc
+portal, it should be it should be reflected as status generated. That's it.
+Hanna Vasilenka 54:14
+Mm-hmm.
+Uh-huh.
+Satish Malla 54:28
+We are not bothered about he's opened or he accepted. We will not bother about
+that. We only wanted to see, for example, in a bulk I'm generating letters for 200
+people. I just want to see for 200 people the letter is generated or not. The
+generated in the sense the letter is already reflecting in his docs portal or something
+there is an issue. There is sometimes.
+employee ID is not matching with the profile ID, then those cases is like it should
+come as an error. Then only for those error cases, I'll re-upload the information and
+make it make sure that is the status is reflected as generated.
+Hanna Vasilenka 55:02
+But what to do with this docs request? It should be, I don't know, by years to be still
+generated because it's not the last status of the docs request. Or make like this Auto
+close, for example, after months, like Compensation campaign completed, and we
+can close it here.
+Satish Malla 55:16
+It cannot close it, it cannot close.
+In Auto closed in a week.
+Hanna Vasilenka 55:21
+Okay, okay, so Auto close and then back, we've got some minutes and so, as we
+understand, you don't need any additional reports. What was this with this letter?
+Nothing additional, just this board, it will be okay.
+Satish Malla 55:41
+That's what is fair enough.
+Hanna Vasilenka 55:43
+And.
+requirements and as we understand we still wait about which in do we need to use
+Indian currency format for this.
+Satish Malla 55:53
+Yes, Indian currency format only.
+Hanna Vasilenka 55:55
+Only, okay, administration report. Security access, we understand.
+Acceptance technology.
+OK, so this four types, yeah, maybe we come or close all open questions.
+Satish Malla 56:12
+Yes.
+Hanna Vasilenka 56:14
+Yeah, yeah, very productive call. Yeah, and you can go to holiday because we already
+have got like all information what to proceed and prepare for your back for next
+week some calls where to show some processes.
+Darya Taranda 56:15
+Perfect.
+Satish Malla 56:19
+Okay.
+Darya Taranda 56:24
+Yeah.
+Satish Malla 56:32
+Yes, please.
+Darya Taranda 56:32
+While you have a rest, so the teams will work.
+Hanna Vasilenka 56:35
+Yes.
+Satish Malla 56:35
+Thank you. Thanks, Darya. Thanks, Hanna.
+Hanna Vasilenka 56:38
+Okay, yeah, yeah.
+Darya Taranda 56:38
+Thank you, Satish. Have a great holidays.
+Hanna Vasilenka 56:41
+Yeah, thanks so much. Thank you. Thank you. Bye.
+Satish Malla 56:41
+You, bye.
+Darya Taranda 56:43
+Thank you. Bye.
+Hanna Vasilenka stopped transcription

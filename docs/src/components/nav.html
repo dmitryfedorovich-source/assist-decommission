@@ -1,0 +1,20 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: nav
+  DATA SOURCE: docs/src/data/meta.yaml
+  SLOTS:
+    nav[]             → .nav-pill links (loop)
+      nav_item.label  → link text
+      nav_item.href   → href attribute (#anchor)
+  ═══════════════════════════════════════════════════════════
+-->
+
+<div class="nav-bar">
+  <div class="nav-inner">
+
+    <!-- LOOP: meta.nav → nav_item -->
+    <a class="nav-pill" href="<!-- SLOT: nav_item.href -->"><!-- SLOT: nav_item.label --></a>
+    <!-- /LOOP -->
+
+  </div>
+</div>

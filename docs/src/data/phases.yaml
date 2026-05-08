@@ -1,0 +1,76 @@
+# ═══════════════════════════════════════════════════════════════
+#  PHASES DATA  —  Edit this file to update roadmap cards
+#  status values: active | next | plan | inv | done
+# ═══════════════════════════════════════════════════════════════
+
+phases:
+  - id: phase1
+    status: active
+    label: "Phase 1 · Active"
+    title: "Reference Letters"
+    items:
+      - "5 letter types: Form 60, Address Proof, Service Letter, Visa Processing, LOR"
+      - "2 routing tracks: auto-verified and DV/EDV manual verification"
+      - "Go-live: June 30, 2026"
+      - "Stage 1 (internal sign-off) pending"
+      - "India SME meeting: ~May 13–14"
+
+  - id: phase2
+    status: next
+    label: "Phase 2 · Scoping"
+    title: "Compensation Letters"
+    items:
+      - "4 letter types: Salary Revision, Promotion, Increment, Variable Pay"
+      - "Batch model: India HR uploads XLS, generates for all employees"
+      - "Employee acceptance (date-stamped) + PAN-protected PDF"
+      - "Timeline TBD post-Phase 1 go-live"
+
+  - id: phase3
+    status: plan
+    label: "Phase 3 · Planned"
+    title: "Separation Letters"
+    items:
+      - "Experience Letter, Relieving Letter, LOR (ex-employees)"
+      - "HRMS-triggered on last working day"
+      - "Delivery to personal email post-exit"
+      - "Timeline TBD post-Phase 2"
+
+  - id: phase4
+    status: inv
+    label: "Phase 4 · Investigation"
+    title: "Relocation Letter"
+    items:
+      - "Removed from Phase 1 (D-16)"
+      - "Purpose, trigger, and eligibility unclear"
+      - "RM initiation model incompatible with DOCS"
+      - "Scope TBD pending investigation (OQ-13, owner: Hanna)"
+
+# ── Supporting roadmap cards ─────────────────────────────────
+
+signoff_stages:
+  title: "Sign-off Stages (Phase 1)"
+  accent: accent          # accent | blue | green
+  items:
+    - "⬜ Stage 1 — Internal (Daria, Hanna)"
+    - "⬜ Stage 2 — India SME (Satish, Satya, Sasanka)"
+    - "⬜ Stage 3 — Post-feedback iteration"
+    - "⬜ Stage 4 — Final India sign-off + UAT"
+    - "⬜ Stage 5 — Epics/tickets to dev"
+
+blocking_oqs:
+  title: "Open Questions Blocking Phase 1"
+  accent: blue
+  items:
+    - "OQ-05/06/07 — Purpose dropdown values (India Team)"
+    - "OQ-08 — Bank/SIM/LPG sub-types approach"
+    - "OQ-11 — DOCS dev: Comments + LOR Notes fields"
+    - "OQ-14 — Address edit: lock or allow?"
+
+resources:
+  title: "Key External Resources"
+  accent: green
+  items:
+    - "Confluence: EPMEOADOCS space (kb.epam.com)"
+    - "Miro: India DOCS flow diagrams board"
+    - "SharePoint: BA team materials"
+    - "EPAM Docs: docs.epam.com (target platform)"

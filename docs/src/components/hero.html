@@ -1,0 +1,30 @@
+<!--
+  ═══════════════════════════════════════════════════════════
+  COMPONENT: hero
+  DATA SOURCE: docs/src/data/meta.yaml
+  SLOTS:
+    hero.tag          → .hero-tag text
+    hero.title        → h1 text (plain part)
+    hero.title_em     → h1 <em> part (accent color)
+    hero.subtitle     → .hero-sub paragraph
+    meta.stats[]      → .stat blocks (loop)
+      stat.value      → .stat-num
+      stat.label      → .stat-label
+  ═══════════════════════════════════════════════════════════
+-->
+
+<div class="hero">
+  <div class="hero-inner">
+
+    <div>
+      <div class="hero-tag"><!-- SLOT: hero.tag --></div>
+      <h1>
+        <!-- SLOT: hero.title --><br>
+        <em><!-- SLOT: hero.title_em --></em>
+      </h1>
+      <p class="hero-sub"><!-- SLOT: hero.subtitle --></p>
+    </div>
+
+
+  </div>
+</div>
