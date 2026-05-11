@@ -5,13 +5,11 @@
 
 ---
 
-## Slide 1 — What's Changing
+## Slide 1 — How to Get Your Reference Letters
 
-Starting **June 30, 2026**, you will request your reference letters through **EPAM Docs** instead of Assist.
+From **June 30, 2026**, request your official HR reference letters through **EPAM Docs** at docs.epam.com.
 
-> **Assist will no longer be available for reference letter requests after June 30, 2026.**
-
-Everything you could request in Assist is available in Docs — same letters, same process, new platform.
+All five letter types are available — Form 60, Address Proof Letter, Service Letter, Visa Processing Letter, and Letter of Recommendation. The process is self-service and takes only a few minutes.
 
 ---
 

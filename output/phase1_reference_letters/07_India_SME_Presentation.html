@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference Letters in EPAM Docs — India SME Validation | May 2026</title>
+  <link rel="stylesheet" href="../shared/epam-docs.css">
+</head>
+<body>
+
+<!-- ===================== TOP NAV ===================== -->
+<nav class="pres-navbar">
+  <div class="pres-navbar-brand">
+    <div class="pres-logo">D</div>
+    <div>
+      <div class="pres-title">Reference Letters in EPAM Docs</div>
+      <div class="pres-subtitle">India SME Validation · May 2026</div>
+    </div>
+  </div>
+  <div class="pres-nav-controls">
+    <div class="pres-nav-dots" id="navDots"></div>
+    <button class="btn btn-ghost btn-md" id="prevBtn" onclick="changeSlide(-1)" disabled>&#8592;</button>
+    <span class="slide-counter" id="slideCounter">1 / 9</span>
+    <button class="btn btn-ghost btn-md" id="nextBtn" onclick="changeSlide(1)">&#8594;</button>
+  </div>
+</nav>
+
+<!-- ===================== SLIDE 1: CONTEXT & GOAL ===================== -->
+<section class="slide active slide-hero" id="slide-1">
+  <div class="slide-inner">
+
+    <!-- Dark navy band — headline + context -->
+    <div class="hero-band">
+      <div class="hero-eyebrow-dark">&#9888; Assist.epam.com decommission &middot; June 30, 2026</div>
+      <h1 class="hero-h1-dark">Reference Letters<br>in <span>EPAM Docs</span></h1>
+      <p class="hero-desc-dark">
+        This session validates the proposed design for migrating India HR Reference Letter workflows from <strong style="color:#fff;">Assist</strong> to <strong style="color:#fff;">docs.epam.com</strong> before development begins. Your confirmation today unblocks the build.
+      </p>
+    </div>
+
+    <!-- Light section — meta strip + goal alert -->
+    <div class="hero-details">
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Phase</span>
+          <span class="hero-meta-value">Phase 1 — Reference Letters</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Go-Live</span>
+          <span class="hero-meta-value">June 30, 2026</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Letters in scope</span>
+          <span class="hero-meta-value">5 letter types</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Status</span>
+          <span class="badge badge-warning"><span class="badge-dot"></span>Pending sign-off</span>
+        </div>
+      </div>
+      <div class="alert alert-info mt-6" style="max-width:640px">
+        <span>&#9432;</span>
+        <span><strong>Goal of this meeting:</strong> Confirm the 5 letter types, their fields, routing, and common behaviors — and resolve 5 open design questions that require your input.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== SLIDE 2: SCOPE ===================== -->
+<section class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 2 of 9</div>
+      <h2 class="slide-title">Scope — 5 Letter Types</h2>
+      <p class="slide-desc">Phase 1 covers the following reference letter workflows. Two processing tracks apply.</p>
+    </div>
+
+    <div class="flex gap-3 mb-4 flex-wrap">
+      <span class="flow-track-badge track-a-badge">&#10003; Track A — Auto-Verified (instant)</span>
+      <span class="flow-track-badge track-b-badge">&#8635; Track B — Reviewed by India Team specialist</span>
+    </div>
+
+    <div class="letter-grid">
+      <div class="letter-card track-a">
+        <span class="letter-num">Letter 1</span>
+        <span class="letter-name">Form 60</span>
+        <span class="badge badge-success mt-2"><span class="badge-dot"></span>Auto-verified</span>
+        <span class="letter-note mt-2">Employee fills 4 fields; rest pre-populated</span>
+      </div>
+      <div class="letter-card track-a">
+        <span class="letter-num">Letter 2</span>
+        <span class="letter-name">Address Proof Letter</span>
+        <span class="badge badge-success mt-2"><span class="badge-dot"></span>Auto-verified</span>
+        <span class="letter-note mt-2">Address from People platform; Purpose dropdown</span>
+      </div>
+      <div class="letter-card track-a">
+        <span class="letter-num">Letter 3</span>
+        <span class="letter-name">Service Letter</span>
+        <span class="badge badge-success mt-2"><span class="badge-dot"></span>Auto-verified</span>
+        <span class="letter-note mt-2">Purpose dropdown (values TBD — OQ-05)</span>
+      </div>
+      <div class="letter-card track-b">
+        <span class="letter-num">Letter 4</span>
+        <span class="letter-name">Visa Processing Letter</span>
+        <span class="badge badge-in-progress mt-2"><span class="badge-dot"></span>Manual review</span>
+        <span class="letter-note mt-2">DV/EDV specialist verifies &amp; sends document</span>
+      </div>
+      <div class="letter-card track-b">
+        <span class="letter-num">Letter 5</span>
+        <span class="letter-name">Letter of Recommendation (LOR)</span>
+        <span class="badge badge-in-progress mt-2"><span class="badge-dot"></span>Manual review</span>
+        <span class="letter-note mt-2">Active employees only; Notes field filled by employee</span>
+      </div>
+    </div>
+
+    <div class="card mt-6">
+      <div class="card-header">
+        <span class="card-title text-muted">Out of Scope — Phase 1</span>
+      </div>
+      <div class="card-body">
+        <div class="flex gap-3 flex-wrap">
+          <span class="tag">LOR for ex-employees → Phase 3 (Separation)</span>
+          <span class="tag">Relocation Letter → Phase 4+ (separate investigation)</span>
+          <span class="tag">Compensation Letters → Phase 2</span>
+          <span class="tag">Cancel request → not in Phase 1 MVP</span>
+          <span class="tag">Historical data migration → out of scope</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-warning mt-4">
+      <span>&#9888;</span>
+      <div>
+        <strong>Question 2.1:</strong> Do these 5 letters cover the full scope of Reference Letters you need in Phase 1?<br>
+        <strong>Question 2.2:</strong> Are sub-types like Bank Letter, SIM Card, LPG handled via a "Purpose" dropdown within the same base letter? (OQ-08 — confirm with Sasanka)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SLIDE 3: PROCESS FLOWS ===================== -->
+<section class="slide" id="slide-3">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 3 of 9</div>
+      <h2 class="slide-title">Process Flows</h2>
+      <p class="slide-desc">All 5 letters follow one of two tracks. RM approval is removed from all letters in DOCS (confirmed decision D-12, D-13, D-15).</p>
+    </div>
+
+    <!-- Track A -->
+    <div class="flow-section">
+      <div class="flow-label">
+        <span class="flow-track-badge track-a-badge">Track A — Auto-Verified</span>
+        <span class="flow-letters text-muted">Form 60 · Address Proof Letter · Service Letter</span>
+      </div>
+      <div class="flow-diagram">
+        <div class="flow-node track-a-node">
+          <span class="flow-node-actor">Employee</span>
+          <span class="flow-node-text">Fills form &amp; submits</span>
+        </div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-node track-a-node">
+          <span class="flow-node-actor">DOCS System</span>
+          <span class="flow-node-text">Auto-verifies data from HR systems</span>
+        </div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-node track-a-node">
+          <span class="flow-node-actor">DOCS System</span>
+          <span class="flow-node-text">Letter generated instantly</span>
+        </div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-node track-a-node">
+          <span class="flow-node-actor">Employee</span>
+          <span class="flow-node-text">Downloads letter</span>
+        </div>
+      </div>
+      <div class="field-note">Auto-verification runs as a nightly job. Status shows "In Verification" briefly — this is cosmetic and does not block the employee from downloading.</div>
+    </div>
+
+    <!-- Track B -->
+    <div class="flow-section mt-6">
+      <div class="flow-label">
+        <span class="flow-track-badge track-b-badge">Track B — Manual Review Required</span>
+        <span class="flow-letters text-muted">Visa Processing Letter · LOR</span>
+      </div>
+
+      <!-- Main flow -->
+      <div class="flow-diagram">
+        <div class="flow-node track-b-node">
+          <span class="flow-node-actor">Employee</span>
+          <span class="flow-node-text">Fills form &amp; submits</span>
+        </div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-node track-b-node">
+          <span class="flow-node-actor">DOCS System</span>
+          <span class="flow-node-text">Notifies India Team specialist (DV/EDV)</span>
+        </div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-node track-b-node">
+          <span class="flow-node-actor">India Team</span>
+          <span class="flow-node-text">Reviews request</span>
+        </div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-branch">
+          <!-- Approve path -->
+          <div class="flow-branch-row">
+            <span class="flow-branch-label approve-label">Approve</span>
+            <span class="flow-arrow">&#8594;</span>
+            <div class="flow-node track-a-node" style="min-width:110px">
+              <span class="flow-node-actor">India Team</span>
+              <span class="flow-node-text">"Send Document" action</span>
+            </div>
+            <span class="flow-arrow">&#8594;</span>
+            <div class="flow-node track-a-node" style="min-width:110px">
+              <span class="flow-node-actor">Employee</span>
+              <span class="flow-node-text">Notified &amp; downloads letter</span>
+            </div>
+          </div>
+          <!-- Reject path -->
+          <div class="flow-branch-row mt-2">
+            <span class="flow-branch-label reject-label">Reject</span>
+            <span class="flow-arrow" style="color:#dc2626">&#8594;</span>
+            <div class="flow-node reject-node" style="min-width:110px">
+              <span class="flow-node-actor">India Team</span>
+              <span class="flow-node-text">Rejects with reason</span>
+            </div>
+            <span class="flow-arrow" style="color:#dc2626">&#8594;</span>
+            <div class="flow-node reject-node" style="min-width:110px">
+              <span class="flow-node-actor">Employee</span>
+              <span class="flow-node-text">Opens NEW request</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field-note mt-3">Document is <strong>hidden from the employee</strong> until the India Team specialist manually triggers "Send Document". The employee sees no download button before that action.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SLIDE 4: FIELDS — AUTO-VERIFIED ===================== -->
+<section class="slide" id="slide-4">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 4 of 9</div>
+      <h2 class="slide-title">Form Fields — Auto-Verified Letters</h2>
+      <p class="slide-desc">Fields marked <span class="badge badge-success" style="vertical-align:middle">System</span> are pre-populated and read-only. Fields marked <span class="badge badge-in-progress" style="vertical-align:middle">Employee</span> must be filled by the requester.</p>
+    </div>
+
+    <!-- Form 60 -->
+    <div class="field-section">
+      <div class="field-section-header">
+        <span class="flow-track-badge track-a-badge">Track A</span>
+        <h3 class="field-section-title">Form 60</h3>
+      </div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead><tr><th>Field</th><th>Filled by</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class="field-row-readonly"><td>Name</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Designation</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>UID</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Birth Location</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Start Date</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-editable"><td>Father Name</td><td><span class="badge badge-in-progress">Employee</span></td><td>Text input</td></tr>
+            <tr class="field-row-editable"><td>PAN</td><td><span class="badge badge-in-progress">Employee</span></td><td>Text input</td></tr>
+            <tr class="field-row-editable"><td>Address</td><td><span class="badge badge-in-progress">Employee</span></td><td>Text input</td></tr>
+            <tr class="field-row-editable"><td>Mobile</td><td><span class="badge badge-in-progress">Employee</span></td><td>Text input</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Address Proof -->
+    <div class="field-section mt-6">
+      <div class="field-section-header">
+        <span class="flow-track-badge track-a-badge">Track A</span>
+        <h3 class="field-section-title">Address Proof Letter</h3>
+      </div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead><tr><th>Field</th><th>Filled by</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class="field-row-readonly"><td>Name</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Designation</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>UID</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Start Date</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-editable"><td>Address</td><td><span class="badge badge-pending">Pre-filled (People platform)</span></td><td><span class="oq-tag">OQ-14</span> Lock or allow edit? (open question)</td></tr>
+            <tr class="field-row-editable"><td>Purpose</td><td><span class="badge badge-in-progress">Employee</span></td><td>Dropdown: Personal Loan / Home Loan / Bank Connection / New Broadband Connection / Custom</td></tr>
+            <tr class="field-row-editable"><td>Custom Purpose text</td><td><span class="badge badge-in-progress">Employee</span></td><td>Max 100 chars — always visible; fill only when "Custom" is selected</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="field-note">"Address not found" warning shown if employee has no address in People platform — employee must update People profile first.</div>
+    </div>
+
+    <!-- Service Letter -->
+    <div class="field-section mt-6">
+      <div class="field-section-header">
+        <span class="flow-track-badge track-a-badge">Track A</span>
+        <h3 class="field-section-title">Service Letter</h3>
+      </div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead><tr><th>Field</th><th>Filled by</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class="field-row-readonly"><td>Name</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Designation</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>UID</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Work Location</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Start Date</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-oq"><td>Purpose</td><td><span class="badge badge-in-progress">Employee</span></td><td><span class="oq-tag">OQ-05</span> Dropdown values — to be confirmed today</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SLIDE 5: FIELDS — REVIEW-REQUIRED ===================== -->
+<section class="slide" id="slide-5">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 5 of 9</div>
+      <h2 class="slide-title">Form Fields — Review-Required Letters</h2>
+      <p class="slide-desc">These letters are routed to India Team specialists (DV/EDV) before the document is released to the employee.</p>
+    </div>
+
+    <!-- Visa Processing -->
+    <div class="field-section">
+      <div class="field-section-header">
+        <span class="flow-track-badge track-b-badge">Track B</span>
+        <h3 class="field-section-title">Visa Processing Letter</h3>
+      </div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead><tr><th>Field</th><th>Filled by</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class="field-row-readonly"><td>Name</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Designation</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>UID</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Work Location</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Start Date</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-oq"><td>Purpose</td><td><span class="badge badge-in-progress">Employee</span></td><td><span class="oq-tag">OQ-06</span> Dropdown — we expect: Business Travel, Personal Travel. Confirm or add values.</td></tr>
+            <tr class="field-row-editable"><td>Comments</td><td><span class="badge badge-in-progress">Employee</span></td><td>Max 300 characters, single line. No paragraphs. (Requires new DOCS development)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="field-note">Document is <strong>not visible to the employee</strong> until the India Team specialist triggers "Send Document". Employee cannot see or download the letter during review.</div>
+    </div>
+
+    <!-- LOR -->
+    <div class="field-section mt-6">
+      <div class="field-section-header">
+        <span class="flow-track-badge track-b-badge">Track B</span>
+        <h3 class="field-section-title">Letter of Recommendation (LOR) — Active Employees Only</h3>
+      </div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead><tr><th>Field</th><th>Filled by</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class="field-row-readonly"><td>Name</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Designation</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>UID</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Work Location</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-readonly"><td>Start Date</td><td><span class="badge badge-success">System (HR)</span></td><td>Read-only</td></tr>
+            <tr class="field-row-oq"><td>Purpose</td><td><span class="badge badge-in-progress">Employee</span></td><td><span class="oq-tag">OQ-07</span> Dropdown values — to be confirmed today</td></tr>
+            <tr class="field-row-editable"><td>Notes &amp; Responsibilities</td><td><span class="badge badge-in-progress">Employee</span></td><td>Plain text, multi-line, ~1000 chars. No formatting. <strong>Client names must NOT be included.</strong> (Requires new DOCS development)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="field-note">LOR for ex-employees is out of scope for Phase 1 — it will be handled via the Separation Letters module (Phase 3).</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SLIDE 6: COMMON BEHAVIORS ===================== -->
+<section class="slide" id="slide-6">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 6 of 9</div>
+      <h2 class="slide-title">Common Behaviors</h2>
+      <p class="slide-desc">These behaviors apply consistently across all 5 letter types. Please confirm each is acceptable.</p>
+    </div>
+
+    <div class="behavior-grid">
+      <div class="behavior-card">
+        <div class="behavior-icon">📋</div>
+        <div class="behavior-title">No Confirmation Popup (Disclaimer Text Instead)</div>
+        <div class="behavior-desc">In Assist, a popup with a checkbox appeared before submission. DOCS does not support this popup. A static disclaimer text will appear at the top of each form — employees read it and submit directly, without clicking a checkbox.</div>
+      </div>
+      <div class="behavior-card">
+        <div class="behavior-icon">🔄</div>
+        <div class="behavior-title">Rejection → New Request (No Resubmit)</div>
+        <div class="behavior-desc">When an India Team specialist rejects a request, the employee is notified with the rejection reason. The employee must open a <strong>new request</strong> — there is no resubmit option on the rejected request.</div>
+      </div>
+      <div class="behavior-card">
+        <div class="behavior-icon">⏱️</div>
+        <div class="behavior-title">Auto-Close After 2 Days</div>
+        <div class="behavior-desc">Once a request reaches final status (letter generated or sent), it auto-closes after <strong>2 days</strong> if the India Team specialist has not manually closed it. This is configurable — please confirm the interval is correct.</div>
+      </div>
+      <div class="behavior-card">
+        <div class="behavior-icon">🔒</div>
+        <div class="behavior-title">One Active Request at a Time</div>
+        <div class="behavior-desc">An employee cannot submit a new request for the same letter type while a previous request is still open. A new request can only be created after the previous one is closed (takes up to 2 days via auto-close).</div>
+      </div>
+      <div class="behavior-card">
+        <div class="behavior-icon">🔔</div>
+        <div class="behavior-title">Notifications</div>
+        <div class="behavior-desc">Employees receive system notifications for: <strong>request submitted</strong> (review-required letters), <strong>letter ready for download</strong>, <strong>request rejected</strong> (with reason). India Team specialist receives a notification for each new request pending review.</div>
+      </div>
+      <div class="behavior-card">
+        <div class="behavior-icon">⚙️</div>
+        <div class="behavior-title">Data Pre-Population from HR Systems</div>
+        <div class="behavior-desc">Name, Designation, UID, Work Location, Birth Location, Start Date are pulled automatically from HR systems. Employees cannot edit these fields. Address for Address Proof Letter comes from the People platform (edit behavior: OQ-14).</div>
+      </div>
+    </div>
+
+    <div class="alert alert-warning mt-6">
+      <span>&#9888;</span>
+      <div>
+        <strong>Please confirm (Q6.1–Q6.4):</strong> Are these behaviors acceptable?<br>
+        Specifically: (a) static text disclaimer instead of checkbox popup, (b) new-request-only on rejection, (c) 2-day auto-close interval, (d) one active request at a time cooldown.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SLIDE 7: OPEN QUESTIONS ===================== -->
+<section class="slide" id="slide-7">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 7 of 9</div>
+      <h2 class="slide-title">Open Questions — Need Answers Today</h2>
+      <p class="slide-desc">These 5 questions are blocking the build. Your answers can be entered directly in this document or captured in the meeting notes.</p>
+    </div>
+
+    <div class="oq-grid">
+
+      <div class="oq-card">
+        <div class="oq-card-header">
+          <span class="oq-id">OQ-05</span>
+          <span class="text-xs text-muted">Service Letter</span>
+        </div>
+        <div class="oq-card-body">
+          <div class="oq-question">What values should be available in the Purpose dropdown for the Service Letter?</div>
+          <div class="oq-answer">
+            <label>Your answer</label>
+            <textarea class="oq-answer" placeholder="List the dropdown values, one per line…"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="oq-card">
+        <div class="oq-card-header">
+          <span class="oq-id">OQ-06</span>
+          <span class="text-xs text-muted">Visa Processing Letter</span>
+        </div>
+        <div class="oq-card-body">
+          <div class="oq-question">What values should be in the Purpose dropdown for the Visa Processing Letter?</div>
+          <div class="oq-hint">We expect: <strong>Business Travel, Personal Travel</strong> — please confirm or add missing values.</div>
+          <div class="oq-answer">
+            <label>Your answer</label>
+            <textarea placeholder="Confirm or correct: Business Travel, Personal Travel, …"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="oq-card">
+        <div class="oq-card-header">
+          <span class="oq-id">OQ-07</span>
+          <span class="text-xs text-muted">Letter of Recommendation</span>
+        </div>
+        <div class="oq-card-body">
+          <div class="oq-question">What values should be in the Purpose dropdown for the Letter of Recommendation (LOR)?</div>
+          <div class="oq-answer">
+            <label>Your answer</label>
+            <textarea placeholder="List the dropdown values, one per line…"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="oq-card">
+        <div class="oq-card-header">
+          <span class="oq-id">OQ-08</span>
+          <span class="text-xs text-muted">Bank / SIM / LPG Sub-types — Sasanka</span>
+        </div>
+        <div class="oq-card-body">
+          <div class="oq-question">Are Bank Letter, SIM Card Letter, and LPG Letter handled as sub-types via a "Purpose" dropdown within the same base letter template?</div>
+          <div class="oq-hint">Our understanding: these are not separate letter templates — they are the same base letter with different "Purpose" values selected by the employee. Please confirm or correct.</div>
+          <div class="oq-answer">
+            <label>Your answer</label>
+            <textarea placeholder="Confirmed / Not confirmed — explain if different…"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="oq-card" style="grid-column: span 1;">
+        <div class="oq-card-header">
+          <span class="oq-id">OQ-14</span>
+          <span class="text-xs text-muted">Address Proof Letter</span>
+        </div>
+        <div class="oq-card-body">
+          <div class="oq-question">Address Proof Letter: should employees be able to edit the pre-filled address directly in the DOCS form, or should the field be locked so employees must update their address in the People system first?</div>
+          <div class="oq-hint">
+            <strong>Option A (Allow edit):</strong> Employee can correct address directly in the form before submitting. Faster for the employee, but the People profile stays outdated.<br><br>
+            <strong>Option B (Lock field):</strong> Address field is read-only. Employee must go to People Portal to update, then return. Ensures People profile stays accurate.
+          </div>
+          <div class="oq-answer">
+            <label>Your answer</label>
+            <textarea placeholder="Option A (allow edit) / Option B (lock) — and any reason…"></textarea>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SLIDE 8: OUT OF SCOPE ===================== -->
+<section class="slide" id="slide-8">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 8 of 9</div>
+      <h2 class="slide-title">Out of Scope — Confirm Boundaries</h2>
+      <p class="slide-desc">Please confirm that these items are correctly excluded from Phase 1. Check each box to indicate your agreement.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-body" style="padding: 0;">
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Our Understanding</th>
+                <th style="width:80px; text-align:center">Confirmed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Relocation Letter</strong></td>
+                <td class="oos-note">Out of Phase 1 scope — requires separate investigation. Purpose, trigger mechanism, eligibility, and auto-trigger feasibility unclear. Will be addressed in Phase 4+.</td>
+                <td class="confirm-cell"><input type="checkbox" class="big-check"></td>
+              </tr>
+              <tr>
+                <td><strong>LOR for ex-employees</strong></td>
+                <td class="oos-note">Out of Phase 1 scope — handled in Phase 3 (Separation Letters module). Ex-employees who need an LOR will be served via the Separation process.</td>
+                <td class="confirm-cell"><input type="checkbox" class="big-check"></td>
+              </tr>
+              <tr>
+                <td><strong>Cancel request by employee</strong></td>
+                <td class="oos-note">Nice-to-have — NOT in Phase 1 MVP. Employees cannot cancel a request once submitted. They must wait for it to close (auto-close: 2 days after final status).</td>
+                <td class="confirm-cell"><input type="checkbox" class="big-check"></td>
+              </tr>
+              <tr>
+                <td><strong>Historical data migration from Assist</strong></td>
+                <td class="oos-note">Past request data from Assist will not be migrated to DOCS. Only new requests created in DOCS after go-live will be tracked there.</td>
+                <td class="confirm-cell"><input type="checkbox" class="big-check"></td>
+              </tr>
+              <tr>
+                <td><strong>RM initiating requests on behalf of employees</strong></td>
+                <td class="oos-note">Reporting Managers do not have direct access to create DOCS requests for other employees. If an RM needs to initiate, they route via ServiceNow → India Team specialist who acts on behalf of the employee.</td>
+                <td class="confirm-cell"><input type="checkbox" class="big-check"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-info mt-4">
+      <span>&#9432;</span>
+      <span>If you disagree with any of these exclusions, please add a comment in the sign-off slide or flag it directly in the meeting. Any in-scope item not covered here will require a scope change request and may affect the June 30 go-live date.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SLIDE 9: SIGN-OFF ===================== -->
+<section class="slide" id="slide-9">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div class="slide-number">Slide 9 of 9</div>
+      <h2 class="slide-title">Sign-off</h2>
+      <p class="slide-desc">By signing off, you confirm that the proposed design for Phase 1 Reference Letters in EPAM Docs correctly represents the required behavior and that your team is aligned to proceed to development.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">India Stakeholder Sign-off</span>
+        <span class="badge badge-warning"><span class="badge-dot"></span>Pending</span>
+      </div>
+      <div class="card-body" style="padding: 0;">
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Comments</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Satish Malla</strong></td>
+                <td>India Stakeholder</td>
+                <td>
+                  <div class="signoff-status">
+                    <label class="signoff-radio"><input type="radio" name="so-satish" value="approved"> ✅ Approved</label>
+                    <label class="signoff-radio"><input type="radio" name="so-satish" value="changes"> 🔄 Changes needed</label>
+                  </div>
+                </td>
+                <td><input type="text" class="signoff-comment" placeholder="Optional comments…"></td>
+                <td><input type="date" class="signoff-comment" style="min-width:140px"></td>
+              </tr>
+              <tr>
+                <td><strong>Daria Taranda</strong></td>
+                <td>BA / Process Owner</td>
+                <td>
+                  <div class="signoff-status">
+                    <label class="signoff-radio"><input type="radio" name="so-daria" value="approved"> ✅ Approved</label>
+                    <label class="signoff-radio"><input type="radio" name="so-daria" value="changes"> 🔄 Changes needed</label>
+                  </div>
+                </td>
+                <td><input type="text" class="signoff-comment" placeholder="Optional comments…"></td>
+                <td><input type="date" class="signoff-comment" style="min-width:140px"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-header">
+        <span class="card-title">Next Steps After Sign-off</span>
+      </div>
+      <div class="card-body">
+        <div class="grid grid-3 gap-4">
+          <div>
+            <div class="text-xs font-semibold uppercase text-muted mb-2" style="letter-spacing:0.06em">Stage 3 — Iteration</div>
+            <p>Any changes requested today will be incorporated and re-circulated for confirmation before development begins.</p>
+          </div>
+          <div>
+            <div class="text-xs font-semibold uppercase text-muted mb-2" style="letter-spacing:0.06em">Stage 4 — UAT</div>
+            <p>User Acceptance Testing on the built DOCS workflows — India team validates actual system behavior against this agreed design.</p>
+          </div>
+          <div>
+            <div class="text-xs font-semibold uppercase text-muted mb-2" style="letter-spacing:0.06em">Go-Live — June 30, 2026</div>
+            <p>Assist.epam.com decommissioned. All India HR Reference Letter requests handled exclusively via docs.epam.com from this date.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-3 mt-6 justify-center">
+      <button class="btn btn-primary btn-lg" onclick="window.print()">🖨 Print / Save as PDF</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const TOTAL = 9;
+  let current = 1;
+
+  function buildDots() {
+    const container = document.getElementById('navDots');
+    container.innerHTML = '';
+    for (let i = 1; i <= TOTAL; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'nav-dot' + (i === current ? ' active' : '');
+      btn.setAttribute('aria-label', 'Go to slide ' + i);
+      btn.addEventListener('click', () => goTo(i));
+      container.appendChild(btn);
+    }
+  }
+
+  function goTo(n) {
+    if (n < 1 || n > TOTAL) return;
+    document.getElementById('slide-' + current).classList.remove('active');
+    current = n;
+    document.getElementById('slide-' + current).classList.add('active');
+    document.getElementById('slideCounter').textContent = current + ' / ' + TOTAL;
+    document.getElementById('prevBtn').disabled = current === 1;
+    document.getElementById('nextBtn').disabled = current === TOTAL;
+    buildDots();
+    window.scrollTo(0, 0);
+  }
+
+  function changeSlide(dir) { goTo(current + dir); }
+
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') changeSlide(1);
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') changeSlide(-1);
+  });
+
+  buildDots();
+</script>
+</body>
+</html>

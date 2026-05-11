@@ -91,7 +91,7 @@ All timings are relative to the go-live date of **June 30, 2026**.
 | T-1 day | June 29, 2026 | BA lead | **Go/No-Go decision** — log outcome in FDL as F-XX entry |
 | T-1 day | June 29, 2026 | BA team | Send T-1 reminder communication to India employees |
 | T=0 | June 30, 2026 | See Runbook | Execute Go-Live Runbook (output/migration/Go_Live_Runbook.md) |
-| T+1 | July 1, 2026 | BA / India Team | Begin monitoring window (see Monitoring Plan) |
+| T+1 | July 1, 2026 (day after go-live) | BA / India Team | Begin monitoring window (see Monitoring Plan) |
 
 ---
 

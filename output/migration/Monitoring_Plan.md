@@ -18,7 +18,7 @@ This plan defines what to monitor, for how long, and what actions to take after 
 
 | Period | Frequency | Focus |
 |---|---|---|
-| **T+1 through T+7** (July 1–7) | Daily | Stability confirmation; early issue detection |
+| **T+1 through T+7** (July 1–7, day after go-live through July 7) | Daily | Stability confirmation; early issue detection |
 | **T+8 through T+30** (July 8–30) | Weekly | Volume trends; Track B processing health |
 | **T+31 onwards** | Monthly | Steady-state review; Phase 2 readiness |
 
@@ -113,7 +113,7 @@ Active monitoring ends at T+30. After that, monitoring is integrated into normal
 | Employee support tickets | India Team helpdesk | India Team lead |
 | Auto-close and auto-generate event logs | DOCS platform logs | DOCS platform team |
 
-> **Action required (pre-go-live):** Confirm with DOCS platform team that required reports/dashboards are accessible to the BA team from July 1. If not, establish a daily email report from the DOCS team. Owner: BA lead. Deadline: T-7 (June 23, 2026).
+> **Action required (pre-go-live):** Confirm with DOCS platform team that required reports/dashboards are accessible to the BA team from July 1 (T+1, day after go-live). If not, establish a daily email report from the DOCS team. Owner: BA lead. Deadline: T-7 (June 23, 2026).
 
 ---
 

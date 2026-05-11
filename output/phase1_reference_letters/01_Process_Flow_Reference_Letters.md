@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-The Reference Letters process enables India-based EPAM employees to request official HR letters directly through the EPAM Docs platform. Depending on the letter type, requests are either completed automatically (auto-verified) or routed to an India Team specialist for manual verification before the letter is sent to the employee for download. Phase 1 covers 5 letter types.
+The Reference Letters process enables India-based EPAM employees to request official HR letters directly through the EPAM Docs platform. Depending on the letter type, requests are either completed automatically (auto-verified) or routed to an India Team specialist for manual verification before the letter is sent to the employee for download. Phase 1 covers 5 letter types. **Target go-live: June 30, 2026.**
 
 ---
 
@@ -38,8 +38,8 @@ Routed to India Team specialist (DV/EDV) for review. After verification, special
 
 | Letter Type | Description | Notes |
 |---|---|---|
-| Visa Processing Letter | Letter supporting visa applications | RM approval removed (D-12); DV/EDV verifies → "Send Document" → employee downloads; document hidden until sent |
-| LOR — Letter of Recommendation | Recommendation letter for active employees | RM approval removed (D-13); same DV/EDV → "Send Document" flow; ex-employees: out of scope Phase 1 |
+| Visa Processing Letter | Letter supporting visa applications | DV/EDV verifies → "Send Document" → employee downloads; document hidden until sent (D-12) |
+| LOR — Letter of Recommendation | Recommendation letter for active employees | DV/EDV → "Send Document" flow; ex-employees: out of scope Phase 1 (D-13) |
 
 ---
 

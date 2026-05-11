@@ -1,91 +1,12 @@
-<!-- Paste the content below into a Confluence HTML macro -->
-
-<style>
-.rl-wrap { font-family: -apple-system, 'Segoe UI', Arial, sans-serif; color: #1a1a2e; max-width: 960px; margin: 0 auto; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0; }
-
-/* HEADER */
-.rl-header { background: linear-gradient(135deg, #1a1a2e 60%, #2d3561 100%); color: #fff; padding: 28px 36px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-.rl-header h1 { font-size: 22px; font-weight: 700; line-height: 1.25; margin: 0; }
-.rl-header h1 span { color: #f97316; }
-.rl-header-sub { font-size: 12px; color: #94a3b8; letter-spacing: 0.6px; margin-top: 4px; }
-.rl-badge { background: #f97316; color: #fff; font-size: 12px; font-weight: 700; padding: 7px 18px; border-radius: 20px; white-space: nowrap; }
-.rl-badge-date { font-size: 11px; color: #94a3b8; text-align: right; margin-top: 4px; }
-
-/* CONTEXT */
-.rl-context { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 14px 20px; display: flex; gap: 12px; align-items: flex-start; }
-.rl-context-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
-.rl-context p { font-size: 13px; color: #1e40af; line-height: 1.6; margin: 0; }
-.rl-context strong { color: #1e3a8a; }
-
-/* BODY GRID */
-.rl-body { display: grid; grid-template-columns: 1fr 1fr 1fr; }
-.rl-cell { padding: 22px 26px; border-right: 1px solid #edf2f7; border-bottom: 1px solid #edf2f7; }
-.rl-cell:last-child, .rl-cell.rl-no-border-r { border-right: none; }
-.rl-cell.rl-full { grid-column: 1 / -1; border-right: none; border-bottom: none; }
-.rl-cell.rl-two { grid-column: span 2; }
-.rl-cell.rl-no-border-b { border-bottom: none; }
-
-.rl-label { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #f97316; margin-bottom: 10px; }
-.rl-cell h2 { font-size: 14px; font-weight: 700; color: #1a1a2e; margin: 0 0 12px; }
-
-/* LETTERS */
-.rl-legend { display: flex; gap: 16px; margin-bottom: 10px; }
-.rl-leg { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #718096; font-weight: 600; }
-.rl-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
-.rl-lgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-.rl-lcard { border-radius: 7px; padding: 8px 12px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 7px; }
-.rl-lcard.rl-auto { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
-.rl-lcard.rl-hrbp { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
-.rl-lcard .rl-dot.rl-g { background: #22c55e; }
-.rl-lcard .rl-dot.rl-p { background: #a855f7; }
-
-/* FLOW */
-.rl-flow { display: flex; align-items: stretch; gap: 0; margin-top: 2px; }
-.rl-fstep { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 7px; padding: 10px 10px; text-align: center; flex: 1; min-width: 0; }
-.rl-fstep .rl-factor { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: #a0aec0; margin-bottom: 4px; }
-.rl-fstep .rl-flabel { font-size: 11px; font-weight: 600; color: #2d3748; line-height: 1.3; }
-.rl-farrow { color: #cbd5e0; font-size: 16px; padding: 0 4px; display: flex; align-items: center; flex-shrink: 0; }
-.rl-fbranch { display: flex; gap: 8px; margin-top: 8px; }
-.rl-fpill { flex: 1; border-radius: 6px; padding: 7px 10px; font-size: 11px; font-weight: 600; text-align: center; }
-.rl-fpill.rl-fg { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
-.rl-fpill.rl-fp { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
-
-/* PHASES */
-.rl-phases { display: flex; gap: 10px; margin-top: 2px; }
-.rl-phase { flex: 1; border-radius: 8px; padding: 14px; border: 2px solid transparent; }
-.rl-phase.rl-cur { background: #fff7ed; border-color: #f97316; }
-.rl-phase.rl-nxt { background: #f8fafc; border-color: #e2e8f0; }
-.rl-ptag { font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
-.rl-phase.rl-cur .rl-ptag { color: #f97316; }
-.rl-phase.rl-nxt .rl-ptag { color: #a0aec0; }
-.rl-phase h3 { font-size: 13px; font-weight: 700; color: #1a1a2e; margin: 0 0 3px; }
-.rl-phase p { font-size: 11px; line-height: 1.5; margin: 0; }
-.rl-phase.rl-cur p { color: #92400e; }
-.rl-phase.rl-nxt p { color: #718096; }
-
-/* RISKS */
-.rl-risks p { font-size: 12.5px; color: #4a5568; line-height: 1.9; margin: 0; }
-.rl-risks .rl-arrow { color: #f97316; font-weight: 700; }
-
-/* TIMELINE */
-.rl-timeline { display: flex; align-items: flex-start; position: relative; margin-top: 4px; }
-.rl-timeline::before { content: ''; position: absolute; top: 13px; left: 14px; right: 14px; height: 2px; background: #e2e8f0; z-index: 0; }
-.rl-tlitem { flex: 1; text-align: center; position: relative; z-index: 1; }
-.rl-tldot { width: 26px; height: 26px; border-radius: 50%; margin: 0 auto 7px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; }
-.rl-tldot.rl-done { background: #22c55e; color: #fff; }
-.rl-tldot.rl-active { background: #f97316; color: #fff; box-shadow: 0 0 0 4px #fed7aa; }
-.rl-tldot.rl-up { background: #e2e8f0; color: #a0aec0; }
-.rl-tldot.rl-golive { background: #f97316; color: #fff; box-shadow: 0 0 0 4px #fed7aa; font-size: 13px; }
-.rl-tldate { font-size: 10.5px; font-weight: 700; color: #4a5568; margin-bottom: 2px; }
-.rl-tllabel { font-size: 10px; color: #a0aec0; line-height: 1.3; }
-.rl-tldate.rl-orange { color: #f97316; font-weight: 800; }
-.rl-tllabel.rl-orange { color: #f97316; font-weight: 600; }
-
-/* FOOTER */
-.rl-footer { background: #f8fafc; border-top: 1px solid #edf2f7; padding: 12px 36px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-.rl-footer p { font-size: 11px; color: #a0aec0; margin: 0; }
-.rl-footer strong { color: #4a5568; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference Letters Migration — Assist to EPAM Docs | Phase 1</title>
+  <link rel="stylesheet" href="../shared/epam-docs.css">
+</head>
+<body style="background:#f0f4f8; padding: 24px 16px;">
 
 <div class="rl-wrap">
 
@@ -244,3 +165,5 @@
   </div>
 
 </div>
+</body>
+</html>
