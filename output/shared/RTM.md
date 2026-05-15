@@ -42,7 +42,7 @@ KB2 = Phase 2 Onepager · KB3 = Phase 3 Onepager
 | D-04 *(S)* | Relocation Letter: past-date allowed, auto-approved | — | — | — | — | — | — | — | — |
 | D-05 *(S)* | Relocation Letter: RM/India Team initiates | — | — | — | — | — | — | — | — |
 | D-06 | Auto-close: 2 days after all forms reach final status | ✓ | ✓ | ↻ | ↻ | — | ↻ | — | — |
-| D-07 | Rejection: no resubmit — employee opens new request | ✓ | ✓ | ↻ | — | ↻ | ✓ | — | — |
+| D-07 | Rejection: specialist required comment → employee edits &amp; resubmits same form → specialist re-verifies (no limit) | ✓ | ✓ | ↻ | — | ↻ | ✓ | — | — |
 | D-08 | Terminology: "India Team specialists" not "HRBP" | — | — | — | ✓ | ✓ | ✓ | ✓ | ✓ |
 | D-09 | Visa Processing: Comments field, max 300 chars | ✓ | ✓ | ↻ | — | ✓ | — | — | — |
 | D-10 | Cancel request: not in Phase 1 MVP | — | ✓ | — | — | — | — | — | — |
@@ -53,6 +53,11 @@ KB2 = Phase 2 Onepager · KB3 = Phase 3 Onepager
 | D-15 | RM verification removed from ALL Phase 1 letters | ✓ | ✓ | ↻ | — | ↻ | ↻ | — | — |
 | D-16 | Relocation Letter removed from Phase 1 → Phase 4+ | ✓ | ✓ | ↻ | ✓ | ✓ | ↻ | ↻ | ↻ |
 | D-17 | Self-Declaration: static disclaimer text, no popup | ✓ | ✓ | ↻ | — | ✓ | — | — | — |
+| D-18 | Comments (Visa Processing) and Notes & Responsibilities (LOR) are required fields | ✓ | ✓ | — | — | ✓ | — | — | — |
+| D-19 | Approval comment unavailable — comment only required on rejection | ✓ | ✓ | — | — | — | — | — | — |
+| D-20 | Address Proof Letter address field: read-only (locked); update via People system (OQ-14 resolved) | ✓ | ✓ | ✓ | — | ✓ | — | — | — |
+| D-21 | Self-Declaration checkbox confirmed in DOCS — updates D-17: Accept checkbox at bottom of form (not static text at top) | ✓ | ✓ | ✓ | — | ✓ | ↻ | — | — |
+| D-22 | Form 60 field updates: Salutation (dropdown) added; "Address" → "Current address"; "City" (text) → "Worksite city" (dropdown) | ✓ | ✓ | ✓ | — | ✓ | ✓ | — | — |
 
 ### Phase 2 Decisions
 
@@ -89,13 +94,16 @@ P3-HRMS = Phase 3 separation HRMS integration / ex-employee flow
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | D-01 | Go-live date | — | — | ↻ | — | ↻ | ↻ |
 | D-06 | Auto-close 2 days | — | — | ✓ | — | — | — |
-| D-07 | Rejection = new request | — | — | ✓ | — | — | — |
+| D-07 | Rejection = edit &amp; resubmit same form | — | — | ✓ | — | — | — |
 | D-09 | Visa Comments field (not Country) | — | ✓ | — | ✓ | — | — |
 | D-12 | Visa DV/EDV verifies → Send Document | — | ✓ | ↻ | — | — | — |
 | D-13 | LOR DV/EDV verifies → Send Document + Notes field | — | ✓ | ↻ | ✓ | — | — |
 | D-15 | RM verification removed from all Phase 1 letters | ✓ | ✓ | — | — | — | — |
 | D-16 | Relocation Letter removed from Phase 1 | ✓ | ✓ | — | ✓ | — | — |
-| D-17 | Static disclaimer text (no popup) | ✓ | ✓ | — | ✓ | — | — |
+| D-17 | Static disclaimer text (no popup) — superseded by D-21 | ✓ | ✓ | — | ✓ | — | — |
+| D-20 | Address Proof: address locked (read-only), update via People system | ✓ | ✓ | — | ✓ | — | — |
+| D-21 | Self-Declaration Accept checkbox at bottom of form (updates D-17) | ✓ | ✓ | — | ✓ | — | — |
+| D-22 | Form 60: Salutation added; "Current address"; "Worksite city" dropdown | ✓ | ✓ | — | ✓ | ✓ | — |
 | D-P2-01 | 4 compensation letter types | — | — | — | — | ✓ | — |
 | D-P2-02 | Accept button + timestamp | — | — | ↻ | — | ✓ | — |
 | D-P2-03 | PAN protection | — | — | — | ↻ | ✓ | — |
@@ -119,7 +127,7 @@ When an Open Question resolves, update all documents in the "Update on resolutio
 | OQ-11 | 1 | DOCS dev: Comments field (Visa) + LOR Notes field | Open | BRD (FR implementation spec), PRES (dev actions slide) |
 | OQ-12 | 2 | Compensation acceptance: activity log vs Accept button | Open | KB2 (flow description), future Phase 2 BRD |
 | OQ-13 | 4 | Relocation Letter Phase 4 investigation (5 questions) | Open | Phase 4 scope document (to be created once answered) |
-| OQ-14 | 1 | Address Proof: editable address or locked to People Portal? | Open | PF (field table), BRD (FR spec), SME (answer blank) |
+| OQ-14 | 1 | Address Proof: editable address or locked to People Portal? | **Resolved — D-20** | PF ✓, BRD ✓, PRES ✓, SME ✓, 07 ✓ |
 | OQ-P2-02 | 2 | PAN-number PDF protection: DOCS feasibility | Open | KB2 (security section), future Phase 2 BRD |
 | OQ-P3-02 | 3 | Separation letter auto-trigger from People system | Open | KB3 (trigger section), future Phase 3 BRD |
 | OQ-P3-03 | 3 | Nominee Details: DOCS self-service + migration scope | Open | Phase scoping → assign to phase, then future phase onepager |
@@ -149,7 +157,9 @@ Evidence behind each decision — used for audit trail and change justification.
 | D-14 *(S)* | Meeting + internal review | Olga Chaban, DOCS internal review | 2026-05-06 | Superseded by D-16 |
 | D-15 | Meeting transcript | Darya Taranda decision, confirmed in DOCS internal review | 2026-05-05 | Authoritative |
 | D-16 | Meeting transcript | Dzmitry Fedarovich / Hanna Vasilenka / Darya Taranda meeting | 2026-05-07 | Authoritative |
-| D-17 | Meeting transcript | Dzmitry Fedarovich / Darya Taranda / Hanna Vasilenka meeting | 2026-05-07 | Authoritative |
+| D-17 | Meeting transcript | Dzmitry Fedarovich / Darya Taranda / Hanna Vasilenka meeting | 2026-05-07 | Superseded by D-21 |
+| D-21 | DOCS platform screenshots | DOCS platform UI, IN Form 60 auto-verified flow | 2026-05-13 | High (visual confirmation) |
+| D-22 | DOCS platform screenshots | DOCS platform UI, IN Form 60 Request Details form | 2026-05-13 | High (visual confirmation) |
 | D-P2-01 | Stakeholder call | Satish Malla (India HR) call | 2026-05-04 | Authoritative |
 | D-P2-02 | Stakeholder call | Satish Malla (India HR) call | 2026-05-04 | Authoritative |
 | D-P2-03 | Stakeholder call | Satish Malla (India HR) call | 2026-05-04 | Authoritative |
@@ -157,6 +167,9 @@ Evidence behind each decision — used for audit trail and change justification.
 | D-P2-05 | Stakeholder call | Satish Malla (India HR) call | 2026-05-04 | Authoritative |
 | D-P2-06 | KB page + stakeholder call | KB Open Questions page + Satish Malla confirmation | 2026-05-07 | Authoritative |
 | D-P2-07 | Meeting transcript | Darya Taranda / Hanna Vasilenka / Dzmitry Fedarovich meeting | 2026-05-07 | Authoritative |
+| D-18 | Data file | Assist reference letters data file (input 12.05.2026) | 2026-05-12 | Authoritative |
+| D-19 | Data file | Assist reference letters data file (input 12.05.2026) | 2026-05-12 | Authoritative |
+| D-20 | Data file | Assist reference letters data file (input 12.05.2026) — address field comment | 2026-05-12 | Authoritative |
 | D-P3-01 | Stakeholder call | Dzmitry Fedarovich (People team) call | 2026-05-04 | Authoritative |
 | D-P3-02 | Stakeholder confirmation | Darya Taranda confirmed | 2026-05-04 | Authoritative |
 
@@ -180,7 +193,7 @@ Use this when a decision is revised to scope required update work.
 | Decision | Current value | Impact if changed |
 |---|---|---|
 | D-06 | Auto-close: 2 days | Update PF (Lifecycle section), BRD (FR), potentially CG |
-| D-07 | Rejection = new request | Update PF (rejection flow), BRD (FR), CG (employee step) |
+| D-07 | Rejection = edit &amp; resubmit same form | Update PF (rejection flow), BRD (FR), CG (employee step) |
 | D-12 | Visa Processing: DV/EDV verifies | Update PF (Track B flow), BRD (FR for Visa), SME (validation questions) |
 | D-13 | LOR: DV/EDV verifies + Notes field | Update PF (Track B flow), BRD (FR for LOR), SME (validation questions) |
 | D-17 | Static disclaimer (no popup) | Update PF (form behavior note), BRD (FR for disclaimer), SME (validation Q) |

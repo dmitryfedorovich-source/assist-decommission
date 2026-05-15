@@ -49,9 +49,9 @@ All contacts must be reachable from **June 29, 17:00 IST through June 30, 18:00 
 - [ ] Track A routing: Form 60, Address Proof, Service Letter auto-verified — confirmed
 - [ ] Track B routing: Visa Processing, LOR enter DV/EDV queue — confirmed
 - [ ] Data pre-population: People Portal fields (name, ID, designation, joining date) confirmed working
-- [ ] Static disclaimer text present on relevant forms (D-17)
+- [ ] Confirm Self-Declaration 'Accept' checkbox enabled for all 5 India letter types (D-21)
 - [ ] 2-day auto-close rule configured (D-06)
-- [ ] Rejection flow: employee directed to open new request, not resubmit (D-07)
+- [ ] Rejection flow: specialist comment mandatory; employee edits and resubmits same form; specialist re-verifies (D-07)
 - [ ] Comments field for Visa Processing: max 300 chars, single line (D-09) — OQ-11 resolved
 - [ ] LOR Notes/Responsibilities field: multi-line text (D-13) — OQ-11 resolved
 - [ ] All blocking OQs resolved or formally accepted with FDL notes
@@ -195,8 +195,8 @@ For each test: confirm the complete flow end-to-end.
 ### Cross-Cutting Checks
 
 - [ ] 2-day auto-close: confirm rule is configured (functional test not required on go-live day — D-06)
-- [ ] Rejection: confirm reject option routes to "new request" instruction, not resubmit (D-07)
-- [ ] Static disclaimer text visible on at least one form (D-17)
+- [ ] Rejection: confirm reject requires mandatory specialist comment; rejected form is editable; employee can resubmit; specialist receives re-verification notification (D-07)
+- [ ] Confirm Self-Declaration 'Accept' checkbox visible on all 5 India letter forms (D-21)
 
 ---
 

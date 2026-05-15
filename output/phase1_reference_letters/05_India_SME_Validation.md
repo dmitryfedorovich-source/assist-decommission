@@ -67,15 +67,21 @@ The following letters are generated automatically — no India Team specialist a
 
 | Field | Filled By | Notes |
 |---|---|---|
-| Name | System (HR) | Read-only |
-| Designation | System (HR) | Read-only |
-| UID | System (HR) | Read-only |
-| Birth Location | System (HR) | Read-only |
-| Start Date | System (HR) | Read-only |
+| Date | System (DOCS) | Read-only |
+| Name | System (People system) | Read-only |
+| Designation | System (People system) | Read-only |
+| UID | System (People system) | Read-only |
+| Work Location | System (People system) | Read-only |
+| Birth Location | System (People system) | Read-only |
+| Start Date | System (People system) | Read-only |
+| Salutation | Employee | Dropdown (e.g. Mr. / Mrs.) |
 | Father Name | Employee | Text input |
+| Current address | Employee | Text input (2 lines) |
+| Worksite city | Employee | Dropdown |
+| UAN | Employee | Text input |
+| State | Employee | Text input |
+| Mobile number | Employee | Text input |
 | PAN | Employee | Text input |
-| Address | Employee | Text input |
-| Mobile | Employee | Text input |
 
 **Behavior:** Employee submits → letter generated immediately → available for download.
 
@@ -90,17 +96,18 @@ The following letters are generated automatically — no India Team specialist a
 
 | Field | Filled By | Notes |
 |---|---|---|
-| Name | System (HR) | Read-only |
-| Designation | System (HR) | Read-only |
-| UID | System (HR) | Read-only |
-| Address | System (People platform) | Pre-filled from People; employee can edit if needed |
-| Start Date | System (HR) | Read-only |
+| Date | System (DOCS) | Read-only |
+| Name | System (People system) | Read-only |
+| Designation | System (People system) | Read-only |
+| UID | System (People system) | Read-only |
+| Start Date | System (People system) | Read-only |
+| Address as per People | System (People system) | Read-only — if address is incorrect, employee must update profile in People system (D-20) |
 | Purpose | Employee | Dropdown |
 | Custom Purpose text | Employee | Text input, max 100 characters — always visible; fill in when "Custom" is selected |
 
 **Purpose dropdown options:** Personal Loan / Home Loan / Bank Connection / New Broadband Connection / Custom
 
-**Special behavior:** If the employee's address is not found in the People platform, the system shows an error: *"Please update your address in the People system before submitting."*
+**Special behavior:** If the employee's address is not found in the People system, the system shows an error: *"Please update your address in the People system before submitting."*
 
 ---
 
@@ -110,8 +117,9 @@ The following letters are generated automatically — no India Team specialist a
 **Question 3.3 — Is the address always reliably available in the People platform for India employees? Are there common cases where it is missing?**
 > Your answer: ___________
 
-**⚠️ Question 3.4 (OQ-14) — Address Proof Letter: The pre-filled address can be edited by the employee directly in the form. Is this acceptable, or should the field be locked so employees must update their address in the People system first?**
-> Your answer: ___________
+**~~Question 3.4 (OQ-14) — Resolved~~**
+
+> **Decision D-20 (2026-05-12):** The address field is **locked (read-only)**. Employees cannot edit the address on the form. If the address is incorrect or missing, the form displays a note directing the employee to update their People system profile.
 
 ---
 
@@ -119,12 +127,14 @@ The following letters are generated automatically — no India Team specialist a
 
 | Field | Filled By | Notes |
 |---|---|---|
-| Name | System (HR) | Read-only |
-| Designation | System (HR) | Read-only |
-| UID | System (HR) | Read-only |
-| Work Location | System (HR) | Read-only |
-| Start Date | System (HR) | Read-only |
+| Date | System (DOCS) | Read-only |
+| Name | System (People system) | Read-only |
+| Designation | System (People system) | Read-only |
+| UID | System (People system) | Read-only |
+| Work Location | System (People system) | Read-only |
+| Start Date | System (People system) | Read-only |
 | Purpose | Employee | Dropdown |
+| Custom field details | Employee | Text input |
 
 ---
 
@@ -141,15 +151,16 @@ The following letters are routed to India Team specialists for review before the
 
 | Field | Filled By | Notes |
 |---|---|---|
-| Name | System (HR) | Read-only |
-| Designation | System (HR) | Read-only |
-| UID | System (HR) | Read-only |
-| Work Location | System (HR) | Read-only |
-| Start Date | System (HR) | Read-only |
+| Date | System (DOCS) | Read-only |
+| Name | System (People system) | Read-only |
+| Designation | System (People system) | Read-only |
+| UID | System (People system) | Read-only |
+| Work Location | System (People system) | Read-only |
+| Start Date | System (People system) | Read-only |
 | Purpose | Employee | Dropdown (e.g. Personal Travel, Business Travel) |
-| Comments | Employee | Max 300 characters, single line — no paragraphs |
+| Comments | Employee | **Required.** Max 300 characters, single line, no paragraphs |
 
-**Behavior:** Employee submits → India Team specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee receives notification and downloads letter. Document is not visible to employee before the specialist sends it. If incorrect: specialist rejects → employee notified with reason → employee opens a new request.
+**Behavior:** Employee submits → EPAM specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee receives notification and downloads letter. Document is not visible to employee before the specialist sends it. If incorrect: specialist rejects with required comment → employee is notified → employee edits and resubmits same form → specialist re-verifies. No limit on resubmissions.
 
 ---
 
@@ -163,15 +174,17 @@ The following letters are routed to India Team specialists for review before the
 
 | Field | Filled By | Notes |
 |---|---|---|
-| Name | System (HR) | Read-only |
-| Designation | System (HR) | Read-only |
-| UID | System (HR) | Read-only |
-| Work Location | System (HR) | Read-only |
-| Start Date | System (HR) | Read-only |
+| Date | System (DOCS) | Read-only |
+| Name | System (People system) | Read-only |
+| Designation | System (People system) | Read-only |
+| UID | System (People system) | Read-only |
+| Work Location | System (People system) | Read-only |
+| Start Date | System (People system) | Read-only |
 | Purpose | Employee | Dropdown |
-| Notes & Responsibilities | Employee | Plain text, multi-line (no formatting) |
+| Custom field details | Employee | Text input |
+| Notes & Responsibilities | Employee | **Required.** Multi-line plain text, paragraphs supported, max ~1000 chars |
 
-**Behavior:** Active employee submits → India Team specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee downloads. Document is not visible before the specialist sends it. If incorrect: specialist rejects → employee opens a new request.  
+**Behavior:** Active employee submits → EPAM specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee downloads. Document is not visible before the specialist sends it. If incorrect: specialist rejects with required comment → employee edits and resubmits same form → specialist re-verifies. No limit on resubmissions.  
 **LOR for ex-employees:** Out of scope for Phase 1 — handled in Separation Letters.
 
 ---
@@ -195,22 +208,24 @@ No validation questions for Relocation Letter at this stage.
 
 Please confirm these behaviors apply consistently.
 
-### Form Submission — No Confirmation Popup
+### Form Submission — Self-Declaration Checkbox
 
-In Assist, a popup with a checkbox appeared before employees could press "Continue" to submit a request. **DOCS does not support this popup.** Instead, a brief disclaimer text will appear at the top of the form — employees read it and proceed directly to filling in the form without clicking a checkbox.
+In Assist, a popup with a checkbox appeared before employees could press "Continue" to submit a request. **DOCS implements a Self-Declaration section at the bottom of each request form** with a full disclaimer text and an **"Accept" checkbox** that the employee must tick before clicking Submit. *(D-21 — confirmed from DOCS platform, 2026-05-13. Updates D-17.)*
 
-**Question 6.0 — Is replacing the Assist confirmation popup with a static text notice acceptable?**
+**Question 6.0 — Is the Self-Declaration text correct and acceptable for EPAM India?**
+> *(Current text: "I hereby declare that the information provided by me is true and correct. The company doesn't confirm any factual correctness of information provided by you. This Letter is being issued on your request solely for the purpose mentioned in the application. Any declaration made by you well knowing it to be false or discovered at any point of time to be false, the company can't be held accountable for issuance of such letter. You shall be held for an appropriate disciplinary action for any such discovery.")*
 > Your answer: ___________
 
 ---
 
 ### Request Rejection
-- India Team specialist can reject a request with a reason
-- Employee is notified with the rejection reason
-- Employee must **open a new request** — rejected requests cannot be resubmitted
+- EPAM specialist rejects the form/document with a **required comment** (mandatory — cannot reject without comment)
+- System notifies the employee with the rejection reason
+- Employee opens the **same rejected form**, makes corrections, and resubmits
+- System notifies EPAM specialist to re-verify
+- **No limit** on how many times the form can be rejected and resubmitted
 
-**Question 6.1 — Rejection flow: Is "open a new request" correct, or should there be a resubmit option on the same request?**
-> Your answer: ___________
+*(Behavior confirmed 2026-05-12 — Q6.1 answered.)*
 
 ---
 
@@ -250,13 +265,14 @@ The system pre-fills employee data automatically — employees cannot edit these
 
 | Field | Source System | Letters |
 |---|---|---|
-| Name | HR system | All 5 letters |
-| Designation | HR system | All 5 letters |
-| UID | HR system | All 5 letters |
-| Work Location | HR system | Service Letter, Visa Processing, LOR |
-| Birth Location | HR system | Form 60 |
-| Start Date | HR system | All 5 letters |
-| Address | People platform | Address Proof only |
+| Date | DOCS system (auto) | All 5 letters |
+| Name | People system | All 5 letters |
+| Designation | People system | All 5 letters |
+| UID | People system | All 5 letters |
+| Work Location | People system | Form 60, Service Letter, Visa Processing, LOR |
+| Birth Location | People system | Form 60 |
+| Start Date | People system | All 5 letters |
+| Address | People system | Address Proof only (read-only — D-20) |
 
 **Question 7.1 — Are there any fields currently missing that should be pre-populated from HRMS/People systems?**
 > Your answer: ___________
@@ -306,4 +322,4 @@ By signing below, you confirm that the proposed solution for Reference Letters i
 | OQ-07 | LOR: Purpose dropdown values | India HR | Open — Question 4.2 |
 | OQ-08 | Bank/SIM/LPG sub-types: handled via Purpose dropdown on base template? | India Team | Open — Question 2.2 |
 | OQ-13 | Relocation Letter: purpose, trigger, eligibility, auto-trigger feasibility — questions to follow separately | India Team / Hanna Vasilenka | Open — separate discussion |
-| OQ-14 | Address Proof Letter: employee manual address edit — lock or allow? | India Team | Open — Question 3.4 |
+| OQ-14 | Address Proof Letter: employee manual address edit — lock or allow? | India Team | **Resolved — D-20: field is locked (read-only); update via People system** |

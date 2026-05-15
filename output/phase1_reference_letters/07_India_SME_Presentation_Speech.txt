@@ -1,0 +1,404 @@
+INDIA SME VALIDATION — SPEAKER SCRIPT
+Reference Letters in EPAM Docs · Phase 1
+Date: May 14, 2026
+=======================================================
+
+
+INTRODUCTION
+------------
+
+Good [morning / afternoon], everyone. Thank you for joining today.
+
+My name is [Your Name], and I'm the Business Analyst working on the migration of India HR
+document workflows from Assist to the EPAM Docs platform. With me today is [mention any
+colleagues present].
+
+I'd like to take a moment to introduce our attendees. We have Satish Malla joining as our
+India Stakeholder, and Daria Taranda as Process Owner. [Pause for any other introductions.]
+
+I really appreciate you making time for this — your input today is critical, and I'll explain
+exactly why in a moment.
+
+
+GOAL OF THE MEETING
+-------------------
+
+The purpose of this session is validation — not a status update, not an information briefing.
+
+As you may know, Assist.epam.com is being decommissioned in June 2026. The Reference Letters
+that India employees currently request through Assist will move to docs.epam.com. We have
+designed the new workflows based on our analysis of the current process and discussions with
+the DOCS platform team, but before development begins, we need your confirmation that what we
+have designed is correct.
+
+Specifically, we need you to:
+
+  1. Confirm that the 5 letter types we have in scope are complete and correct.
+  2. Validate the form fields for each letter — that we have the right fields,
+     in the right format, with the right behavior.
+  3. Confirm the process flows — how requests are submitted, reviewed, and delivered.
+  4. Answer 5 open design questions where we cannot proceed without your input.
+  5. Sign off at the end of the session.
+
+Your sign-off today unblocks the development work. Without it, we cannot move forward.
+
+Let's go through the slides. I'll pause at each question for discussion.
+
+
+=======================================================
+SLIDE 1 — CONTEXT & GOAL
+=======================================================
+
+[Show Slide 1]
+
+Let me set the context quickly.
+
+Assist.epam.com will be switched off at the end of June 2026. From that date, all India
+reference letter requests must go through docs.epam.com — there will be no parallel running
+of both systems.
+
+Phase 1 of the migration covers Reference Letters — that is what we are here to validate
+today. You can see the full migration roadmap on screen: we are currently in Phase 1, which
+is the active phase. Phase 2 will cover Compensation Letters after we go live in June. Phase 3
+will cover Separation Letters after that. Phase 4 and beyond will look at the Relocation Letter
+and Nominee Form, which require a separate investigation before we can scope them.
+
+Today's session is focused entirely on Phase 1 — 5 letter types, going live in June 2026.
+
+The goal of this meeting, as shown on the slide: confirm the letter types, fields, routing, and
+common behaviors — and resolve the open design questions that we need your answer on.
+
+Any questions before we move on?
+
+[Advance to Slide 2]
+
+
+=======================================================
+SLIDE 2 — SCOPE: 5 LETTER TYPES
+=======================================================
+
+[Show Slide 2]
+
+Phase 1 includes 5 letter types. Let me walk through them.
+
+We have two processing tracks:
+
+  - Track A — Auto-Verified: the employee fills the form, submits it, and the letter is
+    generated instantly. No manual review is required. This applies to Form 60,
+    Address Proof Letter, and Service Letter.
+
+  - Track B — Reviewed by India Team specialist: the employee submits the form, it goes to
+    a DV or EDV specialist in the India Team for review, and the specialist manually sends
+    the letter to the employee after verification. This applies to Visa Processing Letter
+    and Letter of Recommendation (LOR) for active employees.
+
+The five letters in scope are:
+  1. Form 60 — Track A, auto-verified
+  2. Address Proof Letter — Track A, auto-verified
+  3. Service Letter — Track A, auto-verified
+  4. Visa Processing Letter — Track B, manual review
+  5. LOR (Letter of Recommendation) — Track B, manual review, active employees only
+
+A few important things are out of scope for Phase 1:
+  - LOR for ex-employees — this will be handled in Phase 3 via the Separation Letters module.
+  - Relocation Letter — Phase 4+ pending investigation.
+  - Compensation Letters — Phase 2.
+  - Nominee Details Form — Phase 4.
+  - Historical data migration — out of scope entirely; no Assist records will be moved to DOCS.
+
+[PAUSE — OPEN QUESTION]
+
+>> QUESTION 2.1: Do these 5 letters cover the full scope of Reference Letters that India
+   employees need in Phase 1? Is there anything missing, or anything here that should not be
+   included?
+
+[Wait for response. Note any additions or removals.]
+
+[Advance to Slide 3]
+
+
+=======================================================
+SLIDE 3 — PROCESS FLOWS
+=======================================================
+
+[Show Slide 3]
+
+Now let me walk through the two process flows in more detail.
+
+TRACK A — AUTO-VERIFIED (Form 60, Address Proof, Service Letter):
+
+  The employee fills in the form and submits it. The DOCS system pulls data from the People
+  system and auto-populates read-only fields. The letter is generated instantly. The employee
+  downloads it.
+
+  One thing to be aware of: the auto-verification runs as a nightly job. So briefly after
+  submission, the status will show "Waiting for verification" — but this is cosmetic only.
+  The employee can still download the letter. There is no actual delay or blocker.
+
+TRACK B — MANUAL REVIEW (Visa Processing Letter, LOR):
+
+  The employee fills in the form and submits it. The DOCS system notifies the India Team
+  specialist. The specialist reviews the request and has two options:
+
+  VERIFY: The specialist verifies the form, then manually triggers "Send Document". The
+  employee receives a notification and can download the letter. The document is hidden from
+  the employee the entire time — they cannot see or download it until the specialist sends it.
+
+  REJECT: The specialist rejects the form and must provide a comment — a rejection reason is
+  mandatory. The employee is notified, opens the same rejected form, makes corrections, and
+  resubmits it. The specialist is then notified to re-verify. There is no limit on how many
+  times this can happen.
+
+AUTO-CLOSE BEHAVIOR:
+
+  Once a request is complete — meaning the letter has been generated for Track A, or the
+  specialist has sent the document for Track B — the request auto-closes after 2 days if the
+  India Team specialist has not manually closed it first. This keeps the queue clean
+  automatically.
+
+  Important: a rejected form does not count as completed. The request stays open for the
+  employee to resubmit.
+
+>> Do you have any questions about these flows before we move on?
+
+[Advance to Slide 4]
+
+
+=======================================================
+SLIDE 4 — FORM FIELDS: AUTO-VERIFIED LETTERS
+=======================================================
+
+[Show Slide 4]
+
+Let me walk through the fields for each of the three auto-verified letters. I'll keep this
+efficient — please stop me if anything looks wrong.
+
+Fields shown in green are pre-populated from the People system and are read-only. Fields in
+amber are filled by the employee.
+
+FORM 60:
+
+  Pre-populated (read-only): Date, Name, Designation, UID, Work Location, Birth Location,
+  Start Date.
+
+  Employee fills in: Salutation (dropdown — e.g. Mr./Mrs.), Father Name, Current address
+  (two-line text), Worksite city (dropdown), UAN, State, Mobile, PAN.
+
+  That is 7 system fields and 8 employee fields. The Salutation, Current address, and
+  Worksite city fields were confirmed from the DOCS platform screenshots — these are newer
+  additions compared to what was in Assist.
+
+ADDRESS PROOF LETTER:
+
+  Pre-populated (read-only): Date, Name, Designation, UID, Start Date, and — importantly —
+  the employee's address as it appears in the People system. The address field is locked.
+  Employees cannot edit it on the form.
+
+  If the address is incorrect or missing, the form shows a note directing the employee to
+  update their People system profile first. Only after updating the People system can they
+  submit the form.
+
+  Employee fills in: Purpose (dropdown) and a Custom Purpose text field (max 100 characters,
+  always visible on the form, only needs to be filled if "Custom" is selected as the purpose).
+
+>> QUESTION: Can you confirm the Purpose dropdown values for Address Proof Letter?
+   We need the full list of options to configure in DOCS.
+
+SERVICE LETTER:
+
+  Pre-populated (read-only): Date, Name, Designation, UID, Work Location, Start Date.
+
+  Employee fills in: Purpose (dropdown — values still to be confirmed) and a custom text field.
+
+>> QUESTION (OQ-05): What are the Purpose dropdown values for Service Letter?
+   This is one of our open questions — we cannot configure the form without this list.
+
+[Advance to Slide 5]
+
+
+=======================================================
+SLIDE 5 — FORM FIELDS: REVIEW-REQUIRED LETTERS
+=======================================================
+
+[Show Slide 5]
+
+Now the two Track B letters — these require India Team specialist review.
+
+VISA PROCESSING LETTER:
+
+  Pre-populated (read-only): Date, Name, Designation, UID, Work Location, Start Date.
+
+  Employee fills in: Purpose of Travel (free text), Destination Country (free text),
+  Tentative Travel start date (date picker), Tentative Travel end date (date picker),
+  Travel type (dropdown — e.g. Personal Travel), and a Comments field (text area).
+
+  The document is not visible to the employee at any point during review. They cannot see
+  or download the letter until the India Team specialist triggers "Send Document."
+
+>> QUESTION (OQ-06): What are the Purpose values for the Travel type dropdown on
+   Visa Processing Letter? Please confirm the full list.
+
+LOR — LETTER OF RECOMMENDATION (Active Employees Only):
+
+  Pre-populated (read-only): Date, Name, Designation, UID, Work Location, Start Date.
+
+  Employee fills in: Purpose (dropdown — values to confirm), a Custom field for custom purpose
+  text, and Roles & Responsibilities (multi-line plain text, required, max approximately 6000
+  characters). Client names must NOT be included in the Roles & Responsibilities field.
+
+  LOR for ex-employees is out of scope for Phase 1. It will be handled in Phase 3 via the
+  Separation Letters module.
+
+>> QUESTION (OQ-07): What are the Purpose dropdown values for LOR?
+   Again, needed to configure the form.
+
+>> QUESTION (OQ-08): For Address Proof and Service Letter — we expect that Bank Letter,
+   SIM Card Letter, and LPG Letter are handled via the Purpose dropdown on the same base
+   template, rather than as separate letter types. Can you confirm this is correct?
+
+[Advance to Slide 6]
+
+
+=======================================================
+SLIDE 6 — COMMON BEHAVIORS
+=======================================================
+
+[Show Slide 6]
+
+This slide covers behaviors that apply consistently across all 5 letter types. Let me go
+through each one briefly.
+
+1. SELF-DECLARATION CHECKBOX
+   In Assist, a popup appeared before submission. In DOCS, there is a Self-Declaration section
+   at the bottom of each request form with a full disclaimer text and an "Accept" checkbox.
+   The employee must tick the checkbox before they can click Submit. This applies to all 5
+   letter types.
+
+2. REJECTION — EDIT AND RESUBMIT SAME FORM
+   When a specialist rejects, they must leave a comment — this is mandatory. The employee is
+   notified, edits the same form (not a new request), and resubmits. No limit on resubmissions.
+
+3. AUTO-CLOSE AFTER 2 DAYS
+   Once all forms in a request reach final status, the request auto-closes after 2 days if the
+   specialist hasn't closed it manually.
+
+4. ONE ACTIVE REQUEST AT A TIME
+   An employee cannot submit a new request for the same letter type while a previous one is
+   still open. They must wait for the previous request to close — which happens within 2 days
+   via auto-close.
+
+5. NOTIFICATIONS
+   Employees receive notifications when their letter is ready for download, and when their
+   form is rejected (with the rejection reason).
+   Specialists receive a notification as soon as the employee submits all required forms —
+   telling them a request is waiting for verification.
+
+6. DATA PRE-POPULATION FROM PEOPLE SYSTEM
+   Date is auto-generated by DOCS. Name, Designation, UID, Work Location, Birth Location,
+   Start Date, and Address (for Address Proof Letter) are all pulled from the People system
+   and are read-only. If an address is incorrect, the employee must update their People
+   profile first.
+
+7. COMMENTS FIELD
+   The Comments field on Visa Processing Letter supports max 300 characters, single line.
+   The Roles & Responsibilities field on LOR supports up to approximately 6000 characters,
+   multi-line.
+
+8. RM APPROVAL REMOVED
+   The RM approval step that existed in Assist is not used in DOCS. For Track B letters,
+   the India Team specialist (DV/EDV role) verifies and sends the document directly.
+   No RM involvement.
+
+9. AUTO-VERIFICATION STATUS CHANGE (Track A)
+   For Form 60, Address Proof, and Service Letter — the form is auto-verified the next day
+   after submission. The status changes from "Waiting for verification" to "Verified"
+   automatically. No action needed from employee or specialist.
+
+10. PURPOSE FIELD — "CUSTOM" TEXT INPUT
+    The Purpose dropdown on Address Proof Letter, Service Letter, and LOR includes a "Custom"
+    option with a free-text field. This text field is always visible on the form, optional,
+    max 100 characters, single line.
+
+11. ADDRESS PROOF — ADDRESS LOCKED
+    As mentioned earlier, the address on Address Proof Letter is read-only. If incorrect,
+    update via People system.
+
+>> Are there any behaviors here that look different from what you expected, or anything
+   we have missed?
+
+[Take notes. This is a good moment for open discussion before the sign-off slide.]
+
+[Advance to Slide 7]
+
+
+=======================================================
+SLIDE 7 — SIGN-OFF
+=======================================================
+
+[Show Slide 7]
+
+We are at the final slide.
+
+By signing off today, you are confirming that the proposed design for Phase 1 Reference
+Letters in EPAM Docs correctly represents the required behavior, and that the India team is
+aligned to proceed to development.
+
+The sign-off table is on screen. We have two signatories today:
+  - Satish Malla — India Stakeholder
+  - Daria Taranda — Process Owner
+
+Each person can select either "Approved" or "Changes needed." If changes are needed, please
+add a comment describing what needs to change.
+
+NEXT STEPS AFTER SIGN-OFF:
+
+  Stage 3 — Iteration: any changes requested today will be incorporated and re-circulated
+  for confirmation before development begins.
+
+  Stage 4 — UAT: once the DOCS workflows are built, the India team will validate actual
+  system behavior against the design agreed today.
+
+  Go-Live — June 2026: Assist.epam.com is decommissioned. All India Reference Letter
+  requests will be handled exclusively via docs.epam.com from that date.
+
+If there are any outstanding items from today's discussion that we could not resolve in the
+meeting, I will capture them and follow up directly. Nothing will move to development with
+an unresolved blocker.
+
+[Pause for sign-off. Allow time for comments and questions.]
+
+
+=======================================================
+CLOSING
+=======================================================
+
+Thank you all for your time and your detailed review today.
+
+[Summarize any decisions or changes agreed in the meeting — e.g., "We agreed to add X to the
+Purpose dropdown for Service Letter" or "Satish confirmed that bank sub-types use the
+Purpose dropdown on the same template."]
+
+I will update the documentation to reflect everything we discussed today and send it around
+for your records. If anything comes to mind after the meeting, please reach out to me directly.
+
+Thank you — we really appreciate your support in getting this migration done right.
+
+
+=======================================================
+OPEN QUESTIONS QUICK REFERENCE (for speaker)
+=======================================================
+
+OQ-05  Service Letter: Purpose dropdown values
+       → Ask on Slide 4
+
+OQ-06  Visa Processing Letter: Travel type / Purpose dropdown values
+       → Ask on Slide 5
+
+OQ-07  LOR: Purpose dropdown values
+       → Ask on Slide 5
+
+OQ-08  Bank/SIM/LPG: handled via Purpose dropdown on base template?
+       → Ask on Slide 5
+
+Q 2.1  Do 5 letters cover full scope of Phase 1?
+       → Ask on Slide 2

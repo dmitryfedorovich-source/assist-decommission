@@ -1,6 +1,6 @@
 @echo off
 
-cd /d "C:\AIProjects\Claude\Assist decomission"
+cd /d "C:\CLD_AI_project\assist-decommission-master"
 
 git rev-parse --is-inside-work-tree >nul 2>&1
 if errorlevel 1 (

@@ -36,7 +36,7 @@ All dates, scope, and process rules are governed by the Feedback & Decisions Log
 | D-11 | Historical data migration: out of scope | No Assist request data needs to move to DOCS |
 | D-15 | RM approval removed from all Phase 1 flows | DOCS routing config applies to all 5 letters without RM involvement |
 | D-16 | Relocation Letter removed from Phase 1 | Phase 4+ deferred — do not disable Relocation in Assist on June 30 |
-| D-17 | Self-Declaration popup not in DOCS | Static disclaimer text in DOCS forms — no functional gate to configure |
+| D-21 | Self-Declaration Accept checkbox confirmed in DOCS | 'Accept' checkbox at bottom of each form — employee must tick before Submit; confirm enabled for all 5 India letter types |
 
 ---
 
@@ -58,7 +58,7 @@ All items must be complete before the Go/No-Go decision at T-1 day. Owner to sig
 - [ ] **OQ-07** — LOR: Purpose dropdown values confirmed by India Team
 - [ ] **OQ-08** — Bank/SIM/LPG sub-types: approach confirmed (via Purpose dropdown or separate types)
 - [ ] **OQ-11** — DOCS dev: Comments field (Visa Processing) + LOR Notes field implemented and tested
-- [ ] **OQ-14** — Address Proof: address field lock/edit decision confirmed by India Team
+- [x] **OQ-14 resolved** — D-20: Address Proof address field confirmed read-only; no India Team action needed
 
 ### Platform readiness
 
@@ -67,8 +67,8 @@ All items must be complete before the Go/No-Go decision at T-1 day. Owner to sig
 - [ ] Track B (DV/EDV queue): Visa Processing, LOR routing live
 - [ ] Data pre-population from People Portal: name, employee ID, designation, date confirmed working
 - [ ] 2-day auto-close rule active (D-06)
-- [ ] Rejection flow configured: new request, not resubmit (D-07)
-- [ ] Static disclaimer text added to relevant forms (D-17)
+- [ ] Rejection flow configured: specialist required comment; employee edits and resubmits same form; specialist re-verifies (D-07)
+- [ ] Confirm Self-Declaration 'Accept' checkbox enabled for all 5 India letter types (D-21)
 - [ ] Stage 5 complete — Dev epics/tickets confirmed closed by DOCS platform team
 
 ---

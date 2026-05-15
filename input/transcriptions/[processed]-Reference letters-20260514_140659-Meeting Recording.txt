@@ -1,0 +1,1097 @@
+Reference letters-20260514_140659-Meeting Recording 
+
+May 14, 2026, 11:05AM 
+
+56m 53s 
+
+ 
+Hanna Vasilenka started transcription 
+
+ 
+Dzmitry Fedarovich   0:03 
+How are we going to work, and we decided to... 
+Separate on phases as is the commission, so we could deliver a scope step by step. So, our first phase is reference letters, where we took form 60 address, address proof, service letter, visa letter, and error. Next phase will be Compensation letter, separation, and other location letter and the mini form. 
+That we are still. 
+working on investigation on these topics. Okay. 
+
+ 
+Satish Malla   0:34 
+Can we move this phase two Compensation letters to phase four or phase three? 
+Or it is already designed. 
+
+ 
+Dzmitry Fedarovich   0:44 
+Um, pardon? 
+
+ 
+Satish Malla   0:45 
+The phase two where you're telling about Compensation letters, can that be moved to phase three or phase four or it is nothing to do with the timelines here? I just want to check. Okay. 
+
+ 
+Dzmitry Fedarovich   0:53 
+It's not online, it's so our work. We currently complete completely made research on the reference letter and can settle letter nearly done. It's our PA done, but if we need to switch, make something different order, we could do easily, but we need time for more research. I mean, we have no. 
+
+ 
+Satish Malla   0:57 
+Okay, got it, got it. 
+You understand? 
+
+ 
+Dzmitry Fedarovich   1:14 
+Done, deep work there. 
+Okay. 
+
+ 
+Satish Malla   1:17 
+Okay, yep. 
+
+ 
+Dzmitry Fedarovich   1:19 
+Okay, so scope, our scope for... 
+The letters are divided into tracks, you see, how to verify it, uh, it's when... 
+One minute. 
+When the employee in just in the employee. 
+Ah, OK. Pardon, I'm very shocked. OK, 3K. Auto verify the employee fills the form, submitted, and the letter is generated instantly. No manual reviews required. This applied for form 60, address proof letter, and service letters. 
+
+ 
+Darya Taranda   1:43 
+Breathe in, breathe out. That's okay. 
+
+ 
+Dzmitry Fedarovich   1:58 
+It's a green color here and the track B reviewed by India team specialist. The employee submits the form. It goes to India specialist for review. 
+And the letter sent to employee after verification. This applies to visa processor letter and letter of recommendation. And out of scope is our second, third fast in compensation letter, separation letter, law for ex employees, nominee, relocation letters, and... 
+Also, cancel the request and historical data migration, we are out of scope. 
+Is that OK? 
+
+ 
+Satish Malla   2:33 
+That, when I when you say it is out of scope, that would be built in the next phase, or it is? 
+
+ 
+Dzmitry Fedarovich   2:39 
+This all except historical data migration will be done on the next stages. 
+
+ 
+Satish Malla   2:47 
+Okay. 
+
+ 
+Dzmitry Fedarovich   2:48 
+OK, OK, so I give work to the Olga, so we will. 
+Put you through all these fields and so on. Olga, could you take microphone? 
+
+ 
+Olga Chaban   3:05 
+Sure. Yeah, could you please go to the next slide? 
+Okay, as there is a briefly describe flow that connect with two tracks that describe Dzmitry. What we want to highlight here, first of all, if we talk about track A, we have after verified letters. 
+Here, we want to highlight that on the stage of an employee submits a form and form request form, I mean, with the details of this letter. And this form in stage is waiting for verification, the document system 
+will be automatically move this form to status verified next day after employees meet this form. This action not required any actions from employee site or 
+
+ 
+Satish Malla   4:07 
+Of the recommendation, we select, I would have produced the I think, I know, in Croitoru and Adam. 
+
+ 
+Olga Chaban   4:11 
+Could you please repeat if you have a question? 
+Okay, so let me continue. Or from a specialist side. Just to notice that the DOCS system works in this way. If we talk about track B, here we have verification flow addition. 
+And this verification flow. 
+mean that the letter that generated in scope of request is unavailable for employee until this local specialist verify the request form and sends this letter to employee. It's additional actions that required for this processes. 
+Also, let me highlight that each form will be connected with separate processes in DOCS. And it means that now it's also connected with additional things that we want to highlight that 
+Employee can request only one letter and one letter at a time and until the current request is not closed with the generated letter in the DOCS system, the employee can't request the same letter one more time. Only when the request will be closed. This letter 
+possibility to request a new letter will be available for him. We will be show in more details how this process work in DOCS when we switch on to the Miro. One more thing that I want to highlight here and connect with this slide, it's about Auto Closer. 
+If we talk about track A, we plan to switch on this possibility in the request, but what we want to what we should understand is that auto request work in a way when the request is automatically closed only in two days. 
+when the old forms in the request and completed status. So it means that the employee can request the same letter one more time, only in two days when the previous one, previous letter was generated by the system. It's also 
+I think we need to highlight you. OK, so I think, right, yeah. 
+
+ 
+Hanna Vasilenka   6:59 
+Sorry, sorry, Satish, is it works for you? 
+
+ 
+Satish Malla   7:03 
+Yeah, that's what my point is like. So this auto closure behavior is really needed for the functionality that is kept. I think we don't require this auto closure because the intent of keeping the option for an RM review is like we wanted that to be reviewed by respective RM and confirm and approve the letter to be issued to the employee. That is an auto closure. 
+Again, that doesn't make any point of consideration where we are taking a review from the RM to generate or accept the letter issuance and all. The better we can provide this auto closure option. 
+That is not me. 
+
+ 
+Olga Chaban   7:41 
+Mhm. 
+It's this requirement connect with all letters, because some of them. 
+
+ 
+Satish Malla   7:48 
+Only for only for the track B, not for the track A. Any of track A, any of track A will be automatically approved and it will be generated automatically once employer is a request for track B, which about there is an approval goes for the next level. For this, this auto closure should not be there. 
+
+ 
+Olga Chaban   7:50 
+Only for the traffic. 
+Mmh. 
+Okay, maybe let's review in more details how it works in Docs because verification flow provide you with opportunity to check the letter before it will be sent to employee. And Auto close period in some technical things that connect with 
+
+ 
+Satish Malla   8:12 
+Yeah. 
+Perfect. 
+
+ 
+Olga Chaban   8:31 
+with DOCS flow. And let me highlight one more time. The employee can't request the same letter one more time before the current request will be closed. So it means that we have two possible options. First option, it's auto closed period. 
+And the second option, the specialist, the local specialist can manually close the request, but it will be part of work manual special of a local specialist. If it's okay for you, we can skip the auto close option in the processes, just thinking about that. It could be clarified with a business analyst 
+who will be dealing directly with the processes in the future, with implementing this processes in the future. OK, so let me. 
+
+ 
+Satish Malla   9:20 
+Yep. 
+Then we can increase the days, right? 
+
+ 
+Olga Chaban   9:28 
+Could you please repeat? 
+
+ 
+Satish Malla   9:30 
+If that doesn't work, we may increase this two days to a bit of five days or 10 days of time. 
+
+ 
+Dzmitry Fedarovich   9:35 
+Yes, we could choose any numbers, understand, even one year. 
+
+ 
+Olga Chaban   9:36 
+Oh. 
+
+ 
+Satish Malla   9:39 
+Okay. 
+
+ 
+Olga Chaban   9:39 
+Yeah, but this option is editable, so we can turn off or turn on this option anytime when you are needed. 
+
+ 
+Dzmitry Fedarovich   9:48 
+On the flight. 
+
+ 
+Hanna Vasilenka   9:48 
+But yeah, but till it's not closed, it's not possible to request like a new letter. 
+
+ 
+Satish Malla   9:48 
+Yeah. 
+
+ 
+Olga Chaban   9:54 
+Yeah. Yeah. 
+for the employee. So important to have a close request if the letter was generated and shared with the employee. 
+
+ 
+Satish Malla   10:07 
+Yeah, that is that that check is really needed because sometimes RM may not approve unintentionally wanted to connect with the employee and after that he can give an access to request raise the request and if he's not able to raise the request that is the right way to operate the system as well. Let's see how. 
+
+ 
+Olga Chaban   10:20 
+Mhm. 
+
+ 
+Satish Malla   10:26 
+I mean, at the price of development phase, I may take a call on how many days to be kept or what is the option that can be fixed. You can proceed for that, Olga. 
+
+ 
+Olga Chaban   10:36 
+Okay, right now I'm on the Miro board and let's review in more details how to, how employee dealing with the DOCS platform in case of different requests. So let me share the screen. 
+
+ 
+Satish Malla   10:50 
+Yep. 
+
+ 
+Olga Chaban   10:56 
+Okay, here is we have two flows. We will start with auto verified flows that connect with three letters. Just as a reminder, each letter will be present in the DOCS system as a separate process. And the first stage, how to employee create the request. The approach will be the same for each processes that 
+Listed here. 
+So, let me... 
+
+ 
+Satish Malla   11:22 
+Don't mind, can I just download it? Yeah. 
+
+ 
+Olga Chaban   11:26 
+Yeah, okay. 
+
+ 
+Satish Malla   11:27 
+S. 
+
+ 
+Olga Chaban   11:29 
+Okay, so as employee could request the letter from my request page that available for each employee in EPM as soon as they go to the DOCS system. Here we will have a button that name request document from EPM. 
+
+ 
+Satish Malla   11:30 
+Yep. 
+
+ 
+Olga Chaban   11:48 
+As soon as employee click on this button, the system open, the new pop-up window with drop-down. And in this drop-down will be listed all letters that employee could request from through the DOCS. The employee choose what the letter he want to request. 
+and press on the button to create request. 
+Okay, let's go to the next stage. As soon as employee 
+Okay. 
+
+ 
+Hanna Vasilenka   12:23 
+Could you just a little bit zoom up? 
+
+ 
+Olga Chaban   12:26 
+I try to do it bigger, but... 
+
+ 
+Satish Malla   12:29 
+Well, you can give the view access for this Miro for me and Hanna, so that parallel will also look at that page, if that doesn't make any problem for you. 
+
+ 
+Olga Chaban   12:38 
+Ohh. 
+Let's try. 
+Yeah. 
+
+ 
+Satish Malla   12:45 
+Or else after the call also you can share. That's not a big problem. 
+
+ 
+Olga Chaban   12:49 
+Yes, Pawel will share this picture after the call as a part of follow up. Okay, so as soon as an employee click on the button create a request, the system navigate him to his or her request page. 
+
+ 
+Satish Malla   12:51 
+Yeah. 
+
+ 
+Olga Chaban   13:07 
+And here is, will be present two documents. One of the documents, its required form, will be highlighted as forms that need to be fill in firstly with button fill in. As soon as our employee click on this button fill in, 
+The system opens a request form. It's just an example. You can review it in the future and provide your feedback if we need to provide some changes here. What I want to highlight here, here is the same field. 
+
+ 
+Satish Malla   13:46 
+SN. 
+
+ 
+Olga Chaban   13:47 
+that you have in assist. Part of this field will be fulfilled automatically with the information from People platform. Also, here will be present a disclaimer and as soon as employee provides the information in this form and check already existing information here, 
+
+ 
+Satish Malla   14:09 
+Whatever. 
+Yeah. 
+
+ 
+Olga Chaban   14:12 
+He need to click accept after the disclaimer. Could you please repeat? 
+
+ 
+Satish Malla   14:12 
+Coffee. 
+Start again, check. 
+
+ 
+Olga Chaban   14:21 
+Okay, thanks, and after that, the button submit will be available to proceed now with this form. Let's imagine that employee checked and provide all necessary information in this form. 
+
+ 
+Satish Malla   14:21 
+No, no, go ahead, go ahead. 
+
+ 
+Olga Chaban   14:39 
+click and tick the check box and submit the form. The system, double check. If the employee want to submit this form, employee just need to one more time click on submit button and after that. 
+Let's go next. 
+The system navigate employee back to the request and employee could download the form. 
+Yeah, please pay attention. On the slide, we see that request details in status waiting for verification. It's the information that I highlight when we discussed the general flow on previous slide in the presentation. 
+This status will be changed next day automatically without any additional action from any site, I mean from employee site or local team site for verified. 
+Okay. 
+And, as soon as this required request form will be changed status for verified, the request status will be changed uncompleted, and if we turned on the option auto-close option in the process. 
+The system automatically closed this request in two days. Two days, it's minimal terms. So we can make it longer if you want, or don't use this option at all. Yes, Satish, please welcome to share your feedback. 
+
+ 
+Satish Malla   16:34 
+So this is good actually. So once our query is like once the request is moved to Auto close, you will not be able to download the letter again or it nothing like, it's just a status. 
+
+ 
+Olga Chaban   16:44 
+No, no, we get I can show you. I'm actually describe it in a separate in a separate part of this support. Actually, if you see here is the president of. 
+Picture how the request looks like if the request in status closed, the request form will be available in this case, and also form 60 also available to download, so the status of closed request is not blocked employee. 
+to download this letter one more time a little bit later. 
+
+ 
+Satish Malla   17:31 
+Top right corner email ID also to be updated. Maybe it's a development phase and we can update that at this point of time. I just want to give that. 
+
+ 
+Olga Chaban   17:31 
+Um... 
+
+ 
+Satish Malla   17:41 
+Information. 
+
+ 
+Olga Chaban   17:43 
+But you mean to provide some changes in the letter? 
+
+ 
+Satish Malla   17:46 
+Not in the letter, in the screen where on the top right corner you have mentioned like for the details you may contact. There is an email ID, WFA HR email ID right. This to be updated. 
+
+ 
+Olga Chaban   17:55 
+Yeah. 
+Yeah, it's good. Yeah, yeah, just provide us with information of what the D should be present here. We take it as an example. 
+
+ 
+Satish Malla   18:03 
+Our Rewards is the one. 
+I'm pasting that email ID here; you can keep that one. 
+
+ 
+Olga Chaban   18:12 
+Okay, you will share it. 
+
+ 
+Hanna Vasilenka   18:14 
+Satish. So in general, this approach for this form, you prove, yes, it's this flow, it works for India. 
+
+ 
+Satish Malla   18:23 
+Yep. 
+
+ 
+Hanna Vasilenka   18:24 
+Okay. 
+
+ 
+Olga Chaban   18:25 
+Okay, great. 
+Okay, let's move on. The next process, connect with a process letter of recommendation. We need to add one more step with approving or in case DOCS. 
+flow, it's a verification flow from location specialist site. Oh, local specialist site, I'm sorry. Okay, so the request, one of this form, employee can with the same approach as was described in previous flow. So the approach, the same. 
+just to click on request document from a POM, choose the form of letter what the employee need to request and confirm with the button create request. But the next. 
+step when employee need to fill in this as a request form in the request. A little bit different. Here, as you see, we don't have available letter from the beginning. Here for employee available on the request form and employee need to fill in this form firstly. 
+Um... 
+And we click on fill in button, and then the system suggests him or her to provide some details that need for this letter generation. Also, this letter can include field comments that will be implemented in DOCS in the future. 
+that provide employee opportunity to put, to post or type some big block of text that they need to provide. Also here, we plan to add a disclaimer. 
+with accept checkbox. And as soon as employee provide necessary information, some information will be also reused from People platform. He can submit this request. 
+and confirm submitted. 
+OK, after that, as soon as employee submit the request, the letter request details form. 
+Status of this form will be changed on waiting for verification. And in case of this process, the next stage, the next step will be from a palm specialist site. The palm specialist site, it could be DA, where include all specialists who will be dealing with such kind of request and DOCS. 
+receive a notification. There is an example how it could be looks like that some requests need verification and clicking on this button, open DOCS, or as you know, also available to see this request on the dashboard, but we will review it a little bit later, alternative ways. 
+we can find this such kind of request. 
+The system navigate specialist to DOCS request where to upon specialist. I'm sorry. 
+will be available as all form. That, yes, please go ahead with your question. 
+
+ 
+Satish Malla   22:36 
+I understood the flow that you are about to tell you. So I wanted to give a clarity here. When you say like EPM specialist who deals with this approval, actual requirement is for the reporting manager that is there in people for an employee there will be an RM right. So RM need to approve this. If it again comes to an specialist and specialist taken. 
+
+ 
+Olga Chaban   22:38 
+Ohh, okay, okay, great, great, great. 
+Mhm. 
+
+ 
+Satish Malla   23:00 
+approval from RM, that's again a manual interaction here. Will that help in DOCS or there is no possibility of getting RM approval from DOCS. 
+
+ 
+Olga Chaban   23:12 
+Unfortunately, currently, we don't have such kind of functionality. You mean... 
+
+ 
+Satish Malla   23:18 
+Then can we not then can we not take at the requirement only while generating the letter employee can take the RM name so to the name can we not trigger the email instead of the specialist we are giving here? 
+
+ 
+Olga Chaban   23:37 
+I didn't catch the questions. Could you repeat, please? 
+
+ 
+Satish Malla   23:38 
+For example. 
+For example, now the letter is getting assigned to the specialist you are telling, right? For the approval process. So can we not build in the in a way like employees raising a request, right? Like you need to fill the information and give the self declaration and submit that form, right? In that form, can we have... 
+
+ 
+Olga Chaban   23:47 
+Yeah. 
+
+ 
+Satish Malla   24:02 
+a slot where your current RM. So that let employee fill the name, whoever the current RM. So based on that request, can we not send the verification to that employee? For example, if I raise a request and I keep RM as some X person in the team, so will that be? 
+Go for respect to approval, at least. 
+
+ 
+Olga Chaban   24:26 
+Mm-hmm. 
+
+ 
+Satish Malla   24:26 
+Can we do that, no? 
+
+ 
+Olga Chaban   24:28 
+Actually, it will be quite hard because each specialist that dealing with DOCS request from a POM site have a separate additional roles in DOCS. So it means that if... 
+
+ 
+Hanna Vasilenka   24:28 
+Ohh. 
+Yeah. 
+
+ 
+Satish Malla   24:44 
+I. 
+
+ 
+Olga Chaban   24:49 
+Ohh. 
+
+ 
+Satish Malla   24:50 
+Understood, got your point. 
+
+ 
+Olga Chaban   24:53 
+Yeah, yeah, we we DOCS have a separate flow, how to provide some additional roles directly, not in general. For example, if around today one and does the next. 
+a period of time it could be changed. 
+
+ 
+Satish Malla   25:12 
+Because. 
+Basically, the request has to be approved by RM. 
+Even though if we did come to a specialist like us or someone else, again, we have to manually download that information, share with respect to RM, take the approval on email, and we'll come here and we have to verify. 
+
+ 
+Olga Chaban   25:18 
+Yeah. 
+
+ 
+Satish Malla   25:32 
+The loop is getting increased. 
+
+ 
+Olga Chaban   25:35 
+Do you mean that, in general, this request, the initiator of this request, that I'm not actually the employee, or maybe I understood you wrongly? 
+
+ 
+Satish Malla   25:49 
+No, it requests raise from employee as well as RM. Both the options we have in assist where employee raise the request, it goes for RM approval. If RM raised the request, then it comes for us to auto approval kind of stuff and we approve that and letter would be generated. 
+
+ 
+Olga Chaban   26:07 
+So, you mean that RAM approvals is a required step for this process? 
+
+ 
+Satish Malla   26:13 
+Correct. 
+
+ 
+Olga Chaban   26:16 
+Is it connect only with the visa protesting letters or? 
+
+ 
+Satish Malla   26:20 
+Yes, for the type B, but only for the type B letters. 
+
+ 
+Olga Chaban   26:24 
+So letter of recommendation, the same, yeah. 
+
+ 
+Satish Malla   26:27 
+Yep. 
+
+ 
+Hanna Vasilenka   26:30 
+Is it possible that your employee will create like DOCS request for RM? 
+
+ 
+Olga Chaban   26:30 
+Okay. 
+
+ 
+Hanna Vasilenka   26:36 
+Type his name, not like self-service, like is HR, for example, sometimes create manually DOCS process for a particular applicant or employee here, like change the roles, so employee will request. 
+Firearms. 
+Or, it's not feasible for dogs. 
+
+ 
+Olga Chaban   26:59 
+Unfortunately, no. When the employee create a request from them side, it means that the system, I would say connect this employee with a request. And when we talk about reusing some information from other system, 
+In this case, it's people platform. Now we collect the data from people platform only for employee that receives this request. So if it will be some other employee, we. 
+can't reuse information from DOCS, so it's not possible with current functionality in DOCS, unfortunately. 
+
+ 
+Dzmitry Fedarovich   27:53 
+Current DOCS architecture is not. 
+
+ 
+Olga Chaban   27:53 
+Oh. 
+Yeah, all with. 
+
+ 
+Dzmitry Fedarovich   27:57 
+Couldn't easily do these requests, unfortunately. 
+
+ 
+Olga Chaban   28:02 
+Mhm. 
+Yeah, let me take this point and discuss it a little bit later. But Satish, in general, if we for now skip the approval, the flow in Docs. 
+As it present right now, because I think you know this flow and it's pretty similar to previous one, just plus this verification flow. Is it cover your need? 
+
+ 
+Satish Malla   28:41 
+The only need is covered. The only thing is like the approval person, instead of a specialist person, it has to be approved by RM. What is that we are looking at? Come with some alternative way that can happen, either taking a request from employee kind like in a submission time. 
+he can confirm his RM name to that person, can we trigger an email or I don't know how that can be because visa processing letter is mandatory required for an RM approval because without RM we cannot give this letter because RM is a person who should know that this person is going on leave. 
+and some visa is getting in process or in time with initiating a process for visa for that guy because if tomorrow if we approve and we send it for the letter to the candidate and candidate will come back to RM that I'm going for visa interview tomorrow I need to leave then RM will be surprised. 
+So that's the only reason why we are these letters has to be get it reviewed or approved by R. 
+
+ 
+Dzmitry Fedarovich   29:46 
+Okay, and the solution when the India specialist sends a double check on the RM site manually by the Outlook or Teams not sued here, yep. 
+
+ 
+Olga Chaban   29:46 
+And... 
+
+ 
+Satish Malla   29:57 
+Yep. 
+
+ 
+Dzmitry Fedarovich   29:58 
+If it will auto stop, OK, I see, so we need to return and sync how we could. 
+implement something feasible, but it's not easy, I think. 
+
+ 
+Satish Malla   30:04 
+Yes, please, that helps. 
+PPAD. 
+
+ 
+Olga Chaban   30:11 
+One more question. Does this requirement connect with both type of letter, personal and business as well, yeah? 
+
+ 
+Dzmitry Fedarovich   30:19 
+Yeah, all track B is understand all track. 
+
+ 
+Satish Malla   30:25 
+Personal is not needed. These letters can should not be shared to the personal. Well, the type you're telling. 
+
+ 
+Olga Chaban   30:33 
+So it's just a business letter or personal letter as well. 
+
+ 
+Satish Malla   30:37 
+Both, both it can be, both it can be. 
+
+ 
+Olga Chaban   30:38 
+Was, OK, OK, and as you mentioned. 
+
+ 
+Satish Malla   30:44 
+The flow, everything is good. Flow, everything is appropriate and that is as per our requirement. The only thing you have to look at is like the approval instead of specialist can be replaced with Adam. Rest all, I'm good to go with all this flow. 
+
+ 
+Olga Chaban   30:55 
+Mhm. 
+Okay. 
+Okay, give me a second. I just want to highlight with you several things regarding this flow. I'm already mentioning about that. This flow includes not only verification flow, but also manual action to send generated letter. 
+generated letter to employee. You also know how DOCS working. Yeah, with this option and how it looks like from a specialist side and employee side. 
+Maybe let's go through just to be sure that all flow is covering it. 
+
+ 
+Satish Malla   31:46 
+Yeah, yeah, yep. 
+Yes, please, quiet. 
+
+ 
+Olga Chaban   31:50 
+Okay, present, yeah, okay, can skip. Present. 
+
+ 
+Satish Malla   31:54 
+Present, present. Continue. 
+
+ 
+Olga Chaban   31:56 
+Okay. So for now, we cover verification flow as soon as the form verified from local specialist side. The next action that specialists need to do, it's census 
+letter to the employee. It's actions that specialist can do just after verified the request details. For that, the local specialist need to the menu action on the request page and choose option send document. 
+Choose the document that need to send to employee in a pop-up window and confirm to send this document. After that, after that, the system send employee notification. 
+with an invitation to go out to DOCS and download the letter from the request. 
+Okay, the notification looks like that. 
+And as soon as employee click on the button go to download, the system redirects employee to the request on the new appeared tab on the request page that named download documents. 
+And with active button download. 
+
+ 
+Satish Malla   33:37 
+Not awesome Labaj. 
+
+ 
+Olga Chaban   33:39 
+As soon as employee click on the button download, the document will be downloaded to a personal laptop. 
+
+ 
+Satish Malla   33:42 
+The. 
+Goodbye. 
+
+ 
+Olga Chaban   33:50 
+And actually, that's all regarding this flow and the difference between first track A flows and this flow about 
+
+ 
+Satish Malla   34:03 
+Call. 
+
+ 
+Olga Chaban   34:09 
+after close period, after close request. So as in previous flow, we talk about Auto closed in two days. In this case, the specialist also can close the request. 
+manually at any time as soon as he or she stop working with this request. Or we also can include in this flow auto-close option and request will be closed in two days. 
+
+ 
+Satish Malla   34:28 
+Play Mishra. 
+
+ 
+Olga Chaban   34:48 
+Or it is this period of time could do longer. Yes, Satish. 
+
+ 
+Satish Malla   34:52 
+This can be auto closed for this request. Any of that is getting done by specialist, any of that is getting approved by Adam. The letter is getting triggered only after the approval. In that case, automatically once RM is approved, letter is being delivered to the employee. With that email, we can close the request. But I have one question here, like. 
+In track K, we are able to see the set of letters like the one he raised the request, like for as an address proof letter or recommendation letter, whatever that is. It is coming at my request, he can see the set of requests that he was raised. But for this letter, every time he need to look at this email and download or it is also will be available. 
+
+ 
+Olga Chaban   35:12 
+No. 
+
+ 
+Satish Malla   35:33 
+On my DOCS. 
+
+ 
+Olga Chaban   35:37 
+If I talk about first flow, this flow required to provide to provide possibility to our employee to seize this document, because in case this document will be hiding. 
+from the employee, we need to include a local specialist to share this document with the employee after generation with a full set of data as an employee provides in the request form. That's why in this case, it's required to 
+Availability of this document from the beginning, but if we talk about this flow, where we have verification flow, we hide as a form from the employee from request. 
+page. If you pay attention, the request view available for local specialists include several additional documents, system file that we technically need to receive data from people. 
+and also letter of recommendation. We had this letter of recommendation as well as visa processing letter because we suggest don't provide opportunity to download 
+This letter to employee before the request details will be verified. 
+Is it clear or maybe I need to provide some additional explanation? 
+
+ 
+Satish Malla   37:27 
+No, can employee download once the request is approved or verified? 
+
+ 
+Olga Chaban   37:33 
+Yes, but with this is a different approach. As soon as the request is verified and approved, you need to send, share this letter with send document option. So additional manual work in this case. 
+
+ 
+Satish Malla   37:53 
+Okay, but an employee login he should he cannot be able to see this later what you're telling. 
+
+ 
+Olga Chaban   38:00 
+The form will be unavailable for him, but as soon as local specialist use this option, send documents, the form will be available in additional tab. 
+in the request you see on the provide document tab here will see the same. 
+As it was previously, just a request form. And here, as you see, we don't have any tabs. This additional tabs is appear as soon as local specialist will use option, will use option send document. 
+So from this additional top, the document will be available to download. So that will be available to download. It's one. 
+
+ 
+Dzmitry Fedarovich   38:54 
+And forever, yes? 
+
+ 
+Satish Malla   38:55 
+Kate. 
+
+ 
+Dzmitry Fedarovich   38:58 
+Forever, it it will be available for him for. 
+
+ 
+Olga Chaban   39:02 
+Yeah. 
+
+ 
+Dzmitry Fedarovich   39:02 
+Wikipedia. 
+
+ 
+Satish Malla   39:02 
+Future action. 
+
+ 
+Hanna Vasilenka   39:03 
+Even after the closing the DOCS request, it will be anyway in future in, I don't know, half a year, it will be available to download, yeah. 
+
+ 
+Dzmitry Fedarovich   39:06 
+Yes. 
+
+ 
+Olga Chaban   39:11 
+Okay. 
+OK, got it. Yes, I understood. Let me go to the next slide. Let it be slides that we prepared here. Actually, employee have a several several options how he or she can download already. 
+Created in DOCS document from DOCS system. So, first of all, it's my request page. On my request page, we have part my request, and here on the active request tab. 
+On the past request tab available, all requests that was sent to employee and. 
+He or she can open this request. OK, let me. 
+OK. 
+click on the request, open it and go to the request. And in the request will be available to download available documents. About tab download, I need to check with the team because I didn't use this option a lot of time and I think it's available. 
+Anytime until a request is available to open to employee, but let me clarify it with the team and back to you with confirmation that it worked in this way, anyway. 
+
+ 
+Satish Malla   40:48 
+The book. 
+
+ 
+Olga Chaban   40:53 
+Also, on the my request page, we have parts that name my documents and employee also can. 
+
+ 
+Satish Malla   40:56 
+Okay. 
+
+ 
+Olga Chaban   41:03 
+You see, call can use. 
+
+ 
+Satish Malla   41:09 
+I love that. 
+
+ 
+Olga Chaban   41:10 
+The staff also to review what the document available to him to review or download from the DOCS system. Just without request, just list of documents that was created in scope of different requests that was sent to employee. 
+And here are also the documents available to download from DOCS. 
+Hey, let me. 
+Show you how it looks like. 
+So he just need to open the folder with company documents, click on the document and system, show him the preview of the document and also action button open and download directly from here. 
+It's a several options that available to employee how he can download the generate letters from the DOCS system. 
+
+ 
+Dzmitry Fedarovich   42:12 
+Yes, but the question was, how long it was will be available after the process? 
+
+ 
+Olga Chaban   42:16 
+Yes, and I answer. 
+
+ 
+Hanna Vasilenka   42:19 
+Look like all employment in EPM. 
+
+ 
+Dzmitry Fedarovich   42:19 
+Forever. 
+Forever, I mean, okay. 
+
+ 
+Olga Chaban   42:22 
+Yeah, until he have access to the request. But I need to clarify it was a team because just to be sure that it's a correct answer. Unfortunately, I didn't test it previously. But as I know, yes. 
+
+ 
+Hanna Vasilenka   42:23 
+Yeah. 
+
+ 
+Dzmitry Fedarovich   42:24 
+Yep, sure. 
+
+ 
+Olga Chaban   42:41 
+It should be available not only from the request, but also from the my documents part on my request page. 
+
+ 
+Dzmitry Fedarovich   42:50 
+Okay, well, we are short on the time, maybe we could move further. 
+
+ 
+Olga Chaban   42:54 
+Okay, sure. And do we need to review the dashboard? 
+
+ 
+Dzmitry Fedarovich   42:56 
+Satish. 
+
+ 
+Hanna Vasilenka   42:56 
+Satish question. 
+
+ 
+Satish Malla   43:00 
+One point I have for Olga here, I understand from the dashboard where we are showing out where I can see from my request or my documents, I can see all the document that is there. In this, either in my request or in my documents, the letter which is sent for an approval where specialists send the document. 
+
+ 
+Olga Chaban   43:03 
+Mhm. 
+
+ 
+Satish Malla   43:21 
+comment to them by the manual action which we showed in the earlier screens. Will that let us also be visible here? It is only or no. 
+
+ 
+Olga Chaban   43:31 
+And. 
+
+ 
+Satish Malla   43:35 
+The set of track. 
+
+ 
+Olga Chaban   43:35 
+Payments request details form. 
+
+ 
+Hanna Vasilenka   43:37 
+Oh, Olga is documented that that I needed a verification from RAM. Also, after the closing of DOCS request will be placed in my request page in the company documents. 
+
+ 
+Satish Malla   43:37 
+The set of. 
+
+ 
+Olga Chaban   43:51 
+Yeah, all documents that have option to be downloaded from the DOCS will be present in my documents part. But you should understand that on this part will be available on the documents that 
+
+ 
+Hanna Vasilenka   43:51 
+And also. 
+
+ 
+Olga Chaban   44:11 
+I receive as an employee. So here shouldn't be any documents that connect with other employees. 
+
+ 
+Satish Malla   44:24 
+That is OK, but the one you to send for our approval, once RM approves the tech DOCS request getting closed by sending manually sending the letter, so by going to action tab and selecting send document, the document will be released to by email to the candidate to the. 
+
+ 
+Olga Chaban   44:39 
+Mhm. 
+
+ 
+Satish Malla   44:43 
+employee rate. Such documents will also be visible under this company documents are in my request or it is only OK. OK. 
+
+ 
+Olga Chaban   44:48 
+Yes, yes. 
+
+ 
+Hanna Vasilenka   44:50 
+Yes, it looks like Satish, all documents, for example, during the Onboarding processes that are available for candidate, like everything will be placed here. And in future, what we discuss, like offer, offer as well, will be available here. 
+
+ 
+Satish Malla   45:07 
+Perfect, Emma, Emma Land. 
+
+ 
+Hanna Vasilenka   45:09 
+Mhm. 
+
+ 
+Olga Chaban   45:11 
+Okay, we out of time. So on this board also present the information how specialists from a palm site with additional roles in DOCS can also review the request that was created in scope of different processes. 
+processes on dashboard page and also on file dashboard page. And also on this slide, you can review the possible statuses in DOCS. There are several parts. First part connect with the DOCS request statuses. The second part connect with the. 
+statuses of documents that include in this request. And also the last part connect with documents that present in the request part as the documents to download statuses. Okay, let's maybe get back to our presentation. 
+and try to quickly review the next three slides. 
+OK. 
+Okay, so this slide and the next one are just... 
+Oh. 
+a list of fields that connect with each letters that we plan to implement. Their present houses field names, the source of data for this field, and notes. So if I talk about date and form 60, 
+Here is. 
+Let's, as an example, goes for first line. Here we have a filled date that mean date of creation this letter. Also, the source of this data will be DOCS system, so DOCS system will be automatically prefills this field with the date of request creation. 
+And note that this data will be returned, so it means that this data will be won't be editable from employee site, and this. 
+
+ 
+Satish Malla   47:33 
+I got, I got the crux, Olga. I got the crux with this screen. With this screen, I able to understand the crux of this. I'm happy for that. 
+
+ 
+Olga Chaban   47:37 
+Yeah, we will send you or... 
+Okay, okay, great. We won't be focused on these two slides with a list of possible fields that connect with different forms, but on your site, you can review it after this meeting, and if you will have some questions or suggestions, just to share it with us. Okay, let's move on. 
+
+ 
+Satish Malla   47:56 
+Yep. 
+
+ 
+Olga Chaban   48:04 
+Um... 
+The next slide slides the same, but was connected with the forum from Track B with a processing letter and letter of recommendation. 
+What we want to highlight, maybe let's move on because we will discuss it on the next slide. Okay, so the last slide that we want to discuss with you, it's some points that we want to highlight with 
+highlight how our DOCS system works with a process that we described. The first point, it's about self declaration. We already mentioned when present the information on Mirror Team that disclaimers that you have in assist. 
+When the employee submits the form, we suggest to implement in request for in DOCS with check box accept. The next one, rejection. So the DOCS have opportunity 
+to reject the DOCS has the local specialist side can reject that form if we talk about the processes interrupt B reject the form and in this case the form will be back to employee to provide changes and submit this form one more time. 
+The next one, we also already talked about that, that has a minimum term of after closure period, it's today. Even if we choose one day in settings, in fact, the system will be close the request in today. 
+And before the request will be closed, the employee can't request the same letter one more time. The next one, one active request at time, I've already mentioned, and those two points connect with each other. 
+Yeah, the next one, notification. We suggest to use only several notifications, but in case you want to turn down more, just to provide us with this information. Currently, in present processes, employee receive only 
+
+ 
+Satish Malla   50:36 
+But. 
+
+ 
+Olga Chaban   50:38 
+letter, letter ready to download notification and in case form rejection that the form was rejected was a reason. Employee, not employee, but specialist from a palm site receive only one notification from DOCS about. 
+That request waiting for verification, and that's all. 
+We'll go next. In this point, we just highlight that some data will be reused from People Portal. And if we reuse this data, we suggest to show this data in the DOCS form, just in read only mode. In case the employee want to provide some changes in this data, we redirect him 
+to people platform with a text message. First of all, it's connect with the address proof letters. We want to navigate employee to change, to provide any changes in actual address only through the people platform. 
+not directly in Docs form. This is to one. And about comments. Yeah. 
+
+ 
+Hanna Vasilenka   51:56 
+Satish, sorry, yes, Satish, what do you think about, like, this feature? 
+
+ 
+Satish Malla   52:02 
+The people portal, uh, editing the information. 
+
+ 
+Hanna Vasilenka   52:04 
+Yeah, so, yeah. 
+
+ 
+Satish Malla   52:07 
+Yeah, that's your book. 
+
+ 
+Hanna Vasilenka   52:08 
+Okay. 
+
+ 
+Olga Chaban   52:09 
+Okay, great. Okay, let's go next. About comment field. 
+Just want to clarify with you the requirement to this field. As I mentioned previously, this field required development from our team side and will be perfect if you confirm or clarify the settings that we have here. 
+described here. Maybe you can provide us additional, but 
+Maybe the main things that I want to see here, unfortunately, we can't create this field with the same approach as it present in letter of recommendation. Some additional tools that provide employee 
+With possibility, for example, to make text bolt or it can be implemented in DOCS, but we plan to provide this possibility to type or paste the big block of text. 
+So it will be possible. 
+Is it OK? 
+
+ 
+Satish Malla   53:31 
+No, that should be fine. 
+
+ 
+Olga Chaban   53:33 
+OK, great. About RM approval, I think we can skip for now this behaviour because we already discussed it. 
+
+ 
+Dzmitry Fedarovich   53:44 
+Hey, you take it and walk. It will take an hour. 
+
+ 
+Olga Chaban   53:46 
+Yeah. 
+After verification also we discussed, it's about after verification request form from track A on next day after submit this form. Propose field custom text is the last one that we want to highlight. 
+In assist, when in some request form, when employee choose the option custom in proposed field, the assist system show additional text field to provide the details. Unfortunately, DOCS can't. 
+provides the same option, but we can include optional field with notification to employee if he or she choose the option custom in proposed field to provide some additional details in this optional field. 
+Is it okay for you? 
+
+ 
+Satish Malla   54:52 
+Yeah, that is there. 
+
+ 
+Olga Chaban   54:54 
+Okay, great. Maybe you want to provide us with additional feedback regarding this point that I listed right now. 
+
+ 
+Satish Malla   55:04 
+Once you've shared us this Miro board, let me go through each screen the process which is there and then I can give you maybe a few comments or suggestions because in custom field we should be having a drop down like personal business or it is an official or. 
+
+ 
+Dzmitry Fedarovich   55:11 
+Yeah, yeah, it will set us in for this document. 
+
+ 
+Olga Chaban   55:42 
+Mhm. 
+OK, good. Demo, we're out of time. 
+
+ 
+Dzmitry Fedarovich   55:49 
+Okay, and the conclusion, so Satish, as I understand, you okay with track A and we could take it in work, yes? And track B, we need to bring solution for Prem approval. Yep. So I will share one more time and I will add it as command here. 
+
+ 
+Olga Chaban   55:50 
+Maybe let's wrap up. Mhm. 
+
+ 
+Satish Malla   55:59 
+Yes. 
+Adam. 
+Perfect. 
+
+ 
+Dzmitry Fedarovich   56:10 
+sign off part of our presentation. The change is needed, trick A, okay, trick B, no go. We need to bring what is the command solution. So I will send this document as PDF to you, you could share with your team, maybe look through these fields we provided, solution we provided and so on. 
+
+ 
+Satish Malla   56:12 
+It. 
+Yes. 
+
+ 
+Dzmitry Fedarovich   56:30 
+And we will return you with solution about track B, but and we could start working on track A. Yep. 
+
+ 
+Satish Malla   56:30 
+Danam. 
+Yep. 
+
+ 
+Dzmitry Fedarovich   56:38 
+Good. Okay, thank you very much for your attention. It was a long meeting. We will provide all information. 
+
+ 
+Satish Malla   56:39 
+We are aligned. 
+
+ 
+Dzmitry Fedarovich   56:45 
+Email, as in full. Thank you very much. See ya. 
+
+ 
+Satish Malla   56:45 
+Thank you. Thank you. Sure. 
+Thank you. 
+
+ 
+Hanna Vasilenka   56:49 
+Same. Thank you. 
+
+ 
+Satish Malla   56:51 
+Bye bye. 
+
+ 
+Olga Chaban   56:51 
+Thank you. Have a good day. Bye. 
+
+ 
+Satish Malla   56:53 
+Bye-bye. 
+
+ 
+Hanna Vasilenka stopped transcription 

@@ -17,7 +17,7 @@ This document defines the test scope, test phases, UAT test cases, and acceptanc
 1. Validate all 5 Phase 1 letter types (Form 60, Address Proof, Service Letter, Visa Processing, LOR) work end-to-end in DOCS per D-16
 2. Confirm routing tracks behave per confirmed decisions: Track A auto-verified (D-15); Track B DV/EDV manual verification (D-12, D-13, D-15)
 3. Confirm field pre-population works from People Portal data (domain_rules.md — Data Pre-population Rules)
-4. Confirm all forbidden behaviors are absent: RM approval (D-15), "Country" field (D-09), WFH toggle (D-17), resubmit on rejection (D-07)
+4. Confirm rejection flow: specialist comment required, rejected form editable and resubmittable, specialist re-notified on resubmit (D-07); confirm forbidden behaviors absent: RM approval (D-15), "Country" field (D-09), WFH toggle (D-17)
 5. Confirm all validate-docs checks pass across all Phase 1 output documents
 
 ---
@@ -130,15 +130,18 @@ UAT is conducted on the DOCS platform in production or staging environment. Indi
 
 ### TC-04 — Rejection Flow
 
-**Applies to:** All letter types that can be rejected
+**Applies to:** All letter types that can be rejected (Track B: Visa Processing, LOR)
 
 | Step | Action | Expected result |
 |---|---|---|
-| 1 | India Team specialist or system rejects a request | Request status: Rejected |
-| 2 | Employee receives rejection notification | Notification received |
-| 3 | Employee checks options | No "Resubmit" button or link — employee instructed to open a new request (D-07) |
+| 1 | India Team specialist attempts to reject without a comment | System blocks rejection — comment is required |
+| 2 | Specialist rejects with a comment | Request status: Rejected; rejection reason visible to employee |
+| 3 | Employee receives rejection notification | Notification includes rejection reason |
+| 4 | Employee opens the same rejected form | Form is editable; employee can correct the data |
+| 5 | Employee resubmits the corrected form | System notifies India Team specialist for re-verification |
+| 6 | Repeat rejection/resubmit cycle | No limit — process repeats until specialist approves |
 
-**Pass criteria:** No resubmit option on the same request. Employee must create a new request.
+**Pass criteria:** Rejection comment is mandatory. Rejected form remains open and editable. Employee can resubmit without creating a new request. Specialist receives re-verification notification on each resubmission.
 
 ---
 
@@ -179,7 +182,8 @@ UAT is conducted on the DOCS platform in production or staging environment. Indi
 | Track B request enters queue | India Team specialists | New verification request pending |
 | Letter generated (Track A) | Employee | Letter is ready for download |
 | Letter sent by specialist (Track B) | Employee | Letter is available |
-| Request rejected | Employee | Request rejected; instructions to open new request |
+| Request rejected | Employee | Request rejected; rejection reason included |
+| Request resubmitted after rejection | India Team specialist (DV/EDV) | Resubmitted request awaiting re-verification |
 
 **Pass criteria:** All expected notifications sent to expected recipients. No extraneous notifications.
 
@@ -198,15 +202,16 @@ UAT is conducted on the DOCS platform in production or staging environment. Indi
 
 ---
 
-### TC-09 — Static Disclaimer Text
+### TC-09 — Self-Declaration Accept Checkbox
 
-**Applies to:** Forms where D-17 specifies disclaimer text
+**Applies to:** All 5 India letter types (D-21)
 
 | Verify | Expected |
 |---|---|
-| Disclaimer/notice text visible at top of relevant form | Static text present; no interactive checkbox; no popup blocking form completion (D-17) |
+| Self-Declaration section visible at bottom of form | 'Accept' checkbox present and enabled (D-21) |
+| Employee must tick checkbox before Submit | Submit button activates only after checkbox is ticked |
 
-**Pass criteria:** Text is static and informational only. No functional gate.
+**Pass criteria:** Accept checkbox visible, ticked by employee, Submit enabled. No static-text-only form (D-17 superseded by D-21).
 
 ---
 
@@ -215,7 +220,7 @@ UAT is conducted on the DOCS platform in production or staging environment. Indi
 | Severity | Definition | Examples | Resolution required by |
 |---|---|---|---|
 | **Blocker** | Prevents letter generation or core flow completion | DOCS down, Track A doesn't generate, Track B never enters queue, download fails | Before Stage 4 sign-off — must be fixed |
-| **Major** | Incorrect data, wrong routing, wrong notification | Wrong field pre-populated, RM approval step present, resubmit option shown, "Country" field present | Before Stage 4 sign-off — must be fixed |
+| **Major** | Incorrect data, wrong routing, wrong notification | Wrong field pre-populated, RM approval step present, rejection comment not required, form not editable after rejection, "Country" field present | Before Stage 4 sign-off — must be fixed |
 | **Minor** | Cosmetic, non-blocking, UX text issues | Wrong button label, UI spacing, non-critical notification wording | Before Stage 5 (dev handoff) |
 | **Observation** | Suggestion, improvement, not a defect | "Would be better if…" | Log as OQ-XX or note for future phase |
 

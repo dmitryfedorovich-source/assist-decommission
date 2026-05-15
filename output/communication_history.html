@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communication History — Assist Decommission Project</title>
+  <link rel="stylesheet" href="shared/epam-docs.css">
+  <style>
+    .ch-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    /* Table container */
+    .ch-table-wrap {
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .ch-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      color: #2d3748;
+    }
+
+    .ch-table thead tr {
+      background: #f0f4f8;
+    }
+
+    .ch-table th {
+      padding: 11px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #4a5568;
+      border-bottom: 2px solid #e2e8f0;
+      white-space: nowrap;
+    }
+
+    .ch-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #edf2f7;
+      vertical-align: top;
+    }
+
+    .ch-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .ch-table tbody tr:hover {
+      background: #f7fafc;
+    }
+
+    /* Date cell */
+    .ch-date {
+      white-space: nowrap;
+      font-weight: 600;
+      color: #2d3748;
+      font-size: 13px;
+    }
+
+    /* Subject cell */
+    .ch-subject {
+      min-width: 180px;
+      max-width: 220px;
+      color: #2d3748;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* MFU cell */
+    .ch-mfu {
+      min-width: 520px;
+    }
+
+    /* Expandable MFU */
+    details.mfu-expand {
+      cursor: pointer;
+    }
+
+    details.mfu-expand summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      background: #edf2f7;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #4a5568;
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      transition: background 0.15s;
+    }
+
+    details.mfu-expand summary::-webkit-details-marker { display: none; }
+
+    details.mfu-expand summary::before {
+      content: '▶';
+      font-size: 9px;
+      color: #718096;
+      transition: transform 0.15s;
+    }
+
+    details.mfu-expand[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    details.mfu-expand summary:hover {
+      background: #e2e8f0;
+    }
+
+    details.mfu-expand[open] summary {
+      background: #e2e8f0;
+      border-color: #cbd5e0;
+    }
+
+    .mfu-body {
+      margin-top: 12px;
+      padding: 14px 16px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 12.5px;
+      line-height: 1.6;
+      color: #2d3748;
+    }
+
+    .mfu-body h4 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #4a5568;
+      margin: 14px 0 6px;
+    }
+
+    .mfu-body h4:first-child { margin-top: 0; }
+
+    .mfu-body p { margin: 0 0 6px; }
+
+    .mfu-body ul, .mfu-body ol {
+      margin: 4px 0 8px 16px;
+      padding: 0;
+    }
+
+    .mfu-body li { margin-bottom: 3px; }
+
+    .mfu-body li li { margin-top: 2px; }
+
+    .mfu-body strong { color: #1a202c; }
+
+    .mfu-body .mfu-actions {
+      margin-top: 10px;
+    }
+
+    .mfu-actions-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    .mfu-actions-table th {
+      background: #edf2f7;
+      padding: 5px 8px;
+      font-weight: 600;
+      text-align: left;
+      font-size: 11px;
+      color: #4a5568;
+      border: 1px solid #e2e8f0;
+    }
+
+    .mfu-actions-table td {
+      padding: 5px 8px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    /* Video link */
+    .ch-video a {
+      color: #3182ce;
+      text-decoration: none;
+      font-size: 12px;
+      word-break: break-word;
+    }
+
+    .ch-video a:hover { text-decoration: underline; }
+
+    /* Duration */
+    .ch-dur {
+      white-space: nowrap;
+      font-weight: 600;
+      color: #4a5568;
+      font-size: 13px;
+    }
+
+    /* Participants */
+    .ch-participants {
+      min-width: 130px;
+      font-size: 12px;
+      color: #4a5568;
+      line-height: 1.7;
+    }
+
+    /* Status badges */
+    .ch-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .ch-badge-done   { background: #c6f6d5; color: #276749; }
+    .ch-badge-info   { background: #bee3f8; color: #2b6cb0; }
+    .ch-badge-warn   { background: #feebc8; color: #c05621; }
+
+    /* Summary row count */
+    .ch-count {
+      font-size: 12px;
+      color: #718096;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body style="background:#f0f4f8; padding: 24px 16px;">
+
+<div class="rl-wrap ch-wrap">
+
+  <!-- HEADER -->
+  <div class="rl-header">
+    <div>
+      <h1>Communication History<br><span>Assist → EPAM Docs Migration</span></h1>
+      <div class="rl-header-sub">INDIA HR DOCUMENT WORKFLOWS · ALL PHASES</div>
+    </div>
+    <div style="text-align:right;">
+      <div class="rl-badge">10 MEETINGS</div>
+      <div class="rl-badge-date">Mar – May 2026</div>
+    </div>
+  </div>
+
+  <!-- CONTEXT -->
+  <div class="rl-context">
+    <div class="rl-context-icon">ℹ️</div>
+    <p>Chronological log of all stakeholder meetings for the Assist decommission project. <strong>MFU</strong> = Meeting Follow-Up (key decisions, clarifications, agreed actions). Click any MFU row to expand. Source of truth: <a href="https://kb.epam.com/spaces/EPMEOADOCS/pages/2812812961/Communication+history" style="color:#3182ce;">EPMEOADOCS Confluence page</a>.</p>
+  </div>
+
+  <!-- TABLE -->
+  <div style="margin-top: 24px;">
+    <div class="ch-table-wrap">
+      <table class="ch-table">
+        <thead>
+          <tr>
+            <th>Meeting Date</th>
+            <th>Subject / Purpose</th>
+            <th>MFU</th>
+            <th>Video / Transcript</th>
+            <th>Duration</th>
+            <th>Participants</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!-- ── ROW 1 ── 27/03/26 -->
+          <tr>
+            <td class="ch-date">27/03/26</td>
+            <td class="ch-subject">Assist / DOCS – Compensation Letters &amp; Related HR Letters</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 27/03/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Clarifications &amp; Decisions</h4>
+                  <p><strong>1. Compensation Letter Structure</strong></p>
+                  <ul>
+                    <li>A single Compensation Letter template is used.</li>
+                    <li>Letter content is conditionally rendered based on values and Yes/No selections from the uploaded Excel file.</li>
+                    <li>Fixed text blocks remain the same for all employees; only populated sections appear dynamically.</li>
+                  </ul>
+                  <p><strong>2. Data Sources</strong></p>
+                  <ul>
+                    <li><em>Excel file:</em> Primary source for compensation figures, bonus values, and conditional flags. Data is manually prepared by HR based on internal approvals (e.g. HRBP emails).</li>
+                    <li><em>People Portal:</em> Legal first/last name, Employee ID, Job title (designation), Personal (home) address.</li>
+                    <li>Compensation Portal is not used as a direct automated source for these letters.</li>
+                  </ul>
+                  <p><strong>3. Numeric Values &amp; Wording</strong></p>
+                  <ul>
+                    <li>HR provides amounts in digits only via Excel.</li>
+                    <li>Assist automatically converts numbers to amount-in-words and ensures consistency between numeric and textual values.</li>
+                  </ul>
+                  <p><strong>4. Excel Logic – Letter Types</strong></p>
+                  <ul>
+                    <li>Excel rows 35–40 define the type of Compensation Letter (salary hike, promotion, OTB, etc.).</li>
+                    <li>Exactly one option must be selected; otherwise upload fails.</li>
+                    <li>Selected option determines which sections and clauses appear in the letter.</li>
+                  </ul>
+                  <p><strong>5. Bonuses &amp; Variable Components</strong></p>
+                  <ul>
+                    <li>Excel rows 41–70 control: On-Target Bonus (OTB), Retention Bonuses (RB), Deferred Bonuses (DB), One-time / spot bonuses.</li>
+                    <li>Values may or may not be present; only populated fields are rendered.</li>
+                    <li>Payment schedules are shown in tabular form when applicable.</li>
+                  </ul>
+                  <p><strong>6. Employee Acknowledgement</strong></p>
+                  <ul>
+                    <li>Employees view letters in Assist → My Documents → Compensation Letters.</li>
+                    <li>Available action: Accept (acknowledgement only). No reject or discussion flow available.</li>
+                    <li>Visibility: Employee: Yes; Admin / Compensation team: Yes (status tracking); Resource Manager: No access.</li>
+                  </ul>
+                  <p><strong>7. Approvals</strong></p>
+                  <ul>
+                    <li>No additional approvals (e.g. Resource Manager) are required before issuing Compensation Letters or Reference/proof letters.</li>
+                  </ul>
+                  <p><strong>8. Reference / Proof Letters</strong></p>
+                  <ul>
+                    <li>Largely static templates. Employee address taken from People Portal → Personal Address (not office address).</li>
+                    <li>Letter content does not vary by requester. No approval flow required.</li>
+                  </ul>
+                  <h4>Open Items / Next Actions</h4>
+                  <ol>
+                    <li>Share anonymised sample Compensation Letters — one per category (rows 35–40) plus samples including RB, DB, OTB, one-time bonus scenarios. <em>Owner: Compensation / HR Team</em></li>
+                    <li>Confirm and share the exact People Portal field name for the employee's personal address. <em>Owner: HR / People Portal team</em></li>
+                    <li>DOCS / BA team to review samples, validate conditional text and table behaviour, finalise field-to-source documentation.</li>
+                    <li>Schedule follow-up meeting to continue with Recommendation letters and remaining Assist letter types. <em>Owner: Olga Chaban</em></li>
+                  </ol>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:v:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/%5BDOCS%5D%20Assist%20Letter%20questions-20260327_100304-Meeting%20Recording%20(1).mp4?csf=1&web=1&e=5AKf0n">[DOCS] Assist Letter questions-20260327_100304-Meeting Recording (1).mp4</a></td>
+            <td class="ch-dur">0.5h</td>
+            <td class="ch-participants">Satish Malla<br>Satya Danam<br>Olga Chaban<br>Lela Akobidze<br>Diana Nikoghosyan</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 2 ── 07/04/26 -->
+          <tr>
+            <td class="ch-date">07/04/26</td>
+            <td class="ch-subject">Clarify current Assist processes for multiple letter types. Understand data sources, triggers, approvals, and delivery for letters. Deep-dive into Compensation Letters generation and operational specifics.</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 07/04/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Topics Discussed &amp; Decisions</h4>
+                  <p><strong>1. Compensation Letters – Scope &amp; Frequency</strong></p>
+                  <ul>
+                    <li>Compensation Letters are issued via Assist not only during annual campaigns but throughout the year: annual promotion, proactive/reactive retention, assessments and level changes, pre-assessment promotions.</li>
+                    <li>Annual campaign timing currently effective July (recent years), with campaign cycles covering Jan–Dec.</li>
+                    <li>Monthly / ad-hoc letters can be issued any time, aligned with payroll cut-offs.</li>
+                  </ul>
+                  <p><strong>2. Compensation Letters – Data &amp; Templates</strong></p>
+                  <ul>
+                    <li>A single upload Excel template is used for both annual and monthly letters.</li>
+                    <li>Most compensation data is manually calculated in local files and pasted into the upload Excel.</li>
+                    <li>Designation changes are auto-pulled from People Platform into Assist.</li>
+                    <li>Letter formats differ based on content (salary only, salary + bonus, LTI, promotion).</li>
+                    <li>Passwords for employee letters = PAN number (India practice).</li>
+                  </ul>
+                  <p><strong>3. Separation Letters (Resignation Acceptance &amp; Experience)</strong></p>
+                  <ul>
+                    <li>These letters are triggered from HRMS / exit data.</li>
+                    <li>Manual operational action in Assist to send them (admin selects exit list and sends letters).</li>
+                    <li>No approval flow for these letters discussed during the meeting.</li>
+                  </ul>
+                  <p><strong>4. Roles &amp; Access</strong></p>
+                  <ul>
+                    <li>Admin access to Assist is limited to specific People Ops users.</li>
+                    <li>Employees can only see their own letters.</li>
+                    <li>Ex-employees do not have self-service access; letters are shared via email by HR.</li>
+                  </ul>
+                  <p><strong>5. Gaps / Clarifications Identified</strong></p>
+                  <ul>
+                    <li>Need a consolidated list of all letters currently issued by India team.</li>
+                    <li>Need a clearer mapping: letter types → inputs → triggers → approvals for Docs target design.</li>
+                  </ul>
+                  <h4>Agreed Next Steps</h4>
+                  <ol>
+                    <li>People Ops (Lalitha / team) — prepare and share a complete list of letter types issued regularly (beyond compensation).</li>
+                    <li>BA Team (Olga / DOCS) — review shared letter samples, validate understanding per letter type, prepare structured questions for next session.</li>
+                    <li>Schedule follow-up meeting (tentatively 21–22 Apr).</li>
+                  </ol>
+                  <h4>Open Questions</h4>
+                  <ul>
+                    <li>Exact delivery mechanism standardisation for Separation Letters (email templates, timing).</li>
+                    <li>Validation of data ownership for certain fields used in letters (People vs Payroll vs manual).</li>
+                  </ul>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:v:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/%5BDOCS%5D%20Assist%20Letter%20questions-20260407_123056-Meeting%20Recording%20(1).mp4?csf=1&web=1&e=EKX03K">[DOCS] Assist Letter questions-20260407_123056-Meeting Recording (1).mp4</a></td>
+            <td class="ch-dur">0.75h</td>
+            <td class="ch-participants">Satish Malla<br>Satya Danam<br>Olga Chaban<br>Lela Akobidze<br>Diana Nikoghosyan<br>Dzmitry Fedarovich</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 3 ── 14/04/26 -->
+          <tr>
+            <td class="ch-date">14/04/26</td>
+            <td class="ch-subject">To clarify how compensation letters are generated and sent via Assist. To understand data sources, automation vs Excel input. To align on letter types, bonuses, promotions, and recovery terms. To confirm employee interaction flow.</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 14/04/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Discussion Points</h4>
+                  <p><strong>1. Compensation Letter Scenarios</strong></p>
+                  <ul>
+                    <li>Compensation letters are issued for: Salary hike only; Salary hike with promotion; Salary hike with bonuses (OTB, RB, DB, One-Time); Salary hike with LTI.</li>
+                    <li>Different scenarios use different letter formats, selected via XLS flags.</li>
+                  </ul>
+                  <p><strong>2. Data Sources and Automation</strong></p>
+                  <ul>
+                    <li>Excel upload file provides: all numeric values (CTC, salary components, bonuses); dates (effective dates, payout dates); logical flags (Yes / No).</li>
+                    <li>Assist system: applies templates and wording; includes or excludes sections automatically; generates password-protected PDF letters.</li>
+                    <li>People Portal is the source of truth for employee designation.</li>
+                  </ul>
+                  <p><strong>3. Logical Flags and Letter Control</strong></p>
+                  <ul>
+                    <li>XLS logical flags (Yes / No) control: Promotion type (P0–P4); Bonus applicability (OTB, RB, DB, One-Time); Recovery terms; Promotion eligibility.</li>
+                    <li>Assist uses these flags only to render content, not to calculate values.</li>
+                  </ul>
+                  <p><strong>4. Recovery Terms</strong></p>
+                  <ul>
+                    <li>Recovery terms are applicable separately for: Retention Bonus; Deferred Bonus; One-Time Bonus. XLS values: Yes / No.</li>
+                    <li>Assist inserts standard recovery clauses when enabled.</li>
+                  </ul>
+                  <p><strong>5. Employee Experience</strong></p>
+                  <ul>
+                    <li>Employee receives a notification to access Assist.</li>
+                    <li>Letter is available in Assist only (not attached to email), provided as a password-protected PDF.</li>
+                    <li>If marked "Action Required", employee must acknowledge the letter.</li>
+                  </ul>
+                  <p><strong>6. Decisions Made</strong></p>
+                  <ul>
+                    <li>Assist is confirmed as a letter generation and distribution tool — not an approval or calculation system.</li>
+                    <li>Excel is confirmed as the single input source for all compensation data.</li>
+                    <li>Letter wording and structure remain system-controlled and standardised.</li>
+                  </ul>
+                  <h4>Next Steps</h4>
+                  <ul>
+                    <li>Continue documentation of remaining letter types (non-compensation letters).</li>
+                    <li>Validate Docs content with Total Rewards team.</li>
+                  </ul>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:v:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/%5BDOCS%5D%20Assist%20Letter%20questions-20260414_110916-Meeting%20Recording.mp4?csf=1&web=1&e=H12xt5">[DOCS] Assist Letter questions-20260414_110916-Meeting Recording.mp4</a></td>
+            <td class="ch-dur">1h</td>
+            <td class="ch-participants">LalithaPavani Madiraju<br>Olga Chaban<br>Lela Akobidze<br>Diana Nikoghosyan<br>Dzmitry Fedarovich</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 4 ── 23/04/26 -->
+          <tr>
+            <td class="ch-date">23/04/26</td>
+            <td class="ch-subject">To clarify current Assist/Docs processes for compensation-related bonuses and for separation letters (Resignation Acceptance / Service Letter and Experience Letter), focusing on automation, data sources, manual steps, and employee communication.</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 23/04/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Clarifications &amp; Decisions</h4>
+                  <p><strong>1. Compensation Letters – Bonus Amounts Calculation</strong></p>
+                  <ul>
+                    <li><em>Deferred Bonus:</em> total amount not stored/shown in a single field. System automatically calculates total based on scheduled instalments. Total is <em>derived automatically (Assist)</em>.</li>
+                    <li><em>Retention Bonus &amp; One-time Bonus:</em> total amount is explicitly provided. System bifurcates total into scheduled payments. Total is <em>manually defined, then split (XLS)</em>.</li>
+                  </ul>
+                  <p><strong>2. Types of Separation Letters</strong></p>
+                  <ul>
+                    <li><em>Service Letter (Resignation Acceptance / Relieving Letter):</em> generated on last working day; confirms employment period and general conduct; used mainly for immediate background verification.</li>
+                    <li><em>Experience Letter:</em> generated after full &amp; final settlement (typically ~10–15 days post-exit); released only after Finance confirms settlement is complete.</li>
+                  </ul>
+                  <p><strong>3. Employee Contact Details (Personal Email &amp; Phone)</strong></p>
+                  <ul>
+                    <li>Personal email and phone originally collected at joining and stored in People/DOCS systems.</li>
+                    <li>Reconfirmed at exit because corporate email becomes inactive after separation.</li>
+                    <li>Reconfirmation via Excel form emailed to employee — not done via Assist portal. If no response, HR uses previously stored data from DOCS/People Portal.</li>
+                  </ul>
+                  <p><strong>4. Trigger and Automation Level for Separation Letters</strong></p>
+                  <ul>
+                    <li>Resignations marked in People Portal; HR downloads exit lists (Excel) from People Portal daily.</li>
+                    <li>Assist automation: employee details auto-populated from People Portal after entering Employee ID; letter templates pre-configured in Assist.</li>
+                    <li>Manual action required: select employee, enter/update personal contact details, click Send/Release.</li>
+                    <li>No end-to-end automatic generation or sending without HR manual intervention.</li>
+                  </ul>
+                  <p><strong>5. Letter Delivery to Ex-Employees</strong></p>
+                  <ul>
+                    <li>After exit, employees do not have access to Assist.</li>
+                    <li>Both Service Letter and Experience Letter sent via email as PDF attachments (not links) to personal email address.</li>
+                  </ul>
+                  <p><strong>6. Tracking of Experience Letter Timing</strong></p>
+                  <ul>
+                    <li>Finance shares a settlement clearance file with HR.</li>
+                    <li>HR maintains a manual tracking Excel; once marked as paid, HR manually sends Experience Letter via Assist.</li>
+                  </ul>
+                  <h4>Open Items / Follow-Ups</h4>
+                  <ol>
+                    <li>Provide example email texts (without attachments) used for Service Letter and Experience Letter. <span class="ch-badge ch-badge-done">Done</span> <em>Owner: Satya Danam, LalithaPavani Madiraju</em></li>
+                    <li>Review and confirm text blocks for Compensation Letters and Indian currency format rules. <span class="ch-badge ch-badge-warn">To Do</span> <em>Owner: LalithaPavani Madiraju</em></li>
+                    <li>Plan follow-up meeting after internal review and People Portal team input. <em>Owner: Olga Chaban</em></li>
+                  </ol>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:v:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/%5BDOCS%5D%20Assist%20Letter%20questions-20260423_133326-Meeting%20Recording.mp4?csf=1&web=1&e=xSsgm6">[DOCS] Assist Letter questions-20260423_133326-Meeting Recording.mp4</a></td>
+            <td class="ch-dur">1h</td>
+            <td class="ch-participants">LalithaPavani Madiraju<br>Satya Danam<br>Olga Chaban<br>Lela Akobidze<br>Diana Nikoghosyan<br>Dzmitry Fedarovich</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 5 ── 29/04/26 -->
+          <tr>
+            <td class="ch-date">29/04/26</td>
+            <td class="ch-subject">Compensation Letters</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 29/04/2026</summary>
+                <div class="mfu-body">
+                  <p>Meeting outcome: Alignment that critical requirements for compensation letters are still not confirmed and must be formally clarified with the India team before proposing a final solution.</p>
+                  <h4>Key Discussion Points</h4>
+                  <ul>
+                    <li>The actual scope of compensation letter types is unclear: examples provided vs. a larger list visible in Assist (up to 16 types). Written confirmation from the India team is required.</li>
+                    <li>No aligned understanding of whether employee acceptance/acknowledgement of a compensation letter is mandatory, whether an acceptance date is required, and how this data is used.</li>
+                    <li>Handling of non-acceptance / rejection is ambiguous and appears to be partially outside the system; must be clarified.</li>
+                    <li>Questions remain around security expectations (global access control vs. additional protection such as PAN/password).</li>
+                    <li>Reporting and tracking needs (acceptance status, dates, visibility for HR/admins) are not confirmed and may significantly impact solution complexity.</li>
+                    <li>The team agreed it is not effective to propose multiple solution options before these requirements are clarified.</li>
+                  </ul>
+                  <h4>Confirmed Actions</h4>
+                  <table class="mfu-actions-table">
+                    <thead><tr><th>#</th><th>Action</th><th>Owner</th><th>Status</th></tr></thead>
+                    <tbody>
+                      <tr><td>1</td><td>Compile a single consolidated list of open questions on compensation letters (scope, acceptance, security, reporting).</td><td>Olga Chaban</td><td><strong>Confirmed</strong></td></tr>
+                      <tr><td>2</td><td>Send the formal clarification letter/questions to the India team covering all outstanding points.</td><td>Hanna Vasilenka</td><td><strong>Confirmed</strong></td></tr>
+                      <tr><td>3</td><td>Review responses from the India team and re-align internally on feasible solution options based on confirmed requirements.</td><td>DOCS / BA / Product team</td><td><strong>Planned (after reply)</strong></td></tr>
+                      <tr><td>4</td><td>Continue discussion in the next scheduled call to decide on investments and next steps once answers are received.</td><td>All</td><td><strong>Confirmed</strong></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:b:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/Compensation%20Letters%2029.04.2026.pdf?csf=1&web=1&e=gOeocl">Compensation Letters 29.04.2026.pdf</a></td>
+            <td class="ch-dur">0.5h</td>
+            <td class="ch-participants">Hanna Vasilenka<br>Darya Taranda<br>Dzmitry Fedarovich<br>Lela Akobidze<br>Olga Chaban</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 6 ── 30/04/26 -->
+          <tr>
+            <td class="ch-date">30/04/26</td>
+            <td class="ch-subject">Separation / Reference / Experience Letters</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 30/04/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Discussions &amp; Agreements</h4>
+                  <ul>
+                    <li>Scope covers three letter types, with primary focus on Separation-related letters (including Experience and Reference letters), and differences between employee and ex-employee flows.</li>
+                    <li>For ex-employees, preferred approach is a non-self-service Docs process, initiated and managed by the local HR team in Docs — not by RM directly.</li>
+                    <li>Automatic generation of letters on key events (e.g. last working day) is the target option, but feasibility depends on confirmation from Docs and People (triggering, access, data availability).</li>
+                    <li>If automation is not fully feasible, a manual fallback flow via Docs (HR-initiated request) must be supported.</li>
+                    <li>Data for letters expected to come primarily from People, with confirmation needed on data retention and availability after termination.</li>
+                    <li>For Experience / Reference letters in India, current manual Excel-based tracking was reviewed; automation opportunities acknowledged but marked as a later phase.</li>
+                    <li>Use of free-text blocks (e.g. recommendations) in Docs was discussed; a templated/structured alternative is preferred to reduce risks, pending feasibility and effort assessment.</li>
+                  </ul>
+                  <h4>Confirmed Actions</h4>
+                  <table class="mfu-actions-table">
+                    <thead><tr><th>#</th><th>Action</th><th>Owner</th><th>Notes</th></tr></thead>
+                    <tbody>
+                      <tr><td>1</td><td>Update Separation module tables with manual vs automated flows (Docs + People integration).</td><td>BA (Olga)</td><td>Include clear distinction: automated trigger vs HR manual initiation</td></tr>
+                      <tr><td>2</td><td>Finalise and share process diagrams for 2 Separation letter flows (with/without automation).</td><td>BA (Olga)</td><td>Based on Docs feasibility feedback</td></tr>
+                      <tr><td>3</td><td>Clarify with People team what data is available after employee termination and for how long.</td><td>People / Tech</td><td>Required for ex-employee access and automation decisions</td></tr>
+                      <tr><td>4</td><td>Verify Docs access model for ex-employees (login, personal email, download timing).</td><td>DOCS team</td><td>Critical assumption for both letters</td></tr>
+                      <tr><td>5</td><td>Rework and resend open questions to India team (Compensation / text blocks / variants).</td><td>BA → Business (Hanna)</td><td>Questions to be clarified before implementation</td></tr>
+                      <tr><td>6</td><td>Review feasibility and effort of structured text blocks instead of free-text in letters.</td><td>DOCS / Tech</td><td>Optional enhancement, not in immediate scope</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:b:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/Separation%20Letters%2030.04.2026.pdf?csf=1&web=1&e=hFRiz3">Separation Letters 30.04.2026.pdf</a></td>
+            <td class="ch-dur">0.5h</td>
+            <td class="ch-participants">Hanna Vasilenka<br>Darya Taranda<br>Dzmitry Fedarovich<br>Lela Akobidze<br>Olga Chaban</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 7 ── 04/05/26 India team -->
+          <tr>
+            <td class="ch-date">04/05/26</td>
+            <td class="ch-subject">Meeting with India team</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 04/05/2026</summary>
+                <div class="mfu-body">
+                  <p style="font-size:11px;color:#718096;margin-bottom:10px;"><em>Note: People platform scope items explicitly excluded from this MFU (discussed separately in the People team meeting).</em></p>
+
+                  <h4>1. Nominee Details &amp; Statutory Forms</h4>
+                  <ul>
+                    <li><strong>Legal source:</strong> Statutory forms (Form F, Form 2) remain the legal source of truth for nominee data. Updates in Assist are for operational reference only — they have no legal effect on their own.</li>
+                    <li><strong>Statutory forms are immutable:</strong> Once Form F / Form 2 is submitted, it cannot be updated. Any subsequent nominee changes are tracked in Assist or Docs for operational purposes only.</li>
+                    <li><strong>50% data gap:</strong> Only approx. 50% of India employees have nominee data in the Assist portal. The remaining 50% are covered by PF forms and gratuity forms collected during onboarding.</li>
+                    <li><strong>Current use:</strong> India team cross-validates nominee allocation percentages across gratuity Form F, PF forms, and Assist portal. Discrepancies are resolved on a case-by-case basis (typically at exit / death event).</li>
+                    <li><strong>Root cause of duplication:</strong> Employees cannot update statutory forms after initial submission; Assist portal was built as an operational workaround to capture nominee updates over time.</li>
+                    <li><strong>Agreed path forward:</strong> Explore enabling employee self-service nominee updates in Docs, with a one-time bulk migration of current Assist nominee data to Docs as a migration action. <em>(Action: Darya, Hanna, Satish to investigate feasibility — Docs team + legal to confirm disclaimer requirements.)</em></li>
+                  </ul>
+
+                  <h4>2. Separation Model</h4>
+                  <ul>
+                    <li><strong>Resignation form fields confirmed:</strong> On submission, only Date of Resignation carries over to the exit request. Exit category and comments are added separately by the RM or People Partner.</li>
+                    <li><strong>Notice period calculation:</strong> Calculated automatically by grade — A4 grade = 60 days, A5 grade = 90 days. Formula: date of resignation + notice period days = tentative last working day as per policy.</li>
+                    <li><strong>Three fields needed for analysis:</strong>
+                      <ul>
+                        <li><em>Last Working Day per Policy:</em> calculated from grade-based notice period; used per-employee for exit processing.</li>
+                        <li><em>Notice Period Days Remaining:</em> used to calculate severance pay (RTB / termination / PIP cases) — not for reporting.</li>
+                        <li><em>Revocation Status:</em> tracks how many exit requests were cancelled in a given month — used for Power BI reporting.</li>
+                      </ul>
+                    </li>
+                    <li><strong>RM approval flow:</strong> Once employee submits resignation, RM (and unit head) receive notification. RM negotiates last working day and approves the "Last Working Day Approved" date in People Portal. This approved date is the only field that matters for downstream processing. Rejection requires a brief comment (used for retention tracking only).</li>
+                    <li><strong>Employee self-service on People platform:</strong> Satish confirmed employees do not currently have access to raise resignation requests directly. Adding this as a People Platform feature (rather than a separate service request) was discussed as the preferred approach. Pending review of data privacy and audit implications.</li>
+                    <li><strong>Notice period Excel:</strong> HRBPs maintain a manual tracking Excel for notice period clearance (payables and recoveries). This is internal between teams and not connected to any portal.</li>
+                  </ul>
+
+                  <h4>3. Compensation Letters</h4>
+                  <ul>
+                    <li><strong>Acceptance mechanism:</strong> A radio button "Accept" is required. Once clicked, it becomes disabled and records the date/time of acceptance. No penalty for non-acceptance; no reject option. Employee cannot dispute the letter in the system — any concerns must be raised with their RM directly. <span class="ch-badge ch-badge-done">Decision D-P2-03 confirmed</span></li>
+                    <li><strong>Security — PAN password protection:</strong> PAN-protected PDF is the primary requirement. If Docs cannot implement PDF password protection, fallback is: (a) a disclaimer/caution note displayed before document access, (b) watermarking on the letter template. Satish to provide the caution note content. <em>(Action: Satish — provide disclaimer/caution note text; Docs team + Legal — validate wording.)</em></li>
+                    <li><strong>Letter types — 4 only:</strong> Only 4 compensation letter types need to be migrated from Assist to Docs. Flex-to-fixed letter variants are no longer required — those employees were moved to fixed after GDO merge effective 1 April 2026. <span class="ch-badge ch-badge-done">Decision D-P2-06 confirmed</span></li>
+                    <li><strong>Status &amp; auto-close:</strong> Letter status moves to "generated" once the letter becomes visible to the employee in Docs. Request auto-closes after 1 week. No additional reporting required beyond this. <span class="ch-badge ch-badge-done">Decision D-P2-07/08 confirmed</span></li>
+                    <li><strong>Indian currency format:</strong> Confirmed — all compensation letter amounts must use Indian currency format (INR, lakh/crore notation). <span class="ch-badge ch-badge-done">Decision confirmed</span></li>
+                  </ul>
+
+                  <h4>Confirmed Actions</h4>
+                  <table class="mfu-actions-table">
+                    <thead><tr><th>Action</th><th>Owner</th></tr></thead>
+                    <tbody>
+                      <tr><td>Check feasibility of enabling nominee updates in Docs, including bulk upload/migration from Assist.</td><td>Darya Taranda, Hanna Vasilenka, Satish Malla</td></tr>
+                      <tr><td>Discuss self-service nominee process and required disclaimers with Docs team and Legal.</td><td>Darya Taranda, Hanna Vasilenka</td></tr>
+                      <tr><td>Provide content for the caution/disclaimer note for compensation letters.</td><td>Satish Malla</td></tr>
+                      <tr><td>Implement the "Accept" radio button with acceptance timestamp capture for compensation letters.</td><td>Docs team</td></tr>
+                      <tr><td>Confirm only 4 compensation letter types are migrated; use Indian currency format.</td><td>Docs team</td></tr>
+                      <tr><td>Set up auto-close for compensation letter requests after one week.</td><td>Docs team</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:v:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/Discuss%20nominee%20details-20260504_100251-Meeting%20Recording.mp4?csf=1&web=1&e=u9HxyV">Discuss nominee details-20260504_100251-Meeting Recording.mp4</a></td>
+            <td class="ch-dur">1h</td>
+            <td class="ch-participants">Satish Malla<br>Anastasia Sotnikova<br>Hanna Vasilenka<br>Darya Taranda</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 8 ── 04/05/26 People team -->
+          <tr>
+            <td class="ch-date">04/05/26</td>
+            <td class="ch-subject">Meeting with the People team</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 04/05/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Discussions &amp; Agreements</h4>
+                  <p><strong>Available data after employee termination</strong></p>
+                  <ul>
+                    <li>Reference: <a href="https://kb.epam.com/spaces/EPMHRMS/pages/[ER]-Remove-PII-data" style="color:#3182ce;">KB People: [ER] Remove PII data</a></li>
+                    <li>Data removed manually; a request from the employee is required.</li>
+                    <li><strong>Retention period confirmed:</strong> Ex-employees' data on the People platform is available for a minimum of 2 years after the last working day, or until the ex-employee requests obfuscation.</li>
+                  </ul>
+                  <p style="font-size:11px;color:#718096;margin-top:10px;"><em>(Source: Dzmitry Fedarovich)</em></p>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video">n/a</td>
+            <td class="ch-dur">0.5h</td>
+            <td class="ch-participants">Anastasia Sotnikova<br>Dzmitry Fedarovich</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 9 ── 07/05/26 Compensation and reference -->
+          <tr>
+            <td class="ch-date">07/05/26</td>
+            <td class="ch-subject">Compensation and reference letters</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 07/05/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Discussions &amp; Agreements</h4>
+                  <ul>
+                    <li><strong>Sequencing confirmed:</strong> Reference Letters will be finalised and delivered first; Compensation Letters will follow after Phase 1 go-live — to avoid parallel scope creep and unblock development. All discussions, assumptions, deviations from Assist, and decisions are documented in a single consolidated knowledge space for traceability.</li>
+                    <li><strong>Disclaimers &amp; user confirmations:</strong> Platform-level pop-ups or mandatory acceptance check-boxes (as used in Assist) will not be implemented in Docs for any letter type. Instead, static disclaimer text may be added directly to request forms or document bodies where needed, without blocking user actions.</li>
+                    <li><strong>"Working From Home / COVID-related" paragraph:</strong> Considered outdated — fully removed from all references and related letters.</li>
+                    <li><strong>Document availability &amp; technical limitations:</strong> Documents are available for download immediately upon request creation, even before the employee fills in any form data. This is a confirmed Docs technical limitation, will not be changed, and will be clearly communicated to stakeholders.</li>
+                    <li><strong>Status handling &amp; automation:</strong> Automatic status changes without user interaction are acceptable: auto-verification of forms on the next day after submission; auto-closure of requests when all forms reach final statuses. Status naming differences between Assist and Docs are acceptable; wording to be aligned in documentation.</li>
+                    <li><strong>New request creation rules:</strong> Creation of a new request of the same type is allowed only after previous requests within the same process are closed, with an enforced waiting period (agreed as acceptable).</li>
+                    <li><strong>Approval &amp; verification flows:</strong> RM approval flows are skipped in Docs where verification by a local specialist is sufficient. Verification via Document Verifier / Extended Document Verifier roles is accepted as equivalent to Assist approval.</li>
+                    <li><strong>Manual actions after verification:</strong> After verification, local specialists must manually use the "Send Document" action to share the final document with the employee. This additional action will be explicitly documented and communicated.</li>
+                    <li><strong>Custom fields &amp; comments:</strong> For request purposes that include a "Custom" option, a free-text field with defined limits is available in Docs regardless of the selected option. Accepted as equivalent to Assist behaviour.</li>
+                    <li><strong>Relocation Letter:</strong> Process is unclear and not fully defined (trigger, initiator, mandatory scenarios not confirmed). Agreed to exclude from the current delivery phase; to be revisited as a separate scope.</li>
+                    <li><strong>India team walk-through preparation:</strong> Walk-through with India team will focus on what can be implemented in Docs (not a detailed comparison with Assist), using visual walkthroughs (screenshots / Miro) to improve clarity.</li>
+                  </ul>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:b:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/Compensation%20and%20reference%20letters%2007.05.2026.pdf?csf=1&web=1&e=W3gy2L">Compensation and reference letters 07.05.2026.pdf</a></td>
+            <td class="ch-dur">1h</td>
+            <td class="ch-participants">Hanna Vasilenka<br>Darya Taranda<br>Dzmitry Fedarovich<br>Lela Akobidze<br>Olga Chaban</td>
+            <td></td>
+          </tr>
+
+          <!-- ── ROW 10 ── 07/05/26 Nominee details -->
+          <tr>
+            <td class="ch-date">07/05/26</td>
+            <td class="ch-subject">Discuss nominee details from 04/05/2026 (by Hanna Vasilenka)</td>
+            <td class="ch-mfu">
+              <details class="mfu-expand">
+                <summary>MFU from 07/05/2026</summary>
+                <div class="mfu-body">
+                  <h4>Key Discussions &amp; Agreements</h4>
+                  <p><strong>1. Nominee Details — Scope &amp; Assist Decommission Impact</strong></p>
+                  <ul>
+                    <li>Nominee details currently stored in Assist portal are <strong>operational reference only</strong> — they carry no legal weight. Statutory forms (Form F for gratuity, Form 2 for PF) remain the authoritative legal source.</li>
+                    <li>Once statutory forms are submitted at onboarding, they cannot be updated. Any subsequent nominee changes made in Assist exist solely as an operational override and are cross-validated by the India HR team against the statutory forms when needed (typically at exit or death claim).</li>
+                    <li>Approximately <strong>50% of India employees</strong> have nominee data recorded in Assist. The remaining 50% are covered only by PF/gratuity forms from their onboarding package.</li>
+                    <li>When Assist is decommissioned, this operational nominee data will be lost unless explicitly migrated. The 50% coverage gap must be factored into the migration plan.</li>
+                  </ul>
+                  <p><strong>2. Proposed Solution: Self-Service in Docs + One-Time Bulk Migration</strong></p>
+                  <ul>
+                    <li>The agreed direction is to enable employees to update nominee details via a self-service request in Docs platform, providing a structured, versioned record that India HR can access at any time.</li>
+                    <li>A one-time <strong>bulk migration of current Assist nominee data to Docs</strong> is required as part of the Assist decommission, so existing records are not lost.</li>
+                    <li>After migration, all employees will be prompted to review and reconfirm their nominee information in Docs as part of the cutover communication.</li>
+                    <li>The self-service process will include appropriate disclaimers (to be confirmed with Legal) clarifying that Docs data is operational and does not replace statutory forms.</li>
+                  </ul>
+                  <p><strong>3. Key Constraints Confirmed</strong></p>
+                  <ul>
+                    <li>Nominee details in Docs are <strong>not a replacement for statutory forms</strong> — the India team continues to rely on gratuity Form F and PF Form 2 as legal documents.</li>
+                    <li>The Docs process must support <strong>version tracking</strong> (date-stamped updates) so India HR can see the most recent declared nominee allocation percentage.</li>
+                    <li>RM does not need access to nominee data — this is a People Ops / India HR function only.</li>
+                  </ul>
+                  <h4>Confirmed Actions</h4>
+                  <table class="mfu-actions-table">
+                    <thead><tr><th>Action</th><th>Owner</th></tr></thead>
+                    <tbody>
+                      <tr><td>Assess technical feasibility of self-service nominee update request in Docs (form design, versioning, HR visibility).</td><td>Docs team</td></tr>
+                      <tr><td>Assess feasibility and effort of one-time bulk data migration from Assist nominee data to Docs.</td><td>Docs team / BA</td></tr>
+                      <tr><td>Confirm disclaimer / legal wording for the self-service nominee update form in Docs.</td><td>Darya Taranda, Hanna Vasilenka + Legal</td></tr>
+                      <tr><td>Define what nominee fields are required in Docs (nominee name, relationship, allocation percentage, contact details).</td><td>BA + India HR (Satish Malla)</td></tr>
+                      <tr><td>Include nominee details self-service and bulk migration in the Assist decommission scope document.</td><td>BA (Darya Taranda / Hanna Vasilenka)</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </td>
+            <td class="ch-video"><a href="https://epam.sharepoint.com/:b:/r/sites/EPM-EOA/Shared%20Documents/%5BBA%5D%20Business%20Development%20Team/4%20India/Assist%20platform/Meetings%20recording%202Q2026/Discuss%20nominee%20details%2004.05.2026.pdf?csf=1&web=1&e=urdUb2">Discuss nominee details 04.05.2026.pdf</a></td>
+            <td class="ch-dur">n/a</td>
+            <td class="ch-participants">Satish Malla<br>Anastasia Sotnikova</td>
+            <td></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <p class="ch-count">10 meetings · Mar – May 2026 · Last updated: 11 May 2026</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="rl-footer">
+    <p>EPAM India · HR Document Workflow Migration · Communication History</p>
+    <p><strong>Owner:</strong> EPAM Docs Platform &amp; India HR Team &nbsp;|&nbsp; <strong>Source:</strong> <a href="https://kb.epam.com/spaces/EPMEOADOCS/pages/2812812961/Communication+history" style="color:#4a5568;">EPMEOADOCS Confluence</a></p>
+  </div>
+
+</div>
+</body>
+</html>

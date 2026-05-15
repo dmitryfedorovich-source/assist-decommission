@@ -84,15 +84,17 @@ Download Letter   │                            │   │         → Request
 
 **Step 1 — Employee initiates request**
 - Employee navigates to docs.epam.com
-- Opens "My Requests" tab
-- Clicks "Request document from EPAM"
-- Selects the desired letter type from the dropdown
+- Opens "My Requests" tab → **"Active Requests"** sub-tab (the default view; "Past Requests" sub-tab shows closed requests)
+- Clicks **"+ Request document from EPAM"** button (top-right of the page)
+- In the modal: selects the desired letter type from the dropdown
+- Clicks **"Create request"** button to confirm
 
 **Step 2 — Requester fills in the request form**
-- System pre-populates known employee data from HR systems
-- Each form displays a static disclaimer/notice text at the top — this replaces the Assist self-declaration confirmation popup, which is not implemented in DOCS (D-17)
-- Requester completes the remaining required fields (see Section 5)
-- Requester submits the form
+- System pre-populates known employee data from People system (read-only "System file" form within the request)
+- Employee fills in the required fields in "Request details" form (see Section 5)
+- A **Self-Declaration section** appears at the bottom of the form with full disclaimer text. Employee must tick the **"Accept" checkbox** before submitting (D-21)
+- Optional: employee may click **"Save as draft"** to return later before submitting
+- Requester submits the form; a confirmation dialog appears: *"Once you have done this, you cannot modify your form any further"*
 
 **Step 3a — Auto-verification path (Form 60, Address Proof, Service Letter)**
 - DOCS platform validates the submitted data automatically
@@ -103,7 +105,7 @@ Download Letter   │                            │   │         → Request
 - Request enters verification queue for India Team specialist (DV/EDV)
 - Specialist reviews the submitted information
   - If correct: specialist verifies → clicks **"Send Document"** action → employee receives notification → document available for download. Note: the document is **not visible** to the employee until the specialist sends it.
-  - If incorrect: specialist rejects → employee receives notification with rejection reason → employee must submit a **new request** (no resubmit on same request)
+  - If incorrect: specialist rejects with **required comment** → employee receives notification with rejection reason → employee edits and resubmits **same form** → specialist re-verifies. No limit on resubmissions.
 - **Request closure:** India Team specialist closes manually, OR system auto-closes after 2 days if no manual closure
 
 **Step 4 — Employee downloads the letter**
@@ -114,7 +116,7 @@ Download Letter   │                            │   │         → Request
 - **Auto-verified letters (Form 60, Address Proof, Service Letter):** System auto-closes the request after **2 days** once all forms reach a final status (Verified / Generated)
 - **Manually verified letters (Visa Processing, LOR):** India Team specialist closes the request manually after sending the document, OR system auto-closes after **2 days** if no manual closure occurs
 
-> **New request rule:** An employee cannot submit a new request for the same letter type until the previous request is closed. Minimum interval is 2 days.
+> **New request rule:** An employee cannot submit a new request for the same letter type until the previous request is closed. Minimum interval is 2 days. Note: resubmitting a rejected form does not count as a new request — the same request stays open.
 
 ---
 
@@ -124,25 +126,32 @@ Download Letter   │                            │   │         → Request
 
 | Field | Source | Input Type |
 |---|---|---|
-| Name | Pre-populated (HR system) | Read-only |
-| Designation | Pre-populated (HR system) | Read-only |
-| UID | Pre-populated (HR system) | Read-only |
-| Birth Location | Pre-populated (HR system) | Read-only |
-| Start Date | Pre-populated (HR system) | Read-only |
+| Date | Auto (DOCS system) | Read-only |
+| Name | Pre-populated (People system) | Read-only |
+| Designation | Pre-populated (People system) | Read-only |
+| UID | Pre-populated (People system) | Read-only |
+| Work Location | Pre-populated (People system) | Read-only |
+| Birth Location | Pre-populated (People system) | Read-only |
+| Start Date | Pre-populated (People system) | Read-only |
+| Salutation | Employee | Dropdown (e.g. Mr. / Mrs.) |
 | Father Name | Employee | Text input |
+| Current address | Employee | Text input (2 lines) |
+| Worksite city | Employee | Dropdown |
+| UAN | Employee | Text input |
+| Mobile number | Employee | Text input |
 | PAN | Employee | Text input |
-| Address | Employee | Text input |
-| Mobile | Employee | Text input |
+| State | Employee | Text input |
 
 ### 5.2 Address Proof Letter
 
 | Field | Source | Input Type |
 |---|---|---|
-| Name | Pre-populated (HR system) | Read-only |
-| Designation | Pre-populated (HR system) | Read-only |
-| UID | Pre-populated (HR system) | Read-only |
-| Address as per People | Pre-populated (People system) | Editable — employee can correct if outdated (OQ-14: India team to confirm preference) |
-| Start Date | Pre-populated (HR system) | Read-only |
+| Date | Auto (DOCS system) | Read-only |
+| Name | Pre-populated (People system) | Read-only |
+| Designation | Pre-populated (People system) | Read-only |
+| UID | Pre-populated (People system) | Read-only |
+| Start Date | Pre-populated (People system) | Read-only |
+| Address as per People | Pre-populated (People system) | Read-only — if address is incorrect, employee must update profile in People system (D-20) |
 | Purpose | Employee | Dropdown: Personal Loan / Home Loan / Bank Connection / New Broadband Connection / Custom |
 | Custom Purpose text | Employee | Text input, max 100 characters — always visible; fill in when "Custom" is selected |
 
@@ -152,36 +161,41 @@ Download Letter   │                            │   │         → Request
 
 | Field | Source | Input Type |
 |---|---|---|
-| Name | Pre-populated (HR system) | Read-only |
-| Designation | Pre-populated (HR system) | Read-only |
-| UID | Pre-populated (HR system) | Read-only |
-| Work Location | Pre-populated (HR system) | Read-only |
-| Start Date | Pre-populated (HR system) | Read-only |
+| Date | Auto (DOCS system) | Read-only |
+| Name | Pre-populated (People system) | Read-only |
+| Designation | Pre-populated (People system) | Read-only |
+| UID | Pre-populated (People system) | Read-only |
+| Work Location | Pre-populated (People system) | Read-only |
+| Start Date | Pre-populated (People system) | Read-only |
 | Purpose | Employee | Dropdown |
+| Custom field details | Employee | Text input |
 
 ### 5.4 Visa Processing Letter
 
 | Field | Source | Input Type |
 |---|---|---|
-| Name | Pre-populated (HR system) | Read-only |
-| Designation | Pre-populated (HR system) | Read-only |
-| UID | Pre-populated (HR system) | Read-only |
-| Work Location | Pre-populated (HR system) | Read-only |
-| Start Date | Pre-populated (HR system) | Read-only |
+| Date | Auto (DOCS system) | Read-only |
+| Name | Pre-populated (People system) | Read-only |
+| Designation | Pre-populated (People system) | Read-only |
+| UID | Pre-populated (People system) | Read-only |
+| Work Location | Pre-populated (People system) | Read-only |
+| Start Date | Pre-populated (People system) | Read-only |
 | Purpose | Employee | Dropdown (e.g. Personal Travel) |
-| Comments | Employee | Text input, max 300 characters, single line |
+| Comments | Employee | **Required.** Text input, max 300 characters, single line, no paragraphs |
 
 ### 5.5 LOR — Letter of Recommendation
 
 | Field | Source | Input Type |
 |---|---|---|
-| Name | Pre-populated (HR system) | Read-only |
-| Designation | Pre-populated (HR system) | Read-only |
-| UID | Pre-populated (HR system) | Read-only |
-| Work Location | Pre-populated (HR system) | Read-only |
-| Start Date | Pre-populated (HR system) | Read-only |
+| Date | Auto (DOCS system) | Read-only |
+| Name | Pre-populated (People system) | Read-only |
+| Designation | Pre-populated (People system) | Read-only |
+| UID | Pre-populated (People system) | Read-only |
+| Work Location | Pre-populated (People system) | Read-only |
+| Start Date | Pre-populated (People system) | Read-only |
 | Purpose | Employee | Dropdown |
-| Notes & Responsibilities | Employee | Multi-line plain text input (no formatting; development pending — OQ-11) |
+| Custom field details | Employee | Text input |
+| Notes & Responsibilities | Employee | **Required.** Multi-line plain text, paragraphs supported, max ~1000 chars (development confirmed — D-18) |
 
 ---
 
