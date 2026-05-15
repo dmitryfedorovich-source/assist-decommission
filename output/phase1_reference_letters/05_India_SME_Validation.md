@@ -157,15 +157,19 @@ The following letters are routed to India Team specialists for review before the
 | UID | System (People system) | Read-only |
 | Work Location | System (People system) | Read-only |
 | Start Date | System (People system) | Read-only |
-| Purpose | Employee | Dropdown (e.g. Personal Travel, Business Travel) |
-| Comments | Employee | **Required.** Max 300 characters, single line, no paragraphs |
+| Purpose of Travel | Employee | Free text |
+| Destination Country | Employee | Free text |
+| Tentative Travel start date | Employee | Date picker |
+| Tentative Travel end date | Employee | Date picker |
+| Travel type | Employee | Dropdown (e.g. Personal Travel — full list: Question 4.1) |
+| Comments | Employee | **Required.** Text area |
 
 **Behavior:** Employee submits → EPAM specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee receives notification and downloads letter. Document is not visible to employee before the specialist sends it. If incorrect: specialist rejects with required comment → employee is notified → employee edits and resubmits same form → specialist re-verifies. No limit on resubmissions.
 
 ---
 
-**Question 4.1 — Visa Processing Letter: Are the Purpose dropdown options correct? Please list the required values.**
-> *(We expect: Business Travel, Personal Travel — please confirm or correct.)*
+**Question 4.1 — Visa Processing Letter: What values should be available in the Travel type dropdown?**
+> *(We have seen "Personal Travel" in the DOCS test environment — please confirm the full list.)*
 > Your answer: ___________
 
 ---
@@ -318,8 +322,10 @@ By signing below, you confirm that the proposed solution for Reference Letters i
 | OQ-03 | LOR: Can RM initiate on behalf of employee? | India Team | Resolved — No; employee self-service for active employees; ex-employee LOR via India Team specialist in Separation module |
 | OQ-04 | Relocation Letter: City list for New Work Location dropdown | India HR | **Deferred** — Relocation Letter moved to Phase 4+ (D-16) |
 | OQ-05 | Service Letter: Purpose dropdown values | India HR | Open — Question 3.5 |
-| OQ-06 | Visa Processing Letter: Purpose dropdown values | India HR | Open — Question 4.1 |
+| OQ-06 | Visa Processing Letter: Travel type dropdown values | India HR | Open — Question 4.1 |
 | OQ-07 | LOR: Purpose dropdown values | India HR | Open — Question 4.2 |
 | OQ-08 | Bank/SIM/LPG sub-types: handled via Purpose dropdown on base template? | India Team | Open — Question 2.2 |
 | OQ-13 | Relocation Letter: purpose, trigger, eligibility, auto-trigger feasibility — questions to follow separately | India Team / Hanna Vasilenka | Open — separate discussion |
 | OQ-14 | Address Proof Letter: employee manual address edit — lock or allow? | India Team | **Resolved — D-20: field is locked (read-only); update via People system** |
+| OQ-11 | DOCS platform dev — Comments field (Visa Processing) and Notes & Responsibilities field (LOR) require custom text input components | DOCS Platform (Olga Chaban) | Open — blocking Track B letter generation |
+| OQ-15 | Track B RM approval: Satish Malla confirmed RM approval is mandatory for Visa Processing and LOR. DOCS does not currently support RM routing. Solution must be agreed before Track B development begins. | Dzmitry Fedarovich / Satish Malla / Olga Chaban | **Open — blocking Track B development** |

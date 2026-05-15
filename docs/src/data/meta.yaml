@@ -21,11 +21,11 @@ hero:
 stats:
   - value: "4"
     label: "Phases"
-  - value: "18"
+  - value: "21"
     label: "Output Docs"
   - value: "6"
     label: "Audiences"
-  - value: "26+"
+  - value: "32+"
     label: "Decisions Tracked"
   - value: "10"
     label: "Validator Checks"
@@ -65,13 +65,13 @@ deadline:
     critical path item.
 
 knowledge_stats:
-  - value: "26+"
+  - value: "32+"
     color: "var(--color-accent)"
     label: "Decisions Across Phases"
-  - value: "21"
+  - value: "22"
     color: "var(--color-blue)"
     label: "Open Questions"
-  - value: "9"
+  - value: "11"
     color: "var(--color-green)"
     label: "Feedback Items"
   - value: "4"

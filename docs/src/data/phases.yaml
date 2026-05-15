@@ -10,10 +10,11 @@ phases:
     title: "Reference Letters"
     items:
       - "5 letter types: Form 60, Address Proof, Service Letter, Visa Processing, LOR"
-      - "2 routing tracks: auto-verified and DV/EDV manual verification"
+      - "2 routing tracks: auto-verified (Track A) and DV/EDV manual verification (Track B)"
       - "Go-live: June 30, 2026"
       - "Stage 1 (internal sign-off) pending"
-      - "India SME meeting: ~May 13–14"
+      - "Stage 2 partial: Track A approved by Satish Malla (D-23, 14 May 2026)"
+      - "Track B blocked: RM approval required, DOCS platform solution pending (OQ-15)"
 
   - id: phase2
     status: next
@@ -52,7 +53,7 @@ signoff_stages:
   accent: accent          # accent | blue | green
   items:
     - "⬜ Stage 1 — Internal (Daria, Hanna)"
-    - "⬜ Stage 2 — India SME (Satish, Satya, Sasanka)"
+    - "🔶 Stage 2 — India SME (partial): Track A approved (D-23, 14 May); Track B blocked (OQ-15)"
     - "⬜ Stage 3 — Post-feedback iteration"
     - "⬜ Stage 4 — Final India sign-off + UAT"
     - "⬜ Stage 5 — Epics/tickets to dev"
@@ -61,10 +62,10 @@ blocking_oqs:
   title: "Open Questions Blocking Phase 1"
   accent: blue
   items:
+    - "OQ-15 — Track B RM approval mechanism (BLOCKING development)"
+    - "OQ-11 — DOCS dev: Comments + LOR Notes fields (BLOCKING Track B)"
     - "OQ-05/06/07 — Purpose dropdown values (India Team)"
     - "OQ-08 — Bank/SIM/LPG sub-types approach"
-    - "OQ-11 — DOCS dev: Comments + LOR Notes fields"
-    - "OQ-14 — Address edit: lock or allow?"
 
 resources:
   title: "Key External Resources"

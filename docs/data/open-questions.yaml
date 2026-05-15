@@ -9,7 +9,7 @@
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/open-question.schema.json"
-  last_updated: "2026-05-08"
+  last_updated: "2026-05-15"
   maintainer: "BA team"
 
 # ── Phase 1 — Reference Letters ────────────────────────────────────────────────
@@ -237,13 +237,33 @@ open_questions:
     owner: "India Team (Satish / Sasanka)"
     raised: "2026-05-07"
     target_resolution: "Stage 2 India SME review"
+    status: Resolved
+    resolution_decision: "D-20"
+    resolution_note: "Address field is locked (read-only). Employee must update their profile in the People system if address is incorrect."
+    raised_by_decision: null
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: null
+    notes: "Resolved 2026-05-12."
+
+  - id: OQ-15
+    phase: 1
+    question: >
+      Track B letters (Visa Processing Letter, LOR) — RM approval solution required.
+      Satish Malla confirmed at India SME meeting (14.05.2026) that RM approval is a
+      mandatory step for both letters in the current Assist flow. DOCS platform does not
+      currently support routing a document to an RM for approval. Development of Track B
+      is blocked until a technical solution is identified and agreed with Satish Malla
+      and Olga Chaban (DOCS Platform).
+    owner: "Dzmitry Fedarovich / Olga Chaban / Satish Malla"
+    raised: "2026-05-14"
+    target_resolution: "DOCS platform investigation / Stage 3"
     status: Open
     resolution_decision: null
     resolution_note: null
     raised_by_decision: null
-    documents_affected: ["01", "02", "05"]
-    blocking_stage: "Stage 2"
-    notes: null
+    documents_affected: ["01", "02", "05", "07", "08"]
+    blocking_stage: "Stage 3"
+    notes: "Three solution options documented in 08_Track_B_Solution_Options.md. Blocking all Track B development."
 
 # ── Phase 2 — Compensation Letters ─────────────────────────────────────────────
 

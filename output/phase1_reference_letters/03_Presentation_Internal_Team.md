@@ -73,6 +73,8 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 **Used for:** Visa Processing Letter, LOR  
 > Document is **not visible** to the employee until the India Team specialist explicitly triggers the "Send Document" action (D-12, D-13).
 
+> ⚠️ **Track B development currently blocked — OQ-15.** At the India SME meeting (14.05.2026), Satish Malla confirmed RM approval is a mandatory step for Visa Processing Letter and LOR in the current Assist flow. DOCS does not currently support RM approval routing. Development of Track B cannot proceed until a solution is agreed. Three options are documented in `08_Track_B_Solution_Options.md`.
+
 ---
 
 > **Relocation Letter — Deferred:** Removed from Phase 1 scope (D-16). Purpose, trigger mechanism, and eligibility require investigation before this can be designed. Will be addressed in a separate later phase.
@@ -100,7 +102,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 | Form 60 | Salutation (dropdown), Father Name, Current address (2-line), Worksite city (dropdown), UAN, State, Mobile number, PAN *(D-22)* |
 | Address Proof | Purpose (dropdown); Custom purpose text (max 100 chars, always visible — fill in when "Custom" selected) |
 | Service Letter | Purpose (dropdown), Custom field details (text) |
-| Visa Processing | Purpose (dropdown), Comments (required, max 300 chars, single line) |
+| Visa Processing | Purpose of Travel (free text), Destination Country (free text), Tentative Travel start date (date picker), Tentative Travel end date (date picker), Travel type (dropdown — OQ-06), Comments (required, text area — OQ-11) |
 | LOR | Purpose (dropdown), Custom field details (text), Notes & Responsibilities (required, plain text, multi-line — no client names) |
 
 ---
@@ -203,17 +205,19 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 
 > Items requiring management sign-off before go-live.
 
-1. **Confirm June 30, 2026** as the go-live and Assist decommission date for Reference Letters
-2. **Assign India HR team** ownership for letter template finalization
-3. **Approve communication plan** to India employees ahead of go-live
-4. **Confirm next phase timeline** (Compensation Letters) to maintain migration momentum
+1. **Agree Track B RM approval solution (OQ-15)** — Satish Malla / Olga Chaban / BA team — Visa Processing Letter and LOR are blocked from development until the RM approval mechanism is decided. Three options documented in `08_Track_B_Solution_Options.md`.
+2. **Confirm June 30, 2026** as the go-live and Assist decommission date for Reference Letters
+3. **Assign India HR team** ownership for letter template finalization
+4. **Approve communication plan** to India employees ahead of go-live
+5. **Confirm next phase timeline** (Compensation Letters) to maintain migration momentum
 
 ---
 
 ## Slide 12 — Next Steps
 
-1. **Docs Platform Team:** Confirm People system integration availability for pre-population of employee data and address
-2. **India HR Team:** Finalize 5 letter templates for Docs
-3. **HR Operations:** Confirm India Team specialist (DV/EDV) user list and role assignment in Docs
-4. **PM:** Align Assist decommission date with **June 30, 2026** go-live
-5. **BA/PM:** Schedule UAT with India Team specialists and pilot employees
+1. **BA / Olga Chaban / Satish Malla:** Resolve OQ-15 — agree Track B RM approval solution to unblock Visa Processing Letter and LOR development (see `08_Track_B_Solution_Options.md`)
+2. **Docs Platform Team:** Confirm People system integration availability for pre-population of employee data and address
+3. **India HR Team:** Finalize 5 letter templates for Docs
+4. **HR Operations:** Confirm India Team specialist (DV/EDV) user list and role assignment in Docs
+5. **PM:** Align Assist decommission date with **June 30, 2026** go-live
+6. **BA/PM:** Schedule UAT with India Team specialists and pilot employees

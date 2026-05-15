@@ -61,6 +61,24 @@ documents:
     purpose: "Plain-language employee guide — what changes, step-by-step instructions, processing times"
     format: Markdown
 
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "07 — India SME Presentation"
+    link: "output/phase1_reference_letters/07_India_SME_Presentation.html"
+    audience: india
+    audience_label: "India Stakeholders"
+    purpose: "Visual 7-slide presentation for India SME validation — process flows, field specs, behavior cards, sign-off"
+    format: HTML
+
+  - phase: ph1
+    phase_label: "Phase 1"
+    file: "08 — Track B Solution Options"
+    link: "output/phase1_reference_letters/08_Track_B_Solution_Options.md"
+    audience: internal
+    audience_label: "Internal / BA"
+    purpose: "RM approval solution options for Track B (Visa Processing, LOR) — 3 options, recommendation, OQ-15 sign-off table"
+    format: Markdown
+
   - phase: ph2
     phase_label: "Phase 2"
     file: "01 — KB Onepager"
@@ -69,6 +87,15 @@ documents:
     audience_label: "Management"
     purpose: "Phase 2 scope preview — batch model, 4 compensation letter types, key differences from Phase 1"
     format: HTML
+
+  - phase: ph2
+    phase_label: "Phase 2"
+    file: "02 — Process Flow"
+    link: "output/phase2_compensation/02_Process_Flow_Compensation_Letters.md"
+    audience: internal
+    audience_label: "Internal / BA"
+    purpose: "End-to-end process flow — XLS batch upload, letter generation, employee accept and download, specialist monitoring"
+    format: Markdown
 
   - phase: ph3
     phase_label: "Phase 3"

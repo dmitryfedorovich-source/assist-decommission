@@ -685,7 +685,7 @@ code {
         <div class="flow-arrow">→</div>
         <div class="flow-step">
           <div class="fs-tag">Validation</div>
-          <div class="fs-label">validate-docs skill checks all 18 docs for consistency</div>
+          <div class="fs-label">validate-docs skill checks all 21 docs for consistency</div>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step">
@@ -815,9 +815,9 @@ code {
         <h3>Feedback &amp; Decisions Log — Single Source of Truth</h3>
         <p style="margin-top:8px;">All confirmed design decisions (D-XX), open questions (OQ-XX), and stakeholder feedback (F-XX) are recorded in <code>output/shared/Feedback_Decisions_Log.md</code>. Every output document must be consistent with the locked decisions. The validation skill reads this file first on every run and derives all facts dynamically — nothing is hardcoded in the validator.</p>
         <div style="display:flex;gap:24px;margin-top:14px;flex-wrap:wrap;">
-          <div><span style="font-size:22px;font-weight:800;color:#f97316;">26+</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Decisions Across Phases</span></div>
-          <div><span style="font-size:22px;font-weight:800;color:#3b82f6;">21</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Open Questions</span></div>
-          <div><span style="font-size:22px;font-weight:800;color:#22c55e;">9</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Feedback Items</span></div>
+          <div><span style="font-size:22px;font-weight:800;color:#f97316;">32+</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Decisions Across Phases</span></div>
+          <div><span style="font-size:22px;font-weight:800;color:#3b82f6;">22</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Open Questions</span></div>
+          <div><span style="font-size:22px;font-weight:800;color:#22c55e;">11</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Feedback Items</span></div>
           <div><span style="font-size:22px;font-weight:800;color:#a855f7;">4</span><br><span style="font-size:11px;color:#718096;text-transform:uppercase;letter-spacing:0.8px;">Phases Tracked</span></div>
         </div>
       </div>
@@ -886,11 +886,32 @@ code {
           <td>Markdown</td>
         </tr>
         <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/07_India_SME_Presentation.html" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">07 — India SME Presentation</a></td>
+          <td><span class="badge badge-india">India Stakeholders</span></td>
+          <td>Visual 7-slide presentation for India SME validation — process flows, field specs, behavior cards, sign-off</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph1">Phase 1</span></td>
+          <td><a href="output/phase1_reference_letters/08_Track_B_Solution_Options.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">08 — Track B Solution Options</a></td>
+          <td><span class="badge badge-internal">Internal / BA</span></td>
+          <td>RM approval solution options for Track B (Visa Processing, LOR) — 3 options, recommendation, OQ-15 sign-off table</td>
+          <td>Markdown</td>
+        </tr>
+        <tr>
           <td><span class="phase-pill ph2">Phase 2</span></td>
           <td><a href="output/phase2_compensation/01_KB_Onepager.html" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">01 — KB Onepager</a></td>
           <td><span class="badge badge-mgmt">Management</span></td>
           <td>Phase 2 scope preview — batch model, 4 compensation letter types, key differences from Phase 1</td>
           <td>HTML</td>
+        </tr>
+        <tr>
+          <td><span class="phase-pill ph2">Phase 2</span></td>
+          <td><a href="output/phase2_compensation/02_Process_Flow_Compensation_Letters.md" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">02 — Process Flow</a></td>
+          <td><span class="badge badge-internal">Internal / BA</span></td>
+          <td>End-to-end process flow — XLS batch upload, letter generation, employee accept and download, specialist monitoring</td>
+          <td>Markdown</td>
         </tr>
         <tr>
           <td><span class="phase-pill ph3">Phase 3</span></td>
@@ -1025,7 +1046,7 @@ code {
         <div class="cap-icon cap-icon-y">🔍</div>
         <div>
           <h4>Cross-Document Consistency Validation</h4>
-          <p>Runs the validate-docs skill across all 18 output documents simultaneously, checking factual accuracy, terminology, audience fit, structural completeness, OQ cross-references, and forbidden phrases. Errors and warnings are reported with file, location, and fix.</p>
+          <p>Runs the validate-docs skill across all 21 output documents simultaneously, checking factual accuracy, terminology, audience fit, structural completeness, OQ cross-references, and forbidden phrases. Errors and warnings are reported with file, location, and fix.</p>
         </div>
       </div>
       <div class="cap">
@@ -1105,10 +1126,11 @@ code {
         <h3>Reference Letters</h3>
         <ul>
           <li>5 letter types: Form 60, Address Proof, Service Letter, Visa Processing, LOR</li>
-          <li>2 routing tracks: auto-verified and DV/EDV manual verification</li>
+          <li>2 routing tracks: auto-verified (Track A) and DV/EDV manual verification (Track B)</li>
           <li>Go-live: June 30, 2026</li>
           <li>Stage 1 (internal sign-off) pending</li>
-          <li>India SME meeting: ~May 13–14</li>
+          <li>Stage 2 partial: Track A approved by Satish Malla (D-23, 14 May 2026)</li>
+          <li>Track B blocked: RM approval required, DOCS platform solution pending (OQ-15)</li>
         </ul>
       </div>
       <div class="rph next">
@@ -1148,7 +1170,7 @@ code {
         <h3>Sign-off Stages (Phase 1)</h3>
         <ul style="margin-top:8px;">
           <li>⬜ Stage 1 — Internal (Daria, Hanna)</li>
-          <li>⬜ Stage 2 — India SME (Satish, Satya, Sasanka)</li>
+          <li>🔶 Stage 2 — India SME (partial): Track A approved (D-23, 14 May); Track B blocked (OQ-15)</li>
           <li>⬜ Stage 3 — Post-feedback iteration</li>
           <li>⬜ Stage 4 — Final India sign-off + UAT</li>
           <li>⬜ Stage 5 — Epics/tickets to dev</li>
@@ -1157,10 +1179,10 @@ code {
       <div class="card card-blue">
         <h3>Open Questions Blocking Phase 1</h3>
         <ul style="margin-top:8px;">
+          <li>OQ-15 — Track B RM approval mechanism (BLOCKING development)</li>
+          <li>OQ-11 — DOCS dev: Comments + LOR Notes fields (BLOCKING Track B)</li>
           <li>OQ-05/06/07 — Purpose dropdown values (India Team)</li>
           <li>OQ-08 — Bank/SIM/LPG sub-types approach</li>
-          <li>OQ-11 — DOCS dev: Comments + LOR Notes fields</li>
-          <li>OQ-14 — Address edit: lock or allow?</li>
         </ul>
       </div>
       <div class="card card-green">
@@ -1188,7 +1210,7 @@ code {
       </div>
 
       <div class="card" style="flex:1;min-width:160px;text-align:center;padding:28px 16px;">
-        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">18</span>
+        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">21</span>
         <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;display:block;">Output Docs</span>
       </div>
 
@@ -1198,7 +1220,7 @@ code {
       </div>
 
       <div class="card" style="flex:1;min-width:160px;text-align:center;padding:28px 16px;">
-        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">26+</span>
+        <span style="font-size:36px;font-weight:800;color:var(--color-accent);display:block;line-height:1;">32+</span>
         <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;display:block;">Decisions Tracked</span>
       </div>
 
@@ -1337,6 +1359,7 @@ code {
     <h3 style="font-size:15px;font-weight:800;color:#1a1a2e;margin:36px 0 14px;">Common Step-by-Step Workflows</h3>
 
     <div class="card-grid card-grid-2">
+
       <div class="card card-accent">
         <h3>🎙️ Process a Meeting Transcript</h3>
         <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
@@ -1347,6 +1370,7 @@ code {
           <li>Apply required fixes; re-run <code>/validate-docs</code> until clean</li>
         </ol>
       </div>
+
       <div class="card card-blue">
         <h3>✏️ Apply Stakeholder Corrections</h3>
         <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
@@ -1356,6 +1380,7 @@ code {
           <li>Run <code>/validate-docs</code> to confirm corrections propagated cleanly across all docs</li>
         </ol>
       </div>
+
       <div class="card card-green">
         <h3>🔒 Add a Confirmed Decision</h3>
         <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
@@ -1366,6 +1391,7 @@ code {
           <li>Run <code>/validate-docs</code> → update all flagged docs → re-run until clean</li>
         </ol>
       </div>
+
       <div class="card card-purple">
         <h3>📋 Prepare for an India SME Meeting</h3>
         <ol style="font-size:13px;color:#4a5568;padding-left:18px;margin-top:8px;line-height:2;">
@@ -1376,6 +1402,7 @@ code {
           <li>Share 05 with Satish / Satya / Sasanka for review; record responses as new D-XX or OQ updates</li>
         </ol>
       </div>
+
     </div>
 
     <div class="info-box" style="margin-top:28px;">

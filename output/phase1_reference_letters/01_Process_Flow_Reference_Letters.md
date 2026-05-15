@@ -180,8 +180,12 @@ Download Letter   │                            │   │         → Request
 | UID | Pre-populated (People system) | Read-only |
 | Work Location | Pre-populated (People system) | Read-only |
 | Start Date | Pre-populated (People system) | Read-only |
-| Purpose | Employee | Dropdown (e.g. Personal Travel) |
-| Comments | Employee | **Required.** Text input, max 300 characters, single line, no paragraphs |
+| Purpose of Travel | Employee | Free text |
+| Destination Country | Employee | Free text |
+| Tentative Travel start date | Employee | Date picker |
+| Tentative Travel end date | Employee | Date picker |
+| Travel type | Employee | Dropdown (e.g. Personal Travel — full list pending India team confirmation, OQ-06) |
+| Comments | Employee | **Required.** Text area (DOCS dev required — OQ-11) |
 
 ### 5.5 LOR — Letter of Recommendation
 
@@ -195,7 +199,7 @@ Download Letter   │                            │   │         → Request
 | Start Date | Pre-populated (People system) | Read-only |
 | Purpose | Employee | Dropdown |
 | Custom field details | Employee | Text input |
-| Notes & Responsibilities | Employee | **Required.** Multi-line plain text, paragraphs supported, max ~1000 chars (development confirmed — D-18) |
+| Notes & Responsibilities | Employee | **Required.** Multi-line plain text, paragraphs supported, max ~1000 chars (DOCS dev required — OQ-11) |
 
 ---
 
