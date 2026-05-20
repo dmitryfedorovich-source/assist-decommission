@@ -10,7 +10,7 @@
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/decision.schema.json"
-  last_updated: "2026-05-08"
+  last_updated: "2026-05-18"
   maintainer: "BA team"
   source_of_truth: true
 
@@ -270,8 +270,8 @@ decisions:
     summary: "Visa Processing Letter: RM approval removed — DV/EDV verifies and manually sends"
     made_by: "Darya Taranda (Reference Letters KB page)"
     date: "2026-05-06"
-    status: locked
-    superseded_by: null
+    status: superseded
+    superseded_by: "D-24"
     supersedes: []
     change_risk: high
     confidence: high
@@ -397,8 +397,8 @@ decisions:
     summary: "Self-Declaration popup: NOT implemented — static disclaimer text at top of form instead"
     made_by: "Dzmitry Fedarovich / Darya Taranda / Hanna Vasilenka (meeting 07/05/2026)"
     date: "2026-05-07"
-    status: locked
-    superseded_by: null
+    status: superseded
+    superseded_by: "D-21"
     supersedes: []
     change_risk: medium
     confidence: sme_confirmed
@@ -416,6 +416,181 @@ decisions:
       will NOT be implemented in DOCS for any Phase 1 form. Instead, add a static
       disclaimer/notice text at the top of the relevant forms. No functional gate —
       informational text only.
+
+  - id: D-18
+    phase: 1
+    summary: "Comments (Visa Processing) and Notes & Responsibilities (LOR) are required fields"
+    made_by: "DOCS platform team confirmation (input 12.05.2026)"
+    date: "2026-05-12"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: high
+    evidence_type: inferred
+    source_ref: "Assist reference letters data file (input 12.05.2026)"
+    source_date: "2026-05-12"
+    documents_reflect: ["01", "02"]
+    documents_check: ["05"]
+    workflows: ["Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Comments field (Visa Processing Letter) and Notes & Responsibilities field (LOR)
+      are both required — employee cannot submit the form without filling them in.
+      Visa Processing: max 300 chars, one line, no paragraphs. LOR: max ~1000 chars,
+      multi-line, paragraphs supported.
+
+  - id: D-19
+    phase: 1
+    summary: "Approval flow comment: only available/required when specialist rejects (not on approval)"
+    made_by: "DOCS platform team confirmation (input 12.05.2026)"
+    date: "2026-05-12"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: inferred
+    source_ref: "Assist reference letters data file (input 12.05.2026)"
+    source_date: "2026-05-12"
+    documents_reflect: ["01", "02"]
+    documents_check: []
+    workflows: ["Trk-B", "Lifecycle"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Approval flow comments: comment input is only available/required when specialist
+      rejects a document. When the specialist approves (verifies), no comment is needed
+      — the comment field is not available on approval.
+
+  - id: D-20
+    phase: 1
+    summary: "Address Proof Letter: address field read-only (locked); update via People system"
+    made_by: "Assist reference letters data (2026-05-12)"
+    date: "2026-05-12"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: high
+    evidence_type: inferred
+    source_ref: "Assist reference letters data file, address field comment — 2026-05-12"
+    source_date: "2026-05-12"
+    documents_reflect: ["01", "02", "03", "05"]
+    documents_check: ["07"]
+    workflows: ["Trk-A", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: ["OQ-14"]
+    body: >
+      Address Proof Letter: the address field is read-only (locked). Employees cannot
+      edit the address on the DOCS form. If incorrect or missing, a note directs the
+      employee to update their profile in the People system.
+
+  - id: D-21
+    phase: 1
+    summary: "Self-Declaration checkbox confirmed in DOCS — Accept checkbox at bottom of each form (updates D-17)"
+    made_by: "DOCS platform screenshots (2026-05-13)"
+    date: "2026-05-13"
+    status: locked
+    superseded_by: null
+    supersedes: ["D-17"]
+    change_risk: medium
+    confidence: high
+    evidence_type: screenshot
+    source_ref: "DOCS platform UI screenshots — IN Form 60 auto-verified flow, 2026-05-13"
+    source_date: "2026-05-13"
+    documents_reflect: ["01", "02", "03", "05"]
+    documents_check: ["06"]
+    workflows: ["Trk-A", "Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Self-Declaration checkbox confirmed in DOCS. Updates D-17: the DOCS platform
+      implements a Self-Declaration section with an Accept checkbox at the bottom of
+      each request form. Employee must tick the checkbox before clicking Submit.
+
+  - id: D-22
+    phase: 1
+    summary: "Form 60 field updates: Salutation added; 'Current address'; 'Worksite city' dropdown"
+    made_by: "DOCS platform screenshots (2026-05-13)"
+    date: "2026-05-13"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: high
+    evidence_type: screenshot
+    source_ref: "DOCS platform UI screenshots — IN Form 60 Request Details form, 2026-05-13"
+    source_date: "2026-05-13"
+    documents_reflect: ["01", "02", "03", "05", "06"]
+    documents_check: []
+    workflows: ["Trk-A", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Form 60 employee-entered fields updated from DOCS screenshots: (1) Salutation
+      (dropdown, e.g. Mrs./Mr.) present — not previously documented; (2) Field label
+      "Current address" (2-line text) — replaces "Address"; (3) Field label "Worksite
+      city" (dropdown) — replaces "City" (text); likely pre-populated or constrained.
+
+  - id: D-23
+    phase: 1
+    summary: "Track A letters (Form 60, Address Proof, Service Letter) — India SME validation approved"
+    made_by: "Satish Malla (India SME meeting, 14.05.2026)"
+    date: "2026-05-14"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "Satish Malla India SME validation meeting 14.05.2026"
+    source_date: "2026-05-14"
+    documents_reflect: ["07"]
+    documents_check: ["01", "02", "05"]
+    workflows: ["Trk-A"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Track A letters (Form 60, Address Proof Letter, Service Letter) — India SME
+      validation approved. Satish Malla confirmed that the proposed design for all
+      three Track A letters is correct. Fields, routing (auto-verified), and common
+      behaviors validated with no change requests. Approved to proceed to development.
+
+  - id: D-24
+    phase: 1
+    summary: "Visa Processing Letter: routing updated from Track B to Track A (notification checkbox, no approval)"
+    made_by: "Satish Malla (verbal via Hanna Vasilenka Teams message, 18.05.2026)"
+    date: "2026-05-18"
+    status: draft
+    superseded_by: null
+    supersedes: ["D-12"]
+    change_risk: high
+    confidence: medium
+    evidence_type: stakeholder_call
+    source_ref: "Hanna Vasilenka Teams message reporting verbal Satish Malla confirmation — 18.05.2026. Written confirmation from Satish requested, pending."
+    source_date: "2026-05-18"
+    documents_reflect: ["01", "02"]
+    documents_check: ["03", "05", "06", "07"]
+    workflows: ["Trk-A", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: ["OQ-16"]
+    oqs_resolved: []
+    body: >
+      Visa Processing Letter: routing updated from Track B (manual verification) to
+      Track A (auto-verified). No RM or specialist approval required. Employee ticks
+      a notification checkbox confirming they informed the relevant person (same UX
+      pattern as leave/vacation requests). Supersedes D-12 for routing. Comments field
+      (D-09, D-18) and Self-Declaration Accept checkbox (D-21) still apply.
+      NOTE: verbal confirmation only as of 18.05.2026 — written confirmation from
+      Satish Malla pending. Partially resolves OQ-15 (OQ-15 now covers LOR only).
 
 # ── Phase 2 — Compensation Letters ─────────────────────────────────────────────
 

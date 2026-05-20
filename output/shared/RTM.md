@@ -58,6 +58,8 @@ KB2 = Phase 2 Onepager · KB3 = Phase 3 Onepager
 | D-20 | Address Proof Letter address field: read-only (locked); update via People system (OQ-14 resolved) | ✓ | ✓ | ✓ | — | ✓ | — | — | — |
 | D-21 | Self-Declaration checkbox confirmed in DOCS — updates D-17: Accept checkbox at bottom of form (not static text at top) | ✓ | ✓ | ✓ | — | ✓ | ↻ | — | — |
 | D-22 | Form 60 field updates: Salutation (dropdown) added; "Address" → "Current address"; "City" (text) → "Worksite city" (dropdown) | ✓ | ✓ | ✓ | — | ✓ | ✓ | — | — |
+| D-23 | Track A letters (Form 60, Address Proof, Service Letter) — India SME validation approved (D-23); proceed to development | — | — | — | — | ✓ | — | — | — |
+| D-24 | Visa Processing Letter: Track A routing (no approval, notification checkbox) — supersedes D-12 routing *(verbal 18.05.2026, written pending)* | ✓ | ✓ | ↻ | — | ↻ | ↻ | — | — |
 
 ### Phase 2 Decisions
 
@@ -83,8 +85,8 @@ KB2 = Phase 2 Onepager · KB3 = Phase 3 Onepager
 ## Section 2: Decision × Workflow Matrix
 
 **Workflow codes:**  
-Trk-A = Auto-verified track (Form 60, Address Proof, Service Letter)  
-Trk-B = Manual verify track (Visa Processing, LOR — DV/EDV specialist)  
+Trk-A = Auto-verified track (Form 60, Address Proof, Service Letter, Visa Processing *(D-24, 18.05.2026)*)  
+Trk-B = Manual verify track (LOR only — DV/EDV specialist; Visa Processing moved to Trk-A by D-24)  
 Lifecycle = Auto-close, rejection, status transitions  
 Form-UI = Form fields, pre-population, disclaimer text  
 P2-Batch = Phase 2 compensation XLS batch upload flow  
@@ -96,7 +98,8 @@ P3-HRMS = Phase 3 separation HRMS integration / ex-employee flow
 | D-06 | Auto-close 2 days | — | — | ✓ | — | — | — |
 | D-07 | Rejection = edit &amp; resubmit same form | — | — | ✓ | — | — | — |
 | D-09 | Visa Comments field (not Country) | — | ✓ | — | ✓ | — | — |
-| D-12 | Visa DV/EDV verifies → Send Document | — | ✓ | ↻ | — | — | — |
+| D-12 | Visa DV/EDV verifies → Send Document *(superseded for routing by D-24)* | — | ✓ | ↻ | — | — | — |
+| D-24 | Visa Processing Letter: Track A (notification checkbox, no approval) | ✓ | — | ↻ | ✓ | — | — |
 | D-13 | LOR DV/EDV verifies → Send Document + Notes field | — | ✓ | ↻ | ✓ | — | — |
 | D-15 | RM verification removed from all Phase 1 letters | ✓ | ✓ | — | — | — | — |
 | D-16 | Relocation Letter removed from Phase 1 | ✓ | ✓ | — | ✓ | — | — |
@@ -127,6 +130,8 @@ When an Open Question resolves, update all documents in the "Update on resolutio
 | OQ-11 | 1 | DOCS dev: Comments field (Visa) + LOR Notes field | Open | BRD (FR implementation spec), PRES (dev actions slide) |
 | OQ-12 | 2 | Compensation acceptance: activity log vs Accept button | Open | KB2 (flow description), future Phase 2 BRD |
 | OQ-13 | 4 | Relocation Letter Phase 4 investigation (5 questions) | Open | Phase 4 scope document (to be created once answered) |
+| OQ-15 | 1 | LOR Track B: RM approval solution required *(Visa Processing resolved by D-24, 18.05.2026)* | Open — LOR only | BRD (FR for LOR Track B), 01 (Track B flow), dev planning |
+| OQ-16 | 1 | Track A forms — employee-filled fields to pre-populate from People/DOCS (awaiting Satish email) | Open | 01 (field tables), 02 (FR field spec), 05 (validation section) |
 | OQ-14 | 1 | Address Proof: editable address or locked to People Portal? | **Resolved — D-20** | PF ✓, BRD ✓, PRES ✓, SME ✓, 07 ✓ |
 | OQ-P2-02 | 2 | PAN-number PDF protection: DOCS feasibility | Open | KB2 (security section), future Phase 2 BRD |
 | OQ-P3-02 | 3 | Separation letter auto-trigger from People system | Open | KB3 (trigger section), future Phase 3 BRD |
@@ -168,6 +173,8 @@ Evidence behind each decision — used for audit trail and change justification.
 | D-P2-06 | KB page + stakeholder call | KB Open Questions page + Satish Malla confirmation | 2026-05-07 | Authoritative |
 | D-P2-07 | Meeting transcript | Darya Taranda / Hanna Vasilenka / Dzmitry Fedarovich meeting | 2026-05-07 | Authoritative |
 | D-18 | Data file | Assist reference letters data file (input 12.05.2026) | 2026-05-12 | Authoritative |
+| D-23 | India SME meeting | Satish Malla India SME validation meeting | 2026-05-14 | Authoritative |
+| D-24 | Stakeholder verbal (Teams) | Satish Malla verbal via Hanna Vasilenka Teams message; written confirmation pending | 2026-05-18 | Medium (verbal only; written confirmation awaited) |
 | D-19 | Data file | Assist reference letters data file (input 12.05.2026) | 2026-05-12 | Authoritative |
 | D-20 | Data file | Assist reference letters data file (input 12.05.2026) — address field comment | 2026-05-12 | Authoritative |
 | D-P3-01 | Stakeholder call | Dzmitry Fedarovich (People team) call | 2026-05-04 | Authoritative |

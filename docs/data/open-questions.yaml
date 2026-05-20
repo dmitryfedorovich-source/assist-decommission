@@ -9,7 +9,7 @@
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/open-question.schema.json"
-  last_updated: "2026-05-15"
+  last_updated: "2026-05-18"
   maintainer: "BA team"
 
 # ── Phase 1 — Reference Letters ────────────────────────────────────────────────
@@ -248,12 +248,13 @@ open_questions:
   - id: OQ-15
     phase: 1
     question: >
-      Track B letters (Visa Processing Letter, LOR) — RM approval solution required.
-      Satish Malla confirmed at India SME meeting (14.05.2026) that RM approval is a
-      mandatory step for both letters in the current Assist flow. DOCS platform does not
-      currently support routing a document to an RM for approval. Development of Track B
-      is blocked until a technical solution is identified and agreed with Satish Malla
-      and Olga Chaban (DOCS Platform).
+      LOR (Letter of Recommendation) — RM approval solution required. Visa Processing
+      Letter resolved by D-24 (18.05.2026, moved to Track A). Satish Malla confirmed at
+      India SME meeting (14.05.2026) that RM approval is a mandatory step for LOR in the
+      current Assist flow. DOCS platform does not currently support routing a document to
+      an RM for approval. LOR development is blocked until a technical solution is agreed.
+      Options: (1) employee enters RM email on form + DOCS triggers email; (2) offline RM
+      confirmation; (3) other.
     owner: "Dzmitry Fedarovich / Olga Chaban / Satish Malla"
     raised: "2026-05-14"
     target_resolution: "DOCS platform investigation / Stage 3"
@@ -261,9 +262,28 @@ open_questions:
     resolution_decision: null
     resolution_note: null
     raised_by_decision: null
-    documents_affected: ["01", "02", "05", "07", "08"]
+    documents_affected: ["01", "02", "05", "07"]
     blocking_stage: "Stage 3"
-    notes: "Three solution options documented in 08_Track_B_Solution_Options.md. Blocking all Track B development."
+    notes: "Blocking LOR (Track B) development only. Visa Processing Letter resolved by D-24."
+
+  - id: OQ-16
+    phase: 1
+    question: >
+      Track A forms (Form 60, Address Proof Letter, Service Letter, Visa Processing Letter)
+      — field pre-population from People/DOCS: Satish Malla (18.05.2026) raised concern
+      that some employee-filled fields on Track A forms could be pre-populated from People
+      or DOCS data. Which specific fields should be pre-populated? Required to finalise
+      field specs for all four Track A letter types.
+    owner: "Satish Malla / Hanna Vasilenka"
+    raised: "2026-05-18"
+    target_resolution: "Stage 2 / BA Work (Phase 1)"
+    status: Open
+    resolution_decision: null
+    resolution_note: null
+    raised_by_decision: "D-24"
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: "Stage 5"
+    notes: "Awaiting email from Satish Malla with specific field list."
 
 # ── Phase 2 — Compensation Letters ─────────────────────────────────────────────
 

@@ -110,6 +110,22 @@ documents:
     forbidden_terms: ["HRBP", "DOCS", "migration rationale", "Assist decommission rationale"]
     validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 6", "Check 7"]
 
+  - id: "07"
+    number: "07"
+    name: "India SME Presentation"
+    short_code: ISP
+    phase: 1
+    audience_code: india_sme
+    audience_label: "India SMEs"
+    purpose: "Visual 7-slide presentation for India SME validation — process flows, field specs, behavior cards, sign-off"
+    format: HTML
+    file_path: "output/phase1_reference_letters/07_India_SME_Presentation.html"
+    status: processed
+    confidence_min: sme_confirmed
+    decisions_reflect: [D-23]
+    forbidden_terms: ["HRBP"]
+    validator_checks: ["Check 1", "Check 4", "Check 7"]
+
   # ── Phase 2 — Compensation Letters ───────────────────────────────────────
 
   - id: "KB2"

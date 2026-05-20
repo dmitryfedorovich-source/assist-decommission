@@ -1,0 +1,83 @@
+Hanna Vasilenka
+
+Привет,
+
+Вот интуты для Self Service Nominee Form.
+
+ 
+
+Возьмите, пожалуйста, в анализ и проработку
+
+ 
+
+Best regards,
+
+Hanna Vasilenka
+
+ 
+
+From: Satish Malla <satish_malla@epam.com>
+Sent: Monday, May 18, 2026 15:48
+To: Hanna Vasilenka <Hanna_Vasilenka@epam.com>; Darya Taranda <Darya_Taranda@epam.com>
+Cc: Chinmoy Ghosh <Chinmoy_Ghosh@epam.com>
+Subject: Self Service Nominee Form from Assist
+
+ 
+
+Hi Hanna,
+
+ 
+
+As per our discussion, below is the nominee information to be required for employee & provide an option to add the dependents and split the % amount the dependents.
+
+ 
+
+
+
+Emp UID
+
+Emp Name
+
+NAME OF NOMINEE
+
+RELATION
+
+DOB
+
+GENDER
+
+ADDRESS
+
+CONTACT NUMBER
+
+GPA
+
+FSG
+
+GTLI
+
+GRATUITY
+
+PF
+
+Auto fill from People
+
+Auto Fill from People
+
+ 
+
+ 
+
+ 
+
+M/F
+
+ 
+
+ 
+
+ 
+
+Satish Malla
+
+People Operations Principal
