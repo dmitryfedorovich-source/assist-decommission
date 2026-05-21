@@ -3,7 +3,7 @@ name: Phase 1 State — Reference Letters (confirmed domain facts)
 description: All confirmed Phase 1 domain facts: letter types, field specs, decisions, 11 common behaviors, platform specifics, open items
 type: project
 status: active
-last_updated: 2026-05-13
+last_updated: 2026-05-20
 ---
 
 ## Phase Summary
@@ -11,8 +11,8 @@ last_updated: 2026-05-13
 **Phase:** Phase 1 — Reference Letters  
 **Go-live:** June 30, 2026  
 **Assist decommissioned:** June 30, 2026  
-**Stage:** SME validation session completed 2026-05-13; awaiting stakeholder sign-off  
-**Current stage:** Stage 2 (India SME validation)
+**Stage:** Approved with Dasha; BA work complete except Track B solution. Development and process setup in progress; UAT planned in the next couple weeks.
+**Current stage:** Dev / process setup with UAT preparation
 
 ## Letter Scope — 5 Letters
 
@@ -21,7 +21,7 @@ last_updated: 2026-05-13
 | 1 | Form 60 | A — auto-verified | None — instant |
 | 2 | Address Proof Letter | A — auto-verified | None — instant |
 | 3 | Service Letter | A — auto-verified | None — instant |
-| 4 | Visa Processing Letter | B — manual review | DV/EDV verifies → "Send Document" |
+| 4 | Visa Processing Letter | A — auto-verified | Notification checkbox; no RM or specialist approval (D-24) |
 | 5 | Letter of Recommendation (LOR) | B — manual review | DV/EDV verifies → "Send Document" (active employees only) |
 
 **Out of Phase 1:** Relocation Letter (Phase 4+, D-16); LOR for ex-employees (Phase 3)
@@ -76,7 +76,7 @@ last_updated: 2026-05-13
 | Purpose | Employee | Dropdown | **OQ-05 — values not yet confirmed by India HR** |
 | Custom Purpose text | Employee | Text | Always visible; max 100 chars, single line |
 
-### Visa Processing Letter (Track B)
+### Visa Processing Letter (Track A, D-24)
 
 Form section header in DOCS: **"Travel details"** (confirmed from screenshots 2026-05-13)
 
@@ -94,6 +94,7 @@ Form section header in DOCS: **"Travel details"** (confirmed from screenshots 20
 | Tentative Travel end date | Employee | Date picker | Confirmed from DOCS screenshots |
 | Travel type | Employee | Dropdown | e.g. "Personal Travel" — confirmed from DOCS screenshots (**OQ-06 redirected: dropdown is Travel type, not Purpose**) |
 | Comments | Employee | Text area | Confirmed from DOCS screenshots (prior spec "max 300 chars, single line" was assumption — actual DOCS type is text area) |
+| Notification confirmation | Employee | Checkbox | Employee confirms they informed the relevant person; no approval workflow required (D-24) |
 
 ### Letter of Recommendation — LOR (Track B, active employees only)
 
@@ -118,7 +119,7 @@ Form section header in DOCS: **"Travel details"** (confirmed from screenshots 20
 5. **Notifications** — employee: letter ready / form rejected (with reason); specialist: new request waiting for verification
 6. **Data pre-population from People system** — Date (DOCS), Name/Designation/UID/Start Date (all 5); Work Location (Form 60, Service, Visa, LOR); Birth Location (Form 60); Address (Address Proof — locked)
 7. **"Comments" / "Roles & Responsibilities" field required** — Visa Processing Comments: text area (D-18); LOR active Roles & Responsibilities: max ~6000 chars, multi-line (D-18)
-8. **RM approval removed; DV/EDV verifies** — Track B: Visa Processing, Relocation Letter, LOR active. Specialist verifies then uses "Send Document" (D-12, D-13, D-15)
+8. **Visa Processing moved to Track A** — no RM or specialist approval; employee ticks notification checkbox (D-24). **LOR remains Track B**; RM approval solution open (OQ-15).
 9. **Auto-verification status change** — Track A: status shows "Waiting for verification" after submit; nightly batch changes to "Verified" — no action needed (platform behavior)
 10. **Purpose field "Custom" text** — Address Proof, Service Letter, LOR: always visible, optional, max 100 chars, single line
 11. **Address field read-only** — Address Proof Letter: address from People system, locked; update via People system profile (D-20)
@@ -134,7 +135,7 @@ Form section header in DOCS: **"Travel details"** (confirmed from screenshots 20
 | D-09 | Visa Processing Comments: max 300 chars, single line |
 | D-10 | Cancel request: not in Phase 1 MVP |
 | D-11 | Historical data migration: out of scope |
-| D-12 | Visa Processing: RM approval removed; DV/EDV verifies → "Send Document" |
+| D-12 | Visa Processing: superseded for routing by D-24 |
 | D-13 | LOR active: RM approval removed; DV/EDV verifies → "Send Document" |
 | D-15 | All Phase 1 letters: RM approval removed entirely |
 | D-16 | Relocation Letter: out of Phase 1 (Phase 4+) |
@@ -144,8 +145,9 @@ Form section header in DOCS: **"Travel details"** (confirmed from screenshots 20
 | D-20 | Address Proof: address field locked (read-only) |
 | D-21 | Self-Declaration "Accept" checkbox confirmed in DOCS (bottom of form) |
 | D-22 | Form 60 fields: Salutation (new), "Current address" (2-line), "Worksite city" (dropdown) |
+| D-24 | Visa Processing Letter moved to Track A with notification checkbox; written confirmation pending |
 
-## Open Questions (Phase 1, as of 2026-05-13)
+## Open Questions (Phase 1, as of 2026-05-18)
 
 | ID | Question | Owner |
 |---|---|---|
@@ -154,6 +156,8 @@ Form section header in DOCS: **"Travel details"** (confirmed from screenshots 20
 | OQ-07 | LOR Purpose dropdown values | India HR |
 | OQ-08 | Bank/SIM/LPG sub-types via Purpose dropdown? | India Team |
 | OQ-11 | DOCS dev effort: Comments (Visa) and Notes (LOR) text fields | DOCS Platform / Michael |
+| OQ-15 | LOR Track B RM approval solution | Dzmitry / Olga / Satish |
+| OQ-16 | Track A field pre-population list | Satish / Hanna |
 
 ## Stakeholders
 
@@ -161,11 +165,11 @@ Form section header in DOCS: **"Travel details"** (confirmed from screenshots 20
 - **India HR Team contact:** WFAHumanResourceIndia@epam.com
 - **Internal BA:** Darya Taranda, Hanna Vasilenka, Dzmitry Fedarovich, Olga Chaban
 
-## Next Actions (after 2026-05-13 SME session)
+## Next Actions (as of 2026-05-20)
 
-1. India stakeholders sign off on `07_India_SME_Presentation.html`
-2. India HR provide OQ-05/06/07 dropdown values → update field specs in 01, 02, 03, 05
-3. Docs Platform confirm People system integration availability
-4. India HR finalize 5 letter templates for DOCS
-5. HR Operations confirm DV/EDV user list and role assignment in DOCS
-6. Schedule UAT with India Team specialists and pilot employees
+1. Continue Phase 1 development and process setup
+2. Resolve OQ-15 for LOR Track B solution
+3. Prepare and schedule UAT in the next couple weeks
+4. India HR provide OQ-05/06/07 dropdown values
+5. Satish provide OQ-16 pre-population field list
+6. Confirm DV/EDV user list and role assignment in DOCS for LOR

@@ -69,7 +69,7 @@ If rollback is triggered on go-live day or during the T+1 monitoring window:
 Confirm Assist is fully operational after rollback:
 
 - [ ] All 5 Phase 1 letter request flows accessible in Assist
-- [ ] India Team can process Track B requests (Visa Processing, LOR) via Assist
+- [ ] India Team can process Track B LOR requests via Assist
 - [ ] Employees can submit Form 60, Address Proof, Service Letter via Assist
 - [ ] No partial DOCS configuration is active (dual-system conflict risk)
 

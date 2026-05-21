@@ -76,7 +76,7 @@ documents:
     link: "output/phase1_reference_letters/08_Track_B_Solution_Options.md"
     audience: internal
     audience_label: "Internal / BA"
-    purpose: "RM approval solution options for Track B (Visa Processing, LOR) — 3 options, recommendation, OQ-15 sign-off table"
+    purpose: "RM approval solution options for LOR Track B — 3 options, recommendation, OQ-15 sign-off table"
     format: Markdown
 
   - phase: ph2

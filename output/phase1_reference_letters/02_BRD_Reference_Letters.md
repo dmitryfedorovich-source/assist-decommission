@@ -34,8 +34,8 @@ This document defines the business requirements for migrating the Reference Lett
   - Service Letter
   - Visa Processing Letter
   - Letter of Recommendation (LOR) — active employees only
-- Auto-verification workflow for Form 60, Address Proof Letter, Service Letter
-- India Team specialist (DV/EDV) manual verification workflow for Visa Processing Letter, LOR — specialist verifies then manually sends document to employee (D-12, D-13)
+- Auto-verification workflow for Form 60, Address Proof Letter, Service Letter, and Visa Processing Letter
+- India Team specialist (DV/EDV) manual verification workflow for LOR — specialist verifies then manually sends document to employee (D-13)
 - Employee request form with HR data pre-population
 - Letter generation and download
 - Request lifecycle management (completion, closure, auto-close)
@@ -127,6 +127,7 @@ This document defines the business requirements for migrating the Reference Lett
 - Tentative Travel end date (date picker)
 - Travel type (**dropdown** — e.g. Personal Travel; full list pending India team confirmation, OQ-06)
 - Comments (**required**, text area — DOCS dev required, OQ-11)
+- Notification confirmation checkbox (employee confirms they informed the relevant person; D-24)
 
 **LOR — Letter of Recommendation:**
 - Purpose (dropdown — values pending India team confirmation, OQ-07)
@@ -148,8 +149,8 @@ This document defines the business requirements for migrating the Reference Lett
 | Form 60 | Auto-verification | Immediate |
 | Address Proof Letter | Auto-verification | Immediate |
 | Service Letter | Auto-verification | Immediate |
-| Visa Processing Letter | India Team specialist (DV/EDV) verification | Specialist verifies → "Send Document" → employee downloads; document hidden until sent (D-12). **RM approval mechanism under review — OQ-15.** |
-| LOR | India Team specialist (DV/EDV) verification | Same flow as Visa Processing (D-13). **RM approval mechanism under review — OQ-15.** |
+| Visa Processing Letter | Auto-verification | Track A per D-24; no RM or specialist approval required. Employee ticks notification confirmation checkbox. |
+| LOR | India Team specialist (DV/EDV) verification | Specialist verifies → "Send Document" → employee downloads; document hidden until sent (D-13). **RM approval mechanism under review — OQ-15.** |
 
 **FR-09:** Auto-verified requests shall transition to **Completed** status immediately upon successful submission. Letter is available for download.
 
@@ -261,8 +262,8 @@ This document defines the business requirements for migrating the Reference Lett
 | India letter templates finalized (5 types) | India HR Team | Letter generation cannot be configured |
 | India Team specialist onboarding to Docs | HR Operations | Manual verification workflow cannot function |
 | Assist decommission date | EPAM Platform | Overlap period and cutover timing |
-| OQ-11 resolution — DOCS text field dev (Comments, Notes & Responsibilities) | DOCS Platform (Olga Chaban) | Comments (Visa Processing) and Notes & Responsibilities (LOR) require custom component development; Track B cannot go live without this |
-| OQ-15 resolution — Track B RM approval mechanism | Satish Malla / DOCS Platform / BA team | Visa Processing and LOR cannot proceed to development until RM approval solution is agreed. See Track B Solution Options (08). |
+| OQ-11 resolution — DOCS text field dev (Comments, Notes & Responsibilities) | DOCS Platform (Olga Chaban) | Comments (Visa Processing) and Notes & Responsibilities (LOR) require custom component development before field specs can be finalized |
+| OQ-15 resolution — LOR Track B RM approval mechanism | Satish Malla / DOCS Platform / BA team | LOR cannot proceed to development until RM approval solution is agreed. Visa Processing routing was moved to Track A by D-24. See Track B Solution Options (08). |
 
 ---
 

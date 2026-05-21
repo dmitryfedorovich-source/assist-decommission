@@ -10,21 +10,21 @@ phases:
     title: "Reference Letters"
     items:
       - "5 letter types: Form 60, Address Proof, Service Letter, Visa Processing, LOR"
-      - "2 routing tracks: auto-verified (Track A) and DV/EDV manual verification (Track B)"
+      - "Track A: Form 60, Address Proof, Service Letter, Visa Processing; Track B: LOR"
       - "Go-live: June 30, 2026"
-      - "Stage 1 (internal sign-off) pending"
-      - "Stage 2 partial: Track A approved by Satish Malla (D-23, 14 May 2026)"
-      - "Track B blocked: RM approval required, DOCS platform solution pending (OQ-15)"
+      - "Approved with Dasha; BA work done except Track B solution"
+      - "Development and process setup in progress"
+      - "UAT planned in the next couple weeks"
 
   - id: phase2
-    status: next
+    status: active
     label: "Phase 2 · Scoping"
     title: "Compensation Letters"
     items:
       - "4 letter types: Salary Revision, Promotion, Increment, Variable Pay"
       - "Batch model: India HR uploads XLS, generates for all employees"
       - "Employee acceptance (date-stamped) + PAN-protected PDF"
-      - "Timeline TBD post-Phase 1 go-live"
+      - "BA work in progress"
 
   - id: phase3
     status: plan
@@ -37,14 +37,14 @@ phases:
       - "Timeline TBD post-Phase 2"
 
   - id: phase4
-    status: inv
+    status: active
     label: "Phase 4 · Investigation"
-    title: "Relocation Letter"
+    title: "Nominee Form"
     items:
-      - "Removed from Phase 1 (D-16)"
-      - "Purpose, trigger, and eligibility unclear"
-      - "RM initiation model incompatible with DOCS"
-      - "Scope TBD pending investigation (OQ-13, owner: Hanna)"
+      - "Nominee Form now active BA"
+      - "Field list confirmed from Satish email"
+      - "Employee self-service and data migration scope under analysis"
+      - "Relocation Letter remains separate investigation (OQ-13)"
 
 # ── Supporting roadmap cards ─────────────────────────────────
 
@@ -53,7 +53,7 @@ signoff_stages:
   accent: accent          # accent | blue | green
   items:
     - "⬜ Stage 1 — Internal (Daria, Hanna)"
-    - "🔶 Stage 2 — India SME (partial): Track A approved (D-23, 14 May); Track B blocked (OQ-15)"
+    - "🔶 Stage 2 — India SME (partial): Track A approved; Visa Processing moved to Track A (D-24); LOR Track B blocked (OQ-15)"
     - "⬜ Stage 3 — Post-feedback iteration"
     - "⬜ Stage 4 — Final India sign-off + UAT"
     - "⬜ Stage 5 — Epics/tickets to dev"
@@ -62,8 +62,8 @@ blocking_oqs:
   title: "Open Questions Blocking Phase 1"
   accent: blue
   items:
-    - "OQ-15 — Track B RM approval mechanism (BLOCKING development)"
-    - "OQ-11 — DOCS dev: Comments + LOR Notes fields (BLOCKING Track B)"
+    - "OQ-15 — LOR Track B RM approval mechanism (BLOCKING LOR development)"
+    - "OQ-11 — DOCS dev: Comments + LOR Notes fields"
     - "OQ-05/06/07 — Purpose dropdown values (India Team)"
     - "OQ-08 — Bank/SIM/LPG sub-types approach"
 

@@ -15,7 +15,7 @@ This document defines the test scope, test phases, UAT test cases, and acceptanc
 **Test objectives:**
 
 1. Validate all 5 Phase 1 letter types (Form 60, Address Proof, Service Letter, Visa Processing, LOR) work end-to-end in DOCS per D-16
-2. Confirm routing tracks behave per confirmed decisions: Track A auto-verified (D-15); Track B DV/EDV manual verification (D-12, D-13, D-15)
+2. Confirm routing tracks behave per confirmed decisions: Track A auto-verified including Visa Processing (D-24); Track B DV/EDV manual verification for LOR (D-13)
 3. Confirm field pre-population works from People Portal data (domain_rules.md — Data Pre-population Rules)
 4. Confirm rejection flow: specialist comment required, rejected form editable and resubmittable, specialist re-notified on resubmit (D-07); confirm forbidden behaviors absent: RM approval (D-15), "Country" field (D-09), WFH toggle (D-17)
 5. Confirm all validate-docs checks pass across all Phase 1 output documents
@@ -27,14 +27,14 @@ This document defines the test scope, test phases, UAT test cases, and acceptanc
 | In scope | Out of scope |
 |---|---|
 | All 5 Phase 1 letter types (Form 60, Address Proof, Service Letter, Visa Processing, LOR) | Relocation Letter — Phase 4+ investigation (D-16) |
-| Track A (auto-verified) routing for 3 letter types | Historical data / Assist data migration (D-11) |
-| Track B (DV/EDV manual) routing for 2 letter types | Cancel request feature (D-10) |
+| Track A (auto-verified) routing for 4 letter types | Historical data / Assist data migration (D-11) |
+| Track B (DV/EDV manual) routing for LOR | Cancel request feature (D-10) |
 | Employee-facing request flow | Phase 2 / Phase 3 letter types |
 | India Team DV/EDV queue and "Send Document" flow | Ex-employee LOR (D-02) |
 | Notifications (employee + India Team) | Nomination Form / Phase 3 items |
 | Letter generation and download | |
 | Lifecycle events: auto-close (D-06), rejection (D-07) | |
-| Static disclaimer text (D-17) | |
+| Self-Declaration Accept checkbox (D-21) | |
 
 ---
 
@@ -98,7 +98,7 @@ UAT is conducted on the DOCS platform in production or staging environment. Indi
 
 ### TC-02 — Track A Auto-Verification Flow
 
-**Applies to:** Form 60, Address Proof, Service Letter (D-15)
+**Applies to:** Form 60, Address Proof, Service Letter, Visa Processing Letter (D-15, D-24)
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -113,7 +113,7 @@ UAT is conducted on the DOCS platform in production or staging environment. Indi
 
 ### TC-03 — Track B DV/EDV Manual Verification Flow
 
-**Applies to:** Visa Processing Letter, LOR (D-12, D-13)
+**Applies to:** LOR (D-13)
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -130,7 +130,7 @@ UAT is conducted on the DOCS platform in production or staging environment. Indi
 
 ### TC-04 — Rejection Flow
 
-**Applies to:** All letter types that can be rejected (Track B: Visa Processing, LOR)
+**Applies to:** All letter types that can be rejected (Track B: LOR)
 
 | Step | Action | Expected result |
 |---|---|---|

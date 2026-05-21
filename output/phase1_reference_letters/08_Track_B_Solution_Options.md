@@ -13,8 +13,8 @@ Phase 1 Reference Letters are split into two routing tracks:
 
 | Track | Letters | Routing |
 |---|---|---|
-| **Track A** | Form 60, Address Proof Letter, Service Letter | Auto-verified — no specialist action required |
-| **Track B** | Visa Processing Letter, Letter of Recommendation (LOR) | Requires India Team specialist verification before document is sent to employee |
+| **Track A** | Form 60, Address Proof Letter, Service Letter, Visa Processing Letter | Auto-verified — no specialist action required |
+| **Track B** | Letter of Recommendation (LOR) | Requires India Team specialist verification before document is sent to employee |
 
 **Track A was approved by Satish Malla at the India SME validation meeting on 14 May 2026 (D-23). Track B development is currently blocked.**
 
@@ -22,7 +22,7 @@ Phase 1 Reference Letters are split into two routing tracks:
 
 ## 2. Problem Statement
 
-At the India SME validation meeting (14 May 2026), Satish Malla confirmed that **RM (Reporting Manager) approval is a mandatory step** in the current Assist process for both the Visa Processing Letter and the LOR (for active employees). This contradicts the DOCS platform design documented in D-12 and D-13, which removed RM approval from both flows.
+At the India SME validation meeting (14 May 2026), Satish Malla confirmed that **RM (Reporting Manager) approval is a mandatory step** in the current Assist process for both the Visa Processing Letter and the LOR (for active employees). After follow-up on 18 May 2026, Visa Processing Letter was moved to Track A by D-24. OQ-15 now applies to LOR only.
 
 The DOCS platform does not currently include a built-in mechanism to route a document to an RM for approval before a specialist proceeds with verification.
 
@@ -34,7 +34,7 @@ The DOCS platform does not currently include a built-in mechanism to route a doc
 
 ## 3. Current Assist Flow (as-is reference)
 
-For both Visa Processing Letter and LOR in Assist:
+For LOR in Assist:
 
 1. Employee submits request
 2. **RM receives notification and approves** (or rejects) the request
@@ -152,7 +152,7 @@ Specialist sends document → Employee downloads
 
 **Proposed approach: two-stage.**
 
-1. **June 30 go-live:** Deploy **Option B** (off-system confirmation) as a transitional solution. Track B letters go live on June 30 alongside Track A. Specialists handle RM confirmation off-system; India HR confirms this is operationally acceptable for the interim period.
+1. **June 30 go-live:** Deploy **Option B** (off-system confirmation) as a transitional solution for LOR. Track B goes live on June 30 alongside Track A. Specialists handle RM confirmation off-system; India HR confirms this is operationally acceptable for the interim period.
 
 2. **Post go-live (Phase 1 iteration):** Investigate **Option C** feasibility with Olga Chaban. If DOCS supports multi-step approval natively and RM DOCS access is solvable, migrate to Option C without employee-facing change. If Option C is not feasible, revisit Option A with DOCS dev team.
 
@@ -181,7 +181,7 @@ Once OQ-15 is resolved and a solution is selected, the following Phase 1 documen
 | Document | Update required |
 |---|---|
 | `01_Process_Flow_Reference_Letters.md` | Update Step 3b to reflect the agreed RM approval step |
-| `02_BRD_Reference_Letters.md` | Update FR for Visa Processing + LOR; note RM approval mechanism |
+| `02_BRD_Reference_Letters.md` | Update FR for LOR; note RM approval mechanism |
 | `05_India_SME_Validation.md` | Add Track B validation checklist items for agreed solution |
 | `07_India_SME_Presentation.html` | Update Slide 6 (Track B behavior) if flow changes |
 

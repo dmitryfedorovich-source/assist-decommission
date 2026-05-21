@@ -3,31 +3,31 @@ name: Project State — Active
 description: Current phase status, open questions, deliverables status, key contacts, and next actions
 type: project
 status: active
-last_updated: 2026-05-13
+last_updated: 2026-05-20
 ---
 
 ## Current Phase
-**Phase 1 — Reference Letters** — ACTIVE
+**Phase 1 — Reference Letters** — ACTIVE / DEV IN PROGRESS
 - **Go-live / Assist decommission:** June 30, 2026
-- **Status:** SME validation session completed 2026-05-13; awaiting stakeholder sign-off
+- **Status:** Approved with Dasha; BA work done for Phase 1 except Track B solution. Development in progress. Process setup in progress. UAT planned in the next couple weeks. LOR Track B solution remains open (OQ-15).
 
 ## Phase 1 Deliverables Status
 
 | File | Audience | Status |
 |---|---|---|
-| `output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md` | Internal | Complete |
-| `output/phase1_reference_letters/02_BRD_Reference_Letters.md` | Docs platform | Complete |
-| `output/phase1_reference_letters/03_Presentation_Internal_Team.md` | Docs platform | Complete |
+| `output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md` | Internal | BA work complete except Track B solution |
+| `output/phase1_reference_letters/02_BRD_Reference_Letters.md` | Docs platform | BA work complete except Track B solution |
+| `output/phase1_reference_letters/03_Presentation_Internal_Team.md` | Docs platform | BA work complete except Track B solution |
 | `output/phase1_reference_letters/04_KB_Onepager.html` | Management | Complete |
 | `output/phase1_reference_letters/05_India_SME_Validation.md` | India SMEs | Complete |
 | `output/phase1_reference_letters/06_India_Colleagues_Guide.md` | India employees | Complete — contact WFAHumanResourceIndia@epam.com |
-| `output/phase1_reference_letters/07_India_SME_Presentation.html` | India SMEs | Complete — 7 slides; Slide 6 has 11 behavior cards; last updated 2026-05-13 |
+| `output/phase1_reference_letters/07_India_SME_Presentation.html` | India SMEs | Refreshed for D-24; Phase 1 approved with Dasha; LOR Track B remains open |
 
 ## Phase 2 Deliverables Status
 
 | File | Audience | Status |
 |---|---|---|
-| `output/phase2_compensation/01_KB_Onepager.html` | Management | Complete — corrected: Compensation Team specialist; auto-close 10/3 days |
+| `output/phase2_compensation/01_KB_Onepager.html` | Management | Complete baseline; Phase 2 BA work in progress |
 
 ## Open Questions
 
@@ -36,22 +36,27 @@ last_updated: 2026-05-13
 | OQ-05 | Service Letter: Purpose dropdown values | India HR |
 | OQ-06 | Visa Processing Letter: Purpose dropdown values (expect: Business Travel / Personal Travel) | India HR |
 | OQ-07 | LOR: Purpose dropdown values | India HR |
+| OQ-15 | LOR: RM approval solution required; Visa Processing resolved by D-24 | Dzmitry / Olga / Satish |
+| OQ-16 | Track A form field pre-population list | Satish Malla / Hanna |
 | OQ-13 | Relocation Letter: purpose, trigger, eligibility, auto-trigger feasibility | India Team / Hanna Vasilenka |
+| OQ-09 | Nominee Form: Phase 4 active BA scope confirmation | Darya / Hanna |
 
 ## Key Contacts
 - India HR Team: **WFAHumanResourceIndia@epam.com**
 - India stakeholders (sign-off): Satish Malla, Satya Danam, Sasanka Yedlapati, LalithaPavani Madiraju
 
-## Next Actions (after SME session 2026-05-13)
-1. India stakeholders sign off on `07_India_SME_Presentation.html`
-2. India HR provide OQ-05/06/07 dropdown values → update field specs in all docs
-3. Docs Platform team confirm People system integration availability
-4. India HR finalize 5 letter templates for DOCS
-5. HR Operations confirm DV/EDV user list and role assignment in DOCS
-6. Schedule UAT with India Team specialists and pilot employees
+## Next Actions (as of 2026-05-20)
+1. Continue Phase 1 development and process setup
+2. Resolve OQ-15 for LOR Track B solution
+3. Prepare and schedule UAT in the next couple weeks
+4. Continue Phase 2 BA work
+5. Start active BA work for Phase 4 Nominee Form
+6. India HR provide remaining OQ-05/06/07 dropdown values
+7. Satish provide OQ-16 field pre-population list
 
 ## Phase Roadmap
-- Phase 1: Reference Letters — go-live June 30, 2026
-- Phase 2: Compensation Letters — planning begins after Phase 1 go-live (batch model, Compensation Team specialist initiates)
+- Phase 1: Reference Letters — dev/process setup in progress; UAT planned in next couple weeks; go-live June 30, 2026
+- Phase 2: Compensation Letters — BA work in progress (batch model, Compensation Team specialist initiates)
 - Phase 3: Separation Letters + LOR for ex-employees — TBD
-- Phase 4+: Relocation Letter, Nominee Form — TBD (scope under investigation)
+- Phase 4: Nominee Form — active BA
+- Phase 4+: Relocation Letter — investigation TBD

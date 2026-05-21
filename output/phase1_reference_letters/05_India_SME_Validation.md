@@ -41,7 +41,7 @@ We are migrating the following 5 reference letter types in Phase 1:
 | 1 | Form 60 | Employee | Auto-verified (instant) |
 | 2 | Address Proof Letter | Employee | Auto-verified (instant) |
 | 3 | Service Letter | Employee | Auto-verified (instant) |
-| 4 | Visa Processing Letter | Employee | Reviewed by India Team specialist |
+| 4 | Visa Processing Letter | Employee | Auto-verified (notification checkbox, D-24) |
 | 5 | Letter of Recommendation (LOR) | Employee (active employees only) | Reviewed by India Team specialist |
 
 > **Out of scope — Phase 1:** LOR for ex-employees (handled in Separation Letters phase); Relocation Letter (separate investigation needed — see note in Slide 5)
@@ -143,9 +143,9 @@ The following letters are generated automatically — no India Team specialist a
 
 ---
 
-## Slide 4 — Review-Required Letters
+## Slide 4 — Visa Processing and Review-Required LOR
 
-The following letters are routed to India Team specialists for review before the letter is generated.
+Visa Processing Letter is now Track A auto-verified per D-24. LOR remains review-required and blocked by OQ-15 until the RM approval solution is agreed.
 
 ### Visa Processing Letter
 
@@ -164,7 +164,7 @@ The following letters are routed to India Team specialists for review before the
 | Travel type | Employee | Dropdown (e.g. Personal Travel — full list: Question 4.1) |
 | Comments | Employee | **Required.** Text area |
 
-**Behavior:** Employee submits → EPAM specialist (DV/EDV) reviews and verifies → manually sends document to employee via "Send Document" action → employee receives notification and downloads letter. Document is not visible to employee before the specialist sends it. If incorrect: specialist rejects with required comment → employee is notified → employee edits and resubmits same form → specialist re-verifies. No limit on resubmissions.
+**Behavior:** Employee submits → confirms notification checkbox → letter generated automatically → employee downloads. No RM or specialist approval is required for Visa Processing Letter (D-24).
 
 ---
 
@@ -317,7 +317,7 @@ By signing below, you confirm that the proposed solution for Reference Letters i
 
 | # | Question | Owner | Status |
 |---|---|---|---|
-| OQ-01 | Visa Processing Letter: India Team specialist approval — keep or remove? | Darya Taranda / India Team | Resolved — D-12: RM approval removed; DV/EDV (India Team specialist) verifies and manually sends document |
+| OQ-01 | Visa Processing Letter: India Team specialist approval — keep or remove? | Darya Taranda / India Team | Resolved — D-24 supersedes D-12 routing: Visa Processing Letter is Track A auto-verified with notification checkbox |
 | OQ-02 | LOR: India Team specialist approval — keep or remove? | Darya Taranda / India Team | Resolved — D-13: RM approval removed; DV/EDV (India Team specialist) verifies and manually sends document |
 | OQ-03 | LOR: Can RM initiate on behalf of employee? | India Team | Resolved — No; employee self-service for active employees; ex-employee LOR via India Team specialist in Separation module |
 | OQ-04 | Relocation Letter: City list for New Work Location dropdown | India HR | **Deferred** — Relocation Letter moved to Phase 4+ (D-16) |
@@ -327,5 +327,5 @@ By signing below, you confirm that the proposed solution for Reference Letters i
 | OQ-08 | Bank/SIM/LPG sub-types: handled via Purpose dropdown on base template? | India Team | Open — Question 2.2 |
 | OQ-13 | Relocation Letter: purpose, trigger, eligibility, auto-trigger feasibility — questions to follow separately | India Team / Hanna Vasilenka | Open — separate discussion |
 | OQ-14 | Address Proof Letter: employee manual address edit — lock or allow? | India Team | **Resolved — D-20: field is locked (read-only); update via People system** |
-| OQ-11 | DOCS platform dev — Comments field (Visa Processing) and Notes & Responsibilities field (LOR) require custom text input components | DOCS Platform (Olga Chaban) | Open — blocking Track B letter generation |
-| OQ-15 | Track B RM approval: Satish Malla confirmed RM approval is mandatory for Visa Processing and LOR. DOCS does not currently support RM routing. Solution must be agreed before Track B development begins. | Dzmitry Fedarovich / Satish Malla / Olga Chaban | **Open — blocking Track B development** |
+| OQ-11 | DOCS platform dev — Comments field (Visa Processing) and Notes & Responsibilities field (LOR) require custom text input components | DOCS Platform (Olga Chaban) | Open — required for final field implementation |
+| OQ-15 | LOR Track B RM approval: Satish Malla confirmed RM approval is mandatory for LOR. DOCS does not currently support RM routing. Solution must be agreed before LOR Track B development begins. Visa Processing Letter resolved by D-24. | Dzmitry Fedarovich / Satish Malla / Olga Chaban | **Open — blocking LOR Track B development** |

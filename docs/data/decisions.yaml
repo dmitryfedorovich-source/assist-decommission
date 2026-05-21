@@ -155,9 +155,9 @@ decisions:
 
   - id: D-07
     phase: 1
-    summary: "Rejection flow: no resubmit on same request — employee opens new request"
-    made_by: "India stakeholder (confirmed)"
-    date: null
+    summary: "Rejection flow: employee edits and resubmits the same form"
+    made_by: "India stakeholder correction"
+    date: "2026-05-12"
     status: locked
     superseded_by: null
     supersedes: []
@@ -165,7 +165,7 @@ decisions:
     confidence: high
     evidence_type: stakeholder_call
     source_ref: "India stakeholder call"
-    source_date: null
+    source_date: "2026-05-12"
     documents_reflect: ["01", "02"]
     documents_check: ["03", "06"]
     workflows: ["Trk-B", "Lifecycle"]
@@ -173,7 +173,9 @@ decisions:
     oqs_created: []
     oqs_resolved: []
     body: >
-      Rejection flow: no resubmit on same request — employee opens a new request.
+      Rejection flow: EPAM specialist rejects with required comment; system notifies
+      employee; employee edits and resubmits the same form; specialist re-verifies.
+      There is no limit on resubmissions.
 
   - id: D-08
     phase: 1
@@ -360,12 +362,14 @@ decisions:
     oqs_resolved: []
     notes: >
       Decision made when scope was 6 letters; scope updated to 5 letters by D-16
-      (Relocation Letter removed from Phase 1).
+      (Relocation Letter removed from Phase 1). Visa Processing routing was later
+      superseded by D-24; D-15 remains applicable as the broader no-RM principle.
     body: >
       All Phase 1 letters use the same DOCS auto-verification flow. RM verification
       completely removed from all letters (not just Visa/LOR). For Form 60, Address Proof,
-      Service Letter: always auto-verified. For Visa Processing, LOR: DV/EDV verifies
-      then manually sends document.
+      Service Letter: always auto-verified. For Visa Processing, D-24 now applies:
+      Track A auto-verification with notification checkbox. For LOR: DV/EDV verifies
+      then manually sends document, pending OQ-15 RM approval solution.
 
   - id: D-16
     phase: 1

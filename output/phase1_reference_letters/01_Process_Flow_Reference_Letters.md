@@ -17,7 +17,7 @@ The Reference Letters process enables India-based EPAM employees to request offi
 | Actor | Role |
 |---|---|
 | **Employee** | Initiates the request, fills in required details, downloads the completed letter |
-| **India Team specialist (DV/EDV)** | Reviews and verifies Visa Processing Letter and LOR requests; manually sends the document to the employee via "Send Document" action |
+| **India Team specialist (DV/EDV)** | Reviews and verifies LOR requests; manually sends the document to the employee via "Send Document" action |
 | **DOCS Platform** | Creates the request, pre-populates employee data, auto-verifies eligible letters, manages request lifecycle |
 
 ---
@@ -32,13 +32,13 @@ Completed automatically by the system — no India Team specialist action requir
 | Form 60 | Declaration form for employees without PAN card |
 | Address Proof Letter | Official confirmation of employee's residential address |
 | Service Letter | Confirmation of employment and service details |
+| Visa Processing Letter | Letter supporting visa applications; Track A per D-24 with notification checkbox, no RM or specialist approval |
 
 ### Manually Verified Letters
 Routed to India Team specialist (DV/EDV) for review. After verification, specialist manually sends the document — employee receives notification and downloads.
 
 | Letter Type | Description | Notes |
 |---|---|---|
-| Visa Processing Letter | Letter supporting visa applications | DV/EDV verifies → "Send Document" → employee downloads; document hidden until sent (D-12) |
 | LOR — Letter of Recommendation | Recommendation letter for active employees | DV/EDV → "Send Document" flow; ex-employees: out of scope Phase 1 (D-13) |
 
 ---
@@ -96,12 +96,13 @@ Download Letter   │                            │   │         → Request
 - Optional: employee may click **"Save as draft"** to return later before submitting
 - Requester submits the form; a confirmation dialog appears: *"Once you have done this, you cannot modify your form any further"*
 
-**Step 3a — Auto-verification path (Form 60, Address Proof, Service Letter)**
+**Step 3a — Auto-verification path (Form 60, Address Proof, Service Letter, Visa Processing Letter)**
 - DOCS platform validates the submitted data automatically
+- For Visa Processing Letter, employee ticks the notification checkbox confirming they informed the relevant person (D-24)
 - Request status changes to **Completed**
 - Letter is immediately available for download in the "Documents to download" section
 
-**Step 3b — Manual verification path (Visa Processing Letter, LOR)**
+**Step 3b — Manual verification path (LOR)**
 - Request enters verification queue for India Team specialist (DV/EDV)
 - Specialist reviews the submitted information
   - If correct: specialist verifies → clicks **"Send Document"** action → employee receives notification → document available for download. Note: the document is **not visible** to the employee until the specialist sends it.
@@ -113,8 +114,8 @@ Download Letter   │                            │   │         → Request
 - Downloads the generated letter from the "Documents to download" section
 
 **Step 5 — Request closure**
-- **Auto-verified letters (Form 60, Address Proof, Service Letter):** System auto-closes the request after **2 days** once all forms reach a final status (Verified / Generated)
-- **Manually verified letters (Visa Processing, LOR):** India Team specialist closes the request manually after sending the document, OR system auto-closes after **2 days** if no manual closure occurs
+- **Auto-verified letters (Form 60, Address Proof, Service Letter, Visa Processing Letter):** System auto-closes the request after **2 days** once all forms reach a final status (Verified / Generated)
+- **Manually verified letters (LOR):** India Team specialist closes the request manually after sending the document, OR system auto-closes after **2 days** if no manual closure occurs
 
 > **New request rule:** An employee cannot submit a new request for the same letter type until the previous request is closed. Minimum interval is 2 days. Note: resubmitting a rejected form does not count as a new request — the same request stays open.
 
@@ -186,6 +187,7 @@ Download Letter   │                            │   │         → Request
 | Tentative Travel end date | Employee | Date picker |
 | Travel type | Employee | Dropdown (e.g. Personal Travel — full list pending India team confirmation, OQ-06) |
 | Comments | Employee | **Required.** Text area (DOCS dev required — OQ-11) |
+| Notification confirmation | Employee | Checkbox confirming the employee has informed the relevant person; no approval workflow required (D-24) |
 
 ### 5.5 LOR — Letter of Recommendation
 

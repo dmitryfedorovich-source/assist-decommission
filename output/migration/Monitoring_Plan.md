@@ -35,8 +35,8 @@ Active monitoring ends at T+30. After that, monitoring is integrated into normal
 | Letter requests submitted — total | DOCS platform report | > 0 from Day 1 | Zero requests for 2+ consecutive days (possible redirect or access issue) |
 | Requests by letter type (Form 60, Address Proof, Service Letter, Visa Processing, LOR) | DOCS platform report | Distributed across types | Any type shows zero for 3+ days (may indicate configuration issue) |
 | Track A auto-generation success rate | DOCS platform report | ~100% | Any Track A request not auto-generated within 1 hour |
-| Track B queue depth | India Team check | < 10 pending at end of each day | Queue > 20 unprocessed requests at end of day |
-| Track B average processing time | India Team check | Within India Team's normal SLA | Any Track B request unprocessed for > 48 hours |
+| Track B queue depth (LOR) | India Team check | < 10 pending at end of each day | Queue > 20 unprocessed requests at end of day |
+| Track B average processing time (LOR) | India Team check | Within India Team's normal SLA | Any Track B request unprocessed for > 48 hours |
 | Rejection rate | DOCS platform report | Low (< 10%) | Rejection rate > 25% — may indicate config or UX issue |
 | Download success rate | DOCS platform report | ~100% | Any employee report of failed download |
 | Auto-close events | DOCS platform report | Low (rare in first week) | Confirm 2-day rule is active (D-06); zero auto-closes for 7+ days is expected |
@@ -48,7 +48,7 @@ Active monitoring ends at T+30. After that, monitoring is integrated into normal
 | Employee support tickets about letter requests | India Team inbox / helpdesk | Log as F-XX in FDL; triage by severity (Runbook §7) |
 | India Team specialist unable to access DV/EDV queue | DOCS platform | Severity 1 if blocking Track B entirely; Severity 2 if partial |
 | Field pre-population missing (employee reports blank fields) | DOCS + People Portal integration | Log as F-XX; DOCS platform team to investigate |
-| Wrong routing (Track A letter entering queue, or Track B auto-generating) | DOCS platform | Severity 1/2 per Runbook §7; log as F-XX |
+| Wrong routing (Track A letter entering queue, or LOR Track B auto-generating) | DOCS platform | Severity 1/2 per Runbook §7; log as F-XX |
 
 ---
 
@@ -74,7 +74,7 @@ Active monitoring ends at T+30. After that, monitoring is integrated into normal
 1. Produce weekly Reconciliation Report (use template `output/migration/Reconciliation_Report_Template.md`)
 2. Review volume trends — check for unexpected drops or spikes
 3. Review open F-XX items from previous week: resolved / still open
-4. Confirm Track B SLAs are being met by India Team
+4. Confirm LOR Track B SLAs are being met by India Team
 
 ### Monthly review (T+31 onwards)
 
@@ -109,7 +109,7 @@ Active monitoring ends at T+30. After that, monitoring is integrated into normal
 | Data needed | Source | Access owner |
 |---|---|---|
 | Request volume and status by letter type | DOCS platform reporting | DOCS platform team |
-| Track B queue metrics | DOCS platform reporting | DOCS platform team |
+| LOR Track B queue metrics | DOCS platform reporting | DOCS platform team |
 | Employee support tickets | India Team helpdesk | India Team lead |
 | Auto-close and auto-generate event logs | DOCS platform logs | DOCS platform team |
 

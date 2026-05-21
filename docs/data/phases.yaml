@@ -9,7 +9,7 @@
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/phase.schema.json"
-  last_updated: "2026-05-08"
+  last_updated: "2026-05-20"
   maintainer: "BA team"
 
 phases:
@@ -17,7 +17,7 @@ phases:
   - id: phase1
     number: 1
     title: "Reference Letters"
-    subtitle: null
+    subtitle: "Dev and process setup in progress"
     status: active
     go_live_date: "2026-06-30"
     source_platform: "assist.epam.com"
@@ -38,10 +38,11 @@ phases:
         in_scope: true
         notes: "Purpose dropdown options TBD (OQ-05)."
       - name: "Visa Processing Letter"
-        routing: manual_dv_edv
+        routing: auto_verified
         in_scope: true
         notes: >
-          DV/EDV specialist verifies and manually sends. Comments field required
+          Moved to Track A by D-24: no RM or specialist approval required.
+          Employee ticks notification checkbox. Comments field required
           (max 300 chars, one line). OQ-11 open: DOCS dev required for text field.
       - name: "Letter of Recommendation (LOR)"
         routing: manual_dv_edv
@@ -50,39 +51,45 @@ phases:
           DV/EDV specialist verifies and manually sends. Notes/Responsibilities
           multi-line field (max ~1000 chars). OQ-11 open: DOCS dev required.
           Ex-employee LOR: out of scope (Phase 3).
+      - name: "Nominee Form"
+        routing: employee_self_service
+        in_scope: true
+        notes: >
+          Active BA scope. Field list confirmed in Satish Malla email: Emp UID,
+          Emp Name, nominee details, and benefit allocation percentages.
       - name: "Relocation Letter"
         routing: tbd
         in_scope: false
         notes: "Removed from Phase 1 by D-16. Moved to Phase 4+ investigation."
     key_decisions:
-      [D-01, D-02, D-06, D-07, D-08, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-17]
+      [D-01, D-02, D-06, D-07, D-08, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-17, D-21, D-24]
     blocking_oqs: [OQ-05, OQ-06, OQ-07, OQ-08, OQ-11, OQ-15, OQ-16]
     sign_off_stages:
       - number: 1
         name: "Internal alignment — process flow, BRD, approach"
         participants: "Daria, Hanna"
-        date: null
-        status: pending
+        date: "2026-05-20"
+        status: completed
       - number: 2
         name: "India SME validation — process design, field specs, open questions"
         participants: "Satish Malla, Satya Danam, Sasanka Yedlapati"
-        date: null
-        status: pending
+        date: "2026-05-14"
+        status: partial
       - number: 3
-        name: "Post-feedback iteration — BRD and flow updated"
-        participants: "Internal"
-        date: null
-        status: pending
+        name: "BA work - complete except Track B solution"
+        participants: "BA team"
+        date: "2026-05-20"
+        status: partial
       - number: 4
-        name: "Final India stakeholder sign-off + UAT"
+        name: "Development and process setup"
+        participants: "Docs platform team, BA, process owners"
+        date: "2026-05-20"
+        status: in_progress
+      - number: 5
+        name: "UAT"
         participants: "India stakeholders"
         date: null
-        status: pending
-      - number: 5
-        name: "Epics/tickets handed to dev and business process teams"
-        participants: "Dev team, BA"
-        date: null
-        status: pending
+        status: planned
     deliverables:
       - "output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md"
       - "output/phase1_reference_letters/02_BRD_Reference_Letters.md"
@@ -95,7 +102,7 @@ phases:
     number: 2
     title: "Compensation Letters"
     subtitle: null
-    status: next
+    status: active
     go_live_date: null
     source_platform: "assist.epam.com"
     target_platform: "docs.epam.com"
@@ -151,9 +158,9 @@ phases:
 
   - id: phase4
     number: 4
-    title: "Relocation Letter"
-    subtitle: "Investigation — scope not yet defined"
-    status: inv
+    title: "Nominee Form"
+    subtitle: "Active BA"
+    status: active
     go_live_date: null
     source_platform: "assist.epam.com"
     target_platform: "docs.epam.com"
@@ -163,8 +170,8 @@ phases:
         in_scope: false
         notes: >
           Removed from Phase 1 (D-16). All 5 OQ-13 questions must be answered
-          before scope can be written.
+          before relocation scope can be written.
     key_decisions: [D-16]
-    blocking_oqs: [OQ-13]
+    blocking_oqs: [OQ-09, OQ-P3-03]
     sign_off_stages: []
     deliverables: []

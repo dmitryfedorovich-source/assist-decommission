@@ -96,7 +96,7 @@ The five letters in scope are:
   1. Form 60 — Track A, auto-verified
   2. Address Proof Letter — Track A, auto-verified
   3. Service Letter — Track A, auto-verified
-  4. Visa Processing Letter — Track B, manual review
+  4. Visa Processing Letter — Track A, auto-verified with notification checkbox
   5. LOR (Letter of Recommendation) — Track B, manual review, active employees only
 
 A few important things are out of scope for Phase 1:

@@ -57,7 +57,7 @@ You can request the following letters directly in EPAM Docs:
 | Form 60 | Salutation, father's name, current address, worksite city, UAN, state, mobile number, PAN |
 | Address Proof Letter | Purpose (from dropdown, or your own text) |
 | Service Letter | Purpose |
-| Visa Processing Letter | Purpose, comments (max 300 characters) |
+| Visa Processing Letter | Travel details, comments (max 300 characters), notification confirmation |
 | Letter of Recommendation | Purpose, description of your role and responsibilities |
 
 Everything else — your name, designation, UID, work location — is filled in automatically.
@@ -71,12 +71,12 @@ Everything else — your name, designation, UID, work location — is filled in 
 | Form 60 | Instant — letter is ready to download immediately after submitting |
 | Address Proof Letter | Instant |
 | Service Letter | Instant |
-| Visa Processing Letter | Requires review — you'll be notified when ready |
+| Visa Processing Letter | Instant — letter is ready to download immediately after submitting |
 | Letter of Recommendation | Requires review — you'll be notified when ready |
 
 You will receive a notification when your letter is ready for download.
 
-> **After you submit**, your request will show **"Waiting for verification"** — this is normal and does not mean anything is wrong. For Form 60, Address Proof Letter, and Service Letter, your letter is **already available in "Documents to download"** immediately after submitting. Simply scroll down on the request page and click Download.
+> **After you submit**, your request will show **"Waiting for verification"** — this is normal and does not mean anything is wrong. For Form 60, Address Proof Letter, Service Letter, and Visa Processing Letter, your letter is **already available in "Documents to download"** immediately after submitting. Simply scroll down on the request page and click Download.
 
 ---
 

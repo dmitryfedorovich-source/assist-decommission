@@ -22,7 +22,7 @@ This plan governs the decommissioning of reference letter workflows from **assis
 
 **What is being decommissioned:** The Assist portal request flows for all 5 Phase 1 letter types. Assist remains operational for other HR processes not in scope for this migration.
 
-**What continues operating:** EPAM Docs platform at docs.epam.com. India Team specialists continue their verification role via the DV/EDV queue (D-12, D-13, D-15).
+**What continues operating:** EPAM Docs platform at docs.epam.com. India Team specialists continue their verification role for LOR via the DV/EDV queue (D-13). Visa Processing Letter uses Track A per D-24.
 
 ---
 
@@ -63,8 +63,8 @@ All items must be complete before the Go/No-Go decision at T-1 day. Owner to sig
 ### Platform readiness
 
 - [ ] DOCS platform configured: all 5 letter types active
-- [ ] Track A (auto-verified): Form 60, Address Proof, Service Letter routing live
-- [ ] Track B (DV/EDV queue): Visa Processing, LOR routing live
+- [ ] Track A (auto-verified): Form 60, Address Proof, Service Letter, Visa Processing routing live
+- [ ] Track B (DV/EDV queue): LOR routing live
 - [ ] Data pre-population from People Portal: name, employee ID, designation, date confirmed working
 - [ ] 2-day auto-close rule active (D-06)
 - [ ] Rejection flow configured: specialist required comment; employee edits and resubmits same form; specialist re-verifies (D-07)

@@ -47,7 +47,7 @@ KB2 = Phase 2 Onepager · KB3 = Phase 3 Onepager
 | D-09 | Visa Processing: Comments field, max 300 chars | ✓ | ✓ | ↻ | — | ✓ | — | — | — |
 | D-10 | Cancel request: not in Phase 1 MVP | — | ✓ | — | — | — | — | — | — |
 | D-11 | Historical data migration: out of scope | — | ✓ | — | — | — | — | — | — |
-| D-12 | Visa Processing: DV/EDV verifies → Send Document | ✓ | ✓ | ↻ | — | ↻ | ↻ | — | — |
+| D-12 *(S)* | Visa Processing: DV/EDV verifies → Send Document; superseded for routing by D-24 | ↻ | ↻ | ↻ | — | ↻ | — | — | — |
 | D-13 | LOR: DV/EDV verifies → Send Document; Notes multi-line | ✓ | ✓ | ↻ | — | ↻ | ↻ | — | — |
 | D-14 *(S)* | Relocation Letter: India Team specialist initiates only | — | — | — | — | — | — | — | — |
 | D-15 | RM verification removed from ALL Phase 1 letters | ✓ | ✓ | ↻ | — | ↻ | ↻ | — | — |
@@ -98,7 +98,7 @@ P3-HRMS = Phase 3 separation HRMS integration / ex-employee flow
 | D-06 | Auto-close 2 days | — | — | ✓ | — | — | — |
 | D-07 | Rejection = edit &amp; resubmit same form | — | — | ✓ | — | — | — |
 | D-09 | Visa Comments field (not Country) | — | ✓ | — | ✓ | — | — |
-| D-12 | Visa DV/EDV verifies → Send Document *(superseded for routing by D-24)* | — | ✓ | ↻ | — | — | — |
+| D-12 | Visa DV/EDV verifies → Send Document *(superseded for routing by D-24)* | — | ↻ | ↻ | — | — | — |
 | D-24 | Visa Processing Letter: Track A (notification checkbox, no approval) | ✓ | — | ↻ | ✓ | — | — |
 | D-13 | LOR DV/EDV verifies → Send Document + Notes field | — | ✓ | ↻ | ✓ | — | — |
 | D-15 | RM verification removed from all Phase 1 letters | ✓ | ✓ | — | — | — | — |
@@ -201,7 +201,7 @@ Use this when a decision is revised to scope required update work.
 |---|---|---|
 | D-06 | Auto-close: 2 days | Update PF (Lifecycle section), BRD (FR), potentially CG |
 | D-07 | Rejection = edit &amp; resubmit same form | Update PF (rejection flow), BRD (FR), CG (employee step) |
-| D-12 | Visa Processing: DV/EDV verifies | Update PF (Track B flow), BRD (FR for Visa), SME (validation questions) |
+| D-12 | Visa Processing: DV/EDV verifies *(superseded for routing by D-24)* | Historical reference only; current updates are driven by D-24 |
 | D-13 | LOR: DV/EDV verifies + Notes field | Update PF (Track B flow), BRD (FR for LOR), SME (validation questions) |
 | D-17 | Static disclaimer (no popup) | Update PF (form behavior note), BRD (FR for disclaimer), SME (validation Q) |
 | D-P2-01 | 4 compensation types | Update KB2 scope card; check KB1 cross-phase reference |

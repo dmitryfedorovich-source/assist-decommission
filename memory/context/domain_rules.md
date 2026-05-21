@@ -3,7 +3,7 @@ name: Domain Rules — Terminology, Tone, Invariant Process Rules
 description: Canonical terminology, per-document writing tone rules, and invariant process rules that must not vary across deliverables
 type: project
 status: active
-last_updated: 2026-05-13
+last_updated: 2026-05-18
 ---
 
 ## Terminology — Always Use
@@ -24,13 +24,14 @@ last_updated: 2026-05-13
 
 ## Track Classification
 
-- **Track A (auto-verified):** Form 60, Address Proof Letter, Service Letter — instant letter generation, no specialist action
-- **Track B (manual review):** Visa Processing Letter, LOR (active employees) — DV/EDV verifies, then manually sends via "Send Document"
+- **Track A (auto-verified):** Form 60, Address Proof Letter, Service Letter, Visa Processing Letter — instant letter generation, no specialist action. Visa Processing requires employee notification checkbox (D-24).
+- **Track B (manual review):** LOR (active employees) — DV/EDV verifies, then manually sends via "Send Document"; RM approval solution still open (OQ-15).
 
 ## Invariant Process Rules (must not vary across docs)
 
-- RM approval is **removed** from all Phase 1 DOCS flows (D-15). Do not describe RM approval anywhere.
-- DV/EDV specialist verifies Track B letters and **manually sends** the document via "Send Document" (D-12, D-13)
+- Visa Processing Letter is Track A by D-24: no RM or specialist approval; employee ticks notification checkbox.
+- LOR Track B RM approval solution is open (OQ-15). Do not describe a final RM approval design until OQ-15 is resolved.
+- DV/EDV specialist verifies LOR and **manually sends** the document via "Send Document" (D-13)
 - Rejection requires a **mandatory comment** from specialist (D-19). Approval requires no comment.
 - Rejected form stays open — employee **edits and resubmits the same form** (not a new request) (D-07)
 - No limit on rejection/resubmission cycles
@@ -93,7 +94,7 @@ last_updated: 2026-05-13
 - Custom Purpose text field: always visible (cannot be conditionally shown), max 100 characters, single line
 - Letter type names in DOCS dropdown: "IN Form 60", "IN Visa Processing Letter", "IN Address Proof Letter", "IN Letter of Recommendation", "IN Service Letter" — "IN Relocation Letter" is NOT in live DOCS dropdown
 
-## Open Questions Affecting Docs (as of 2026-05-13)
+## Open Questions Affecting Docs (as of 2026-05-18)
 
 - OQ-05: Service Letter Purpose dropdown values — India HR (affects 01, 02, 05)
 - OQ-06: Visa Processing Letter Purpose dropdown values — India HR (affects 01, 02, 05)
@@ -101,3 +102,5 @@ last_updated: 2026-05-13
 - OQ-08: Bank/SIM/LPG sub-types via Purpose dropdown? — India Team (affects 05)
 - OQ-11: DOCS dev effort for Comments/Notes fields — currently only number marker supported (affects 02)
 - OQ-13: Relocation Letter scoping questions — Phase 4+
+- OQ-15: LOR Track B RM approval solution — blocks LOR development; Visa Processing resolved by D-24
+- OQ-16: Track A form field pre-population — awaiting Satish's specific field list

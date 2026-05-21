@@ -22,6 +22,7 @@ workflows:
       - "Form 60"
       - "Address Proof Letter"
       - "Service Letter"
+      - "Visa Processing Letter"
     actors:
       - role: "Employee"
         action: "Submits request; downloads generated letter"
@@ -60,22 +61,24 @@ workflows:
         decision_ref: "D-06"
     special_behaviors:
       - condition: "Request rejected (e.g., data mismatch)"
-        handling: "Employee opens a new request — no resubmit on same request"
+        handling: "Employee edits and resubmits the same form; no limit on resubmissions"
         decision_ref: "D-07"
       - condition: "Address not found in People Portal (Address Proof Letter)"
         handling: "Warning message shown; employee must update People Portal first"
         decision_ref: null
-      - condition: "Form has Self-Declaration requirement (Assist legacy)"
-        handling: "Static disclaimer text shown at top of form — no functional gate"
-        decision_ref: "D-17"
-    source_decisions: ["D-06", "D-07", "D-15", "D-17"]
+      - condition: "Form has Self-Declaration requirement"
+        handling: "Self-Declaration section with Accept checkbox shown at bottom of form"
+        decision_ref: "D-21"
+      - condition: "Visa Processing Letter notification"
+        handling: "Employee ticks notification checkbox; no RM or specialist approval required"
+        decision_ref: "D-24"
+    source_decisions: ["D-06", "D-07", "D-15", "D-21", "D-24"]
 
   - id: Trk-B
     name: "Track B — Manual DV/EDV Verification"
     phase: 1
     trigger: "Employee self-service request in EPAM Docs"
     letter_types:
-      - "Visa Processing Letter"
       - "Letter of Recommendation (LOR)"
     actors:
       - role: "Employee"
@@ -85,7 +88,7 @@ workflows:
     steps:
       - step: 1
         actor: "Employee"
-        action: "Opens EPAM Docs, selects letter type, fills form (including Comments field for Visa Processing)"
+        action: "Opens EPAM Docs, selects LOR, fills form"
         system: "DOCS"
         outcome: "Request created; awaiting specialist review"
         decision_ref: "D-15"
@@ -94,13 +97,13 @@ workflows:
         action: "Reviews request, verifies information"
         system: "DOCS"
         outcome: "Verification complete"
-        decision_ref: "D-12"
+        decision_ref: "D-13"
       - step: 3
         actor: "India Team DV/EDV specialist"
         action: "Sends letter to employee via 'Send Document' action in DOCS"
         system: "DOCS"
         outcome: "Employee notified; letter available for download"
-        decision_ref: "D-12"
+        decision_ref: "D-13"
       - step: 4
         actor: "Employee"
         action: "Downloads letter from EPAM Docs"
@@ -115,12 +118,12 @@ workflows:
         decision_ref: "D-06"
     special_behaviors:
       - condition: "Request rejected by DV/EDV specialist"
-        handling: "Employee opens a new request — no resubmit on same request"
+        handling: "Employee edits and resubmits the same form; no limit on resubmissions"
         decision_ref: "D-07"
       - condition: "LOR — alternative accepted scenario"
         handling: "Employee may receive invitation and download letter before or after verification"
         decision_ref: "D-13"
-    source_decisions: ["D-06", "D-07", "D-09", "D-12", "D-13", "D-15"]
+    source_decisions: ["D-06", "D-07", "D-13", "D-15"]
 
   - id: Lifecycle
     name: "Request Lifecycle"
@@ -162,7 +165,7 @@ workflows:
         decision_ref: "D-06"
     special_behaviors:
       - condition: "Rejection at any verification step"
-        handling: "Status set to Rejected; employee creates new request"
+        handling: "Status set to Rejected; employee edits and resubmits the same form"
         decision_ref: "D-07"
     source_decisions: ["D-06", "D-07"]
 
@@ -196,10 +199,10 @@ workflows:
         decision_ref: "D-09"
       - step: 3
         actor: "DOCS Platform"
-        action: "Shows static disclaimer text at top of applicable forms"
+        action: "Shows Self-Declaration section and Accept checkbox at the bottom of each form"
         system: "DOCS"
-        outcome: "Informational notice displayed — no functional gate"
-        decision_ref: "D-17"
+        outcome: "Employee must accept before submitting"
+        decision_ref: "D-21"
     special_behaviors:
       - condition: "Visa Processing Letter Comments field"
         handling: "Text field, max 300 chars, single line. Requires DOCS dev (OQ-11)."
@@ -208,9 +211,9 @@ workflows:
         handling: "Multi-line text, max ~1000 chars. Requires DOCS dev (OQ-11)."
         decision_ref: "D-13"
       - condition: "Address Proof — address edit"
-        handling: "OQ-14 open: whether employee can edit address or field is locked."
-        decision_ref: null
-    source_decisions: ["D-09", "D-13", "D-15", "D-17"]
+        handling: "Address field is read-only; employee updates profile in People system if incorrect."
+        decision_ref: "D-20"
+    source_decisions: ["D-09", "D-13", "D-15", "D-20", "D-21"]
 
   # ── Phase 2 — Compensation Letters ───────────────────────────────────────
 

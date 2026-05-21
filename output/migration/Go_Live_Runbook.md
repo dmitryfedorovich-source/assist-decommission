@@ -13,7 +13,7 @@
 This runbook provides the step-by-step procedure for executing the Phase 1 go-live on **June 30, 2026** (D-01). It covers pre-go-live preparation, the cutover execution, smoke testing, and immediate post-go-live actions.
 
 **Letter types going live:** Form 60, Address Proof, Service Letter, Visa Processing, LOR (5 types — D-16)  
-**Routing:** Track A (auto-verified): Form 60, Address Proof, Service Letter | Track B (DV/EDV manual): Visa Processing, LOR (D-15)  
+**Routing:** Track A (auto-verified): Form 60, Address Proof, Service Letter, Visa Processing (D-24) | Track B (DV/EDV manual): LOR (D-13)
 **Not in scope for this runbook:** Relocation Letter (Phase 4+, D-16), Phase 2/3 letters
 
 If any go/no-go gate below fails, stop execution and follow the Rollback & Recovery Plan (`output/migration/Rollback_Recovery_Plan.md`).
@@ -46,8 +46,9 @@ All contacts must be reachable from **June 29, 17:00 IST through June 30, 18:00 
 ### T-14 Days (June 16, 2026)
 
 - [ ] DOCS platform: all 5 letter types configured and accessible in staging/UAT
-- [ ] Track A routing: Form 60, Address Proof, Service Letter auto-verified — confirmed
-- [ ] Track B routing: Visa Processing, LOR enter DV/EDV queue — confirmed
+- [ ] Track A routing: Form 60, Address Proof, Service Letter, Visa Processing auto-verified — confirmed
+- [ ] Visa Processing notification checkbox configured and tested (D-24)
+- [ ] Track B routing: LOR enters DV/EDV queue — confirmed
 - [ ] Data pre-population: People Portal fields (name, ID, designation, joining date) confirmed working
 - [ ] Confirm Self-Declaration 'Accept' checkbox enabled for all 5 India letter types (D-21)
 - [ ] 2-day auto-close rule configured (D-06)
@@ -175,15 +176,14 @@ For each test: confirm the complete flow end-to-end.
 - [ ] Request auto-verified — letter generated
 - [ ] Employee can download the generated letter
 
-### Track B — DV/EDV Manual Verification
-
 **Visa Processing Letter**
 - [ ] Employee submits Visa Processing request
 - [ ] Comments field present (max 300 chars, single line — D-09)
-- [ ] Request enters DV/EDV queue (does not auto-generate)
-- [ ] India Team specialist (Sasanka / test account) verifies request in queue
-- [ ] Specialist uses "Send Document" to deliver letter to employee
-- [ ] Employee receives/can access the letter
+- [ ] Notification checkbox present and required (D-24)
+- [ ] Request auto-verified — letter generated without manual action
+- [ ] Employee can download the generated letter
+
+### Track B — DV/EDV Manual Verification
 
 **LOR (Letter of Recommendation)**
 - [ ] Employee submits LOR request
@@ -207,7 +207,7 @@ Refer to the Monitoring Plan (`output/migration/Monitoring_Plan.md`) for full me
 **Daily actions (T+1 through T+7):**
 
 - [ ] Check DOCS: letter requests submitted count per type (verify non-zero after Day 1)
-- [ ] Check Track B queue: no unprocessed Visa Processing or LOR requests older than 24h
+- [ ] Check Track B queue: no unprocessed LOR requests older than 24h
 - [ ] Check for employee support tickets or complaints (India Team reports)
 - [ ] Confirm Assist redirect notice is still in place
 

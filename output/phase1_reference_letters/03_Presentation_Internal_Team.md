@@ -25,8 +25,8 @@
 | **Auto-verified (instant)** | Form 60 | |
 | **Auto-verified (instant)** | Address Proof Letter | |
 | **Auto-verified (instant)** | Service Letter | |
-| **India Team specialist review** | Visa Processing Letter | DV/EDV verifies → "Send Document" → employee downloads; document hidden until sent (D-12) |
-| **India Team specialist review** | Letter of Recommendation (LOR) | Same flow as Visa Processing (D-13); active employees only; ex-employee LOR out of scope Phase 1 |
+| **Auto-verified (instant)** | Visa Processing Letter | Track A per D-24; employee ticks notification checkbox; no RM or specialist approval |
+| **India Team specialist review** | Letter of Recommendation (LOR) | DV/EDV verifies → "Send Document" → employee downloads; active employees only; ex-employee LOR out of scope Phase 1 |
 
 > LOR for ex-employees is out of scope — addressed in Phase 3 (Separation Letters)
 
@@ -48,7 +48,7 @@ Employee                DOCS Platform
    │                         ├─ (India Team specialist or auto-close after 2 days)
 ```
 
-**Used for:** Form 60, Address Proof Letter, Service Letter
+**Used for:** Form 60, Address Proof Letter, Service Letter, Visa Processing Letter
 
 ---
 
@@ -70,10 +70,10 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
    │  (hidden until sent)    │                      │    (employee edits & resubmits same form)
 ```
 
-**Used for:** Visa Processing Letter, LOR  
-> Document is **not visible** to the employee until the India Team specialist explicitly triggers the "Send Document" action (D-12, D-13).
+**Used for:** LOR
+> Document is **not visible** to the employee until the India Team specialist explicitly triggers the "Send Document" action (D-13).
 
-> ⚠️ **Track B development currently blocked — OQ-15.** At the India SME meeting (14.05.2026), Satish Malla confirmed RM approval is a mandatory step for Visa Processing Letter and LOR in the current Assist flow. DOCS does not currently support RM approval routing. Development of Track B cannot proceed until a solution is agreed. Three options are documented in `08_Track_B_Solution_Options.md`.
+> ⚠️ **LOR Track B development currently blocked — OQ-15.** At the India SME meeting (14.05.2026), Satish Malla confirmed RM approval is a mandatory step for LOR in the current Assist flow. Visa Processing Letter was moved to Track A by D-24. DOCS does not currently support RM approval routing for LOR. Development cannot proceed until a solution is agreed. Three options are documented in `08_Track_B_Solution_Options.md`.
 
 ---
 
@@ -165,8 +165,9 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 - [ ] Create 5 India request types (IN prefix) in Docs
 - [ ] Configure form fields per letter type (read-only vs. editable)
 - [ ] Connect People system for pre-population (employee data + address)
-- [ ] Set up auto-verification workflow (Form 60, Address Proof, Service Letter)
-- [ ] Set up India Team specialist (DV/EDV) verification workflow for Visa Processing Letter and LOR (including "Send Document" action; document hidden until specialist sends it)
+- [ ] Set up auto-verification workflow (Form 60, Address Proof, Service Letter, Visa Processing Letter)
+- [ ] Configure Visa Processing Letter notification checkbox (D-24)
+- [ ] Set up India Team specialist (DV/EDV) verification workflow for LOR (including "Send Document" action; document hidden until specialist sends it)
 - [ ] Confirm Self-Declaration "Accept" checkbox is enabled for all 5 India letter types (D-21 — checkbox confirmed present in DOCS; verify it applies to all IN letter types)
 - [ ] Configure rejection notification with reason field
 - [ ] Configure completion/document-sent notification to employee
@@ -205,7 +206,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 
 > Items requiring management sign-off before go-live.
 
-1. **Agree Track B RM approval solution (OQ-15)** — Satish Malla / Olga Chaban / BA team — Visa Processing Letter and LOR are blocked from development until the RM approval mechanism is decided. Three options documented in `08_Track_B_Solution_Options.md`.
+1. **Agree LOR Track B RM approval solution (OQ-15)** — Satish Malla / Olga Chaban / BA team — LOR is blocked from development until the RM approval mechanism is decided. Visa Processing Letter was moved to Track A by D-24. Three options documented in `08_Track_B_Solution_Options.md`.
 2. **Confirm June 30, 2026** as the go-live and Assist decommission date for Reference Letters
 3. **Assign India HR team** ownership for letter template finalization
 4. **Approve communication plan** to India employees ahead of go-live
@@ -215,7 +216,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 
 ## Slide 12 — Next Steps
 
-1. **BA / Olga Chaban / Satish Malla:** Resolve OQ-15 — agree Track B RM approval solution to unblock Visa Processing Letter and LOR development (see `08_Track_B_Solution_Options.md`)
+1. **BA / Olga Chaban / Satish Malla:** Resolve OQ-15 — agree LOR Track B RM approval solution (see `08_Track_B_Solution_Options.md`)
 2. **Docs Platform Team:** Confirm People system integration availability for pre-population of employee data and address
 3. **India HR Team:** Finalize 5 letter templates for Docs
 4. **HR Operations:** Confirm India Team specialist (DV/EDV) user list and role assignment in Docs

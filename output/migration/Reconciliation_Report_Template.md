@@ -40,7 +40,7 @@ Letter requests in this reporting period, by type:
 
 **Track A (auto-verified) success rate:** ___% (generated / requested for Form 60 + Address Proof + Service Letter)
 
-**Track B (DV/EDV) average processing time:** ___ hours (from queue entry to document sent)
+**Track B (DV/EDV, LOR) average processing time:** ___ hours (from queue entry to document sent)
 
 ---
 
@@ -105,8 +105,8 @@ Summary of support tickets, complaints, or positive feedback received:
 | Metric | Threshold | Actual | Status |
 |---|---|---|---|
 | Track A auto-generation success rate | ~100% | | ✅ / ⚠️ / ❌ |
-| Track B queue end-of-day depth | < 10 | | ✅ / ⚠️ / ❌ |
-| Track B average processing time | Within India Team SLA | | ✅ / ⚠️ / ❌ |
+| LOR Track B queue end-of-day depth | < 10 | | ✅ / ⚠️ / ❌ |
+| LOR Track B average processing time | Within India Team SLA | | ✅ / ⚠️ / ❌ |
 | Rejection rate | < 10% | | ✅ / ⚠️ / ❌ |
 | Download success rate | ~100% | | ✅ / ⚠️ / ❌ |
 

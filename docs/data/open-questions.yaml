@@ -9,7 +9,7 @@
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/open-question.schema.json"
-  last_updated: "2026-05-18"
+  last_updated: "2026-05-20"
   maintainer: "BA team"
 
 # ── Phase 1 — Reference Letters ────────────────────────────────────────────────
@@ -17,7 +17,7 @@ _meta:
 open_questions:
 
   - id: OQ-01
-    phase: 1
+    phase: 4
     question: >
       Visa Processing Letter: is India Team specialist approval still required,
       or auto-verified?
@@ -25,8 +25,8 @@ open_questions:
     raised: "2026-04-16"
     target_resolution: "Stage 1/2 review"
     status: Resolved
-    resolution_decision: "D-12"
-    resolution_note: "RM approval removed — DV/EDV verifies and manually sends document."
+    resolution_decision: "D-24"
+    resolution_note: "Visa Processing Letter moved to Track A: no RM or specialist approval; employee ticks notification checkbox."
     raised_by_decision: null
     documents_affected: ["01", "02"]
     blocking_stage: null
@@ -144,17 +144,17 @@ open_questions:
     question: >
       Nomination Form (Form F, Form 2): is this in scope for DOCS migration?
       04/05/26 meeting discussed enabling employee nominee updates via DOCS self-service
-      + bulk data migration from Assist. Scope and phase to be confirmed.
+      + bulk data migration from Assist. Phase 4 Nominee is now active BA.
     owner: "Darya Taranda / Hanna Vasilenka"
     raised: "2026-05-04"
-    target_resolution: "Phase scoping"
+    target_resolution: "Phase 4 BA"
     status: Open
     resolution_decision: null
     resolution_note: null
     raised_by_decision: null
     documents_affected: []
     blocking_stage: null
-    notes: "See also kb_nominee_details.md for detailed context."
+    notes: "Phase 4 Nominee active BA as of 2026-05-20."
 
   - id: OQ-10
     phase: 1
@@ -338,7 +338,7 @@ open_questions:
 # ── Phase 3 — Separation Letters ───────────────────────────────────────────────
 
   - id: OQ-P3-01
-    phase: 3
+    phase: 4
     question: >
       Ex-employee data retention: how long after exit date is employee profile data
       accessible in People system? Required to determine feasibility window for
@@ -376,18 +376,18 @@ open_questions:
     question: >
       Nominee Details (Nomination Form) scope: should DOCS include a self-service
       process for employees to update nominee details, plus bulk migration of Assist
-      nominee data to DOCS? Scope, phase assignment, and statutory form update process
-      (Form F, Form 2) to be decided.
+      nominee data to DOCS? Phase 4 Nominee is now active BA; statutory form update
+      process (Form F, Form 2) still to be decided.
     owner: "Darya Taranda / Hanna Vasilenka"
     raised: "2026-05-04"
-    target_resolution: "Phase scoping"
+    target_resolution: "Phase 4 BA"
     status: Open
     resolution_decision: null
     resolution_note: null
     raised_by_decision: null
     documents_affected: []
     blocking_stage: null
-    notes: "See also kb_nominee_details.md for detailed context."
+    notes: "Phase 4 Nominee active BA as of 2026-05-20."
 
   - id: OQ-P3-04
     phase: 3
