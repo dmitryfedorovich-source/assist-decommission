@@ -3,6 +3,28 @@ name: validate-docs
 description: Validates all output documentation for factual accuracy, consistency, completeness, terminology, and audience fit. Run after any changes to the output/ folder.
 ---
 
+## Model Routing
+
+**Delegate to Sonnet — do not execute inline in the main session.** Loading all output documents into the main context increases cost on all subsequent turns.
+
+```
+Agent(
+  subagent_type="general-purpose",
+  model="sonnet",
+  description="validate-docs: full documentation validation",
+  prompt="""Context: EPAM Assist Decommission project — BA documentation workspace (no application code).
+India HR workflows migrating from assist.epam.com → docs.epam.com (go-live June 30, 2026).
+Task: Read the file `.claude/skills/validate-docs/SKILL.md` starting from the `## Mode`
+heading and execute all validation checks described there. <MODE_ARG>"""
+)
+```
+
+Replace `<MODE_ARG>` with `"Run in default mode (Checks 1–7, 9)."` or `"Run in --full mode (all 10 checks)."` depending on the user's invocation.
+
+Relay the full validation report verbatim. If the subagent flags ambiguous factual accuracy issues under Check 1 that require cross-document reasoning, re-analyze only those specific cases in the main session.
+
+---
+
 ## Mode
 
 **Default (`/validate-docs`):** Runs Checks 1–7 and Check 9. Reads FDL + all output documents. Does NOT read RTM.md or dependency_model.md.

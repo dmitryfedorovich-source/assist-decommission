@@ -63,7 +63,7 @@
           "routing": {
             "type": "string",
             "description": "How the letter is processed.",
-            "enum": ["auto_verified", "manual_dv_edv", "specialist_initiated", "hrms_triggered", "batch_upload", "tbd"]
+            "enum": ["auto_verified", "manual_dv_edv", "specialist_initiated", "hrms_triggered", "batch_upload", "manual_people_team", "employee_self_service", "tbd"]
           },
           "in_scope": {
             "type": "boolean",
@@ -110,7 +110,7 @@
           "date": { "type": ["string", "null"] },
           "status": {
             "type": "string",
-            "enum": ["pending", "in_progress", "done"]
+            "enum": ["pending", "in_progress", "done", "completed", "partial", "planned"]
           }
         }
       },

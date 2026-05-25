@@ -35,7 +35,7 @@ This document defines the business requirements for migrating the Reference Lett
   - Visa Processing Letter
   - Letter of Recommendation (LOR) — active employees only
 - Auto-verification workflow for Form 60, Address Proof Letter, Service Letter, and Visa Processing Letter
-- India Team specialist (DV/EDV) manual verification workflow for LOR — specialist verifies then manually sends document to employee (D-13)
+- People team manual verification workflow for LOR — employee attaches mandatory written RM approval; People team (verifier) verifies and sends document via "Send Document" action *(D-25)*
 - Employee request form with HR data pre-population
 - Letter generation and download
 - Request lifecycle management (completion, closure, auto-close)
@@ -57,7 +57,7 @@ This document defines the business requirements for migrating the Reference Lett
 | Stakeholder | Role | Interest |
 |---|---|---|
 | India Employees | End users | Ability to request reference letters without disruption |
-| India Team specialists (DV/EDV) | Process verifiers | Efficient verification and document delivery workflow |
+| People team (verifier) | LOR request verifiers *(D-25)* | Reviews LOR requests and mandatory RM approval attachments; sends documents to employees |
 | Docs Platform Team | Implementation owners | Clear requirements for platform configuration |
 | EPAM India HR Management | Business owners | Compliance, process continuity, go-live readiness |
 
@@ -91,6 +91,7 @@ This document defines the business requirements for migrating the Reference Lett
 | Designation | All 5 letters |
 | UID | All 5 letters |
 | Work Location | Form 60, Service Letter, Visa Processing, LOR |
+| Worksite City | Form 60 — auto-populated from People system *(D-26)* |
 | Birth Location | Form 60 |
 | Start Date | All 5 letters |
 
@@ -106,7 +107,6 @@ This document defines the business requirements for migrating the Reference Lett
 - Salutation (dropdown — e.g. Mr. / Mrs.) *(D-22)*
 - Father Name (text)
 - Current address (2-line text input) *(D-22 — field label confirmed from DOCS platform)*
-- Worksite city (dropdown) *(D-22 — dropdown, not free text)*
 - UAN (text)
 - State (text)
 - Mobile number (text)
@@ -150,23 +150,23 @@ This document defines the business requirements for migrating the Reference Lett
 | Address Proof Letter | Auto-verification | Immediate |
 | Service Letter | Auto-verification | Immediate |
 | Visa Processing Letter | Auto-verification | Track A per D-24; no RM or specialist approval required. Employee ticks notification confirmation checkbox. |
-| LOR | India Team specialist (DV/EDV) verification | Specialist verifies → "Send Document" → employee downloads; document hidden until sent (D-13). **RM approval mechanism under review — OQ-15.** |
+| LOR | People team verification *(D-25)* | Employee attaches mandatory written RM approval; People team (verifier) reviews and sends via "Send Document" → employee downloads; document hidden until sent. OQ-15 Resolved. |
 
 **FR-09:** Auto-verified requests shall transition to **Completed** status immediately upon successful submission. Letter is available for download.
 
-**FR-10:** Manually verified requests shall transition to **Pending Verification** status and appear in the India Team specialist's review queue.
+**FR-10:** Manually verified requests shall transition to **Pending Verification** status and appear in the People team (verifier)'s review queue.
 
 ---
 
-### 5.5 India Team Specialist Verification Workflow
+### 5.5 People Team Verification Workflow (LOR)
 
-**FR-11:** The India Team specialist (DV/EDV) shall be able to review all submitted request details within EPAM Docs.
+**FR-11:** The People team (verifier) shall be able to review all submitted LOR request details — including the mandatory written RM approval attachment — within EPAM Docs. *(D-25)*
 
-**FR-12:** The India Team specialist shall have two actions available on a pending request:
+**FR-12:** The People team (verifier) shall have two actions available on a pending LOR request:
 - **Verify** — specialist verifies the request; then manually triggers **"Send Document"** action to make the letter available to the employee
 - **Reject** — transitions the request to Rejected; requires specialist to provide a rejection reason
 
-**FR-12a:** The document shall **not** be visible or downloadable by the employee until the India Team specialist sends it via the "Send Document" action.
+**FR-12a:** The document shall **not** be visible or downloadable by the employee until the People team (verifier) sends it via the "Send Document" action.
 
 **FR-13:** Upon rejection, the system shall notify the employee with the rejection reason provided by the specialist.
 
@@ -188,7 +188,7 @@ This document defines the business requirements for migrating the Reference Lett
 
 **FR-17:** Completed requests shall remain open for employee download until explicitly closed.
 
-**FR-18:** The India Team specialist shall be able to manually close a completed request.
+**FR-18:** The People team (verifier) shall be able to manually close a completed LOR request.
 
 **FR-19:** Once all forms within a request reach a final status (Verified / Generated), the system shall auto-close the request after **2 days** if no manual closure has occurred.
 
@@ -204,12 +204,12 @@ This document defines the business requirements for migrating the Reference Lett
 
 | Trigger | Recipient | Content |
 |---|---|---|
-| Request submitted (manual verification letters) | Employee | Confirmation that request was submitted for India Team specialist review |
+| Request submitted (manual verification letters) | Employee | Confirmation that request was submitted for People team (verifier) review |
 | Request rejected | Employee | Rejection notification including rejection reason provided by specialist |
-| Request resubmitted after rejection | India Team specialist (DV/EDV) | Notification of resubmitted request requiring re-verification |
+| Request resubmitted after rejection | People team (verifier) | Notification of resubmitted LOR request requiring re-verification *(D-25)* |
 | Document sent (manual verification letters) | Employee | Notification that letter is ready for download |
 | Request completed (auto-verified letters) | Employee | Notification that letter is ready for download |
-| New request pending | India Team specialist (DV/EDV) | Notification of new request requiring review |
+| New LOR request pending | People team (verifier) | Notification of new LOR request requiring review *(D-25)* |
 
 ---
 
@@ -241,7 +241,7 @@ This document defines the business requirements for migrating the Reference Lett
 - HR and People system APIs are available and accessible to the Docs platform.
 - EPAM India letter templates (Form 60, Address Proof, Service Letter, Visa Processing, LOR) exist or will be prepared by the HR team prior to go-live.
   - **LOR template:** The COVID-related paragraph present in the current Assist LOR template is confirmed outdated (Satish Malla, Apr 2026) and must be removed from the DOCS LOR template before go-live.
-- India Team specialist (DV/EDV) users already have accounts and appropriate roles in EPAM Docs.
+- India Team specialist (DV/EDV) and People team (verifier) users already have accounts and appropriate roles in EPAM Docs.
 - **DOCS platform technical constraints (accepted for Phase 1 MVP):**
   - *Auto-verify timing:* DOCS auto-verification runs as a nightly batch job — not real-time. Employee may see request in "In Verification" status until the next day's job completes; this is cosmetic only and does not block letter download after completion.
   - *Download button visibility:* DOCS displays the download button before the employee submits the form. This cannot be blocked without custom development. Mitigation: "Fill form first" instructional label and user guide note. Accepted by India team (2026-05-07).
@@ -263,7 +263,7 @@ This document defines the business requirements for migrating the Reference Lett
 | India Team specialist onboarding to Docs | HR Operations | Manual verification workflow cannot function |
 | Assist decommission date | EPAM Platform | Overlap period and cutover timing |
 | OQ-11 resolution — DOCS text field dev (Comments, Notes & Responsibilities) | DOCS Platform (Olga Chaban) | Comments (Visa Processing) and Notes & Responsibilities (LOR) require custom component development before field specs can be finalized |
-| OQ-15 resolution — LOR Track B RM approval mechanism | Satish Malla / DOCS Platform / BA team | LOR cannot proceed to development until RM approval solution is agreed. Visa Processing routing was moved to Track A by D-24. See Track B Solution Options (08). |
+| ~~OQ-15 resolution~~ | ~~Satish Malla / DOCS Platform / BA team~~ | **Resolved — D-25 (22.05.2026).** LOR Track B solution: employee attaches mandatory written RM approval; People team (verifier) verifies in DOCS. LOR development is unblocked. |
 
 ---
 

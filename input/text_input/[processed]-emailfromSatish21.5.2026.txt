@@ -1,0 +1,79 @@
+
+
+Dzmitry Fedarovich
+
+​
+Satish Malla;​
+Olga Chaban;​
+Hanna Vasilenka;​
+Darya Taranda;​
+Chinmoy Ghosh​
+​
+Lela Akobidze;​
+Diana Nikoghosyan;​
+Evgeniy Galinovskiy;​
+Andrei Halalobau;​+1 other
+​
+Hi,
+Thank you for your input.
+We will take these items into work immediately.
+For Form 60, we will implement auto-population of the Worksite City field from People instead of manual input.
+For Track B:
+Visa Processing Letter will be moved to Track A and implemented without validation.
+Letter of Recommendation (LOR) will be implemented as proposed from our side — without Resource Manager approval, but with validation.
+After we set up these processes, we will conduct a demo for your final validation.
+Please let us know if there are any additional comments or expectations from your side.
+Thanks,
+Dzmitry
+
+
+Satish Malla
+
+​
+Dzmitry Fedarovich;​
+Olga Chaban;​
+Hanna Vasilenka;​
+Darya Taranda;​
+Chinmoy Ghosh​
+​
+Lela Akobidze;​
+Diana Nikoghosyan;​
+Evgeniy Galinovskiy;​
+Andrei Halalobau;​
+Kate Martavitskaya​
+Hi @Dzmitry,
+
+ 
+
+We have gone through the “ Reference Letters in EPAM Docs”
+
+ 
+
+Track A – Good to Go and started building them.
+
+ 
+
+Form 60 : See if we can get the below low fields to be auto populated instead of Manual update Worksite city – To be pulled from People
+Address Proof letter:
+Service Letter:
+ 
+
+Track B –
+
+Visa Processing Letter – Can be moved to Track A
+Letter of Recommendation (LOR) – can be planed as per the document shared.
+ 
+
+ 
+
+Let me know if your looking for any additional information on the same.
+
+ 
+
+ 
+
+Regards,
+
+Satish Malla.
+
+People Operations Principal.

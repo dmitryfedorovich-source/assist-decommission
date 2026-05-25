@@ -3,6 +3,28 @@ name: status-check
 description: Go-Live Readiness Report — days to cutover, stage sign-off status, open blockers, recent decisions, next actions. Run at the start of any session or before a stakeholder call.
 ---
 
+## Model Routing
+
+**Delegate to Sonnet — do not execute inline in the main session.** This skill reads project state files and generates a formatted report — no cross-document reasoning required.
+
+```
+Agent(
+  subagent_type="general-purpose",
+  model="sonnet",
+  description="status-check: Go-Live Readiness Report",
+  prompt="""Context: EPAM Assist Decommission project — BA documentation workspace (no application code).
+India HR workflows migrating from assist.epam.com → docs.epam.com (go-live June 30, 2026).
+Today's date: <CURRENT_DATE>.
+Task: Read the file `.claude/skills/status-check/SKILL.md` starting from the `## Usage`
+heading and execute all steps described there. Generate both the Markdown report and the HTML file."""
+)
+```
+
+Replace `<CURRENT_DATE>` with today's date from system context.
+Relay the subagent's Markdown report and saved file path verbatim.
+
+---
+
 ## Usage
 
 `/status-check`

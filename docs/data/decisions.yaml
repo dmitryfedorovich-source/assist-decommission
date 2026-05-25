@@ -10,7 +10,7 @@
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/decision.schema.json"
-  last_updated: "2026-05-18"
+  last_updated: "2026-05-25"
   maintainer: "BA team"
   source_of_truth: true
 
@@ -293,20 +293,20 @@ decisions:
 
   - id: D-13
     phase: 1
-    summary: "LOR (active employees): RM approval removed — DV/EDV verifies and manually sends"
+    summary: "LOR (active employees): RM approval removed — DV/EDV verifies and manually sends (SUPERSEDED by D-25)"
     made_by: "Darya Taranda (Reference Letters KB page)"
     date: "2026-05-06"
-    status: locked
-    superseded_by: null
+    status: superseded
+    superseded_by: "D-25"
     supersedes: []
     change_risk: high
     confidence: high
     evidence_type: confluence_page
     source_ref: "Reference Letters KB page (EPMEOADOCS), Darya Taranda"
     source_date: "2026-05-06"
-    documents_reflect: ["01", "02"]
-    documents_check: ["03", "05"]
-    workflows: ["Trk-B", "Form-UI"]
+    documents_reflect: []
+    documents_check: []
+    workflows: []
     phases_affected: [1]
     oqs_created: []
     oqs_resolved: ["OQ-02"]
@@ -315,6 +315,8 @@ decisions:
       verification → manual "Send Document" flow. Alternative accepted scenario:
       employee receives invitation, can download before/after verification.
       Notes/Responsibilities field: max ~1000 chars, multi-line.
+      NOTE: Superseded by D-25 (22.05.2026) — LOR flow revised to People team
+      verifier + mandatory written RM approval attachment.
 
   - id: D-14
     phase: 1
@@ -571,16 +573,16 @@ decisions:
   - id: D-24
     phase: 1
     summary: "Visa Processing Letter: routing updated from Track B to Track A (notification checkbox, no approval)"
-    made_by: "Satish Malla (verbal via Hanna Vasilenka Teams message, 18.05.2026)"
-    date: "2026-05-18"
-    status: draft
+    made_by: "Satish Malla (email 21.05.2026; original verbal via Hanna Vasilenka 18.05.2026)"
+    date: "2026-05-21"
+    status: locked
     superseded_by: null
     supersedes: ["D-12"]
     change_risk: high
-    confidence: medium
+    confidence: sme_confirmed
     evidence_type: stakeholder_call
-    source_ref: "Hanna Vasilenka Teams message reporting verbal Satish Malla confirmation — 18.05.2026. Written confirmation from Satish requested, pending."
-    source_date: "2026-05-18"
+    source_ref: "Satish Malla email to Dzmitry Fedarovich et al. 21.05.2026 (written confirmation); original verbal Satish Malla via Hanna Vasilenka Teams 18.05.2026"
+    source_date: "2026-05-21"
     documents_reflect: ["01", "02"]
     documents_check: ["03", "05", "06", "07"]
     workflows: ["Trk-A", "Form-UI"]
@@ -593,8 +595,135 @@ decisions:
       a notification checkbox confirming they informed the relevant person (same UX
       pattern as leave/vacation requests). Supersedes D-12 for routing. Comments field
       (D-09, D-18) and Self-Declaration Accept checkbox (D-21) still apply.
-      NOTE: verbal confirmation only as of 18.05.2026 — written confirmation from
-      Satish Malla pending. Partially resolves OQ-15 (OQ-15 now covers LOR only).
+      Written confirmation received via Satish Malla email 21.05.2026. OQ-15 LOR
+      portion resolved separately by D-25.
+
+  - id: D-25
+    phase: 1
+    summary: "LOR (active employees): revised Track B flow — employee attaches written RM approval; People team verifier"
+    made_by: "Darya Taranda (People Programs Manager), post-meeting email 22.05.2026"
+    date: "2026-05-22"
+    status: locked
+    superseded_by: null
+    supersedes: ["D-13"]
+    change_risk: high
+    confidence: sme_confirmed
+    evidence_type: stakeholder_call
+    source_ref: "Darya Taranda email 22.05.2026 — post-meeting summary to Vasantha Tharamal, Hanna Vasilenka, Chinmoy Ghosh; CC Satish Malla, Dzmitry Fedarovich"
+    source_date: "2026-05-22"
+    documents_reflect: ["01", "02", "03", "05"]
+    documents_check: ["06"]
+    workflows: ["Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: ["OQ-15"]
+    body: >
+      LOR (active employees): revised Track B flow. RM approval is handled offline —
+      not routed through DOCS platform. Flow: (1) Employee submits LOR request in DOCS
+      (self-service); (2) Employee must attach written RM approval as a mandatory
+      attachment (mandatory attachment block + instruction text on form); (3) People
+      team acts as verifier in DOCS (replaces DV/EDV); (4) People team verifies →
+      manually sends document to employee via "Send Document". Notes/Responsibilities
+      field spec (D-18: max ~1000 chars, multi-line) unchanged. Supersedes D-13.
+      Resolves OQ-15.
+
+  - id: D-26
+    phase: 1
+    summary: "Form 60: Worksite City field auto-populated from People system (not manual entry)"
+    made_by: "Satish Malla (email 21.05.2026); confirmed by Dzmitry Fedarovich (reply 21.05.2026)"
+    date: "2026-05-21"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: sme_confirmed
+    evidence_type: stakeholder_call
+    source_ref: "Satish Malla email 21.05.2026 ('Worksite city – To be pulled from People'); confirmed by Dzmitry Fedarovich reply 21.05.2026"
+    source_date: "2026-05-21"
+    documents_reflect: ["01", "02", "05"]
+    documents_check: ["03", "06"]
+    workflows: ["Trk-A", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: []
+    body: >
+      Form 60: Worksite City field shall be auto-populated from the People system
+      rather than requiring manual input by the employee. Requested by Satish Malla
+      in email 21.05.2026; confirmed by Dzmitry Fedarovich in reply email 21.05.2026.
+      Partially resolves OQ-16 — Form 60 Worksite City confirmed; Address Proof Letter
+      and Service Letter field pre-population still TBD.
+
+  - id: D-27
+    phase: 1
+    summary: "Service Letter: Purpose field is free-text employee input (no predefined dropdown values)"
+    made_by: "India HR (India SME Stage 2 review, 2026-05-22)"
+    date: "2026-05-22"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "India SME Stage 2 review — answer to OQ-05 (2026-05-22)"
+    source_date: "2026-05-22"
+    documents_reflect: ["01", "02", "05"]
+    documents_check: ["06"]
+    workflows: ["Trk-A", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: ["OQ-05"]
+    body: >
+      Service Letter: the Purpose field is a free-text block filled by the employee
+      (no predefined dropdown options). Employee enters their own purpose text.
+      Resolves OQ-05.
+
+  - id: D-28
+    phase: 1
+    summary: "LOR: Purpose field is free-text employee input (no predefined dropdown values)"
+    made_by: "India HR (India SME Stage 2 review, 2026-05-22)"
+    date: "2026-05-22"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "India SME Stage 2 review — answer to OQ-07 (2026-05-22)"
+    source_date: "2026-05-22"
+    documents_reflect: ["01", "02", "05"]
+    documents_check: ["06"]
+    workflows: ["Trk-B", "Form-UI"]
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: ["OQ-07"]
+    body: >
+      LOR (Letter of Recommendation): the Purpose field is a free-text block filled
+      by the employee (no predefined dropdown options). Employee enters their own
+      purpose text. Resolves OQ-07.
+
+  - id: D-29
+    phase: 1
+    summary: "Bank/SIM/LPG sub-type letters: out of scope for Phase 1 DOCS migration"
+    made_by: "India HR (India SME Stage 2 review, 2026-05-22)"
+    date: "2026-05-22"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: sme_confirmed
+    evidence_type: sme_call
+    source_ref: "India SME Stage 2 review — answer to OQ-08 (2026-05-22)"
+    source_date: "2026-05-22"
+    documents_reflect: ["02"]
+    documents_check: ["01", "05"]
+    workflows: []
+    phases_affected: [1]
+    oqs_created: []
+    oqs_resolved: ["OQ-08"]
+    body: >
+      Bank Letter, SIM Card Letter, and LPG Letter sub-types are out of scope for
+      Phase 1 DOCS migration. These will not be handled via the Purpose dropdown or
+      any other mechanism in Phase 1. Resolves OQ-08.
 
 # ── Phase 2 — Compensation Letters ─────────────────────────────────────────────
 
@@ -765,6 +894,62 @@ decisions:
       Compensation letter disclaimer/confidentiality notice: add as a text paragraph
       within the compensation letter itself. No separate popup, no separate form.
       Inline paragraph approach agreed by internal team.
+
+  - id: D-P2-09
+    phase: 2
+    summary: "Compensation acknowledgment: track Download button event with timestamp; display in Power BI (no separate Accept button)"
+    made_by: "Dzmitry Fedarovich / Lela Akobidze / Olga Chaban / Darya Taranda (meeting 22.05.2026)"
+    date: "2026-05-22"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: medium
+    confidence: high
+    evidence_type: transcript
+    source_ref: "Meeting transcript 'Sum up Compensation letters' 22.05.2026 — internal team discussion"
+    source_date: "2026-05-22"
+    documents_reflect: []
+    documents_check: ["KB2"]
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: []
+    oqs_resolved: []
+    notes: "Satish alignment scheduled Wednesday 2026-05-27. OQ-12 remains Open until Satish confirms."
+    body: >
+      Compensation letter acknowledgment tracking — technical solution agreed. Instead of
+      a separate Accept/radio button, the existing Download button will have an event
+      handler added to log the timestamp and user ID when clicked. This data is surfaced
+      in a Power BI report showing: employee Name, UID, sent date, downloaded date (two
+      separate columns). The DOCS request interface will also display download date.
+      No separate Accept button or dedicated UI element required. Pending Satish Malla
+      alignment at Wednesday 2026-05-27 meeting to confirm this satisfies the audit
+      trail requirement. Partially resolves OQ-12 (Satish sign-off outstanding).
+
+  - id: D-P2-08
+    phase: 2
+    summary: "PDF password protection: N/A in DOCS — Assist-only feature, not migrated"
+    made_by: "DOCS Platform (KB page 2806069235, modified 2026-04-24)"
+    date: "2026-05-22"
+    status: locked
+    superseded_by: null
+    supersedes: []
+    change_risk: low
+    confidence: high
+    evidence_type: confluence_page
+    source_ref: "KB page 2806069235 (Compensation Letters) — Password column shows N/A for DOCS"
+    source_date: "2026-04-24"
+    documents_reflect: ["KB2"]
+    documents_check: []
+    workflows: ["P2-Batch"]
+    phases_affected: [2]
+    oqs_created: []
+    oqs_resolved: ["OQ-P2-02"]
+    body: >
+      DOCS platform does not implement PDF password protection on compensation letters.
+      The Password field is explicitly marked N/A in the DOCS column of KB page
+      2806069235 (Compensation Letters). Password protection was an Assist-only feature
+      and is not being migrated to DOCS. The fallback per D-P2-03 applies: a
+      disclaimer/confidentiality note is included inline within the letter per D-P2-07.
 
 # ── Phase 3 — Separation Letters ───────────────────────────────────────────────
 

@@ -3,6 +3,26 @@ name: validate-schema
 description: Validates all canonical YAML data files in docs/data/ against their JSON schemas in docs/schema/ and checks cross-file referential integrity.
 ---
 
+## Model Routing
+
+**Delegate to Haiku — do not execute inline in the main session.** This skill performs mechanical YAML schema validation with no domain reasoning.
+
+```
+Agent(
+  subagent_type="general-purpose",
+  model="haiku",
+  description="validate-schema: YAML schema conformance and integrity checks",
+  prompt="""Context: EPAM Assist Decommission project — BA documentation workspace (no application code).
+India HR workflows migrating from assist.epam.com → docs.epam.com (go-live June 30, 2026).
+Task: Read the file `.claude/skills/validate-schema/SKILL.md` starting from the
+`## What This Skill Checks` heading and execute all steps described there. Report all findings."""
+)
+```
+
+Relay the subagent's report to the user verbatim. Do not re-analyze.
+
+---
+
 Validate all canonical YAML data files in `docs/data/` against their schemas and integrity rules.
 
 ---

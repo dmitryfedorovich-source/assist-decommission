@@ -1,7 +1,7 @@
 @echo off
 
 REM === PROJECT PATH ===
-cd /d "C:\AIProjects\Claude\Assist decomission"
+cd /d "%~dp0"
 
 REM === START CODEMIE CLAUDE ===
 codemie-claude

@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-The Reference Letters process enables India-based EPAM employees to request official HR letters directly through the EPAM Docs platform. Depending on the letter type, requests are either completed automatically (auto-verified) or routed to an India Team specialist for manual verification before the letter is sent to the employee for download. Phase 1 covers 5 letter types. **Target go-live: June 30, 2026.**
+The Reference Letters process enables India-based EPAM employees to request official HR letters directly through the EPAM Docs platform. Depending on the letter type, requests are either completed automatically (auto-verified) or routed to the People team (verifier) for manual verification before the letter is sent to the employee for download. Phase 1 covers 5 letter types. **Target go-live: June 30, 2026.**
 
 ---
 
@@ -17,7 +17,7 @@ The Reference Letters process enables India-based EPAM employees to request offi
 | Actor | Role |
 |---|---|
 | **Employee** | Initiates the request, fills in required details, downloads the completed letter |
-| **India Team specialist (DV/EDV)** | Reviews and verifies LOR requests; manually sends the document to the employee via "Send Document" action |
+| **People team (verifier)** | Reviews LOR requests and mandatory written RM approval attachment; manually sends the document to the employee via "Send Document" action *(D-25)* |
 | **DOCS Platform** | Creates the request, pre-populates employee data, auto-verifies eligible letters, manages request lifecycle |
 
 ---
@@ -35,11 +35,11 @@ Completed automatically by the system — no India Team specialist action requir
 | Visa Processing Letter | Letter supporting visa applications; Track A per D-24 with notification checkbox, no RM or specialist approval |
 
 ### Manually Verified Letters
-Routed to India Team specialist (DV/EDV) for review. After verification, specialist manually sends the document — employee receives notification and downloads.
+Routed to People team (verifier) for review. After verification, People team manually sends the document — employee receives notification and downloads.
 
 | Letter Type | Description | Notes |
 |---|---|---|
-| LOR — Letter of Recommendation | Recommendation letter for active employees | DV/EDV → "Send Document" flow; ex-employees: out of scope Phase 1 (D-13) |
+| LOR — Letter of Recommendation | Recommendation letter for active employees | Employee attaches mandatory written RM approval; People team (verifier) → "Send Document" flow; ex-employees: out of scope Phase 1 *(D-25)* |
 
 ---
 
@@ -48,7 +48,7 @@ Routed to India Team specialist (DV/EDV) for review. After verification, special
 ### 4.1 High-Level Swim Lane
 
 ```
-EMPLOYEE          │ DOCS PLATFORM              │ India Team specialist (DV/EDV)
+EMPLOYEE          │ DOCS PLATFORM              │ People team (verifier)
 ──────────────────┼────────────────────────────┼──────────────────────────
 Request reference │                            │
 letter            │                            │
@@ -75,7 +75,7 @@ Download Letter   │                            │   │         → Request
                   │                             │       Rejection reason
                   │ Close request?              │       sent to employee
                   │   ├─ YES ←─────────────────│
-                  │   │  Specialist closes manually│
+                  │   │  People team closes manually│
                   │   └─ NO → auto-close        │
                   │           after 2 days      │
 ```
@@ -103,11 +103,12 @@ Download Letter   │                            │   │         → Request
 - Letter is immediately available for download in the "Documents to download" section
 
 **Step 3b — Manual verification path (LOR)**
-- Request enters verification queue for India Team specialist (DV/EDV)
-- Specialist reviews the submitted information
-  - If correct: specialist verifies → clicks **"Send Document"** action → employee receives notification → document available for download. Note: the document is **not visible** to the employee until the specialist sends it.
-  - If incorrect: specialist rejects with **required comment** → employee receives notification with rejection reason → employee edits and resubmits **same form** → specialist re-verifies. No limit on resubmissions.
-- **Request closure:** India Team specialist closes manually, OR system auto-closes after 2 days if no manual closure
+- Request contains employee's mandatory written RM approval attachment *(D-25)*
+- Request enters verification queue for People team (verifier)
+- People team reviews the submitted information and the attached RM approval
+  - If correct: People team verifies → clicks **"Send Document"** action → employee receives notification → document available for download. Note: the document is **not visible** to the employee until the People team sends it.
+  - If incorrect: People team rejects with **required comment** → employee receives notification with rejection reason → employee edits and resubmits **same form** → People team re-verifies. No limit on resubmissions.
+- **Request closure:** People team closes manually, OR system auto-closes after 2 days if no manual closure
 
 **Step 4 — Employee downloads the letter**
 - Employee opens the completed request
@@ -115,7 +116,7 @@ Download Letter   │                            │   │         → Request
 
 **Step 5 — Request closure**
 - **Auto-verified letters (Form 60, Address Proof, Service Letter, Visa Processing Letter):** System auto-closes the request after **2 days** once all forms reach a final status (Verified / Generated)
-- **Manually verified letters (LOR):** India Team specialist closes the request manually after sending the document, OR system auto-closes after **2 days** if no manual closure occurs
+- **Manually verified letters (LOR):** People team closes the request manually after sending the document, OR system auto-closes after **2 days** if no manual closure occurs
 
 > **New request rule:** An employee cannot submit a new request for the same letter type until the previous request is closed. Minimum interval is 2 days. Note: resubmitting a rejected form does not count as a new request — the same request stays open.
 
@@ -137,7 +138,7 @@ Download Letter   │                            │   │         → Request
 | Salutation | Employee | Dropdown (e.g. Mr. / Mrs.) |
 | Father Name | Employee | Text input |
 | Current address | Employee | Text input (2 lines) |
-| Worksite city | Employee | Dropdown |
+| Worksite city | Pre-populated (People system) *(D-26)* | Read-only |
 | UAN | Employee | Text input |
 | Mobile number | Employee | Text input |
 | PAN | Employee | Text input |
@@ -201,6 +202,7 @@ Download Letter   │                            │   │         → Request
 | Start Date | Pre-populated (People system) | Read-only |
 | Purpose | Employee | Dropdown |
 | Custom field details | Employee | Text input |
+| RM approval attachment | Employee | **Mandatory** — written RM approval must be attached before submission *(D-25)* |
 | Notes & Responsibilities | Employee | **Required.** Multi-line plain text, paragraphs supported, max ~1000 chars (DOCS dev required — OQ-11) |
 
 ---
@@ -212,7 +214,7 @@ Download Letter   │                            │   │         → Request
 | Request submitted (manual verification) | Employee | System notification |
 | Request rejected | Employee | Notification with rejection reason |
 | Request completed | Employee | System notification |
-| New request pending review | India Team specialist (DV/EDV) | System notification |
+| New request pending review | People team (verifier) | System notification |
 
 ---
 

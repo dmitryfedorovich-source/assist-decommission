@@ -3,6 +3,27 @@ name: validate-quick
 description: Targeted validation of a single output document — factual accuracy, forbidden phrases, terminology. Reads only FDL + target file. Use for routine edits. Run /validate-docs --full before stage meetings.
 ---
 
+## Model Routing
+
+**Delegate to Haiku — do not execute inline in the main session.** This skill runs 3 mechanical checks (string matching + factual lookup) on a single file.
+
+```
+Agent(
+  subagent_type="general-purpose",
+  model="haiku",
+  description="validate-quick: spot check <doc-code>",
+  prompt="""Context: EPAM Assist Decommission project — BA documentation workspace (no application code).
+India HR workflows migrating from assist.epam.com → docs.epam.com (go-live June 30, 2026).
+Task: Read the file `.claude/skills/validate-quick/SKILL.md` starting from the `## Usage`
+heading and execute all steps for doc-code: <DOC-CODE-ARG>. Report all findings."""
+)
+```
+
+Replace `<DOC-CODE-ARG>` with the argument the user passed (e.g. `BRD`, `05`, `CG`).
+Relay the subagent's report to the user verbatim. Do not re-analyze.
+
+---
+
 ## Usage
 
 `/validate-quick <doc-code>`

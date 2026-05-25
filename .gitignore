@@ -4,4 +4,11 @@
 !.claude/commands/**
 !.claude/skills/
 !.claude/skills/**
+!.claude/settings.json
+!.claude/hooks/
+!.claude/hooks/**
 .claude/settings.local.json
+output/status_reports/
+.DS_Store
+Thumbs.db
+desktop.ini

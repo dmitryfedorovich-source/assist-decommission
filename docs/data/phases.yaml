@@ -4,12 +4,14 @@
 #  NOTE:      docs/src/data/phases.yaml is the VIEW-LAYER version for HTML rendering.
 #             This file is the authoritative source of truth for phase facts.
 #             /build-overview reads docs/src/data/phases.yaml (view layer).
+#  NOTE (2026-05-22): 'nominee' entry uses id outside phase[1-9] schema pattern.
+#             Schema update needed to allow supplementary entries.
 # ═══════════════════════════════════════════════════════════════════════════════
 
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/phase.schema.json"
-  last_updated: "2026-05-20"
+  last_updated: "2026-05-22"
   maintainer: "BA team"
 
 phases:
@@ -17,7 +19,7 @@ phases:
   - id: phase1
     number: 1
     title: "Reference Letters"
-    subtitle: "Dev and process setup in progress"
+    subtitle: "Dev in sprint — UAT planned w/c 2026-05-25"
     status: active
     go_live_date: "2026-06-30"
     source_platform: "assist.epam.com"
@@ -31,39 +33,36 @@ phases:
         routing: auto_verified
         in_scope: true
         notes: >
-          Address pre-populated from People Portal. OQ-14 open: lock vs allow edit.
+          Address pre-populated from People Portal (read-only, D-20).
           Address-not-found warning pattern present.
       - name: "Service Letter"
         routing: auto_verified
         in_scope: true
-        notes: "Purpose dropdown options TBD (OQ-05)."
+        notes: "Purpose dropdown options — answers received from India, to be recorded (OQ-05)."
       - name: "Visa Processing Letter"
         routing: auto_verified
         in_scope: true
         notes: >
-          Moved to Track A by D-24: no RM or specialist approval required.
+          Track A (D-24): no RM or specialist approval required.
           Employee ticks notification checkbox. Comments field required
           (max 300 chars, one line). OQ-11 open: DOCS dev required for text field.
+          Travel type dropdown values — answers received, to be recorded (OQ-06).
       - name: "Letter of Recommendation (LOR)"
-        routing: manual_dv_edv
+        routing: manual_people_team
         in_scope: true
         notes: >
-          DV/EDV specialist verifies and manually sends. Notes/Responsibilities
-          multi-line field (max ~1000 chars). OQ-11 open: DOCS dev required.
+          D-25 (22.05.2026): employee attaches written RM approval (mandatory attachment);
+          People team acts as verifier in DOCS; manually sends via Send Document.
+          Notes/Responsibilities multi-line field (max ~1000 chars). OQ-11 open: DOCS dev required.
+          LOR Purpose dropdown — answers received, to be recorded (OQ-07).
           Ex-employee LOR: out of scope (Phase 3).
-      - name: "Nominee Form"
-        routing: employee_self_service
-        in_scope: true
-        notes: >
-          Active BA scope. Field list confirmed in Satish Malla email: Emp UID,
-          Emp Name, nominee details, and benefit allocation percentages.
       - name: "Relocation Letter"
         routing: tbd
         in_scope: false
-        notes: "Removed from Phase 1 by D-16. Moved to Phase 4+ investigation."
+        notes: "Removed from Phase 1 by D-16. Moved to Phase 4 investigation."
     key_decisions:
-      [D-01, D-02, D-06, D-07, D-08, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-17, D-21, D-24]
-    blocking_oqs: [OQ-05, OQ-06, OQ-07, OQ-08, OQ-11, OQ-15, OQ-16]
+      [D-01, D-02, D-06, D-07, D-08, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-17, D-21, D-24, D-25, D-26, D-27, D-28, D-29]
+    blocking_oqs: []
     sign_off_stages:
       - number: 1
         name: "Internal alignment — process flow, BRD, approach"
@@ -73,17 +72,17 @@ phases:
       - number: 2
         name: "India SME validation — process design, field specs, open questions"
         participants: "Satish Malla, Satya Danam, Sasanka Yedlapati"
-        date: "2026-05-14"
-        status: partial
+        date: "2026-05-22"
+        status: completed
       - number: 3
-        name: "BA work - complete except Track B solution"
+        name: "BA work complete — all letters including Track B (LOR D-25)"
         participants: "BA team"
-        date: "2026-05-20"
-        status: partial
+        date: "2026-05-22"
+        status: completed
       - number: 4
         name: "Development and process setup"
         participants: "Docs platform team, BA, process owners"
-        date: "2026-05-20"
+        date: null
         status: in_progress
       - number: 5
         name: "UAT"
@@ -101,7 +100,7 @@ phases:
   - id: phase2
     number: 2
     title: "Compensation Letters"
-    subtitle: null
+    subtitle: "Solution done — India acceptance planned w/c 2026-05-25"
     status: active
     go_live_date: null
     source_platform: "assist.epam.com"
@@ -123,9 +122,24 @@ phases:
         routing: batch_upload
         in_scope: true
         notes: "All variants use single base template with conditional text blocks."
-    key_decisions: [D-P2-01, D-P2-02, D-P2-03, D-P2-04, D-P2-05, D-P2-06, D-P2-07]
-    blocking_oqs: [OQ-P2-02, OQ-12]
-    sign_off_stages: []
+    key_decisions: [D-P2-01, D-P2-02, D-P2-03, D-P2-04, D-P2-05, D-P2-06, D-P2-07, D-P2-08]
+    blocking_oqs: [OQ-12]
+    sign_off_stages:
+      - number: 1
+        name: "Solution design — KB Onepager, batch flow, XLSX model"
+        participants: "BA team, DOCS platform team"
+        date: "2026-05-22"
+        status: completed
+      - number: 2
+        name: "Internal alignment — Darya"
+        participants: "Darya Taranda"
+        date: "2026-05-22"
+        status: completed
+      - number: 3
+        name: "India acceptance — Satish"
+        participants: "Satish Malla"
+        date: null
+        status: planned
     deliverables:
       - "output/phase2_compensation/01_KB_Onepager.html"
 
@@ -158,8 +172,8 @@ phases:
 
   - id: phase4
     number: 4
-    title: "Nominee Form"
-    subtitle: "Active BA"
+    title: "Relocation Letter"
+    subtitle: "Investigation in progress — OQ-13 must resolve before scope"
     status: active
     go_live_date: null
     source_platform: "assist.epam.com"
@@ -167,11 +181,56 @@ phases:
     letter_types:
       - name: "Relocation Letter"
         routing: tbd
-        in_scope: false
+        in_scope: true
         notes: >
-          Removed from Phase 1 (D-16). All 5 OQ-13 questions must be answered
-          before relocation scope can be written.
+          Deferred from Phase 1 (D-16). All 5 OQ-13 questions must be answered
+          before relocation scope can be written. Platform development will be required.
     key_decisions: [D-16]
-    blocking_oqs: [OQ-09, OQ-P3-03]
+    blocking_oqs: [OQ-13]
     sign_off_stages: []
     deliverables: []
+
+  # Standalone workflow — outside numbered phase roadmap.
+  # NOTE: id 'nominee' does not follow phase[1-9] schema pattern — schema update needed.
+  - id: nominee
+    number: null
+    type: supplementary
+    title: "Nominee Form"
+    subtitle: "BA done — India and internal approved — no dev needed"
+    status: active
+    go_live_date: null
+    source_platform: "assist.epam.com"
+    target_platform: "docs.epam.com"
+    letter_types:
+      - name: "Nominee Form (Form F / Form 2)"
+        routing: employee_self_service
+        in_scope: true
+        notes: >
+          Employee self-service for updating nominee details and benefit allocation percentages.
+          Field list confirmed (Satish Malla email 18.05.2026): Emp UID, Emp Name, nominee name,
+          relationship, DOB, gender, address, contact number; benefit % columns (GPA, FSG, GTLI,
+          GRATUITY, PF). Multi-row form; % must sum to 100% per benefit column.
+          No platform development needed — configuration only in DOCS.
+    key_decisions: []
+    blocking_oqs: []
+    sign_off_stages:
+      - number: 1
+        name: "BA work complete — field schema confirmed with Satish (18.05.2026)"
+        participants: "BA team, Satish Malla"
+        date: "2026-05-22"
+        status: completed
+      - number: 2
+        name: "India acceptance"
+        participants: "Satish Malla, India team"
+        date: "2026-05-22"
+        status: completed
+      - number: 3
+        name: "Internal acceptance"
+        participants: "Darya Taranda"
+        date: "2026-05-22"
+        status: completed
+    deliverables: []
+    notes: >
+      Standalone workflow outside the numbered phase roadmap. No platform development
+      required — configuration only in DOCS. BA, India, and internal sign-offs complete
+      as of May 2026. Process documentation still pending.

@@ -26,7 +26,7 @@
 | **Auto-verified (instant)** | Address Proof Letter | |
 | **Auto-verified (instant)** | Service Letter | |
 | **Auto-verified (instant)** | Visa Processing Letter | Track A per D-24; employee ticks notification checkbox; no RM or specialist approval |
-| **India Team specialist review** | Letter of Recommendation (LOR) | DV/EDV verifies → "Send Document" → employee downloads; active employees only; ex-employee LOR out of scope Phase 1 |
+| **People team verification** | Letter of Recommendation (LOR) | People team (verifier) reviews mandatory RM approval attachment → "Send Document" → employee downloads; active employees only; ex-employee LOR out of scope Phase 1 |
 
 > LOR for ex-employees is out of scope — addressed in Phase 3 (Separation Letters)
 
@@ -45,23 +45,24 @@ Employee                DOCS Platform
    │                         ├─ Generate letter
    │                         ├─ Status → Completed
    ├─ Download letter ←───────┤
-   │                         ├─ (India Team specialist or auto-close after 2 days)
+   │                         ├─ (People team (verifier) or auto-close after 2 days)
 ```
 
 **Used for:** Form 60, Address Proof Letter, Service Letter, Visa Processing Letter
 
 ---
 
-## Slide 4 — Process Flow: India Team Specialist (DV/EDV) Verification
+## Slide 4 — Process Flow: People Team Verification (LOR)
 
 ```
-Employee                DOCS Platform              India Team specialist (DV/EDV)
+Employee                DOCS Platform              People team (verifier)
    │                         │                      │
    ├─ Select letter type ────→│                      │
    │                         ├─ Create request       │
+   ├─ Attach RM approval ────→│                      │
    ├─ Fill in form ──────────→│                      │
-   │                         ├─ Route to specialist ─→│
-   │                         │                      ├─ Review request
+   │                         ├─ Route to verifier ──→│
+   │                         │                      ├─ Review request + RM approval
    │                         │                      │
    │                         │    Verify + "Send Document" action
    │                         │←─────────────────────┤
@@ -71,9 +72,9 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 ```
 
 **Used for:** LOR
-> Document is **not visible** to the employee until the India Team specialist explicitly triggers the "Send Document" action (D-13).
+> Document is **not visible** to the employee until the People team (verifier) explicitly triggers the "Send Document" action *(D-25)*.
 
-> ⚠️ **LOR Track B development currently blocked — OQ-15.** At the India SME meeting (14.05.2026), Satish Malla confirmed RM approval is a mandatory step for LOR in the current Assist flow. Visa Processing Letter was moved to Track A by D-24. DOCS does not currently support RM approval routing for LOR. Development cannot proceed until a solution is agreed. Three options are documented in `08_Track_B_Solution_Options.md`.
+> ✅ **LOR Track B solution agreed — D-25 (22.05.2026):** Employee attaches written RM approval as mandatory attachment; People team (verifier) in DOCS reviews and sends document. LOR development is unblocked. OQ-15 Resolved.
 
 ---
 
@@ -91,6 +92,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 | Name, Designation | All 5 |
 | UID | All 5 |
 | Work Location | Form 60, Service Letter, Visa Processing, LOR |
+| Worksite City | Form 60 — pre-populated from People system *(D-26)* |
 | Birth Location | Form 60 |
 | Start Date | All 5 |
 | Address | Address Proof Letter — read-only; if incorrect, employee updates via People system (D-20) |
@@ -99,7 +101,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 
 | Letter | Employee Fields |
 |---|---|
-| Form 60 | Salutation (dropdown), Father Name, Current address (2-line), Worksite city (dropdown), UAN, State, Mobile number, PAN *(D-22)* |
+| Form 60 | Salutation (dropdown), Father Name, Current address (2-line), UAN, State, Mobile number, PAN *(D-22)* |
 | Address Proof | Purpose (dropdown); Custom purpose text (max 100 chars, always visible — fill in when "Custom" selected) |
 | Service Letter | Purpose (dropdown), Custom field details (text) |
 | Visa Processing | Purpose of Travel (free text), Destination Country (free text), Tentative Travel start date (date picker), Tentative Travel end date (date picker), Travel type (dropdown — OQ-06), Comments (required, text area — OQ-11) |
@@ -167,7 +169,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 - [ ] Connect People system for pre-population (employee data + address)
 - [ ] Set up auto-verification workflow (Form 60, Address Proof, Service Letter, Visa Processing Letter)
 - [ ] Configure Visa Processing Letter notification checkbox (D-24)
-- [ ] Set up India Team specialist (DV/EDV) verification workflow for LOR (including "Send Document" action; document hidden until specialist sends it)
+- [ ] Set up People team verification workflow for LOR (including mandatory RM approval attachment field; "Send Document" action; document hidden until People team sends it) *(D-25)*
 - [ ] Confirm Self-Declaration "Accept" checkbox is enabled for all 5 India letter types (D-21 — checkbox confirmed present in DOCS; verify it applies to all IN letter types)
 - [ ] Configure rejection notification with reason field
 - [ ] Configure completion/document-sent notification to employee
@@ -206,7 +208,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 
 > Items requiring management sign-off before go-live.
 
-1. **Agree LOR Track B RM approval solution (OQ-15)** — Satish Malla / Olga Chaban / BA team — LOR is blocked from development until the RM approval mechanism is decided. Visa Processing Letter was moved to Track A by D-24. Three options documented in `08_Track_B_Solution_Options.md`.
+1. ~~**Agree LOR Track B RM approval solution (OQ-15)**~~ — **Resolved (D-25, 22.05.2026):** Employee attaches written RM approval as mandatory attachment; People team (verifier) in DOCS. LOR development is unblocked. No management decision needed.
 2. **Confirm June 30, 2026** as the go-live and Assist decommission date for Reference Letters
 3. **Assign India HR team** ownership for letter template finalization
 4. **Approve communication plan** to India employees ahead of go-live
@@ -216,7 +218,7 @@ Employee                DOCS Platform              India Team specialist (DV/EDV
 
 ## Slide 12 — Next Steps
 
-1. **BA / Olga Chaban / Satish Malla:** Resolve OQ-15 — agree LOR Track B RM approval solution (see `08_Track_B_Solution_Options.md`)
+1. **Docs Platform Team:** Configure LOR Track B — People team (verifier) role, mandatory written RM approval attachment field *(D-25)* — LOR development is unblocked
 2. **Docs Platform Team:** Confirm People system integration availability for pre-population of employee data and address
 3. **India HR Team:** Finalize 5 letter templates for Docs
 4. **HR Operations:** Confirm India Team specialist (DV/EDV) user list and role assignment in Docs

@@ -96,6 +96,22 @@ Domain facts live exclusively in memory — not in this file. If you need domain
 | `Feedback_Decisions_Log.md` | BA team | Cross-phase decisions, open questions, feedback log — **authoritative source of truth** |
 | `RTM.md` | BA team | Requirements Traceability Matrix — Decision×Document, Decision×Workflow, OQ impact map, source index |
 
+## Skill Model Routing
+
+All skills delegate to subagents to keep the main session context clean and reduce costs on mechanical tasks:
+
+| Skill | Model | Reason |
+|---|---|---|
+| `/validate-schema` | **haiku** | Mechanical YAML schema checks — no domain reasoning |
+| `/validate-quick` | **haiku** | String matching + factual lookup on single file |
+| `/validate-docs` | **sonnet** | Complex validation — isolates large file reads from main context |
+| `/build-overview` | **sonnet** | Mechanical HTML assembly — isolates template/CSS reads |
+| `/status-check` | **sonnet** | Report generation — isolates FDL/state reads |
+
+Each skill's SKILL.md contains a `## Model Routing` section at the top with the exact `Agent(...)` call to make. When a skill is invoked, spawn the subagent as specified — do not execute the task in the main session.
+
+---
+
 ## Working in this Repo
 
 **Before writing any output document:** check `output/shared/Feedback_Decisions_Log.md` for confirmed decisions. Read the relevant phase state memory file for current facts.

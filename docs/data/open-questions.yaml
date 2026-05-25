@@ -9,7 +9,7 @@
 _meta:
   schema_version: "1.0"
   schema_ref: "../schema/open-question.schema.json"
-  last_updated: "2026-05-20"
+  last_updated: "2026-05-25"
   maintainer: "BA team"
 
 # ── Phase 1 — Reference Letters ────────────────────────────────────────────────
@@ -86,13 +86,13 @@ open_questions:
     owner: "India HR"
     raised: null
     target_resolution: "Stage 2 review"
-    status: Open
-    resolution_decision: null
-    resolution_note: null
+    status: Resolved
+    resolution_decision: "D-27"
+    resolution_note: "Purpose field is free-text employee input — no predefined dropdown values. Employee enters their own purpose text."
     raised_by_decision: null
     documents_affected: ["01", "02", "05"]
-    blocking_stage: "Stage 2"
-    notes: null
+    blocking_stage: null
+    notes: "Resolved 2026-05-22 — India SME Stage 2 review."
 
   - id: OQ-06
     phase: 1
@@ -101,13 +101,13 @@ open_questions:
     owner: "India HR"
     raised: null
     target_resolution: "Stage 2 review"
-    status: Open
+    status: Resolved
     resolution_decision: null
-    resolution_note: null
+    resolution_note: "Travel type dropdown confirmed: 'Personal Travel' is the available option. Confirmed by India SME Stage 2 review (2026-05-22)."
     raised_by_decision: null
     documents_affected: ["01", "02", "05"]
-    blocking_stage: "Stage 2"
-    notes: null
+    blocking_stage: null
+    notes: "Resolved 2026-05-22 — India SME Stage 2 review."
 
   - id: OQ-07
     phase: 1
@@ -116,13 +116,13 @@ open_questions:
     owner: "India HR"
     raised: null
     target_resolution: "Stage 2 review"
-    status: Open
-    resolution_decision: null
-    resolution_note: null
+    status: Resolved
+    resolution_decision: "D-28"
+    resolution_note: "Purpose field is free-text employee input — no predefined dropdown values. Employee enters their own purpose text."
     raised_by_decision: null
     documents_affected: ["01", "02", "05"]
-    blocking_stage: "Stage 2"
-    notes: null
+    blocking_stage: null
+    notes: "Resolved 2026-05-22 — India SME Stage 2 review."
 
   - id: OQ-08
     phase: 1
@@ -131,13 +131,13 @@ open_questions:
     owner: "India Team (Sasanka)"
     raised: null
     target_resolution: "Stage 2 review"
-    status: Open
-    resolution_decision: null
-    resolution_note: null
+    status: Resolved
+    resolution_decision: "D-29"
+    resolution_note: "Bank/SIM/LPG sub-type letters are out of scope for Phase 1. Not handled via Purpose dropdown or any other mechanism in Phase 1."
     raised_by_decision: null
     documents_affected: ["01", "02", "05"]
-    blocking_stage: "Stage 2"
-    notes: null
+    blocking_stage: null
+    notes: "Resolved 2026-05-22 — India SME Stage 2 review."
 
   - id: OQ-09
     phase: 1
@@ -148,13 +148,17 @@ open_questions:
     owner: "Darya Taranda / Hanna Vasilenka"
     raised: "2026-05-04"
     target_resolution: "Phase 4 BA"
-    status: Open
+    status: Resolved
     resolution_decision: null
-    resolution_note: null
+    resolution_note: >
+      Nominee Form confirmed in scope for DOCS migration as employee self-service
+      (configuration only, no platform development required). BA complete. India
+      approved (Satish Malla) and internal approved (Darya Taranda) as of 2026-05-22.
+      Structured as standalone workflow outside the numbered phase roadmap.
     raised_by_decision: null
     documents_affected: []
     blocking_stage: null
-    notes: "Phase 4 Nominee active BA as of 2026-05-20."
+    notes: "Phase 4 Nominee active BA as of 2026-05-20. Completed 2026-05-22."
 
   - id: OQ-10
     phase: 1
@@ -182,13 +186,13 @@ open_questions:
     owner: "Olga Chaban / DOCS Platform Team"
     raised: "2026-05-05"
     target_resolution: "Dev planning"
-    status: Open
+    status: Resolved
     resolution_decision: null
-    resolution_note: null
+    resolution_note: "DOCS development for both text input fields completed: Comments field (max 300 chars, Visa Processing Letter) and Notes/Responsibilities field (multi-line, LOR). Development delivered in sprint (confirmed 2026-05-22)."
     raised_by_decision: "D-09"
     documents_affected: ["01", "02", "03"]
-    blocking_stage: "Stage 5"
-    notes: "Blocking dev epic creation. Michael (DOCS dev lead) to assess."
+    blocking_stage: null
+    notes: "Resolved 2026-05-22."
 
   - id: OQ-12
     phase: 2
@@ -207,7 +211,11 @@ open_questions:
     raised_by_decision: "D-P2-02"
     documents_affected: ["KB2"]
     blocking_stage: null
-    notes: "Direction updated: activity log preferred over custom Accept button (2 sprints)."
+    notes: >
+      Update 22.05.2026: technical solution agreed internally (D-P2-09) — track Download
+      button event with timestamp; surface in Power BI report (Name, UID, sent date,
+      downloaded date). Satish Malla alignment meeting scheduled Wednesday 2026-05-27.
+      OQ-12 remains Open until Satish confirms solution satisfies audit trail requirement.
 
   - id: OQ-13
     phase: 4
@@ -253,18 +261,19 @@ open_questions:
       India SME meeting (14.05.2026) that RM approval is a mandatory step for LOR in the
       current Assist flow. DOCS platform does not currently support routing a document to
       an RM for approval. LOR development is blocked until a technical solution is agreed.
-      Options: (1) employee enters RM email on form + DOCS triggers email; (2) offline RM
-      confirmation; (3) other.
     owner: "Dzmitry Fedarovich / Olga Chaban / Satish Malla"
     raised: "2026-05-14"
     target_resolution: "DOCS platform investigation / Stage 3"
-    status: Open
-    resolution_decision: null
-    resolution_note: null
+    status: Resolved
+    resolution_decision: "D-25"
+    resolution_note: >
+      Employee attaches written RM approval as mandatory attachment on the DOCS form.
+      People team acts as verifier in DOCS (not DV/EDV). RM approval handled offline.
+      LOR development is unblocked. Confirmed by Darya Taranda email 22.05.2026.
     raised_by_decision: null
-    documents_affected: ["01", "02", "05", "07"]
-    blocking_stage: "Stage 3"
-    notes: "Blocking LOR (Track B) development only. Visa Processing Letter resolved by D-24."
+    documents_affected: ["01", "02", "05"]
+    blocking_stage: null
+    notes: "Resolved 2026-05-22. Visa Processing Letter resolved separately by D-24."
 
   - id: OQ-16
     phase: 1
@@ -277,13 +286,13 @@ open_questions:
     owner: "Satish Malla / Hanna Vasilenka"
     raised: "2026-05-18"
     target_resolution: "Stage 2 / BA Work (Phase 1)"
-    status: Open
-    resolution_decision: null
-    resolution_note: null
+    status: Resolved
+    resolution_decision: "D-26"
+    resolution_note: "Location fields confirmed pre-populated from People system. D-26 covers Form 60 Worksite City auto-pop. Remaining Track A field pre-population confirmed as already handled in the system (India SME Stage 2 review, 2026-05-22)."
     raised_by_decision: "D-24"
     documents_affected: ["01", "02", "05"]
-    blocking_stage: "Stage 5"
-    notes: "Awaiting email from Satish Malla with specific field list."
+    blocking_stage: null
+    notes: "Resolved 2026-05-22 — India SME Stage 2 review."
 
 # ── Phase 2 — Compensation Letters ─────────────────────────────────────────────
 
@@ -311,9 +320,9 @@ open_questions:
     owner: "Docs Platform Team"
     raised: "2026-05-04"
     target_resolution: "Phase 2 scoping"
-    status: Open
-    resolution_decision: null
-    resolution_note: null
+    status: Resolved
+    resolution_decision: "D-P2-08"
+    resolution_note: "DOCS platform does not implement PDF password protection (N/A in DOCS per KB page 2806069235). Fallback per D-P2-03 applies: disclaimer inline within letter per D-P2-07."
     raised_by_decision: "D-P2-03"
     documents_affected: ["KB2"]
     blocking_stage: null

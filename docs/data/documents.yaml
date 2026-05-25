@@ -26,7 +26,7 @@ documents:
     file_path: "output/phase1_reference_letters/01_Process_Flow_Reference_Letters.md"
     status: draft
     confidence_min: high
-    decisions_reflect: [D-01, D-06, D-07, D-09, D-12, D-13, D-15, D-16, D-21, D-24]
+    decisions_reflect: [D-01, D-06, D-07, D-09, D-12, D-15, D-16, D-21, D-24, D-25, D-26]
     forbidden_terms: []
     validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 7"]
 
@@ -42,7 +42,7 @@ documents:
     file_path: "output/phase1_reference_letters/02_BRD_Reference_Letters.md"
     status: draft
     confidence_min: high
-    decisions_reflect: [D-01, D-02, D-06, D-07, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-21, D-24]
+    decisions_reflect: [D-01, D-02, D-06, D-07, D-09, D-10, D-11, D-12, D-15, D-16, D-21, D-24, D-25, D-26]
     forbidden_terms: []
     validator_checks: ["Check 1", "Check 2", "Check 4", "Check 5", "Check 7"]
 
@@ -90,7 +90,7 @@ documents:
     file_path: "output/phase1_reference_letters/05_India_SME_Validation.md"
     status: draft
     confidence_min: medium
-    decisions_reflect: [D-01, D-02, D-08, D-16, D-21, D-24]
+    decisions_reflect: [D-01, D-02, D-08, D-16, D-21, D-24, D-25, D-26]
     forbidden_terms: ["HRBP"]
     validator_checks: ["Check 1", "Check 2", "Check 3", "Check 4", "Check 5", "Check 6", "Check 7"]
 
@@ -120,7 +120,7 @@ documents:
     purpose: "Visual 7-slide presentation for India SME validation — process flows, field specs, behavior cards, sign-off"
     format: HTML
     file_path: "output/phase1_reference_letters/07_India_SME_Presentation.html"
-    status: processed
+    status: published
     confidence_min: sme_confirmed
     decisions_reflect: [D-23, D-24]
     forbidden_terms: ["HRBP"]
@@ -224,7 +224,7 @@ documents:
     file_path: "output/migration/Test_Validation_Plan.md"
     status: draft
     confidence_min: high
-    decisions_reflect: [D-06, D-07, D-09, D-12, D-13, D-15, D-16, D-21, D-24]
+    decisions_reflect: [D-06, D-07, D-09, D-12, D-15, D-16, D-21, D-24, D-25]
     forbidden_terms: []
     validator_checks: ["Check 1", "Check 2", "Check 7"]
 
@@ -240,7 +240,7 @@ documents:
     file_path: "output/migration/Acceptance_Criteria.md"
     status: draft
     confidence_min: high
-    decisions_reflect: [D-01, D-06, D-07, D-09, D-10, D-11, D-12, D-13, D-15, D-16, D-21, D-24]
+    decisions_reflect: [D-01, D-06, D-07, D-09, D-10, D-11, D-12, D-15, D-16, D-21, D-24, D-25]
     forbidden_terms: []
     validator_checks: ["Check 1", "Check 7"]
 

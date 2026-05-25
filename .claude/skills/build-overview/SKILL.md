@@ -3,6 +3,26 @@ name: build-overview
 description: Assembles Project_Overview.html from component templates and data files in docs/src/. Run after editing any data file or component.
 ---
 
+## Model Routing
+
+**Delegate to Sonnet — do not execute inline in the main session.** This skill performs mechanical HTML assembly from YAML/template files with no domain reasoning.
+
+```
+Agent(
+  subagent_type="general-purpose",
+  model="sonnet",
+  description="build-overview: assemble Project_Overview.html from templates",
+  prompt="""Context: EPAM Assist Decommission project — BA documentation workspace (no application code).
+India HR workflows migrating from assist.epam.com → docs.epam.com (go-live June 30, 2026).
+Task: Read the file `.claude/skills/build-overview/SKILL.md` starting from the
+`## How the build works` heading and execute all steps described there."""
+)
+```
+
+Relay any build errors or the completion confirmation to the user verbatim.
+
+---
+
 Regenerate `Project_Overview.html` from the modular component architecture in `docs/src/`.
 
 ---

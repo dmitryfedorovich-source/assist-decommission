@@ -1,0 +1,44 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__confluence__search_docs",
+      "mcp__confluence__search_all",
+      "mcp__confluence__search_in_space",
+      "mcp__confluence__get_page",
+      "mcp__confluence__get_page_by_url",
+      "mcp__confluence__get_children",
+      "mcp__confluence__get_all_children",
+      "mcp__confluence__get_attachments",
+      "mcp__confluence__create_page",
+      "mcp__confluence__create_child_page",
+      "mcp__confluence__update_page",
+      "mcp__confluence__add_comment",
+      "mcp__confluence__upload_attachment",
+      "mcp__confluence__list_templates",
+      "mcp__claude_ai_Mermaid_Chart__validate_and_render_mermaid_diagram",
+      "Skill(update-config)",
+      "Bash(git *)",
+      "Bash(mv *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-Item *)",
+      "PowerShell(Move-Item *)",
+      "PowerShell(Rename-Item *)",
+      "PowerShell(New-Item *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NonInteractive -File \".claude/hooks/image-memory.ps1\"",
+            "timeout": 10,
+            "statusMessage": "Checking image memory..."
+          }
+        ]
+      }
+    ]
+  }
+}

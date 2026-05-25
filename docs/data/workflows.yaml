@@ -75,35 +75,35 @@ workflows:
     source_decisions: ["D-06", "D-07", "D-15", "D-21", "D-24"]
 
   - id: Trk-B
-    name: "Track B — Manual DV/EDV Verification"
+    name: "Track B — Manual People Team Verification"
     phase: 1
     trigger: "Employee self-service request in EPAM Docs"
     letter_types:
       - "Letter of Recommendation (LOR)"
     actors:
       - role: "Employee"
-        action: "Submits request; downloads letter after specialist sends it"
-      - role: "India Team DV/EDV specialist"
-        action: "Verifies document and manually sends to employee"
+        action: "Submits request with mandatory written RM approval attachment; downloads letter after specialist sends it"
+      - role: "People team (DOCS verifier)"
+        action: "Reviews request + RM approval attachment; verifies document and manually sends to employee"
     steps:
       - step: 1
         actor: "Employee"
-        action: "Opens EPAM Docs, selects LOR, fills form"
+        action: "Opens EPAM Docs, selects LOR, fills form, attaches written RM approval (mandatory)"
         system: "DOCS"
-        outcome: "Request created; awaiting specialist review"
-        decision_ref: "D-15"
+        outcome: "Request created with RM approval attachment; awaiting People team review"
+        decision_ref: "D-25"
       - step: 2
-        actor: "India Team DV/EDV specialist"
-        action: "Reviews request, verifies information"
+        actor: "People team (DOCS verifier)"
+        action: "Reviews request and verifies written RM approval attachment"
         system: "DOCS"
         outcome: "Verification complete"
-        decision_ref: "D-13"
+        decision_ref: "D-25"
       - step: 3
-        actor: "India Team DV/EDV specialist"
+        actor: "People team (DOCS verifier)"
         action: "Sends letter to employee via 'Send Document' action in DOCS"
         system: "DOCS"
         outcome: "Employee notified; letter available for download"
-        decision_ref: "D-13"
+        decision_ref: "D-25"
       - step: 4
         actor: "Employee"
         action: "Downloads letter from EPAM Docs"
@@ -117,13 +117,13 @@ workflows:
         outcome: "Request archived"
         decision_ref: "D-06"
     special_behaviors:
-      - condition: "Request rejected by DV/EDV specialist"
+      - condition: "Request rejected by People team specialist"
         handling: "Employee edits and resubmits the same form; no limit on resubmissions"
         decision_ref: "D-07"
-      - condition: "LOR — alternative accepted scenario"
-        handling: "Employee may receive invitation and download letter before or after verification"
-        decision_ref: "D-13"
-    source_decisions: ["D-06", "D-07", "D-13", "D-15"]
+      - condition: "LOR — RM approval mechanism"
+        handling: "Employee obtains written RM approval offline and uploads as mandatory attachment. RM approval not routed through DOCS."
+        decision_ref: "D-25"
+    source_decisions: ["D-06", "D-07", "D-15", "D-25"]
 
   - id: Lifecycle
     name: "Request Lifecycle"
@@ -209,11 +209,11 @@ workflows:
         decision_ref: "D-09"
       - condition: "LOR Notes/Responsibilities field"
         handling: "Multi-line text, max ~1000 chars. Requires DOCS dev (OQ-11)."
-        decision_ref: "D-13"
+        decision_ref: "D-25"
       - condition: "Address Proof — address edit"
         handling: "Address field is read-only; employee updates profile in People system if incorrect."
         decision_ref: "D-20"
-    source_decisions: ["D-09", "D-13", "D-15", "D-20", "D-21"]
+    source_decisions: ["D-09", "D-15", "D-20", "D-21", "D-25", "D-26"]
 
   # ── Phase 2 — Compensation Letters ───────────────────────────────────────
 

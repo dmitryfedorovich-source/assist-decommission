@@ -54,13 +54,13 @@ You can request the following letters directly in EPAM Docs:
 
 | Letter | What you provide |
 |---|---|
-| Form 60 | Salutation, father's name, current address, worksite city, UAN, state, mobile number, PAN |
+| Form 60 | Salutation, father's name, current address, UAN, state, mobile number, PAN |
 | Address Proof Letter | Purpose (from dropdown, or your own text) |
 | Service Letter | Purpose |
 | Visa Processing Letter | Travel details, comments (max 300 characters), notification confirmation |
 | Letter of Recommendation | Purpose, description of your role and responsibilities |
 
-Everything else — your name, designation, UID, work location — is filled in automatically.
+Everything else — your name, designation, UID, work location, worksite city — is filled in automatically.
 
 ---
 
